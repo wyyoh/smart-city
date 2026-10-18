@@ -1,0 +1,11 @@
+{
+  "version":"1.1.1",
+  "identity":{"key":["dataset_id","source_code","full_gradation","local_product","oil_stone_ratio_pct"],"normalization":"Unicode NFKC和空白清理，保留产品后缀，不自动合并别名", "link_states":["exact","confirmed_alias","conditional","unresolved"]},
+  "units":{"DS":"次/mm","strain":"με","TSR":"%","residual":"%","oil_stone_ratio":"% of mineral mass (recorded)","binder_content":"% of total mixture mass (algebraic conversion)","rap_nominal":"% (source basis unconfirmed)","sieve":"mm","passing":"%"},
+  "missing":{"canonical":null,"zero":"保留为有效零值","errors":"保留原始错误值，字段隔离，不整条删除"},
+  "provenance":{"raw":"原始值、公式、显示格式、文件SHA256、工作表、行与单元格", "canonical":"TSR原始fraction乘100一次，residual原值为百分数", "reference":"企业设计流程参考单独标记，不将演示值标为规范", "derived":"组聚合、油石比换算和模型预测分别记录算法版本"},
+  "metrics":{"DS":{"aggregation":"mean_of_records","suspected_mean":"第三值等于前两值均值时保留原值，独立数暂按2"},"strain":{"aggregation":"mean_of_records","label_unit":"operational_recipe"},"TSR":{"aggregation":"stored_group_ratio","independent_batches":"unknown"},"residual":{"aggregation":"stored_group_ratio","independent_batches":"unknown"}},
+  "observations":{"states":["draft","approved","rejected"],"immutable_after_review":true,"correction":"新增记录引用supersedes_id，旧记录保留","source_reference":"原始报告编号或文件位置必填","scope":["demo","official"],"model_training":"仅企业原始表与已批准、适用性确认、启用为依据的正式历史配方回流；演示和未试验版本不入训练"},
+  "rules":{"operators":[">",">=","<","<=","between"],"between":"闭区间","ordering":"先全部硬约束，再按单个偏好指标排序","budget_without_cost":"待补成本，不视为通过"},
+  "reports":{"immutable":true,"snapshot_hash":"SHA256 over canonical sorted JSON excluding id/created_at/hash itself","includes":["scenario","targets and origin","results and evidence","dataset hash/revision","rule version","limitations"]}
+}

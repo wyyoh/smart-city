@@ -1,0 +1,1183 @@
+{
+  "id": "ds_cfdae69d0eb54306e85e",
+  "created": true,
+  "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "summary": {
+    "layout_version": "workbook-v1",
+    "sheets": {
+      "设计流程": {
+        "rows": 12,
+        "columns": 7,
+        "merged_ranges": []
+      },
+      "集料筛分及密度": {
+        "rows": 246,
+        "columns": 36,
+        "merged_ranges": [
+          "Z1:AB1",
+          "W1:W2",
+          "X1:X2",
+          "Y1:Y2",
+          "S1:U1",
+          "D1:O1",
+          "AG1:AH1",
+          "Q1:Q2",
+          "C1:C2",
+          "B1:B2",
+          "R1:R2",
+          "V1:V2",
+          "A1:A2",
+          "AC1:AF1",
+          "P1:P2",
+          "AJ1:AJ2",
+          "AI1:AI2"
+        ]
+      },
+      "级配": {
+        "rows": 886,
+        "columns": 47,
+        "merged_ranges": [
+          "B562:B574",
+          "E484:E489",
+          "A250:A262",
+          "A315:A327",
+          "AG2:AU2",
+          "A237:A249",
+          "B432:B444",
+          "E88:E89",
+          "B263:B275",
+          "E140:E141",
+          "E406:E411",
+          "C1:C2",
+          "E23:E24",
+          "A16:A28",
+          "E1:E2",
+          "A172:A184",
+          "E10:E11",
+          "A575:A587",
+          "E315:E321",
+          "A341:A353",
+          "A133:A145",
+          "B731:B743",
+          "E16:E22",
+          "E49:E50",
+          "A42:A54",
+          "A562:A574",
+          "B874:B886",
+          "B770:B782",
+          "T1:T2",
+          "E211:E216",
+          "B211:B223",
+          "B640:B652",
+          "E335:E336",
+          "E179:E180",
+          "B419:B431",
+          "B406:B418",
+          "A601:A613",
+          "Z1:Z2",
+          "E101:E102",
+          "E827:E830",
+          "B796:B808",
+          "B679:B691",
+          "B575:B587",
+          "E510:E516",
+          "A692:A704",
+          "B666:B678",
+          "E380:E385",
+          "E192:E193",
+          "B380:B392",
+          "E749:E752",
+          "E107:E113",
+          "B3:B15",
+          "A289:A301",
+          "B445:B457",
+          "E432:E438",
+          "B861:B873",
+          "E419:E424",
+          "A458:A470",
+          "A471:A483",
+          "E490:E492",
+          "AG6:AG7",
+          "E198:E203",
+          "E477:E479",
+          "A861:A873",
+          "E788:E791",
+          "B601:B613",
+          "E256:E258",
+          "E775:E778",
+          "E757:E761",
+          "AI3:AU3",
+          "E133:E139",
+          "E595:E596",
+          "E243:E245",
+          "A146:A158",
+          "B822:B834",
+          "W1:W2",
+          "B328:B340",
+          "Y1:Y2",
+          "E386:E388",
+          "E224:E229",
+          "B588:B600",
+          "B29:B41",
+          "B653:B665",
+          "E736:E739",
+          "E217:E219",
+          "A666:A678",
+          "E783:E787",
+          "E523:E529",
+          "AC1:AC2",
+          "B354:B366",
+          "AE1:AE2",
+          "B848:B860",
+          "E289:E295",
+          "G1:R1",
+          "B627:B639",
+          "B692:B704",
+          "E412:E414",
+          "E723:E726",
+          "E840:E843",
+          "B614:B626",
+          "AG8:AG9",
+          "A705:A717",
+          "B497:B509",
+          "E55:E61",
+          "B549:B561",
+          "B393:B405",
+          "E393:E398",
+          "A510:A522",
+          "E762:E765",
+          "B536:B548",
+          "E445:E451",
+          "E250:E255",
+          "B315:B327",
+          "A276:A288",
+          "E237:E242",
+          "B237:B249",
+          "A328:A340",
+          "B302:B314",
+          "B744:B756",
+          "E29:E35",
+          "B185:B197",
+          "D1:D2",
+          "E543:E544",
+          "B16:B28",
+          "B81:B93",
+          "E94:E100",
+          "A757:A769",
+          "E718:E722",
+          "E861:E865",
+          "E606:E609",
+          "F1:F2",
+          "E770:E774",
+          "A94:A106",
+          "E640:E644",
+          "AB1:AB2",
+          "B276:B288",
+          "A523:A535",
+          "AD1:AD2",
+          "B341:B353",
+          "B783:B795",
+          "A354:A366",
+          "A796:A808",
+          "B705:B717",
+          "E835:E839",
+          "E853:E856",
+          "B484:B496",
+          "A718:A730",
+          "E809:E813",
+          "B42:B54",
+          "B107:B119",
+          "E796:E800",
+          "E536:E542",
+          "A497:A509",
+          "B471:B483",
+          "B523:B535",
+          "E619:E622",
+          "A640:A652",
+          "A484:A496",
+          "E666:E670",
+          "B250:B262",
+          "E464:E466",
+          "E452:E453",
+          "B289:B301",
+          "A406:A418",
+          "B172:B184",
+          "E814:E817",
+          "B510:B522",
+          "A120:A132",
+          "A185:A197",
+          "E282:E284",
+          "E575:E581",
+          "E114:E115",
+          "E497:E503",
+          "A679:A691",
+          "E562:E568",
+          "E658:E661",
+          "B367:B379",
+          "E645:E648",
+          "E517:E518",
+          "E341:E347",
+          "A380:A392",
+          "E263:E269",
+          "E328:E334",
+          "A445:A457",
+          "E296:E297",
+          "E146:E152",
+          "B133:B145",
+          "B757:B769",
+          "A432:A444",
+          "A874:A886",
+          "E42:E48",
+          "B198:B210",
+          "E458:E463",
+          "E556:E557",
+          "E185:E191",
+          "B94:B106",
+          "S1:S2",
+          "A211:A223",
+          "E62:E63",
+          "B55:B67",
+          "E684:E687",
+          "E653:E657",
+          "A68:A80",
+          "E348:E349",
+          "B718:B730",
+          "A835:A847",
+          "B159:B171",
+          "A809:A821",
+          "E848:E852",
+          "E866:E869",
+          "E588:E594",
+          "B224:B236",
+          "A731:A743",
+          "A614:A626",
+          "AA1:AA2",
+          "E671:E674",
+          "E627:E631",
+          "E549:E555",
+          "E439:E440",
+          "E614:E618",
+          "E399:E401",
+          "E354:E360",
+          "A653:A665",
+          "E504:E505",
+          "E569:E570",
+          "E632:E635",
+          "A367:A379",
+          "E679:E683",
+          "E309:E310",
+          "E374:E375",
+          "B120:B132",
+          "A419:A431",
+          "E270:E271",
+          "E120:E126",
+          "E710:E713",
+          "E153:E154",
+          "E172:E178",
+          "A198:A210",
+          "E697:E700",
+          "AG3:AH4",
+          "A3:A15",
+          "A55:A67",
+          "E425:E427",
+          "E822:E826",
+          "B1:B2",
+          "E801:E804",
+          "A393:A405",
+          "B809:B821",
+          "E204:E206",
+          "E159:E165",
+          "A822:A834",
+          "B146:B158",
+          "E302:E308",
+          "A263:A275",
+          "E471:E476",
+          "X1:X2",
+          "E166:E167",
+          "A159:A171",
+          "B835:B847",
+          "AF1:AF2",
+          "E81:E87",
+          "E276:E281",
+          "E530:E531",
+          "E75:E76",
+          "E705:E709",
+          "A224:A236",
+          "A302:A314",
+          "A588:A600",
+          "E3:E9",
+          "A744:A756",
+          "E36:E37",
+          "A29:A41",
+          "B68:B80",
+          "E68:E74",
+          "A81:A93",
+          "E582:E583",
+          "E601:E605",
+          "E692:E696",
+          "E744:E748",
+          "E361:E362",
+          "E230:E232",
+          "A848:A860",
+          "A783:A795",
+          "A627:A639",
+          "E127:E128",
+          "A770:A782",
+          "E731:E735",
+          "B458:B470",
+          "E367:E373",
+          "A107:A119",
+          "A549:A561",
+          "E322:E323",
+          "A536:A548",
+          "A1:A2"
+        ]
+      },
+      "体积指标": {
+        "rows": 644,
+        "columns": 56,
+        "merged_ranges": [
+          "B342:B346",
+          "B298:B302",
+          "I1:R1",
+          "AD1:AD2",
+          "B434:B443",
+          "C1:C2",
+          "E1:E2",
+          "B449:B458",
+          "B444:B448",
+          "B469:B473",
+          "B268:B277",
+          "B303:B306",
+          "B307:B316",
+          "B387:B401",
+          "B1:B2",
+          "B213:B217",
+          "B130:B139",
+          "B160:B162",
+          "B14:B19",
+          "B489:B493",
+          "AC1:AC2",
+          "B317:B331",
+          "B238:B247",
+          "AE1:AE2",
+          "B474:B478",
+          "AF1:AF2",
+          "B163:B182",
+          "B332:B341",
+          "B429:B433",
+          "B459:B468",
+          "B218:B237",
+          "B183:B197",
+          "G1:G2",
+          "B150:B154",
+          "B95:B129",
+          "B20:B54",
+          "B479:B483",
+          "B140:B144",
+          "B155:B159",
+          "B484:B488",
+          "B198:B212",
+          "B377:B386",
+          "B347:B351",
+          "B357:B376",
+          "X1:AB1",
+          "B65:B94",
+          "B407:B416",
+          "B417:B428",
+          "S1:W1",
+          "B248:B267",
+          "D1:D2",
+          "B145:B149",
+          "B3:B13",
+          "F1:F2",
+          "B402:B406",
+          "H1:H2",
+          "B55:B64",
+          "B352:B356",
+          "B278:B297",
+          "A1:A2"
+        ]
+      },
+      "浸水马歇尔": {
+        "rows": 413,
+        "columns": 21,
+        "merged_ranges": [
+          "B52:B71",
+          "B157:B161",
+          "B162:B166",
+          "B12:B46",
+          "B237:B246",
+          "B3:B6",
+          "B112:B116",
+          "C1:C2",
+          "B72:B101",
+          "B187:B191",
+          "E1:E2",
+          "B177:B181",
+          "G1:P1",
+          "B192:B196",
+          "B137:B141",
+          "B279:B287",
+          "B127:B131",
+          "B197:B201",
+          "B227:B236",
+          "B222:B226",
+          "B1:B2",
+          "B7:B11",
+          "T1:T2",
+          "B264:B268",
+          "B247:B258",
+          "B122:B126",
+          "B47:B51",
+          "B142:B156",
+          "B288:B293",
+          "B102:B106",
+          "A1:A2",
+          "B202:B221",
+          "S1:S2",
+          "U1:U2",
+          "B167:B171",
+          "B294:B298",
+          "B172:B176",
+          "B259:B263",
+          "B132:B136",
+          "B117:B121",
+          "B182:B186",
+          "B107:B111",
+          "R1:R2",
+          "F1:F2",
+          "D1:D2",
+          "B269:B278",
+          "B299:B303"
+        ]
+      },
+      "冻融劈裂": {
+        "rows": 530,
+        "columns": 26,
+        "merged_ranges": [
+          "F198:F217",
+          "F343:F348",
+          "K1:S1",
+          "F105:F140",
+          "F147:F152",
+          "F184:F190",
+          "C1:C2",
+          "E1:E2",
+          "F379:F384",
+          "F276:F299",
+          "F264:F270",
+          "W1:W2",
+          "F8:F27",
+          "F171:F176",
+          "Y1:Y2",
+          "T1:V1",
+          "B1:B2",
+          "F367:F378",
+          "F257:F263",
+          "F238:F243",
+          "F319:F330",
+          "F232:F237",
+          "F191:F197",
+          "F300:F306",
+          "X1:X2",
+          "F141:F146",
+          "F159:F164",
+          "F153:F158",
+          "F244:F249",
+          "F307:F318",
+          "F250:F256",
+          "F385:F390",
+          "F165:F170",
+          "F225:F231",
+          "G1:G2",
+          "I1:I2",
+          "Z1:Z2",
+          "F3:F7",
+          "F331:F342",
+          "F177:F183",
+          "F271:F275",
+          "F71:F76",
+          "F391:F396",
+          "F218:F224",
+          "F355:F366",
+          "F77:F104",
+          "D1:D2",
+          "F1:F2",
+          "F28:F70",
+          "H1:H2",
+          "F349:F354",
+          "J1:J2",
+          "A1:A2"
+        ]
+      },
+      "高温车辙": {
+        "rows": 378,
+        "columns": 15,
+        "merged_ranges": [
+          "F80:F81",
+          "F84:F87",
+          "F43:F45",
+          "F3:F4",
+          "C1:C2",
+          "F19:F24",
+          "E1:E2",
+          "M1:M2",
+          "O1:O2",
+          "F14:F18",
+          "F74:F79",
+          "F70:F73",
+          "F33:F34",
+          "B1:B2",
+          "F50:F51",
+          "L1:L2",
+          "N1:N2",
+          "F31:F32",
+          "F66:F69",
+          "F40:F42",
+          "F92:F93",
+          "F46:F47",
+          "G1:G2",
+          "F64:F65",
+          "F82:F83",
+          "I1:I2",
+          "F6:F12",
+          "F36:F38",
+          "F48:F49",
+          "F56:F63",
+          "F88:F91",
+          "D1:D2",
+          "F1:F2",
+          "H1:H2",
+          "F54:F55",
+          "J1:J2",
+          "A1:A2"
+        ]
+      },
+      "低温弯曲": {
+        "rows": 315,
+        "columns": 13,
+        "merged_ranges": [
+          "B44:B48",
+          "B3:B4",
+          "B103:B109",
+          "C1:C2",
+          "B110:B115",
+          "E1:E2",
+          "K1:K2",
+          "B90:B95",
+          "M1:M2",
+          "B149:B154",
+          "B6:B25",
+          "B76:B78",
+          "B1:B2",
+          "L1:L2",
+          "B85:B89",
+          "G1:I1",
+          "B60:B63",
+          "B26:B43",
+          "B155:B166",
+          "B143:B148",
+          "B128:B142",
+          "B167:B178",
+          "B116:B127",
+          "B70:B72",
+          "B67:B69",
+          "B96:B102",
+          "B73:B75",
+          "B49:B54",
+          "D1:D2",
+          "F1:F2",
+          "J1:J2",
+          "B79:B84",
+          "A1:A2"
+        ]
+      },
+      "沥青指标（70，90，110，130）": {
+        "rows": 19,
+        "columns": 11,
+        "merged_ranges": []
+      }
+    },
+    "specimen_counts": {
+      "体积指标": 642,
+      "浸水马歇尔": 411,
+      "冻融劈裂": 528,
+      "高温车辙": 158,
+      "低温弯曲": 313
+    },
+    "specimen_total": 2052,
+    "gradation_blocks": 68,
+    "source_codes": 44,
+    "operational_recipes": 180,
+    "formula_errors": [
+      {
+        "sheet": "集料筛分及密度",
+        "cell": "AJ3",
+        "value": "#DIV/0!"
+      },
+      {
+        "sheet": "集料筛分及密度",
+        "cell": "AJ4",
+        "value": "#VALUE!"
+      }
+    ],
+    "curve_mismatches": [
+      {
+        "source": "A",
+        "gradation": "90#AC-20-1",
+        "grade_row": 4,
+        "raw_rows": [
+          4
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "A",
+        "gradation": "90#AC-20-1",
+        "grade_row": 11,
+        "raw_rows": [
+          7
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "A",
+        "gradation": "90#AC-20-2",
+        "grade_row": 24,
+        "raw_rows": [
+          7
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-90#",
+        "grade_row": 199,
+        "raw_rows": [
+          58
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-90#",
+        "grade_row": 200,
+        "raw_rows": [
+          59
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-90#",
+        "grade_row": 204,
+        "raw_rows": [
+          61
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-90#",
+        "grade_row": 205,
+        "raw_rows": [
+          62
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-90#",
+        "grade_row": 206,
+        "raw_rows": [
+          63
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-110#",
+        "grade_row": 212,
+        "raw_rows": [
+          58
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-110#",
+        "grade_row": 213,
+        "raw_rows": [
+          59
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-110#",
+        "grade_row": 217,
+        "raw_rows": [
+          61
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-110#",
+        "grade_row": 218,
+        "raw_rows": [
+          62
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I",
+        "gradation": "AC-20-110#",
+        "grade_row": 219,
+        "raw_rows": [
+          63
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "L",
+        "gradation": "AC-13",
+        "grade_row": 257,
+        "raw_rows": [
+          82
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "L",
+        "gradation": "AC-13",
+        "grade_row": 258,
+        "raw_rows": [
+          83
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-1",
+        "grade_row": 381,
+        "raw_rows": [
+          114
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-1",
+        "grade_row": 382,
+        "raw_rows": [
+          115
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-1",
+        "grade_row": 386,
+        "raw_rows": [
+          117
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-1",
+        "grade_row": 387,
+        "raw_rows": [
+          118
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-1",
+        "grade_row": 388,
+        "raw_rows": [
+          119
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-2",
+        "grade_row": 394,
+        "raw_rows": [
+          114
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-2",
+        "grade_row": 395,
+        "raw_rows": [
+          115
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-2",
+        "grade_row": 399,
+        "raw_rows": [
+          117
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-2",
+        "grade_row": 400,
+        "raw_rows": [
+          118
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-2",
+        "grade_row": 401,
+        "raw_rows": [
+          119
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-3",
+        "grade_row": 407,
+        "raw_rows": [
+          114
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-3",
+        "grade_row": 408,
+        "raw_rows": [
+          115
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-3",
+        "grade_row": 412,
+        "raw_rows": [
+          117
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-3",
+        "grade_row": 413,
+        "raw_rows": [
+          118
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-3",
+        "grade_row": 414,
+        "raw_rows": [
+          119
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-4",
+        "grade_row": 420,
+        "raw_rows": [
+          114
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-4",
+        "grade_row": 421,
+        "raw_rows": [
+          115
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-4",
+        "grade_row": 425,
+        "raw_rows": [
+          117
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-4",
+        "grade_row": 426,
+        "raw_rows": [
+          118
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "I-1",
+        "gradation": "AC-20-90#-4",
+        "grade_row": 427,
+        "raw_rows": [
+          119
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "T",
+        "gradation": "AC-20-90#",
+        "grade_row": 458,
+        "raw_rows": [
+          130
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "T",
+        "gradation": "AC-20-90#",
+        "grade_row": 459,
+        "raw_rows": [
+          131
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "T",
+        "gradation": "AC-20-90#",
+        "grade_row": 460,
+        "raw_rows": [
+          132
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "T",
+        "gradation": "AC-20-90#",
+        "grade_row": 464,
+        "raw_rows": [
+          133
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "T",
+        "gradation": "AC-20-90#",
+        "grade_row": 465,
+        "raw_rows": [
+          134
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "T",
+        "gradation": "AC-20-90#",
+        "grade_row": 466,
+        "raw_rows": [
+          135
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "W",
+        "gradation": "AC-13-2",
+        "grade_row": 523,
+        "raw_rows": [
+          149
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "W",
+        "gradation": "AC-13-2",
+        "grade_row": 524,
+        "raw_rows": [
+          150
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "W",
+        "gradation": "AC-13-2",
+        "grade_row": 525,
+        "raw_rows": [
+          151
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "W",
+        "gradation": "AC-13-2",
+        "grade_row": 526,
+        "raw_rows": [
+          152
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "W",
+        "gradation": "AC-13-2",
+        "grade_row": 530,
+        "raw_rows": [
+          153
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "W",
+        "gradation": "AC-13-2",
+        "grade_row": 531,
+        "raw_rows": [
+          154
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "1J",
+        "gradation": "AC-20",
+        "grade_row": 796,
+        "raw_rows": [
+          220
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "1M",
+        "gradation": "AC-13",
+        "grade_row": 853,
+        "raw_rows": [
+          236
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "1N",
+        "gradation": "AC-13",
+        "grade_row": 861,
+        "raw_rows": [
+          238
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "1O",
+        "gradation": "AC-13",
+        "grade_row": 874,
+        "raw_rows": [
+          242
+        ],
+        "field": "curve"
+      },
+      {
+        "source": "1O",
+        "gradation": "AC-13",
+        "grade_row": 879,
+        "raw_rows": [
+          245
+        ],
+        "field": "curve"
+      }
+    ],
+    "suspected_mean_DS_groups": 21,
+    "unmatched_gradation_keys": [
+      [
+        "B",
+        "AC-10",
+        "90#",
+        6.255772
+      ],
+      [
+        "1G",
+        "AC-13",
+        "AC-13-1(90#)",
+        4.8
+      ],
+      [
+        "1G",
+        "AC-13",
+        "AC-13-1(70#)",
+        4.8
+      ],
+      [
+        "1K",
+        "AC-13",
+        "AC-13(90#)",
+        5.0
+      ],
+      [
+        "Z",
+        "AC-13",
+        "90#-1",
+        4.6
+      ],
+      [
+        "Z",
+        "AC-13",
+        "90#-2",
+        4.8
+      ]
+    ],
+    "scope": "实验室混合料数据；试件行数不是独立配方数；来源代码不代表已确认独立料源",
+    "conditional_aliases": [
+      "B/B-2 AC-10",
+      "1G AC-13/AC-13-1",
+      "1K AC-13/AC-10",
+      "M-1 90#/90#-3"
+    ],
+    "identity_states": [
+      "exact",
+      "confirmed_alias",
+      "conditional",
+      "unresolved"
+    ],
+    "confirmed_aliases": [],
+    "metric_coverage": {
+      "DS": {
+        "operational_groups": 86,
+        "stored_numeric_labels": 158
+      },
+      "strain": {
+        "operational_groups": 80,
+        "stored_numeric_labels": 312
+      },
+      "TSR": {
+        "operational_groups": 85,
+        "stored_numeric_labels": 87
+      },
+      "residual": {
+        "operational_groups": 80,
+        "stored_numeric_labels": 83
+      },
+      "stability": {
+        "operational_groups": 118,
+        "stored_numeric_labels": 642
+      },
+      "VV": {
+        "operational_groups": 118,
+        "stored_numeric_labels": 642
+      },
+      "VMA": {
+        "operational_groups": 118,
+        "stored_numeric_labels": 642
+      },
+      "flow": {
+        "operational_groups": 118,
+        "stored_numeric_labels": 642
+      }
+    }
+  }
+}

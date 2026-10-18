@@ -1,0 +1,34 @@
+{
+  "title": "数智选材单人六周开发计划",
+  "date": "2026-10-18",
+  "page_id": "page_63d84be9da7c819198d9925fc10b5729",
+  "page_url": "https://chatgpt.com/space/page_63d84be9da7c819198d9925fc10b5729",
+  "parent_page_id": "page_b3e90ae7e0a88191967a4234479f66dd",
+  "confirmed": {
+    "developers": 1,
+    "weeks": 6,
+    "submission_deadline": null
+  },
+  "capacity_assumption": {
+    "hours_per_week": 30,
+    "total_hours": 180,
+    "planned_hours": 150,
+    "buffer_hours": 30
+  },
+  "backlog_file": "development_backlog_v1.json",
+  "plan_file": "数智选材_单人六周开发计划_v1.md",
+  "validation_file": "validate_plan.py",
+  "checks": {
+    "task_count": 39,
+    "all_tasks_have_deliverables_and_acceptance": true,
+    "dependency_graph_acyclic": true,
+    "core_has_no_optional_hard_dependencies": true,
+    "weekly_capacity_reconciles": true,
+    "page_content_matches_local": true,
+    "parent_only_schedule_blocks_changed": true,
+    "page_layout_preview": "not_inspected"
+  },
+  "implementation_tasks_completed": 37,
+  "execution_progress": "../artifacts/development_progress.json",
+  "updated_at": "2026-10-18T15:02:14.902463+00:00"
+}

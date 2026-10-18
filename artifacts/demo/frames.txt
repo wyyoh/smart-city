@@ -1,0 +1,13 @@
+file 'C:/Users/Lenovo/Desktop/智慧城市/artifacts/screenshots/C1.jpg'
+duration 5
+file 'C:/Users/Lenovo/Desktop/智慧城市/artifacts/screenshots/C2.jpg'
+duration 5
+file 'C:/Users/Lenovo/Desktop/智慧城市/artifacts/screenshots/C3.jpg'
+duration 5
+file 'C:/Users/Lenovo/Desktop/智慧城市/artifacts/screenshots/C4.jpg'
+duration 5
+file 'C:/Users/Lenovo/Desktop/智慧城市/artifacts/screenshots/C5.jpg'
+duration 5
+file 'C:/Users/Lenovo/Desktop/智慧城市/artifacts/screenshots/models.jpg'
+duration 5
+file 'C:/Users/Lenovo/Desktop/智慧城市/artifacts/screenshots/models.jpg'

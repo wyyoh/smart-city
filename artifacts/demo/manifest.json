@@ -1,0 +1,15 @@
+{
+  "format": "界面截图步骤回放；非连续现场录屏，无配音",
+  "duration_seconds": 30,
+  "frames": [
+    "C1.jpg",
+    "C2.jpg",
+    "C3.jpg",
+    "C4.jpg",
+    "C5.jpg",
+    "models.jpg"
+  ],
+  "video": "数智选材_界面步骤回放.mp4",
+  "source": "本地工作台真实运行截图，构造案例与真实历史记录聚合",
+  "continuous_workflow_evidence": "artifacts/acceptance/final-rehearsal-1与final-rehearsal-2"
+}

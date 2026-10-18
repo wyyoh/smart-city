@@ -1,0 +1,4116 @@
+{
+  "scenario": {
+    "name": "高低温与水稳定复合约束",
+    "maintenance_method": "既定养护方案下的再生混合料选材",
+    "layer": "沥青面层（演示设定）",
+    "distress_type": "复合需求",
+    "climate_zone": null,
+    "traffic_level": null,
+    "targets": [
+      {
+        "metric": "DS",
+        "operator": ">",
+        "value": 8000.0,
+        "upper": null,
+        "source_kind": "demo_assumption",
+        "reference": "构造案例C5团队演示目标",
+        "test_method": null,
+        "conditions": null
+      },
+      {
+        "metric": "strain",
+        "operator": ">",
+        "value": 2500.0,
+        "upper": null,
+        "source_kind": "demo_assumption",
+        "reference": "构造案例C5团队演示目标",
+        "test_method": null,
+        "conditions": null
+      },
+      {
+        "metric": "TSR",
+        "operator": ">",
+        "value": 90.0,
+        "upper": null,
+        "source_kind": "demo_assumption",
+        "reference": "构造案例C5团队演示目标",
+        "test_method": null,
+        "conditions": null
+      },
+      {
+        "metric": "residual",
+        "operator": ">",
+        "value": 90.0,
+        "upper": null,
+        "source_kind": "demo_assumption",
+        "reference": "构造案例C5团队演示目标",
+        "test_method": null,
+        "conditions": null
+      }
+    ],
+    "candidate_ids": [
+      "R1",
+      "R4",
+      "R5",
+      "R7"
+    ],
+    "available_sources": null,
+    "rap_min_pct": 0.0,
+    "priority": "DS",
+    "case_id": "C5",
+    "context_kind": "constructed_demo",
+    "budget": null
+  },
+  "results": [
+    {
+      "source": "S",
+      "product": "70#",
+      "dataset_id": "ds_d916d61767ca55d21bd7",
+      "rap_nominal_pct": 60.0,
+      "kind": "historical",
+      "payload": {
+        "fixture_id": "R1",
+        "gradation": {
+          "source": "S",
+          "gradation": "AC-13",
+          "start_row": 445,
+          "end_row": 457,
+          "components": [
+            {
+              "row": 445,
+              "type": "粗集料",
+              "size": "10-15",
+              "group_fraction": 0.4,
+              "within_fraction": 0.675,
+              "nominal_weight": 0.27,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                93.3620131747938,
+                21.6751597379996,
+                0.530369368935951,
+                0.400279528981713,
+                0.400279528981713,
+                0.400279528981713,
+                0.400279528981713,
+                0.400279528981713,
+                0.400279528981713
+              ],
+              "density_apparent": 2.72828305738263,
+              "density_bulk": 2.67014428412875
+            },
+            {
+              "row": 446,
+              "type": "粗集料",
+              "size": "5-10",
+              "group_fraction": 0.4,
+              "within_fraction": 0.25,
+              "nominal_weight": 0.1,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                92.4847009234383,
+                7.3736084513041,
+                1.07541997221835,
+                0.78780012661997,
+                0.78780012661997,
+                0.78780012661997,
+                0.78780012661997,
+                0.78780012661997
+              ],
+              "density_apparent": 2.7419535404422,
+              "density_bulk": 2.66440032635301
+            },
+            {
+              "row": 447,
+              "type": "细集料",
+              "size": "0-5",
+              "group_fraction": 0.4,
+              "within_fraction": 0.075,
+              "nominal_weight": 0.03,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.8799489780905,
+                83.4525486032332,
+                56.8455751485186,
+                39.8579376723176,
+                20.60426021334,
+                10.9199022280248,
+                8.07362264565657
+              ],
+              "density_apparent": 2.68849782293179,
+              "density_bulk": 2.60302125417179
+            },
+            {
+              "row": 448,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.37,
+                71.88,
+                34.4,
+                20.45,
+                8.95999999999999,
+                3.43000000000001,
+                1.73
+              ],
+              "density_apparent": 2.679,
+              "density_bulk": 2.679
+            },
+            {
+              "row": 449,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                98.4742694595294,
+                61.1585208171709,
+                25.5667614860788,
+                19.6189983622101,
+                16.3692785104732,
+                14.2660115507284,
+                10.6801137832945,
+                6.04258253598827,
+                3.29281958451855
+              ],
+              "density_apparent": 2.829,
+              "density_bulk": 2.765
+            },
+            {
+              "row": 450,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                87.73,
+                60.6429986286759,
+                46.0612524760018,
+                36.9952765503581,
+                22.3373457260399,
+                11.3515160749657,
+                5.86621971659302
+              ],
+              "density_apparent": 2.76,
+              "density_bulk": 2.7
+            },
+            {
+              "row": 451,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.6875,
+                97.1125,
+                76.6125
+              ],
+              "density_apparent": 2.852,
+              "density_bulk": 2.723
+            },
+            {
+              "row": 452,
+              "type": "粗RAP料",
+              "size": "0-10",
+              "group_fraction": 0.6,
+              "within_fraction": 1,
+              "nominal_weight": 0.6,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                98.0765675066278,
+                78.5895908237546,
+                56.7786040396364,
+                40.4817994070559,
+                29.9299012879863,
+                17.0419136190183,
+                9.18037236063617,
+                4.23908520146919
+              ],
+              "density_apparent": 2.72019284257371,
+              "density_bulk": 2.56334090511969
+            },
+            {
+              "row": 453,
+              "type": "细RAP料",
+              "size": "0-10",
+              "group_fraction": 0.6,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                87.73,
+                60.6429986286759,
+                46.0612524760018,
+                36.9952765503581,
+                22.3373457260399,
+                11.3515160749657,
+                5.86621971659302
+              ],
+              "density_apparent": 2.76,
+              "density_bulk": 2.7
+            }
+          ],
+          "curve": [
+            100.0,
+            100.0,
+            100.0,
+            98.2077435571943,
+            76.9467037255804,
+            51.0307135383386,
+            36.7863563519257,
+            26.1813023841762,
+            19.3405343884484,
+            11.0301314632982,
+            6.02267596870951,
+            2.97251528573827
+          ],
+          "sieves_mm": [
+            26.5,
+            19,
+            16,
+            13.2,
+            9.5,
+            4.75,
+            2.36,
+            1.18,
+            0.6,
+            0.3,
+            0.15,
+            0.075
+          ],
+          "rap_nominal_pct": 60.0,
+          "design_oil_stone_ratio_pct": 5.5,
+          "rap_mass_basis": "unconfirmed",
+          "profile_id": "profile_e4d1460dc530fed633c0",
+          "flags": [],
+          "curve_reference": "级配!G454:R454"
+        },
+        "flags": [
+          "rap_mass_basis_unconfirmed",
+          "test_conditions_unverified"
+        ],
+        "identity_links": {
+          "gradation": {
+            "state": "exact",
+            "key": [
+              "S",
+              "AC-13"
+            ],
+            "reference": "级配!B445"
+          },
+          "aliases": []
+        },
+        "specimen_records": [
+          {
+            "sheet": "体积指标",
+            "row": 417,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 418,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 419,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 420,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 247,
+            "specimen": "试件1(浸)"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 248,
+            "specimen": "试件2(浸)"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 249,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 250,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 331,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 332,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 333,
+            "specimen": "试件3(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 334,
+            "specimen": "试件4(冻)"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 74,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 75,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 128,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 129,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 130,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 131,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 132,
+            "specimen": "试件5"
+          }
+        ],
+        "evidence_kind": "historical_record_aggregate"
+      },
+      "id": "mix_8adbae42f826e07e8611",
+      "gradation": "AC-13",
+      "oil_stone_ratio_pct": 5.5,
+      "parent_id": null,
+      "created_at": "2026-10-18T14:56:17.567519+00:00",
+      "metrics": {
+        "stability": 24.6725,
+        "flow": 2.935,
+        "VV": 3.84298079202921,
+        "VMA": 11.413585757002384,
+        "residual": 87.81375742479402,
+        "TSR": 89.78596858504315,
+        "DS": 9327.303846153834,
+        "strain": 2064.2
+      },
+      "evidence": {
+        "stability": {
+          "raw_labels": [
+            {
+              "value": 25.31,
+              "raw_value": 25.31,
+              "sheet": "体积指标",
+              "row": 417,
+              "cell": "Q417",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 26.88,
+              "raw_value": 26.88,
+              "sheet": "体积指标",
+              "row": 418,
+              "cell": "Q418",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 22.68,
+              "raw_value": 22.68,
+              "sheet": "体积指标",
+              "row": 419,
+              "cell": "Q419",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 23.82,
+              "raw_value": 23.82,
+              "sheet": "体积指标",
+              "row": 420,
+              "cell": "Q420",
+              "transform": "identity",
+              "specimen": "试件4"
+            }
+          ],
+          "range": [
+            22.68,
+            26.88
+          ],
+          "n_recorded": 4,
+          "n_independent_assumed": 4,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 417,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 418,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 419,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 420,
+              "specimen": "试件4"
+            }
+          ],
+          "value": 24.6725,
+          "unit": "kN",
+          "id": "mix_8adbae42f826e07e8611:stability"
+        },
+        "flow": {
+          "raw_labels": [
+            {
+              "value": 2.75,
+              "raw_value": 2.75,
+              "sheet": "体积指标",
+              "row": 417,
+              "cell": "R417",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 2.36,
+              "raw_value": 2.36,
+              "sheet": "体积指标",
+              "row": 418,
+              "cell": "R418",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 3.37,
+              "raw_value": 3.37,
+              "sheet": "体积指标",
+              "row": 419,
+              "cell": "R419",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 3.26,
+              "raw_value": 3.26,
+              "sheet": "体积指标",
+              "row": 420,
+              "cell": "R420",
+              "transform": "identity",
+              "specimen": "试件4"
+            }
+          ],
+          "range": [
+            2.36,
+            3.37
+          ],
+          "n_recorded": 4,
+          "n_independent_assumed": 4,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 417,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 418,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 419,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 420,
+              "specimen": "试件4"
+            }
+          ],
+          "value": 2.935,
+          "unit": "mm",
+          "id": "mix_8adbae42f826e07e8611:flow"
+        },
+        "VV": {
+          "raw_labels": [
+            {
+              "value": 3.874359859872434,
+              "raw_value": 3.874359859872434,
+              "sheet": "体积指标",
+              "row": 417,
+              "cell": "U417",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 3.723165654889682,
+              "raw_value": 3.723165654889682,
+              "sheet": "体积指标",
+              "row": 418,
+              "cell": "U418",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 3.8426669054784868,
+              "raw_value": 3.8426669054784868,
+              "sheet": "体积指标",
+              "row": 419,
+              "cell": "U419",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 3.9317307478762387,
+              "raw_value": 3.9317307478762387,
+              "sheet": "体积指标",
+              "row": 420,
+              "cell": "U420",
+              "transform": "identity",
+              "specimen": "试件4"
+            }
+          ],
+          "range": [
+            3.723165654889682,
+            3.9317307478762387
+          ],
+          "n_recorded": 4,
+          "n_independent_assumed": 4,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 417,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 418,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 419,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 420,
+              "specimen": "试件4"
+            }
+          ],
+          "value": 3.84298079202921,
+          "unit": "%",
+          "id": "mix_8adbae42f826e07e8611:VV"
+        },
+        "VMA": {
+          "raw_labels": [
+            {
+              "value": 11.442494297693585,
+              "raw_value": 11.442494297693585,
+              "sheet": "体积指标",
+              "row": 417,
+              "cell": "V417",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 11.303203868517798,
+              "raw_value": 11.303203868517798,
+              "sheet": "体积指标",
+              "row": 418,
+              "cell": "V418",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 11.413296583271375,
+              "raw_value": 11.413296583271375,
+              "sheet": "体积指标",
+              "row": 419,
+              "cell": "V419",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 11.495348278526777,
+              "raw_value": 11.495348278526777,
+              "sheet": "体积指标",
+              "row": 420,
+              "cell": "V420",
+              "transform": "identity",
+              "specimen": "试件4"
+            }
+          ],
+          "range": [
+            11.303203868517798,
+            11.495348278526777
+          ],
+          "n_recorded": 4,
+          "n_independent_assumed": 4,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 417,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 418,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 419,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 420,
+              "specimen": "试件4"
+            }
+          ],
+          "value": 11.413585757002384,
+          "unit": "%",
+          "id": "mix_8adbae42f826e07e8611:VMA"
+        },
+        "residual": {
+          "raw_labels": [
+            {
+              "value": 87.81375742479402,
+              "raw_value": 87.81375742479402,
+              "sheet": "浸水马歇尔",
+              "row": 247,
+              "cell": "Q247",
+              "transform": "identity",
+              "specimen": "试件1(浸)"
+            }
+          ],
+          "range": [
+            87.81375742479402,
+            87.81375742479402
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "浸水马歇尔",
+              "row": 247,
+              "specimen": "试件1(浸)"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 248,
+              "specimen": "试件2(浸)"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 249,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 250,
+              "specimen": "试件4"
+            }
+          ],
+          "value": 87.81375742479402,
+          "unit": "%",
+          "id": "mix_8adbae42f826e07e8611:residual"
+        },
+        "TSR": {
+          "raw_labels": [
+            {
+              "value": 89.78596858504315,
+              "raw_value": 0.8978596858504315,
+              "sheet": "冻融劈裂",
+              "row": 331,
+              "cell": "U331",
+              "transform": "fraction_to_percent_x100",
+              "specimen": "试件1"
+            }
+          ],
+          "range": [
+            89.78596858504315,
+            89.78596858504315
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "冻融劈裂",
+              "row": 331,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 332,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 333,
+              "specimen": "试件3(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 334,
+              "specimen": "试件4(冻)"
+            }
+          ],
+          "value": 89.78596858504315,
+          "unit": "%",
+          "id": "mix_8adbae42f826e07e8611:TSR"
+        },
+        "DS": {
+          "raw_labels": [
+            {
+              "value": 9692.30769230767,
+              "raw_value": 9692.30769230767,
+              "sheet": "高温车辙",
+              "row": 74,
+              "cell": "K74",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 8962.3,
+              "raw_value": 8962.3,
+              "sheet": "高温车辙",
+              "row": 75,
+              "cell": "K75",
+              "transform": "identity",
+              "specimen": "试件2"
+            }
+          ],
+          "range": [
+            8962.3,
+            9692.30769230767
+          ],
+          "n_recorded": 2,
+          "n_independent_assumed": 2,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "高温车辙",
+              "row": 74,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "高温车辙",
+              "row": 75,
+              "specimen": "试件2"
+            }
+          ],
+          "value": 9327.303846153834,
+          "unit": "次/mm",
+          "id": "mix_8adbae42f826e07e8611:DS"
+        },
+        "strain": {
+          "raw_labels": [
+            {
+              "value": 1942.0,
+              "raw_value": 1942,
+              "sheet": "低温弯曲",
+              "row": 128,
+              "cell": "H128",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 2201.0,
+              "raw_value": 2201,
+              "sheet": "低温弯曲",
+              "row": 129,
+              "cell": "H129",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 2336.0,
+              "raw_value": 2336,
+              "sheet": "低温弯曲",
+              "row": 130,
+              "cell": "H130",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 1821.0,
+              "raw_value": 1821,
+              "sheet": "低温弯曲",
+              "row": 131,
+              "cell": "H131",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 2021.0,
+              "raw_value": 2021,
+              "sheet": "低温弯曲",
+              "row": 132,
+              "cell": "H132",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            1821.0,
+            2336.0
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "低温弯曲",
+              "row": 128,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 129,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 130,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 131,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 132,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 2064.2,
+          "unit": "με",
+          "id": "mix_8adbae42f826e07e8611:strain"
+        }
+      },
+      "display_id": "R1",
+      "binder_content_pct": 5.213270142180095,
+      "release_status": "awaiting_engineer_review_and_testing",
+      "status": "excluded",
+      "passes_targets": false,
+      "failed_metrics": [
+        "strain",
+        "TSR",
+        "residual"
+      ],
+      "missing_metrics": [],
+      "checks": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 9327.303846153834,
+          "unit": "次/mm",
+          "passes": true
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 2064.2,
+          "unit": "με",
+          "passes": false
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 89.78596858504315,
+          "unit": "%",
+          "passes": false
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 87.81375742479402,
+          "unit": "%",
+          "passes": false
+        }
+      ],
+      "evidence_state": "historical_screening",
+      "applicability_notes": [
+        "试验条件与工程场景适用性待复核",
+        "名义RAP比例的计量基准待确认"
+      ]
+    },
+    {
+      "source": "M-1",
+      "product": "90#",
+      "dataset_id": "ds_d916d61767ca55d21bd7",
+      "rap_nominal_pct": 60.0,
+      "kind": "historical",
+      "payload": {
+        "fixture_id": "R4",
+        "gradation": {
+          "source": "M-1",
+          "gradation": "AC-13-3",
+          "start_row": 367,
+          "end_row": 379,
+          "components": [
+            {
+              "row": 367,
+              "type": "粗集料",
+              "size": "10-15",
+              "group_fraction": 0.4,
+              "within_fraction": 0.45,
+              "nominal_weight": 0.18000000000000002,
+              "curve": [
+                100.0,
+                100.0,
+                99.8133333333333,
+                88.0433333333333,
+                29.4433333333333,
+                1.77666666666666,
+                0.666666666666665,
+                0.666666666666665,
+                0.666666666666665,
+                0.666666666666665,
+                0.666666666666665,
+                0.666666666666665
+              ],
+              "density_apparent": 2.73,
+              "density_bulk": 2.688
+            },
+            {
+              "row": 368,
+              "type": "粗集料",
+              "size": "5-10",
+              "group_fraction": 0.4,
+              "within_fraction": 0.25,
+              "nominal_weight": 0.1,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                95.48,
+                13.484,
+                2.31999999999999,
+                18.6,
+                2.31999999999999,
+                2.31999999999999,
+                2.31999999999999,
+                2.31999999999999
+              ],
+              "density_apparent": 2.708,
+              "density_bulk": 2.681
+            },
+            {
+              "row": 369,
+              "type": "细集料",
+              "size": "0-5",
+              "group_fraction": 0.4,
+              "within_fraction": 0.3,
+              "nominal_weight": 0.12,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                96.8083333333334,
+                61.9333333333334,
+                37.8916666666667,
+                28.3166666666666,
+                19.1166666666667,
+                14.4083333333333,
+                11.6833333333333
+              ],
+              "density_apparent": 2.773,
+              "density_bulk": 2.629
+            },
+            {
+              "row": 370,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                97.4,
+                90.2,
+                78.2
+              ],
+              "density_apparent": 2.679,
+              "density_bulk": 2.679
+            },
+            {
+              "row": 371,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                97.4,
+                90.2,
+                78.2
+              ],
+              "density_apparent": 2.679,
+              "density_bulk": 2.679
+            },
+            {
+              "row": 372,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                81.365,
+                59.195,
+                34.705,
+                19.21,
+                13.9,
+                11.54
+              ],
+              "density_apparent": 2.72,
+              "density_bulk": 2.65
+            },
+            {
+              "row": 373,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.6875,
+                97.1125,
+                76.6125
+              ],
+              "density_apparent": 2.852,
+              "density_bulk": 2.723
+            },
+            {
+              "row": 374,
+              "type": "粗RAP料",
+              "size": "8-15",
+              "group_fraction": 0.6,
+              "within_fraction": 0.65,
+              "nominal_weight": 0.39,
+              "curve": [
+                100.0,
+                100.0,
+                98.5736037943114,
+                82.1740263331278,
+                33.1317421613373,
+                14.9743857763097,
+                12.3670078383307,
+                10.6873987726464,
+                9.66933733730223,
+                8.1572740170601,
+                6.23709734574096,
+                4.12798804194248
+              ],
+              "density_apparent": 2.829,
+              "density_bulk": 2.765
+            },
+            {
+              "row": 375,
+              "type": "细RAP料",
+              "size": "0-8",
+              "group_fraction": 0.6,
+              "within_fraction": 0.35,
+              "nominal_weight": 0.21,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                99.7094558901215,
+                93.6110054212952,
+                62.8836649437044,
+                41.7362115008477,
+                29.2750158752963,
+                22.3740055804223,
+                14.3321095762082,
+                9.61709515001596,
+                6.52648175251298
+              ],
+              "density_apparent": 2.76,
+              "density_bulk": 2.7
+            }
+          ],
+          "curve": [
+            100.0,
+            100.0,
+            99.4101054797814,
+            90.8346560068454,
+            59.4274905813935,
+            32.3307800909387,
+            21.371737472127,
+            16.8428388551443,
+            12.2195827334365,
+            8.83707987765716,
+            6.53305794634232,
+            4.73447650438529
+          ],
+          "sieves_mm": [
+            26.5,
+            19,
+            16,
+            13.2,
+            9.5,
+            4.75,
+            2.36,
+            1.18,
+            0.6,
+            0.3,
+            0.15,
+            0.075
+          ],
+          "rap_nominal_pct": 60.0,
+          "design_oil_stone_ratio_pct": 4.9,
+          "rap_mass_basis": "unconfirmed",
+          "profile_id": "profile_e5246d6b9d220c3900e4",
+          "flags": [],
+          "curve_reference": "级配!G376:R376"
+        },
+        "flags": [
+          "product_alias_unconfirmed_90_suffix",
+          "rap_mass_basis_unconfirmed",
+          "test_conditions_unverified"
+        ],
+        "identity_links": {
+          "gradation": {
+            "state": "exact",
+            "key": [
+              "M-1",
+              "AC-13-3"
+            ],
+            "reference": "级配!B367"
+          },
+          "aliases": [
+            {
+              "state": "conditional",
+              "alias": "M-1 90#/90#-3",
+              "applied": false
+            }
+          ]
+        },
+        "specimen_records": [
+          {
+            "sheet": "浸水马歇尔",
+            "row": 197,
+            "specimen": "试件1(浸)"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 198,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 199,
+            "specimen": "试件3(浸)"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 200,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 201,
+            "specimen": "试件5(浸)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 271,
+            "specimen": "试件1(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 272,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 273,
+            "specimen": "试件3(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 274,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 275,
+            "specimen": "试件5(冻)"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 54,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 55,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 110,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 111,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 112,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 113,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 114,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 115,
+            "specimen": "试件6"
+          }
+        ],
+        "evidence_kind": "historical_record_aggregate"
+      },
+      "id": "mix_ec30ff644f3111c570bc",
+      "gradation": "AC-13-3",
+      "oil_stone_ratio_pct": 4.9,
+      "parent_id": null,
+      "created_at": "2026-10-18T14:56:17.579628+00:00",
+      "metrics": {
+        "residual": 88.2831181252989,
+        "TSR": 84.96918608354991,
+        "DS": 7316.5,
+        "strain": 2525.0
+      },
+      "evidence": {
+        "residual": {
+          "raw_labels": [
+            {
+              "value": 88.2831181252989,
+              "raw_value": 88.2831181252989,
+              "sheet": "浸水马歇尔",
+              "row": 197,
+              "cell": "Q197",
+              "transform": "identity",
+              "specimen": "试件1(浸)"
+            }
+          ],
+          "range": [
+            88.2831181252989,
+            88.2831181252989
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "浸水马歇尔",
+              "row": 197,
+              "specimen": "试件1(浸)"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 198,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 199,
+              "specimen": "试件3(浸)"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 200,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 201,
+              "specimen": "试件5(浸)"
+            }
+          ],
+          "value": 88.2831181252989,
+          "unit": "%",
+          "id": "mix_ec30ff644f3111c570bc:residual"
+        },
+        "TSR": {
+          "raw_labels": [
+            {
+              "value": 84.96918608354991,
+              "raw_value": 0.8496918608354991,
+              "sheet": "冻融劈裂",
+              "row": 271,
+              "cell": "U271",
+              "transform": "fraction_to_percent_x100",
+              "specimen": "试件1(冻)"
+            }
+          ],
+          "range": [
+            84.96918608354991,
+            84.96918608354991
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "冻融劈裂",
+              "row": 271,
+              "specimen": "试件1(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 272,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 273,
+              "specimen": "试件3(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 274,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 275,
+              "specimen": "试件5(冻)"
+            }
+          ],
+          "value": 84.96918608354991,
+          "unit": "%",
+          "id": "mix_ec30ff644f3111c570bc:TSR"
+        },
+        "DS": {
+          "raw_labels": [
+            {
+              "value": 6972.0,
+              "raw_value": 6972,
+              "sheet": "高温车辙",
+              "row": 54,
+              "cell": "K54",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 7661.0,
+              "raw_value": 7661,
+              "sheet": "高温车辙",
+              "row": 55,
+              "cell": "K55",
+              "transform": "identity",
+              "specimen": "试件2"
+            }
+          ],
+          "range": [
+            6972.0,
+            7661.0
+          ],
+          "n_recorded": 2,
+          "n_independent_assumed": 2,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "高温车辙",
+              "row": 54,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "高温车辙",
+              "row": 55,
+              "specimen": "试件2"
+            }
+          ],
+          "value": 7316.5,
+          "unit": "次/mm",
+          "id": "mix_ec30ff644f3111c570bc:DS"
+        },
+        "strain": {
+          "raw_labels": [
+            {
+              "value": 2678.0,
+              "raw_value": 2678,
+              "sheet": "低温弯曲",
+              "row": 110,
+              "cell": "H110",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 2478.0,
+              "raw_value": 2478,
+              "sheet": "低温弯曲",
+              "row": 111,
+              "cell": "H111",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 2517.0,
+              "raw_value": 2517,
+              "sheet": "低温弯曲",
+              "row": 112,
+              "cell": "H112",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 2380.0,
+              "raw_value": 2380,
+              "sheet": "低温弯曲",
+              "row": 113,
+              "cell": "H113",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 2643.0,
+              "raw_value": 2643,
+              "sheet": "低温弯曲",
+              "row": 114,
+              "cell": "H114",
+              "transform": "identity",
+              "specimen": "试件5"
+            },
+            {
+              "value": 2454.0,
+              "raw_value": 2454,
+              "sheet": "低温弯曲",
+              "row": 115,
+              "cell": "H115",
+              "transform": "identity",
+              "specimen": "试件6"
+            }
+          ],
+          "range": [
+            2380.0,
+            2678.0
+          ],
+          "n_recorded": 6,
+          "n_independent_assumed": 6,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "低温弯曲",
+              "row": 110,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 111,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 112,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 113,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 114,
+              "specimen": "试件5"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 115,
+              "specimen": "试件6"
+            }
+          ],
+          "value": 2525.0,
+          "unit": "με",
+          "id": "mix_ec30ff644f3111c570bc:strain"
+        }
+      },
+      "display_id": "R4",
+      "binder_content_pct": 4.67111534795043,
+      "release_status": "awaiting_engineer_review_and_testing",
+      "status": "excluded",
+      "passes_targets": false,
+      "failed_metrics": [
+        "DS",
+        "TSR",
+        "residual"
+      ],
+      "missing_metrics": [],
+      "checks": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 7316.5,
+          "unit": "次/mm",
+          "passes": false
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 2525.0,
+          "unit": "με",
+          "passes": true
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 84.96918608354991,
+          "unit": "%",
+          "passes": false
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 88.2831181252989,
+          "unit": "%",
+          "passes": false
+        }
+      ],
+      "evidence_state": "historical_screening",
+      "applicability_notes": [
+        "试验条件与工程场景适用性待复核",
+        "名义RAP比例的计量基准待确认"
+      ]
+    },
+    {
+      "source": "1B",
+      "product": "AC-13-3(130#)",
+      "dataset_id": "ds_d916d61767ca55d21bd7",
+      "rap_nominal_pct": 70.0,
+      "kind": "historical",
+      "payload": {
+        "fixture_id": "R5",
+        "gradation": {
+          "source": "1B",
+          "gradation": "AC-13-3",
+          "start_row": 640,
+          "end_row": 652,
+          "components": [
+            {
+              "row": 640,
+              "type": "粗集料",
+              "size": "11-16",
+              "group_fraction": 0.3,
+              "within_fraction": 0.5,
+              "nominal_weight": 0.15,
+              "curve": [
+                100.0,
+                100.0,
+                94.6378502191418,
+                76.3037497987474,
+                6.34201459106261,
+                0.146091158623463,
+                0.146091158623463,
+                0.148080729271889,
+                0.146091158623463,
+                0.146091158623463,
+                0.146091158623463,
+                0.146091158623463
+              ],
+              "density_apparent": 2.73,
+              "density_bulk": 2.688
+            },
+            {
+              "row": 641,
+              "type": "粗集料",
+              "size": "6-11",
+              "group_fraction": 0.3,
+              "within_fraction": 0.17,
+              "nominal_weight": 0.051000000000000004,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                99.7556935817805,
+                80.2998711701921,
+                46.065973770081,
+                0.231807287880621,
+                0.22766890019647,
+                0.22766890019647,
+                0.22766890019647,
+                0.22766890019647,
+                0.22766890019647
+              ],
+              "density_apparent": 2.708,
+              "density_bulk": 2.681
+            },
+            {
+              "row": 642,
+              "type": "粗集料",
+              "size": "3-6",
+              "group_fraction": 0.3,
+              "within_fraction": 0.23,
+              "nominal_weight": 0.069,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                98.0837629536045,
+                56.8274951779784,
+                0.557651958824408,
+                0.378693153901935,
+                0.378693153901935,
+                0.378693153901935,
+                0.378693153901935,
+                0.378693153901935
+              ],
+              "density_apparent": 2.773,
+              "density_bulk": 2.629
+            },
+            {
+              "row": 643,
+              "type": "细集料",
+              "size": "0-3",
+              "group_fraction": 0.3,
+              "within_fraction": 0.1,
+              "nominal_weight": 0.03,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.5358630805498,
+                80.9205716000111,
+                52.3612611142035,
+                35.1779581054607,
+                20.7422052099662,
+                9.94466230244304,
+                6.60124971728782
+              ],
+              "density_apparent": 2.679,
+              "density_bulk": 2.679
+            },
+            {
+              "row": 644,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.3,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                97.4,
+                90.2,
+                78.2
+              ],
+              "density_apparent": 2.679,
+              "density_bulk": 2.679
+            },
+            {
+              "row": 645,
+              "type": "粗RAP料",
+              "size": "5-13",
+              "group_fraction": 0.7,
+              "within_fraction": 0.71,
+              "nominal_weight": 0.49699999999999994,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                95.2719714712924,
+                47.3035588683265,
+                26.6243078681407,
+                18.480404699557,
+                15.1535013154554,
+                11.9140681619254,
+                9.18411906287532,
+                7.76452832250889
+              ],
+              "density_apparent": 2.72,
+              "density_bulk": 2.65
+            },
+            {
+              "row": 646,
+              "type": "粗RAP料",
+              "size": "0-5",
+              "group_fraction": 0.7,
+              "within_fraction": 0.29,
+              "nominal_weight": 0.20299999999999999,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.8465642683227,
+                93.8872346774898,
+                68.3638976736761,
+                50.9800407481048,
+                33.530336651835,
+                22.2392536031164,
+                18.4284417635228
+              ],
+              "density_apparent": 2.852,
+              "density_bulk": 2.723
+            },
+            {
+              "row": 647,
+              "type": "细RAP料",
+              "size": "0-5",
+              "group_fraction": 0.7,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                96.7732415754427,
+                58.9554997957734,
+                32.0609976424967,
+                23.4673474783528,
+                17.4297664021043,
+                13.4674110343355,
+                11.5498931412078
+              ],
+              "density_apparent": 2.829,
+              "density_bulk": 2.765
+            },
+            {
+              "row": 648,
+              "type": "细RAP料",
+              "size": "0-8",
+              "group_fraction": 0.7,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                99.7094558901215,
+                93.6110054212952,
+                62.8836649437044,
+                41.7362115008477,
+                29.2750158752963,
+                22.3740055804223,
+                14.3321095762082,
+                9.61709515001596,
+                6.52648175251298
+              ],
+              "density_apparent": 2.76,
+              "density_bulk": 2.7
+            }
+          ],
+          "curve": [
+            100.0,
+            100.0,
+            99.1956775328713,
+            96.4331028424829,
+            82.4645450833702,
+            53.0571726997924,
+            34.791220628631,
+            24.6934232477822,
+            18.9952317841332,
+            13.4098709884212,
+            9.43707014007773,
+            7.85763636112345
+          ],
+          "sieves_mm": [
+            26.5,
+            19,
+            16,
+            13.2,
+            9.5,
+            4.75,
+            2.36,
+            1.18,
+            0.6,
+            0.3,
+            0.15,
+            0.075
+          ],
+          "rap_nominal_pct": 70.0,
+          "design_oil_stone_ratio_pct": 4.8,
+          "rap_mass_basis": "unconfirmed",
+          "profile_id": "profile_0570530f28122802cb9c",
+          "flags": [],
+          "curve_reference": "级配!G649:R649"
+        },
+        "flags": [
+          "rap_mass_basis_unconfirmed",
+          "test_conditions_unverified"
+        ],
+        "identity_links": {
+          "gradation": {
+            "state": "exact",
+            "key": [
+              "1B",
+              "AC-13-3"
+            ],
+            "reference": "级配!B640"
+          },
+          "aliases": []
+        },
+        "specimen_records": [
+          {
+            "sheet": "体积指标",
+            "row": 508,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 509,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 510,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 511,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 512,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 319,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 320,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 321,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 322,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 323,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 415,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 416,
+            "specimen": "试件2(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 417,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 418,
+            "specimen": "试件4(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 419,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 420,
+            "specimen": "试件6(冻)"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 105,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 106,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 107,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 206,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 207,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 208,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 209,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 210,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 211,
+            "specimen": "试件6"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 212,
+            "specimen": "试件7"
+          }
+        ],
+        "evidence_kind": "historical_record_aggregate"
+      },
+      "id": "mix_5a0eae6db3cb0a2f9a1f",
+      "gradation": "AC-13-3",
+      "oil_stone_ratio_pct": 4.8,
+      "parent_id": null,
+      "created_at": "2026-10-18T14:56:17.571519+00:00",
+      "metrics": {
+        "stability": 17.857999999999997,
+        "flow": 1.89,
+        "VV": 4.1024237646829915,
+        "VMA": 10.60105306780147,
+        "residual": 88.88192267502613,
+        "TSR": 92.74457106727604,
+        "DS": 6260.0,
+        "strain": 2225.6747142857143
+      },
+      "evidence": {
+        "stability": {
+          "raw_labels": [
+            {
+              "value": 17.04,
+              "raw_value": 17.04,
+              "sheet": "体积指标",
+              "row": 508,
+              "cell": "Q508",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 17.71,
+              "raw_value": 17.71,
+              "sheet": "体积指标",
+              "row": 509,
+              "cell": "Q509",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 18.22,
+              "raw_value": 18.22,
+              "sheet": "体积指标",
+              "row": 510,
+              "cell": "Q510",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 17.91,
+              "raw_value": 17.91,
+              "sheet": "体积指标",
+              "row": 511,
+              "cell": "Q511",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 18.41,
+              "raw_value": 18.41,
+              "sheet": "体积指标",
+              "row": 512,
+              "cell": "Q512",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            17.04,
+            18.41
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 508,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 509,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 510,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 511,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 512,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 17.857999999999997,
+          "unit": "kN",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:stability"
+        },
+        "flow": {
+          "raw_labels": [
+            {
+              "value": 2.0,
+              "raw_value": 2,
+              "sheet": "体积指标",
+              "row": 508,
+              "cell": "R508",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 1.76,
+              "raw_value": 1.76,
+              "sheet": "体积指标",
+              "row": 509,
+              "cell": "R509",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 1.94,
+              "raw_value": 1.94,
+              "sheet": "体积指标",
+              "row": 510,
+              "cell": "R510",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 1.76,
+              "raw_value": 1.76,
+              "sheet": "体积指标",
+              "row": 511,
+              "cell": "R511",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 1.99,
+              "raw_value": 1.99,
+              "sheet": "体积指标",
+              "row": 512,
+              "cell": "R512",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            1.76,
+            2.0
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 508,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 509,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 510,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 511,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 512,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 1.89,
+          "unit": "mm",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:flow"
+        },
+        "VV": {
+          "raw_labels": [
+            {
+              "value": 3.5679203712300933,
+              "raw_value": 3.5679203712300933,
+              "sheet": "体积指标",
+              "row": 508,
+              "cell": "U508",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 4.515915448010044,
+              "raw_value": 4.515915448010044,
+              "sheet": "体积指标",
+              "row": 509,
+              "cell": "U509",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 4.015531431027918,
+              "raw_value": 4.015531431027918,
+              "sheet": "体积指标",
+              "row": 510,
+              "cell": "U510",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 3.791244879346667,
+              "raw_value": 3.791244879346667,
+              "sheet": "体积指标",
+              "row": 511,
+              "cell": "U511",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 4.621506693800237,
+              "raw_value": 4.621506693800237,
+              "sheet": "体积指标",
+              "row": 512,
+              "cell": "U512",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            3.5679203712300933,
+            4.621506693800237
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 508,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 509,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 510,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 511,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 512,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 4.1024237646829915,
+          "unit": "%",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:VV"
+        },
+        "VMA": {
+          "raw_labels": [
+            {
+              "value": 10.102771021661738,
+              "raw_value": 10.102771021661738,
+              "sheet": "体积指标",
+              "row": 508,
+              "cell": "V508",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 10.986523926459583,
+              "raw_value": 10.986523926459583,
+              "sheet": "体积指标",
+              "row": 509,
+              "cell": "V509",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 10.520049110973787,
+              "raw_value": 10.520049110973787,
+              "sheet": "体积指标",
+              "row": 510,
+              "cell": "V510",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 10.310961641628822,
+              "raw_value": 10.310961641628822,
+              "sheet": "体积指标",
+              "row": 511,
+              "cell": "V511",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 11.084959638283422,
+              "raw_value": 11.084959638283422,
+              "sheet": "体积指标",
+              "row": 512,
+              "cell": "V512",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            10.102771021661738,
+            11.084959638283422
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 508,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 509,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 510,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 511,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 512,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 10.60105306780147,
+          "unit": "%",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:VMA"
+        },
+        "residual": {
+          "raw_labels": [
+            {
+              "value": 88.88192267502613,
+              "raw_value": 88.88192267502613,
+              "sheet": "浸水马歇尔",
+              "row": 319,
+              "cell": "Q319",
+              "transform": "identity",
+              "specimen": "试件1"
+            }
+          ],
+          "range": [
+            88.88192267502613,
+            88.88192267502613
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "浸水马歇尔",
+              "row": 319,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 320,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 321,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 322,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 323,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 88.88192267502613,
+          "unit": "%",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:residual"
+        },
+        "TSR": {
+          "raw_labels": [
+            {
+              "value": 92.74457106727604,
+              "raw_value": 0.9274457106727604,
+              "sheet": "冻融劈裂",
+              "row": 415,
+              "cell": "U415",
+              "transform": "fraction_to_percent_x100",
+              "specimen": "试件1"
+            }
+          ],
+          "range": [
+            92.74457106727604,
+            92.74457106727604
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "冻融劈裂",
+              "row": 415,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 416,
+              "specimen": "试件2(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 417,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 418,
+              "specimen": "试件4(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 419,
+              "specimen": "试件5"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 420,
+              "specimen": "试件6(冻)"
+            }
+          ],
+          "value": 92.74457106727604,
+          "unit": "%",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:TSR"
+        },
+        "DS": {
+          "raw_labels": [
+            {
+              "value": 6045.0,
+              "raw_value": 6045,
+              "sheet": "高温车辙",
+              "row": 105,
+              "cell": "K105",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 6475.0,
+              "raw_value": 6475,
+              "sheet": "高温车辙",
+              "row": 106,
+              "cell": "K106",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 6260.0,
+              "raw_value": 6260,
+              "sheet": "高温车辙",
+              "row": 107,
+              "cell": "K107",
+              "transform": "identity",
+              "specimen": "试件3",
+              "suspected_derived_mean": true
+            }
+          ],
+          "range": [
+            6045.0,
+            6475.0
+          ],
+          "n_recorded": 3,
+          "n_independent_assumed": 2,
+          "suspected_derived_mean": true,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "高温车辙",
+              "row": 105,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "高温车辙",
+              "row": 106,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "高温车辙",
+              "row": 107,
+              "specimen": "试件3"
+            }
+          ],
+          "value": 6260.0,
+          "unit": "次/mm",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:DS"
+        },
+        "strain": {
+          "raw_labels": [
+            {
+              "value": 2625.18,
+              "raw_value": 2625.18,
+              "sheet": "低温弯曲",
+              "row": 206,
+              "cell": "H206",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 1912.524,
+              "raw_value": 1912.524,
+              "sheet": "低温弯曲",
+              "row": 207,
+              "cell": "H207",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 2374.315,
+              "raw_value": 2374.315,
+              "sheet": "低温弯曲",
+              "row": 208,
+              "cell": "H208",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 2117.674,
+              "raw_value": 2117.674,
+              "sheet": "低温弯曲",
+              "row": 209,
+              "cell": "H209",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 2273.25,
+              "raw_value": 2273.25,
+              "sheet": "低温弯曲",
+              "row": 210,
+              "cell": "H210",
+              "transform": "identity",
+              "specimen": "试件5"
+            },
+            {
+              "value": 2088.958,
+              "raw_value": 2088.958,
+              "sheet": "低温弯曲",
+              "row": 211,
+              "cell": "H211",
+              "transform": "identity",
+              "specimen": "试件6"
+            },
+            {
+              "value": 2187.822,
+              "raw_value": 2187.822,
+              "sheet": "低温弯曲",
+              "row": 212,
+              "cell": "H212",
+              "transform": "identity",
+              "specimen": "试件7"
+            }
+          ],
+          "range": [
+            1912.524,
+            2625.18
+          ],
+          "n_recorded": 7,
+          "n_independent_assumed": 7,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "低温弯曲",
+              "row": 206,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 207,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 208,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 209,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 210,
+              "specimen": "试件5"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 211,
+              "specimen": "试件6"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 212,
+              "specimen": "试件7"
+            }
+          ],
+          "value": 2225.6747142857143,
+          "unit": "με",
+          "id": "mix_5a0eae6db3cb0a2f9a1f:strain"
+        }
+      },
+      "display_id": "R5",
+      "binder_content_pct": 4.580152671755726,
+      "release_status": "awaiting_engineer_review_and_testing",
+      "status": "excluded",
+      "passes_targets": false,
+      "failed_metrics": [
+        "DS",
+        "strain",
+        "residual"
+      ],
+      "missing_metrics": [],
+      "checks": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 6260.0,
+          "unit": "次/mm",
+          "passes": false
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 2225.6747142857143,
+          "unit": "με",
+          "passes": false
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 92.74457106727604,
+          "unit": "%",
+          "passes": true
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 88.88192267502613,
+          "unit": "%",
+          "passes": false
+        }
+      ],
+      "evidence_state": "historical_screening",
+      "applicability_notes": [
+        "试验条件与工程场景适用性待复核",
+        "名义RAP比例的计量基准待确认"
+      ]
+    },
+    {
+      "source": "1L",
+      "product": "AC-13-2(110#)",
+      "dataset_id": "ds_d916d61767ca55d21bd7",
+      "rap_nominal_pct": 60.0,
+      "kind": "historical",
+      "payload": {
+        "fixture_id": "R7",
+        "gradation": {
+          "source": "1L",
+          "gradation": "AC-13-2",
+          "start_row": 835,
+          "end_row": 847,
+          "components": [
+            {
+              "row": 835,
+              "type": "粗集料",
+              "size": "10-15",
+              "group_fraction": 0.4,
+              "within_fraction": 0.5,
+              "nominal_weight": 0.2,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                93.4,
+                21.7,
+                0.5,
+                0.4,
+                0.4,
+                0.4,
+                0.4,
+                0.4,
+                0.4
+              ],
+              "density_apparent": 2.73,
+              "density_bulk": 2.688
+            },
+            {
+              "row": 836,
+              "type": "粗集料",
+              "size": "5-10",
+              "group_fraction": 0.4,
+              "within_fraction": 0.375,
+              "nominal_weight": 0.15000000000000002,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                92.5,
+                7.4,
+                0.359999999999999,
+                0.359999999999999,
+                0.359999999999999,
+                0.359999999999999,
+                0.359999999999999,
+                0.359999999999999
+              ],
+              "density_apparent": 2.708,
+              "density_bulk": 2.681
+            },
+            {
+              "row": 837,
+              "type": "细集料",
+              "size": "0-5",
+              "group_fraction": 0.4,
+              "within_fraction": 0.125,
+              "nominal_weight": 0.05,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.9,
+                83.5,
+                56.8,
+                39.9,
+                20.6,
+                10.9,
+                8.1
+              ],
+              "density_apparent": 2.773,
+              "density_bulk": 2.629
+            },
+            {
+              "row": 838,
+              "type": "细集料",
+              "size": "0-3",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.5358630805498,
+                80.9205716000111,
+                52.3612611142035,
+                35.1779581054607,
+                20.7422052099662,
+                9.94466230244304,
+                6.60124971728782
+              ],
+              "density_apparent": 2.679,
+              "density_bulk": 2.679
+            },
+            {
+              "row": 839,
+              "type": "矿粉",
+              "size": "\\",
+              "group_fraction": 0.4,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                97.4,
+                90.2,
+                78.2
+              ],
+              "density_apparent": 2.679,
+              "density_bulk": 2.679
+            },
+            {
+              "row": 840,
+              "type": "粗RAP料",
+              "size": "0-15",
+              "group_fraction": 0.6,
+              "within_fraction": 1,
+              "nominal_weight": 0.6,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                90.7401923251022,
+                61.5256579240121,
+                45.3232961337038,
+                29.5870165978988,
+                22.9137544517569,
+                17.4996432456817,
+                13.9721869730202,
+                12.4397929137084
+              ],
+              "density_apparent": 2.72,
+              "density_bulk": 2.65
+            },
+            {
+              "row": 841,
+              "type": "细RAP料",
+              "size": "0-5",
+              "group_fraction": 0.6,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                99.8465642683227,
+                93.8872346774898,
+                68.3638976736761,
+                50.9800407481048,
+                33.530336651835,
+                22.2392536031164,
+                18.4284417635228
+              ],
+              "density_apparent": 2.852,
+              "density_bulk": 2.723
+            },
+            {
+              "row": 842,
+              "type": "细RAP料",
+              "size": "0-5",
+              "group_fraction": 0.6,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                100.0,
+                96.7732415754427,
+                58.9554997957734,
+                32.0609976424967,
+                23.4673474783528,
+                17.4297664021043,
+                13.4674110343355,
+                11.5498931412078
+              ],
+              "density_apparent": 2.829,
+              "density_bulk": 2.765
+            },
+            {
+              "row": 843,
+              "type": "细RAP料",
+              "size": "0-8",
+              "group_fraction": 0.6,
+              "within_fraction": 0,
+              "nominal_weight": 0.0,
+              "curve": [
+                100.0,
+                100.0,
+                100.0,
+                99.7094558901215,
+                93.6110054212952,
+                62.8836649437044,
+                41.7362115008477,
+                29.2750158752963,
+                22.3740055804223,
+                14.3321095762082,
+                9.61709515001596,
+                6.52648175251298
+              ],
+              "density_apparent": 2.76,
+              "density_bulk": 2.7
+            }
+          ],
+          "curve": [
+            100.0,
+            100.0,
+            100.0,
+            98.68,
+            77.6591153950613,
+            43.1203947544073,
+            31.5029776802223,
+            20.7262099587393,
+            15.8772526710541,
+            11.663785947409,
+            9.06231218381212,
+            8.00287574822504
+          ],
+          "sieves_mm": [
+            26.5,
+            19,
+            16,
+            13.2,
+            9.5,
+            4.75,
+            2.36,
+            1.18,
+            0.6,
+            0.3,
+            0.15,
+            0.075
+          ],
+          "rap_nominal_pct": 60.0,
+          "design_oil_stone_ratio_pct": 4.8,
+          "rap_mass_basis": "unconfirmed",
+          "profile_id": "profile_76ed5c391d8e7eabef10",
+          "flags": [],
+          "curve_reference": "级配!G844:R844"
+        },
+        "flags": [
+          "rap_mass_basis_unconfirmed",
+          "test_conditions_unverified"
+        ],
+        "identity_links": {
+          "gradation": {
+            "state": "exact",
+            "key": [
+              "1L",
+              "AC-13-2"
+            ],
+            "reference": "级配!B835"
+          },
+          "aliases": []
+        },
+        "specimen_records": [
+          {
+            "sheet": "体积指标",
+            "row": 620,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 621,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 622,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 623,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "体积指标",
+            "row": 624,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 389,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 390,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 391,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 392,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "浸水马歇尔",
+            "row": 393,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 501,
+            "specimen": "试件1(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 502,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 503,
+            "specimen": "试件3(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 504,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 505,
+            "specimen": "试件5(冻)"
+          },
+          {
+            "sheet": "冻融劈裂",
+            "row": 506,
+            "specimen": "试件6"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 146,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 147,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "高温车辙",
+            "row": 148,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 288,
+            "specimen": "试件1"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 289,
+            "specimen": "试件2"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 290,
+            "specimen": "试件3"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 291,
+            "specimen": "试件4"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 292,
+            "specimen": "试件5"
+          },
+          {
+            "sheet": "低温弯曲",
+            "row": 293,
+            "specimen": "试件6"
+          }
+        ],
+        "evidence_kind": "historical_record_aggregate"
+      },
+      "id": "mix_7a55a307568e18697636",
+      "gradation": "AC-13-2",
+      "oil_stone_ratio_pct": 4.8,
+      "parent_id": null,
+      "created_at": "2026-10-18T14:56:17.575518+00:00",
+      "metrics": {
+        "stability": 14.569999999999999,
+        "flow": 1.922,
+        "VV": 3.7730968927965014,
+        "VMA": 10.8858703970763,
+        "residual": 90.94357515410148,
+        "TSR": 89.45330053981392,
+        "DS": 5525.5,
+        "strain": 2383.8333333333335
+      },
+      "evidence": {
+        "stability": {
+          "raw_labels": [
+            {
+              "value": 15.79,
+              "raw_value": 15.79,
+              "sheet": "体积指标",
+              "row": 620,
+              "cell": "Q620",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 15.78,
+              "raw_value": 15.78,
+              "sheet": "体积指标",
+              "row": 621,
+              "cell": "Q621",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 13.83,
+              "raw_value": 13.83,
+              "sheet": "体积指标",
+              "row": 622,
+              "cell": "Q622",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 14.46,
+              "raw_value": 14.46,
+              "sheet": "体积指标",
+              "row": 623,
+              "cell": "Q623",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 12.99,
+              "raw_value": 12.99,
+              "sheet": "体积指标",
+              "row": 624,
+              "cell": "Q624",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            12.99,
+            15.79
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 620,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 621,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 622,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 623,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 624,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 14.569999999999999,
+          "unit": "kN",
+          "id": "mix_7a55a307568e18697636:stability"
+        },
+        "flow": {
+          "raw_labels": [
+            {
+              "value": 1.86,
+              "raw_value": 1.86,
+              "sheet": "体积指标",
+              "row": 620,
+              "cell": "R620",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 2.15,
+              "raw_value": 2.15,
+              "sheet": "体积指标",
+              "row": 621,
+              "cell": "R621",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 1.88,
+              "raw_value": 1.88,
+              "sheet": "体积指标",
+              "row": 622,
+              "cell": "R622",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 2.27,
+              "raw_value": 2.27,
+              "sheet": "体积指标",
+              "row": 623,
+              "cell": "R623",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 1.45,
+              "raw_value": 1.45,
+              "sheet": "体积指标",
+              "row": 624,
+              "cell": "R624",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            1.45,
+            2.27
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 620,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 621,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 622,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 623,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 624,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 1.922,
+          "unit": "mm",
+          "id": "mix_7a55a307568e18697636:flow"
+        },
+        "VV": {
+          "raw_labels": [
+            {
+              "value": 3.694392166047067,
+              "raw_value": 3.694392166047067,
+              "sheet": "体积指标",
+              "row": 620,
+              "cell": "U620",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 3.3978635168227855,
+              "raw_value": 3.3978635168227855,
+              "sheet": "体积指标",
+              "row": 621,
+              "cell": "U621",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 3.933719326029561,
+              "raw_value": 3.933719326029561,
+              "sheet": "体积指标",
+              "row": 622,
+              "cell": "U622",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 3.628970412839505,
+              "raw_value": 3.628970412839505,
+              "sheet": "体积指标",
+              "row": 623,
+              "cell": "U623",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 4.210539042243589,
+              "raw_value": 4.210539042243589,
+              "sheet": "体积指标",
+              "row": 624,
+              "cell": "U624",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            3.3978635168227855,
+            4.210539042243589
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 620,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 621,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 622,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 623,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 624,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 3.7730968927965014,
+          "unit": "%",
+          "id": "mix_7a55a307568e18697636:VV"
+        },
+        "VMA": {
+          "raw_labels": [
+            {
+              "value": 10.812983262673797,
+              "raw_value": 10.812983262673797,
+              "sheet": "体积指标",
+              "row": 620,
+              "cell": "V620",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 10.538373027649257,
+              "raw_value": 10.538373027649257,
+              "sheet": "体积指标",
+              "row": 621,
+              "cell": "V621",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 11.034620152810632,
+              "raw_value": 11.034620152810632,
+              "sheet": "体积指标",
+              "row": 622,
+              "cell": "V622",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 10.752397268467007,
+              "raw_value": 10.752397268467007,
+              "sheet": "体积指标",
+              "row": 623,
+              "cell": "V623",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 11.290978273780809,
+              "raw_value": 11.290978273780809,
+              "sheet": "体积指标",
+              "row": 624,
+              "cell": "V624",
+              "transform": "identity",
+              "specimen": "试件5"
+            }
+          ],
+          "range": [
+            10.538373027649257,
+            11.290978273780809
+          ],
+          "n_recorded": 5,
+          "n_independent_assumed": 5,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "体积指标",
+              "row": 620,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 621,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 622,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 623,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "体积指标",
+              "row": 624,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 10.8858703970763,
+          "unit": "%",
+          "id": "mix_7a55a307568e18697636:VMA"
+        },
+        "residual": {
+          "raw_labels": [
+            {
+              "value": 90.94357515410148,
+              "raw_value": 90.94357515410148,
+              "sheet": "浸水马歇尔",
+              "row": 389,
+              "cell": "Q389",
+              "transform": "identity",
+              "specimen": "试件1"
+            }
+          ],
+          "range": [
+            90.94357515410148,
+            90.94357515410148
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "浸水马歇尔",
+              "row": 389,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 390,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 391,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 392,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "浸水马歇尔",
+              "row": 393,
+              "specimen": "试件5"
+            }
+          ],
+          "value": 90.94357515410148,
+          "unit": "%",
+          "id": "mix_7a55a307568e18697636:residual"
+        },
+        "TSR": {
+          "raw_labels": [
+            {
+              "value": 89.45330053981392,
+              "raw_value": 0.8945330053981392,
+              "sheet": "冻融劈裂",
+              "row": 501,
+              "cell": "U501",
+              "transform": "fraction_to_percent_x100",
+              "specimen": "试件1(冻)"
+            }
+          ],
+          "range": [
+            89.45330053981392,
+            89.45330053981392
+          ],
+          "n_recorded": 1,
+          "n_independent_assumed": null,
+          "suspected_derived_mean": false,
+          "aggregation": "stored_group_ratio",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "冻融劈裂",
+              "row": 501,
+              "specimen": "试件1(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 502,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 503,
+              "specimen": "试件3(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 504,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 505,
+              "specimen": "试件5(冻)"
+            },
+            {
+              "sheet": "冻融劈裂",
+              "row": 506,
+              "specimen": "试件6"
+            }
+          ],
+          "value": 89.45330053981392,
+          "unit": "%",
+          "id": "mix_7a55a307568e18697636:TSR"
+        },
+        "DS": {
+          "raw_labels": [
+            {
+              "value": 5176.0,
+              "raw_value": 5176,
+              "sheet": "高温车辙",
+              "row": 146,
+              "cell": "K146",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 5875.0,
+              "raw_value": 5875,
+              "sheet": "高温车辙",
+              "row": 147,
+              "cell": "K147",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 5525.5,
+              "raw_value": 5525.5,
+              "sheet": "高温车辙",
+              "row": 148,
+              "cell": "K148",
+              "transform": "identity",
+              "specimen": "试件3",
+              "suspected_derived_mean": true
+            }
+          ],
+          "range": [
+            5176.0,
+            5875.0
+          ],
+          "n_recorded": 3,
+          "n_independent_assumed": 2,
+          "suspected_derived_mean": true,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "高温车辙",
+              "row": 146,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "高温车辙",
+              "row": 147,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "高温车辙",
+              "row": 148,
+              "specimen": "试件3"
+            }
+          ],
+          "value": 5525.5,
+          "unit": "次/mm",
+          "id": "mix_7a55a307568e18697636:DS"
+        },
+        "strain": {
+          "raw_labels": [
+            {
+              "value": 1888.0,
+              "raw_value": 1888,
+              "sheet": "低温弯曲",
+              "row": 288,
+              "cell": "H288",
+              "transform": "identity",
+              "specimen": "试件1"
+            },
+            {
+              "value": 2587.0,
+              "raw_value": 2587,
+              "sheet": "低温弯曲",
+              "row": 289,
+              "cell": "H289",
+              "transform": "identity",
+              "specimen": "试件2"
+            },
+            {
+              "value": 2478.0,
+              "raw_value": 2478,
+              "sheet": "低温弯曲",
+              "row": 290,
+              "cell": "H290",
+              "transform": "identity",
+              "specimen": "试件3"
+            },
+            {
+              "value": 2089.0,
+              "raw_value": 2089,
+              "sheet": "低温弯曲",
+              "row": 291,
+              "cell": "H291",
+              "transform": "identity",
+              "specimen": "试件4"
+            },
+            {
+              "value": 2470.0,
+              "raw_value": 2470,
+              "sheet": "低温弯曲",
+              "row": 292,
+              "cell": "H292",
+              "transform": "identity",
+              "specimen": "试件5"
+            },
+            {
+              "value": 2791.0,
+              "raw_value": 2791,
+              "sheet": "低温弯曲",
+              "row": 293,
+              "cell": "H293",
+              "transform": "identity",
+              "specimen": "试件6"
+            }
+          ],
+          "range": [
+            1888.0,
+            2791.0
+          ],
+          "n_recorded": 6,
+          "n_independent_assumed": 6,
+          "suspected_derived_mean": false,
+          "aggregation": "mean_of_records",
+          "conditions_status": "unverified",
+          "source_kind": "official_workbook",
+          "paired_group_rows": [
+            {
+              "sheet": "低温弯曲",
+              "row": 288,
+              "specimen": "试件1"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 289,
+              "specimen": "试件2"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 290,
+              "specimen": "试件3"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 291,
+              "specimen": "试件4"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 292,
+              "specimen": "试件5"
+            },
+            {
+              "sheet": "低温弯曲",
+              "row": 293,
+              "specimen": "试件6"
+            }
+          ],
+          "value": 2383.8333333333335,
+          "unit": "με",
+          "id": "mix_7a55a307568e18697636:strain"
+        }
+      },
+      "display_id": "R7",
+      "binder_content_pct": 4.580152671755726,
+      "release_status": "awaiting_engineer_review_and_testing",
+      "status": "excluded",
+      "passes_targets": false,
+      "failed_metrics": [
+        "DS",
+        "strain",
+        "TSR"
+      ],
+      "missing_metrics": [],
+      "checks": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 5525.5,
+          "unit": "次/mm",
+          "passes": false
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 2383.8333333333335,
+          "unit": "με",
+          "passes": false
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 89.45330053981392,
+          "unit": "%",
+          "passes": false
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 90.0,
+          "upper": null,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null,
+          "actual": 90.94357515410148,
+          "unit": "%",
+          "passes": true
+        }
+      ],
+      "evidence_state": "historical_screening",
+      "applicability_notes": [
+        "试验条件与工程场景适用性待复核",
+        "名义RAP比例的计量基准待确认"
+      ]
+    }
+  ],
+  "recommended_for_review": [],
+  "summary": {
+    "total": 4,
+    "needs_review": 0,
+    "needs_test": 0,
+    "excluded": 4
+  },
+  "empty_reason": "当前候选没有同时满足全部目标的历史依据；请补充试验或显式调整目标后重新计算。",
+  "next_tests": [
+    {
+      "recipe_id": "mix_5a0eae6db3cb0a2f9a1f",
+      "metric": "DS",
+      "reason": "历史记录与目标冲突，先核对记录及项目要求；复测不保证达标",
+      "priority": 2
+    },
+    {
+      "recipe_id": "mix_7a55a307568e18697636",
+      "metric": "DS",
+      "reason": "历史记录与目标冲突，先核对记录及项目要求；复测不保证达标",
+      "priority": 2
+    },
+    {
+      "recipe_id": "mix_8adbae42f826e07e8611",
+      "metric": "strain",
+      "reason": "历史记录与目标冲突，先核对记录及项目要求；复测不保证达标",
+      "priority": 2
+    },
+    {
+      "recipe_id": "mix_ec30ff644f3111c570bc",
+      "metric": "DS",
+      "reason": "历史记录与目标冲突，先核对记录及项目要求；复测不保证达标",
+      "priority": 2
+    }
+  ],
+  "versions": {
+    "app": "0.1.0",
+    "rule": "thresholds-1.0.0",
+    "dataset_id": "ds_d916d61767ca55d21bd7",
+    "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "dataset_revision": 0,
+    "importer": "1.1.1"
+  },
+  "limitations": [
+    "历史记录初筛结果需要工程师审核与场景试验；不代表工程验收。",
+    "无价格、碳因子与路面寿命实测数据，不能据此计算成本、减碳量或寿命。"
+  ],
+  "snapshot_sha256": "09f52b9914d892e4d0c06bbd2037532bdd1e0bd436d89d7401bd63275a7b595e",
+  "id": "rec_7d2b8167a73c43cc96abad97f1fad383",
+  "created_at": "2026-10-18T14:56:19.340839+00:00"
+}

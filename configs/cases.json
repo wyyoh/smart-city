@@ -1,0 +1,170 @@
+{
+  "candidates": [
+    {
+      "id": "R1",
+      "source": "S",
+      "gradation": "AC-13",
+      "product": "70#",
+      "oil_stone_ratio_pct": 5.5
+    },
+    {
+      "id": "R2",
+      "source": "S",
+      "gradation": "AC-13",
+      "product": "110#-1",
+      "oil_stone_ratio_pct": 5.5
+    },
+    {
+      "id": "R3",
+      "source": "S",
+      "gradation": "AC-13",
+      "product": "110#-2",
+      "oil_stone_ratio_pct": 5.5
+    },
+    {
+      "id": "R4",
+      "source": "M-1",
+      "gradation": "AC-13-3",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.9
+    },
+    {
+      "id": "R5",
+      "source": "1B",
+      "gradation": "AC-13-3",
+      "product": "AC-13-3(130#)",
+      "oil_stone_ratio_pct": 4.8
+    },
+    {
+      "id": "R6",
+      "source": "1L",
+      "gradation": "AC-13-1",
+      "product": "AC-13-1(90#)",
+      "oil_stone_ratio_pct": 4.8
+    },
+    {
+      "id": "R7",
+      "source": "1L",
+      "gradation": "AC-13-2",
+      "product": "AC-13-2(110#)",
+      "oil_stone_ratio_pct": 4.8
+    },
+    {
+      "id": "R8",
+      "source": "1N",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8
+    },
+    {
+      "id": "R9",
+      "source": "1N",
+      "gradation": "AC-13",
+      "product": "AC-13(70#)",
+      "oil_stone_ratio_pct": 4.8
+    }
+  ],
+  "cases": [
+    {
+      "id": "C1",
+      "title": "高温重载车辙处治",
+      "family": "高温车辙",
+      "candidate_ids": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "targets": {
+        "DS": 8000,
+        "strain": 2000,
+        "TSR": 75,
+        "residual": 85
+      },
+      "rap_min_pct": 0,
+      "priority": "DS",
+      "baseline_priority": "DS",
+      "provenance": "构造场景。DS>8000为团队演示目标，其余性能阈值来自工作簿设计流程。"
+    },
+    {
+      "id": "C2",
+      "title": "寒冷地区温缩裂缝处治",
+      "family": "低温开裂",
+      "candidate_ids": [
+        "R1",
+        "R4"
+      ],
+      "targets": {
+        "DS": 800,
+        "strain": 2500,
+        "TSR": 75,
+        "residual": 85
+      },
+      "rap_min_pct": 0,
+      "priority": "strain",
+      "baseline_priority": "DS",
+      "provenance": "构造场景。应变>2500为团队演示目标，不代表某气候区统一验收值。"
+    },
+    {
+      "id": "C3",
+      "title": "水损害路段修复",
+      "family": "水损害",
+      "candidate_ids": [
+        "R6",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "targets": {
+        "DS": 800,
+        "strain": 2000,
+        "TSR": 85,
+        "residual": 90
+      },
+      "rap_min_pct": 0,
+      "priority": "TSR",
+      "baseline_priority": "residual",
+      "provenance": "构造场景。TSR>85、残留稳定度>90为团队演示目标。"
+    },
+    {
+      "id": "C4",
+      "title": "高RAP再生材料选型",
+      "family": "高温车辙",
+      "candidate_ids": [
+        "R1",
+        "R5",
+        "R7"
+      ],
+      "targets": {
+        "DS": 6000,
+        "strain": 2200,
+        "TSR": 85,
+        "residual": 85
+      },
+      "rap_min_pct": 70,
+      "priority": "DS",
+      "baseline_priority": "DS",
+      "provenance": "构造场景。名义RAP比例至少70%，其余为团队演示目标或设计流程参考值。"
+    },
+    {
+      "id": "C5",
+      "title": "高低温与水稳定复合约束",
+      "family": "复合需求",
+      "candidate_ids": [
+        "R1",
+        "R4",
+        "R5",
+        "R7"
+      ],
+      "targets": {
+        "DS": 8000,
+        "strain": 2500,
+        "TSR": 90,
+        "residual": 90
+      },
+      "rap_min_pct": 0,
+      "priority": "DS",
+      "baseline_priority": "DS",
+      "provenance": "构造场景。所有高要求为团队演示目标，用于展示候选为空的处理。"
+    }
+  ]
+}

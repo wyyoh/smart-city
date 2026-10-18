@@ -1,0 +1,32 @@
+{
+  "title": "数智选材赛题分析与作品详细设计",
+  "date": "2026-10-18",
+  "page_id": "page_b3e90ae7e0a88191967a4234479f66dd",
+  "page_url": "https://chatgpt.com/space/page_b3e90ae7e0a88191967a4234479f66dd",
+  "source_workbook_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "document": "数智选材_赛题分析与作品详细设计_v1.md",
+  "sections": 17,
+  "checks": {
+    "source_workbook_unchanged": true,
+    "page_text_matches_local": true,
+    "historical_candidates": 9,
+    "constructed_cases": 5,
+    "rule_replay": true,
+    "strict_threshold_and_missing_checks": true,
+    "browser_case_switching": true,
+    "browser_source_disclosure": true,
+    "viewport_widths_checked": [
+      736,
+      360
+    ],
+    "model_training": false,
+    "new_material_experiments": false
+  },
+  "development_plan": {
+    "page_id": "page_63d84be9da7c819198d9925fc10b5729",
+    "page_url": "https://chatgpt.com/space/page_63d84be9da7c819198d9925fc10b5729",
+    "developers": 1,
+    "weeks": 6,
+    "schedule_section_synchronized": true
+  }
+}

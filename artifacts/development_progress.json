@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-10-18T15:02:14.902463+00:00",
+  "tasks": {
+    "completed": 37,
+    "prepared_awaiting_external": 1,
+    "skipped_condition": 1
+  },
+  "p0_completed": 34,
+  "p0_total": 34,
+  "entrypoint": "http://127.0.0.1:8766/",
+  "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "model_status": "research_only_no_stable_selection_improvement",
+  "package_verified": true,
+  "external_validation": "awaiting_external_evidence"
+}

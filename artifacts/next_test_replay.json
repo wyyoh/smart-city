@@ -1,0 +1,556 @@
+{
+  "scope": "五个构造场景的固定历史池；先隐藏一个指标，按真实原表标签逐次揭示。",
+  "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "results": [
+    {
+      "case_id": "C1",
+      "hidden_metric": "DS",
+      "visible_pool": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "policies": {
+        "id_order": {
+          "queries": [
+            {
+              "recipe": "R1",
+              "revealed_actual": 9327.303846153834,
+              "metric": "DS",
+              "references": [
+                {
+                  "value": 9692.30769230767,
+                  "raw_value": 9692.30769230767,
+                  "sheet": "高温车辙",
+                  "row": 74,
+                  "cell": "K74",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 8962.3,
+                  "raw_value": 8962.3,
+                  "sheet": "高温车辙",
+                  "row": 75,
+                  "cell": "K75",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 1,
+          "found": "R1"
+        },
+        "visible_bottleneck_first": {
+          "queries": [
+            {
+              "recipe": "R2",
+              "revealed_actual": 7538.46153846153,
+              "metric": "DS",
+              "references": [
+                {
+                  "value": 8076.92307692307,
+                  "raw_value": 8076.92307692307,
+                  "sheet": "高温车辙",
+                  "row": 76,
+                  "cell": "K76",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 6999.99999999999,
+                  "raw_value": 6999.99999999999,
+                  "sheet": "高温车辙",
+                  "row": 77,
+                  "cell": "K77",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                }
+              ],
+              "meets_focus_target": false
+            },
+            {
+              "recipe": "R3",
+              "revealed_actual": 7240.9090909090955,
+              "metric": "DS",
+              "references": [
+                {
+                  "value": 8181.81818181819,
+                  "raw_value": 8181.81818181819,
+                  "sheet": "高温车辙",
+                  "row": 78,
+                  "cell": "K78",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 6300.0,
+                  "raw_value": 6300,
+                  "sheet": "高温车辙",
+                  "row": 79,
+                  "cell": "K79",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                }
+              ],
+              "meets_focus_target": false
+            },
+            {
+              "recipe": "R1",
+              "revealed_actual": 9327.303846153834,
+              "metric": "DS",
+              "references": [
+                {
+                  "value": 9692.30769230767,
+                  "raw_value": 9692.30769230767,
+                  "sheet": "高温车辙",
+                  "row": 74,
+                  "cell": "K74",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 8962.3,
+                  "raw_value": 8962.3,
+                  "sheet": "高温车辙",
+                  "row": 75,
+                  "cell": "K75",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 3,
+          "found": "R1"
+        }
+      }
+    },
+    {
+      "case_id": "C2",
+      "hidden_metric": "strain",
+      "visible_pool": [
+        "R1",
+        "R4"
+      ],
+      "policies": {
+        "id_order": {
+          "queries": [
+            {
+              "recipe": "R1",
+              "revealed_actual": 2064.2,
+              "metric": "strain",
+              "references": [
+                {
+                  "value": 1942.0,
+                  "raw_value": 1942,
+                  "sheet": "低温弯曲",
+                  "row": 128,
+                  "cell": "H128",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 2201.0,
+                  "raw_value": 2201,
+                  "sheet": "低温弯曲",
+                  "row": 129,
+                  "cell": "H129",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                },
+                {
+                  "value": 2336.0,
+                  "raw_value": 2336,
+                  "sheet": "低温弯曲",
+                  "row": 130,
+                  "cell": "H130",
+                  "transform": "identity",
+                  "specimen": "试件3"
+                },
+                {
+                  "value": 1821.0,
+                  "raw_value": 1821,
+                  "sheet": "低温弯曲",
+                  "row": 131,
+                  "cell": "H131",
+                  "transform": "identity",
+                  "specimen": "试件4"
+                },
+                {
+                  "value": 2021.0,
+                  "raw_value": 2021,
+                  "sheet": "低温弯曲",
+                  "row": 132,
+                  "cell": "H132",
+                  "transform": "identity",
+                  "specimen": "试件5"
+                }
+              ],
+              "meets_focus_target": false
+            },
+            {
+              "recipe": "R4",
+              "revealed_actual": 2525.0,
+              "metric": "strain",
+              "references": [
+                {
+                  "value": 2678.0,
+                  "raw_value": 2678,
+                  "sheet": "低温弯曲",
+                  "row": 110,
+                  "cell": "H110",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 2478.0,
+                  "raw_value": 2478,
+                  "sheet": "低温弯曲",
+                  "row": 111,
+                  "cell": "H111",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                },
+                {
+                  "value": 2517.0,
+                  "raw_value": 2517,
+                  "sheet": "低温弯曲",
+                  "row": 112,
+                  "cell": "H112",
+                  "transform": "identity",
+                  "specimen": "试件3"
+                },
+                {
+                  "value": 2380.0,
+                  "raw_value": 2380,
+                  "sheet": "低温弯曲",
+                  "row": 113,
+                  "cell": "H113",
+                  "transform": "identity",
+                  "specimen": "试件4"
+                },
+                {
+                  "value": 2643.0,
+                  "raw_value": 2643,
+                  "sheet": "低温弯曲",
+                  "row": 114,
+                  "cell": "H114",
+                  "transform": "identity",
+                  "specimen": "试件5"
+                },
+                {
+                  "value": 2454.0,
+                  "raw_value": 2454,
+                  "sheet": "低温弯曲",
+                  "row": 115,
+                  "cell": "H115",
+                  "transform": "identity",
+                  "specimen": "试件6"
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 2,
+          "found": "R4"
+        },
+        "visible_bottleneck_first": {
+          "queries": [
+            {
+              "recipe": "R1",
+              "revealed_actual": 2064.2,
+              "metric": "strain",
+              "references": [
+                {
+                  "value": 1942.0,
+                  "raw_value": 1942,
+                  "sheet": "低温弯曲",
+                  "row": 128,
+                  "cell": "H128",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 2201.0,
+                  "raw_value": 2201,
+                  "sheet": "低温弯曲",
+                  "row": 129,
+                  "cell": "H129",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                },
+                {
+                  "value": 2336.0,
+                  "raw_value": 2336,
+                  "sheet": "低温弯曲",
+                  "row": 130,
+                  "cell": "H130",
+                  "transform": "identity",
+                  "specimen": "试件3"
+                },
+                {
+                  "value": 1821.0,
+                  "raw_value": 1821,
+                  "sheet": "低温弯曲",
+                  "row": 131,
+                  "cell": "H131",
+                  "transform": "identity",
+                  "specimen": "试件4"
+                },
+                {
+                  "value": 2021.0,
+                  "raw_value": 2021,
+                  "sheet": "低温弯曲",
+                  "row": 132,
+                  "cell": "H132",
+                  "transform": "identity",
+                  "specimen": "试件5"
+                }
+              ],
+              "meets_focus_target": false
+            },
+            {
+              "recipe": "R4",
+              "revealed_actual": 2525.0,
+              "metric": "strain",
+              "references": [
+                {
+                  "value": 2678.0,
+                  "raw_value": 2678,
+                  "sheet": "低温弯曲",
+                  "row": 110,
+                  "cell": "H110",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 2478.0,
+                  "raw_value": 2478,
+                  "sheet": "低温弯曲",
+                  "row": 111,
+                  "cell": "H111",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                },
+                {
+                  "value": 2517.0,
+                  "raw_value": 2517,
+                  "sheet": "低温弯曲",
+                  "row": 112,
+                  "cell": "H112",
+                  "transform": "identity",
+                  "specimen": "试件3"
+                },
+                {
+                  "value": 2380.0,
+                  "raw_value": 2380,
+                  "sheet": "低温弯曲",
+                  "row": 113,
+                  "cell": "H113",
+                  "transform": "identity",
+                  "specimen": "试件4"
+                },
+                {
+                  "value": 2643.0,
+                  "raw_value": 2643,
+                  "sheet": "低温弯曲",
+                  "row": 114,
+                  "cell": "H114",
+                  "transform": "identity",
+                  "specimen": "试件5"
+                },
+                {
+                  "value": 2454.0,
+                  "raw_value": 2454,
+                  "sheet": "低温弯曲",
+                  "row": 115,
+                  "cell": "H115",
+                  "transform": "identity",
+                  "specimen": "试件6"
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 2,
+          "found": "R4"
+        }
+      }
+    },
+    {
+      "case_id": "C3",
+      "hidden_metric": "TSR",
+      "visible_pool": [
+        "R7",
+        "R9"
+      ],
+      "policies": {
+        "id_order": {
+          "queries": [
+            {
+              "recipe": "R7",
+              "revealed_actual": 89.45330053981392,
+              "metric": "TSR",
+              "references": [
+                {
+                  "value": 89.45330053981392,
+                  "raw_value": 0.8945330053981392,
+                  "sheet": "冻融劈裂",
+                  "row": 501,
+                  "cell": "U501",
+                  "transform": "fraction_to_percent_x100",
+                  "specimen": "试件1(冻)"
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 1,
+          "found": "R7"
+        },
+        "visible_bottleneck_first": {
+          "queries": [
+            {
+              "recipe": "R7",
+              "revealed_actual": 89.45330053981392,
+              "metric": "TSR",
+              "references": [
+                {
+                  "value": 89.45330053981392,
+                  "raw_value": 0.8945330053981392,
+                  "sheet": "冻融劈裂",
+                  "row": 501,
+                  "cell": "U501",
+                  "transform": "fraction_to_percent_x100",
+                  "specimen": "试件1(冻)"
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 1,
+          "found": "R7"
+        }
+      }
+    },
+    {
+      "case_id": "C4",
+      "hidden_metric": "DS",
+      "visible_pool": [
+        "R5"
+      ],
+      "policies": {
+        "id_order": {
+          "queries": [
+            {
+              "recipe": "R5",
+              "revealed_actual": 6260.0,
+              "metric": "DS",
+              "references": [
+                {
+                  "value": 6045.0,
+                  "raw_value": 6045,
+                  "sheet": "高温车辙",
+                  "row": 105,
+                  "cell": "K105",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 6475.0,
+                  "raw_value": 6475,
+                  "sheet": "高温车辙",
+                  "row": 106,
+                  "cell": "K106",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                },
+                {
+                  "value": 6260.0,
+                  "raw_value": 6260,
+                  "sheet": "高温车辙",
+                  "row": 107,
+                  "cell": "K107",
+                  "transform": "identity",
+                  "specimen": "试件3",
+                  "suspected_derived_mean": true
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 1,
+          "found": "R5"
+        },
+        "visible_bottleneck_first": {
+          "queries": [
+            {
+              "recipe": "R5",
+              "revealed_actual": 6260.0,
+              "metric": "DS",
+              "references": [
+                {
+                  "value": 6045.0,
+                  "raw_value": 6045,
+                  "sheet": "高温车辙",
+                  "row": 105,
+                  "cell": "K105",
+                  "transform": "identity",
+                  "specimen": "试件1"
+                },
+                {
+                  "value": 6475.0,
+                  "raw_value": 6475,
+                  "sheet": "高温车辙",
+                  "row": 106,
+                  "cell": "K106",
+                  "transform": "identity",
+                  "specimen": "试件2"
+                },
+                {
+                  "value": 6260.0,
+                  "raw_value": 6260,
+                  "sheet": "高温车辙",
+                  "row": 107,
+                  "cell": "K107",
+                  "transform": "identity",
+                  "specimen": "试件3",
+                  "suspected_derived_mean": true
+                }
+              ],
+              "meets_focus_target": true
+            }
+          ],
+          "query_count": 1,
+          "found": "R5"
+        }
+      }
+    },
+    {
+      "case_id": "C5",
+      "hidden_metric": "DS",
+      "visible_pool": [],
+      "policies": {
+        "id_order": {
+          "queries": [],
+          "query_count": 0,
+          "found": null
+        },
+        "visible_bottleneck_first": {
+          "queries": [],
+          "query_count": 0,
+          "found": null
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "样例小且经选择，不能证明试验效率的总体提升。",
+    "无真实试验成本，仅比较查询次数。",
+    "选择排序只读已揭示的其他指标，隐藏指标不进入排序。"
+  ]
+}

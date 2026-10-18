@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "directory": "C:\\Users\\Lenovo\\Desktop\\智慧城市\\artifacts\\release\\asphalt-workbench-0.1.0-20261018T150215",
+  "manifest_files_verified": 120,
+  "checks": [
+    "all packaged file hashes",
+    "relocated application root",
+    "bundled frontend",
+    "C3 returns R7",
+    "bundled model prediction",
+    "saved reports"
+  ],
+  "environment": "同一机器的已安装Python依赖；从另一目录启动，不是全新操作系统验收"
+}

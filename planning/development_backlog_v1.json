@@ -1,0 +1,1318 @@
+{
+  "schema_version": "1.0",
+  "project": "数智选材",
+  "planning_date": "2026-10-18",
+  "source_design_page": "https://chatgpt.com/space/page_b3e90ae7e0a88191967a4234479f66dd",
+  "confirmed_constraints": {
+    "developers": 1,
+    "weeks": 6,
+    "submission_deadline": null
+  },
+  "capacity_assumptions": {
+    "working_days_per_week": 5,
+    "effective_hours_per_day": 6,
+    "total_hours": 180,
+    "planned_hours": 150,
+    "buffer_hours": 30
+  },
+  "week_capacity": {
+    "1": {
+      "planned_hours": 26,
+      "buffer_hours": 4,
+      "capacity_hours": 30
+    },
+    "2": {
+      "planned_hours": 26,
+      "buffer_hours": 4,
+      "capacity_hours": 30
+    },
+    "3": {
+      "planned_hours": 26,
+      "buffer_hours": 4,
+      "capacity_hours": 30
+    },
+    "4": {
+      "planned_hours": 26,
+      "buffer_hours": 4,
+      "capacity_hours": 30
+    },
+    "5": {
+      "planned_hours": 26,
+      "buffer_hours": 4,
+      "capacity_hours": 30
+    },
+    "6": {
+      "planned_hours": 20,
+      "buffer_hours": 10,
+      "capacity_hours": 30
+    }
+  },
+  "priority_hours": {
+    "P0": 128,
+    "P1": 19,
+    "P2": 3
+  },
+  "milestones": [
+    {
+      "id": "M1",
+      "week": 1,
+      "title": "数据与契约可重建",
+      "gate_tasks": [
+        "DAT-04",
+        "TST-01",
+        "BIZ-01"
+      ]
+    },
+    {
+      "id": "M2",
+      "week": 2,
+      "title": "场景到推荐已打通",
+      "gate_tasks": [
+        "TST-02"
+      ]
+    },
+    {
+      "id": "M3",
+      "week": 3,
+      "title": "可比较可反馈可导出的核心版本",
+      "gate_tasks": [
+        "TST-03",
+        "DEM-01"
+      ]
+    },
+    {
+      "id": "M4",
+      "week": 4,
+      "title": "模型基准与能力边界可核验",
+      "gate_tasks": [
+        "ML-05",
+        "TST-04"
+      ]
+    },
+    {
+      "id": "M5",
+      "week": 5,
+      "title": "依据状态稳定并冻结增强范围",
+      "gate_tasks": [
+        "UQ-02",
+        "TST-05"
+      ]
+    },
+    {
+      "id": "M6",
+      "week": 6,
+      "title": "可复现的参赛交付",
+      "gate_tasks": [
+        "REL-01"
+      ]
+    }
+  ],
+  "scheduling_policy": "单一开发者；周内先满足依赖，每天不超过6小时有效任务，最多一个主动开发任务。外部等待不计作开发工时。",
+  "scope_policy": "P0核心必须验收；P1和P2为有进入条件的增强，可跳过并保留原因；P0不硬依赖增强。",
+  "tasks": [
+    {
+      "id": "ENG-01",
+      "week": 1,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "建立可运行工程和依赖锁定",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [],
+      "optional_inputs": [],
+      "artifacts": [
+        "Python项目与React应用骨架",
+        "依赖锁文件",
+        "本地健康检查"
+      ],
+      "acceptance": [
+        "独立项目环境能够启动健康检查和空白工作台",
+        "记录Python、Node和依赖版本，原始资料不被改写"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "pyproject.toml",
+        "requirements.lock.txt",
+        "frontend/pnpm-lock.yaml",
+        "backend/app/main.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "DAT-01",
+      "week": 1,
+      "estimate_hours": 3,
+      "priority": "P0",
+      "title": "冻结数据字典与单位身份契约",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ENG-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "字段字典",
+        "枚举和数据版本规则"
+      ],
+      "acceptance": [
+        "区分原值、标准值、参考值和派生值",
+        "约定来源、完整级配、局部产品、油石比、试验组和来源单元格"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "docs/data-contracts.json",
+        "backend/app/domain/contracts.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "DAT-02",
+      "week": 1,
+      "estimate_hours": 6,
+      "priority": "P0",
+      "title": "将原始工作簿解析固化为导入器",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "显式输入路径的导入命令",
+        "工作表布局配置",
+        "导入结果清单"
+      ],
+      "acceptance": [
+        "重现当前文件的9表、68级配块和2052明细基线，定义一致",
+        "仅在真实合并区域展开身份，保留原单元格、公式和文件哈希",
+        "重复导入同一文件不产生重复记录"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/importer.py",
+        "artifacts/import-result.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "DAT-03",
+      "week": 1,
+      "estimate_hours": 5,
+      "priority": "P0",
+      "title": "建立身份关联与字段质量隔离",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-02"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "关联状态表",
+        "质量问题清单",
+        "可用标签与特征清单"
+      ],
+      "acceptance": [
+        "保留exact、confirmed_alias、conditional、unresolved关联状态",
+        "疑似均值、曲线差异、用油异常不自动修正",
+        "可靠性能与不可靠输入按字段处理，分别统计可用覆盖"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/importer.py",
+        "docs/enterprise-questions.md"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "DAT-04",
+      "week": 1,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "建立SQLite存储和版本化候选目录",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-03"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "数据库模型与建库脚本",
+        "目录查询",
+        "数据快照"
+      ],
+      "acceptance": [
+        "记录原始观察、候选版本、规则版本和证据来源",
+        "完整关联候选与部分观测候选分开保存",
+        "重启后数据仍可查询，同一快照可重建"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/storage.py",
+        "backend/app/services.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "TST-01",
+      "week": 1,
+      "estimate_hours": 2,
+      "priority": "P0",
+      "title": "验证导入和数据转换边界",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-04"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "导入回归与异常样例",
+        "首轮核验记录"
+      ],
+      "acceptance": [
+        "TSR小数转百分数仅转换一次，零值与缺测可区分",
+        "合并单元格、错误公式、重复导入和未关联记录有明确处理"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "tests/test_core.py",
+        "artifacts/tests.xml"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "BIZ-01",
+      "week": 1,
+      "estimate_hours": 2,
+      "priority": "P0",
+      "title": "形成企业数据核验单与响应登记",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-03"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "问题定位与影响说明",
+        "回应和待确认事项登记"
+      ],
+      "acceptance": [
+        "定位配方别名、疑似均值、曲线与用油问题",
+        "未获得回应时明确保留状态及受影响功能，不阻塞基础流程"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "docs/enterprise-questions.md"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "RUL-01",
+      "week": 2,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "建立三类场景与规则卡",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-01",
+        "DAT-04"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "高温、温缩、水损害场景模式",
+        "规则JSON和适用条件"
+      ],
+      "acceptance": [
+        "企业流程参考、项目目标、演示假设分别标注",
+        "规则保存出处、单位、运算符、方法和条件，不将构造值标成规范值"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/services.py",
+        "configs/cases.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "CAL-01",
+      "week": 2,
+      "estimate_hours": 3,
+      "priority": "P0",
+      "title": "实现组成与用油一致性计算",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-04"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "比例、级配、油量计算模块",
+        "可计算与待确认状态"
+      ],
+      "acceptance": [
+        "在确认的质量基准下检验比例和、加权曲线与油石比转换",
+        "质量口径或原料关联未知时返回待确认，不输出伪精确配方"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/domain/calculations.py",
+        "tests/test_core.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "RUL-02",
+      "week": 2,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "实现候选筛选与排除解释",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "RUL-01",
+        "CAL-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "规则推荐服务",
+        "逐指标判定与证据状态"
+      ],
+      "acceptance": [
+        "严格大于与至少等运算符按规则执行",
+        "缺测不视为通过，失败与缺测同时保留",
+        "先筛硬约束，再按偏好排序，不用综合分抵消失败"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/services.py",
+        "tests/test_core.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "API-01",
+      "week": 2,
+      "estimate_hours": 5,
+      "priority": "P0",
+      "title": "提供场景和推荐核心接口",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "RUL-02",
+        "DAT-04"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "场景解析、材料查询、推荐与详情API",
+        "OpenAPI与错误样例"
+      ],
+      "acceptance": [
+        "输出包含输入快照、方案和规则版本、每项数值来源",
+        "数据问题与系统异常可区分，空候选是有效结果",
+        "API成为判定的唯一计算来源"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/main.py",
+        "docs/api.openapi.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "WEB-01",
+      "week": 2,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "搭建工作台和场景确认流程",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "API-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "应用壳层",
+        "场景输入与目标确认"
+      ],
+      "acceptance": [
+        "能选择构造案例并修改结构化场景",
+        "缺失必填或规则冲突在提交前后均可见，不静默采用默认气候"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "artifacts/screenshots/mobile.jpg"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "WEB-02",
+      "week": 2,
+      "estimate_hours": 3,
+      "priority": "P0",
+      "title": "展示材料目录与基础依据",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "WEB-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "候选目录",
+        "产品和级配基础信息"
+      ],
+      "acceptance": [
+        "从正式API展示可关联目录，9候选仅作为固定样例集",
+        "局部产品、名义RAP口径和未确认字段可见"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "artifacts/screenshots/workbench.jpg"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "TST-02",
+      "week": 2,
+      "estimate_hours": 3,
+      "priority": "P0",
+      "title": "打通五案例的API和页面流程",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "WEB-02",
+        "API-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "场景到推荐的集成检查",
+        "第二周演示版本"
+      ],
+      "acceptance": [
+        "五场景的数值筛选结果与固定回放基线一致",
+        "C5正确返回空候选，确认状态不被解释成工程验收通过"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "tests/test_core.py",
+        "artifacts/acceptance/final-rehearsal-1/result.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "WEB-03",
+      "week": 3,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "完善多方案比较和空结果处理",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "TST-02"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "性能与目标差距比较",
+        "候选选择和排除视图"
+      ],
+      "acceptance": [
+        "切换场景会改变目标、候选和排除理由",
+        "缺测维度留空，未知成本和碳排不显示虚构数值"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "artifacts/screenshots/C5-full.jpg"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "WEB-04",
+      "week": 3,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "展开单元格证据和数据问题",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "WEB-03"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "来源详情面板",
+        "试验记录分布与质量说明"
+      ],
+      "acceptance": [
+        "能定位文件版本、表名、单元格及单位转换",
+        "记录极差不显示为预测区间，记录条数不等于独立批次数"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "backend/app/services.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "REC-01",
+      "week": 3,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "实现方案版本与人工微调",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "WEB-03",
+        "CAL-01",
+        "API-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "方案变体接口",
+        "输入差异与状态失效"
+      ],
+      "acceptance": [
+        "修改产品、比例或用油后生成新版本",
+        "旧方案实测结果不自动继承为新方案实测值",
+        "无法计算的修改给出具体待确认项"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/services.py",
+        "tests/test_core.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "OBS-01",
+      "week": 3,
+      "estimate_hours": 5,
+      "priority": "P0",
+      "title": "实现试验录入与审核回流",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-04",
+        "API-01",
+        "WEB-04"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "观察录入与审核接口",
+        "验证记录页面",
+        "幂等与更正版本"
+      ],
+      "acceptance": [
+        "保存试验组、条件、单位、数值和来源，未经审核不进入训练视图",
+        "重复提交不重复计数，更正保留旧记录",
+        "审核后可更新相应候选依据，合成演示记录与正式数据分开"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/services.py",
+        "artifacts/screenshots/observation-approved.jpg"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "OUT-01",
+      "week": 3,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "生成可追溯的推荐报告",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "WEB-04",
+        "REC-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "HTML报告",
+        "结构化JSON快照"
+      ],
+      "acceptance": [
+        "包含场景、目标出处、候选、未满足事项、证据与版本",
+        "保存报告不会改变审核状态，缺失指标和模型缺席保持原状"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/services.py",
+        "artifacts/acceptance/final-rehearsal-1/C3.html"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "TST-03",
+      "week": 3,
+      "estimate_hours": 3,
+      "priority": "P0",
+      "title": "验收核心业务闭环",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "REC-01",
+        "OBS-01",
+        "OUT-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "闭环端到端检查",
+        "第三周核心版本"
+      ],
+      "acceptance": [
+        "场景、推荐、比较、微调、录入、审核、报告全流程可演示",
+        "同一输入和版本能重放同一规则结果"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "scripts/rehearse.py",
+        "artifacts/acceptance/final-rehearsal-2/result.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "DEM-01",
+      "week": 3,
+      "estimate_hours": 2,
+      "priority": "P0",
+      "title": "整理五案例与首次演示脚本",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "TST-03"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "五案例说明与基准对照",
+        "3至5分钟操作路线"
+      ],
+      "acceptance": [
+        "至少覆盖三类养护需求，明确构造场景与历史记录身份",
+        "同时演示成功初筛、数据待确认和无可行候选"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "docs/demo-script.md",
+        "configs/cases.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "ML-01",
+      "week": 4,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "冻结按方案和材料族的评估划分",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DAT-03",
+        "DAT-04"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "两类划分清单",
+        "去泄漏核验",
+        "评价协议"
+      ],
+      "acceptance": [
+        "平行试件、疑似汇总和同方案不跨训练测试",
+        "材料族按完整证据确认，不以单一通用矿粉曲线合并所有来源",
+        "记录每指标实际有效组数，关联不明部分隔离"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/ml/features.py",
+        "artifacts/models/model_cards.json"
+      ],
+      "execution_note": "实验已执行；四项选择流程未优于均值MAE基线，保留研究模式。区间需组可交换性假设。"
+    },
+    {
+      "id": "ML-02",
+      "week": 4,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "构建设计前特征和标签视图",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-01",
+        "CAL-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "逐指标数据构建器",
+        "训练期变换流水线"
+      ],
+      "acceptance": [
+        "首轮预测只用设计前已知特征",
+        "填补、缩放与特征选择在允许训练部分拟合",
+        "不将未确认参考属性或生成标签当作实测数据"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/ml/features.py",
+        "tests/test_models.py"
+      ],
+      "execution_note": "实验已执行；四项选择流程未优于均值MAE基线，保留研究模式。区间需组可交换性假设。"
+    },
+    {
+      "id": "ML-03",
+      "week": 4,
+      "estimate_hours": 7,
+      "priority": "P0",
+      "title": "运行近邻与传统模型基准",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-02"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "均值、近邻、岭回归和随机森林对照",
+        "四指标逐组预测结果"
+      ],
+      "acceptance": [
+        "相同外层划分下报告MAE、RMSE、R²与阈值误判",
+        "调参仅在内层且设计算时间上限",
+        "数据不足或目标不满足建模条件时如实形成能力边界报告"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/ml/train.py",
+        "artifacts/models/model_cards.json"
+      ],
+      "execution_note": "实验已执行；四项选择流程未优于均值MAE基线，保留研究模式。区间需组可交换性假设。"
+    },
+    {
+      "id": "ML-04",
+      "week": 4,
+      "estimate_hours": 3,
+      "priority": "P1",
+      "title": "比较GPR小样本分支",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-03"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "固定配置的GPR对照",
+        "失败与数值稳定性记录"
+      ],
+      "acceptance": [
+        "使用同一输入、划分和评价口径",
+        "不把GPR后验标准差直接标为已校准工程置信度"
+      ],
+      "condition": "核心基准能重跑且剩余工时满足周预算",
+      "fallback": "保留已完成传统模型，记录未进入的分支",
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/ml/train.py",
+        "artifacts/models/model_cards.json"
+      ],
+      "execution_note": "实验已执行；四项选择流程未优于均值MAE基线，保留研究模式。区间需组可交换性假设。"
+    },
+    {
+      "id": "ML-05",
+      "week": 4,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "完成模型选择记录与模型卡",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-03"
+      ],
+      "optional_inputs": [
+        "ML-04"
+      ],
+      "artifacts": [
+        "逐指标评价报告",
+        "模型卡和版本清单"
+      ],
+      "acceptance": [
+        "区分训练内表现、外层预测与独立料源表现",
+        "采用预先声明的模型选择口径，不按演示案例挑模型",
+        "没有可靠改进的指标保留案例参考或研究模式"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "artifacts/models/model_cards.json",
+        "docs/release-notes.md"
+      ],
+      "execution_note": "实验已执行；四项选择流程未优于均值MAE基线，保留研究模式。区间需组可交换性假设。"
+    },
+    {
+      "id": "ML-06",
+      "week": 4,
+      "estimate_hours": 2,
+      "priority": "P0",
+      "title": "接入预测服务和能力声明",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-05",
+        "API-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "预测API",
+        "模型版本与适用范围输出"
+      ],
+      "acceptance": [
+        "数值区分历史观测和模型预测",
+        "不可用模型、未见产品和不支持指标返回明确状态，不伪造数值"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/ml/predict.py",
+        "tests/test_models.py"
+      ],
+      "execution_note": "实验已执行；四项选择流程未优于均值MAE基线，保留研究模式。区间需组可交换性假设。"
+    },
+    {
+      "id": "TST-04",
+      "week": 4,
+      "estimate_hours": 2,
+      "priority": "P0",
+      "title": "核验评估隔离与模型装载",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-06",
+        "ML-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "模型集成与泄漏回归记录"
+      ],
+      "acceptance": [
+        "更换模型版本能准确显示对应数据和特征版本",
+        "部署结果与保存的离线预测在容差内一致，缺失模型时规则流程可运行"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "tests/test_models.py",
+        "artifacts/tests.xml"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "UQ-01",
+      "week": 5,
+      "estimate_hours": 6,
+      "priority": "P1",
+      "title": "开展区间校准与适用性判断",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-05",
+        "ML-06"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "适用性检查",
+        "有数据支持时的区间校准",
+        "覆盖与宽度报告"
+      ],
+      "acceptance": [
+        "校准组独立于训练和调参，目标对应组均值或明确的观测粒度",
+        "报告校准组数、覆盖与区间宽度，不将边际覆盖说成联合达标",
+        "不足时返回区间不可用及具体原因"
+      ],
+      "condition": "有效样本和分组允许相应校准，模型基准通过核验",
+      "fallback": "保留数值预测的研究状态与历史证据，不填充固定百分比区间",
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "backend/app/ml/train.py",
+        "artifacts/models/model_cards.json"
+      ],
+      "execution_note": "实验已执行；四项选择流程未优于均值MAE基线，保留研究模式。区间需组可交换性假设。"
+    },
+    {
+      "id": "UQ-02",
+      "week": 5,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "统一依据状态与待补测交互",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "ML-06",
+        "WEB-04"
+      ],
+      "optional_inputs": [
+        "UQ-01"
+      ],
+      "artifacts": [
+        "有依据核验、待补测、排除状态",
+        "模型和规则结果统一展示"
+      ],
+      "acceptance": [
+        "关键指标缺测、身份不明、区间不可用与阈值冲突分别展示",
+        "即使增强区间未实现，仍能完整说明当前证据缺口"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "configs/features.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "OPT-01",
+      "week": 5,
+      "estimate_hours": 6,
+      "priority": "P1",
+      "title": "实现有边界的局部候选搜索",
+      "owner": "single_developer",
+      "status": "skipped_condition",
+      "dependencies": [
+        "UQ-01",
+        "CAL-01",
+        "REC-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "受约束的有限候选搜索",
+        "Pareto候选与来源说明"
+      ],
+      "acceptance": [
+        "只调整已确认质量基准与范围内的少量变量",
+        "先核验组成，再评价模型适用性和性能，搜索设置有上限",
+        "新候选标为未实测，不用代理自评分证明性能提升"
+      ],
+      "condition": "组成口径、训练支持范围与适用性处理已清楚",
+      "fallback": "维持历史方案枚举、硬筛选和比较，保留搜索接口说明",
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "configs/features.json",
+        "docs/enterprise-questions.md"
+      ],
+      "execution_note": "RAP质量基准、原料关联和有效旧沥青口径未确认，自动优化关闭；未试验微调仍可用。"
+    },
+    {
+      "id": "EXP-01",
+      "week": 5,
+      "estimate_hours": 4,
+      "priority": "P1",
+      "title": "实现下一项试验的规则建议与小池回放",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "UQ-02",
+        "OBS-01",
+        "ML-05"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "方案与试验项目建议",
+        "规则与随机的候选池比较"
+      ],
+      "acceptance": [
+        "建议指出影响的选型歧义与缺测指标",
+        "回放只揭示真实历史标签，不使用预测器作为真值",
+        "无真实成本时报告查询次数及假设"
+      ],
+      "condition": "核心工作台稳定，剩余工时足够",
+      "fallback": "仅在报告中列出人工可读的待测项目和理由",
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "scripts/replay_test_selection.py",
+        "artifacts/next_test_replay.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "TST-05",
+      "week": 5,
+      "estimate_hours": 3,
+      "priority": "P0",
+      "title": "核验风险状态和启用的增强功能",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "UQ-02"
+      ],
+      "optional_inputs": [
+        "OPT-01",
+        "EXP-01"
+      ],
+      "artifacts": [
+        "阈值、缺测和适用性回归",
+        "增强功能开关清单"
+      ],
+      "acceptance": [
+        "未实现或未满足条件的增强在界面明确不可用",
+        "已启用搜索和选试验功能经过相应集成检查",
+        "候选为空不自动降低要求"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "tests/test_core.py",
+        "tests/test_models.py",
+        "frontend/src/main.tsx"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "BIZ-02",
+      "week": 5,
+      "estimate_hours": 3,
+      "priority": "P2",
+      "title": "准备专家评议或独立试验方案",
+      "owner": "single_developer",
+      "status": "prepared_awaiting_external",
+      "dependencies": [
+        "DEM-01",
+        "ML-05"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "专家评议表或预注册试验清单",
+        "资源、条件与反馈状态"
+      ],
+      "acceptance": [
+        "列出有区分力的对照和需要核验的参数",
+        "收到评议或实测时单独附证据，未取得时保持计划状态"
+      ],
+      "condition": "企业或实验室资源已可用，核心交付不受影响",
+      "fallback": "保留评议与试验设计，不将等待外部结果列为发布阻塞",
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "docs/enterprise-questions.md"
+      ],
+      "execution_note": "验证设计与评议表已准备；尚未收到企业评议或独立实测，外部验证保持计划状态。"
+    },
+    {
+      "id": "TST-06",
+      "week": 6,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "完成发布回归与离线验收",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "TST-03",
+        "TST-04",
+        "TST-05"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "核心用例验收记录",
+        "本地性能与离线检查"
+      ],
+      "acceptance": [
+        "固定环境下五案例、微调、反馈和报告可重跑",
+        "网络断开后核心材料与规则流程仍可运行",
+        "记录真实响应耗时和故障恢复结果"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "tests/test_offline.py",
+        "artifacts/acceptance/final-rehearsal-1/result.json",
+        "artifacts/acceptance/final-rehearsal-2/result.json"
+      ],
+      "execution_note": "进程级阻断网络连接的离线测试；两次同机回环HTTP排练。未更改系统网络，未在全新电脑验收。"
+    },
+    {
+      "id": "PKG-01",
+      "week": 6,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "打包本地演示和启动检查",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "TST-06",
+        "OUT-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "Windows启动与检查脚本",
+        "前端静态构建",
+        "版本化数据与模型包"
+      ],
+      "acceptance": [
+        "按交接说明能在目标机器启动，不依赖开发目录绝对路径",
+        "核心演示资源本地可用，缺失环境给出可执行提示",
+        "发行内容清单与数据和模型版本一致"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "scripts/start-local.ps1",
+        "scripts/package_release.py",
+        "scripts/verify_bundle.py"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "DOC-01",
+      "week": 6,
+      "estimate_hours": 4,
+      "priority": "P0",
+      "title": "完成技术与复现交接",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "PKG-01",
+        "ML-05"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "README与部署说明",
+        "字段和接口字典",
+        "规则与模型边界说明"
+      ],
+      "acceptance": [
+        "说明导入、运行、训练、评估和重放所需步骤",
+        "每个结论关联对应数据、规则、代码与模型版本"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "README.md",
+        "docs/developer-guide.md",
+        "docs/api.openapi.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    },
+    {
+      "id": "DEM-02",
+      "week": 6,
+      "estimate_hours": 6,
+      "priority": "P0",
+      "title": "完成答辩材料和演示排练",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DOC-01",
+        "DEM-01"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "答辩结构与图表",
+        "演示录制与故障备用材料"
+      ],
+      "acceptance": [
+        "五案例说明完整，实际效果与目标假设区分",
+        "核心演示完成两次从启动到结束的排练",
+        "记录不能支持的指标与回答口径"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "docs/demo-script.md",
+        "artifacts/demo/manifest.json",
+        "artifacts/demo/数智选材_界面步骤回放.mp4"
+      ],
+      "execution_note": "两次真实HTTP完整排练；视频为30秒真实截图步骤回放，无配音，非连续现场录屏。"
+    },
+    {
+      "id": "REL-01",
+      "week": 6,
+      "estimate_hours": 2,
+      "priority": "P0",
+      "title": "冻结参赛版本与交接清单",
+      "owner": "single_developer",
+      "status": "completed",
+      "dependencies": [
+        "DEM-02",
+        "PKG-01",
+        "DOC-01",
+        "TST-06"
+      ],
+      "optional_inputs": [],
+      "artifacts": [
+        "版本标签与发行清单",
+        "已知问题和验收结论"
+      ],
+      "acceptance": [
+        "所有P0有验收记录或明确范围调整",
+        "功能状态、案例、模型报告和答辩数字一致",
+        "保留可回退的上一演示版本"
+      ],
+      "condition": null,
+      "fallback": null,
+      "status_updated_at": "2026-10-18T15:02:14.902463+00:00",
+      "evidence": [
+        "docs/release-notes.md",
+        "artifacts/development_progress.json"
+      ],
+      "execution_note": "见对应代码、自动检查、真实界面或排练证据。"
+    }
+  ],
+  "execution": {
+    "updated_at": "2026-10-18T15:02:14.902463+00:00",
+    "release": "0.1.0 prototype",
+    "actual_hours": null,
+    "note": "六周与150小时是原估算，不代表实际历时或投入；日期未固定。"
+  }
+}

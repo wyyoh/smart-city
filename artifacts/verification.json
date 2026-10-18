@@ -1,0 +1,136 @@
+{
+  "recorded_at": "2026-10-18T15:02:14.902463+00:00",
+  "tests": {
+    "tests": "18",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "6.170"
+  },
+  "frontend_build": "passed",
+  "browser_checks": {
+    "five_case_results": [
+      "R1",
+      "R4",
+      "R7",
+      "R5",
+      "empty"
+    ],
+    "variant_clears_evidence": true,
+    "draft_and_review": true,
+    "each_raw_cell_selectable": true,
+    "mobile_width": 390,
+    "mobile_target_rows_fit": true,
+    "viewport_reset": true
+  },
+  "rehearsals": [
+    {
+      "run_id": "final-rehearsal-1",
+      "completed_at": "2026-10-18T22:56:14+0800",
+      "source_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+      "startup_seconds": 1.151,
+      "recommendation_http_ms": {
+        "n": 15,
+        "median": 49.13,
+        "p95": 88.96,
+        "max": 102.68
+      },
+      "trace": [
+        {
+          "step": "five_cases",
+          "passed": true,
+          "repetitions": 3,
+          "expected": [
+            [
+              "R1"
+            ],
+            [
+              "R4"
+            ],
+            [
+              "R7"
+            ],
+            [
+              "R5"
+            ],
+            []
+          ]
+        },
+        {
+          "step": "research_prediction",
+          "status": "research_only"
+        },
+        {
+          "step": "variant_invalidates_parent",
+          "passed": true
+        },
+        {
+          "step": "observation_review_scope_idempotency_and_snapshot",
+          "passed": true
+        },
+        {
+          "step": "stale_model_guard",
+          "passed": true
+        }
+      ],
+      "scope": "真实回环HTTP、隔离数据库、全新进程；演示观察不代表实验室实测"
+    },
+    {
+      "run_id": "final-rehearsal-2",
+      "completed_at": "2026-10-18T22:56:21+0800",
+      "source_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+      "startup_seconds": 1.111,
+      "recommendation_http_ms": {
+        "n": 15,
+        "median": 42.56,
+        "p95": 64.34,
+        "max": 75.28
+      },
+      "trace": [
+        {
+          "step": "five_cases",
+          "passed": true,
+          "repetitions": 3,
+          "expected": [
+            [
+              "R1"
+            ],
+            [
+              "R4"
+            ],
+            [
+              "R7"
+            ],
+            [
+              "R5"
+            ],
+            []
+          ]
+        },
+        {
+          "step": "research_prediction",
+          "status": "research_only"
+        },
+        {
+          "step": "variant_invalidates_parent",
+          "passed": true
+        },
+        {
+          "step": "observation_review_scope_idempotency_and_snapshot",
+          "passed": true
+        },
+        {
+          "step": "stale_model_guard",
+          "passed": true
+        }
+      ],
+      "scope": "真实回环HTTP、隔离数据库、全新进程；演示观察不代表实验室实测"
+    }
+  ],
+  "limits": [
+    "同机验证，未在全新电脑安装验收",
+    "本地审核人声明无账户权限签章",
+    "企业和独立试验待取得"
+  ],
+  "warning": "Starlette当前TestClient的httpx传输有弃用提示，18项检查通过。"
+}

@@ -1,0 +1,8 @@
+{
+  "historical_screening": {"status":"enabled","basis":"原始工作簿按操作配方聚合"},
+  "research_predictions": {"status":"enabled","basis":"分组外层结果未证明稳定改进，保留研究模式"},
+  "research_intervals": {"status":"enabled","basis":"独立训练/校准/测试组；12个校准组、8个测试组；非工程保证"},
+  "local_optimization": {"status":"unavailable","reason":"RAP计量质量基准、原料曲线关联与新加沥青计算口径未获企业确认，暂不生成优化配方。可创建未试验微调版本。"},
+  "next_test_heuristic": {"status":"enabled","basis":"缺测目标优先，再核验历史初筛关键指标；不宣称最优试验设计"},
+  "enterprise_validation": {"status":"awaiting_external_evidence","reason":"尚未收到企业评议或独立试验，已准备问题清单和验证方案，未将计划记为实测结果。"}
+}
