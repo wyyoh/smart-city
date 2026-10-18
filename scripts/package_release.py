@@ -24,7 +24,7 @@ def build():
         shutil.copytree(ROOT/folder,destination/folder,ignore=shutil.ignore_patterns('__pycache__','*.pyc','*.tsbuildinfo'))
     for folder in ['frontend/src']:
         shutil.copytree(ROOT/folder,destination/folder)
-    for relative in ['README.md','requirements.lock.txt','pyproject.toml','.gitignore','frontend/package.json',
+    for relative in ['README.md','requirements.lock.txt','pyproject.toml','.gitignore','.gitattributes','frontend/package.json',
                      'frontend/pnpm-lock.yaml','frontend/tsconfig.json','frontend/vite.config.ts','frontend/index.html',
                      '再生沥青混合料实验数据表.xlsx','数智选材_领域与前沿技术调研底稿_v1.md']:
         shutil.copy2(ROOT/relative,destination/relative)

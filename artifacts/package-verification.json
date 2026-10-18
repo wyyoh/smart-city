@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "directory": "C:\\Users\\Lenovo\\Desktop\\智慧城市\\artifacts\\release\\asphalt-workbench-0.1.0-20261018T150215",
-  "manifest_files_verified": 120,
+  "directory": "C:\\Users\\Lenovo\\Desktop\\智慧城市\\artifacts\\release\\asphalt-workbench-0.1.0-20261018T150335",
+  "manifest_files_verified": 121,
   "checks": [
     "all packaged file hashes",
     "relocated application root",

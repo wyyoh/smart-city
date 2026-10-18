@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.xlsx binary
+*.pdf binary
+*.mp4 binary
+*.jpg binary
+*.png binary
+*.joblib binary
+数智选材_领域与前沿技术调研底稿_v1.md -text
