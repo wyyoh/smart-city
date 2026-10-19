@@ -249,7 +249,7 @@ function App() {
         </nav>
         <div className="sidebar-bottom">
           <div className="connection">
-            <i /> 本地工作区 <span>v0.2 开发版</span>
+            <i /> 本地工作区 <span>v0.2 研究原型</span>
           </div>
           <p>
             企业提供的实验室记录

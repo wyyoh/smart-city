@@ -693,7 +693,9 @@ export function DemandCard({
                 </button>
                 {input.project_targets.map((t, i) => (
                   <p className="project-target" key={i}>
-                    {registry[t.metric]?.label} {t.operator} {t.value} {t.unit}
+                    {registry[t.metric]?.label}{" "}
+                    {t.operator === "grade" ? "等级" : t.operator} {t.value}{" "}
+                    {t.unit === "grade" ? "" : t.unit}
                     <button
                       aria-label={`删除项目目标${i + 1}`}
                       onClick={() =>
@@ -712,6 +714,16 @@ export function DemandCard({
               </details>
               <details className="demand-details">
                 <summary>库存范围、资源与施工限制</summary>
+                <button
+                  className="secondary"
+                  onClick={() =>
+                    void decisionApi<typeof options>("/material-options")
+                      .then(setOptions)
+                      .catch((e) => setError(String(e)))
+                  }
+                >
+                  刷新可用版本目录
+                </button>
                 <label>
                   级配族
                   <select
@@ -1018,9 +1030,10 @@ export function DemandCard({
                             <small>{sourceLabel[t.source.kind]}</small>
                           </h3>
                           <strong>
-                            {t.operator} {t.value}
+                            {t.operator === "grade" ? "等级" : t.operator}{" "}
+                            {t.value}
                             {t.operator === "between" ? ` 至 ${t.upper}` : ""}
-                            <small>{t.unit}</small>
+                            <small>{t.unit === "grade" ? "" : t.unit}</small>
                           </strong>
                         </div>
                         <p>{t.source.reference}</p>
@@ -1082,7 +1095,13 @@ export function DemandCard({
                   </div>
                   {shown.open_items.map((item, i) => (
                     <p className="demand-open" key={i}>
-                      待补充 · {item.message}
+                      待补充 ·{" "}
+                      {item.metric
+                        ? (registry[item.metric]?.label || item.metric) + "："
+                        : ""}
+                      {item.code === "missing_scene"
+                        ? "请确认" + fieldLabel(item.field || "场景条件")
+                        : item.message}
                     </p>
                   ))}
                   {shown.conflicts.map((item, i) => (

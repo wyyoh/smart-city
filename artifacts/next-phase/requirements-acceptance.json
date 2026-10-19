@@ -1,0 +1,143 @@
+{
+  "app_version": "0.2.0",
+  "scope": "enterprise topic 1 local research prototype",
+  "official_scoring_weights": null,
+  "requirements": {
+    "B01": {
+      "status": "prototype_delivered",
+      "evidence": [
+        {
+          "path": "backend/app/decision/demands.py",
+          "sha256": "21b1fb296e42abda6d272035ff31a19477189c28a6c6f00d3fbdf115c8cc5874"
+        },
+        {
+          "path": "frontend/src/components/DecisionWorkflow.tsx",
+          "sha256": "6267af62b76f8a8705a9e90d516536748a2740ed121fc893bf0bc19d7d79c873"
+        },
+        {
+          "path": "tests/test_workflow_v2.py",
+          "sha256": "3bd2acd7ce420a3341912c3898a1d5ccd3ca711cde16c439abd74e43e659b3cf"
+        }
+      ]
+    },
+    "B02": {
+      "status": "three_constructed_scene_classes_delivered",
+      "evidence": [
+        {
+          "path": "configs/scene_rules_v2.json",
+          "sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7"
+        },
+        {
+          "path": "docs/scene-rule-cards.md",
+          "sha256": "7515795fd6a4a053899a771c3e81a1c3b5b8333db4bc20997ecd0e57e7e88ce4"
+        },
+        {
+          "path": "tests/test_materials_v2.py",
+          "sha256": "fac01253abd2abd9d8bb9715987383fb75ffedb9d4ada19766f39a4d7f4d4bb5"
+        }
+      ]
+    },
+    "B03": {
+      "status": "five_same_pool_software_cases_delivered",
+      "evidence": [
+        {
+          "path": "artifacts/next-phase/case-reports/summary.json",
+          "sha256": "6dade08509e22cc9d54a3af730b122be1ca312250de98cca2b9c7e73f8a3eb0f"
+        },
+        {
+          "path": "scripts/compare_cases_v2.py",
+          "sha256": "8749ffea748ba7899ef25745f0de1597f5c590638d2421cad5b78f1ee85c7418"
+        },
+        {
+          "path": "artifacts/next-phase/conflict-certificates/C5.json",
+          "sha256": "fdbae93055f4b2c5cde9865d99e1513b593e254b9918d2b439fe74ccc1e3829c"
+        }
+      ]
+    },
+    "B04": {
+      "status": "technical_handoff_delivered",
+      "evidence": [
+        {
+          "path": "docs/api-v2.openapi.json",
+          "sha256": "84652309175bec23b09fb1d4d70392323c33ed2e4496a859a89114f8003ed960"
+        },
+        {
+          "path": "docs/feedback-contract-v2.json",
+          "sha256": "a7caaef695efdb5d518071de48835a782d38ea2f0e8e927cd605023e9032a2e8"
+        },
+        {
+          "path": "docs/release-notes-v02.md",
+          "sha256": "0e2351d3da1d19548f596de4d61c96686d18855dec1f31a6b8143612e8c69b8c"
+        },
+        {
+          "path": "artifacts/next-phase/release-checks/package-verification.json",
+          "sha256": "8c88e003c5df91ce4bad1fd743255d863cfe059653aa0bb9215a6a1fe1fce5cb"
+        }
+      ]
+    },
+    "B05": {
+      "status": "software_proxy_value_analysis_delivered_human_benefit_unverified",
+      "evidence": [
+        {
+          "path": "artifacts/next-phase/workflow-value.json",
+          "sha256": "668e0413652ff6370c7d24408b0156e7816edbf6f9b35829b5802d4000b1afc0"
+        },
+        {
+          "path": "docs/value-evaluation-notes.md",
+          "sha256": "b24d71fc3cf5aaa88bffc2775e95b1bafc0756335816eaeccd3b8fc60fa230ee"
+        }
+      ]
+    }
+  },
+  "highlights": {
+    "L1": {
+      "mechanism": "sourced scene rules + four-state hard requirements + pool-scoped minimal conflicts and difference explanations",
+      "demonstration": "C5 full catalogue insufficient vs 35-key numeric diagnostic with four verified conflicts",
+      "status": "software_validated_engineering_thresholds_unverified"
+    },
+    "L2": {
+      "mechanism": "complete scheme fields + applicability + immutable evidence/version chain",
+      "demonstration": "source cells, unknown ingredients, variant clears parent performance",
+      "status": "software_validated_material_applicability_unverified"
+    },
+    "L3": {
+      "mechanism": "actionable base verification card + separate measured/OOF/research view",
+      "demonstration": "candidate/metric/conditions/reason/stopping rule; research failures displayed",
+      "status": "base_rules_validated_advanced_acquisition_deferred"
+    }
+  },
+  "validation": {
+    "python_passed": 65,
+    "negative_classes": 12,
+    "browser_checks": 15,
+    "viewports": [
+      "1440x900",
+      "1280x720"
+    ],
+    "isolated_full_rehearsals": 2,
+    "protected_files_unchanged": 8,
+    "original_database_tables_unchanged": 6
+  },
+  "actual_human_hours": null,
+  "human_participants": 0,
+  "manual_timing_deviation": "N18 executed as disclosed AI software proxy; real human end-to-end timing remains unmeasured.",
+  "research_tasks": {
+    "EXP01": "not_run_deferred_by_capacity_choice",
+    "EXP02": "not_run_deferred_by_capacity_choice",
+    "EXP03": "not_run_deferred_by_capacity_choice",
+    "EXP04": "not_run_deferred_by_capacity_choice"
+  },
+  "external_validation_pending": [
+    "Real scene/normative applicability confirmation",
+    "Material identity and composition mass-basis confirmation",
+    "Independent mixture and field tests",
+    "Human workflow timing",
+    "Live enterprise integration",
+    "Variant training eligibility and controlled retraining"
+  ],
+  "documents": [
+    "docs/technical-report-v02.md",
+    "docs/submission-outline-v2.md",
+    "docs/demo-script-v2.md"
+  ]
+}

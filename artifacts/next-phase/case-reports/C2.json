@@ -133,13 +133,13 @@
     "mix_ff76e96640f7706852c9"
   ],
   "demand": {
-    "id": "dema_aa303bbe691f4f4787b889e0832b2af8",
+    "id": "dema_ce3f6bf3979848cbbcd4fc701de41c67",
     "kind": "demand_confirmation",
-    "created_at": "2026-10-19T05:17:10.250869+00:00",
-    "parent_id": "dema_9edf9f3aec44499f91729fb57983f4d3",
+    "created_at": "2026-10-19T05:34:56.198970+00:00",
+    "parent_id": "dema_b4c2ea9b86724b11b60988a5560b83fc",
     "schema_version": "2.0",
-    "resolution_id": "dema_9edf9f3aec44499f91729fb57983f4d3",
-    "resolution_sha256": "011588062f8275bedec27a3e9d9e2407fc1d45baacde5cadb5049e400947e52f",
+    "resolution_id": "dema_b4c2ea9b86724b11b60988a5560b83fc",
+    "resolution_sha256": "eefd85eb226b1ddc0273ddfcd36a48f2b78d6b65390eab4be43ae00f964a7226",
     "request": {
       "schema_version": "2.0",
       "name": "寒冷地区温缩裂缝处治",
@@ -722,7 +722,7 @@
     ],
     "requirements_complete": true,
     "ready_for_candidate_retrieval": true,
-    "sha256": "78df60547d367352fd2fb10429b1280ff9869dfa00e45721490bf03357b5ee81"
+    "sha256": "05ae4acbe89f147294095dd378c083e35638f810bf94cb90c701f9a4b9779788"
   },
   "pool_exclusions": [
     {
@@ -1721,7 +1721,7 @@
     ],
     "diagnosis": {
       "pool_sha256": "d5276e67c56b526f334aeb5ae2315fd37e1fcdcdf5f29dc6e081f3585ec2b242",
-      "confirmation_sha256": "78df60547d367352fd2fb10429b1280ff9869dfa00e45721490bf03357b5ee81",
+      "confirmation_sha256": "05ae4acbe89f147294095dd378c083e35638f810bf94cb90c701f9a4b9779788",
       "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
       "status": "numeric_feasible",
       "message": "有满足当前可比较要求的候选，工程发布仍须审核和试验",

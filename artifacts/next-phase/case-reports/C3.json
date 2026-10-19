@@ -133,13 +133,13 @@
     "mix_ff76e96640f7706852c9"
   ],
   "demand": {
-    "id": "dema_92b553017c9f48fe97ffca4ea265d6f0",
+    "id": "dema_d1221f6c168b4e27a54a0c7365ec36f0",
     "kind": "demand_confirmation",
-    "created_at": "2026-10-19T05:17:11.108851+00:00",
-    "parent_id": "dema_e25588ec9ea942d188b1a9b9be6ceac6",
+    "created_at": "2026-10-19T05:34:57.023733+00:00",
+    "parent_id": "dema_8625f841620e4840befb3f059ab279ab",
     "schema_version": "2.0",
-    "resolution_id": "dema_e25588ec9ea942d188b1a9b9be6ceac6",
-    "resolution_sha256": "2922562630a1b1268bffc9f1ce7fcfb1cd98da6cae9316ab4843ee4c9538f71f",
+    "resolution_id": "dema_8625f841620e4840befb3f059ab279ab",
+    "resolution_sha256": "c2db2a41f7bf80111f34da1e445ed836c016209251cfac978a5b64541807af39",
     "request": {
       "schema_version": "2.0",
       "name": "水损害路段修复",
@@ -750,7 +750,7 @@
     ],
     "requirements_complete": true,
     "ready_for_candidate_retrieval": true,
-    "sha256": "2569c3c9ecdec52951f7ba7172d4f12487149abb1dc97cf8969d732cb996714e"
+    "sha256": "da2f33969851211588b22aff362bb86bbf25c4e7f8b605f881cc6e0a5fbb5e10"
   },
   "pool_exclusions": [
     {
@@ -1753,7 +1753,7 @@
     ],
     "diagnosis": {
       "pool_sha256": "4f6a6b96f26aecfa7564da7dc28eb4a13b3f0f558df48af1dcc6d497b6e73d4b",
-      "confirmation_sha256": "2569c3c9ecdec52951f7ba7172d4f12487149abb1dc97cf8969d732cb996714e",
+      "confirmation_sha256": "da2f33969851211588b22aff362bb86bbf25c4e7f8b605f881cc6e0a5fbb5e10",
       "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
       "status": "numeric_feasible",
       "message": "有满足当前可比较要求的候选，工程发布仍须审核和试验",

@@ -44,11 +44,11 @@
     "evidence_view_note": "排除缺少任一所需数值的记录，仅诊断完整数值子池。"
   },
   "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
-  "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+  "confirmation_sha256": "afca9b0ff060e753ae121bee51bce19d71c818ce47d70f6f5614d8d2110b2f4f",
   "candidate_count": 35,
   "diagnosis": {
     "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
-    "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+    "confirmation_sha256": "afca9b0ff060e753ae121bee51bce19d71c818ce47d70f6f5614d8d2110b2f4f",
     "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
     "status": "known_conflict",
     "message": "冻结池内每个候选至少有一项已知失败，当前要求联合无解",
@@ -56,7 +56,7 @@
     "certificates": [
       {
         "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
-        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "confirmation_sha256": "afca9b0ff060e753ae121bee51bce19d71c818ce47d70f6f5614d8d2110b2f4f",
         "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
         "target_ids": [
           "hot-rutting:DS:0",
@@ -359,11 +359,11 @@
             ]
           }
         ],
-        "certificate_sha256": "3c7889ff31f1bf12928eac0e0ffffcf8bdb668c0ea665b5877ea2fe4874387e1"
+        "certificate_sha256": "b863647c3954279dacc8068f7baac56bd5c3c336252ca59da206f52481360238"
       },
       {
         "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
-        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "confirmation_sha256": "afca9b0ff060e753ae121bee51bce19d71c818ce47d70f6f5614d8d2110b2f4f",
         "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
         "target_ids": [
           "hot-rutting:DS:0",
@@ -661,11 +661,11 @@
             ]
           }
         ],
-        "certificate_sha256": "d7afa5931207f5c1c4dc522264f9aa8bbe7bbe6c5d7706a973b1491b7112cb6e"
+        "certificate_sha256": "f6c6aa508cb7be3c3ce3eb5fce50c662319c26354828c79cb3a177bfff8184d2"
       },
       {
         "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
-        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "confirmation_sha256": "afca9b0ff060e753ae121bee51bce19d71c818ce47d70f6f5614d8d2110b2f4f",
         "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
         "target_ids": [
           "hot-rutting:DS:0",
@@ -970,11 +970,11 @@
             ]
           }
         ],
-        "certificate_sha256": "6b88b47314e94a9ba9adf8886e4324972777c9690ae1f96e6dd7f48125e56921"
+        "certificate_sha256": "a315405971fe1c851c6a37a06742da6bed777aee36a986325733d8903787b790"
       },
       {
         "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
-        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "confirmation_sha256": "afca9b0ff060e753ae121bee51bce19d71c818ce47d70f6f5614d8d2110b2f4f",
         "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
         "target_ids": [
           "hot-rutting:TSR:2",
@@ -1277,7 +1277,7 @@
             ]
           }
         ],
-        "certificate_sha256": "c7a0e49fbff8705071838c8c43e63f8badd952ef1849fbd5c84711e4fbafb3b0"
+        "certificate_sha256": "f945d1e45e23bf07dfb81297c9d4ae94a0e933426e1e9dba80c84e254bb03333"
       }
     ],
     "actions": [

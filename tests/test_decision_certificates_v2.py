@@ -13,10 +13,10 @@ def test_c5_reproduces_four_verified_minimal_conflicts(client):
     assert pairs == {frozenset(x) for x in [('DS', 'strain'), ('DS', 'TSR'), ('DS', 'residual'), ('strain', 'TSR')]}
     for cert in diagnosis['certificates']:
         assert cert['minimality_status'] == 'verified_inclusion_minimal'
-        assert verify_certificate(cert, decision['results'], decision['pool_sha256'], decision['confirmation_sha256'])['valid']
+        assert verify_certificate(cert, decision['results'], decision['pool_sha256'], decision['confirmation_sha256'], decision['demand'])['valid']
         bad = deepcopy(cert)
         bad['deletion_witnesses'][0]['candidate_id'] = 'does-not-exist'
-        assert not verify_certificate(bad, decision['results'], decision['pool_sha256'], decision['confirmation_sha256'])['valid']
+        assert not verify_certificate(bad, decision['results'], decision['pool_sha256'], decision['confirmation_sha256'], decision['demand'])['valid']
 
 
 def test_unknown_is_not_evidence_of_no_solution_and_empty_pool_distinct():

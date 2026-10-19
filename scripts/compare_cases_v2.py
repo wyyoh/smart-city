@@ -1,5 +1,6 @@
 """Five constructed comparisons: B0 risk example, existing strong B1 and V2 on identical pools."""
 from copy import deepcopy
+import gzip
 from datetime import datetime, timezone
 import json
 from pathlib import Path
@@ -9,6 +10,9 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'backend'))
+
+sys.path.insert(0, str(ROOT / 'scripts'))
+from v2_isolation import copy_baseline
 
 from fastapi.testclient import TestClient
 from app.main import create_app
@@ -36,7 +40,7 @@ def execute_case(client, case, evidence_view='all'):
     b0_ids = [r['id'] for r in measured if r['metrics'][metric] == best and r['metrics'][metric] > case['targets'][metric]]
     b0_failed = [r['id'] for r in decision['results'] if r['id'] in b0_ids and r['failed_targets']]
     b0_unresolved = [r['id'] for r in decision['results'] if r['id'] in b0_ids and not r['failed_targets'] and r['unknown_targets']]
-    certificate_checks = [verify_certificate(c,decision['results'],decision['pool_sha256'],decision['confirmation_sha256']) for c in decision['diagnosis']['certificates']]
+    certificate_checks = [verify_certificate(c,decision['results'],decision['pool_sha256'],decision['confirmation_sha256'], decision['demand']) for c in decision['diagnosis']['certificates']]
     assert all(c['valid'] for c in certificate_checks)
     report = {'case_id':case['id'],'title':case['title'],'source':case['source'],'evidence_view':evidence_view,
               'scope':decision['scope'],'pool_sha256':decision['pool_sha256'],'candidate_ids':pool['candidate_ids'],
@@ -59,7 +63,10 @@ def run_comparisons(client, output):
         report,decision=execute_case(client,case)
         (output/(case['id']+'.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         (output/(case['id']+'.html')).write_text(html_report(decision),encoding='utf-8')
-        (output/(case['id']+'-snapshot.json')).write_text(json.dumps(decision,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        snapshot_path=output/(case['id']+'-snapshot.json.gz')
+        snapshot_path.write_bytes(gzip.compress(json.dumps(decision,ensure_ascii=False,separators=(',',':')).encode('utf-8'),mtime=0))
+        legacy_snapshot=output/(case['id']+'-snapshot.json')
+        if legacy_snapshot.exists():legacy_snapshot.unlink()
         summaries.append({'case':case['id'],'pool':len(decision['results']),'feasible_B1':len(report['B1']['feasible_ids']),
                           'feasible_V2':len(report['V2']['feasible_ids']),'B0_known_failed':len(report['B0']['known_other_failure_ids']),
                           'B0_unresolved':len(report['B0']['unresolved_other_requirement_ids']),'diagnosis':decision['diagnosis']['status']})
@@ -77,7 +84,7 @@ def run_comparisons(client, output):
 
 def main():
     with tempfile.TemporaryDirectory(prefix='five-cases-v2-') as temporary:
-        path=Path(temporary)/'cases.sqlite';shutil.copyfile(ROOT/'artifacts/next-phase/baseline/workbench-v01.sqlite',path)
+        path=Path(temporary)/'cases.sqlite';copy_baseline(path)
         engine=make_engine(path)
         try:
             with TestClient(create_app(engine)) as client:

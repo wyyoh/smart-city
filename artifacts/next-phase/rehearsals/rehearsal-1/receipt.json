@@ -1,0 +1,84 @@
+{
+  "run_id": "rehearsal-1",
+  "status": "passed",
+  "created_at": "2026-10-19T05:33:57.036807+00:00",
+  "app_version": "0.2.0",
+  "database": "disposable baseline copy",
+  "network": "in-process local HTTP only; built assets require no public service",
+  "trace": [
+    {
+      "path": "/v2/demand-resolutions",
+      "status": 201,
+      "elapsed_ms": 16.216,
+      "id": "dema_1b529799ea7848c5a52f4b7160a5d12d",
+      "sha256": "60704395fc1207d6bc291fdd16e9320cadc1b41ad73d0c07658885bb8b1b2085"
+    },
+    {
+      "path": "/v2/demand-resolutions/dema_1b529799ea7848c5a52f4b7160a5d12d/confirm",
+      "status": 201,
+      "elapsed_ms": 11.053,
+      "id": "dema_c3fb12b76687413393805a3b7a918ab1",
+      "sha256": "1f3338f789af80cfbdd5abc8088e519e3477120ffe95c1ccc067b7ba70bcabc8"
+    },
+    {
+      "path": "/v2/candidate-pools",
+      "status": 201,
+      "elapsed_ms": 225.499,
+      "id": "cand_6be38a31e2e44511b9ba15071152a377",
+      "sha256": "a652ae0c277e4b82177a61704221425d5129a01e545516d99aeace2e36cbe85c"
+    },
+    {
+      "path": "/v2/decisions",
+      "status": 201,
+      "elapsed_ms": 342.401,
+      "id": "mate_f6ba5b0cf3f445fdb02368488993bc85",
+      "sha256": "8b2f2a7d701d58b42a714fc9cfabc599a7e0f3f47df9643c3e9bcd7332329c39"
+    },
+    {
+      "path": "/v1/recipes/R1/variants",
+      "status": 201,
+      "elapsed_ms": 21.951,
+      "id": "var_6ba20a0e639b453198959aa7e8f2186f",
+      "sha256": null
+    },
+    {
+      "path": "/v2/candidate-pools",
+      "status": 201,
+      "elapsed_ms": 243.846,
+      "id": "cand_a819d4874bce4dcf976b9b5937072890",
+      "sha256": "52e24ae5143ffd1aa7fd4f926dbff6171b8fbbd24a5ed930c486b732b313421f"
+    },
+    {
+      "path": "/v2/decisions",
+      "status": 201,
+      "elapsed_ms": 290.52,
+      "id": "mate_fb14f86558654f46bf1842aeebb3c692",
+      "sha256": "bf520d6d0d22f6a5545a65a44ceb4f9d10bc9491ca8eb4a9463055e2dc5429ed"
+    }
+  ],
+  "assets_verified": [
+    "/assets/index-DePUksjE.js",
+    "/assets/index-CW1_2T38.css"
+  ],
+  "upstream_steps": 8,
+  "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "checks": [
+    "scene-derived requirements",
+    "confirmation",
+    "84-key full pool",
+    "two numerical review candidates",
+    "source row",
+    "HTML report",
+    "variant clears evidence",
+    "stale pool rejected",
+    "next test card",
+    "snapshot replay",
+    "difference",
+    "upstream linkage",
+    "separate feedback scopes"
+  ],
+  "limits": [
+    "No independent mixture tests or live enterprise integration.",
+    "Same machine with installed dependencies; not a fresh OS installation test."
+  ]
+}

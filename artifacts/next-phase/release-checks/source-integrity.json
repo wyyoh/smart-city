@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "immutable_inputs": {
+    "再生沥青混合料实验数据表.xlsx": true,
+    "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf": true,
+    "planning/development_backlog_v1.json": true,
+    "planning/v02_alignment_backlog.json": true,
+    "planning/next_phase_backlog_v2.json": true,
+    "artifacts/release-final.json": true,
+    "artifacts/models/model_cards.json": true,
+    "requirements.lock.txt": true
+  },
+  "original_database_tables": {
+    "dataset": {
+      "before": {
+        "rows": 3,
+        "sha256": "ff6baa795c198aa9765d9c54437ab303b17274629ddff2adf55cf150c0e32553"
+      },
+      "after": {
+        "rows": 3,
+        "sha256": "ff6baa795c198aa9765d9c54437ab303b17274629ddff2adf55cf150c0e32553"
+      },
+      "unchanged": true
+    },
+    "recipe": {
+      "before": {
+        "rows": 540,
+        "sha256": "68c36143171b3476e5d90f8b21cab7d4fcdc6cc7cff6f1179897be365d76e8a6"
+      },
+      "after": {
+        "rows": 540,
+        "sha256": "68c36143171b3476e5d90f8b21cab7d4fcdc6cc7cff6f1179897be365d76e8a6"
+      },
+      "unchanged": true
+    },
+    "measurement": {
+      "before": {
+        "rows": 2409,
+        "sha256": "be46a0a9a631c2679b75eb2fb1bdc37c71b95fc753f86212bd765719b4816bf9"
+      },
+      "after": {
+        "rows": 2409,
+        "sha256": "be46a0a9a631c2679b75eb2fb1bdc37c71b95fc753f86212bd765719b4816bf9"
+      },
+      "unchanged": true
+    },
+    "sourcerow": {
+      "before": {
+        "rows": 10329,
+        "sha256": "42e73b9078dd65e0035d7f58d97b93223eb924e4e6594e60223a3d00dcc49e9d"
+      },
+      "after": {
+        "rows": 10329,
+        "sha256": "42e73b9078dd65e0035d7f58d97b93223eb924e4e6594e60223a3d00dcc49e9d"
+      },
+      "unchanged": true
+    },
+    "recommendation": {
+      "before": {
+        "rows": 11,
+        "sha256": "fce5c96780490f13c9297f38aaf9392f70b237b138dac1149ba19af87a516df7"
+      },
+      "after": {
+        "rows": 11,
+        "sha256": "fce5c96780490f13c9297f38aaf9392f70b237b138dac1149ba19af87a516df7"
+      },
+      "unchanged": true
+    },
+    "observation": {
+      "before": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "after": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "unchanged": true
+    }
+  }
+}

@@ -8,6 +8,7 @@ from .constraints import assess_recipe
 from .materials import material_scheme
 from .diagnosis import diagnose
 from .test_planning import build_test_plan
+from .candidate_pool import require_current_pool
 from .records import append_record, get_record
 
 
@@ -19,6 +20,7 @@ def run_decision(session, request: DecisionRequest):
     from .freshness import engine_fingerprint
     pool = get_record(session, request.pool_id, 'candidate_pool')
     demand = get_record(session, pool['confirmation_id'], 'demand_confirmation')
+    require_current_pool(session, pool, demand)
     results = []
     for recipe in pool['candidates']:
         result = assess_recipe(recipe, demand)

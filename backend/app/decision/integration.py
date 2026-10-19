@@ -121,6 +121,9 @@ def return_selection(session, upstream_id, request: SelectionRequest):
     if existing:
         return existing
     decision = get_record(session, request.decision_snapshot_id, 'material_decision')
+    from .freshness import decision_freshness
+    if not decision_freshness(session, decision['id'])['current']:
+        raise HTTPException(409, '选择快照已过期，请重新确认需求并生成候选')
     bound = upstream['upstream_request']
     if decision['demand']['request']['decision_id'] != bound['decision_id'] or decision['demand']['request']['segment_id'] != bound['segment_id']:
         raise HTTPException(409, '选择快照不属于同一上游决策和区段')

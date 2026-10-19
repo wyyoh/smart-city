@@ -1,7 +1,7 @@
 {
   "plan_sha256": "cdeedacc936b023dde9358610b148fee3e8acd69d78e4b0df16e1f0ccceadfef",
   "started_at": "2026-10-19T12:49:15.164626+08:00",
-  "status": "active",
+  "status": "complete_core_prototype_scope",
   "source_plan": "planning/next_phase_backlog_v2.json",
   "time_note": "Timestamps and wall_elapsed_seconds describe automated execution; human effective hours remain unknown.",
   "tasks": {
@@ -518,44 +518,128 @@
     "N18": {
       "title": "完整选材任务价值记录",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:28:43.783182+08:00",
+      "completed_at": "2026-10-19T13:30:56.235449+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "scripts/evaluate_workflow_value_v2.py",
+          "sha256": "d13501427aae708b839a8e9e4a4858f8c7532198f6f5573d5a7ba7858213c277"
+        },
+        {
+          "path": "artifacts/next-phase/workflow-value.json",
+          "sha256": "668e0413652ff6370c7d24408b0156e7816edbf6f9b35829b5802d4000b1afc0"
+        },
+        {
+          "path": "docs/value-evaluation-notes.md",
+          "sha256": "b24d71fc3cf5aaa88bffc2775e95b1bafc0756335816eaeccd3b8fc60fa230ee"
+        }
+      ],
+      "notes": [
+        "按AI代理自测口径记录软件流程，真人用时与行业效果保持未测。",
+        "完成三任务九流程AI软件代理自测；真人参与数为0、真人用时为空，不宣称人工或行业节时。与原计划的真人测时口径差异已明确披露。"
+      ],
+      "wall_elapsed_seconds": 132.452
     },
     "N19": {
       "title": "界面细节与异常恢复打磨",
       "priority": "core",
-      "status": "in_progress",
+      "status": "complete",
       "started_at": "2026-10-19T13:18:48.359846+08:00",
-      "completed_at": null,
+      "completed_at": "2026-10-19T13:28:43.253362+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
+      "completion_evidence": [
+        {
+          "path": "docs/interaction-checklist-v2.md",
+          "sha256": "6400ef3a1b55f5f2de3a83eca24f862083e3c4255bf31f0735aa29c58fe517d6"
+        },
+        {
+          "path": "artifacts/next-phase/ui-review/review.json",
+          "sha256": "43b946afaf92a0fc51cd429af7c1c4089230370599c162297a7542eb4e74c6a4"
+        },
+        {
+          "path": "frontend/src/components/DecisionWorkflow.tsx",
+          "sha256": "6267af62b76f8a8705a9e90d516536748a2740ed121fc893bf0bc19d7d79c873"
+        },
+        {
+          "path": "frontend/src/components/DemandCard.tsx",
+          "sha256": "2d373bc79c67e2dd6b2c38091967211ebb58718515802106a16b28338c699dbc"
+        }
+      ],
       "notes": [
-        "等待真人测时偏好回复，先推进不依赖N18的界面验收。"
-      ]
+        "等待真人测时偏好回复，先推进不依赖N18的界面验收。",
+        "15项浏览器自测记录，两种尺寸和2400ms响应延迟通过；并列夹具仅限隔离QA库。"
+      ],
+      "wall_elapsed_seconds": 594.894
     },
     "N20": {
       "title": "回归离线检查与发布排练",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:30:56.699693+08:00",
+      "completed_at": "2026-10-19T13:38:29.254872+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "artifacts/next-phase/release-checks/checks.json",
+          "sha256": "eed2b86c5bf42dcbd9fa5d7e77c44110143508fdd917bafab7d935ec905d0337"
+        },
+        {
+          "path": "artifacts/next-phase/release-checks/source-integrity.json",
+          "sha256": "98edc67ea860917517757b3cff505a9d438e3165be72a9f9669f9eaacbc9c7af"
+        },
+        {
+          "path": "artifacts/next-phase/release-checks/package-verification.json",
+          "sha256": "8c88e003c5df91ce4bad1fd743255d863cfe059653aa0bb9215a6a1fe1fce5cb"
+        },
+        {
+          "path": "artifacts/next-phase/rehearsals/rehearsal-1/receipt.json",
+          "sha256": "f8ae21683f6812c83e7e16e5885af03e4f3eb06a6856a4ecb7b9667cdd033a53"
+        },
+        {
+          "path": "artifacts/next-phase/rehearsals/rehearsal-2/receipt.json",
+          "sha256": "72ad92c9e971ea0b38cf13b195ad504a21a3802f442badce2bcca0c4ad92d3bd"
+        },
+        {
+          "path": "docs/release-notes-v02.md",
+          "sha256": "0e2351d3da1d19548f596de4d61c96686d18855dec1f31a6b8143612e8c69b8c"
+        }
+      ],
+      "notes": [
+        "65项检查、构建、两次隔离排练和275文件搬迁包验证通过；受保护资料及原库六表未变。"
+      ],
+      "wall_elapsed_seconds": 452.555
     },
     "N21": {
       "title": "亮点叙事与参赛成果核对",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:38:29.730942+08:00",
+      "completed_at": "2026-10-19T13:41:41.463757+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "docs/technical-report-v02.md",
+          "sha256": "4e435c671766a7318d4d1cbb5d0ba793bd2dea547e11d6103ed2c3ff73393a2c"
+        },
+        {
+          "path": "docs/submission-outline-v2.md",
+          "sha256": "4f218071ffad69e82802fb204cd611858cde27a7c86729440e77ee4b61e919d2"
+        },
+        {
+          "path": "docs/demo-script-v2.md",
+          "sha256": "6858d5e8a23effa668c9b45843fda7fcb78ade0a519874e658493b7c30a51af3"
+        },
+        {
+          "path": "artifacts/next-phase/requirements-acceptance.json",
+          "sha256": "1def1605d0bd3a40c0553de6923b791f04d428ed3aade07c31d0d0121ff85c00"
+        }
+      ],
+      "notes": [
+        "五项基本成果与三亮点已挂证据；3/8分钟练习脚本完成；N18代理偏差与外部待验证项已明示。"
+      ],
+      "wall_elapsed_seconds": 191.733
     },
     "EXP01": {
       "title": "统一实验数据与来源分组",
@@ -598,13 +682,14 @@
       "notes": []
     }
   },
-  "updated_at": "2026-10-19T13:18:48.359846+08:00",
+  "updated_at": "2026-10-19T13:41:41.463757+08:00",
   "summary": {
-    "core_completed": 17,
+    "core_completed": 21,
     "core_total": 21,
     "research_completed": 0,
-    "in_progress": [
-      "N19"
-    ]
-  }
+    "in_progress": []
+  },
+  "core_completed_at": "2026-10-19T13:41:41.463757+08:00",
+  "research_disposition": "deferred_by_user_capacity_choice",
+  "human_validation": "N18 completed as disclosed AI proxy; human timing and industry benefit remain unmeasured."
 }

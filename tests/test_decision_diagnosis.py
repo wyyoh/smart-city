@@ -87,5 +87,5 @@ def test_registered_negative(case, client):
     elif identifier == 'NEG12':
         decision = run_case(client)
         assert len(decision['diagnosis']['certificates']) == 4
-        assert all(verify_certificate(cert, decision['results'], decision['pool_sha256'], decision['confirmation_sha256'])['valid'] for cert in decision['diagnosis']['certificates'])
+        assert all(verify_certificate(cert, decision['results'], decision['pool_sha256'], decision['confirmation_sha256'], decision['demand'])['valid'] for cert in decision['diagnosis']['certificates'])
         assert not decision['comparison']['feasible_ids']

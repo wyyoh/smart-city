@@ -84,3 +84,16 @@ def freeze_pool(session, request: PoolRequest):
         'pool_sha256': digest({'scope': scope, 'candidate_ids': ids, 'excluded': excluded, 'evidence': digest(included)}),
         'summary': {'catalogue_total': len(recipes), 'included': len(included), 'excluded': len(excluded)},
     }, parent_id=demand['id'], dataset_id=ds.id)
+
+
+def require_current_pool(session, pool, demand):
+    dataset = latest_dataset(session)
+    if pool['scope']['dataset'] != {'id': dataset.id, 'sha256': dataset.sha256, 'revision': dataset.revision}:
+        raise HTTPException(409, '数据集或反馈版本已变化，请重新冻结候选池')
+    if demand['versions']['rules_sha256'] != rulebook()['sha256'] or demand['versions'].get('case_scenarios_sha256') != casebook()['sha256'] or demand['versions']['metrics_sha256'] != digest(metric_registry()):
+        raise HTTPException(409, '规则、案例或指标版本已变化，请重新解析确认')
+    current = [r for r in sorted(catalog(session, context_kind=demand['request']['context_kind']), key=lambda r: r['id'])
+               if not scope_exclusions(r, demand['request']) and (pool['scope']['evidence_view'] != 'complete_numeric_demo' or
+                                                                 all(r['metrics'].get(t['metric']) is not None for t in demand['targets']))]
+    if digest(current) != pool['evidence_sha256']:
+        raise HTTPException(409, '候选或证据已变化，请重新冻结候选池；旧报告仍可重放')

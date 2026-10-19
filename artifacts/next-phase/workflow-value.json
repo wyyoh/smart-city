@@ -1,0 +1,393 @@
+{
+  "task": "N18",
+  "measurement_kind": "automated_proxy_replay",
+  "created_at": "2026-10-19T05:30:24.270868+00:00",
+  "participant": {
+    "human_participants": 0,
+    "operator": "AI-controlled local software",
+    "learning_order": "Three method orders rotated; no human learning effect measured."
+  },
+  "tasks": [
+    {
+      "task": "routine_selection",
+      "case": "C1",
+      "pool_count": 84,
+      "order": [
+        "manual_proxy",
+        "B1",
+        "V2"
+      ],
+      "shared_operations": [
+        "resolve demand",
+        "record confirmation",
+        "freeze shared visible pool"
+      ],
+      "visible_information": "All arms receive the same frozen candidate labels, targets and provenance; shared preparation is reported explicitly.",
+      "measurements": [
+        {
+          "method": "manual_proxy",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.251481,
+          "adapter_elapsed_seconds": 7.4e-05,
+          "replayed_workflow_seconds": 0.251555,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "explicit spreadsheet-style predicate scan",
+              "unit": "software predicate evaluations",
+              "count": 336
+            },
+            {
+              "operation": "enumerate requirement subsets for review when all candidates have known failures",
+              "count": 0
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
+          "note": "人工表格核对步骤的软件代理；不是人工实测。"
+        },
+        {
+          "method": "B1",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.251481,
+          "adapter_elapsed_seconds": 0.148236,
+          "replayed_workflow_seconds": 0.399717,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "read existing baseline scenario",
+              "unit": "API calls",
+              "count": 1
+            },
+            {
+              "operation": "run existing B1 all-constraint method",
+              "unit": "API calls",
+              "count": 1
+            },
+            {
+              "operation": "explicit software reference supplement for unavailable native audit outputs",
+              "unit": "predicate evaluations",
+              "count": 336
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
+          "note": "保留原B1；补充审计步骤由软件代理执行，不能称真人补充用时。"
+        },
+        {
+          "method": "V2",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.251481,
+          "adapter_elapsed_seconds": 0.302565,
+          "replayed_workflow_seconds": 0.554046,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "generate audited decision and verification actions",
+              "unit": "API calls",
+              "count": 1
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
+          "note": "V2原生生成来源、四态、诊断、验证动作与冻结快照。"
+        }
+      ],
+      "expected": {
+        "feasible_ids": [
+          "mix_0e51eff6e2cef2806f57",
+          "mix_8adbae42f826e07e8611"
+        ],
+        "possible_ids": [
+          "mix_0e51eff6e2cef2806f57",
+          "mix_13fdcb77bf18604636ae",
+          "mix_203340d8858f9df9ad29",
+          "mix_21e1b223458f09f4a8e0",
+          "mix_2903593c8afe22066152",
+          "mix_2d86349ae4883af71033",
+          "mix_368b52a436c174df7b00",
+          "mix_36c35bd65986c0692919",
+          "mix_4b50d94cdbc4a8d9f885",
+          "mix_4c6dec060415d7aa7831",
+          "mix_4cfe9e42690ad2571272",
+          "mix_4ed00092a5bf554b363a",
+          "mix_5ed2f0f14c1ae15fee54",
+          "mix_61892cbf90eca0701e47",
+          "mix_672956f1aa416c00a260",
+          "mix_70c0e27b4d3d403ef7c4",
+          "mix_71cb30ccbdf50e6979f4",
+          "mix_72af0c0357a352104569",
+          "mix_731afb5a5faffa9f439d",
+          "mix_755b28c800668347543b",
+          "mix_7700a0424f240d1ef4a8",
+          "mix_8153cd46ebdc21d7224a",
+          "mix_81d91103dd3c884b9db0",
+          "mix_81e1832db3927a8a4356",
+          "mix_8adbae42f826e07e8611",
+          "mix_902d7e14db2b826abb4d",
+          "mix_981df2a48b81c3678536",
+          "mix_a3f6d70c540959f6c3c3",
+          "mix_b5bfa846ce22bc89669d",
+          "mix_ba8702ea92c033ea7d56",
+          "mix_bdf8fd90d4a0fff803f4",
+          "mix_bf97281a4943a5e7db26",
+          "mix_c20539f505ae9e651e1c",
+          "mix_c5a69974863a4c184f99",
+          "mix_c6bec172977915380d45",
+          "mix_d2f7d32e97586929ccdd",
+          "mix_d4f525518c6987d7baf2",
+          "mix_dc898ba96ba20a6dc035",
+          "mix_ddba05833e2cf539323b",
+          "mix_e7f74ce9b65b26e62668",
+          "mix_ea0ccdbffdb7d41f0c57",
+          "mix_f4b904067d34105dc8d9",
+          "mix_f761a4eb3ea82f7ef357",
+          "mix_f992a4fe2f0eb75fb70c",
+          "mix_fb456d76c0b65ade1120",
+          "mix_fdbc654ee6d2e1d1344b",
+          "mix_fe516b9ed11bd8f60731"
+        ],
+        "minimal_known_failure_subsets": [],
+        "predicate_evaluations": 336,
+        "status": "feasible"
+      }
+    },
+    {
+      "task": "conflict_review",
+      "case": "C5",
+      "pool_count": 35,
+      "order": [
+        "B1",
+        "V2",
+        "manual_proxy"
+      ],
+      "shared_operations": [
+        "resolve demand",
+        "record confirmation",
+        "freeze shared visible pool"
+      ],
+      "visible_information": "All arms receive the same frozen candidate labels, targets and provenance; shared preparation is reported explicitly.",
+      "measurements": [
+        {
+          "method": "B1",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.136111,
+          "adapter_elapsed_seconds": 0.141416,
+          "replayed_workflow_seconds": 0.277528,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "read existing baseline scenario",
+              "unit": "API calls",
+              "count": 1
+            },
+            {
+              "operation": "run existing B1 all-constraint method",
+              "unit": "API calls",
+              "count": 1
+            },
+            {
+              "operation": "explicit software reference supplement for unavailable native audit outputs",
+              "unit": "predicate evaluations",
+              "count": 140
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [
+            "native minimal conflict certificate"
+          ],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "note": "保留原B1；补充审计步骤由软件代理执行，不能称真人补充用时。"
+        },
+        {
+          "method": "V2",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.136111,
+          "adapter_elapsed_seconds": 0.119948,
+          "replayed_workflow_seconds": 0.256059,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "generate audited decision and verification actions",
+              "unit": "API calls",
+              "count": 1
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "note": "V2原生生成来源、四态、诊断、验证动作与冻结快照。"
+        },
+        {
+          "method": "manual_proxy",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.136111,
+          "adapter_elapsed_seconds": 0.000189,
+          "replayed_workflow_seconds": 0.1363,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "explicit spreadsheet-style predicate scan",
+              "unit": "software predicate evaluations",
+              "count": 140
+            },
+            {
+              "operation": "enumerate requirement subsets for review when all candidates have known failures",
+              "count": 4
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "note": "人工表格核对步骤的软件代理；不是人工实测。"
+        }
+      ],
+      "expected": {
+        "feasible_ids": [],
+        "possible_ids": [],
+        "minimal_known_failure_subsets": [
+          [
+            "DS",
+            "strain"
+          ],
+          [
+            "DS",
+            "TSR"
+          ],
+          [
+            "DS",
+            "residual"
+          ],
+          [
+            "strain",
+            "TSR"
+          ]
+        ],
+        "predicate_evaluations": 140,
+        "status": "conflict"
+      }
+    },
+    {
+      "task": "new_version_validation",
+      "case": "C1",
+      "pool_count": 1,
+      "order": [
+        "V2",
+        "manual_proxy",
+        "B1"
+      ],
+      "shared_operations": [
+        "create labelled variant fixture",
+        "read material version",
+        "resolve demand",
+        "record confirmation",
+        "freeze shared visible pool"
+      ],
+      "visible_information": "All arms receive the same frozen candidate labels, targets and provenance; shared preparation is reported explicitly.",
+      "measurements": [
+        {
+          "method": "V2",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.117348,
+          "adapter_elapsed_seconds": 0.016056,
+          "replayed_workflow_seconds": 0.133404,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "generate audited decision and verification actions",
+              "unit": "API calls",
+              "count": 1
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "987776248627c1a091e92064976bbb2f66d6c81255a0f0bf6e87c560829adde8",
+          "note": "V2原生生成来源、四态、诊断、验证动作与冻结快照。"
+        },
+        {
+          "method": "manual_proxy",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.117348,
+          "adapter_elapsed_seconds": 1.1e-05,
+          "replayed_workflow_seconds": 0.117358,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "explicit spreadsheet-style predicate scan",
+              "unit": "software predicate evaluations",
+              "count": 4
+            },
+            {
+              "operation": "enumerate requirement subsets for review when all candidates have known failures",
+              "count": 0
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "987776248627c1a091e92064976bbb2f66d6c81255a0f0bf6e87c560829adde8",
+          "note": "人工表格核对步骤的软件代理；不是人工实测。"
+        },
+        {
+          "method": "B1",
+          "operator": "AI-controlled software proxy",
+          "shared_preparation_seconds": 0.117348,
+          "adapter_elapsed_seconds": 0.091609,
+          "replayed_workflow_seconds": 0.208956,
+          "human_effective_seconds": null,
+          "human_operation_count": null,
+          "software_operations": [
+            {
+              "operation": "read existing baseline scenario",
+              "unit": "API calls",
+              "count": 1
+            },
+            {
+              "operation": "run existing B1 all-constraint method",
+              "unit": "API calls",
+              "count": 1
+            },
+            {
+              "operation": "explicit software reference supplement for unavailable native audit outputs",
+              "unit": "predicate evaluations",
+              "count": 4
+            }
+          ],
+          "native_output_omissions_before_reference_supplement": [
+            "native method/condition-specific stopping card"
+          ],
+          "numerical_feasible_set_matches_reference": true,
+          "pool_sha256": "987776248627c1a091e92064976bbb2f66d6c81255a0f0bf6e87c560829adde8",
+          "note": "保留原B1；补充审计步骤由软件代理执行，不能称真人补充用时。"
+        }
+      ],
+      "expected": {
+        "feasible_ids": [],
+        "possible_ids": [
+          "var_c6c1b51eae2548a0aea3b27bf76fddc4"
+        ],
+        "minimal_known_failure_subsets": [],
+        "predicate_evaluations": 4,
+        "status": "insufficient"
+      }
+    }
+  ],
+  "human_timing_status": "not_measured",
+  "industry_efficiency_gain": "not_estimated",
+  "limitations": [
+    "API/CPU/serialization and shared preparation affect these timings. They cannot rank human productivity.",
+    "Manual proxy is a script of reference steps, not a person using a spreadsheet.",
+    "B1 remains strong; identical feasible sets do not establish V2 recommendation accuracy gains.",
+    "Human end-to-end task times, cost, carbon, life and field benefits require later independent measurement."
+  ]
+}

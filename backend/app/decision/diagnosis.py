@@ -17,6 +17,17 @@ def witness(rows, remaining):
                                  for c in row['checks'] if c['target_id'] in remaining]}
 
 
+def requirement_definitions(demand):
+    definitions = {t['target_id']: {k: t.get(k) for k in ['metric', 'operator', 'value', 'upper', 'unit', 'source']} for t in demand['targets']}
+    constraints = demand['request'].get('constraints', {})
+    for key, operator, unit in [('rap_min_pct', '>=', '%'), ('budget', '<=', constraints.get('budget_unit')),
+                                 ('carbon_cap', '<=', constraints.get('carbon_unit')), ('schedule_days', '<=', '天')]:
+        if constraints.get(key) is not None:
+            definitions['resource:' + key] = {'metric': key, 'operator': operator, 'value': constraints[key], 'upper': None, 'unit': unit,
+                                               'source': {'kind': 'project_target', 'reference': '本次场景资源要求（用户输入）'}}
+    return definitions
+
+
 def diagnose(results, demand, pool_sha256):
     base = {'pool_sha256': pool_sha256, 'confirmation_sha256': demand['sha256'],
             'scope_note': '仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。'}
@@ -43,7 +54,7 @@ def diagnose(results, demand, pool_sha256):
             if covers(results, reduced):
                 keys = reduced
         subsets.append(keys)
-    definitions = {t['target_id']: {k: t.get(k) for k in ['metric', 'operator', 'value', 'upper', 'unit', 'source']} for t in demand['targets']}
+    definitions = requirement_definitions(demand)
     certificates = []
     for keys in subsets:
         witnesses = [{'removed_target': key, **witness(results, [k for k in keys if k != key])} for key in keys]
@@ -59,13 +70,22 @@ def diagnose(results, demand, pool_sha256):
             'actions': ['核查目标及方法条件是否录入正确', '补充独立候选或新版本试验', '如需变更正式要求，由工程师另行确认并保留理由']}
 
 
-def verify_certificate(certificate, results, pool_sha256, confirmation_sha256):
+def verify_certificate(certificate, results, pool_sha256, confirmation_sha256, demand):
     errors = []
     if certificate['pool_sha256'] != pool_sha256 or certificate['confirmation_sha256'] != confirmation_sha256:
         errors.append('version_binding')
     if digest({k: v for k, v in certificate.items() if k != 'certificate_sha256'}) != certificate['certificate_sha256']:
         errors.append('hash')
     keys = certificate['target_ids']
+    definitions = requirement_definitions(demand)
+    if len(keys) != len(set(keys)) or any(key not in definitions for key in keys):
+        errors.append('invalid_requirement_ids')
+    if certificate['requirements'] != [definitions.get(key) for key in keys]:
+        errors.append('requirement_definition_mismatch')
+    if len(certificate['deletion_witnesses']) != len(keys) or {w['removed_target'] for w in certificate['deletion_witnesses']} != set(keys):
+        errors.append('witness_coverage')
+    if certificate['minimality_status'] == 'verified_inclusion_minimal' and any(w['kind'] != 'all_remaining_satisfied' for w in certificate['deletion_witnesses']):
+        errors.append('unverified_minimality_claim')
     if not covers(results, keys):
         errors.append('not_infeasible')
     for key in keys:
@@ -78,6 +98,12 @@ def verify_certificate(certificate, results, pool_sha256, confirmation_sha256):
             errors.append('invalid_witness')
         elif item['kind'] == 'all_remaining_satisfied' and any(c['state'] != 'satisfied' for c in row['checks'] if c['target_id'] in remaining):
             errors.append('unknown_witness_claimed_satisfied')
+        if row is not None and item is not None:
+            expected_checks = [{'target_id': c['target_id'], 'state': c['state'], 'value': c.get('value')} for c in row['checks'] if c['target_id'] in remaining]
+            if item['remaining_checks'] != expected_checks:
+                errors.append('witness_evidence_mismatch')
     if {r['candidate_id']: r['failed_in_subset'] for r in certificate['candidate_failures']} != {r['id']: sorted(set(r['failed_targets']) & set(keys)) for r in results}:
         errors.append('candidate_coverage')
+    if len(certificate['candidate_failures']) != len(results):
+        errors.append('duplicate_candidate_coverage')
     return {'valid': not errors, 'errors': errors}

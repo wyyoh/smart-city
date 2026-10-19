@@ -19,7 +19,7 @@ def build():
     stamp=now().replace(':','').replace('-','').split('.')[0].replace('+','_')
     destination=ROOT/'artifacts/release'/f'asphalt-workbench-{VERSION}-{stamp}'
     destination.mkdir(parents=True,exist_ok=False)
-    folders=['backend','frontend/dist','configs','docs','scripts','tests','planning','design']
+    folders=['backend','frontend/dist','frontend/public','configs','docs','scripts','tests','planning','design']
     for folder in folders:
         shutil.copytree(ROOT/folder,destination/folder,ignore=shutil.ignore_patterns('__pycache__','*.pyc','*.tsbuildinfo'))
     for folder in ['frontend/src']:
@@ -30,6 +30,7 @@ def build():
         shutil.copy2(ROOT/relative,destination/relative)
     for pdf in ROOT.glob('*.pdf'):shutil.copy2(pdf,destination/pdf.name)
     shutil.copytree(ROOT/'artifacts/models',destination/'artifacts/models')
+    shutil.copytree(ROOT/'artifacts/next-phase',destination/'artifacts/next-phase',ignore=shutil.ignore_patterns('*.sqlite*','*.log'))
     for folder in ['artifacts/demo','artifacts/screenshots']:
         if (ROOT/folder).exists():
             shutil.copytree(ROOT/folder,destination/folder,ignore=shutil.ignore_patterns('*before-fix*'))
@@ -48,6 +49,10 @@ def build():
             output=destination/'artifacts/demo-reports';output.mkdir(exist_ok=True)
             (output/f'{case["id"]}.html').write_text(html_report(result),encoding='utf-8')
             (output/f'{case["id"]}.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+        from fastapi.testclient import TestClient
+        from compare_cases_v2 import run_comparisons
+        with TestClient(create_app(eng)) as client:
+            run_comparisons(client,destination/'artifacts/next-phase/case-reports')
         data_id=ds.id;sha=ds.sha256
     eng.dispose()
     (destination/'docs/api.openapi.json').write_text(json.dumps(create_app().openapi(),ensure_ascii=False,indent=2),encoding='utf-8')

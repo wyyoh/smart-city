@@ -133,13 +133,13 @@
     "mix_ff76e96640f7706852c9"
   ],
   "demand": {
-    "id": "dema_c65082aee77a49a69f0dfc9be9f407c5",
+    "id": "dema_92ba4ce6e8cb4130a85fab12c42fc2b8",
     "kind": "demand_confirmation",
-    "created_at": "2026-10-19T05:17:11.933972+00:00",
-    "parent_id": "dema_db925f472aa34c4497de90b04b7690d7",
+    "created_at": "2026-10-19T05:34:57.951317+00:00",
+    "parent_id": "dema_06e30bcf1f1e42deb795e01d361275f3",
     "schema_version": "2.0",
-    "resolution_id": "dema_db925f472aa34c4497de90b04b7690d7",
-    "resolution_sha256": "66fcc565dfa1148f29c88afe500feed2ae6324bc6d7bfbaf8c4b7e9a8fadece0",
+    "resolution_id": "dema_06e30bcf1f1e42deb795e01d361275f3",
+    "resolution_sha256": "92d3c9a3f27b70a3624c6252eea006b463f5ef9408ab3c6172d292ecf1edeb13",
     "request": {
       "schema_version": "2.0",
       "name": "高RAP再生材料选型",
@@ -806,7 +806,7 @@
     ],
     "requirements_complete": true,
     "ready_for_candidate_retrieval": true,
-    "sha256": "bfbc11c24d7e061d05254bb34bc871545bc119b53f650231e9516735d6d51dfd"
+    "sha256": "ccc40fa58eaeae89b6e390679e5ff9b4595c6808e35ab4eabf4e3d86c0552a60"
   },
   "pool_exclusions": [
     {
@@ -1803,7 +1803,7 @@
     ],
     "diagnosis": {
       "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
-      "confirmation_sha256": "bfbc11c24d7e061d05254bb34bc871545bc119b53f650231e9516735d6d51dfd",
+      "confirmation_sha256": "ccc40fa58eaeae89b6e390679e5ff9b4595c6808e35ab4eabf4e3d86c0552a60",
       "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
       "status": "numeric_feasible",
       "message": "有满足当前可比较要求的候选，工程发布仍须审核和试验",

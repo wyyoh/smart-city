@@ -7,6 +7,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'backend'))
+sys.path.insert(0, str(ROOT / 'scripts'))
+from v2_isolation import copy_baseline
+
 from fastapi.responses import JSONResponse
 import uvicorn
 from app.main import create_app
@@ -20,7 +23,7 @@ def main():
     args=parser.parse_args()
     path=ROOT/'artifacts/next-phase/ui-review.sqlite'
     if not path.exists():
-        shutil.copyfile(ROOT/'artifacts/next-phase/baseline/workbench-v01.sqlite',path)
+        copy_baseline(path)
     app=create_app(make_engine(path))
 
     @app.middleware('http')

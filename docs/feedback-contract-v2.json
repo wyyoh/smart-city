@@ -148,6 +148,25 @@
               "title": "Context Kind",
               "type": "string"
             },
+            "demo_case_id": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "C1",
+                    "C2",
+                    "C3",
+                    "C4",
+                    "C5"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Demo Case Id"
+            },
             "scene": {
               "$ref": "#/$defs/SceneContext"
             },

@@ -133,13 +133,13 @@
     "mix_ff76e96640f7706852c9"
   ],
   "demand": {
-    "id": "dema_fa829e2f0fcb4caebe54d2b2ea2fc659",
+    "id": "dema_a565baeebf41426993a305323c0f07ba",
     "kind": "demand_confirmation",
-    "created_at": "2026-10-19T05:17:12.747338+00:00",
-    "parent_id": "dema_a1c2fcd7aa3e4530b096d57cd610e7b5",
+    "created_at": "2026-10-19T05:34:59.123162+00:00",
+    "parent_id": "dema_8e492fbb294649e5b693a7a671eb450d",
     "schema_version": "2.0",
-    "resolution_id": "dema_a1c2fcd7aa3e4530b096d57cd610e7b5",
-    "resolution_sha256": "6e565f0428621bde5bee569c08c888888260e3b5238f891daa22185728534746",
+    "resolution_id": "dema_8e492fbb294649e5b693a7a671eb450d",
+    "resolution_sha256": "d9bd19b733c7871d0d27477c9f3c148379e4cdef62f3228851851d1d2245e08b",
     "request": {
       "schema_version": "2.0",
       "name": "高低温与水稳定复合约束",
@@ -806,7 +806,7 @@
     ],
     "requirements_complete": true,
     "ready_for_candidate_retrieval": true,
-    "sha256": "21b002a15a766000a0bf38b2b04ff292aec03143c80a8b65446a9e84792f062c"
+    "sha256": "6373f2dd5428cb240e681654d9b32f5878f1093dc013764e6e4fde10184b7395"
   },
   "pool_exclusions": [
     {
@@ -1797,7 +1797,7 @@
     "review_first_ids": [],
     "diagnosis": {
       "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
-      "confirmation_sha256": "21b002a15a766000a0bf38b2b04ff292aec03143c80a8b65446a9e84792f062c",
+      "confirmation_sha256": "6373f2dd5428cb240e681654d9b32f5878f1093dc013764e6e4fde10184b7395",
       "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
       "status": "evidence_insufficient",
       "message": "有候选尚未被已知失败排除；缺测或不可比不能证明无解",

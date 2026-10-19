@@ -133,13 +133,13 @@
     "mix_ff76e96640f7706852c9"
   ],
   "demand": {
-    "id": "dema_33566a3ebaa1411abb094361a4e4a532",
+    "id": "dema_fc790dad33b64f50b03973bb21e48d87",
     "kind": "demand_confirmation",
-    "created_at": "2026-10-19T05:17:09.365996+00:00",
-    "parent_id": "dema_41dc0f07b2934375b12bd942c82bbcce",
+    "created_at": "2026-10-19T05:34:55.369789+00:00",
+    "parent_id": "dema_f15ac6f930d14663bb45f82ac537d978",
     "schema_version": "2.0",
-    "resolution_id": "dema_41dc0f07b2934375b12bd942c82bbcce",
-    "resolution_sha256": "9b70d5319c943acef29a233947c1a38b16e9799dbe2e922635cc8a62038ecbb4",
+    "resolution_id": "dema_f15ac6f930d14663bb45f82ac537d978",
+    "resolution_sha256": "7c138b2d66df377bc09dfd9ac61f7cb9002cb899cf55708b76a8bd06c33edb17",
     "request": {
       "schema_version": "2.0",
       "name": "高温重载车辙处治",
@@ -722,7 +722,7 @@
     ],
     "requirements_complete": true,
     "ready_for_candidate_retrieval": true,
-    "sha256": "dc778b77ce293010a73fdef6dfd0aa9a91dac30f10b57c38415dfef068cc2c6d"
+    "sha256": "381666d8d24af9351edfb080336bea1b776554fca12a3ae64a032f98c1ff7185"
   },
   "pool_exclusions": [
     {
@@ -1719,7 +1719,7 @@
     ],
     "diagnosis": {
       "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
-      "confirmation_sha256": "dc778b77ce293010a73fdef6dfd0aa9a91dac30f10b57c38415dfef068cc2c6d",
+      "confirmation_sha256": "381666d8d24af9351edfb080336bea1b776554fca12a3ae64a032f98c1ff7185",
       "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
       "status": "numeric_feasible",
       "message": "有满足当前可比较要求的候选，工程发布仍须审核和试验",

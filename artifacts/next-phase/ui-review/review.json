@@ -1,0 +1,88 @@
+{
+  "task": "N19",
+  "reviewed_at": "2026-10-19T05:27:59.469Z",
+  "participant": "AI browser self-test",
+  "url": "http://127.0.0.1:8768/",
+  "database": "isolated ui-review.sqlite",
+  "test_delay_ms": 2400,
+  "qa_tie_fixture": "Labelled synthetic copy QA-TIE-R1, UI-state verification only; not an independent material experiment",
+  "checks": [
+    {
+      "id": "slow_demand_response",
+      "result": "pass",
+      "detail": "2400ms response completed; cold-scene input and empty demand card remained"
+    },
+    {
+      "id": "service_error_visible",
+      "result": "pass",
+      "detail": "Controlled 503 fixture displayed with retry path"
+    },
+    {
+      "id": "keyboard_confirm",
+      "result": "pass",
+      "detail": "Tab focused confirm button and Enter submitted; no page horizontal overflow at 1440px"
+    },
+    {
+      "id": "all_catalogue_missingness",
+      "result": "pass",
+      "detail": "C5 full catalogue pool returns evidence insufficient, no infeasibility claim"
+    },
+    {
+      "id": "scope_change_cancels_generation",
+      "result": "pass"
+    },
+    {
+      "id": "C5_certificates_and_witnesses",
+      "result": "pass",
+      "detail": "35 complete records, four minimum conflicts; witness expanded with Enter"
+    },
+    {
+      "id": "two_viewports",
+      "result": "pass",
+      "detail": "1440x900 and 1280x720 checked; no document horizontal overflow"
+    },
+    {
+      "id": "empty_inventory",
+      "result": "pass",
+      "detail": "Explicit empty inventory returns empty pool, no performance conflict certificate"
+    },
+    {
+      "id": "ties",
+      "result": "pass",
+      "detail": "QA-only labelled synthetic copy of R1; both show rank 2, tied, nondominated; not new material evidence"
+    },
+    {
+      "id": "next_test_both_viewports",
+      "result": "pass",
+      "detail": "Candidate, test conditions, rationale and stopping rule visible; keyboard opens variant editor"
+    },
+    {
+      "id": "formal_project_and_unsupported_grade",
+      "result": "pass",
+      "detail": "Real project condition text inputs accept declared values; PG 64-22 kept as grade requirement; missing numerical requirements and unsupported PG evidence stay visible"
+    },
+    {
+      "id": "demand_and_scheme_both_viewports",
+      "result": "pass",
+      "detail": "Generated target cards, confirmation button and composition fields inspected at both specified sizes"
+    },
+    {
+      "id": "model_view",
+      "result": "pass",
+      "detail": "Four metrics show measured, own-fold and fitted predictions separately; all four worse-than-dummy results visible"
+    },
+    {
+      "id": "immutable_reopen_and_sources",
+      "result": "pass",
+      "detail": "Saved snapshots reopened and source cell row inspected during N13/N19"
+    },
+    {
+      "id": "stale_input_notice",
+      "result": "pass",
+      "detail": "Changing conditions preserved old report with explicit stale notice and blocked new generation until confirmation"
+    }
+  ],
+  "limitations": [
+    "No engineering applicability, real field benefit or human speedup measured."
+  ]
+}

@@ -10,6 +10,9 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'backend'))
 
+sys.path.insert(0, str(ROOT / 'scripts'))
+from v2_isolation import copy_baseline
+
 from fastapi.testclient import TestClient
 from app.main import create_app
 from app.storage import make_engine
@@ -58,7 +61,7 @@ def exercise(client, prefix='local-mock-v2'):
 def main():
     with tempfile.TemporaryDirectory(prefix='upstream-v2-') as temporary:
         path = Path(temporary) / 'mock.sqlite'
-        shutil.copyfile(ROOT / 'artifacts/next-phase/baseline/workbench-v01.sqlite', path)
+        copy_baseline(path)
         engine = make_engine(path)
         try:
             with TestClient(create_app(engine)) as client:

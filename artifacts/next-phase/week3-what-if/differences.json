@@ -1,9 +1,9 @@
 {
   "C1_to_C2": {
-    "before_id": "mate_3cf9245da45f4e13b7dd1d7b7e8207e5",
-    "after_id": "mate_8ea21f52632d4646852ed92aedabead0",
-    "before_sha256": "c4efbd6da5033a1648e9dbfe9bc895ca0884763d9832e8b6e6fd4b094bf30dfe",
-    "after_sha256": "ce4e0b59f12cc44e57d6272c23ecb7fea9e91658d6cb218e002e6a91d556f529",
+    "before_id": "mate_c3338e14622843ceb89df7f908fca82a",
+    "after_id": "mate_4a1959c28786448e9cc1531a9d30c4a8",
+    "before_sha256": "53431c18ee29cf8c89e07aae2e5c60867ac6f3307cbc776837b548b0a147884c",
+    "after_sha256": "2ac1b021739723cdad162d8465eec3d820a09c610ca9ab928a94066831c3e9be",
     "input_changes": [
       {
         "field": "scene.climate.class",
@@ -1760,13 +1760,13 @@
     "requires_engineer_confirmation": true,
     "note": "解释两份冻结快照的真实差异；变化是场景规则或人工修改的结果，不是因果效应估计。",
     "changed": true,
-    "sha256": "fea073c4cfd9cf094ab7aa3f10073e54d32e77f035633b07bc3f4828d4821694"
+    "sha256": "56bcb7ae1dea017cb99ac9cacf8068e0fbeebbb5a001a863e73be60137eac7e8"
   },
   "C1_repeated": {
-    "before_id": "mate_3cf9245da45f4e13b7dd1d7b7e8207e5",
-    "after_id": "mate_f831abae5439479e9feb546b7338a155",
-    "before_sha256": "c4efbd6da5033a1648e9dbfe9bc895ca0884763d9832e8b6e6fd4b094bf30dfe",
-    "after_sha256": "ffc79265b26a49175d58b875070cefa9895d61b3f604453be0d6e69ef2a3fc80",
+    "before_id": "mate_c3338e14622843ceb89df7f908fca82a",
+    "after_id": "mate_44583866fc7f41bb84eabc5aa211d8ca",
+    "before_sha256": "53431c18ee29cf8c89e07aae2e5c60867ac6f3307cbc776837b548b0a147884c",
+    "after_sha256": "6f8efa85c6dd505cf57b720a9fa6cb1057d88124c6481a8bad37505cec8305b3",
     "input_changes": [],
     "rule_changes": [],
     "target_changes": [],
@@ -1780,6 +1780,6 @@
     "requires_engineer_confirmation": false,
     "note": "解释两份冻结快照的真实差异；变化是场景规则或人工修改的结果，不是因果效应估计。",
     "changed": false,
-    "sha256": "e5ac126f2674c5258aed2eac32e7e7841a59db59d6486e48e9718143e245adb1"
+    "sha256": "8c846d9bb97b7d0fd6e655d2b64e24f8603954a24e0e42639fafbebdbbf50b8e"
   }
 }

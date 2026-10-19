@@ -66,6 +66,11 @@ def main():
         'research_completed': sum(t['status'] == 'complete' and t['priority'] != 'core' for t in progress['tasks'].values()),
         'in_progress': [key for key, t in progress['tasks'].items() if t['status'] == 'in_progress'],
     }
+    if progress['summary']['core_completed'] == progress['summary']['core_total']:
+        progress['status'] = 'complete_core_prototype_scope'
+        progress['core_completed_at'] = progress.get('core_completed_at') or now()
+        progress['research_disposition'] = 'deferred_by_user_capacity_choice'
+        progress['human_validation'] = 'N18 completed as disclosed AI proxy; human timing and industry benefit remain unmeasured.'
     if args.action != 'show':
         PROGRESS.parent.mkdir(parents=True, exist_ok=True)
         PROGRESS.write_text(json.dumps(progress, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')

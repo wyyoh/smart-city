@@ -40,14 +40,28 @@ def verify(directory):
                 response=client.post('/v1/predictions/R1',json={})
                 assert response.status_code==200,response.text
                 assert client.get('/v1/reports').status_code==200
+                case=client.get('/v2/benchmark-cases').json()['cases'][4]
+                resolution=client.post('/v2/demand-resolutions',json=case['example_request']).json()
+                demand=client.post('/v2/demand-resolutions/'+resolution['id']+'/confirm',json={'expected_sha256':resolution['sha256'],'confirmed_by':'AI package verification'}).json()
+                pool=client.post('/v2/candidate-pools',json={'confirmation_id':demand['id'],'evidence_view':'complete_numeric_demo'}).json()
+                decision=client.post('/v2/decisions',json={'pool_id':pool['id']}).json()
+                assert len(decision['results'])==35 and len(decision['diagnosis']['certificates'])==4
+                assert client.get('/v2/decisions/'+decision['id']+'/report.html').status_code==200
         finally:
             process.terminate()
             try:process.wait(timeout=5)
             except subprocess.TimeoutExpired:process.kill();process.wait()
     result={'status':'passed','directory':str(directory),'manifest_files_verified':len(manifest['files']),
-            'checks':['all packaged file hashes','relocated application root','bundled frontend','C3 returns R7','bundled model prediction','saved reports'],
+            'checks':['all packaged file hashes','relocated application root','bundled frontend','legacy C3 returns R7','bundled model prediction','saved reports','v2 C5 35-key numeric scope with four certificates','v2 HTML report'],
             'environment':'同一机器的已安装Python依赖；从另一目录启动，不是全新操作系统验收'}
-    (ROOT/'artifacts/package-verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+    if manifest.get('app_version')=='0.2.0':
+        checks_root=ROOT/'artifacts/next-phase/release-checks'
+        receipts=checks_root/'package-verifications';receipts.mkdir(exist_ok=True)
+        (receipts/(directory.name+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        candidate_receipt=checks_root/'package-verification.json'
+        if not candidate_receipt.exists():candidate_receipt.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    else:
+        (ROOT/'artifacts/package-verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
 
