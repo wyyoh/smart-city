@@ -1,0 +1,28 @@
+{
+  "id": "mot-3410-2025",
+  "title": "公路工程沥青及沥青混合料试验规程发布公告",
+  "standard": "JTG 3410—2025",
+  "authority": "交通运输部",
+  "type": "强制性行业标准发布公告",
+  "notice_date": "2025-06-13",
+  "page_publication_date": "2025-08-22",
+  "effective_date": "2025-10-01",
+  "replaces": "JTG E20—2011",
+  "url": "https://xxgk.mot.gov.cn/jigou/glj/202508/t20250822_4175218.html",
+  "verified_on": "2026-10-19",
+  "verification_scope": "核对官方发布公告；不据新规程倒填历史试验方法、条件或日期。",
+  "thresholds_authorized": false,
+  "recorded_at": "2026-10-19T07:03:24.240277+00:00",
+  "verification_channel": "web.open of official URL, cross-checked with official-domain search",
+  "source_content_scope": "Official notice metadata and effective/replacement statements read in browser tool. No raw HTTP response saved.",
+  "direct_python_fetch": "Not used as evidence: local certificate verification failed. Official browser tool read succeeded.",
+  "facts_verified": [
+    "standard identifier",
+    "notice date",
+    "page publication date",
+    "standard category",
+    "effective date",
+    "replaced standard"
+  ],
+  "project_applicability_verified": false
+}

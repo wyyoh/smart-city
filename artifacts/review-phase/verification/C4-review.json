@@ -1,0 +1,1233 @@
+{
+  "id": "rev_rehearsal-C4",
+  "kind": "decision_review",
+  "created_at": "2026-10-19T07:03:33.626412+00:00",
+  "parent_id": "mate_f42a01d63f584dfba587f3a84f98942b",
+  "schema_version": "3.0",
+  "review_version": "review-3.0.0",
+  "generated_at": "2026-10-19T07:03:33.623780+00:00",
+  "decision_id": "mate_f42a01d63f584dfba587f3a84f98942b",
+  "decision_sha256": "efe4b690b0eb9a19413d8687308b634825edf4971d56d8b5b5af9ce86567d492",
+  "decision_created_at": "2026-10-19T07:03:32.965290+00:00",
+  "name": "高RAP再生材料选型",
+  "context_kind": "constructed_demo",
+  "scene": {
+    "maintenance_method": "hot_recycling",
+    "layer": "surface",
+    "structure_type": "flexible",
+    "climate": {
+      "class": "demo_hot",
+      "source": "团队构造：高温分区，无真实气候数据映射"
+    },
+    "traffic": {
+      "class": "demo_heavy",
+      "source": "团队构造：重载分组，无实测交通换算"
+    },
+    "distress": {
+      "type": "rutting",
+      "severity": "severe",
+      "mechanism": "团队构造病害描述，待现场确认"
+    }
+  },
+  "scope": {
+    "context_kind": "constructed_demo",
+    "inventory": {
+      "source_codes": null,
+      "product_versions": null,
+      "gradation_family": "AC-13"
+    },
+    "scene": {
+      "maintenance_method": "hot_recycling",
+      "layer": "surface",
+      "structure_type": "flexible",
+      "climate": {
+        "class": "demo_hot",
+        "source": "团队构造：高温分区，无真实气候数据映射"
+      },
+      "traffic": {
+        "class": "demo_heavy",
+        "source": "团队构造：重载分组，无实测交通换算"
+      },
+      "distress": {
+        "type": "rutting",
+        "severity": "severe",
+        "mechanism": "团队构造病害描述，待现场确认"
+      }
+    },
+    "construction": {
+      "equipment": null,
+      "mixing_window": null,
+      "compaction_window": null,
+      "source": null
+    },
+    "evidence_view": "all",
+    "catalogue_total": 180,
+    "dataset": {
+      "id": "ds_d916d61767ca55d21bd7",
+      "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+      "revision": 0
+    },
+    "scope_note": "结论仅针对本次冻结目录、库存、级配及证据视图；不是所有可设计材料的结论。",
+    "inventory_confirmed": false,
+    "evidence_view_note": "保留缺测和适用性未知候选，未知不能证明无解。"
+  },
+  "pool_summary": {
+    "catalogue_total": 180,
+    "included": 84,
+    "excluded": 96
+  },
+  "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
+  "confirmation_sha256": "7dae8bb0c6f9f1e29b1c507a6e7634a3cf7c71e475f78fa9fe8cbe6f794fe8a0",
+  "requirements": [
+    {
+      "target_id": "hot-rutting:DS:0",
+      "metric": "DS",
+      "label": "动稳定度",
+      "operator": ">",
+      "value": 6000,
+      "upper": null,
+      "unit": "次/mm",
+      "source": {
+        "kind": "constructed_demo",
+        "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+        "confirmed": false
+      },
+      "source_confirmation_scope": "本地输入声明，未经独立核验",
+      "test_method": null,
+      "conditions": {},
+      "required_condition_keys": [
+        "conditioning",
+        "load",
+        "temperature"
+      ],
+      "missing_conditions": [
+        "conditioning",
+        "load",
+        "temperature"
+      ],
+      "issues": [
+        "构造或企业参考要求，项目适用尚待核定",
+        "要求出处尚未声明确认",
+        "试验方法待确认",
+        "目标条件待补齐：conditioning、load、temperature"
+      ],
+      "status": "needs_evidence"
+    },
+    {
+      "target_id": "hot-rutting:strain:1",
+      "metric": "strain",
+      "label": "最大弯拉应变",
+      "operator": ">",
+      "value": 2200,
+      "upper": null,
+      "unit": "με",
+      "source": {
+        "kind": "constructed_demo",
+        "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+        "confirmed": false
+      },
+      "source_confirmation_scope": "本地输入声明，未经独立核验",
+      "test_method": null,
+      "conditions": {},
+      "required_condition_keys": [
+        "conditioning",
+        "loading_rate",
+        "temperature"
+      ],
+      "missing_conditions": [
+        "conditioning",
+        "loading_rate",
+        "temperature"
+      ],
+      "issues": [
+        "构造或企业参考要求，项目适用尚待核定",
+        "要求出处尚未声明确认",
+        "试验方法待确认",
+        "目标条件待补齐：conditioning、loading_rate、temperature"
+      ],
+      "status": "needs_evidence"
+    },
+    {
+      "target_id": "hot-rutting:TSR:2",
+      "metric": "TSR",
+      "label": "冻融劈裂强度比",
+      "operator": ">",
+      "value": 85,
+      "upper": null,
+      "unit": "%",
+      "source": {
+        "kind": "constructed_demo",
+        "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+        "confirmed": false
+      },
+      "source_confirmation_scope": "本地输入声明，未经独立核验",
+      "test_method": null,
+      "conditions": {},
+      "required_condition_keys": [
+        "conditioning",
+        "temperature"
+      ],
+      "missing_conditions": [
+        "conditioning",
+        "temperature"
+      ],
+      "issues": [
+        "构造或企业参考要求，项目适用尚待核定",
+        "要求出处尚未声明确认",
+        "试验方法待确认",
+        "目标条件待补齐：conditioning、temperature"
+      ],
+      "status": "needs_evidence"
+    },
+    {
+      "target_id": "hot-rutting:residual:3",
+      "metric": "residual",
+      "label": "残留稳定度比",
+      "operator": ">",
+      "value": 85,
+      "upper": null,
+      "unit": "%",
+      "source": {
+        "kind": "enterprise_reference",
+        "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+        "confirmed": false
+      },
+      "source_confirmation_scope": "本地输入声明，未经独立核验",
+      "test_method": null,
+      "conditions": {},
+      "required_condition_keys": [
+        "conditioning",
+        "temperature"
+      ],
+      "missing_conditions": [
+        "conditioning",
+        "temperature"
+      ],
+      "issues": [
+        "构造或企业参考要求，项目适用尚待核定",
+        "要求出处尚未声明确认",
+        "试验方法待确认",
+        "目标条件待补齐：conditioning、temperature"
+      ],
+      "status": "needs_evidence"
+    }
+  ],
+  "diagnosis": {
+    "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
+    "confirmation_sha256": "7dae8bb0c6f9f1e29b1c507a6e7634a3cf7c71e475f78fa9fe8cbe6f794fe8a0",
+    "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+    "status": "numeric_feasible",
+    "message": "有满足当前可比较要求的候选，工程发布仍须审核和试验",
+    "certificates": []
+  },
+  "certificate_checks": [],
+  "freshness": {
+    "decision_id": "mate_f42a01d63f584dfba587f3a84f98942b",
+    "snapshot_sha256": "efe4b690b0eb9a19413d8687308b634825edf4971d56d8b5b5af9ce86567d492",
+    "current": true,
+    "reasons": [],
+    "candidate_changes": {
+      "added": [],
+      "removed": [],
+      "changed_evidence": []
+    },
+    "replay_note": "此快照保持原内容，可重放历史判断；新决策须使用重新确认的需求与冻结池。"
+  },
+  "numerical_summary": {
+    "feasible_count": 1,
+    "candidate_count": 84,
+    "states": {
+      "satisfied": 91,
+      "missing": 181,
+      "failed": 148
+    },
+    "rule": "先满足全部硬要求，再按场景优先指标作字典序比较；同值并列，另列非支配集。"
+  },
+  "focus_candidates": [
+    {
+      "id": "mix_5a0eae6db3cb0a2f9a1f",
+      "display_id": "R5",
+      "status": "numeric_review",
+      "material_version": "mat_7070a1687b664fdea26b0548",
+      "kind": "historical",
+      "fields": {
+        "source_code": {
+          "value": "1B",
+          "unit": null,
+          "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+          "status": "recorded"
+        },
+        "product": {
+          "value": "AC-13-3(130#)",
+          "unit": null,
+          "reference": "工作簿产品标识；不推断为PG等级",
+          "status": "recorded"
+        },
+        "gradation": {
+          "value": "AC-13-3",
+          "unit": null,
+          "reference": "级配!G649:R649",
+          "status": "recorded"
+        },
+        "oil_stone_ratio_pct": {
+          "value": 4.8,
+          "unit": "%",
+          "reference": "试件所属历史操作键",
+          "status": "recorded"
+        },
+        "binder_content_pct": {
+          "value": 4.580152671755726,
+          "unit": "%",
+          "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+          "status": "recorded"
+        },
+        "rap_nominal_pct": {
+          "value": 70.0,
+          "unit": "%",
+          "reference": "级配!G649:R649",
+          "status": "mass_basis_unconfirmed"
+        },
+        "modifier": {
+          "value": null,
+          "unit": null,
+          "reference": null,
+          "status": "unknown"
+        },
+        "additive": {
+          "value": null,
+          "unit": null,
+          "reference": null,
+          "status": "unknown"
+        },
+        "mixing_window": {
+          "value": null,
+          "unit": null,
+          "reference": null,
+          "status": "unknown"
+        },
+        "compaction_window": {
+          "value": null,
+          "unit": null,
+          "reference": null,
+          "status": "unknown"
+        },
+        "equipment": {
+          "value": null,
+          "unit": null,
+          "reference": null,
+          "status": "unknown"
+        }
+      },
+      "component_basis": "unconfirmed",
+      "material_unknowns": [
+        "rap_nominal_pct",
+        "modifier",
+        "additive",
+        "mixing_window",
+        "compaction_window",
+        "equipment"
+      ],
+      "checks": [
+        {
+          "target_id": "hot-rutting:DS:0",
+          "metric": "DS",
+          "state": "satisfied",
+          "value": 6260.0,
+          "unit": "次/mm",
+          "engineering_applicability": "unknown",
+          "unresolved_dimensions": [
+            "test_method",
+            "condition.conditioning",
+            "condition.load",
+            "condition.temperature",
+            "maintenance_method",
+            "layer",
+            "structure_type",
+            "mixing_window",
+            "compaction_window",
+            "equipment"
+          ],
+          "reason": "按声明口径逐项比较，边界符保持原义",
+          "test_method": null,
+          "recorded_conditions": null,
+          "source_kind": "official_workbook",
+          "source_count": 3,
+          "source_preview": [
+            {
+              "sheet": "高温车辙",
+              "cell": "K105",
+              "value": 6045.0,
+              "raw_value": 6045,
+              "transform": "identity"
+            },
+            {
+              "sheet": "高温车辙",
+              "cell": "K106",
+              "value": 6475.0,
+              "raw_value": 6475,
+              "transform": "identity"
+            },
+            {
+              "sheet": "高温车辙",
+              "cell": "K107",
+              "value": 6260.0,
+              "raw_value": 6260,
+              "transform": "identity"
+            }
+          ],
+          "observation_id": null,
+          "source_reference": null
+        },
+        {
+          "target_id": "hot-rutting:strain:1",
+          "metric": "strain",
+          "state": "satisfied",
+          "value": 2225.6747142857143,
+          "unit": "με",
+          "engineering_applicability": "unknown",
+          "unresolved_dimensions": [
+            "test_method",
+            "condition.conditioning",
+            "condition.loading_rate",
+            "condition.temperature",
+            "maintenance_method",
+            "layer",
+            "structure_type",
+            "mixing_window",
+            "compaction_window",
+            "equipment"
+          ],
+          "reason": "按声明口径逐项比较，边界符保持原义",
+          "test_method": null,
+          "recorded_conditions": null,
+          "source_kind": "official_workbook",
+          "source_count": 7,
+          "source_preview": [
+            {
+              "sheet": "低温弯曲",
+              "cell": "H206",
+              "value": 2625.18,
+              "raw_value": 2625.18,
+              "transform": "identity"
+            },
+            {
+              "sheet": "低温弯曲",
+              "cell": "H207",
+              "value": 1912.524,
+              "raw_value": 1912.524,
+              "transform": "identity"
+            },
+            {
+              "sheet": "低温弯曲",
+              "cell": "H208",
+              "value": 2374.315,
+              "raw_value": 2374.315,
+              "transform": "identity"
+            },
+            {
+              "sheet": "低温弯曲",
+              "cell": "H209",
+              "value": 2117.674,
+              "raw_value": 2117.674,
+              "transform": "identity"
+            },
+            {
+              "sheet": "低温弯曲",
+              "cell": "H210",
+              "value": 2273.25,
+              "raw_value": 2273.25,
+              "transform": "identity"
+            },
+            {
+              "sheet": "低温弯曲",
+              "cell": "H211",
+              "value": 2088.958,
+              "raw_value": 2088.958,
+              "transform": "identity"
+            }
+          ],
+          "observation_id": null,
+          "source_reference": null
+        },
+        {
+          "target_id": "hot-rutting:TSR:2",
+          "metric": "TSR",
+          "state": "satisfied",
+          "value": 92.74457106727604,
+          "unit": "%",
+          "engineering_applicability": "unknown",
+          "unresolved_dimensions": [
+            "test_method",
+            "condition.conditioning",
+            "condition.temperature",
+            "maintenance_method",
+            "layer",
+            "structure_type",
+            "mixing_window",
+            "compaction_window",
+            "equipment"
+          ],
+          "reason": "按声明口径逐项比较，边界符保持原义",
+          "test_method": null,
+          "recorded_conditions": null,
+          "source_kind": "official_workbook",
+          "source_count": 1,
+          "source_preview": [
+            {
+              "sheet": "冻融劈裂",
+              "cell": "U415",
+              "value": 92.74457106727604,
+              "raw_value": 0.9274457106727604,
+              "transform": "fraction_to_percent_x100"
+            }
+          ],
+          "observation_id": null,
+          "source_reference": null
+        },
+        {
+          "target_id": "hot-rutting:residual:3",
+          "metric": "residual",
+          "state": "satisfied",
+          "value": 88.88192267502613,
+          "unit": "%",
+          "engineering_applicability": "unknown",
+          "unresolved_dimensions": [
+            "test_method",
+            "condition.conditioning",
+            "condition.temperature",
+            "maintenance_method",
+            "layer",
+            "structure_type",
+            "mixing_window",
+            "compaction_window",
+            "equipment"
+          ],
+          "reason": "按声明口径逐项比较，边界符保持原义",
+          "test_method": null,
+          "recorded_conditions": null,
+          "source_kind": "official_workbook",
+          "source_count": 1,
+          "source_preview": [
+            {
+              "sheet": "浸水马歇尔",
+              "cell": "Q319",
+              "value": 88.88192267502613,
+              "raw_value": 88.88192267502613,
+              "transform": "identity"
+            }
+          ],
+          "observation_id": null,
+          "source_reference": null
+        },
+        {
+          "target_id": "resource:rap_min_pct",
+          "metric": "rap_min_pct",
+          "state": "satisfied",
+          "value": 70.0,
+          "unit": null,
+          "engineering_applicability": "unknown",
+          "unresolved_dimensions": [],
+          "reason": "名义RAP演示比较，组成质量基准仍待确认",
+          "test_method": null,
+          "recorded_conditions": null,
+          "source_kind": null,
+          "source_count": 0,
+          "source_preview": [],
+          "observation_id": null,
+          "source_reference": null
+        }
+      ],
+      "state_counts": {
+        "satisfied": 5
+      },
+      "passes_known_requirements": true,
+      "identity_review": "工作簿操作键和产品标识，独立配方、料源与批次身份待外部核实",
+      "engineering_release_approved": false
+    }
+  ],
+  "focus_selection": "至多三个优先复核或无已知失败候选",
+  "all_candidates_url": "/v2/records/mate_f42a01d63f584dfba587f3a84f98942b",
+  "actions": [
+    {
+      "id": "scene",
+      "title": "取得真实项目场景与要求",
+      "reason": "本次为团队构造演示，目标和场景未经项目确认。",
+      "needed": [
+        "工法、层位、结构、气候、交通及病害依据",
+        "适用要求文件、条款和批准依据"
+      ],
+      "owner_role": "养护工程师"
+    },
+    {
+      "id": "requirements",
+      "title": "核对目标出处、方法与条件",
+      "reason": "4项要求仍有待确认内容；本地确认声明不能替代项目批准。",
+      "needed": [
+        "逐目标文件和条款",
+        "试验方法与关键条件",
+        "有依据的审核记录"
+      ],
+      "target_ids": [
+        "hot-rutting:DS:0",
+        "hot-rutting:strain:1",
+        "hot-rutting:TSR:2",
+        "hot-rutting:residual:3"
+      ],
+      "owner_role": "项目与材料工程师"
+    },
+    {
+      "id": "identity",
+      "title": "确认材料身份和组成口径",
+      "reason": "独立配方、料源、批次及未披露组成需原始台账确认。",
+      "needed": [
+        "配方与试件编号",
+        "RAP质量基准",
+        "改性剂与助剂资料或未披露说明"
+      ],
+      "candidate_ids": [
+        "mix_5a0eae6db3cb0a2f9a1f"
+      ],
+      "owner_role": "材料工程师"
+    },
+    {
+      "id": "applicability",
+      "title": "补齐同口径试验与施工证据",
+      "reason": "存在方法、条件、施工或资源适用性未知/不匹配的记录。",
+      "needed": [
+        "原始试验方法与条件",
+        "设备和施工窗口",
+        "无法核实时安排独立同口径试验"
+      ],
+      "candidate_ids": [
+        "mix_5a0eae6db3cb0a2f9a1f"
+      ],
+      "owner_role": "试验与施工工程师"
+    },
+    {
+      "id": "release",
+      "title": "工程师审核与独立验证",
+      "reason": "原型不执行工程批准；软件自测不证明现场性能。",
+      "needed": [
+        "实际审核记录",
+        "独立材料试验及适用施工核验"
+      ],
+      "owner_role": "项目负责人"
+    }
+  ],
+  "test_plan": {
+    "strategy": "explainable_base_rules",
+    "status": "software_workflow_only",
+    "cards": [
+      {
+        "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "display_id": "R5",
+        "target_id": "hot-rutting:DS:0",
+        "metric": "DS",
+        "action": "confirm_applicability",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.load",
+          "condition.temperature",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "数值已满足演示目标，先核实原试验与工程适用；无法核实时另行试验",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "display_id": "R5",
+        "target_id": "hot-rutting:strain:1",
+        "metric": "strain",
+        "action": "confirm_applicability",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.loading_rate",
+          "condition.temperature",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "数值已满足演示目标，先核实原试验与工程适用；无法核实时另行试验",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "display_id": "R5",
+        "target_id": "hot-rutting:TSR:2",
+        "metric": "TSR",
+        "action": "confirm_applicability",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "数值已满足演示目标，先核实原试验与工程适用；无法核实时另行试验",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "display_id": "R5",
+        "target_id": "hot-rutting:residual:3",
+        "metric": "residual",
+        "action": "confirm_applicability",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "enterprise_reference",
+          "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+          "confirmed": false
+        },
+        "reason": "数值已满足演示目标，先核实原试验与工程适用；无法核实时另行试验",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_4cfe9e42690ad2571272",
+        "display_id": "d2571272",
+        "target_id": "hot-rutting:DS:0",
+        "metric": "DS",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.load",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_4cfe9e42690ad2571272",
+        "display_id": "d2571272",
+        "target_id": "hot-rutting:strain:1",
+        "metric": "strain",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.loading_rate",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_4cfe9e42690ad2571272",
+        "display_id": "d2571272",
+        "target_id": "hot-rutting:TSR:2",
+        "metric": "TSR",
+        "action": "confirm_applicability",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "数值已满足演示目标，先核实原试验与工程适用；无法核实时另行试验",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_4cfe9e42690ad2571272",
+        "display_id": "d2571272",
+        "target_id": "hot-rutting:residual:3",
+        "metric": "residual",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "enterprise_reference",
+          "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_4cfe9e42690ad2571272",
+        "display_id": "d2571272",
+        "target_id": "resource:rap_min_pct",
+        "metric": "rap_min_pct",
+        "action": "collect_resource_evidence",
+        "test_method": null,
+        "conditions_to_confirm": [],
+        "reason": "名义RAP演示比较，组成质量基准仍待确认",
+        "stop_condition": "出现已知硬要求失败时停止为其补齐可行性证据，重新检查场景或材料版本",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_ea0ccdbffdb7d41f0c57",
+        "display_id": "d41f0c57",
+        "target_id": "hot-rutting:DS:0",
+        "metric": "DS",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.load",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_ea0ccdbffdb7d41f0c57",
+        "display_id": "d41f0c57",
+        "target_id": "hot-rutting:strain:1",
+        "metric": "strain",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.loading_rate",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_ea0ccdbffdb7d41f0c57",
+        "display_id": "d41f0c57",
+        "target_id": "hot-rutting:TSR:2",
+        "metric": "TSR",
+        "action": "confirm_applicability",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "数值已满足演示目标，先核实原试验与工程适用；无法核实时另行试验",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_ea0ccdbffdb7d41f0c57",
+        "display_id": "d41f0c57",
+        "target_id": "hot-rutting:residual:3",
+        "metric": "residual",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "enterprise_reference",
+          "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_ea0ccdbffdb7d41f0c57",
+        "display_id": "d41f0c57",
+        "target_id": "resource:rap_min_pct",
+        "metric": "rap_min_pct",
+        "action": "collect_resource_evidence",
+        "test_method": null,
+        "conditions_to_confirm": [],
+        "reason": "名义RAP演示比较，组成质量基准仍待确认",
+        "stop_condition": "出现已知硬要求失败时停止为其补齐可行性证据，重新检查场景或材料版本",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_7700a0424f240d1ef4a8",
+        "display_id": "0d1ef4a8",
+        "target_id": "hot-rutting:DS:0",
+        "metric": "DS",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.load",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_7700a0424f240d1ef4a8",
+        "display_id": "0d1ef4a8",
+        "target_id": "hot-rutting:strain:1",
+        "metric": "strain",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.loading_rate",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_7700a0424f240d1ef4a8",
+        "display_id": "0d1ef4a8",
+        "target_id": "hot-rutting:TSR:2",
+        "metric": "TSR",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_7700a0424f240d1ef4a8",
+        "display_id": "0d1ef4a8",
+        "target_id": "hot-rutting:residual:3",
+        "metric": "residual",
+        "action": "obtain_comparable_test",
+        "test_method": null,
+        "conditions_to_confirm": [
+          "compaction_window",
+          "condition.conditioning",
+          "condition.temperature",
+          "data_scope",
+          "equipment",
+          "layer",
+          "maintenance_method",
+          "mixing_window",
+          "structure_type",
+          "test_method",
+          "unit"
+        ],
+        "required_conditions": {},
+        "requirement_source": {
+          "kind": "enterprise_reference",
+          "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+          "confirmed": false
+        },
+        "reason": "该要求影响当前可行性判断，优先取得同方法条件的有效证据；不使用预测值补齐实测",
+        "stop_condition": "任一当前硬要求出现已知失败则停止补齐；全部要求及工艺证据满足后转工程师审核，不能直接批准施工",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      },
+      {
+        "candidate_id": "mix_7700a0424f240d1ef4a8",
+        "display_id": "0d1ef4a8",
+        "target_id": "resource:rap_min_pct",
+        "metric": "rap_min_pct",
+        "action": "collect_resource_evidence",
+        "test_method": null,
+        "conditions_to_confirm": [],
+        "reason": "名义RAP演示比较，组成质量基准仍待确认",
+        "stop_condition": "出现已知硬要求失败时停止为其补齐可行性证据，重新检查场景或材料版本",
+        "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b"
+      }
+    ],
+    "excluded_known_failure_ids": [
+      "mix_07e9acab4f8d5c4c21d0",
+      "mix_08857a35c546c16fea3d",
+      "mix_0e51eff6e2cef2806f57",
+      "mix_13fdcb77bf18604636ae",
+      "mix_15ad6894230968c7675e",
+      "mix_1898f7dbc9bebd98fbc6",
+      "mix_203340d8858f9df9ad29",
+      "mix_21e1b223458f09f4a8e0",
+      "mix_26677634e9a9c5b83d13",
+      "mix_2903593c8afe22066152",
+      "mix_2a28d8524d8d84e6f35f",
+      "mix_2d86349ae4883af71033",
+      "mix_368b52a436c174df7b00",
+      "mix_36c35bd65986c0692919",
+      "mix_424760c7b3eae4af9dfb",
+      "mix_473a26fdb0b8356b4ab4",
+      "mix_4b50d94cdbc4a8d9f885",
+      "mix_4c6dec060415d7aa7831",
+      "mix_4ed00092a5bf554b363a",
+      "mix_55757ba9f9c2f0200762",
+      "mix_597f12de06cc740a8f97",
+      "mix_59cb42163ce4719d7809",
+      "mix_5ed2f0f14c1ae15fee54",
+      "mix_61892cbf90eca0701e47",
+      "mix_65ff1efa3cd482765c9f",
+      "mix_672956f1aa416c00a260",
+      "mix_67335f441bbff44b208e",
+      "mix_6e47f5bd52ca2f04303e",
+      "mix_6f88790949802a6b64ea",
+      "mix_70c0e27b4d3d403ef7c4",
+      "mix_71cb30ccbdf50e6979f4",
+      "mix_72af0c0357a352104569",
+      "mix_731afb5a5faffa9f439d",
+      "mix_755b28c800668347543b",
+      "mix_783a016ef718c0ce666e",
+      "mix_7a55a307568e18697636",
+      "mix_8153cd46ebdc21d7224a",
+      "mix_81d91103dd3c884b9db0",
+      "mix_81e1832db3927a8a4356",
+      "mix_8adbae42f826e07e8611",
+      "mix_902d7e14db2b826abb4d",
+      "mix_981df2a48b81c3678536",
+      "mix_9e2f3db93b9f3846b068",
+      "mix_a3f6d70c540959f6c3c3",
+      "mix_aa15fb08faac91ed3888",
+      "mix_b41a369b43a159f8f219",
+      "mix_b5bfa846ce22bc89669d",
+      "mix_b7a52f175089632daa78",
+      "mix_b918fd825572e8713e23",
+      "mix_ba8702ea92c033ea7d56",
+      "mix_bdf8fd90d4a0fff803f4",
+      "mix_bf40a782f2a3fee6c9aa",
+      "mix_bf97281a4943a5e7db26",
+      "mix_c09286e2a7be7cb14638",
+      "mix_c20539f505ae9e651e1c",
+      "mix_c389cb15f7ec30cbe854",
+      "mix_c39c8b2c0df3074a52ad",
+      "mix_c5a69974863a4c184f99",
+      "mix_c6bec172977915380d45",
+      "mix_c94bd637a781d902fafa",
+      "mix_d2f7d32e97586929ccdd",
+      "mix_d4f525518c6987d7baf2",
+      "mix_da01d4da4aba77dc7979",
+      "mix_dc898ba96ba20a6dc035",
+      "mix_ddba05833e2cf539323b",
+      "mix_e40f39b69768fd914467",
+      "mix_e464f052e3ce56f7455b",
+      "mix_e5584b099b371467cf63",
+      "mix_e7c870ac9436de2bd8c0",
+      "mix_e7f74ce9b65b26e62668",
+      "mix_ec30ff644f3111c570bc",
+      "mix_f4b904067d34105dc8d9",
+      "mix_f761a4eb3ea82f7ef357",
+      "mix_f992a4fe2f0eb75fb70c",
+      "mix_fb456d76c0b65ade1120",
+      "mix_fb4cc4f36aaa75a8e497",
+      "mix_fd042b9c9cb09d2188a9",
+      "mix_fdbc654ee6d2e1d1344b",
+      "mix_fe516b9ed11bd8f60731",
+      "mix_ff76e96640f7706852c9"
+    ],
+    "order_basis": "先处理未被失败排除且缺项较少的候选，再按场景指标优先序核验。",
+    "note": "基础核验行动清单；未验证节约试验数量、最优试验设计或决策价值策略增益。"
+  },
+  "engineering_release_approved": false,
+  "status": "awaiting_external_review",
+  "source_note": "冻结决策中的来源；目标确认与审核人均为本地声明，独立真实性和工程适用尚待核验。",
+  "value_validation": {
+    "actor": "AI software self-test",
+    "human_participants": 0,
+    "human_timing": null,
+    "industry_efficiency_benefit": null
+  },
+  "model_note": "现有四项模型外层MAE未优于均值基线；研究预测未参与硬约束通过判定。",
+  "export_note": "本复核单按冻结快照生成，附生成时的当前性检查；之后输入变化应重新获取复核单。",
+  "review_sha256": "2507f0c9a1101c9e01dec051cd5e2818ae12dbee9d3d7ee7e8e851b5f3fd711f",
+  "request_fingerprint": "121807ff605b36e202bf857abb7e1ed701a1076dbc602093ccdc003743612608",
+  "sha256": "2e01741035cfcca59b6daeeb03470df8803ff3ddf60a8fdb676e12d2cf5978f5"
+}

@@ -1,0 +1,108 @@
+{
+  "created_at": "2026-10-19T07:23:56.289836+00:00",
+  "actor": "AI browser self-test",
+  "human_participants": 0,
+  "database": "artifacts/review-phase/ui-review.sqlite",
+  "qa_variant": "c7edac5b; isolated QA only, not released demo",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "screenshot": "artifacts/review-phase/overview-1440.jpg"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "screenshot": "artifacts/review-phase/overview-1280.jpg"
+    }
+  ],
+  "checks": [
+    {
+      "id": "UI01",
+      "check": "成果入口列出五项基本成果、技术与加分范围",
+      "status": "passed"
+    },
+    {
+      "id": "UI02",
+      "check": "官方依据区分公告落款、页面公开、施行日期及阈值适用",
+      "status": "passed"
+    },
+    {
+      "id": "UI03",
+      "check": "空白核验JSON实际下载成功",
+      "status": "passed"
+    },
+    {
+      "id": "UI04",
+      "check": "空白模板校验保持真人参与数0与待补齐",
+      "status": "passed"
+    },
+    {
+      "id": "UI05",
+      "check": "C5引导实际载入对应场景与要求",
+      "status": "passed"
+    },
+    {
+      "id": "UI06",
+      "check": "C5完整目录84条显示证据不足",
+      "status": "passed"
+    },
+    {
+      "id": "UI07",
+      "check": "C5完整数值子池35条显示四组冲突",
+      "status": "passed"
+    },
+    {
+      "id": "UI08",
+      "check": "展开DS与TSR删除见证并查看候选ID",
+      "status": "passed"
+    },
+    {
+      "id": "UI09",
+      "check": "复核JSON下载与打印单的决策、池和内容哈希一致",
+      "status": "passed"
+    },
+    {
+      "id": "UI10",
+      "check": "C1数值满足2条与工程适用缺口分别显示，原高温车辙K31值10500可查看",
+      "status": "passed"
+    },
+    {
+      "id": "UI11",
+      "check": "C2基础验证条件与停止规则可查；隔离微调显示父实测失效和旧快照过期",
+      "status": "passed"
+    },
+    {
+      "id": "UI12",
+      "check": "1440x900与实际1280x720布局检查",
+      "status": "passed"
+    },
+    {
+      "id": "UI13",
+      "check": "Tab与Enter可切换依据页签",
+      "status": "passed"
+    },
+    {
+      "id": "UI14",
+      "check": "JSON格式错误显示并可恢复至空白模板检查，浏览器控制台无错误",
+      "status": "passed"
+    }
+  ],
+  "review_download": {
+    "id": "rev_489a838b-c911-42cf-96ad-84fa608307ec",
+    "content_sha256": "07227eb2e256da09439be4b727473759a2bf5bb2927624e7751c01a561a875c2",
+    "pool": 35,
+    "certificates": 4,
+    "engineering_release": false
+  },
+  "note": "浏览器检查为AI操作。小屏尺寸在新页读取window.innerWidth=1280、innerHeight=720后确认；中文格式提示已在最终主工作台复查。",
+  "final_primary_recheck": {
+    "localized_json_error": "passed",
+    "blank_template_zero_humans": "passed",
+    "viewport": {
+      "width": 952,
+      "height": 956
+    },
+    "runtime_version": "0.3.0"
+  }
+}

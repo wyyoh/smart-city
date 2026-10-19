@@ -33,7 +33,10 @@ import type {
 import { core, flags, fmt, metrics } from "./types";
 import "./styles.css";
 import { DecisionWorkflow } from "./components/DecisionWorkflow";
+import { ReviewCenter } from "./components/ReviewCenter";
+import type { Highlight } from "./review-types";
 import "./decision.css";
+import "./review.css";
 
 async function api<T>(path: string, body?: unknown): Promise<T> {
   const response = await fetch(
@@ -73,7 +76,8 @@ function Status({ recipe }: { recipe: Recipe }) {
   );
 }
 function App() {
-  const [route, setRoute] = useState("decision");
+  const [route, setRoute] = useState("review");
+  const [guidedTour, setGuidedTour] = useState<Highlight | null>(null);
   const [catalog, setCatalog] = useState<Recipe[]>([]),
     [dataset, setDataset] = useState<Dataset | null>(null),
     [cases, setCases] = useState<Case[]>([]);
@@ -223,6 +227,7 @@ function App() {
         <div className="nav-label">道路养护 · 材料设计</div>
         <nav>
           {[
+            { id: "review", label: "成果与验证", icon: ShieldCheck },
             { id: "decision", label: "场景选材", icon: ClipboardList },
             { id: "workbench", label: "历史初筛", icon: SlidersHorizontal },
             { id: "data", label: "数据与依据", icon: Database },
@@ -249,7 +254,7 @@ function App() {
         </nav>
         <div className="sidebar-bottom">
           <div className="connection">
-            <i /> 本地工作区 <span>v0.2 研究原型</span>
+            <i /> 本地工作区 <span>v0.3 研究原型</span>
           </div>
           <p>
             企业提供的实验室记录
@@ -271,6 +276,7 @@ function App() {
               {
                 (
                   {
+                    review: "成果证据与选材复核",
                     decision: "场景驱动材料决策",
                     workbench: "材料方案推荐",
                     data: "数据目录与质量",
@@ -303,7 +309,26 @@ function App() {
               </button>
             </div>
           )}
-          {route === "decision" && <DecisionWorkflow />}
+          {route === "review" && (
+            <ReviewCenter
+              onStartTour={(tour) => {
+                setGuidedTour(tour);
+                setRoute("decision");
+                window.scrollTo(0, 0);
+              }}
+            />
+          )}
+          {route === "decision" && (
+            <DecisionWorkflow
+              key={guidedTour?.id || "normal"}
+              guidedTour={guidedTour}
+              onEndTour={() => {
+                setGuidedTour(null);
+                setRoute("review");
+                window.scrollTo(0, 0);
+              }}
+            />
+          )}
           {route === "workbench" && scenario && (
             <>
               <div className="page-heading">

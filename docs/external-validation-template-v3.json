@@ -1,0 +1,29 @@
+{
+  "schema_version": "3.0",
+  "record_kind": "external_validation",
+  "status": "unfilled",
+  "project": {
+    "project_id": null,
+    "scene_reference": null,
+    "requirement_document": null,
+    "clause": null,
+    "approver_reference": null
+  },
+  "materials": [
+    {
+      "candidate_id": null,
+      "batch_reference": null,
+      "recipe_reference": null,
+      "rap_mass_basis": null
+    }
+  ],
+  "tests": [
+    {
+      "metric": null,
+      "method": null,
+      "conditions": {},
+      "raw_file_reference": null
+    }
+  ],
+  "human_tasks": []
+}

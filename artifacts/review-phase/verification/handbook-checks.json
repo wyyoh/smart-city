@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "created_at": "2026-10-19T07:28:04.407343+00:00",
+  "requirements": 22,
+  "evidence_hashes_verified": 32,
+  "handbook_sha256": "172e95524df57252515c223612d313ce869c428b6b0b49221919726cf172f001",
+  "human_participants": 0,
+  "demo_variants": 0,
+  "runtime": "http://127.0.0.1:8766/",
+  "runtime_database": "artifacts/review-phase/demo.sqlite",
+  "browser_readback": "Handbook headings, five primary cases plus limited C5 case, links and scope statements inspected."
+}

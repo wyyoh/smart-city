@@ -1,0 +1,20 @@
+{
+  "page_id": "page_ec41142acc3081918b86f4a9484ccd1c",
+  "url": "https://chatgpt.com/space/page_ec41142acc3081918b86f4a9484ccd1c",
+  "title": "数智选材评审验证与交付计划",
+  "original_blocks": 15,
+  "current_blocks": 17,
+  "original_block_hashes_preserved": true,
+  "markdown_readback_verified": true,
+  "native_page_layout": "not separately inspected",
+  "new_blocks": [
+    {
+      "id": "c6db54b6-bc33-4720-9d2d-ff566a1e4b0a",
+      "hash": "eb624ffcc8093e476eb8beb22637d6a3a64f6462bb1e57275b282059322f6771"
+    },
+    {
+      "id": "6f173a26-4400-40e2-95f6-115cb55c6a8e",
+      "hash": "08d5b6245c760158db076d6ee08dc64b06b924e176d6922b19f26b6f51c6e848"
+    }
+  ]
+}

@@ -102,9 +102,11 @@ function Choice({
 export function DemandCard({
   onConfirmed,
   onInvalidated,
+  initialCaseId,
 }: {
   onConfirmed?: (demand: Demand) => void;
   onInvalidated?: () => void;
+  initialCaseId?: string;
 }) {
   const [profiles, setProfiles] = useState<SceneProfile[]>([]),
     [registry, setRegistry] = useState<Record<string, MetricDefinition>>({});
@@ -183,6 +185,20 @@ export function DemandCard({
       requestId.current++;
     };
   }, []);
+  useEffect(() => {
+    if (!initialCaseId || !profiles.length) return;
+    const item = cases.find((c) => c.id === initialCaseId);
+    if (!item) return;
+    requestId.current++;
+    revision.current++;
+    setInput(structuredClone(item.example_request));
+    setProfileId(item.profile_id);
+    setResolution(null);
+    setConfirmed(null);
+    setDirty(false);
+    setCollapsed(false);
+    setOverrides({});
+  }, [initialCaseId, cases, profiles]);
   function edit(next: DemandRequest) {
     requestId.current++;
     setBusy(false);

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "zip_sha256_verified": true,
+  "compressed_file_hashes_verified": 377,
+  "archive_crc": "passed",
+  "archive": "artifacts/release/asphalt-workbench-0.3.0-20261019T073332.zip"
+}

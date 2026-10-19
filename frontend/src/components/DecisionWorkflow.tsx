@@ -5,6 +5,7 @@ import {
   LoaderCircle,
   RefreshCw,
   FileText,
+  FileCheck2,
 } from "lucide-react";
 import { decisionApi } from "../decision-types";
 import type {
@@ -21,6 +22,8 @@ import { NextTestCard } from "./NextTestCard";
 import { CandidateEvidence } from "./CandidateEvidence";
 import { PredictionValidation } from "./PredictionValidation";
 import { fieldLabel, exclusionLabel } from "../decision-labels";
+import type { Highlight } from "../review-types";
+import { DecisionReviewPanel } from "./DecisionReviewPanel";
 
 export const checkLabel: Record<string, string> = {
   satisfied: "满足",
@@ -141,7 +144,13 @@ function VariantEditor({
   );
 }
 
-export function DecisionWorkflow() {
+export function DecisionWorkflow({
+  guidedTour,
+  onEndTour,
+}: {
+  guidedTour?: Highlight | null;
+  onEndTour?: () => void;
+}) {
   const [demand, setDemand] = useState<Demand | null>(null),
     [decision, setDecision] = useState<MaterialDecision | null>(null),
     [previous, setPrevious] = useState<MaterialDecision | null>(null);
@@ -159,6 +168,7 @@ export function DecisionWorkflow() {
     [historyId, setHistoryId] = useState("");
   const serial = useRef(0),
     resultsRef = useRef<HTMLElement>(null);
+  const [reviewDecisionId, setReviewDecisionId] = useState("");
   const [freshness, setFreshness] = useState<{
     current: boolean;
     reasons: string[];
@@ -298,7 +308,25 @@ export function DecisionWorkflow() {
     ) || [];
   return (
     <div className="decision-workflow">
+      {guidedTour && (
+        <aside className="review-tour-guide" aria-label="亮点演示引导">
+          <div>
+            <strong>{guidedTour.title}</strong>
+            <p>{guidedTour.question}</p>
+            <ol>
+              {guidedTour.steps.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ol>
+            <small>{guidedTour.boundary}</small>
+          </div>
+          <button className="secondary" onClick={onEndTour}>
+            返回成果与验证
+          </button>
+        </aside>
+      )}
       <DemandCard
+        initialCaseId={guidedTour?.case_id}
         onConfirmed={(d) => {
           setDemand(d);
           setStale(true);
@@ -401,6 +429,13 @@ export function DecisionWorkflow() {
               </p>
             </div>
             <div className="report-actions">
+              <button
+                className="secondary"
+                onClick={() => setReviewDecisionId(decision.id)}
+              >
+                <FileCheck2 size={15} />
+                生成选材复核单
+              </button>
               <a
                 className="secondary"
                 href={`/v2/decisions/${decision.id}/report.html`}
@@ -466,6 +501,13 @@ export function DecisionWorkflow() {
               重新核对版本
             </button>
           </div>
+          {reviewDecisionId === decision.id && (
+            <DecisionReviewPanel
+              key={decision.id}
+              decisionId={decision.id}
+              onClose={() => setReviewDecisionId("")}
+            />
+          )}
           <ConflictPanel diagnosis={decision.diagnosis} />
           <section className="panel candidate-comparison">
             <div className="comparison-toolbar">

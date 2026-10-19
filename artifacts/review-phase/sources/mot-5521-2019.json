@@ -1,0 +1,28 @@
+{
+  "id": "mot-5521-2019",
+  "title": "公路沥青路面再生技术规范发布公告",
+  "standard": "JTG/T 5521—2019",
+  "authority": "交通运输部",
+  "type": "推荐性行业标准发布公告",
+  "notice_date": "2019-08-21",
+  "page_publication_date": "2019-08-29",
+  "effective_date": "2019-11-01",
+  "replaces": "JTG F41—2008",
+  "url": "https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313172.html",
+  "verified_on": "2026-10-19",
+  "verification_scope": "核对官方发布公告中的名称、性质、施行日期和替代关系；项目适用及具体条款另行核定。",
+  "thresholds_authorized": false,
+  "recorded_at": "2026-10-19T07:03:24.239279+00:00",
+  "verification_channel": "web.open of official URL, cross-checked with official-domain search",
+  "source_content_scope": "Official notice metadata and effective/replacement statements read in browser tool. No raw HTTP response saved.",
+  "direct_python_fetch": "Not used as evidence: local certificate verification failed. Official browser tool read succeeded.",
+  "facts_verified": [
+    "standard identifier",
+    "notice date",
+    "page publication date",
+    "standard category",
+    "effective date",
+    "replaced standard"
+  ],
+  "project_applicability_verified": false
+}

@@ -31,6 +31,8 @@ def build():
     for pdf in ROOT.glob('*.pdf'):shutil.copy2(pdf,destination/pdf.name)
     shutil.copytree(ROOT/'artifacts/models',destination/'artifacts/models')
     shutil.copytree(ROOT/'artifacts/next-phase',destination/'artifacts/next-phase',ignore=shutil.ignore_patterns('*.sqlite*','*.log'))
+    if (ROOT/'artifacts/review-phase').exists():
+        shutil.copytree(ROOT/'artifacts/review-phase',destination/'artifacts/review-phase',ignore=shutil.ignore_patterns('*.sqlite*','*.log'))
     for folder in ['artifacts/demo','artifacts/screenshots']:
         if (ROOT/folder).exists():
             shutil.copytree(ROOT/folder,destination/folder,ignore=shutil.ignore_patterns('*before-fix*'))
@@ -52,7 +54,18 @@ def build():
         from fastapi.testclient import TestClient
         from compare_cases_v2 import run_comparisons
         with TestClient(create_app(eng)) as client:
-            run_comparisons(client,destination/'artifacts/next-phase/case-reports')
+            # Keep copied historical v0.2 acceptance files byte-for-byte in v0.3 bundles.
+            case_output=destination/('artifacts/review-phase/packaged-cases' if VERSION=='0.3.0' else 'artifacts/next-phase/case-reports')
+            run_comparisons(client,case_output)
+            if VERSION=='0.3.0':
+                saved=[]
+                for index,decision in enumerate(client.get('/v2/decisions').json()):
+                    response=client.post('/v2/review/reports',json={'decision_id':decision['id'],'request_id':f'package-seed-{index:02d}'})
+                    assert response.status_code==201,response.text
+                    review=response.json()
+                    assert review['freshness']['current'] and not review['engineering_release_approved']
+                    saved.append({'review_id':review['id'],'decision_id':decision['id'],'review_sha256':review['review_sha256']})
+                (destination/'artifacts/review-phase/packaged-review-receipt.json').write_text(json.dumps({'scope':'AI constructed demo seed','saved_reviews':saved,'human_participants':0},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         data_id=ds.id;sha=ds.sha256
     eng.dispose()
     (destination/'docs/api.openapi.json').write_text(json.dumps(create_app().openapi(),ensure_ascii=False,indent=2),encoding='utf-8')

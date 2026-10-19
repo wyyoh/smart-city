@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "created_at": "2026-10-19T07:03:35.445516+00:00",
+  "actor": "AI software self-test",
+  "scope": "constructed cases, same frozen numerical requirements and pools",
+  "cases": [
+    {
+      "case": "C1",
+      "evidence_view": "all",
+      "pool": 84,
+      "feasible_B1": 2,
+      "feasible_V2": 2,
+      "diagnosis": "numeric_feasible",
+      "conflict_certificates": 0,
+      "certificate_checks_passed": true,
+      "review_id": "rev_rehearsal-C1",
+      "decision_id": "mate_1210624e7b6b47b0bc0c9bfc30960735",
+      "review_sha256": "d7dbdaade97a0e16c3521e31157e18290083df72fd7adb683993cf4e8bb674aa",
+      "saved_export_matches": true,
+      "engineering_release_approved": false
+    },
+    {
+      "case": "C2",
+      "evidence_view": "all",
+      "pool": 84,
+      "feasible_B1": 2,
+      "feasible_V2": 2,
+      "diagnosis": "numeric_feasible",
+      "conflict_certificates": 0,
+      "certificate_checks_passed": true,
+      "review_id": "rev_rehearsal-C2",
+      "decision_id": "mate_2a7a3f8f9e134537922138ecbf51232a",
+      "review_sha256": "f374c20ab1d8129b6a80b43050811cdda5bb4b728e086f5969b383675074039e",
+      "saved_export_matches": true,
+      "engineering_release_approved": false
+    },
+    {
+      "case": "C3",
+      "evidence_view": "all",
+      "pool": 84,
+      "feasible_B1": 5,
+      "feasible_V2": 5,
+      "diagnosis": "numeric_feasible",
+      "conflict_certificates": 0,
+      "certificate_checks_passed": true,
+      "review_id": "rev_rehearsal-C3",
+      "decision_id": "mate_9d76cc16b0ca4c7a99b297fea26f51eb",
+      "review_sha256": "f3511d2f66bfb10f1e8f84e815181f96984b3b08d2277a914ef1814c263cdd89",
+      "saved_export_matches": true,
+      "engineering_release_approved": false
+    },
+    {
+      "case": "C4",
+      "evidence_view": "all",
+      "pool": 84,
+      "feasible_B1": 1,
+      "feasible_V2": 1,
+      "diagnosis": "numeric_feasible",
+      "conflict_certificates": 0,
+      "certificate_checks_passed": true,
+      "review_id": "rev_rehearsal-C4",
+      "decision_id": "mate_f42a01d63f584dfba587f3a84f98942b",
+      "review_sha256": "2507f0c9a1101c9e01dec051cd5e2818ae12dbee9d3d7ee7e8e851b5f3fd711f",
+      "saved_export_matches": true,
+      "engineering_release_approved": false
+    },
+    {
+      "case": "C5",
+      "evidence_view": "all",
+      "pool": 84,
+      "feasible_B1": 0,
+      "feasible_V2": 0,
+      "diagnosis": "evidence_insufficient",
+      "conflict_certificates": 0,
+      "certificate_checks_passed": true,
+      "review_id": "rev_rehearsal-C5",
+      "decision_id": "mate_afc2a07e70e249ccb04e88840d29c9ad",
+      "review_sha256": "1ff4e786c11d7d8dbda943d411695fe51f99d6eda6c2a711aa1c352ef107894f",
+      "saved_export_matches": true,
+      "engineering_release_approved": false
+    },
+    {
+      "case": "C5",
+      "evidence_view": "complete_numeric_demo",
+      "pool": 35,
+      "feasible_B1": 0,
+      "feasible_V2": 0,
+      "diagnosis": "known_conflict",
+      "conflict_certificates": 4,
+      "certificate_checks_passed": true,
+      "review_id": "rev_rehearsal-C5-complete",
+      "decision_id": "mate_f2ad31175940431badda94f1021d806e",
+      "review_sha256": "906132bb22574dd01020e2f7fe78f85b92fd7e59bb5fe31637234c6f706f889b",
+      "saved_export_matches": true,
+      "engineering_release_approved": false
+    }
+  ],
+  "human_participants": 0,
+  "independent_material_validation": false,
+  "external_template_unfilled": {
+    "schema_valid": true,
+    "collection_complete": false,
+    "authenticity_verified": false,
+    "status": "unfilled",
+    "issues": [
+      {
+        "field": "project.project_id",
+        "message": "等待项目原始依据"
+      },
+      {
+        "field": "project.scene_reference",
+        "message": "等待项目原始依据"
+      },
+      {
+        "field": "project.requirement_document",
+        "message": "等待项目原始依据"
+      },
+      {
+        "field": "project.clause",
+        "message": "等待项目原始依据"
+      },
+      {
+        "field": "project.approver_reference",
+        "message": "等待项目原始依据"
+      },
+      {
+        "field": "materials.0.candidate_id",
+        "message": "等待材料台账确认"
+      },
+      {
+        "field": "materials.0.batch_reference",
+        "message": "等待材料台账确认"
+      },
+      {
+        "field": "materials.0.recipe_reference",
+        "message": "等待材料台账确认"
+      },
+      {
+        "field": "materials.0.rap_mass_basis",
+        "message": "等待材料台账确认"
+      },
+      {
+        "field": "tests.0.metric",
+        "message": "等待试验原始依据"
+      },
+      {
+        "field": "tests.0.method",
+        "message": "等待试验原始依据"
+      },
+      {
+        "field": "tests.0.raw_file_reference",
+        "message": "等待试验原始依据"
+      },
+      {
+        "field": "tests.0.conditions",
+        "message": "等待试验条件"
+      },
+      {
+        "field": "tests.0.metric",
+        "message": "指标需在注册表中明确口径"
+      },
+      {
+        "field": "human_tasks",
+        "message": "真人参与数为0，真人收益尚未测量"
+      }
+    ],
+    "human_participants": 0,
+    "human_effective_times": [],
+    "note": "仅检查已填字段、配对与时间逻辑；真实身份、文件内容、方法适用和行业收益需独立审核。不写入选材或训练库。"
+  },
+  "B1_and_V2_same_feasible_set_all_cases": true
+}

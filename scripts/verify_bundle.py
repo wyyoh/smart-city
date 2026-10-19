@@ -47,6 +47,22 @@ def verify(directory):
                 decision=client.post('/v2/decisions',json={'pool_id':pool['id']}).json()
                 assert len(decision['results'])==35 and len(decision['diagnosis']['certificates'])==4
                 assert client.get('/v2/decisions/'+decision['id']+'/report.html').status_code==200
+                if manifest.get('app_version')=='0.3.0':
+                    overview=client.get('/v2/review/overview').json()
+                    assert len(overview['requirements'])==22
+                    assert all(e['integrity']=='verified' for e in overview['evidence'].values()),'Packaged evidence index is out of date.'
+                    response=client.post('/v2/review/reports',json={'decision_id':decision['id'],'request_id':'relocated-package-check'})
+                    assert response.status_code==201,response.text
+                    review=response.json()
+                    assert len(review['certificate_checks'])==4 and all(c['valid'] for c in review['certificate_checks'])
+                    assert not review['engineering_release_approved']
+                    report_url='/v2/review/reports/'+review['id']
+                    assert client.get(report_url).json()==review
+                    assert review['review_sha256'] in client.get(report_url+'/report.html').text
+                    template=client.get('/v2/review/validation-template').json()
+                    checked=client.post('/v2/review/validate-input',json=template).json()
+                    assert checked['human_participants']==0 and not checked['collection_complete']
+                    assert client.get('/v2/review/handbook.html').status_code==200
         finally:
             process.terminate()
             try:process.wait(timeout=5)
@@ -54,12 +70,17 @@ def verify(directory):
     result={'status':'passed','directory':str(directory),'manifest_files_verified':len(manifest['files']),
             'checks':['all packaged file hashes','relocated application root','bundled frontend','legacy C3 returns R7','bundled model prediction','saved reports','v2 C5 35-key numeric scope with four certificates','v2 HTML report'],
             'environment':'同一机器的已安装Python依赖；从另一目录启动，不是全新操作系统验收'}
+    if manifest.get('app_version')=='0.3.0':
+        result['checks'].extend(['22-item evidence registry hashes','immutable saved review JSON and HTML','four reviewed conflict certificates','unfilled external template remains zero humans','printable reviewer handbook'])
     if manifest.get('app_version')=='0.2.0':
         checks_root=ROOT/'artifacts/next-phase/release-checks'
         receipts=checks_root/'package-verifications';receipts.mkdir(exist_ok=True)
         (receipts/(directory.name+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         candidate_receipt=checks_root/'package-verification.json'
         if not candidate_receipt.exists():candidate_receipt.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    elif manifest.get('app_version')=='0.3.0':
+        receipts=ROOT/'artifacts/review-phase/package-verifications';receipts.mkdir(exist_ok=True)
+        (receipts/(directory.name+'.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     else:
         (ROOT/'artifacts/package-verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(result,ensure_ascii=False,indent=2))

@@ -7,6 +7,8 @@ export const fieldLabels: Record<string, string> = {
   fatigue_life: "疲劳寿命",
   dynamic_modulus: "动态模量",
   test_method: "试验方法",
+  unit: "单位",
+  data_scope: "数据范围",
   temperature: "试验温度",
   load: "荷载",
   conditioning: "试件处理",
@@ -45,6 +47,14 @@ export const fieldLabels: Record<string, string> = {
   constraints: "资源要求",
   diagnosis: "诊断",
   review_first_ids: "优先复核候选",
+  modifier: "改性剂",
+  additive: "功能助剂",
+  rap_nominal_pct: "名义RAP及质量基准",
+  oil_stone_ratio_pct: "油石比",
+  binder_content_pct: "沥青用量",
+  source_code: "来源标识",
+  product: "产品标识",
+  gradation: "级配",
 };
 export function fieldLabel(key: string) {
   return key

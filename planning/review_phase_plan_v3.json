@@ -1,0 +1,109 @@
+{
+  "schema_version": "3.0-plan",
+  "title": "数智选材评审验证与交付计划",
+  "created_at": "2026-10-19T14:51:46.907317+08:00",
+  "source_revision": "1956e2b73940cb626e7d6a905984d02854eeeb24",
+  "constraints": {
+    "developers": 1,
+    "relative_weeks": 2,
+    "hours_per_week": [
+      15,
+      20
+    ],
+    "core_estimated_hours": 27,
+    "buffer_hours": 3,
+    "baseline_hours": 30,
+    "submission_deadline": null,
+    "actual_human_hours": null
+  },
+  "objective": "把v0.2原型深化为有逐条赛题证据、可复核单和清晰亮点路径的v0.3评审交付版。",
+  "weeks": [
+    {
+      "week": 1,
+      "work": [
+        "R01",
+        "R02",
+        "R03",
+        "R04前半"
+      ],
+      "core_hours": 14,
+      "buffer_hours": 1
+    },
+    {
+      "week": 2,
+      "work": [
+        "R04后半",
+        "R05",
+        "R06",
+        "R07",
+        "R08"
+      ],
+      "core_hours": 13,
+      "buffer_hours": 2
+    }
+  ],
+  "planning_note": "工时是人工工作量估算，非自动执行实耗。按依赖流水推进；两周合计27小时核心与3小时缓冲。",
+  "preserved_decisions": {
+    "N18": "AI self-test; human timing and industry benefit pending",
+    "EXP01-EXP04": "deferred",
+    "real_expert_validation": "pending external evidence",
+    "independent_material_tests": "pending external evidence",
+    "enterprise_live_integration": "pending external evidence"
+  },
+  "exit_criteria": [
+    "R01—R08每项有实际证据和状态",
+    "三条亮点可从界面操作并导出复核单",
+    "原始资料及v0.2验收历史保持不变",
+    "软件自测与外部实证分别记录"
+  ],
+  "work_items": [
+    {
+      "id": "R01",
+      "title": "冻结v0.2并逐条映射赛题",
+      "estimated_hours": 2,
+      "acceptance": "五项基本成果、技术要求和加分项分开；保留PDF页码与可检查证据。"
+    },
+    {
+      "id": "R02",
+      "title": "依据登记与阈值来源复核",
+      "estimated_hours": 3,
+      "acceptance": "核验官方公告版本；逐目标区分企业参考、构造阈值和项目要求，不据公告补造数值规范。"
+    },
+    {
+      "id": "R03",
+      "title": "选材复核单与导出",
+      "estimated_hours": 6,
+      "acceptance": "生成绑定决策哈希的复核单，分开数值判断、工程适用、证据来源和待办；过期明确显示，HTML安全转义。"
+    },
+    {
+      "id": "R04",
+      "title": "评审入口与三条亮点演示",
+      "estimated_hours": 6,
+      "acceptance": "新增成果核验入口；按冲突诊断、证据追溯、验证行动引导进入真实可操作流程。"
+    },
+    {
+      "id": "R05",
+      "title": "五案例与边界复核",
+      "estimated_hours": 3,
+      "acceptance": "同池复核C1—C5；验证完整目录证据不足和限定子池冲突区别、未知与过期处理、导出一致。"
+    },
+    {
+      "id": "R06",
+      "title": "外部核验采集模板",
+      "estimated_hours": 2,
+      "acceptance": "输出真实场景要求、试验条件、材料身份和真人测时模板，空白状态保持未测，提供本地校验。"
+    },
+    {
+      "id": "R07",
+      "title": "评审手册与答辩问答",
+      "estimated_hours": 2,
+      "acceptance": "生成可打印手册，逐条串联赛题要求、三条亮点、证据入口和限制；形成可追溯问答。"
+    },
+    {
+      "id": "R08",
+      "title": "回归、交付与执行收口",
+      "estimated_hours": 3,
+      "acceptance": "完成必要回归、构建、双尺寸浏览器验收、隔离运行和新包搬迁验证，原始资料和v0.2历史哈希一致。"
+    }
+  ]
+}

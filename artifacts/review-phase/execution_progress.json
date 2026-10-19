@@ -1,0 +1,208 @@
+{
+  "started_at": "2026-10-19T14:51:46.907317+08:00",
+  "updated_at": "2026-10-19T07:36:56.717696+00:00",
+  "status": "complete_local_review_prototype_scope",
+  "plan": "planning/review_phase_plan_v3.json",
+  "source_revision": "1956e2b73940cb626e7d6a905984d02854eeeb24",
+  "time_note": "Actual timestamps refer to automated execution; actual human hours remain null.",
+  "tasks": {
+    "R01": {
+      "title": "冻结v0.2并逐条映射赛题",
+      "status": "complete",
+      "started_at": "2026-10-19T15:07:29.328508+08:00",
+      "completed_at": "2026-10-19T15:28:55.186014+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "artifacts/review-phase/baseline.json",
+          "sha256": "c2178d2df956d34ef8a9b9c7acce583711dd5ba191c6dca30d1cf7c84cfdc249"
+        },
+        {
+          "path": "configs/review_evidence_v3.json",
+          "sha256": "83b80c299767ebe7cd19ffb802cc756ac1496a21c1c6199a39c8ee237153b4e3"
+        },
+        {
+          "path": "artifacts/review-phase/plan-page.json",
+          "sha256": "b58e306ea6b2db54391c44ac6500824e0aa1de05962010194c2f58cc98fa677c"
+        }
+      ],
+      "notes": [
+        "最终索引按v0.3源文件刷新并核对32份证据指纹；历史基线保持不变。"
+      ]
+    },
+    "R02": {
+      "title": "依据登记与阈值来源复核",
+      "status": "complete",
+      "started_at": "2026-10-19T15:07:29.425057+08:00",
+      "completed_at": "2026-10-19T15:07:29.425057+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "artifacts/review-phase/sources/mot-5521-2019.json",
+          "sha256": "553ad439202790640ed080bcb5db3e3bf4fccf55cd6f573c90e58959a79eb69c"
+        },
+        {
+          "path": "artifacts/review-phase/sources/mot-3410-2025.json",
+          "sha256": "1afeaf025d455d420d557b8b4bdc2426a7858c07558b95cd11a1c30f3275d319"
+        },
+        {
+          "path": "configs/scene_rules_v2.json",
+          "sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7"
+        }
+      ]
+    },
+    "R03": {
+      "title": "选材复核单与导出",
+      "status": "complete",
+      "started_at": "2026-10-19T14:58:04.632755+08:00",
+      "completed_at": "2026-10-19T15:28:04.606654+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "backend/app/review/assessment.py",
+          "sha256": "3200d8af88cf718791c1e54d62863f9caad586fe9c6b193d79a03f03da568d0b"
+        },
+        {
+          "path": "backend/app/review/router.py",
+          "sha256": "6485fe408cc6e02162f737f02a01f23d55ce9033dff1b083bebeb41f709a6550"
+        },
+        {
+          "path": "artifacts/review-phase/verification/review-final.xml",
+          "sha256": "ab011114524c3a61a64d978d25b8129a721cca062062095847ccda9d1e39fb51"
+        }
+      ]
+    },
+    "R04": {
+      "title": "评审入口与三条亮点演示",
+      "status": "complete",
+      "started_at": "2026-10-19T15:07:29.516564+08:00",
+      "completed_at": "2026-10-19T15:31:52.288510+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "artifacts/review-phase/verification/ui-review.json",
+          "sha256": "9d43789e00fec4b0d3a3e7b3ed4836efb54cf0b0cf925c5cc6413bab91d9f2ee"
+        },
+        {
+          "path": "artifacts/review-phase/overview-1440.jpg",
+          "sha256": "fa1eeb9f565aff94fc6fa360f4c3f7d345c346b954989a520c5d45e870baae3a"
+        },
+        {
+          "path": "artifacts/review-phase/overview-1280.jpg",
+          "sha256": "7e1f486b743f976ec5adfea99e177f60aa0b668c50b4cab936c4ea6dc780f932"
+        },
+        {
+          "path": "artifacts/review-phase/final-workbench.jpg",
+          "sha256": "cced1b829128b5b584cf2f38aace5e6a5bca6ab5ba2e73a19d8d12847fbf74d1"
+        }
+      ]
+    },
+    "R05": {
+      "title": "五案例与边界复核",
+      "status": "complete",
+      "started_at": "2026-10-19T15:28:04.981185+08:00",
+      "completed_at": "2026-10-19T15:28:04.981185+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "artifacts/review-phase/verification/cases.json",
+          "sha256": "b3ad6b3d0f91f653ce46d8e9dee303f823db99f9497ae8c445a006a666528a9f"
+        },
+        {
+          "path": "artifacts/review-phase/rehearsal-final/cases.json",
+          "sha256": "ae0b266e4c9556c7e736b05c427d14f9ceeeda58bb2e3d04c69f53183e8deec1"
+        },
+        {
+          "path": "artifacts/review-phase/verification/pytest-final.xml",
+          "sha256": "2186a5c9124e6099d40aa95e49d4600fd683a1b44579e6b39f9d6ca0aeda7b67"
+        }
+      ]
+    },
+    "R06": {
+      "title": "外部核验采集模板",
+      "status": "complete",
+      "started_at": "2026-10-19T15:07:29.589856+08:00",
+      "completed_at": "2026-10-19T15:28:55.281640+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "docs/external-validation-template-v3.json",
+          "sha256": "cd11b4e8da4dd431f965d1fb529a6851df6995bd4803e1aa9f14b51b11aa6bc4"
+        },
+        {
+          "path": "docs/external-validation-schema-v3.json",
+          "sha256": "b42a8289f22c6ee53b6e87c882c7767faa29d6850ef5d7bb510f3768c35579ce"
+        },
+        {
+          "path": "docs/external-validation-protocol-v3.json",
+          "sha256": "bd9c592f1c930fc5812b940d70dde43a180bc6e56172b6f5254a8503d6b70ee5"
+        },
+        {
+          "path": "scripts/check_external_validation_v3.py",
+          "sha256": "0bddc810612239e48b0c7437cd21b1e70d9028f793a69dede4ff94a8fad78a2a"
+        }
+      ]
+    },
+    "R07": {
+      "title": "评审手册与答辩问答",
+      "status": "complete",
+      "started_at": "2026-10-19T15:28:05.088997+08:00",
+      "completed_at": "2026-10-19T15:28:05.088997+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "artifacts/review-phase/reviewer-handbook.html",
+          "sha256": "172e95524df57252515c223612d313ce869c428b6b0b49221919726cf172f001"
+        },
+        {
+          "path": "artifacts/review-phase/verification/handbook-checks.json",
+          "sha256": "70731a3b2959cd6bdcb564694d0800ac427471dd172cc666a5a983045ce580dc"
+        }
+      ]
+    },
+    "R08": {
+      "title": "回归、交付与执行收口",
+      "status": "complete",
+      "started_at": "2026-10-19T15:28:05.175848+08:00",
+      "completed_at": "2026-10-19T15:31:52.364942+08:00",
+      "actual_human_hours": null,
+      "evidence": [
+        {
+          "path": "artifacts/review-phase/verification/pytest-final.xml",
+          "sha256": "2186a5c9124e6099d40aa95e49d4600fd683a1b44579e6b39f9d6ca0aeda7b67"
+        },
+        {
+          "path": "artifacts/review-phase/verification/history-integrity.json",
+          "sha256": "431ced3f98399ba7b9de5373731344768f88953049be875838311feff433c355"
+        },
+        {
+          "path": "artifacts/review-phase/package-verifications/asphalt-workbench-0.3.0-20261019T072858.json",
+          "sha256": "926bb302c043891c9f8dbd489bb703e9a28f086c733dc8057b35c3072c14ed56"
+        },
+        {
+          "path": "docs/release-v03.json",
+          "sha256": "1daadf08a39437b5e3decfdf4ab150ba7aa4d9e1ec8f546ce4a08631baba3f5e"
+        },
+        {
+          "path": "artifacts/review-phase/package-verifications/asphalt-workbench-0.3.0-20261019T073332.json",
+          "sha256": "5a62b8d6e9e2c85b2aabfbff4c870d7f97d0cce401d04314a40717dd00e9ec85"
+        },
+        {
+          "path": "artifacts/review-phase/verification/archive-integrity.json",
+          "sha256": "7f5692744ba2ba744fda2778838d33e6902a510785415f38b3947b0d930523ba"
+        }
+      ],
+      "notes": [
+        "完成源文件与候选运行包验收；归档版本另附搬迁核验回执，既有发布包保持原样。"
+      ]
+    }
+  },
+  "summary": {
+    "completed": 8,
+    "total": 8,
+    "in_progress": []
+  },
+  "external_validation_status": "pending; human participants 0, independent material tests and enterprise live integration not performed",
+  "research_disposition": "EXP01-EXP04 remain deferred by user capacity choice",
+  "final_archive_status": "verified; 377 compressed file hashes and relocated application checks passed"
+}

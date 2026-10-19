@@ -1,0 +1,8 @@
+{
+  "directory": "artifacts/release/asphalt-workbench-0.3.0-20261019T073332",
+  "zip": "artifacts/release/asphalt-workbench-0.3.0-20261019T073332.zip",
+  "files": 377,
+  "zip_bytes": 9260077,
+  "zip_sha256": "72e7e05a9c338d456f648e66bbcdb22b48e39d6be28254d1a665c9a5ea56e68e",
+  "verification_receipt": "artifacts/review-phase/package-verifications/asphalt-workbench-0.3.0-20261019T073332.json"
+}

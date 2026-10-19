@@ -1,0 +1,57 @@
+{
+  "schema_version": "3.0",
+  "status": "awaiting_external_evidence",
+  "actual_human_participants": 0,
+  "project_requirement_fields": [
+    "project_id",
+    "scene_reference",
+    "requirement_document",
+    "clause",
+    "approver_reference"
+  ],
+  "material_fields": [
+    "candidate_id",
+    "batch_reference",
+    "recipe_reference",
+    "rap_mass_basis"
+  ],
+  "required_test_fields": [
+    "metric",
+    "method",
+    "all metric-defining conditions",
+    "raw_file_reference"
+  ],
+  "human_protocol": {
+    "tasks": [
+      "routine_selection",
+      "conflict_review",
+      "variant_validation"
+    ],
+    "workflows": [
+      "manual",
+      "B1",
+      "V2"
+    ],
+    "controls": [
+      "同一任务使用同一冻结候选池、目标、可见原始标签和资料范围",
+      "轮换三流程顺序，记录背景和顺序；学习和中断另记",
+      "每条记录声明actor为human，包含时区、起止时间、操作数、遗漏数、追溯完成与日志引用",
+      "同一参与者三任务均有三流程配对；重复脚本不增加参与者",
+      "至少保留原始记录、错误和未完成流程，不仅记录成功结果"
+    ],
+    "measures": [
+      "effective_seconds = ended_at - started_at - interruption_seconds",
+      "operations",
+      "omission_count",
+      "trace_complete"
+    ],
+    "interpretation": "单人走查可发现操作问题；行业平均节时和推广收益需更具代表性的实际测量。"
+  },
+  "validator_scope": "仅校验字段、指标条件、时间与配对，不认证文件内容或项目适用，不导入选材及训练库。",
+  "next_actions": [
+    "核对真实项目采用的标准及条款",
+    "取得独立材料身份和同口径试验资料",
+    "按模板开展真人完整流程测时",
+    "企业实际系统接口联调另行安排"
+  ]
+}

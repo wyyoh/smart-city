@@ -1,0 +1,35 @@
+{
+  "version": "0.3.0",
+  "scope": "local review prototype",
+  "created_at": "2026-10-19T07:31:52.214211+00:00",
+  "features": [
+    "赛题五项基本成果、十项详细技术要求和七项拆分加分方向的逐条证据索引",
+    "绑定冻结决策并追加保存的选材复核单，JSON与打印页面共享保存内容",
+    "C5冲突、C1证据、C2验证行动三条引导演示",
+    "官方公告版本登记及项目阈值适用边界",
+    "外部核验空白模板、结构与三流程配对校验",
+    "可打印评审手册、同池案例表与八项答辩问答"
+  ],
+  "validation": {
+    "python_checks": 74,
+    "browser_checks": 14,
+    "frontend_types_and_build": "passed",
+    "isolated_rehearsals": 2,
+    "same_pool_cases": 5,
+    "additional_limited_C5_case": 1,
+    "candidate_manifest_files_verified": 373,
+    "protected_files_unchanged": 84,
+    "original_tables_unchanged": 6,
+    "v02_release_unchanged": true
+  },
+  "limitations": [
+    "本地声明的工程师或批准依据仍需独立核验",
+    "真人参与数0，人工时间和行业收益未测",
+    "真实场景阈值、材料身份和试验口径仍待外部证据",
+    "四项模型仍为研究模式，条件研究继续延后",
+    "搬迁验证使用同一主机已安装的依赖，未打包解释器"
+  ],
+  "entry": "http://127.0.0.1:8766/",
+  "handbook": "/v2/review/handbook.html",
+  "feedback": "原实验室与现场反馈契约保持；外部核验字段检查不写入训练或选材库。"
+}

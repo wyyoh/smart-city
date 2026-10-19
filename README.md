@@ -1,6 +1,6 @@
 # 数智选材
 
-v0.2基于企业提供的再生沥青混合料工作簿，支持场景条件生成带来源需求、工程师确认、全目录候选检索、四态约束、最小冲突证书、完整材料比较、单元格追溯、微调失效和下一步验证计划。数值初筛通过后仍需工程适用性审核与独立试验。
+v0.3基于企业提供的再生沥青混合料工作簿，支持场景条件生成带来源需求、工程师确认、全目录候选检索、四态约束、最小冲突证书、完整材料比较、单元格追溯、微调失效和下一步验证计划。新增“成果与验证”入口、三条亮点演示、绑定决策的选材复核单、可打印评审手册及外部核验模板。数值初筛通过后仍需工程适用性审核与独立试验。
 
 ## 运行
 
@@ -11,6 +11,12 @@ powershell -ExecutionPolicy Bypass -File scripts/start-local.ps1
 ```
 
 打开 `http://127.0.0.1:8766/`。后端同时提供本地前端静态资源；启动后核心功能不请求公网服务。API文档在 `/docs`，离线交接使用 `docs/api-v2.openapi.json`。`/v1`与历史初筛保留；新主流程使用`/v2`。
+
+默认进入“成果与验证”，可按C5冲突、C1证据、C2验证行动三条路径进入场景选材。该入口逐条列出五项基本成果、十项详细技术要求及七项拆分的加分方向，并显示证据文件当前指纹；这些状态是团队登记，不代表官方验收。
+
+生成材料决策后可“生成选材复核单”。复核内容追加保存于本地库，打印版与JSON使用同一条保存记录，保留生成时间、决策哈希、复核哈希和生成时的当前性检查。后续数据变化时应重新生成；历史复核单保留原内容。新接口契约见`docs/api-v3.openapi.json`。
+
+“依据与阈值”登记交通运输部官方公告版本，不据公告自动补造项目验收值。“外部核验”提供JSON空白模板和只读字段检查，未填真人记录时参与数为0；通过字段校验不意味着证据真实性、工程批准或行业效益已验证。校验不会将数据导入选材或训练库。
 
 新机器先安装 Python 3.12+、Node.js 24、pnpm 11，再执行：
 
@@ -54,3 +60,9 @@ powershell -ExecutionPolicy Bypass -File scripts/check.ps1
 试验回流默认“演示”，需审核并确认条件后才能影响相同数据范围的新推荐。正式项目排除演示回流；训练排除全部演示回流和未试验微调版本。审核人是本地声明字段，当前版本无多用户登录、权限和电子签章，适合单人本地演示。
 
 v0.2执行证据见`artifacts/next-phase/execution_progress.json`。旧计划和验收历史保持原样。规则、适用性、反馈、交互与应用价值口径分别见`docs/scene-rule-cards.md`、`docs/evidence-applicability-policy.md`、`docs/feedback-contract-v2.json`、`docs/interaction-checklist-v2.md`、`docs/value-evaluation-notes.md`。本地上游模拟不等于企业真实联调；软件代理时延不等于真人节时。条件研究按每周15–20小时的选择延后。
+
+v0.3计划为`planning/review_phase_plan_v3.json`，实际执行与验收记录在`artifacts/review-phase`。评审手册可从`/v2/review/handbook.html`打开。核验空白模板为`docs/external-validation-template-v3.json`；填写后可用下述命令检查字段、试验条件及真人三任务三流程配对。该检查不认证文件真实性。
+
+```powershell
+.venv\Scripts\python.exe -X utf8 scripts/check_external_validation_v3.py <已填写的JSON路径>
+```

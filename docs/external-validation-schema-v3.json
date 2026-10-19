@@ -1,0 +1,331 @@
+{
+  "$defs": {
+    "HumanTask": {
+      "additionalProperties": false,
+      "properties": {
+        "participant_id": {
+          "minLength": 1,
+          "title": "Participant Id",
+          "type": "string"
+        },
+        "actor": {
+          "const": "human",
+          "title": "Actor",
+          "type": "string"
+        },
+        "task": {
+          "enum": [
+            "routine_selection",
+            "conflict_review",
+            "variant_validation"
+          ],
+          "title": "Task",
+          "type": "string"
+        },
+        "workflow": {
+          "enum": [
+            "manual",
+            "B1",
+            "V2"
+          ],
+          "title": "Workflow",
+          "type": "string"
+        },
+        "background": {
+          "minLength": 1,
+          "title": "Background",
+          "type": "string"
+        },
+        "order": {
+          "minimum": 1,
+          "title": "Order",
+          "type": "integer"
+        },
+        "started_at": {
+          "format": "date-time",
+          "title": "Started At",
+          "type": "string"
+        },
+        "ended_at": {
+          "format": "date-time",
+          "title": "Ended At",
+          "type": "string"
+        },
+        "interruption_seconds": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Interruption Seconds",
+          "type": "number"
+        },
+        "operations": {
+          "minimum": 0,
+          "title": "Operations",
+          "type": "integer"
+        },
+        "omission_count": {
+          "minimum": 0,
+          "title": "Omission Count",
+          "type": "integer"
+        },
+        "trace_complete": {
+          "title": "Trace Complete",
+          "type": "boolean"
+        },
+        "log_reference": {
+          "minLength": 1,
+          "title": "Log Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "participant_id",
+        "actor",
+        "task",
+        "workflow",
+        "background",
+        "order",
+        "started_at",
+        "ended_at",
+        "operations",
+        "omission_count",
+        "trace_complete",
+        "log_reference"
+      ],
+      "title": "HumanTask",
+      "type": "object"
+    },
+    "MaterialEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Candidate Id"
+        },
+        "batch_reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Batch Reference"
+        },
+        "recipe_reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recipe Reference"
+        },
+        "rap_mass_basis": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rap Mass Basis"
+        }
+      },
+      "title": "MaterialEvidence",
+      "type": "object"
+    },
+    "ProjectEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "project_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Project Id"
+        },
+        "scene_reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scene Reference"
+        },
+        "requirement_document": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Requirement Document"
+        },
+        "clause": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Clause"
+        },
+        "approver_reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Approver Reference"
+        }
+      },
+      "title": "ProjectEvidence",
+      "type": "object"
+    },
+    "TestEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "metric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Metric"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Method"
+        },
+        "conditions": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "title": "Conditions",
+          "type": "object"
+        },
+        "raw_file_reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw File Reference"
+        }
+      },
+      "title": "TestEvidence",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "3.0",
+      "default": "3.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "record_kind": {
+      "const": "external_validation",
+      "default": "external_validation",
+      "title": "Record Kind",
+      "type": "string"
+    },
+    "status": {
+      "default": "unfilled",
+      "enum": [
+        "unfilled",
+        "draft",
+        "collected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "project": {
+      "$ref": "#/$defs/ProjectEvidence"
+    },
+    "materials": {
+      "items": {
+        "$ref": "#/$defs/MaterialEvidence"
+      },
+      "title": "Materials",
+      "type": "array"
+    },
+    "tests": {
+      "items": {
+        "$ref": "#/$defs/TestEvidence"
+      },
+      "title": "Tests",
+      "type": "array"
+    },
+    "human_tasks": {
+      "items": {
+        "$ref": "#/$defs/HumanTask"
+      },
+      "title": "Human Tasks",
+      "type": "array"
+    }
+  },
+  "title": "ExternalEvidence",
+  "type": "object"
+}
