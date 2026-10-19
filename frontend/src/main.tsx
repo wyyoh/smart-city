@@ -32,7 +32,7 @@ import type {
 } from "./types";
 import { core, flags, fmt, metrics } from "./types";
 import "./styles.css";
-import { DemandCard } from "./components/DemandCard";
+import { DecisionWorkflow } from "./components/DecisionWorkflow";
 import "./decision.css";
 
 async function api<T>(path: string, body?: unknown): Promise<T> {
@@ -232,10 +232,12 @@ function App() {
           ].map((n) => (
             <button
               key={n.id}
+              aria-current={route === n.id ? "page" : undefined}
               className={route === n.id ? "nav-item active" : "nav-item"}
               onClick={() => {
                 setRoute(n.id);
-                if (n.id === "workbench" && scenario && !snapshot) void calculate(scenario);
+                if (n.id === "workbench" && scenario && !snapshot)
+                  void calculate(scenario);
                 setNotice("");
               }}
             >
@@ -301,7 +303,7 @@ function App() {
               </button>
             </div>
           )}
-          {route === "decision" && <DemandCard />}
+          {route === "decision" && <DecisionWorkflow />}
           {route === "workbench" && scenario && (
             <>
               <div className="page-heading">

@@ -127,6 +127,7 @@ class DemandRequest(Model):
     decision_id: str | None = Field(default=None, max_length=160)
     segment_id: str | None = Field(default=None, max_length=160)
     context_kind: Literal['constructed_demo', 'project'] = 'project'
+    demo_case_id: Literal['C1', 'C2', 'C3', 'C4', 'C5'] | None = None
     scene: SceneContext = Field(default_factory=SceneContext)
     inventory: Inventory = Field(default_factory=Inventory)
     construction: Construction = Field(default_factory=Construction)
@@ -144,6 +145,8 @@ class DemandRequest(Model):
 
     @model_validator(mode='after')
     def context_sources(self):
+        if self.context_kind == 'project' and self.demo_case_id is not None:
+            raise ValueError('正式项目不可套用构造验证案例')
         if self.context_kind == 'project' and any(
             t.source.kind == 'constructed_demo' or t.comparison_basis == 'legacy_workbook_numeric_demo'
             for t in self.project_targets

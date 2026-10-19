@@ -1,0 +1,1 @@
+{"task":"N07","command":".venv\\Scripts\\python.exe -X utf8 -m pytest -q tests/test_eligibility_v2.py","exit_code":0,"passed":2,"warnings":1,"duration_seconds_reported_by_pytest":0.02,"scope":"Unknown versus applicable formal conditions, explicit demo-only exception, contradictory method/condition refusal, missing prices and RAP mass basis."}

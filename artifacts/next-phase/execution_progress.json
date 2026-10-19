@@ -128,132 +128,392 @@
     "N05": {
       "title": "材料关系与完整方案卡",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T12:57:43.240595+08:00",
+      "completed_at": "2026-10-19T12:59:25.290124+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/materials.py",
+          "sha256": "14fca7cbd9aeff93cea569b1b7c69cada48130c138d50d4c6cdcfc0f1ac65aa0"
+        },
+        {
+          "path": "frontend/src/components/MaterialSchemeCard.tsx",
+          "sha256": "42d3a0d5f98f234c6b5461def5654797cbe5bc7d3b553ed1b1ef813dae60ea97"
+        },
+        {
+          "path": "tests/test_materials_v2.py",
+          "sha256": "fac01253abd2abd9d8bb9715987383fb75ffedb9d4ada19766f39a4d7f4d4bb5"
+        },
+        {
+          "path": "artifacts/next-phase/material-checks.json",
+          "sha256": "bd0c9a79b8611f557393bcae19d5914793876718c7cb752aed253e70d8fda559"
+        }
+      ],
+      "notes": [
+        "三类关系路径通过检查；未披露改性剂、助剂和工艺字段保持未知；TS构建通过。"
+      ],
+      "wall_elapsed_seconds": 102.05
     },
     "N06": {
       "title": "候选目录检索与范围冻结",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T12:59:25.716970+08:00",
+      "completed_at": "2026-10-19T13:00:11.358924+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/candidate_pool.py",
+          "sha256": "b0921e417ac6c9c480016c0a4e7ef4ca317394f8424fd5bf02c0f369c088f578"
+        },
+        {
+          "path": "tests/test_candidate_pool_v2.py",
+          "sha256": "b04f5583452c9b7e35a83d6ed8a76472e0cbfb456efd6e0069a6a935df96ad8b"
+        },
+        {
+          "path": "artifacts/next-phase/pool-checks.json",
+          "sha256": "e30d0115eab1208a8bb377417dbdcead2a11b8482200170854c09f1962261938"
+        }
+      ],
+      "notes": [
+        "全目录检索、空库存、快照重放和35条完整数值诊断子池已验证。"
+      ],
+      "wall_elapsed_seconds": 45.642
     },
     "N07": {
       "title": "证据适用与工艺检查",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:00:11.800344+08:00",
+      "completed_at": "2026-10-19T13:01:00.524131+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/eligibility.py",
+          "sha256": "52dbfa69d357367e865fac9b736be29a6f08866f2356f5a5bc8b102c29a48135"
+        },
+        {
+          "path": "docs/evidence-applicability-policy.md",
+          "sha256": "01cdbf62be5d1d0c3cc35ec769df3401c7228465f5ff580085c2412e46cc4771"
+        },
+        {
+          "path": "tests/test_eligibility_v2.py",
+          "sha256": "5b9076fda1fc1bf6b9d0332f60c33b9144187bca3f4c0da171b0bd3ce3a8de5e"
+        },
+        {
+          "path": "artifacts/next-phase/eligibility-checks.json",
+          "sha256": "464b9c8d2fefd7abfd853957c073a0a2cdf836b085bf3ff9b55e35abfd1ba0f4"
+        }
+      ],
+      "notes": [
+        "方法条件层位工艺分别判定；正式未知不通过，价格和质量基准缺口保留。"
+      ],
+      "wall_elapsed_seconds": 48.724
     },
     "N08": {
       "title": "四态约束与可行集比较",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:01:00.953717+08:00",
+      "completed_at": "2026-10-19T13:02:18.047739+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/constraints.py",
+          "sha256": "39876589c77e973762763f2fca63c76cf34c443b8be389f5f23080a0b3bdb82b"
+        },
+        {
+          "path": "backend/app/decision/comparison.py",
+          "sha256": "7d4214e6b4631dc8423966ffa15e8c0c0f3d4dbcf76fde5c411eaa30a4b24b0e"
+        },
+        {
+          "path": "tests/test_constraints_v2.py",
+          "sha256": "8746c55778f11154286a93cdf1192fbd5d49d34743c9e60f8e2cec694ca5c194"
+        },
+        {
+          "path": "artifacts/next-phase/constraint-checks.json",
+          "sha256": "ef3fea479e63a42ea09e91d5ebac3c752111f2debf4763ebd89c44faefa7ae4d"
+        }
+      ],
+      "notes": [
+        "四态、严格边界、不补偿硬失败和并列排序已验证。"
+      ],
+      "wall_elapsed_seconds": 77.094
     },
     "N09": {
       "title": "最小冲突与无解证书",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:02:18.488878+08:00",
+      "completed_at": "2026-10-19T13:03:20.201797+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/diagnosis.py",
+          "sha256": "80e0de77b21f57582abbf24c2f2bdf584ef3d1abc7aa139560735c8558774d3e"
+        },
+        {
+          "path": "frontend/src/components/ConflictPanel.tsx",
+          "sha256": "c950ef07415fc4dd0c6550e688afbf570deea8ff3becd21f2ec03dfee5ec67c4"
+        },
+        {
+          "path": "tests/test_decision_certificates_v2.py",
+          "sha256": "54eba0a737fc3beeb5201365c024faa32f7ae640383c1e3c218dcb2b87d7c752"
+        },
+        {
+          "path": "artifacts/next-phase/conflict-certificates/C5.json",
+          "sha256": "9fab317a89b1312aef7e7666b83106d3375e48f7233e082ff69e87ae18133462"
+        }
+      ],
+      "notes": [
+        "C5冻结35条完整数值子池，四组包含最小冲突及删除见证均独立复核通过。"
+      ],
+      "wall_elapsed_seconds": 61.713
     },
     "N10": {
       "title": "场景变更与推荐差异解释",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:03:20.650234+08:00",
+      "completed_at": "2026-10-19T13:03:40.959637+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/differences.py",
+          "sha256": "dee53063c3cf37385cbf016033eea0cab22c69e61d157f8e9b21ce237f99110d"
+        },
+        {
+          "path": "frontend/src/components/DecisionDiff.tsx",
+          "sha256": "6f09a777ed45fa8f02a5d6ab757b1c2b1e7ee01bdc30e17aeb1ccacf7ae6717c"
+        },
+        {
+          "path": "tests/test_decision_diff_v2.py",
+          "sha256": "f4ba920bec3cec374a4300ab810e25840cf219ec100caee436b4669e1b7933a2"
+        },
+        {
+          "path": "artifacts/next-phase/week3-what-if/differences.json",
+          "sha256": "3217e3c8b27d95a92a5b5bc6ea93cde0c5d828c640e4a3de5be0c7f549d7b2d2"
+        }
+      ],
+      "notes": [
+        "实际场景变化解释已验证；相同条件重复运行不制造差异。"
+      ],
+      "wall_elapsed_seconds": 20.309
     },
     "N11": {
       "title": "诊断与适用性边界验收",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:03:41.362336+08:00",
+      "completed_at": "2026-10-19T13:04:55.442308+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "tests/test_decision_diagnosis.py",
+          "sha256": "32704d8dd3c62c4ef4d6a0a8656060cacc9b3a4eb23ef5c877b9d8d34c13614d"
+        },
+        {
+          "path": "configs/next_phase_negative_cases.json",
+          "sha256": "929f15751b44ab3ae8c75a417cd0b98d981d92aeeb7bc1607f1d2d593aba1eb3"
+        },
+        {
+          "path": "artifacts/next-phase/week3-acceptance.json",
+          "sha256": "3aa251005dfc3b2aa28eef6c09501a47dd1f45dda48fbb39e365ab47110fef4e"
+        },
+        {
+          "path": "artifacts/next-phase/week3-negative-junit.xml",
+          "sha256": "1f9760026f9b76b1da9948ed716efaafa240bf2275345b75ff63ddb146dcb81a"
+        }
+      ],
+      "notes": [
+        "12类已登记负例全部通过；UI键盘与慢响应另在N19验收。"
+      ],
+      "wall_elapsed_seconds": 74.08
     },
     "N12": {
       "title": "完整流程与方案比较界面",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:04:55.986740+08:00",
+      "completed_at": "2026-10-19T13:09:47.219179+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "frontend/src/components/DecisionWorkflow.tsx",
+          "sha256": "02ceb5491f9068c91ecc3fc1cadcd977a6ca955cc196e1320a17cc3d1bc07ac8"
+        },
+        {
+          "path": "tests/test_workflow_v2.py",
+          "sha256": "3bd2acd7ce420a3341912c3898a1d5ccd3ca711cde16c439abd74e43e659b3cf"
+        },
+        {
+          "path": "artifacts/next-phase/week4-workflow/checks.json",
+          "sha256": "1c9c60cdfc83aaf9cf130d0d60613ceef876028bf7a686da7c00d4d879869a51"
+        }
+      ],
+      "notes": [
+        "主流程、多方案比较、微调失效、验证行动和快照重放贯通；浏览器与隔离API检查通过。"
+      ],
+      "wall_elapsed_seconds": 291.232
     },
     "N13": {
       "title": "证据卡与版本失效显示",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:09:47.729681+08:00",
+      "completed_at": "2026-10-19T13:11:39.574364+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/freshness.py",
+          "sha256": "54c55746897afc539b624cd9c4b1083972d34c1ecea863727fb457c4f8e0c5f9"
+        },
+        {
+          "path": "frontend/src/components/CandidateEvidence.tsx",
+          "sha256": "39cb4508266f8ae369bce7168a08a1ee3586f545a85bcdabd20c36df3bac64b5"
+        },
+        {
+          "path": "tests/test_decision_freshness_v2.py",
+          "sha256": "97a8984aef912277d1a857f687ee71765aebd48ca705679bd950cd7be98d0a88"
+        },
+        {
+          "path": "artifacts/next-phase/evidence-changes/checks.json",
+          "sha256": "ffa5726e7b051c6256897cb5b2932ed231ff74e34fd4ecf1d6e792f8ea6fd5fa"
+        }
+      ],
+      "notes": [
+        "快照版本、源表K31追溯和微调证据失效均已验证，旧内容不被改写。"
+      ],
+      "wall_elapsed_seconds": 111.845
     },
     "N14": {
       "title": "研究预测与验证视图",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:11:40.037079+08:00",
+      "completed_at": "2026-10-19T13:12:52.022611+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/model_view.py",
+          "sha256": "924bf70febcc5cc24cdeab661df998be637f994955b6c5b5b7955570bc14fa4e"
+        },
+        {
+          "path": "frontend/src/components/PredictionValidation.tsx",
+          "sha256": "95367b3884574a8fa5906eeebf7e6c873d29c89ee15214e85ca2fe9823851e29"
+        },
+        {
+          "path": "tests/test_model_view_v2.py",
+          "sha256": "50cb64b2d21f770d38501c015dfd8f8ae6b504e6095b7c88604821be084c6d78"
+        },
+        {
+          "path": "artifacts/next-phase/week4-model-view/checks.json",
+          "sha256": "6eea3ae7ef51c0549b59cd74c9d958c095e43f28c311f3dc342f7c00b899fd2b"
+        }
+      ],
+      "notes": [
+        "实测、各指标自身离折及全量拟合分开；旧模型版本停用预测，负结果清楚显示。"
+      ],
+      "wall_elapsed_seconds": 71.986
     },
     "N15": {
       "title": "可解释的基础补测建议",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:12:52.547384+08:00",
+      "completed_at": "2026-10-19T13:13:54.869378+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/test_planning.py",
+          "sha256": "9fe4235f1c30d8770c6158a4a736b7664a7ade605b3e90cbb270ea9451e3164c"
+        },
+        {
+          "path": "frontend/src/components/NextTestCard.tsx",
+          "sha256": "d50907e8b8b9cfcb62c17b963b6274b711d955d287effa5da6e23bda3a1b4c28"
+        },
+        {
+          "path": "tests/test_test_planning_v2.py",
+          "sha256": "a0f86fbb1852e734088a77a75132f75d7b624da2586f0d2136ed1e54f543dbfb"
+        },
+        {
+          "path": "artifacts/next-phase/test-plan-checks.json",
+          "sha256": "5e6d8bdcebdd0324b0d9d6b783069e03cdb518bc99007d168ddf715bd248324d"
+        }
+      ],
+      "notes": [
+        "补测卡含条件理由和停止规则，已知失败不列作待补齐方案；基础策略独立于研究扩展。"
+      ],
+      "wall_elapsed_seconds": 62.322
     },
     "N16": {
       "title": "上游联动与反馈契约",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:13:55.310238+08:00",
+      "completed_at": "2026-10-19T13:16:10.800266+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/integration.py",
+          "sha256": "bd5a7a2ca21aca098970cd410f9ce1699eb768e061d0226692fa4a9ffb940eb7"
+        },
+        {
+          "path": "scripts/mock_upstream_v2.py",
+          "sha256": "380d54afd8fee5f8deb11adb94988a964da1d3bf0d1540f964b21b9dc6212161"
+        },
+        {
+          "path": "docs/feedback-contract-v2.json",
+          "sha256": "411cd5ccd123f9d5740d86913493a94627b91a07db02c69aa78c146ef9f28159"
+        },
+        {
+          "path": "tests/test_integration_v2.py",
+          "sha256": "b5ffb46b4d55a499355530ce69c44030ce5130a9484b5a9cc2c7bc77e63e1d4d"
+        },
+        {
+          "path": "artifacts/next-phase/week5-integration/local-mock.json",
+          "sha256": "44b5c6d60d61b597f9e6dd3cbd219aca4ea099ccbde6c5db504e4add8070bb23"
+        }
+      ],
+      "notes": [
+        "8步本地联动完成，决策区段回传、反馈幂等、跨版本拒绝和演示范围隔离通过。"
+      ],
+      "wall_elapsed_seconds": 135.49
     },
     "N17": {
       "title": "五案例同池对照与报告",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
-      "completed_at": null,
+      "status": "complete",
+      "started_at": "2026-10-19T13:16:11.275672+08:00",
+      "completed_at": "2026-10-19T13:18:47.936520+08:00",
       "actual_hours": null,
-      "completion_evidence": [],
-      "notes": []
+      "completion_evidence": [
+        {
+          "path": "scripts/compare_cases_v2.py",
+          "sha256": "c586796a6f11391fc84f436c25b64ec8b53567864b169e4ab02a48382dbe9de1"
+        },
+        {
+          "path": "configs/case_scenarios_v2.json",
+          "sha256": "986bb5fd4aaa14c3b90e15695c64dddc8d229d3e99ed4237cc458f6f5c5ba20a"
+        },
+        {
+          "path": "tests/test_case_reports_v2.py",
+          "sha256": "379cbbaedf9444d157b67caff8c255cd08703d8a1ded232c3eda5f0dd0cfe000"
+        },
+        {
+          "path": "artifacts/next-phase/case-reports/summary.json",
+          "sha256": "fee08caf99097a55f6abc4a966e4dea67e4f5e12dc12d341563c73c99edaa8da"
+        },
+        {
+          "path": "artifacts/next-phase/case-reports/checks.json",
+          "sha256": "7b9081d857c07ad33ad50a38e8f3845c588aa7a4fada7f8a440983cd87b5318c"
+        }
+      ],
+      "notes": [
+        "五案同池强B1一致，B0仅作风险示例；C5完整与缺测池边界分开。"
+      ],
+      "wall_elapsed_seconds": 156.661
     },
     "N18": {
       "title": "完整选材任务价值记录",
@@ -268,12 +528,14 @@
     "N19": {
       "title": "界面细节与异常恢复打磨",
       "priority": "core",
-      "status": "planned",
-      "started_at": null,
+      "status": "in_progress",
+      "started_at": "2026-10-19T13:18:48.359846+08:00",
       "completed_at": null,
       "actual_hours": null,
       "completion_evidence": [],
-      "notes": []
+      "notes": [
+        "等待真人测时偏好回复，先推进不依赖N18的界面验收。"
+      ]
     },
     "N20": {
       "title": "回归离线检查与发布排练",
@@ -336,11 +598,13 @@
       "notes": []
     }
   },
-  "updated_at": "2026-10-19T12:57:23.941366+08:00",
+  "updated_at": "2026-10-19T13:18:48.359846+08:00",
   "summary": {
-    "core_completed": 4,
+    "core_completed": 17,
     "core_total": 21,
     "research_completed": 0,
-    "in_progress": []
+    "in_progress": [
+      "N19"
+    ]
   }
 }

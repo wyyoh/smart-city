@@ -1,0 +1,19 @@
+{
+  "version":"negative-cases-2.0.0",
+  "source":"planning/innovation_validation_plan_v2.json#negative_cases",
+  "cases":[
+    {"id":"NEG01","trigger":"气候或交通缺失","test":"missing_scene"},
+    {"id":"NEG02","trigger":"病害成因或严重程度不足","test":"unknown_distress"},
+    {"id":"NEG03","trigger":"同指标不同试验方法或条件","test":"different_method"},
+    {"id":"NEG04","trigger":"PG疲劳动态模量需求缺少能力","test":"unsupported_demand"},
+    {"id":"NEG05","trigger":"预算存在而价格缺失","test":"missing_price"},
+    {"id":"NEG06","trigger":"库存范围为空","test":"empty_inventory"},
+    {"id":"NEG07","trigger":"必要性能缺测","test":"missing_performance"},
+    {"id":"NEG08","trigger":"阈值相等及区间边界","test":"boundaries"},
+    {"id":"NEG09","trigger":"候选性能并列","test":"ties"},
+    {"id":"NEG10","trigger":"微调及输入更新","test":"invalidation_and_replay"},
+    {"id":"NEG11","trigger":"演示记录或不匹配模型","test":"scope_and_stale_model"},
+    {"id":"NEG12","trigger":"已知复合目标冲突","test":"verified_conflicts"}
+  ],
+  "boundary":"本文件登记软件/API负例；浏览器的慢响应、键盘和视觉验收另由N19记录。"
+}

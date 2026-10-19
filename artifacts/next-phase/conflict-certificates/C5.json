@@ -1,0 +1,1308 @@
+{
+  "case": "C5",
+  "context_kind": "constructed_demo",
+  "scope": {
+    "context_kind": "constructed_demo",
+    "inventory": {
+      "source_codes": null,
+      "product_versions": null,
+      "gradation_family": "AC-13"
+    },
+    "scene": {
+      "maintenance_method": "hot_recycling",
+      "layer": "surface",
+      "structure_type": "flexible",
+      "climate": {
+        "class": "demo_hot",
+        "source": "团队构造：高温分区，无真实气候数据映射"
+      },
+      "traffic": {
+        "class": "demo_heavy",
+        "source": "团队构造：重载分组，无实测交通换算"
+      },
+      "distress": {
+        "type": "rutting",
+        "severity": "severe",
+        "mechanism": "团队构造病害描述，待现场确认"
+      }
+    },
+    "construction": {
+      "equipment": null,
+      "mixing_window": null,
+      "compaction_window": null,
+      "source": null
+    },
+    "evidence_view": "complete_numeric_demo",
+    "catalogue_total": 180,
+    "dataset": {
+      "id": "ds_d916d61767ca55d21bd7",
+      "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+      "revision": 0
+    },
+    "scope_note": "结论仅针对本次冻结目录、库存、级配及证据视图；不是所有可设计材料的结论。",
+    "inventory_confirmed": false,
+    "evidence_view_note": "排除缺少任一所需数值的记录，仅诊断完整数值子池。"
+  },
+  "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+  "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+  "candidate_count": 35,
+  "diagnosis": {
+    "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+    "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+    "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+    "status": "known_conflict",
+    "message": "冻结池内每个候选至少有一项已知失败，当前要求联合无解",
+    "enumeration_complete": true,
+    "certificates": [
+      {
+        "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+        "target_ids": [
+          "hot-rutting:DS:0",
+          "hot-rutting:TSR:2"
+        ],
+        "requirements": [
+          {
+            "metric": "DS",
+            "operator": ">",
+            "value": 8000,
+            "upper": null,
+            "unit": "次/mm",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+              "confirmed": false
+            }
+          },
+          {
+            "metric": "TSR",
+            "operator": ">",
+            "value": 90.0,
+            "upper": null,
+            "unit": "%",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "冻结演示案例C5的团队设定",
+              "confirmed": false
+            }
+          }
+        ],
+        "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+        "minimality_status": "verified_inclusion_minimal",
+        "deletion_witnesses": [
+          {
+            "removed_target": "hot-rutting:DS:0",
+            "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+            "display_id": "5c4c21d0",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:TSR:2",
+                "state": "satisfied",
+                "value": 92.44995786770077
+              }
+            ]
+          },
+          {
+            "removed_target": "hot-rutting:TSR:2",
+            "candidate_id": "mix_0e51eff6e2cef2806f57",
+            "display_id": "f2806f57",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:DS:0",
+                "state": "satisfied",
+                "value": 9565.0
+              }
+            ]
+          }
+        ],
+        "candidate_failures": [
+          {
+            "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_08857a35c546c16fea3d",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_0e51eff6e2cef2806f57",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_15ad6894230968c7675e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_26677634e9a9c5b83d13",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_2a28d8524d8d84e6f35f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_424760c7b3eae4af9dfb",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_473a26fdb0b8356b4ab4",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_55757ba9f9c2f0200762",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_597f12de06cc740a8f97",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_59cb42163ce4719d7809",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_65ff1efa3cd482765c9f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_67335f441bbff44b208e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_6f88790949802a6b64ea",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_783a016ef718c0ce666e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_7a55a307568e18697636",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_8adbae42f826e07e8611",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_9e2f3db93b9f3846b068",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_aa15fb08faac91ed3888",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_b918fd825572e8713e23",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_c09286e2a7be7cb14638",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_c389cb15f7ec30cbe854",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_c39c8b2c0df3074a52ad",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_c94bd637a781d902fafa",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_da01d4da4aba77dc7979",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_e464f052e3ce56f7455b",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_e5584b099b371467cf63",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_e7c870ac9436de2bd8c0",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_ec30ff644f3111c570bc",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_fd042b9c9cb09d2188a9",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_ff76e96640f7706852c9",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:TSR:2"
+            ]
+          }
+        ],
+        "certificate_sha256": "3c7889ff31f1bf12928eac0e0ffffcf8bdb668c0ea665b5877ea2fe4874387e1"
+      },
+      {
+        "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+        "target_ids": [
+          "hot-rutting:DS:0",
+          "hot-rutting:residual:3"
+        ],
+        "requirements": [
+          {
+            "metric": "DS",
+            "operator": ">",
+            "value": 8000,
+            "upper": null,
+            "unit": "次/mm",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+              "confirmed": false
+            }
+          },
+          {
+            "metric": "residual",
+            "operator": ">",
+            "value": 90.0,
+            "upper": null,
+            "unit": "%",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "冻结演示案例C5的团队设定",
+              "confirmed": false
+            }
+          }
+        ],
+        "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+        "minimality_status": "verified_inclusion_minimal",
+        "deletion_witnesses": [
+          {
+            "removed_target": "hot-rutting:DS:0",
+            "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+            "display_id": "5c4c21d0",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:residual:3",
+                "state": "satisfied",
+                "value": 92.75965764515384
+              }
+            ]
+          },
+          {
+            "removed_target": "hot-rutting:residual:3",
+            "candidate_id": "mix_0e51eff6e2cef2806f57",
+            "display_id": "f2806f57",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:DS:0",
+                "state": "satisfied",
+                "value": 9565.0
+              }
+            ]
+          }
+        ],
+        "candidate_failures": [
+          {
+            "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_08857a35c546c16fea3d",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_0e51eff6e2cef2806f57",
+            "failed_in_subset": [
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_15ad6894230968c7675e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_26677634e9a9c5b83d13",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_2a28d8524d8d84e6f35f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_424760c7b3eae4af9dfb",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_473a26fdb0b8356b4ab4",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_55757ba9f9c2f0200762",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_597f12de06cc740a8f97",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_59cb42163ce4719d7809",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_65ff1efa3cd482765c9f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_67335f441bbff44b208e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_6f88790949802a6b64ea",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_783a016ef718c0ce666e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_7a55a307568e18697636",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_8adbae42f826e07e8611",
+            "failed_in_subset": [
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_9e2f3db93b9f3846b068",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_aa15fb08faac91ed3888",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_b918fd825572e8713e23",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_c09286e2a7be7cb14638",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_c389cb15f7ec30cbe854",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_c39c8b2c0df3074a52ad",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_c94bd637a781d902fafa",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_da01d4da4aba77dc7979",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_e464f052e3ce56f7455b",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_e5584b099b371467cf63",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_e7c870ac9436de2bd8c0",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_ec30ff644f3111c570bc",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_fd042b9c9cb09d2188a9",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          },
+          {
+            "candidate_id": "mix_ff76e96640f7706852c9",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:residual:3"
+            ]
+          }
+        ],
+        "certificate_sha256": "d7afa5931207f5c1c4dc522264f9aa8bbe7bbe6c5d7706a973b1491b7112cb6e"
+      },
+      {
+        "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+        "target_ids": [
+          "hot-rutting:DS:0",
+          "hot-rutting:strain:1"
+        ],
+        "requirements": [
+          {
+            "metric": "DS",
+            "operator": ">",
+            "value": 8000,
+            "upper": null,
+            "unit": "次/mm",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+              "confirmed": false
+            }
+          },
+          {
+            "metric": "strain",
+            "operator": ">",
+            "value": 2500.0,
+            "upper": null,
+            "unit": "με",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "冻结演示案例C5的团队设定",
+              "confirmed": false
+            }
+          }
+        ],
+        "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+        "minimality_status": "verified_inclusion_minimal",
+        "deletion_witnesses": [
+          {
+            "removed_target": "hot-rutting:DS:0",
+            "candidate_id": "mix_6f88790949802a6b64ea",
+            "display_id": "2a6b64ea",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:strain:1",
+                "state": "satisfied",
+                "value": 2525.0
+              }
+            ]
+          },
+          {
+            "removed_target": "hot-rutting:strain:1",
+            "candidate_id": "mix_0e51eff6e2cef2806f57",
+            "display_id": "f2806f57",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:DS:0",
+                "state": "satisfied",
+                "value": 9565.0
+              }
+            ]
+          }
+        ],
+        "candidate_failures": [
+          {
+            "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_08857a35c546c16fea3d",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_0e51eff6e2cef2806f57",
+            "failed_in_subset": [
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_15ad6894230968c7675e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_26677634e9a9c5b83d13",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_2a28d8524d8d84e6f35f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_424760c7b3eae4af9dfb",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_473a26fdb0b8356b4ab4",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_55757ba9f9c2f0200762",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_597f12de06cc740a8f97",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_59cb42163ce4719d7809",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_65ff1efa3cd482765c9f",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_67335f441bbff44b208e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_6f88790949802a6b64ea",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_783a016ef718c0ce666e",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_7a55a307568e18697636",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_8adbae42f826e07e8611",
+            "failed_in_subset": [
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_9e2f3db93b9f3846b068",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_aa15fb08faac91ed3888",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_b918fd825572e8713e23",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c09286e2a7be7cb14638",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c389cb15f7ec30cbe854",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c39c8b2c0df3074a52ad",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c94bd637a781d902fafa",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_da01d4da4aba77dc7979",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_e464f052e3ce56f7455b",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_e5584b099b371467cf63",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_e7c870ac9436de2bd8c0",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_ec30ff644f3111c570bc",
+            "failed_in_subset": [
+              "hot-rutting:DS:0"
+            ]
+          },
+          {
+            "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_fd042b9c9cb09d2188a9",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_ff76e96640f7706852c9",
+            "failed_in_subset": [
+              "hot-rutting:DS:0",
+              "hot-rutting:strain:1"
+            ]
+          }
+        ],
+        "certificate_sha256": "6b88b47314e94a9ba9adf8886e4324972777c9690ae1f96e6dd7f48125e56921"
+      },
+      {
+        "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+        "confirmation_sha256": "2f336ea1b3dee7b2e4ca2c5c378eca399070f8c45fea99614b2fc0735846d622",
+        "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+        "target_ids": [
+          "hot-rutting:TSR:2",
+          "hot-rutting:strain:1"
+        ],
+        "requirements": [
+          {
+            "metric": "TSR",
+            "operator": ">",
+            "value": 90.0,
+            "upper": null,
+            "unit": "%",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "冻结演示案例C5的团队设定",
+              "confirmed": false
+            }
+          },
+          {
+            "metric": "strain",
+            "operator": ">",
+            "value": 2500.0,
+            "upper": null,
+            "unit": "με",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "冻结演示案例C5的团队设定",
+              "confirmed": false
+            }
+          }
+        ],
+        "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+        "minimality_status": "verified_inclusion_minimal",
+        "deletion_witnesses": [
+          {
+            "removed_target": "hot-rutting:TSR:2",
+            "candidate_id": "mix_6f88790949802a6b64ea",
+            "display_id": "2a6b64ea",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:strain:1",
+                "state": "satisfied",
+                "value": 2525.0
+              }
+            ]
+          },
+          {
+            "removed_target": "hot-rutting:strain:1",
+            "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+            "display_id": "5c4c21d0",
+            "kind": "all_remaining_satisfied",
+            "remaining_checks": [
+              {
+                "target_id": "hot-rutting:TSR:2",
+                "state": "satisfied",
+                "value": 92.44995786770077
+              }
+            ]
+          }
+        ],
+        "candidate_failures": [
+          {
+            "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+            "failed_in_subset": [
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_08857a35c546c16fea3d",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_0e51eff6e2cef2806f57",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_15ad6894230968c7675e",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_26677634e9a9c5b83d13",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_2a28d8524d8d84e6f35f",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_424760c7b3eae4af9dfb",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_473a26fdb0b8356b4ab4",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_55757ba9f9c2f0200762",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_597f12de06cc740a8f97",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_59cb42163ce4719d7809",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+            "failed_in_subset": [
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_65ff1efa3cd482765c9f",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_67335f441bbff44b208e",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_6f88790949802a6b64ea",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_783a016ef718c0ce666e",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_7a55a307568e18697636",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_8adbae42f826e07e8611",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_9e2f3db93b9f3846b068",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_aa15fb08faac91ed3888",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_b918fd825572e8713e23",
+            "failed_in_subset": [
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c09286e2a7be7cb14638",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c389cb15f7ec30cbe854",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c39c8b2c0df3074a52ad",
+            "failed_in_subset": [
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_c94bd637a781d902fafa",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_da01d4da4aba77dc7979",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_e464f052e3ce56f7455b",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_e5584b099b371467cf63",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_e7c870ac9436de2bd8c0",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_ec30ff644f3111c570bc",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2"
+            ]
+          },
+          {
+            "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_fd042b9c9cb09d2188a9",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          },
+          {
+            "candidate_id": "mix_ff76e96640f7706852c9",
+            "failed_in_subset": [
+              "hot-rutting:TSR:2",
+              "hot-rutting:strain:1"
+            ]
+          }
+        ],
+        "certificate_sha256": "c7a0e49fbff8705071838c8c43e63f8badd952ef1849fbd5c84711e4fbafb3b0"
+      }
+    ],
+    "actions": [
+      "核查目标及方法条件是否录入正确",
+      "补充独立候选或新版本试验",
+      "如需变更正式要求，由工程师另行确认并保留理由"
+    ]
+  },
+  "validations": [
+    {
+      "valid": true,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "errors": []
+    }
+  ],
+  "note": "完整数值子池回放；不是物理不可行结论或工程准确率。"
+}

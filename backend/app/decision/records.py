@@ -6,6 +6,7 @@ from uuid import uuid4
 
 from fastapi import HTTPException
 from sqlalchemy import Column, JSON
+from sqlalchemy.exc import IntegrityError
 from sqlmodel import Field, SQLModel
 
 from ..storage import now
@@ -24,14 +25,21 @@ def digest(value):
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'), allow_nan=False).encode('utf-8')).hexdigest()
 
 
-def append_record(session, kind, payload, parent_id=None, dataset_id=None):
-    record_id = kind[:4] + '_' + uuid4().hex
+def append_record(session, kind, payload, parent_id=None, dataset_id=None, record_id=None):
+    record_id = record_id or kind[:4] + '_' + uuid4().hex
     body = {'id': record_id, 'kind': kind, 'created_at': now(), 'parent_id': parent_id, **payload}
     body['sha256'] = digest(body)
     record = DecisionRecord(id=record_id, kind=kind, created_at=body['created_at'],
                             parent_id=parent_id, dataset_id=dataset_id, payload=body)
     session.add(record)
-    session.commit()
+    try:
+        session.commit()
+    except IntegrityError:
+        session.rollback()
+        existing = session.get(DecisionRecord, record_id)
+        if not existing or not payload.get('request_fingerprint') or existing.payload.get('request_fingerprint') != payload['request_fingerprint']:
+            raise HTTPException(409, '幂等键已用于其他内容')
+        return get_record(session, record_id)
     return body
 
 

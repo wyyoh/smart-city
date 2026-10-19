@@ -6,6 +6,7 @@ from fastapi import HTTPException
 from ..domain.contracts_v2 import DemandConfirmation, DemandRequest, metric_registry
 from .records import append_record, digest, get_record
 from .rules import match_rules, rulebook, scene_value
+from .cases import casebook
 
 
 REQUIRED_SCENE = ['maintenance_method', 'layer', 'structure_type', 'climate.class', 'traffic.class',
@@ -46,6 +47,10 @@ def demand_status(request, targets, rules):
                for key in REQUIRED_SCENE if not scene_value(request['scene'], key)]
     if not rules['matches'] and not request['project_targets']:
         missing.append({'code': 'no_rule_or_project_target', 'message': '没有适用的演示规则；请确认场景或补充有出处的项目要求'})
+    if request.get('demo_case_id'):
+        case = next(c for c in casebook()['cases'] if c['id'] == request['demo_case_id'])
+        if case['profile_id'] not in [r['id'] for r in rules['matches']]:
+            missing.append({'code': 'case_scene_mismatch', 'message': '所选构造案例与当前场景条件不匹配，请重新选择案例或确认项目要求'})
     for metric in request['requested_metrics']:
         if metric not in [t['metric'] for t in targets]:
             missing.append({'code': 'unquantified_requirement', 'metric': metric, 'message': '已保留需求，尚缺目标及适用口径'})
@@ -83,11 +88,28 @@ def resolve_demand(session, request: DemandRequest):
         targets.append({'target_id': target_id, 'derived_by': 'project_input', **value})
         history[target_id] = [value]
         priority.append(target.metric)
+    case_application = None
+    if request.demo_case_id:
+        case = next(c for c in casebook()['cases'] if c['id'] == request.demo_case_id)
+        if case['profile_id'] in [r['id'] for r in rules['matches']]:
+            for target in targets:
+                if target['derived_by'] == 'project_input':
+                    continue
+                value = case['targets'].get(target['metric'])
+                if value is not None and target['value'] != value:
+                    target['value'] = value
+                    target['source'] = {'kind': 'constructed_demo', 'reference': f"明确选用的团队构造案例{case['id']} v2.0.0；非规范推导", 'confirmed': False}
+                    target['derived_by'] = 'explicit_demo_case'
+                    history[target['target_id']].append({k: v for k, v in target.items() if k not in ['target_id', 'derived_by']})
+            priority = [case['priority']] + [p for p in priority if p != case['priority']]
+            case_application = {'id': case['id'], 'title': case['title'], 'version': casebook()['version'],
+                                'source': '用户明确选择的构造要求模板；C4/C5附加目标不声称仅由气候病害自动推导'}
     body = request.model_dump(mode='json', by_alias=True)
     return append_record(session, 'demand_resolution', {
         'schema_version': '2.0', 'request': body, 'rules': rules, 'targets': targets,
-        'target_history': history, 'priority': list(dict.fromkeys(priority)),
+        'target_history': history, 'case_application': case_application, 'priority': list(dict.fromkeys(priority)),
         'versions': {'rules': rules['version'], 'rules_sha256': rules['sha256'],
+                     'case_scenarios_sha256': casebook()['sha256'],
                      'metrics': metric_registry()['version'], 'metrics_sha256': digest(metric_registry())},
         **demand_status(body, targets, rules),
     })
@@ -99,6 +121,8 @@ def confirm_demand(session, resolution_id, request: DemandConfirmation):
         raise HTTPException(409, '需求版本已变化，请重新读取并确认')
     if original['versions']['rules_sha256'] != rulebook()['sha256'] or original['versions']['metrics_sha256'] != digest(metric_registry()):
         raise HTTPException(409, '规则或指标注册表已更新，请重新解析需求')
+    if original['versions'].get('case_scenarios_sha256') != casebook()['sha256']:
+        raise HTTPException(409, '构造案例模板已更新，请重新解析需求')
     targets = deepcopy(original['targets'])
     changes = []
     for override in request.overrides:
@@ -120,7 +144,7 @@ def confirm_demand(session, resolution_id, request: DemandConfirmation):
     return append_record(session, 'demand_confirmation', {
         'schema_version': '2.0', 'resolution_id': resolution_id, 'resolution_sha256': original['sha256'],
         'request': original['request'], 'targets': targets, 'target_history': original['target_history'],
-        'priority': original['priority'], 'rules': original['rules'], 'versions': original['versions'],
+        'priority': original['priority'], 'rules': original['rules'], 'versions': original['versions'], 'case_application': original.get('case_application'),
         'confirmed_by': request.confirmed_by, 'confirmation_note': request.note, 'overrides': changes,
         'confirmation_status': 'confirmed' if status['requirements_complete'] else 'confirmed_with_open_items', **status,
     }, parent_id=resolution_id)

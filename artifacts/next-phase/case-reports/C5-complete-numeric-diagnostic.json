@@ -1,0 +1,3576 @@
+{
+  "case_id": "C5",
+  "title": "高低温与水稳定复合约束",
+  "source": "明确选择的团队构造案例；未进行工程验证",
+  "evidence_view": "complete_numeric_demo",
+  "scope": {
+    "context_kind": "constructed_demo",
+    "inventory": {
+      "source_codes": null,
+      "product_versions": null,
+      "gradation_family": "AC-13"
+    },
+    "scene": {
+      "maintenance_method": "hot_recycling",
+      "layer": "surface",
+      "structure_type": "flexible",
+      "climate": {
+        "class": "demo_hot",
+        "source": "团队构造：高温分区，无真实气候数据映射"
+      },
+      "traffic": {
+        "class": "demo_heavy",
+        "source": "团队构造：重载分组，无实测交通换算"
+      },
+      "distress": {
+        "type": "rutting",
+        "severity": "severe",
+        "mechanism": "团队构造病害描述，待现场确认"
+      }
+    },
+    "construction": {
+      "equipment": null,
+      "mixing_window": null,
+      "compaction_window": null,
+      "source": null
+    },
+    "evidence_view": "complete_numeric_demo",
+    "catalogue_total": 180,
+    "dataset": {
+      "id": "ds_d916d61767ca55d21bd7",
+      "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+      "revision": 0
+    },
+    "scope_note": "结论仅针对本次冻结目录、库存、级配及证据视图；不是所有可设计材料的结论。",
+    "inventory_confirmed": false,
+    "evidence_view_note": "排除缺少任一所需数值的记录，仅诊断完整数值子池。"
+  },
+  "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+  "candidate_ids": [
+    "mix_07e9acab4f8d5c4c21d0",
+    "mix_08857a35c546c16fea3d",
+    "mix_0e51eff6e2cef2806f57",
+    "mix_15ad6894230968c7675e",
+    "mix_1898f7dbc9bebd98fbc6",
+    "mix_26677634e9a9c5b83d13",
+    "mix_2a28d8524d8d84e6f35f",
+    "mix_424760c7b3eae4af9dfb",
+    "mix_473a26fdb0b8356b4ab4",
+    "mix_55757ba9f9c2f0200762",
+    "mix_597f12de06cc740a8f97",
+    "mix_59cb42163ce4719d7809",
+    "mix_5a0eae6db3cb0a2f9a1f",
+    "mix_65ff1efa3cd482765c9f",
+    "mix_67335f441bbff44b208e",
+    "mix_6f88790949802a6b64ea",
+    "mix_783a016ef718c0ce666e",
+    "mix_7a55a307568e18697636",
+    "mix_8adbae42f826e07e8611",
+    "mix_9e2f3db93b9f3846b068",
+    "mix_aa15fb08faac91ed3888",
+    "mix_b918fd825572e8713e23",
+    "mix_bf40a782f2a3fee6c9aa",
+    "mix_c09286e2a7be7cb14638",
+    "mix_c389cb15f7ec30cbe854",
+    "mix_c39c8b2c0df3074a52ad",
+    "mix_c94bd637a781d902fafa",
+    "mix_da01d4da4aba77dc7979",
+    "mix_e464f052e3ce56f7455b",
+    "mix_e5584b099b371467cf63",
+    "mix_e7c870ac9436de2bd8c0",
+    "mix_ec30ff644f3111c570bc",
+    "mix_fb4cc4f36aaa75a8e497",
+    "mix_fd042b9c9cb09d2188a9",
+    "mix_ff76e96640f7706852c9"
+  ],
+  "demand": {
+    "id": "dema_d8738ca85e854419a58859fa4912c97a",
+    "kind": "demand_confirmation",
+    "created_at": "2026-10-19T05:17:13.641924+00:00",
+    "parent_id": "dema_db2f61bcc4a0461d99d30e8bdf29876a",
+    "schema_version": "2.0",
+    "resolution_id": "dema_db2f61bcc4a0461d99d30e8bdf29876a",
+    "resolution_sha256": "0bd1db336ef9de33e3f0fe9d5b694b0400a64298e45b95b6acfd06405f618fb5",
+    "request": {
+      "schema_version": "2.0",
+      "name": "高低温与水稳定复合约束",
+      "decision_id": null,
+      "segment_id": null,
+      "context_kind": "constructed_demo",
+      "demo_case_id": "C5",
+      "scene": {
+        "maintenance_method": "hot_recycling",
+        "layer": "surface",
+        "structure_type": "flexible",
+        "climate": {
+          "class": "demo_hot",
+          "source": "团队构造：高温分区，无真实气候数据映射"
+        },
+        "traffic": {
+          "class": "demo_heavy",
+          "source": "团队构造：重载分组，无实测交通换算"
+        },
+        "distress": {
+          "type": "rutting",
+          "severity": "severe",
+          "mechanism": "团队构造病害描述，待现场确认"
+        }
+      },
+      "inventory": {
+        "source_codes": null,
+        "product_versions": null,
+        "gradation_family": "AC-13"
+      },
+      "construction": {
+        "equipment": null,
+        "mixing_window": null,
+        "compaction_window": null,
+        "source": null
+      },
+      "constraints": {
+        "budget": null,
+        "budget_unit": null,
+        "schedule_days": null,
+        "rap_min_pct": null,
+        "carbon_cap": null,
+        "carbon_unit": null
+      },
+      "requested_metrics": [
+        "DS",
+        "strain",
+        "TSR",
+        "residual"
+      ],
+      "project_targets": []
+    },
+    "targets": [
+      {
+        "target_id": "hot-rutting:DS:0",
+        "derived_by": "hot-rutting",
+        "metric": "DS",
+        "operator": ">",
+        "value": 8000,
+        "unit": "次/mm",
+        "test_method": null,
+        "conditions": {},
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "source": {
+          "kind": "constructed_demo",
+          "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+          "confirmed": false
+        }
+      },
+      {
+        "target_id": "hot-rutting:strain:1",
+        "derived_by": "explicit_demo_case",
+        "metric": "strain",
+        "operator": ">",
+        "value": 2500,
+        "unit": "με",
+        "test_method": null,
+        "conditions": {},
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+          "confirmed": false
+        }
+      },
+      {
+        "target_id": "hot-rutting:TSR:2",
+        "derived_by": "explicit_demo_case",
+        "metric": "TSR",
+        "operator": ">",
+        "value": 90,
+        "unit": "%",
+        "test_method": null,
+        "conditions": {},
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+          "confirmed": false
+        }
+      },
+      {
+        "target_id": "hot-rutting:residual:3",
+        "derived_by": "explicit_demo_case",
+        "metric": "residual",
+        "operator": ">",
+        "value": 90,
+        "unit": "%",
+        "test_method": null,
+        "conditions": {},
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "source": {
+          "kind": "constructed_demo",
+          "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+          "confirmed": false
+        }
+      }
+    ],
+    "target_history": {
+      "hot-rutting:DS:0": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 800,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        }
+      ],
+      "hot-rutting:strain:1": [
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2000,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        }
+      ],
+      "hot-rutting:TSR:2": [
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 75,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 90,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        }
+      ],
+      "hot-rutting:residual:3": [
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 90,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        }
+      ]
+    },
+    "priority": [
+      "DS",
+      "strain",
+      "TSR",
+      "residual"
+    ],
+    "rules": {
+      "version": "scene-rules-2.0.0",
+      "sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7",
+      "matches": [
+        {
+          "id": "hot-rutting",
+          "title": "高温重载 · 车辙控制",
+          "version": "1.0.0",
+          "rationale": "在构造的高温、重载且中重度车辙场景，优先比较动稳定度。提高阈值是团队演示设定，不是规范推导。",
+          "conditions": [
+            {
+              "field": "maintenance_method",
+              "actual": "hot_recycling",
+              "allowed": [
+                "hot_recycling"
+              ],
+              "matches": true
+            },
+            {
+              "field": "layer",
+              "actual": "surface",
+              "allowed": [
+                "surface"
+              ],
+              "matches": true
+            },
+            {
+              "field": "structure_type",
+              "actual": "flexible",
+              "allowed": [
+                "flexible"
+              ],
+              "matches": true
+            },
+            {
+              "field": "climate.class",
+              "actual": "demo_hot",
+              "allowed": [
+                "demo_hot"
+              ],
+              "matches": true
+            },
+            {
+              "field": "traffic.class",
+              "actual": "demo_heavy",
+              "allowed": [
+                "demo_heavy"
+              ],
+              "matches": true
+            },
+            {
+              "field": "distress.type",
+              "actual": "rutting",
+              "allowed": [
+                "rutting"
+              ],
+              "matches": true
+            },
+            {
+              "field": "distress.severity",
+              "actual": "severe",
+              "allowed": [
+                "moderate",
+                "severe"
+              ],
+              "matches": true
+            }
+          ],
+          "targets": [
+            {
+              "metric": "DS",
+              "operator": ">",
+              "value": 8000,
+              "unit": "次/mm",
+              "test_method": null,
+              "conditions": {},
+              "comparison_basis": "legacy_workbook_numeric_demo",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "strain",
+              "operator": ">",
+              "value": 2000,
+              "unit": "με",
+              "test_method": null,
+              "conditions": {},
+              "comparison_basis": "legacy_workbook_numeric_demo",
+              "source": {
+                "kind": "enterprise_reference",
+                "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "TSR",
+              "operator": ">",
+              "value": 75,
+              "unit": "%",
+              "test_method": null,
+              "conditions": {},
+              "comparison_basis": "legacy_workbook_numeric_demo",
+              "source": {
+                "kind": "enterprise_reference",
+                "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "residual",
+              "operator": ">",
+              "value": 85,
+              "unit": "%",
+              "test_method": null,
+              "conditions": {},
+              "comparison_basis": "legacy_workbook_numeric_demo",
+              "source": {
+                "kind": "enterprise_reference",
+                "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                "confirmed": false
+              }
+            }
+          ],
+          "target_history": {
+            "DS": [
+              {
+                "metric": "DS",
+                "operator": ">",
+                "value": 800,
+                "unit": "次/mm",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "enterprise_reference",
+                  "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+                  "confirmed": false
+                }
+              },
+              {
+                "metric": "DS",
+                "operator": ">",
+                "value": 8000,
+                "unit": "次/mm",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "constructed_demo",
+                  "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                  "confirmed": false
+                }
+              }
+            ],
+            "strain": [
+              {
+                "metric": "strain",
+                "operator": ">",
+                "value": 2000,
+                "unit": "με",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "enterprise_reference",
+                  "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+                  "confirmed": false
+                }
+              },
+              {
+                "metric": "strain",
+                "operator": ">",
+                "value": 2500,
+                "unit": "με",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "constructed_demo",
+                  "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                  "confirmed": false
+                }
+              }
+            ],
+            "TSR": [
+              {
+                "metric": "TSR",
+                "operator": ">",
+                "value": 75,
+                "unit": "%",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "enterprise_reference",
+                  "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                  "confirmed": false
+                }
+              },
+              {
+                "metric": "TSR",
+                "operator": ">",
+                "value": 90,
+                "unit": "%",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "constructed_demo",
+                  "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                  "confirmed": false
+                }
+              }
+            ],
+            "residual": [
+              {
+                "metric": "residual",
+                "operator": ">",
+                "value": 85,
+                "unit": "%",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "enterprise_reference",
+                  "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                  "confirmed": false
+                }
+              },
+              {
+                "metric": "residual",
+                "operator": ">",
+                "value": 90,
+                "unit": "%",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "constructed_demo",
+                  "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                  "confirmed": false
+                }
+              }
+            ]
+          },
+          "priority": [
+            "DS",
+            "strain",
+            "TSR",
+            "residual"
+          ]
+        }
+      ],
+      "unmatched": [
+        {
+          "id": "cold-cracking",
+          "title": "低温环境 · 抗裂控制",
+          "version": "1.0.0",
+          "rationale": "在构造的低温、中重度温缩裂缝场景，优先比较最大弯拉应变；不将所有开裂归因于温缩。",
+          "conditions": [
+            {
+              "field": "maintenance_method",
+              "actual": "hot_recycling",
+              "allowed": [
+                "hot_recycling"
+              ],
+              "matches": true
+            },
+            {
+              "field": "layer",
+              "actual": "surface",
+              "allowed": [
+                "surface"
+              ],
+              "matches": true
+            },
+            {
+              "field": "structure_type",
+              "actual": "flexible",
+              "allowed": [
+                "flexible"
+              ],
+              "matches": true
+            },
+            {
+              "field": "climate.class",
+              "actual": "demo_hot",
+              "allowed": [
+                "demo_cold"
+              ],
+              "matches": false
+            },
+            {
+              "field": "traffic.class",
+              "actual": "demo_heavy",
+              "allowed": [
+                "demo_general",
+                "demo_heavy"
+              ],
+              "matches": true
+            },
+            {
+              "field": "distress.type",
+              "actual": "rutting",
+              "allowed": [
+                "thermal_cracking"
+              ],
+              "matches": false
+            },
+            {
+              "field": "distress.severity",
+              "actual": "severe",
+              "allowed": [
+                "moderate",
+                "severe"
+              ],
+              "matches": true
+            }
+          ],
+          "scope_matches": true
+        },
+        {
+          "id": "wet-damage",
+          "title": "多雨环境 · 水损害控制",
+          "version": "1.0.0",
+          "rationale": "在构造的多雨且中重度水损害场景，优先比较TSR和残留稳定度，保留二者独立试验口径。",
+          "conditions": [
+            {
+              "field": "maintenance_method",
+              "actual": "hot_recycling",
+              "allowed": [
+                "hot_recycling"
+              ],
+              "matches": true
+            },
+            {
+              "field": "layer",
+              "actual": "surface",
+              "allowed": [
+                "surface"
+              ],
+              "matches": true
+            },
+            {
+              "field": "structure_type",
+              "actual": "flexible",
+              "allowed": [
+                "flexible"
+              ],
+              "matches": true
+            },
+            {
+              "field": "climate.class",
+              "actual": "demo_hot",
+              "allowed": [
+                "demo_wet"
+              ],
+              "matches": false
+            },
+            {
+              "field": "traffic.class",
+              "actual": "demo_heavy",
+              "allowed": [
+                "demo_general",
+                "demo_heavy"
+              ],
+              "matches": true
+            },
+            {
+              "field": "distress.type",
+              "actual": "rutting",
+              "allowed": [
+                "water_damage"
+              ],
+              "matches": false
+            },
+            {
+              "field": "distress.severity",
+              "actual": "severe",
+              "allowed": [
+                "moderate",
+                "severe"
+              ],
+              "matches": true
+            }
+          ],
+          "scope_matches": true
+        }
+      ]
+    },
+    "versions": {
+      "rules": "scene-rules-2.0.0",
+      "rules_sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7",
+      "case_scenarios_sha256": "986bb5fd4aaa14c3b90e15695c64dddc8d229d3e99ed4237cc458f6f5c5ba20a",
+      "metrics": "metric-registry-2.0.0",
+      "metrics_sha256": "a51f0464e8de21e1f0d0bb129174d179a15ed659447cace280450a70718d5778"
+    },
+    "case_application": {
+      "id": "C5",
+      "title": "高低温与水稳定复合约束",
+      "version": "case-scenarios-2.0.0",
+      "source": "用户明确选择的构造要求模板；C4/C5附加目标不声称仅由气候病害自动推导"
+    },
+    "confirmed_by": "AI reproducible case verification",
+    "confirmation_note": "",
+    "overrides": [],
+    "confirmation_status": "confirmed",
+    "open_items": [],
+    "conflicts": [],
+    "capability_gaps": [],
+    "warnings": [
+      "构造演示：历史数值比较不构成工程适用结论。",
+      "部分目标未确认试验方法或条件；正式项目中未知条件不能通过适用性检查。",
+      "库存尚未确认；检索可展示目录，但不能据此确认可采购性。"
+    ],
+    "requirements_complete": true,
+    "ready_for_candidate_retrieval": true,
+    "sha256": "4b46c17097fd0899a1d1f27006b819969a729de6e1b15e17a84bd43bd370876e"
+  },
+  "pool_exclusions": [
+    {
+      "id": "mix_02fae0235d9d9390e1f3",
+      "display_id": "9390e1f3",
+      "source": "1B",
+      "gradation": "AC-10-3",
+      "material_version": "mat_0da4455fd5e5535ae5f72550",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_0387a004f5343a68846f",
+      "display_id": "3a68846f",
+      "source": "T",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_6c77248b5c44dfe09708173a",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_05d693d36338fc50f00f",
+      "display_id": "fc50f00f",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_e25e7637437ba4cdc27b804c",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_086c627272b3a0e62cae",
+      "display_id": "a0e62cae",
+      "source": "T",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_5ec4a889ebefe33a2828cafe",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_0912c3e92a1e26956995",
+      "display_id": "26956995",
+      "source": "U",
+      "gradation": "AC-20-1",
+      "material_version": "mat_4ea99477cfaa7df86d7db912",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_0980a5c5772fbb0475bb",
+      "display_id": "bb0475bb",
+      "source": "A",
+      "gradation": "90#AC-20-1",
+      "material_version": "mat_bafd10351d7e0d6ef2724aa3",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_09c5c4a1453eb3ff7b8f",
+      "display_id": "b3ff7b8f",
+      "source": "I",
+      "gradation": "AC-20-110#",
+      "material_version": "mat_53342b8328469b7da3710760",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_0d6e8183a80990ba7225",
+      "display_id": "90ba7225",
+      "source": "A",
+      "gradation": "90#AC-20-2",
+      "material_version": "mat_51e52cfec8cf8ee1d7205d70",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_1243d8c98f42ae5710d9",
+      "display_id": "ae5710d9",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_814c7b50a5ee7da460dc6efc",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_13fdcb77bf18604636ae",
+      "display_id": "604636ae",
+      "source": "Z",
+      "gradation": "AC-13",
+      "material_version": "mat_645a5c631dd87a1305b5e324",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_1a870c75c2caab830748",
+      "display_id": "ab830748",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_2fa0a630d3f9221cc6a6fc95",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_1da0ecdb2f4dae00f7df",
+      "display_id": "ae00f7df",
+      "source": "F",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_0823494d66a296c59420432b",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_1f60f60cbb477f1650ee",
+      "display_id": "7f1650ee",
+      "source": "A",
+      "gradation": "90#AC-20-2",
+      "material_version": "mat_f38b2f0ebb49303d33e2fb9c",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_203340d8858f9df9ad29",
+      "display_id": "9df9ad29",
+      "source": "1L",
+      "gradation": "AC-13-1",
+      "material_version": "mat_8bf4bd3a3bee4d2e24d68c28",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_21e1b223458f09f4a8e0",
+      "display_id": "09f4a8e0",
+      "source": "O",
+      "gradation": "AC-13-1",
+      "material_version": "mat_5f2a6d76acdcd2ef30f056e5",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_2434411cd75985a98378",
+      "display_id": "85a98378",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_9d31884413e0831df075ffc2",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_24eab2aacdd128c15383",
+      "display_id": "28c15383",
+      "source": "F",
+      "gradation": "AC-20-130#",
+      "material_version": "mat_1db4781cd09f568b94b7ffb4",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_2847a28e714619487434",
+      "display_id": "19487434",
+      "source": "N",
+      "gradation": "AC-20",
+      "material_version": "mat_6e29143da9d35ed3ddd472d2",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_2903593c8afe22066152",
+      "display_id": "22066152",
+      "source": "H",
+      "gradation": "AC-13-130#",
+      "material_version": "mat_875bd5682f5b4f6fdc755b2c",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_2d83475365d615ab8bb5",
+      "display_id": "15ab8bb5",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_345a7e3dd83acd0631cb12d2",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_2d86349ae4883af71033",
+      "display_id": "3af71033",
+      "source": "1G",
+      "gradation": "AC-13-2",
+      "material_version": "mat_70e64cb87ca6995949f4c52c",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_3202d08bc8ddd9eb5677",
+      "display_id": "d9eb5677",
+      "source": "I",
+      "gradation": "AC-20-110#",
+      "material_version": "mat_ba2b383887d0900b51ec9f50",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_36359537196d9a43ab60",
+      "display_id": "9a43ab60",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_d88986aa304caf5eb07bd106",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_3671aeb162bff851cd21",
+      "display_id": "f851cd21",
+      "source": "I-1",
+      "gradation": "AC-20-90#-1",
+      "material_version": "mat_03c05fb8d8b4f9e18eade18f",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_367ca1f5a0386f70dd65",
+      "display_id": "6f70dd65",
+      "source": "C",
+      "gradation": "AC-20",
+      "material_version": "mat_6b072fd7cefc59618900c99e",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_368b52a436c174df7b00",
+      "display_id": "74df7b00",
+      "source": "1G",
+      "gradation": "AC-13-2",
+      "material_version": "mat_bcd7d46a7f3c500968b3987c",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_36c35bd65986c0692919",
+      "display_id": "c0692919",
+      "source": "M",
+      "gradation": "AC-13",
+      "material_version": "mat_be7d361304d6e9adcc91d0e6",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_3980655dc4d0570b5400",
+      "display_id": "570b5400",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_3706cb4cc1b133a6c85af0c0",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_39ea828cf2fc711530d0",
+      "display_id": "711530d0",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_0a684cc7a0a9418a36151bac",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_3a463008fe47dbe7ee20",
+      "display_id": "dbe7ee20",
+      "source": "C",
+      "gradation": "AC-20",
+      "material_version": "mat_6ce549b05fc8db890b9fb0c9",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_3e569ea4c6a4abc674ff",
+      "display_id": "abc674ff",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_467d35091df468fe2430f239",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_3e92593bed2969e656c9",
+      "display_id": "69e656c9",
+      "source": "F",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_76ec9a8dc602f4cac7e33cf9",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_3f6396ef076934154f12",
+      "display_id": "34154f12",
+      "source": "1B",
+      "gradation": "AC-10-2",
+      "material_version": "mat_613e52318a9328f7743728cd",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_3fb2c7a0d6c0504edbab",
+      "display_id": "504edbab",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_f35ca8c1214aace7e54af755",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_40b6b18151099952f034",
+      "display_id": "9952f034",
+      "source": "I",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_34bf55cf255712ed46fc7f9b",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_44f7166efb7cd505fb2d",
+      "display_id": "d505fb2d",
+      "source": "T",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_fcf0c0ad6ca23dfacd8223f9",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_47acc2e5becda0a5a2a3",
+      "display_id": "a0a5a2a3",
+      "source": "B-2",
+      "gradation": "AC-10",
+      "material_version": "mat_79814ae4613b040d81bad32e",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_486903ee9aeca7d35bef",
+      "display_id": "a7d35bef",
+      "source": "T",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_180d22fb82d3d6422fe0bed9",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_4943d222e0e1d1b98b34",
+      "display_id": "d1b98b34",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_036208cf7d8040c43cd1ba13",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_4b50d94cdbc4a8d9f885",
+      "display_id": "a8d9f885",
+      "source": "M-1",
+      "gradation": "AC-13-3",
+      "material_version": "mat_72650ef7067a79b77c2621e2",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_4c63b5f1a7653d79a0ad",
+      "display_id": "3d79a0ad",
+      "source": "A",
+      "gradation": "90#AC-20-2",
+      "material_version": "mat_cfeea1bfafa29c7d360ccb32",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_4c6dec060415d7aa7831",
+      "display_id": "d7aa7831",
+      "source": "H",
+      "gradation": "AC-13-110#",
+      "material_version": "mat_1241324f8d2e5749c6ca08f0",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_4cfe9e42690ad2571272",
+      "display_id": "d2571272",
+      "source": "1G",
+      "gradation": "AC-13",
+      "material_version": "mat_703068ff7370224212d6d580",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_4ed00092a5bf554b363a",
+      "display_id": "554b363a",
+      "source": "Y",
+      "gradation": "AC-13-2",
+      "material_version": "mat_254d907cbc7b8b19089e1dfc",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_52d3f682fadec939fdd6",
+      "display_id": "c939fdd6",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_52084b56acc0a8cba7136862",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_56a3dcbae789975828f0",
+      "display_id": "975828f0",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_3d05fa18614ab573abe51da8",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_5ed2f0f14c1ae15fee54",
+      "display_id": "e15fee54",
+      "source": "K",
+      "gradation": "AC-13",
+      "material_version": "mat_31150111b6be2daba40f976b",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_61892cbf90eca0701e47",
+      "display_id": "a0701e47",
+      "source": "Q",
+      "gradation": "AC-13",
+      "material_version": "mat_b18ccfe7d8c6c7c501c6ba95",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_62fd9393f713f65f43fe",
+      "display_id": "f65f43fe",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_6f3fa208900815c4912ccf34",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_660bdc0e5f0ad65e3ae3",
+      "display_id": "d65e3ae3",
+      "source": "F",
+      "gradation": "AC-20-110#",
+      "material_version": "mat_72c05c65c525afc7a8605981",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_672956f1aa416c00a260",
+      "display_id": "6c00a260",
+      "source": "O",
+      "gradation": "AC-13-2",
+      "material_version": "mat_53ee1465a9e9504106155281",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_6994c70277073899a31f",
+      "display_id": "3899a31f",
+      "source": "A",
+      "gradation": "90#AC-20-2",
+      "material_version": "mat_27efd44a5174bcddbe63337e",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_699bf33e578cd803e127",
+      "display_id": "d803e127",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_a41e49796bf79e991b714325",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_6e47f5bd52ca2f04303e",
+      "display_id": "2f04303e",
+      "source": "Z",
+      "gradation": "AC-13-1",
+      "material_version": "mat_ce56916e1c32b57bc30034bf",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_6e82c7ac7676302cc143",
+      "display_id": "302cc143",
+      "source": "1J",
+      "gradation": "AC-20",
+      "material_version": "mat_bc2758434fbe375b8276d15d",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_6e8ce5c9cb604793e8ae",
+      "display_id": "4793e8ae",
+      "source": "T",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_63c4362df7ca1953427026ba",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_6ee31b150bc15ec35f88",
+      "display_id": "5ec35f88",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_e37b7437d24c29b772fba1bd",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_6f872eda921bddde7c07",
+      "display_id": "ddde7c07",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_40cf7cdec79f6d801171f9f1",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_7040267cad060fd3d45b",
+      "display_id": "0fd3d45b",
+      "source": "I-1",
+      "gradation": "AC-20-90#-4",
+      "material_version": "mat_2047117654778a96eb0105fd",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_707fcc32f020e9e55343",
+      "display_id": "e9e55343",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_0d173d7446bb0fb1be5f7e4e",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_70c0e27b4d3d403ef7c4",
+      "display_id": "403ef7c4",
+      "source": "H",
+      "gradation": "AC-13-130#",
+      "material_version": "mat_d035eb0efddfb0da6f8cac92",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_71cb30ccbdf50e6979f4",
+      "display_id": "0e6979f4",
+      "source": "K",
+      "gradation": "AC-13",
+      "material_version": "mat_92e9e79f7a4b106ccd2393ea",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_72af0c0357a352104569",
+      "display_id": "52104569",
+      "source": "H",
+      "gradation": "AC-13-90#",
+      "material_version": "mat_56d5ba2600a4da29b0fd9288",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_731afb5a5faffa9f439d",
+      "display_id": "fa9f439d",
+      "source": "H",
+      "gradation": "AC-13-90#",
+      "material_version": "mat_c587d3ff2fc1a83c31d8be58",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_755b28c800668347543b",
+      "display_id": "8347543b",
+      "source": "Z",
+      "gradation": "AC-13",
+      "material_version": "mat_88a505657fdfbccfe2e33848",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_7700a0424f240d1ef4a8",
+      "display_id": "0d1ef4a8",
+      "source": "1K",
+      "gradation": "AC-13",
+      "material_version": "mat_64f1dd6fe0adc84df93b2064",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_78c2cef51a91c6d81f23",
+      "display_id": "c6d81f23",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_a5cbfc885c171ab72f463558",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_7919a59c9741196cf1f1",
+      "display_id": "196cf1f1",
+      "source": "1B",
+      "gradation": "AC-10-1",
+      "material_version": "mat_0ea61070a5c52295b6461399",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_7a1600d1aac54c3c16d5",
+      "display_id": "4c3c16d5",
+      "source": "A",
+      "gradation": "90#AC-20-1",
+      "material_version": "mat_111836a3542567968846d29a",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_7af99a31b9c408498b42",
+      "display_id": "08498b42",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_332989e81ae2d7e8a5c1caa4",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_7ba6e1d14f0de6ca3b73",
+      "display_id": "e6ca3b73",
+      "source": "A",
+      "gradation": "90#AC-20-1",
+      "material_version": "mat_1bcec7ec8b00fffa3b992fb7",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_7fd26454de33393cb7a2",
+      "display_id": "393cb7a2",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_70e209d7d1dc07034781b9ff",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_8153cd46ebdc21d7224a",
+      "display_id": "21d7224a",
+      "source": "P",
+      "gradation": "AC-13",
+      "material_version": "mat_0254beaa0f2d7c2932a0b884",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_81d91103dd3c884b9db0",
+      "display_id": "884b9db0",
+      "source": "K",
+      "gradation": "AC-13",
+      "material_version": "mat_32345650a6e87eb73eb67ffb",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_81e1832db3927a8a4356",
+      "display_id": "7a8a4356",
+      "source": "H",
+      "gradation": "AC-13-110#",
+      "material_version": "mat_44763eb54070a5c7f39ca121",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_831187e8aa09c3910663",
+      "display_id": "c3910663",
+      "source": "A",
+      "gradation": "90#AC-20-1",
+      "material_version": "mat_a7934b7a73cde2d5b90f3a8b",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_85eb3a09bc98dfb81bcc",
+      "display_id": "dfb81bcc",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_f12b8a67147531c185278718",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_87e8100f1fad6b708b65",
+      "display_id": "6b708b65",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_2536283b9a02148aa909a171",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_8868d518f5545c47e3d6",
+      "display_id": "5c47e3d6",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_38885e0e3e2011255385b1e2",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_8bfe73e5bf165e23193f",
+      "display_id": "5e23193f",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_43e8024a583fd1d011d40290",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_8ddf6794da67cc009c34",
+      "display_id": "cc009c34",
+      "source": "I-1",
+      "gradation": "AC-20-90#-1",
+      "material_version": "mat_adcd059ffc67910fb3be4329",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_902d7e14db2b826abb4d",
+      "display_id": "826abb4d",
+      "source": "H",
+      "gradation": "AC-13-110#",
+      "material_version": "mat_7bdd6a1915b7fd8c3a5d7911",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_91eab7843904b37e4280",
+      "display_id": "b37e4280",
+      "source": "1D",
+      "gradation": "AC-10",
+      "material_version": "mat_1faad7113a1a84fa767f39c1",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_95cfab3ce284788225b2",
+      "display_id": "788225b2",
+      "source": "C",
+      "gradation": "AC-20",
+      "material_version": "mat_ee35b499b259d6658f2bda26",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_981df2a48b81c3678536",
+      "display_id": "c3678536",
+      "source": "M-1",
+      "gradation": "AC-13-1",
+      "material_version": "mat_680bccf5d8b5b5c68ab84f43",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_a3f6d70c540959f6c3c3",
+      "display_id": "59f6c3c3",
+      "source": "M",
+      "gradation": "AC-13",
+      "material_version": "mat_7f1e07958a6f5c9851227a37",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_a4d65b1f9b40c9c9d8c0",
+      "display_id": "c9c9d8c0",
+      "source": "I-1",
+      "gradation": "AC-20-90#-3",
+      "material_version": "mat_de04065f812a250b3c19d647",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_a4eff779945aea30a65b",
+      "display_id": "ea30a65b",
+      "source": "G",
+      "gradation": "AC-20-2",
+      "material_version": "mat_df4ccd0abb8de1597028f958",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_a6c92913e65e8738fecc",
+      "display_id": "8738fecc",
+      "source": "I-1",
+      "gradation": "AC-20-90#-1",
+      "material_version": "mat_b7a153d0efdba287783ed10d",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_ad7183c11e98d62cfe26",
+      "display_id": "d62cfe26",
+      "source": "I-1",
+      "gradation": "AC-20-90#-2",
+      "material_version": "mat_386c8f8ae303b7c1a2872a1b",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_aeb7283a15b5120d011d",
+      "display_id": "120d011d",
+      "source": "1K",
+      "gradation": "AC-10",
+      "material_version": "mat_f6641467cfe14e21f42a805c",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_b00d72189e6efdd57f84",
+      "display_id": "fdd57f84",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_a3d41d315392930c195a1a3f",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_b0c34b63554feeb3563c",
+      "display_id": "eeb3563c",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_9bd1a2f145fa0d07b3f240e3",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_b41a369b43a159f8f219",
+      "display_id": "59f8f219",
+      "source": "Z",
+      "gradation": "AC-13-2",
+      "material_version": "mat_6fa6d59e395342999bce30d5",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_b55232ea9705371fa095",
+      "display_id": "371fa095",
+      "source": "I-1",
+      "gradation": "AC-20-90#-1",
+      "material_version": "mat_a4c6168802cb8a2ca8dfc896",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_b5bfa846ce22bc89669d",
+      "display_id": "bc89669d",
+      "source": "M",
+      "gradation": "AC-13",
+      "material_version": "mat_c193344c1e4cbaaf7da1a43b",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_b65e39b894b2ae26477a",
+      "display_id": "ae26477a",
+      "source": "T",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_19c4c3df5db6b3b35f64b82b",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_b7a52f175089632daa78",
+      "display_id": "632daa78",
+      "source": "1G",
+      "gradation": "AC-13-1",
+      "material_version": "mat_5d1b50d455e277f0d25af8cd",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_ba8702ea92c033ea7d56",
+      "display_id": "33ea7d56",
+      "source": "J",
+      "gradation": "AC-13",
+      "material_version": "mat_1159a3cd0614a3e56c2502c1",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_bbee01dc15bb1480d965",
+      "display_id": "1480d965",
+      "source": "G",
+      "gradation": "AC-20-1",
+      "material_version": "mat_e635c7ce4a5e01190f90a812",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_bd22ad2ca126f19820a2",
+      "display_id": "f19820a2",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_0ca45979a08e7b39032138b1",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_bdf8fd90d4a0fff803f4",
+      "display_id": "fff803f4",
+      "source": "P",
+      "gradation": "AC-13",
+      "material_version": "mat_9106a2060da16233395d0fbc",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_be00dbb0a69a45180703",
+      "display_id": "45180703",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_45e9320c0c68925d25cf9d7c",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_be690b617b69633ba706",
+      "display_id": "633ba706",
+      "source": "I-1",
+      "gradation": "AC-20-90#-1",
+      "material_version": "mat_ab9c7f1c720346bbe9793d44",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_bea7b9fb597c10b126ac",
+      "display_id": "10b126ac",
+      "source": "E",
+      "gradation": "AC-20",
+      "material_version": "mat_ef613e44d9a0c69d22576b55",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_bf97281a4943a5e7db26",
+      "display_id": "a5e7db26",
+      "source": "Q",
+      "gradation": "AC-13",
+      "material_version": "mat_b17b13724f13f4812e79f421",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c20539f505ae9e651e1c",
+      "display_id": "9e651e1c",
+      "source": "J",
+      "gradation": "AC-13",
+      "material_version": "mat_cd7bcde2edd543ec685045aa",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c3c3fd5c87824a923c3d",
+      "display_id": "4a923c3d",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_da609eb0c80ffe7b33a0fbd8",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c5a69974863a4c184f99",
+      "display_id": "4c184f99",
+      "source": "M",
+      "gradation": "AC-13",
+      "material_version": "mat_046a41102b06060578461e58",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c6bec172977915380d45",
+      "display_id": "15380d45",
+      "source": "H",
+      "gradation": "AC-13-130#",
+      "material_version": "mat_27ad6d77c07710711f570c42",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c848dab4b12b97b5fc9c",
+      "display_id": "97b5fc9c",
+      "source": "A",
+      "gradation": "90#AC-20-1",
+      "material_version": "mat_58bfbb617b24c4fe1aa0c95d",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c871adad3b4f9ddb9d20",
+      "display_id": "9ddb9d20",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_7fdbc8332e22f01f034373e3",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c9038e0eaff24aa8e3cd",
+      "display_id": "4aa8e3cd",
+      "source": "A",
+      "gradation": "90#AC-20-2",
+      "material_version": "mat_b78e1d083fbeb874bcadc52f",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_c9b7a3fe365784775db8",
+      "display_id": "84775db8",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_5294425036229155d6e4fe56",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_cbbc5a922ed4e8b095e0",
+      "display_id": "e8b095e0",
+      "source": "I",
+      "gradation": "AC-20-110#",
+      "material_version": "mat_da304d74c066a29e9370a15b",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_d1cecba4abce410f1a76",
+      "display_id": "410f1a76",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_837912c3a4e2ca066c9bc420",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_d2f7d32e97586929ccdd",
+      "display_id": "6929ccdd",
+      "source": "L",
+      "gradation": "AC-13",
+      "material_version": "mat_00bcefc7b6f430a4e3ec2fcc",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_d4efc701083c6bbb28fe",
+      "display_id": "6bbb28fe",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_00b4ca4b82fb42bb3e1af045",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_d4f525518c6987d7baf2",
+      "display_id": "87d7baf2",
+      "source": "O",
+      "gradation": "AC-13-2",
+      "material_version": "mat_b4d31963dd11abe3ca4ad3ac",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_d55c3a0a53d1e7a44c00",
+      "display_id": "e7a44c00",
+      "source": "F",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_024d810f4f520fc5c5cd2087",
+      "reasons": [
+        "gradation_family_mismatch"
+      ]
+    },
+    {
+      "id": "mix_d6a38f69efc665979f24",
+      "display_id": "65979f24",
+      "source": "T",
+      "gradation": "AC-20-90#",
+      "material_version": "mat_8ffb8ecdfb0139fcab353092",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_d8462a62f5cae05b1493",
+      "display_id": "e05b1493",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_fa0f2baa7a92b82cb2d33c89",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_dc898ba96ba20a6dc035",
+      "display_id": "0a6dc035",
+      "source": "M-1",
+      "gradation": "AC-13-2",
+      "material_version": "mat_2ca332c6ff19f4cb756dd4f6",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_ddba05833e2cf539323b",
+      "display_id": "f539323b",
+      "source": "X",
+      "gradation": "AC-13",
+      "material_version": "mat_b5768c4499639701b0ab0e93",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_de8be0735da0c13e2054",
+      "display_id": "c13e2054",
+      "source": "I-1",
+      "gradation": "AC-20-90#-1",
+      "material_version": "mat_3bc4f2e35f952c20d28e551d",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_e14a35608d3618859586",
+      "display_id": "18859586",
+      "source": "I-1",
+      "gradation": "AC-20-90#-4",
+      "material_version": "mat_07720473255d561ca5a3257e",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_e3208e32adc1ef42fa2a",
+      "display_id": "ef42fa2a",
+      "source": "B",
+      "gradation": "AC-10",
+      "material_version": "mat_f0606bdfb4494c23fc824ee3",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_e40f39b69768fd914467",
+      "display_id": "fd914467",
+      "source": "1G",
+      "gradation": "AC-13-1",
+      "material_version": "mat_efa4048428dfa1437590974c",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_e6b4c131c3b330004aac",
+      "display_id": "30004aac",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_807ae255a3c49bdb1d04750c",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_e7f74ce9b65b26e62668",
+      "display_id": "26e62668",
+      "source": "P",
+      "gradation": "AC-13",
+      "material_version": "mat_57dfcdf5b892e9ec180b89ff",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_ea0ccdbffdb7d41f0c57",
+      "display_id": "d41f0c57",
+      "source": "1G",
+      "gradation": "AC-13",
+      "material_version": "mat_769b1e7a9f92f4e25899a1ed",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_ea2b90cb03dd396b0f85",
+      "display_id": "396b0f85",
+      "source": "Y",
+      "gradation": "AC-25-1",
+      "material_version": "mat_0f74f61f596ba3fd250abd6b",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_ea99aaf49ce7176e1553",
+      "display_id": "176e1553",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_404b9d259ec34002f973c9fe",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_eb8ae90c71357abeb7df",
+      "display_id": "7abeb7df",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_df47dd1c77da34253368245d",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_f0c651d63ace538db47c",
+      "display_id": "538db47c",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_389300942eb0208244e6caf2",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_f1739f66f9b861f24736",
+      "display_id": "61f24736",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_91c6a36f632221e85e39d2d7",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_f4b904067d34105dc8d9",
+      "display_id": "105dc8d9",
+      "source": "K",
+      "gradation": "AC-13",
+      "material_version": "mat_44115939457b9a68f076d845",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_f71bbb8db0c1e7a63640",
+      "display_id": "e7a63640",
+      "source": "D",
+      "gradation": "AC-20",
+      "material_version": "mat_b89dc4ceeebe2c8ab966996a",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_f761a4eb3ea82f7ef357",
+      "display_id": "2f7ef357",
+      "source": "H",
+      "gradation": "AC-13-90#",
+      "material_version": "mat_42563ff06e6f6287ad76cc9e",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_f992a4fe2f0eb75fb70c",
+      "display_id": "b75fb70c",
+      "source": "H",
+      "gradation": "AC-13-90#",
+      "material_version": "mat_3a02e4e0b3c69f9baa5a5c6d",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_f9ec6b0ea531742e51e3",
+      "display_id": "742e51e3",
+      "source": "B",
+      "gradation": "AC-20",
+      "material_version": "mat_ce05bba85a98b87c70c7f429",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_fb456d76c0b65ade1120",
+      "display_id": "5ade1120",
+      "source": "X",
+      "gradation": "AC-13",
+      "material_version": "mat_74da4b099e9e11db51def604",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_fdbc654ee6d2e1d1344b",
+      "display_id": "e1d1344b",
+      "source": "1I",
+      "gradation": "AC-13",
+      "material_version": "mat_221e61e07f14833cb5bba4c7",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_fe516b9ed11bd8f60731",
+      "display_id": "d8f60731",
+      "source": "L",
+      "gradation": "AC-13",
+      "material_version": "mat_5ea81951db4bed7a3acd61ae",
+      "reasons": [
+        "incomplete_numeric_demo_scope"
+      ]
+    },
+    {
+      "id": "mix_ff6aaac8b17c7d730781",
+      "display_id": "7d730781",
+      "source": "U",
+      "gradation": "AC-20-1",
+      "material_version": "mat_34ba80815ae3e7d4237bd09e",
+      "reasons": [
+        "gradation_family_mismatch",
+        "incomplete_numeric_demo_scope"
+      ]
+    }
+  ],
+  "summary": {
+    "excluded": 35,
+    "needs_evidence": 0,
+    "numeric_review": 0,
+    "evidence_review": 0
+  },
+  "B0": {
+    "rule": "预登记单指标阈值与最高值（并列保留），忽略其他要求；仅为弱风险示例",
+    "metric": "DS",
+    "selected_ids": [
+      "mix_0e51eff6e2cef2806f57"
+    ],
+    "known_other_failure_ids": [
+      "mix_0e51eff6e2cef2806f57"
+    ],
+    "unresolved_other_requirement_ids": []
+  },
+  "B1": {
+    "rule": "保留原v1全约束加单优先级，使用同一冻结候选ID和同一数值目标",
+    "feasible_ids": [],
+    "information_scope": "same_visible_numerical_evidence"
+  },
+  "V2": {
+    "feasible_ids": [],
+    "review_first_ids": [],
+    "diagnosis": {
+      "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+      "confirmation_sha256": "4b46c17097fd0899a1d1f27006b819969a729de6e1b15e17a84bd43bd370876e",
+      "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+      "status": "known_conflict",
+      "message": "冻结池内每个候选至少有一项已知失败，当前要求联合无解",
+      "enumeration_complete": true,
+      "certificates": [
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "4b46c17097fd0899a1d1f27006b819969a729de6e1b15e17a84bd43bd370876e",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:DS:0",
+            "hot-rutting:TSR:2"
+          ],
+          "requirements": [
+            {
+              "metric": "DS",
+              "operator": ">",
+              "value": 8000,
+              "upper": null,
+              "unit": "次/mm",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "TSR",
+              "operator": ">",
+              "value": 90,
+              "upper": null,
+              "unit": "%",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:DS:0",
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "display_id": "5c4c21d0",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:TSR:2",
+                  "state": "satisfied",
+                  "value": 92.44995786770077
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:TSR:2",
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "display_id": "f2806f57",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:DS:0",
+                  "state": "satisfied",
+                  "value": 9565.0
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            }
+          ],
+          "certificate_sha256": "6452b796cb4e11ab22a8f6ca7d736dc20e1e7ad62abe6c54d37cfaafc79ad1b3"
+        },
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "4b46c17097fd0899a1d1f27006b819969a729de6e1b15e17a84bd43bd370876e",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:DS:0",
+            "hot-rutting:residual:3"
+          ],
+          "requirements": [
+            {
+              "metric": "DS",
+              "operator": ">",
+              "value": 8000,
+              "upper": null,
+              "unit": "次/mm",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "residual",
+              "operator": ">",
+              "value": 90,
+              "upper": null,
+              "unit": "%",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:DS:0",
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "display_id": "5c4c21d0",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:residual:3",
+                  "state": "satisfied",
+                  "value": 92.75965764515384
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:residual:3",
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "display_id": "f2806f57",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:DS:0",
+                  "state": "satisfied",
+                  "value": 9565.0
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            }
+          ],
+          "certificate_sha256": "4be7d572cce861f2bab43ab921a11564677d17028abf598a3a6cf13f8e5d67cc"
+        },
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "4b46c17097fd0899a1d1f27006b819969a729de6e1b15e17a84bd43bd370876e",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:DS:0",
+            "hot-rutting:strain:1"
+          ],
+          "requirements": [
+            {
+              "metric": "DS",
+              "operator": ">",
+              "value": 8000,
+              "upper": null,
+              "unit": "次/mm",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "strain",
+              "operator": ">",
+              "value": 2500,
+              "upper": null,
+              "unit": "με",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:DS:0",
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "display_id": "2a6b64ea",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:strain:1",
+                  "state": "satisfied",
+                  "value": 2525.0
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:strain:1",
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "display_id": "f2806f57",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:DS:0",
+                  "state": "satisfied",
+                  "value": 9565.0
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            }
+          ],
+          "certificate_sha256": "7ec719ee6efb0a57ad303e843076bb63b6f480fddf074a003dd8d895288b1226"
+        },
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "4b46c17097fd0899a1d1f27006b819969a729de6e1b15e17a84bd43bd370876e",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:TSR:2",
+            "hot-rutting:strain:1"
+          ],
+          "requirements": [
+            {
+              "metric": "TSR",
+              "operator": ">",
+              "value": 90,
+              "upper": null,
+              "unit": "%",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "strain",
+              "operator": ">",
+              "value": 2500,
+              "upper": null,
+              "unit": "με",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:TSR:2",
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "display_id": "2a6b64ea",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:strain:1",
+                  "state": "satisfied",
+                  "value": 2525.0
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:strain:1",
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "display_id": "5c4c21d0",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:TSR:2",
+                  "state": "satisfied",
+                  "value": 92.44995786770077
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            }
+          ],
+          "certificate_sha256": "3934ec17d54b35611fa4b4eeb09305682a5623bf2ed774e1b636d0c8f3fd111e"
+        }
+      ],
+      "actions": [
+        "核查目标及方法条件是否录入正确",
+        "补充独立候选或新版本试验",
+        "如需变更正式要求，由工程师另行确认并保留理由"
+      ]
+    },
+    "certificate_checks": [
+      {
+        "valid": true,
+        "errors": []
+      },
+      {
+        "valid": true,
+        "errors": []
+      },
+      {
+        "valid": true,
+        "errors": []
+      },
+      {
+        "valid": true,
+        "errors": []
+      }
+    ]
+  },
+  "strong_B1_agrees_on_feasible_set": true,
+  "demand_evaluation": {
+    "scope": "three_rule_derived_profiles_plus_two_explicit_constructed_requirement_templates",
+    "engineering_validity": "not_verified"
+  },
+  "model_error_evaluation": "Separate existing model cards; no prediction accuracy inferred from these examples.",
+  "recommendation_validation": "Software replay of recorded aggregate labels only; independent material tests pending."
+}

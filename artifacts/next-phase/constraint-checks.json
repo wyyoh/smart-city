@@ -1,0 +1,1 @@
+{"task":"N08","command":".venv\\Scripts\\python.exe -X utf8 -m pytest -q tests/test_constraints_v2.py tests/test_candidate_pool_v2.py","exit_code":0,"passed":4,"warnings":1,"duration_seconds_reported_by_pytest":3.66,"scope":"Four states, strict boundaries, hard failures not compensated, feasible-only ordering and ties; frozen pool regressions."}

@@ -1,0 +1,11 @@
+{
+ "version":"case-scenarios-2.0.0",
+ "scope":"构造验证案例；三个场景规则例和两个明确选择的复合要求模板，不代表真实工程验收值。",
+ "cases":[
+  {"id":"C1","profile_id":"hot-rutting","title":"高温重载车辙处治","targets":{"DS":8000,"strain":2000,"TSR":75,"residual":85},"rap_min_pct":null,"priority":"DS","baseline_priority":"DS"},
+  {"id":"C2","profile_id":"cold-cracking","title":"寒冷地区温缩裂缝处治","targets":{"DS":800,"strain":2500,"TSR":75,"residual":85},"rap_min_pct":null,"priority":"strain","baseline_priority":"DS"},
+  {"id":"C3","profile_id":"wet-damage","title":"水损害路段修复","targets":{"DS":800,"strain":2000,"TSR":85,"residual":90},"rap_min_pct":null,"priority":"TSR","baseline_priority":"residual"},
+  {"id":"C4","profile_id":"hot-rutting","title":"高RAP再生材料选型","targets":{"DS":6000,"strain":2200,"TSR":85,"residual":85},"rap_min_pct":70,"priority":"DS","baseline_priority":"DS"},
+  {"id":"C5","profile_id":"hot-rutting","title":"高低温与水稳定复合约束","targets":{"DS":8000,"strain":2500,"TSR":90,"residual":90},"rap_min_pct":null,"priority":"DS","baseline_priority":"DS"}
+ ]
+}

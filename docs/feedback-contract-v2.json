@@ -1,0 +1,902 @@
+{
+  "version": "2.0",
+  "integration_scope": "local_contract_mock",
+  "schemas": {
+    "UpstreamRequest": {
+      "$defs": {
+        "Construction": {
+          "additionalProperties": false,
+          "properties": {
+            "equipment": {
+              "anyOf": [
+                {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Equipment"
+            },
+            "mixing_window": {
+              "anyOf": [
+                {
+                  "maxLength": 500,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Mixing Window"
+            },
+            "compaction_window": {
+              "anyOf": [
+                {
+                  "maxLength": 500,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Compaction Window"
+            },
+            "source": {
+              "anyOf": [
+                {
+                  "maxLength": 500,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source"
+            }
+          },
+          "title": "Construction",
+          "type": "object"
+        },
+        "ContextValue": {
+          "additionalProperties": false,
+          "properties": {
+            "class": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Class"
+            },
+            "source": {
+              "anyOf": [
+                {
+                  "maxLength": 500,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source"
+            }
+          },
+          "title": "ContextValue",
+          "type": "object"
+        },
+        "DemandRequest": {
+          "additionalProperties": false,
+          "properties": {
+            "schema_version": {
+              "const": "2.0",
+              "default": "2.0",
+              "title": "Schema Version",
+              "type": "string"
+            },
+            "name": {
+              "maxLength": 160,
+              "minLength": 1,
+              "title": "Name",
+              "type": "string"
+            },
+            "decision_id": {
+              "anyOf": [
+                {
+                  "maxLength": 160,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Decision Id"
+            },
+            "segment_id": {
+              "anyOf": [
+                {
+                  "maxLength": 160,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Segment Id"
+            },
+            "context_kind": {
+              "default": "project",
+              "enum": [
+                "constructed_demo",
+                "project"
+              ],
+              "title": "Context Kind",
+              "type": "string"
+            },
+            "scene": {
+              "$ref": "#/$defs/SceneContext"
+            },
+            "inventory": {
+              "$ref": "#/$defs/Inventory"
+            },
+            "construction": {
+              "$ref": "#/$defs/Construction"
+            },
+            "constraints": {
+              "$ref": "#/$defs/ResourceConstraints"
+            },
+            "requested_metrics": {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 20,
+              "title": "Requested Metrics",
+              "type": "array"
+            },
+            "project_targets": {
+              "items": {
+                "$ref": "#/$defs/PerformanceRequirement"
+              },
+              "maxItems": 20,
+              "title": "Project Targets",
+              "type": "array"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "title": "DemandRequest",
+          "type": "object"
+        },
+        "Distress": {
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Type"
+            },
+            "severity": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Severity"
+            },
+            "mechanism": {
+              "anyOf": [
+                {
+                  "maxLength": 500,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Mechanism"
+            }
+          },
+          "title": "Distress",
+          "type": "object"
+        },
+        "Inventory": {
+          "additionalProperties": false,
+          "properties": {
+            "source_codes": {
+              "anyOf": [
+                {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Codes"
+            },
+            "product_versions": {
+              "anyOf": [
+                {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Product Versions"
+            },
+            "gradation_family": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Gradation Family"
+            }
+          },
+          "title": "Inventory",
+          "type": "object"
+        },
+        "PerformanceRequirement": {
+          "additionalProperties": false,
+          "properties": {
+            "metric": {
+              "title": "Metric",
+              "type": "string"
+            },
+            "operator": {
+              "default": ">",
+              "enum": [
+                ">",
+                ">=",
+                "<",
+                "<=",
+                "between",
+                "grade"
+              ],
+              "title": "Operator",
+              "type": "string"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "title": "Value"
+            },
+            "upper": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Upper"
+            },
+            "unit": {
+              "title": "Unit",
+              "type": "string"
+            },
+            "test_method": {
+              "anyOf": [
+                {
+                  "maxLength": 500,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Test Method"
+            },
+            "conditions": {
+              "additionalProperties": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "title": "Conditions",
+              "type": "object"
+            },
+            "comparison_basis": {
+              "anyOf": [
+                {
+                  "maxLength": 160,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Comparison Basis"
+            },
+            "source": {
+              "$ref": "#/$defs/RequirementSource"
+            }
+          },
+          "required": [
+            "metric",
+            "value",
+            "unit",
+            "source"
+          ],
+          "title": "PerformanceRequirement",
+          "type": "object"
+        },
+        "RequirementSource": {
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "enterprise_reference",
+                "constructed_demo",
+                "project_target",
+                "project_approved",
+                "normative"
+              ],
+              "title": "Kind",
+              "type": "string"
+            },
+            "reference": {
+              "maxLength": 1000,
+              "minLength": 1,
+              "title": "Reference",
+              "type": "string"
+            },
+            "confirmed": {
+              "default": false,
+              "title": "Confirmed",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "kind",
+            "reference"
+          ],
+          "title": "RequirementSource",
+          "type": "object"
+        },
+        "ResourceConstraints": {
+          "additionalProperties": false,
+          "properties": {
+            "budget": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Budget"
+            },
+            "budget_unit": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Budget Unit"
+            },
+            "schedule_days": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Schedule Days"
+            },
+            "rap_min_pct": {
+              "anyOf": [
+                {
+                  "maximum": 100,
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Rap Min Pct"
+            },
+            "carbon_cap": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Carbon Cap"
+            },
+            "carbon_unit": {
+              "anyOf": [
+                {
+                  "maxLength": 80,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Carbon Unit"
+            }
+          },
+          "title": "ResourceConstraints",
+          "type": "object"
+        },
+        "SceneContext": {
+          "additionalProperties": false,
+          "properties": {
+            "maintenance_method": {
+              "anyOf": [
+                {
+                  "maxLength": 160,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Maintenance Method"
+            },
+            "layer": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Layer"
+            },
+            "structure_type": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Structure Type"
+            },
+            "climate": {
+              "$ref": "#/$defs/ContextValue"
+            },
+            "traffic": {
+              "$ref": "#/$defs/ContextValue"
+            },
+            "distress": {
+              "$ref": "#/$defs/Distress"
+            }
+          },
+          "title": "SceneContext",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "request_id": {
+          "maxLength": 160,
+          "minLength": 8,
+          "title": "Request Id",
+          "type": "string"
+        },
+        "decision_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Decision Id",
+          "type": "string"
+        },
+        "segment_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Segment Id",
+          "type": "string"
+        },
+        "demand": {
+          "$ref": "#/$defs/DemandRequest"
+        }
+      },
+      "required": [
+        "request_id",
+        "decision_id",
+        "segment_id",
+        "demand"
+      ],
+      "title": "UpstreamRequest",
+      "type": "object"
+    },
+    "SelectionRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "idempotency_key": {
+          "maxLength": 160,
+          "minLength": 8,
+          "title": "Idempotency Key",
+          "type": "string"
+        },
+        "decision_snapshot_id": {
+          "title": "Decision Snapshot Id",
+          "type": "string"
+        },
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "selected_by": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Selected By",
+          "type": "string"
+        },
+        "note": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "idempotency_key",
+        "decision_snapshot_id",
+        "candidate_id",
+        "selected_by",
+        "note"
+      ],
+      "title": "SelectionRequest",
+      "type": "object"
+    },
+    "LabFeedback": {
+      "additionalProperties": false,
+      "properties": {
+        "idempotency_key": {
+          "maxLength": 160,
+          "minLength": 8,
+          "title": "Idempotency Key",
+          "type": "string"
+        },
+        "decision_snapshot_id": {
+          "title": "Decision Snapshot Id",
+          "type": "string"
+        },
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "material_version": {
+          "title": "Material Version",
+          "type": "string"
+        },
+        "data_scope": {
+          "default": "demo",
+          "enum": [
+            "demo",
+            "official"
+          ],
+          "title": "Data Scope",
+          "type": "string"
+        },
+        "observed_at": {
+          "format": "date-time",
+          "title": "Observed At",
+          "type": "string"
+        },
+        "source_reference": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Source Reference",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "maxLength": 1000,
+          "title": "Note",
+          "type": "string"
+        },
+        "metric": {
+          "enum": [
+            "DS",
+            "strain",
+            "TSR",
+            "residual",
+            "stability",
+            "VV",
+            "VMA",
+            "flow"
+          ],
+          "title": "Metric",
+          "type": "string"
+        },
+        "value": {
+          "minimum": 0,
+          "title": "Value",
+          "type": "number"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "test_group": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Test Group",
+          "type": "string"
+        },
+        "test_method": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Test Method",
+          "type": "string"
+        },
+        "conditions": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Conditions",
+          "type": "object"
+        },
+        "sample_count": {
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Sample Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "idempotency_key",
+        "decision_snapshot_id",
+        "candidate_id",
+        "material_version",
+        "observed_at",
+        "source_reference",
+        "metric",
+        "value",
+        "unit",
+        "test_group",
+        "test_method",
+        "conditions",
+        "sample_count"
+      ],
+      "title": "LabFeedback",
+      "type": "object"
+    },
+    "FieldFeedback": {
+      "additionalProperties": false,
+      "properties": {
+        "idempotency_key": {
+          "maxLength": 160,
+          "minLength": 8,
+          "title": "Idempotency Key",
+          "type": "string"
+        },
+        "decision_snapshot_id": {
+          "title": "Decision Snapshot Id",
+          "type": "string"
+        },
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "material_version": {
+          "title": "Material Version",
+          "type": "string"
+        },
+        "data_scope": {
+          "default": "demo",
+          "enum": [
+            "demo",
+            "official"
+          ],
+          "title": "Data Scope",
+          "type": "string"
+        },
+        "observed_at": {
+          "format": "date-time",
+          "title": "Observed At",
+          "type": "string"
+        },
+        "source_reference": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Source Reference",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "maxLength": 1000,
+          "title": "Note",
+          "type": "string"
+        },
+        "section_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Section Id",
+          "type": "string"
+        },
+        "service_days": {
+          "minimum": 0,
+          "title": "Service Days",
+          "type": "integer"
+        },
+        "site_conditions": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Site Conditions",
+          "type": "object"
+        },
+        "performance_note": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Performance Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "idempotency_key",
+        "decision_snapshot_id",
+        "candidate_id",
+        "material_version",
+        "observed_at",
+        "source_reference",
+        "section_id",
+        "service_days",
+        "site_conditions",
+        "performance_note"
+      ],
+      "title": "FieldFeedback",
+      "type": "object"
+    },
+    "FeedbackReview": {
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "enum": [
+            "approved",
+            "rejected"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "reviewer": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "note": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Note",
+          "type": "string"
+        },
+        "conditions_confirmed": {
+          "default": false,
+          "title": "Conditions Confirmed",
+          "type": "boolean"
+        },
+        "use_for_decision": {
+          "default": false,
+          "title": "Use For Decision",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "state",
+        "reviewer",
+        "note"
+      ],
+      "title": "FeedbackReview",
+      "type": "object"
+    }
+  },
+  "limits": [
+    "No live enterprise integration.",
+    "Lab and field feedback are separate; reviewed demo values stay in demo context.",
+    "Review does not grant variant training eligibility or trigger retraining."
+  ]
+}

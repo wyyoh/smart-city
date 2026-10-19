@@ -1,0 +1,326 @@
+{
+  "scope": "isolated_local_mock_only",
+  "request": {
+    "request_id": "local-mock-v2-request",
+    "decision_id": "local-mock-v2-decision",
+    "segment_id": "demo-section-001",
+    "demand": {
+      "schema_version": "2.0",
+      "name": "高温重载 · 车辙控制",
+      "decision_id": null,
+      "segment_id": null,
+      "context_kind": "constructed_demo",
+      "scene": {
+        "maintenance_method": "hot_recycling",
+        "layer": "surface",
+        "structure_type": "flexible",
+        "climate": {
+          "class": "demo_hot",
+          "source": "团队构造：高温分区，无真实气候数据映射"
+        },
+        "traffic": {
+          "class": "demo_heavy",
+          "source": "团队构造：重载分组，无实测交通换算"
+        },
+        "distress": {
+          "type": "rutting",
+          "severity": "severe",
+          "mechanism": "团队构造病害描述，待现场确认"
+        }
+      },
+      "inventory": {
+        "source_codes": null,
+        "product_versions": null,
+        "gradation_family": "AC-13"
+      },
+      "construction": {
+        "equipment": null,
+        "mixing_window": null,
+        "compaction_window": null,
+        "source": null
+      },
+      "constraints": {
+        "budget": null,
+        "budget_unit": null,
+        "schedule_days": null,
+        "rap_min_pct": null,
+        "carbon_cap": null,
+        "carbon_unit": null
+      },
+      "requested_metrics": [
+        "DS",
+        "strain",
+        "TSR",
+        "residual"
+      ],
+      "project_targets": []
+    }
+  },
+  "upstream": {
+    "id": "upst_81820b1b41bca461a404c88ddb03",
+    "kind": "upstream_request",
+    "created_at": "2026-10-19T05:14:39.858923+00:00",
+    "parent_id": null,
+    "request_fingerprint": "60ab3166a118d33bcabc0c59e3842b2d5a47225312b8e5d27a8c3e0a1c20be3d",
+    "upstream_request": {
+      "request_id": "local-mock-v2-request",
+      "decision_id": "local-mock-v2-decision",
+      "segment_id": "demo-section-001",
+      "demand": {
+        "schema_version": "2.0",
+        "name": "高温重载 · 车辙控制",
+        "decision_id": null,
+        "segment_id": null,
+        "context_kind": "constructed_demo",
+        "scene": {
+          "maintenance_method": "hot_recycling",
+          "layer": "surface",
+          "structure_type": "flexible",
+          "climate": {
+            "class": "demo_hot",
+            "source": "团队构造：高温分区，无真实气候数据映射"
+          },
+          "traffic": {
+            "class": "demo_heavy",
+            "source": "团队构造：重载分组，无实测交通换算"
+          },
+          "distress": {
+            "type": "rutting",
+            "severity": "severe",
+            "mechanism": "团队构造病害描述，待现场确认"
+          }
+        },
+        "inventory": {
+          "source_codes": null,
+          "product_versions": null,
+          "gradation_family": "AC-13"
+        },
+        "construction": {
+          "equipment": null,
+          "mixing_window": null,
+          "compaction_window": null,
+          "source": null
+        },
+        "constraints": {
+          "budget": null,
+          "budget_unit": null,
+          "schedule_days": null,
+          "rap_min_pct": null,
+          "carbon_cap": null,
+          "carbon_unit": null
+        },
+        "requested_metrics": [
+          "DS",
+          "strain",
+          "TSR",
+          "residual"
+        ],
+        "project_targets": []
+      }
+    },
+    "resolution_id": "dema_acba57d18a104751a04169cb739314ed",
+    "resolution_sha256": "3d956e12a7fc3ae796d349e1500d086c9c4cf430c9f653390cadcd510e2c84fc",
+    "integration_scope": "local_contract_mock",
+    "status": "awaiting_requirement_confirmation",
+    "sha256": "32774fe47530d56f3d81a82900f179e396490bf2564dc34b39c8d330a9cd9e29"
+  },
+  "selection": {
+    "id": "sele_7aee9635bd48b40d1707b2d90ebe",
+    "kind": "upstream_selection",
+    "created_at": "2026-10-19T05:14:40.449230+00:00",
+    "parent_id": "upst_81820b1b41bca461a404c88ddb03",
+    "request_fingerprint": "fea46b9ddaf02f7be60e1d49aaf22afc30e003a5af313f911f98bb262a0c6aed",
+    "idempotency_key": "local-mock-v2-selection",
+    "decision_snapshot_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+    "candidate_id": "mix_0e51eff6e2cef2806f57",
+    "selected_by": "AI local mock",
+    "note": "本地接口排练，非施工批准",
+    "decision_id": "local-mock-v2-decision",
+    "segment_id": "demo-section-001",
+    "maintenance_method": "hot_recycling",
+    "material_version": "mat_76f9daa8a20374d2e3b531a2",
+    "context_kind": "constructed_demo",
+    "status": "selected_for_engineer_review",
+    "engineering_release_approved": false,
+    "sha256": "beb539c54c2ad09de0baab6a42a2ae892b8ecfe360f79f3c3ef4faf052c41fad"
+  },
+  "lab_input": {
+    "idempotency_key": "local-mock-v2-lab",
+    "decision_snapshot_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+    "candidate_id": "mix_0e51eff6e2cef2806f57",
+    "material_version": "mat_76f9daa8a20374d2e3b531a2",
+    "data_scope": "demo",
+    "observed_at": "2026-10-19T05:14:40.456758+00:00",
+    "source_reference": "local_mock_only/not_a_real_report",
+    "note": "构造反馈，仅验证契约",
+    "metric": "DS",
+    "value": 9000,
+    "unit": "次/mm",
+    "test_group": "local-mock-v2-test-group",
+    "test_method": "demo_method",
+    "conditions": {
+      "temperature": "demo_60C",
+      "load": "demo_load",
+      "conditioning": "demo_conditioning"
+    },
+    "sample_count": 2
+  },
+  "lab_submission": {
+    "id": "lab__2328ef6fa3a6428b2612fc5be5d0",
+    "kind": "lab_feedback",
+    "created_at": "2026-10-19T05:14:40.497508+00:00",
+    "parent_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+    "request_fingerprint": "90be2c837b5235fd705b004c84d4879e80d6e518718fd7bdd82325f4841c75b7",
+    "feedback": {
+      "idempotency_key": "local-mock-v2-lab",
+      "decision_snapshot_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+      "candidate_id": "mix_0e51eff6e2cef2806f57",
+      "material_version": "mat_76f9daa8a20374d2e3b531a2",
+      "data_scope": "demo",
+      "observed_at": "2026-10-19T05:14:40.456758Z",
+      "source_reference": "local_mock_only/not_a_real_report",
+      "note": "构造反馈，仅验证契约",
+      "metric": "DS",
+      "value": 9000.0,
+      "unit": "次/mm",
+      "test_group": "local-mock-v2-test-group",
+      "test_method": "demo_method",
+      "conditions": {
+        "temperature": "demo_60C",
+        "load": "demo_load",
+        "conditioning": "demo_conditioning"
+      },
+      "sample_count": 2
+    },
+    "state": "submitted",
+    "data_scope": "demo",
+    "use_for_decision": false,
+    "training_eligibility": "not_granted",
+    "note": "现场反馈不自动替代实验室试验；审核与训练发布均为独立步骤。",
+    "sha256": "83b90fb6ece48487790ac22215bf0797050aa7728095d4b8ae13f35bb3465710"
+  },
+  "lab_review": {
+    "id": "revw_9515b714aa89b33e14962b7003e5",
+    "kind": "feedback_review",
+    "created_at": "2026-10-19T05:14:40.510431+00:00",
+    "parent_id": "lab__2328ef6fa3a6428b2612fc5be5d0",
+    "request_fingerprint": "70a2fb17af884211fad6cb3ddee1a4bdd7ddeb4bdc402e9eae83c57b3972aada",
+    "feedback_id": "lab__2328ef6fa3a6428b2612fc5be5d0",
+    "state": "approved",
+    "reviewer": "AI local mock",
+    "note": "确认构造条件用于演示回流",
+    "conditions_confirmed": true,
+    "use_for_decision": true,
+    "observation_id": "obs_v2_9515b714aa89b33e14962b7003e5",
+    "training_eligibility": "not_granted",
+    "model_retraining": "not_triggered",
+    "scope_note": "现场反馈仅供工程跟踪；新微调正式训练资格与受控再训练本期不开放。",
+    "sha256": "062db50fea23c8dd4a9a73f71771c8d424304b3c6933de438580d251d2eb0529"
+  },
+  "field_input": {
+    "idempotency_key": "local-mock-v2-field",
+    "decision_snapshot_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+    "candidate_id": "mix_0e51eff6e2cef2806f57",
+    "material_version": "mat_76f9daa8a20374d2e3b531a2",
+    "data_scope": "demo",
+    "observed_at": "2026-10-19T05:14:40.456758+00:00",
+    "source_reference": "local_mock_only/not_a_real_report",
+    "note": "构造反馈，仅验证契约",
+    "section_id": "demo-section-001",
+    "service_days": 30,
+    "site_conditions": {
+      "rainfall": "unknown_demo"
+    },
+    "performance_note": "构造现场文字反馈，不转成实验室性能值"
+  },
+  "field_submission": {
+    "id": "fiel_25b647b33806c541c1ff13f854ca",
+    "kind": "field_feedback",
+    "created_at": "2026-10-19T05:14:40.552957+00:00",
+    "parent_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+    "request_fingerprint": "815d3fbe7a63902b0b53de0d13a8fca8cd3b02db0e1d4829b34c101e0fb5b8e3",
+    "feedback": {
+      "idempotency_key": "local-mock-v2-field",
+      "decision_snapshot_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+      "candidate_id": "mix_0e51eff6e2cef2806f57",
+      "material_version": "mat_76f9daa8a20374d2e3b531a2",
+      "data_scope": "demo",
+      "observed_at": "2026-10-19T05:14:40.456758Z",
+      "source_reference": "local_mock_only/not_a_real_report",
+      "note": "构造反馈，仅验证契约",
+      "section_id": "demo-section-001",
+      "service_days": 30,
+      "site_conditions": {
+        "rainfall": "unknown_demo"
+      },
+      "performance_note": "构造现场文字反馈，不转成实验室性能值"
+    },
+    "state": "submitted",
+    "data_scope": "demo",
+    "use_for_decision": false,
+    "training_eligibility": "not_granted",
+    "note": "现场反馈不自动替代实验室试验；审核与训练发布均为独立步骤。",
+    "sha256": "9bc88ef8d7908d9b20250c3cda52d60761946bbb1b41aeb32b70c370f79badb5"
+  },
+  "trace": [
+    {
+      "path": "/upstream-requests",
+      "status_code": 201,
+      "elapsed_ms": 18.943,
+      "record_id": "upst_81820b1b41bca461a404c88ddb03",
+      "sha256": "32774fe47530d56f3d81a82900f179e396490bf2564dc34b39c8d330a9cd9e29"
+    },
+    {
+      "path": "/demand-resolutions/dema_acba57d18a104751a04169cb739314ed/confirm",
+      "status_code": 201,
+      "elapsed_ms": 10.43,
+      "record_id": "dema_e86da2951c3a468ca66cbc7da7eb5690",
+      "sha256": "7fd892973514d6c6df9d6507235af18acd551e58297abe45101833d05c1e0567"
+    },
+    {
+      "path": "/candidate-pools",
+      "status_code": 201,
+      "elapsed_ms": 253.94,
+      "record_id": "cand_c5722cf27e1c43e3b1c4173d25fc0753",
+      "sha256": "499b28050639dcc77c6d4154e0575226fd0bc7ef01fd42b3e99678a7e74d88c1"
+    },
+    {
+      "path": "/decisions",
+      "status_code": 201,
+      "elapsed_ms": 279.751,
+      "record_id": "mate_a9fe84ecb5b648c5a618a42c0a228640",
+      "sha256": "653c3e037b38e9139c6a3a54ad3c772cdaddf226edb10299a193026927490968"
+    },
+    {
+      "path": "/upstream-requests/upst_81820b1b41bca461a404c88ddb03/selection",
+      "status_code": 201,
+      "elapsed_ms": 45.318,
+      "record_id": "sele_7aee9635bd48b40d1707b2d90ebe",
+      "sha256": "beb539c54c2ad09de0baab6a42a2ae892b8ecfe360f79f3c3ef4faf052c41fad"
+    },
+    {
+      "path": "/lab-feedback",
+      "status_code": 201,
+      "elapsed_ms": 47.741,
+      "record_id": "lab__2328ef6fa3a6428b2612fc5be5d0",
+      "sha256": "83b90fb6ece48487790ac22215bf0797050aa7728095d4b8ae13f35bb3465710"
+    },
+    {
+      "path": "/feedback/lab__2328ef6fa3a6428b2612fc5be5d0/review",
+      "status_code": 201,
+      "elapsed_ms": 12.85,
+      "record_id": "revw_9515b714aa89b33e14962b7003e5",
+      "sha256": "062db50fea23c8dd4a9a73f71771c8d424304b3c6933de438580d251d2eb0529"
+    },
+    {
+      "path": "/field-feedback",
+      "status_code": 201,
+      "elapsed_ms": 42.619,
+      "record_id": "fiel_25b647b33806c541c1ff13f854ca",
+      "sha256": "9bc88ef8d7908d9b20250c3cda52d60761946bbb1b41aeb32b70c370f79badb5"
+    }
+  ],
+  "real_enterprise_integration": false,
+  "real_laboratory_or_field_data": false,
+  "release_note": "反馈审核不授予新微调训练资格，不触发再训练或工程施工批准。"
+}

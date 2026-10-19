@@ -54,7 +54,8 @@ def recipe_dict(recipe, measurements, observations=(), *, context_kind='project'
             'sample_count_declared': o.payload['sample_count'], 'conditions_status': 'user_confirmed',
             'source_kind': f'{o.data_scope}_reviewed_observation', 'review': o.payload['review'],
             'test_group': o.payload['test_group'], 'method': o.payload['method'], 'conditions': o.payload['conditions'],
-            'source_reference':o.payload.get('source_reference')}
+            'source_reference':o.payload.get('source_reference'),
+            **({'structured_conditions':o.payload['structured_conditions']} if 'structured_conditions' in o.payload else {})}
     d = recipe.model_dump()
     d['metrics'], d['evidence'] = metrics, evidence
     d['display_id'] = recipe.payload.get('fixture_id') or recipe.id[-8:]
