@@ -1,0 +1,276 @@
+{
+  "material_passport": {
+    "origin_skill": "academic-research-suite experiment-agent",
+    "origin_mode": "plan",
+    "origin_date": "2026-10-19",
+    "verification_status": "UNVERIFIED",
+    "version_label": "innovation_validation_v2"
+  },
+  "status": "proposed_protocol_not_executed",
+  "scope": "核心确定性验收与条件研究分别记录；团队门槛不当作官方评分标准。",
+  "inputs": [
+    "design/competition_alignment_evidence_v2.json",
+    "artifacts/innovation-feasibility-diagnostic.json",
+    "configs/cases.json",
+    "artifacts/models/model_cards.json"
+  ],
+  "known_data_limits": {
+    "historical_operational_keys": 180,
+    "four_metric_numeric_present": 60,
+    "ac13_complete_numeric_pool": 35,
+    "common_model_eligible_operational_keys": 59,
+    "independent_physical_sources_confirmed": false,
+    "note": "缺测与训练资格不同；操作键、标签行及来源族均不自动等于独立物理样本。"
+  },
+  "entry_point": {
+    "status": "to_be_implemented_by_EXP01",
+    "proposed_path": "scripts/run_innovation_benchmarks.py",
+    "runnable_entry_command": null
+  },
+  "negative_cases": [
+    {
+      "id": "NEG01",
+      "trigger": "气候或交通缺失",
+      "expected": "显示依赖该字段的需求未确定，不填默认地区。"
+    },
+    {
+      "id": "NEG02",
+      "trigger": "病害成因或严重程度不足",
+      "expected": "请求补充或保留待确认，不将所有裂缝等同温缩。"
+    },
+    {
+      "id": "NEG03",
+      "trigger": "同指标不同试验方法或条件",
+      "expected": "标为不可比，不自动合并成更严阈值。"
+    },
+    {
+      "id": "NEG04",
+      "trigger": "PG疲劳动态模量需求缺少能力",
+      "expected": "保留合法目标，显示未支持；不替换成现有指标。"
+    },
+    {
+      "id": "NEG05",
+      "trigger": "预算存在而价格缺失",
+      "expected": "预算不可判定，排序不静默删除其权重。"
+    },
+    {
+      "id": "NEG06",
+      "trigger": "库存范围为空",
+      "expected": "说明检索范围无候选，不生成性能冲突证书。"
+    },
+    {
+      "id": "NEG07",
+      "trigger": "必要性能缺测",
+      "expected": "待补测，不当已失败，也不据此证明无解。"
+    },
+    {
+      "id": "NEG08",
+      "trigger": "阈值相等及区间边界",
+      "expected": "严格与非严格比较保持原定义。"
+    },
+    {
+      "id": "NEG09",
+      "trigger": "候选性能并列",
+      "expected": "明确并列，数据库顺序不当作材料优势。"
+    },
+    {
+      "id": "NEG10",
+      "trigger": "微调及输入更新",
+      "expected": "父实测与旧请求结果失效，旧报告仍可追溯。"
+    },
+    {
+      "id": "NEG11",
+      "trigger": "演示记录或不匹配模型",
+      "expected": "正式模式隔离演示数据，模型不匹配时停止预测。"
+    },
+    {
+      "id": "NEG12",
+      "trigger": "已知复合目标冲突",
+      "expected": "给出池内最小冲突及见证，不自动降低硬要求。"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "H1",
+      "task_ids": [
+        "N04",
+        "N09",
+        "N10",
+        "N11",
+        "N17"
+      ],
+      "hypothesis": "需求及证据状态进入推理后，可以给出可复核的目标、候选及无解原因。",
+      "type": "deterministic_engineering_acceptance",
+      "comparators": [
+        "B0预先登记单指标方法，仅作风险示例",
+        "B1现有全约束加单优先级，必须保留",
+        "V2同池同信息方法"
+      ],
+      "metrics": [
+        "需求来源与规则匹配",
+        "冲突证书有效性及删除要求后的候选见证",
+        "未知或不可比处理",
+        "场景差异解释完整性",
+        "同信息完整任务操作与用时"
+      ],
+      "acceptance": "全部登记确定性样例通过，证书在其声明范围内成立；不把软件通过率当工程准确率。",
+      "existing_diagnostic": {
+        "case": "C5",
+        "single_target_counts": {
+          "DS": 2,
+          "strain": 2,
+          "TSR": 4,
+          "residual": 9
+        },
+        "minimal_conflicts": [
+          [
+            "DS",
+            "strain"
+          ],
+          [
+            "DS",
+            "TSR"
+          ],
+          [
+            "DS",
+            "residual"
+          ],
+          [
+            "strain",
+            "TSR"
+          ]
+        ]
+      },
+      "business_correctness_dependency": "规则工程适用性由对应条款或企业项目确认支持，演示规则始终标记构造。"
+    },
+    {
+      "id": "H2",
+      "task_ids": [
+        "EXP01",
+        "EXP02",
+        "EXP04"
+      ],
+      "hypothesis": "适用性与区间判断能否在相近可判定覆盖下减少阈值错误推荐，需分组验证。",
+      "type": "grouped_model_and_decision_comparison",
+      "predictors": [
+        "dummy",
+        "nearest",
+        "ridge",
+        "random_forest",
+        "independent_gpr",
+        "one_multitask_gp"
+      ],
+      "representation_rule": "只用设计前可信组成、产品与级配输入；补测任务允许已揭示试验输入但单列任务。",
+      "split": {
+        "global_source_profile_mapping": "所有指标共用，先按来源族和重复材料曲线冻结。",
+        "prediction_track": "5折外层来源分组、训练部分内3折选择；各方法同划分，缺测用掩码。",
+        "interval_track": "另固定全局12校准组和8测试组，其余训练；实际每指标可用组数分别报告。",
+        "insufficient_calibration": "有限样本分位数无法形成有用区间时返回不可用或无界，不删去困难测试。",
+        "shared_validation_note": "旧模型每指标独立分折只作既有证据，不称本轮共享划分。"
+      },
+      "model_budget": {
+        "independent_candidate_pipelines_max": 9,
+        "multitask_families_max": 1,
+        "timeout_per_fit_seconds": 120,
+        "total_experiment_wall_time_cap_seconds": 7200,
+        "manual_work_timebox_hours": 8
+      },
+      "primary_metrics": [
+        "相近覆盖下错误推荐率差",
+        "每指标MAE/RMSE/R2",
+        "区间覆盖及宽度",
+        "来源组表现"
+      ],
+      "fair_information": "点预测与区间策略使用相同可见标签；全实测B1只作已知信息参照，不与未知目标预测作不公平胜负比较。",
+      "reporting": "列出全部可评价分母、缺测与拒答；以来源族汇总差值和区间，重复种子不增加独立样本数。",
+      "claim_gate": "只有分组差值支持改善且覆盖下降不超过预先登记的5个百分点，才声明该范围内稳定改善；否则记录趋势或负结果。",
+      "publication_gate": "本阶段模型均保持研究用途；单指标覆盖不当多指标联合保证。"
+    },
+    {
+      "id": "H3",
+      "task_ids": [
+        "EXP01",
+        "EXP02",
+        "EXP03",
+        "EXP04"
+      ],
+      "hypothesis": "按预计决策价值选择方案与试验项目，能否比强顺序策略更快完成选材判断。",
+      "type": "historical_hidden_label_replay",
+      "pool": "具有可评价真值的冻结候选子集；来源族与模型训练隔离，实际池大小逐次报告。",
+      "visible_state": "候选设计前信息、场景需求、允许训练数据及已查询结果；池内初始目标标签为空。",
+      "truth_access": "只由独立评价器揭示所查询的一项历史标签；策略不能读取完整真值或含池标签的全量拟合模型。",
+      "action": [
+        "recipe_version",
+        "metric",
+        "test_condition_status"
+      ],
+      "strategies": [
+        "uniform_random",
+        "scene_priority_fail_fast",
+        "train_failure_rate_fail_fast",
+        "maximum_uncertainty",
+        "proposed_decision_value_per_incremental_cost"
+      ],
+      "repeats": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "label_query_budgets": [
+          4,
+          8,
+          16
+        ],
+        "note": "同种子同初始信息与预算，种子重复是算法稳定性重复，不是新材料样本。"
+      },
+      "stopping": {
+        "feasible_found": "一个候选所有必要指标有已揭示可比结果且全部满足。",
+        "pool_infeasible_certified": "每个候选至少有一项已揭示的必要指标不满足。",
+        "unresolved": "预算耗尽、条件不可比或证据不足；不当成失败证书。"
+      },
+      "cost_policy": "首先按标量标签查询数计费；成本向量仅作标明假设的敏感性分析。共用制样须有依据才计算共享成本。",
+      "primary_metrics": [
+        "预算到决策完成率曲线",
+        "同完成率下查询量",
+        "首次证实可行或池内无解的查询量",
+        "错误证书数量",
+        "未判定比例"
+      ],
+      "claim_gate": "必须与表现最好的强顺序或不确定性基线比较；实际查询收益和来源组差值支持时才声明该池内提升。",
+      "limits": "不将回放查询数换算成真实试验次数或经费；新配方、现场收益另需实测。"
+    }
+  ],
+  "monitoring": {
+    "progress_path": "artifacts/next-phase/research/progress.json",
+    "per_fit_timeout_seconds": 120,
+    "total_wall_time_cap_seconds": 7200,
+    "on_failure": "保存具体失败和已有结果，由开发者诊断；不自动反复重试或扩大预算。"
+  },
+  "numerical_reproducibility": "冻结输入、划分、版本和种子；同环境决策序列与计数应一致，数值容差于首轮运行清单登记。",
+  "research_statuses": [
+    "planned",
+    "not_started_capacity",
+    "implementation_incomplete",
+    "invalid_protocol",
+    "executed_no_improvement",
+    "executed_improvement_with_scope"
+  ]
+}

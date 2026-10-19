@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "scope": "planning_consistency_only_not_product_or_research_acceptance",
+  "tasks": 25,
+  "core_tasks": 21,
+  "conditional_tasks": 4,
+  "weekly_core_hours": {
+    "1": 12,
+    "2": 12,
+    "3": 12,
+    "4": 12,
+    "5": 12,
+    "6": 12
+  },
+  "weekly_conditional_hours": {
+    "1": 5,
+    "2": 5,
+    "3": 5,
+    "4": 5,
+    "5": 5,
+    "6": 5
+  },
+  "core_hours": 72,
+  "buffer_hours": 18,
+  "conditional_hours": 30,
+  "dependency_graph": "acyclic",
+  "core_has_no_research_dependency": true,
+  "all_basic_and_technical_requirements_traced": true,
+  "prior_alignment_tasks_crosswalk_complete": true,
+  "protected_inputs_unchanged": 10,
+  "implementation_tasks_completed": 0,
+  "experiments_executed": 0,
+  "page_source_blocks": 63
+}

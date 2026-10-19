@@ -1,0 +1,1392 @@
+{
+  "schema_version": "2.1-plan",
+  "title": "数智选材下一阶段亮点开发与验证计划",
+  "planning_date": "2026-10-19",
+  "implementation_status": "plan_ready_implementation_not_started",
+  "source_revision": "df3dcdf15cbd824596d681e6ecb122160b189768",
+  "confirmed_constraints": {
+    "developers": 1,
+    "weeks": 6,
+    "hours_per_week_range": [
+      15,
+      20
+    ],
+    "submission_deadline": null,
+    "start_date": null
+  },
+  "capacity": {
+    "core_planned_hours": 72,
+    "core_buffer_hours": 18,
+    "baseline_total_hours": 90,
+    "conditional_research_hours": 30,
+    "upper_total_hours": 120,
+    "note": "初估工时，不代表实际投入。条件研究使用额外时间，不占用核心缓冲。"
+  },
+  "week_capacity": {
+    "1": {
+      "core_hours": 12,
+      "buffer_hours": 3,
+      "baseline_capacity": 15,
+      "conditional_research_hours": 5,
+      "upper_capacity": 20
+    },
+    "2": {
+      "core_hours": 12,
+      "buffer_hours": 3,
+      "baseline_capacity": 15,
+      "conditional_research_hours": 5,
+      "upper_capacity": 20
+    },
+    "3": {
+      "core_hours": 12,
+      "buffer_hours": 3,
+      "baseline_capacity": 15,
+      "conditional_research_hours": 5,
+      "upper_capacity": 20
+    },
+    "4": {
+      "core_hours": 12,
+      "buffer_hours": 3,
+      "baseline_capacity": 15,
+      "conditional_research_hours": 5,
+      "upper_capacity": 20
+    },
+    "5": {
+      "core_hours": 12,
+      "buffer_hours": 3,
+      "baseline_capacity": 15,
+      "conditional_research_hours": 5,
+      "upper_capacity": 20
+    },
+    "6": {
+      "core_hours": 12,
+      "buffer_hours": 3,
+      "baseline_capacity": 15,
+      "conditional_research_hours": 5,
+      "upper_capacity": 20
+    }
+  },
+  "work_policy": {
+    "core_wip_limit": 1,
+    "first_production_feature_freeze": "end_of_week_5",
+    "week_6": "修复、界面打磨、验收、复算与交付；不新增产品功能。",
+    "research_schedule": "条件研究周分配是每周20小时的上限情景；某周没有额外时间时顺延或裁剪，不挤占核心缓冲。",
+    "overrun": "先使用当周缓冲并停止条件研究；连续两周核心超出15小时则重估剩余范围与工时。"
+  },
+  "highlights": [
+    {
+      "id": "L1",
+      "title": "场景双向推理与无解定位",
+      "core_scope": "需求解析、最小冲突、候选见证和场景差异解释"
+    },
+    {
+      "id": "L2",
+      "title": "证据适用性约束的推荐",
+      "core_scope": "方法工艺检查、四态判断、完整方案、证据与预测边界",
+      "conditional_scope": "共享分组模型及风险校准的实证改进"
+    },
+    {
+      "id": "L3",
+      "title": "面向选材目标的补测",
+      "core_scope": "结构化且可解释的基础补测建议",
+      "conditional_scope": "决策价值策略与强基线的预算回放"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "N01",
+      "title": "冻结基线与增量边界",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 2,
+      "start_week": 1,
+      "finish_week": 1,
+      "week_allocations": {
+        "1": 2
+      },
+      "dependencies": [],
+      "requirements": [
+        "B04"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [],
+      "acceptance": [
+        "记录0.1.0、原始文件、目录、模型和旧计划指纹；保留旧验收历史。",
+        "新流程采用增量契约；验证使用隔离数据库，原始工作簿与正式目录不被改写。"
+      ],
+      "planned_artifacts": [
+        "docs/next-phase-baseline.json",
+        "docs/v2-contract-notes.md"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N02",
+      "title": "场景与指标契约",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 3,
+      "start_week": 1,
+      "finish_week": 1,
+      "week_allocations": {
+        "1": 3
+      },
+      "dependencies": [
+        "N01"
+      ],
+      "requirements": [
+        "B01",
+        "B04",
+        "T01",
+        "T10"
+      ],
+      "prior_alignment_tasks": [
+        "A01"
+      ],
+      "highlights": [],
+      "acceptance": [
+        "保存工法、层位、结构、气候、交通、病害严重程度、库存和施工限制及出处。",
+        "保留已知但暂不支持的PG、疲劳、动态模量需求，区分输入错误与能力不足。"
+      ],
+      "planned_artifacts": [
+        "backend/app/domain/contracts_v2.py",
+        "configs/metric_registry_v2.json"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N03",
+      "title": "三类可执行需求规则",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 3,
+      "start_week": 1,
+      "finish_week": 1,
+      "week_allocations": {
+        "1": 3
+      },
+      "dependencies": [
+        "N02"
+      ],
+      "requirements": [
+        "B02",
+        "T01",
+        "T02"
+      ],
+      "prior_alignment_tasks": [
+        "A02"
+      ],
+      "highlights": [
+        "L1"
+      ],
+      "acceptance": [
+        "高温、低温、水损害三类规则记录条件、量化目标、优先级、方法、来源与版本。",
+        "构造演示与正式项目分开；不同方法条件的阈值不自动合并。"
+      ],
+      "planned_artifacts": [
+        "configs/scene_rules_v2.json",
+        "docs/scene-rule-cards.md"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N04",
+      "title": "需求解析与确认首条界面",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 1,
+      "finish_week": 1,
+      "week_allocations": {
+        "1": 4
+      },
+      "dependencies": [
+        "N03"
+      ],
+      "requirements": [
+        "B01",
+        "T01",
+        "T02",
+        "T09"
+      ],
+      "prior_alignment_tasks": [
+        "A03"
+      ],
+      "highlights": [
+        "L1"
+      ],
+      "acceptance": [
+        "输入三类场景条件而不手填数值目标，即可看到有来源的需求卡。",
+        "工程师覆盖保留原推导值、理由与版本；缺失、冲突和未支持需求可见。"
+      ],
+      "planned_artifacts": [
+        "backend/app/decision/demands.py",
+        "frontend/src/components/DemandCard.tsx",
+        "artifacts/next-phase/week1-demand-flow/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N05",
+      "title": "材料关系与完整方案卡",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 2,
+      "finish_week": 2,
+      "week_allocations": {
+        "2": 4
+      },
+      "dependencies": [
+        "N02"
+      ],
+      "requirements": [
+        "B01",
+        "B02",
+        "T03",
+        "T04"
+      ],
+      "prior_alignment_tasks": [
+        "A04",
+        "A05"
+      ],
+      "highlights": [
+        "L1",
+        "L2"
+      ],
+      "acceptance": [
+        "三类场景可查询需求、材料组成、观察和来源的关系路径。",
+        "卡片包含产品、级配、用油、RAP、改性剂或助剂与施工字段；未披露项不填0。"
+      ],
+      "planned_artifacts": [
+        "backend/app/decision/materials.py",
+        "frontend/src/components/MaterialSchemeCard.tsx"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N06",
+      "title": "候选目录检索与范围冻结",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 2,
+      "finish_week": 2,
+      "week_allocations": {
+        "2": 4
+      },
+      "dependencies": [
+        "N04",
+        "N05"
+      ],
+      "requirements": [
+        "B03",
+        "T03",
+        "T04"
+      ],
+      "prior_alignment_tasks": [
+        "A06"
+      ],
+      "highlights": [
+        "L1",
+        "L2"
+      ],
+      "acceptance": [
+        "按场景、库存与适用条件检索目录，原9个样例仅保留回归用途。",
+        "保存入选、排除、候选ID、数据版本与池哈希；报告明确检索范围。"
+      ],
+      "planned_artifacts": [
+        "backend/app/decision/candidate_pool.py",
+        "artifacts/next-phase/week2-pool/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N07",
+      "title": "证据适用与工艺检查",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 2,
+      "finish_week": 2,
+      "week_allocations": {
+        "2": 4
+      },
+      "dependencies": [
+        "N05",
+        "N06"
+      ],
+      "requirements": [
+        "T02",
+        "T05",
+        "T10"
+      ],
+      "prior_alignment_tasks": [
+        "A07"
+      ],
+      "highlights": [
+        "L2"
+      ],
+      "acceptance": [
+        "方法、条件、层位与工艺分别标为适用、不适用或未知；明确不兼容可排除。",
+        "正式模式中未知条件不自动通过；演示数值比较单独标识。",
+        "缺少价格时预算不可判定，保留组成质量基准未确认状态。"
+      ],
+      "planned_artifacts": [
+        "backend/app/decision/eligibility.py",
+        "docs/evidence-applicability-policy.md"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N08",
+      "title": "四态约束与可行集比较",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 3,
+      "start_week": 3,
+      "finish_week": 3,
+      "week_allocations": {
+        "3": 3
+      },
+      "dependencies": [
+        "N07"
+      ],
+      "requirements": [
+        "T02",
+        "T05",
+        "T08"
+      ],
+      "prior_alignment_tasks": [
+        "A08"
+      ],
+      "highlights": [
+        "L1",
+        "L2"
+      ],
+      "acceptance": [
+        "逐目标返回满足、不满足、缺测、不可比，硬要求失败不被综合分补偿。",
+        "仅比较同口径已知维度，显示并列与未知偏好维度，排序依据可追溯。"
+      ],
+      "planned_artifacts": [
+        "backend/app/decision/constraints.py",
+        "backend/app/decision/comparison.py"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N09",
+      "title": "最小冲突与无解证书",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 3,
+      "finish_week": 3,
+      "week_allocations": {
+        "3": 4
+      },
+      "dependencies": [
+        "N08"
+      ],
+      "requirements": [
+        "B01",
+        "B03",
+        "T08"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [
+        "L1"
+      ],
+      "acceptance": [
+        "区分池为空、已知冲突、证据不足和场景无效，未知项本身不能证明无解。",
+        "返回包含关系下最小的冲突集合及删除任一要求后的候选见证，绑定池和需求版本。",
+        "C5数值诊断重现四组冲突；不自动降低正式目标，不把池内冲突解释成物理定律。"
+      ],
+      "planned_artifacts": [
+        "backend/app/decision/diagnosis.py",
+        "frontend/src/components/ConflictPanel.tsx",
+        "artifacts/next-phase/conflict-certificates/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N10",
+      "title": "场景变更与推荐差异解释",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 3,
+      "start_week": 3,
+      "finish_week": 3,
+      "week_allocations": {
+        "3": 3
+      },
+      "dependencies": [
+        "N09"
+      ],
+      "requirements": [
+        "B01",
+        "T01",
+        "T08"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [
+        "L1"
+      ],
+      "acceptance": [
+        "改变已支持的场景条件，展示规则、目标、候选与结论改变的对应关系。",
+        "未改变的条件不制造差异；人工更改与需要工程确认的行动分别记录。"
+      ],
+      "planned_artifacts": [
+        "frontend/src/components/DecisionDiff.tsx",
+        "artifacts/next-phase/week3-what-if/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N11",
+      "title": "诊断与适用性边界验收",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 2,
+      "start_week": 3,
+      "finish_week": 3,
+      "week_allocations": {
+        "3": 2
+      },
+      "dependencies": [
+        "N10"
+      ],
+      "requirements": [
+        "B03",
+        "B04"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [
+        "L1",
+        "L2"
+      ],
+      "acceptance": [
+        "覆盖协议登记的12类负例，核验冲突证书和候选见证。",
+        "验证阈值相等、缺测、方法不匹配、并列、空库存及输入变化，避免只验成功路径。"
+      ],
+      "planned_artifacts": [
+        "tests/test_decision_diagnosis.py",
+        "configs/next_phase_negative_cases.json",
+        "artifacts/next-phase/week3-acceptance.json"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N12",
+      "title": "完整流程与方案比较界面",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 5,
+      "start_week": 4,
+      "finish_week": 4,
+      "week_allocations": {
+        "4": 5
+      },
+      "dependencies": [
+        "N11"
+      ],
+      "requirements": [
+        "B01",
+        "T05",
+        "T09"
+      ],
+      "prior_alignment_tasks": [
+        "A08"
+      ],
+      "highlights": [
+        "L1",
+        "L2"
+      ],
+      "acceptance": [
+        "沿用现有工作台贯穿场景、需求确认、生成、对比、微调及验证计划。",
+        "同屏查看主要组成、目标余量、排除原因与未知条件，关键判断不藏在次级页面。"
+      ],
+      "planned_artifacts": [
+        "frontend/src/components/DecisionWorkflow.tsx",
+        "artifacts/next-phase/week4-workflow/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N13",
+      "title": "证据卡与版本失效显示",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 4,
+      "finish_week": 4,
+      "week_allocations": {
+        "4": 4
+      },
+      "dependencies": [
+        "N12"
+      ],
+      "requirements": [
+        "B01",
+        "T04",
+        "T05",
+        "T08"
+      ],
+      "prior_alignment_tasks": [
+        "A05"
+      ],
+      "highlights": [
+        "L2"
+      ],
+      "acceptance": [
+        "方案卡可追到源表源单元格，显示方法、条件、版本和适用状态。",
+        "微调后父实测不继承，旧报告可重放，输入更新后旧结果明确失效。"
+      ],
+      "planned_artifacts": [
+        "frontend/src/components/CandidateEvidence.tsx",
+        "artifacts/next-phase/evidence-changes/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N14",
+      "title": "研究预测与验证视图",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 3,
+      "start_week": 4,
+      "finish_week": 4,
+      "week_allocations": {
+        "4": 3
+      },
+      "dependencies": [
+        "N13"
+      ],
+      "requirements": [
+        "B01",
+        "T07",
+        "T08"
+      ],
+      "prior_alignment_tasks": [
+        "A09"
+      ],
+      "highlights": [
+        "L2"
+      ],
+      "acceptance": [
+        "分开显示历史实测、各指标自己的离折预测、研究性全量拟合预测与不可用原因。",
+        "展示每项模型误差、样本和来源分组、区间边界；现有独立分折不称共享验证。",
+        "研究预测不代替历史达标判定，不显示未经验证的联合达标概率。"
+      ],
+      "planned_artifacts": [
+        "frontend/src/components/PredictionValidation.tsx",
+        "artifacts/next-phase/week4-model-view/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N15",
+      "title": "可解释的基础补测建议",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 3,
+      "start_week": 5,
+      "finish_week": 5,
+      "week_allocations": {
+        "5": 3
+      },
+      "dependencies": [
+        "N14"
+      ],
+      "requirements": [
+        "B03",
+        "T04",
+        "T07"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [
+        "L3"
+      ],
+      "acceptance": [
+        "输出候选、试验项目、条件待确认项、建议理由及停止条件。",
+        "优先处理影响判断的关键缺项，已知失败不作为有待补齐的可行方案。",
+        "基础规则与研究策略明确区分，不预先宣称节约试验或最优试验设计。"
+      ],
+      "planned_artifacts": [
+        "backend/app/decision/test_planning.py",
+        "frontend/src/components/NextTestCard.tsx"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N16",
+      "title": "上游联动与反馈契约",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 3,
+      "start_week": 5,
+      "finish_week": 5,
+      "week_allocations": {
+        "5": 3
+      },
+      "dependencies": [
+        "N15"
+      ],
+      "requirements": [
+        "B04",
+        "T06",
+        "T09"
+      ],
+      "prior_alignment_tasks": [
+        "A11",
+        "A12"
+      ],
+      "highlights": [
+        "L2",
+        "L3"
+      ],
+      "acceptance": [
+        "本地上游请求携带决策ID、区段和工法，选择结果返回同一决策记录。",
+        "实验室与工程反馈分开定义，演示回流与正式记录隔离。",
+        "真实企业联调、正式新微调试验训练资格修复及受控再训练仍单独追踪。"
+      ],
+      "planned_artifacts": [
+        "scripts/mock_upstream_v2.py",
+        "docs/feedback-contract-v2.json",
+        "artifacts/next-phase/week5-integration/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N17",
+      "title": "五案例同池对照与报告",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 6,
+      "start_week": 5,
+      "finish_week": 5,
+      "week_allocations": {
+        "5": 6
+      },
+      "dependencies": [
+        "N16"
+      ],
+      "requirements": [
+        "B03",
+        "T09"
+      ],
+      "prior_alignment_tasks": [
+        "A10"
+      ],
+      "highlights": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "acceptance": [
+        "五案各含场景、需求来源、冻结候选池、完整方案、预期或适用判断与缺项。",
+        "保留弱B0与强B1，V2与B1使用相同可见信息；需求已正确给定时允许结论相同。",
+        "需求识别、预测误差和推荐验证分开评价，构造案例通过不写成工程准确率。"
+      ],
+      "planned_artifacts": [
+        "scripts/compare_cases_v2.py",
+        "artifacts/next-phase/case-reports/"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N18",
+      "title": "完整选材任务价值记录",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 2,
+      "start_week": 6,
+      "finish_week": 6,
+      "week_allocations": {
+        "6": 2
+      },
+      "dependencies": [
+        "N17"
+      ],
+      "requirements": [
+        "B05"
+      ],
+      "prior_alignment_tasks": [
+        "A13"
+      ],
+      "highlights": [],
+      "acceptance": [
+        "对三项代表任务记录人工、B1与V2的完整用时、操作、遗漏与追溯质量。",
+        "保留学习顺序和实际参与者信息，单人自测不代表行业平均收益。"
+      ],
+      "planned_artifacts": [
+        "artifacts/next-phase/workflow-value.json",
+        "docs/value-evaluation-notes.md"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N19",
+      "title": "界面细节与异常恢复打磨",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 6,
+      "finish_week": 6,
+      "week_allocations": {
+        "6": 4
+      },
+      "dependencies": [
+        "N17"
+      ],
+      "requirements": [
+        "B01",
+        "B04"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "acceptance": [
+        "1440×900与1280×720检查需求、方案、冲突及补测卡，关键字段和按钮可操作。",
+        "核验加载、空结果、未知、错误、并列、失效、重试和重新打开快照等状态。",
+        "主流程可键盘操作，状态同时使用文字，慢响应不覆盖较新输入。"
+      ],
+      "planned_artifacts": [
+        "artifacts/next-phase/ui-review/",
+        "docs/interaction-checklist-v2.md"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N20",
+      "title": "回归离线检查与发布排练",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 6,
+      "finish_week": 6,
+      "week_allocations": {
+        "6": 4
+      },
+      "dependencies": [
+        "N18",
+        "N19"
+      ],
+      "requirements": [
+        "B04"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [],
+      "acceptance": [
+        "运行适用的既有检查及新增关键验收，完成前端构建、接口契约与旧流程回归。",
+        "隔离库完成两次完整流程排练和本地离线运行检查，保存包指纹与复现步骤。",
+        "主流程失败、错误目标、未知当通过、证据错配或旧结果冒充新结果均阻止发布。"
+      ],
+      "planned_artifacts": [
+        "artifacts/next-phase/release-checks/",
+        "artifacts/next-phase/rehearsals/",
+        "docs/release-notes-v02.md"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "N21",
+      "title": "亮点叙事与参赛成果核对",
+      "priority": "core",
+      "status": "planned",
+      "owner": "single_developer",
+      "estimate_hours": 2,
+      "start_week": 6,
+      "finish_week": 6,
+      "week_allocations": {
+        "6": 2
+      },
+      "dependencies": [
+        "N20"
+      ],
+      "requirements": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05"
+      ],
+      "prior_alignment_tasks": [
+        "A14"
+      ],
+      "highlights": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "acceptance": [
+        "五项基本成果逐条挂接可检查证据；三个亮点分别说明机制、演示与验证状态。",
+        "准备3分钟核心与8分钟详细排练脚本，时长是练习安排，不当作官方答辩时限。",
+        "论文或技术报告、界面与实际能力一致；研究负结果与外部待验证项如实保留。"
+      ],
+      "planned_artifacts": [
+        "docs/submission-outline-v2.md",
+        "docs/demo-script-v2.md",
+        "artifacts/next-phase/requirements-acceptance.json"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "EXP01",
+      "title": "统一实验数据与来源分组",
+      "priority": "conditional_research",
+      "status": "planned_conditional",
+      "owner": "single_developer",
+      "estimate_hours": 8,
+      "start_week": 1,
+      "finish_week": 2,
+      "week_allocations": {
+        "1": 5,
+        "2": 3
+      },
+      "dependencies": [
+        "N01",
+        "N02"
+      ],
+      "requirements": [
+        "T07",
+        "X02"
+      ],
+      "prior_alignment_tasks": [
+        "M01"
+      ],
+      "highlights": [
+        "L2"
+      ],
+      "condition": "当周核心验收和必要缓冲已保证，且实际可用时间超过15小时；按依赖顺序开展。",
+      "fallback": "至少有可运行的分组和标签可见性检查；不足时只交付数据资格与限制，不产生性能结论。",
+      "acceptance": [
+        "所有指标共用冻结来源族映射与划分；缺测不造标签，预处理仅拟合训练部分。",
+        "冻结训练、校准、池内查询与评价的可见信息，登记参数、种子和运行预算。"
+      ],
+      "planned_artifacts": [
+        "planning/innovation_validation_plan_v2.json",
+        "scripts/run_innovation_benchmarks.py",
+        "artifacts/next-phase/research/split-manifest.json"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "EXP02",
+      "title": "小样本模型与风险校准对照",
+      "priority": "conditional_research",
+      "status": "planned_conditional",
+      "owner": "single_developer",
+      "estimate_hours": 8,
+      "start_week": 2,
+      "finish_week": 4,
+      "week_allocations": {
+        "2": 2,
+        "3": 5,
+        "4": 1
+      },
+      "dependencies": [
+        "EXP01"
+      ],
+      "requirements": [
+        "T07",
+        "X02",
+        "X03"
+      ],
+      "prior_alignment_tasks": [
+        "M01"
+      ],
+      "highlights": [
+        "L2"
+      ],
+      "condition": "当周核心验收和必要缓冲已保证，且实际可用时间超过15小时；按依赖顺序开展。",
+      "fallback": "8小时内优先保证独立强基线；多任务实现或校准不成立时维持研究状态。",
+      "acceptance": [
+        "均值、近邻、独立模型与一个多任务GP在相同分组与信息条件下比较。",
+        "分开评价预测和区间；不将单指标覆盖或小测试集结果升级为联合工程保证。",
+        "保存负结果；技术实现未完成与有效实验未提升使用不同状态。"
+      ],
+      "planned_artifacts": [
+        "artifacts/next-phase/research/model-comparison.json",
+        "artifacts/next-phase/research/risk-coverage.json"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "EXP03",
+      "title": "隐藏标签与目标补测回放",
+      "priority": "conditional_research",
+      "status": "planned_conditional",
+      "owner": "single_developer",
+      "estimate_hours": 10,
+      "start_week": 4,
+      "finish_week": 6,
+      "week_allocations": {
+        "4": 4,
+        "5": 5,
+        "6": 1
+      },
+      "dependencies": [
+        "EXP02",
+        "N09"
+      ],
+      "requirements": [
+        "T07"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [
+        "L3"
+      ],
+      "condition": "当周核心验收和必要缓冲已保证，且实际可用时间超过15小时；按依赖顺序开展。",
+      "fallback": "概率策略没有可信输入或未优于强基线时，保留基础补测卡和完整回放，不宣称效率提升。",
+      "acceptance": [
+        "训练与候选池按来源族隔离；每轮仅揭示实际查询结果，真值仅由评价器访问。",
+        "比较随机、优先级且失败即停、训练集失败率排序、最大不确定性与决策价值策略。",
+        "记录完成率、查询量、错误证书及预算耗尽；无解、成功、未判定分别统计。",
+        "第6周仅整理结果，研究算法与参数于第5周结束前固定。"
+      ],
+      "planned_artifacts": [
+        "artifacts/next-phase/research/acquisition-traces.json",
+        "artifacts/next-phase/research/query-budget-results.json"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    },
+    {
+      "id": "EXP04",
+      "title": "研究结果复算与展示核对",
+      "priority": "conditional_research",
+      "status": "planned_conditional",
+      "owner": "single_developer",
+      "estimate_hours": 4,
+      "start_week": 6,
+      "finish_week": 6,
+      "week_allocations": {
+        "6": 4
+      },
+      "dependencies": [
+        "EXP03"
+      ],
+      "requirements": [
+        "B03",
+        "B04"
+      ],
+      "prior_alignment_tasks": [],
+      "highlights": [
+        "L3"
+      ],
+      "condition": "当周核心验收和必要缓冲已保证，且实际可用时间超过15小时；按依赖顺序开展。",
+      "fallback": "模型或选择策略没有增益时提交可复核的实际结果，核心产品照常按确定性门槛验收。",
+      "acceptance": [
+        "按冻结输入复算决策序列与统计，核对全部组数、分母、成本假设和来源。",
+        "只把有结果支持的增益写入主叙事，未完成实验不得写成负结果或通过。"
+      ],
+      "planned_artifacts": [
+        "artifacts/next-phase/research/reproduction-receipt.json",
+        "docs/research-results-v2.md"
+      ],
+      "completion_evidence": [],
+      "actual_hours": null
+    }
+  ],
+  "milestones": [
+    {
+      "id": "G1",
+      "week": 1,
+      "title": "三类场景生成带来源的需求卡",
+      "gate_tasks": [
+        "N01",
+        "N02",
+        "N03",
+        "N04"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "G2",
+      "week": 2,
+      "title": "材料方案完整且候选范围可重放",
+      "gate_tasks": [
+        "N05",
+        "N06",
+        "N07"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "G3",
+      "week": 3,
+      "title": "无解诊断和场景差异可解释",
+      "gate_tasks": [
+        "N08",
+        "N09",
+        "N10",
+        "N11"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "G4",
+      "week": 4,
+      "title": "证据适用性进入主操作",
+      "gate_tasks": [
+        "N12",
+        "N13",
+        "N14"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "G5",
+      "week": 5,
+      "title": "五案例和基础验证行动贯通",
+      "gate_tasks": [
+        "N15",
+        "N16",
+        "N17"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "G6",
+      "week": 6,
+      "title": "成果证据与运行包可复核",
+      "gate_tasks": [
+        "N18",
+        "N19",
+        "N20",
+        "N21"
+      ],
+      "status": "planned"
+    }
+  ],
+  "prior_alignment_crosswalk": {
+    "A01": {
+      "scheduled": [
+        "N02"
+      ]
+    },
+    "A02": {
+      "scheduled": [
+        "N03"
+      ]
+    },
+    "A03": {
+      "scheduled": [
+        "N04"
+      ]
+    },
+    "A04": {
+      "scheduled": [
+        "N05"
+      ]
+    },
+    "A05": {
+      "scheduled": [
+        "N05",
+        "N13"
+      ]
+    },
+    "A06": {
+      "scheduled": [
+        "N06"
+      ]
+    },
+    "A07": {
+      "scheduled": [
+        "N07"
+      ]
+    },
+    "A08": {
+      "scheduled": [
+        "N08",
+        "N12"
+      ]
+    },
+    "A09": {
+      "scheduled": [
+        "N14"
+      ]
+    },
+    "A10": {
+      "scheduled": [
+        "N17"
+      ]
+    },
+    "A11": {
+      "scheduled": [
+        "N16"
+      ]
+    },
+    "A12": {
+      "scheduled": [
+        "N16"
+      ],
+      "deferred": [
+        "正式新微调试验训练资格修复",
+        "受控再训练与模型发布"
+      ]
+    },
+    "A13": {
+      "scheduled": [
+        "N18"
+      ]
+    },
+    "A14": {
+      "scheduled": [
+        "N21"
+      ]
+    },
+    "M01": {
+      "conditional": [
+        "EXP01",
+        "EXP02"
+      ]
+    },
+    "M02": {
+      "deferred": [
+        "组成质量基准、变量范围、可靠代理和外部评价路径明确后的局部配方探索"
+      ]
+    }
+  },
+  "supersedes_future_schedule": "planning/v02_alignment_backlog.json",
+  "historical_acceptance_records_preserved": true,
+  "requirement_coverage": {
+    "B01": {
+      "task_ids": [
+        "N02",
+        "N04",
+        "N05",
+        "N09",
+        "N10",
+        "N12",
+        "N13",
+        "N14",
+        "N19",
+        "N21"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "B02": {
+      "task_ids": [
+        "N03",
+        "N05",
+        "N21"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "B03": {
+      "task_ids": [
+        "N06",
+        "N09",
+        "N11",
+        "N15",
+        "N17",
+        "N21",
+        "EXP04"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "B04": {
+      "task_ids": [
+        "N01",
+        "N02",
+        "N11",
+        "N16",
+        "N19",
+        "N20",
+        "N21",
+        "EXP04"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "B05": {
+      "task_ids": [
+        "N18",
+        "N21"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T01": {
+      "task_ids": [
+        "N02",
+        "N03",
+        "N04",
+        "N10"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T02": {
+      "task_ids": [
+        "N03",
+        "N04",
+        "N07",
+        "N08"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T03": {
+      "task_ids": [
+        "N05",
+        "N06"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T04": {
+      "task_ids": [
+        "N05",
+        "N06",
+        "N13",
+        "N15"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T05": {
+      "task_ids": [
+        "N07",
+        "N08",
+        "N12",
+        "N13"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T06": {
+      "task_ids": [
+        "N16"
+      ],
+      "scope_note": "本期接口与反馈契约；现场持续学习及新微调正式训练资格不计已完成。"
+    },
+    "T07": {
+      "task_ids": [
+        "N14",
+        "N15",
+        "EXP01",
+        "EXP02",
+        "EXP03"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T08": {
+      "task_ids": [
+        "N08",
+        "N09",
+        "N10",
+        "N13",
+        "N14"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T09": {
+      "task_ids": [
+        "N04",
+        "N12",
+        "N16",
+        "N17"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "T10": {
+      "task_ids": [
+        "N02",
+        "N07"
+      ],
+      "scope_note": "按本期原型范围验收，完成状态由对应证据决定。"
+    },
+    "X01": {
+      "task_ids": [],
+      "scope_note": "条件不明，阶段外。"
+    },
+    "X02": {
+      "task_ids": [
+        "EXP01",
+        "EXP02"
+      ],
+      "scope_note": "条件研究。"
+    },
+    "X03": {
+      "task_ids": [
+        "EXP02"
+      ],
+      "scope_note": "研究区间展示与条件验证。"
+    },
+    "X04": {
+      "task_ids": [],
+      "scope_note": "保留评估字段与边界，真实核算阶段外。"
+    },
+    "X05": {
+      "task_ids": [],
+      "scope_note": "补测计划不等于独立材料试验；真实试验阶段外。"
+    },
+    "X06": {
+      "task_ids": [],
+      "scope_note": "本地模拟不等于企业真实联调。"
+    },
+    "X07": {
+      "task_ids": [],
+      "scope_note": "现场持续学习和受控再训练阶段外。"
+    }
+  },
+  "source_integrity": {
+    "再生沥青混合料实验数据表.xlsx": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+    "planning/development_backlog_v1.json": "ea5cf086ac006d18a97e54d30bb555f18f7b3e80077aaaff29e3ad930584a5b4",
+    "planning/plan_manifest.json": "36390c474924139748bc16e548224c92ba5cb4b37e4f94d1de8162d658be0492",
+    "planning/v02_alignment_backlog.json": "bfbdcf817bd7f2ba43cb97f2aef2663ca97bc9f7334d207ced27783dabe13c43",
+    "design/competition_requirements_v2.json": "b7d59bfc43aa88562a206dc3e9237fb1ba5aae5ac749270aae2bb3c503ebb6d5",
+    "design/alignment_design_manifest_v2.json": "6c38e1a2b8a26d7cd65befdfd52d2b0f7b4a7cef06f225ea7add36e8daa24d68",
+    "artifacts/release-final.json": "ec961756456ce2df1af7ce94713ac4817804bb24232bcc01991bccc9275b1967",
+    "configs/cases.json": "4195f25048e54ace2294e7ecbdbc22d758f103fb185861a272b6fcd45bf31425",
+    "artifacts/models/model_cards.json": "757b94944ce31cffa16914cc16e371c6b13d75ead3dddf32398098e933dfb7a0"
+  },
+  "execution": {
+    "completed_core_tasks": 0,
+    "completed_research_tasks": 0,
+    "actual_hours": null
+  }
+}

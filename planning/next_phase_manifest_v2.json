@@ -1,0 +1,21 @@
+{
+  "title": "数智选材下一阶段亮点开发与验证计划",
+  "planning_date": "2026-10-19",
+  "status": "plan_ready_implementation_not_started",
+  "parent_page_id": "page_2bce917000248191a4e5e29beb90620e",
+  "idempotency_key": "2d961372-c177-4042-be39-a8783bb8e21b",
+  "local_document": "C:\\Users\\Lenovo\\Desktop\\智慧城市\\planning\\next_phase_plan_v2.md",
+  "document_sha256": "7d1fcf24ce88fad5f73515c6e87e5739b94c3f1ca6d6b63f6566e871ff7d0d49",
+  "page_id": "page_dfa92c4831508191a37ebd5e1e3d0169",
+  "page_url": "https://chatgpt.com/space/page_dfa92c4831508191a37ebd5e1e3d0169",
+  "page_synced_document_sha256": "7d1fcf24ce88fad5f73515c6e87e5739b94c3f1ca6d6b63f6566e871ff7d0d49",
+  "page_layout_preview": "not_inspected",
+  "page_blocks": 63,
+  "backlog_file": "planning/next_phase_backlog_v2.json",
+  "experiment_protocol": "planning/innovation_validation_plan_v2.json",
+  "core_tasks": 21,
+  "conditional_research_tasks": 4,
+  "core_hours": 72,
+  "buffer_hours": 18,
+  "conditional_research_hours": 30
+}
