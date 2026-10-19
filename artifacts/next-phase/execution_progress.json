@@ -538,7 +538,8 @@
       ],
       "notes": [
         "按AI代理自测口径记录软件流程，真人用时与行业效果保持未测。",
-        "完成三任务九流程AI软件代理自测；真人参与数为0、真人用时为空，不宣称人工或行业节时。与原计划的真人测时口径差异已明确披露。"
+        "完成三任务九流程AI软件代理自测；真人参与数为0、真人用时为空，不宣称人工或行业节时。与原计划的真人测时口径差异已明确披露。",
+        "用户明确确认：本轮先完成 AI 自测，真人操作时间及行业效率收益继续保留为待验证；既有软件验证结果与发布包不变。"
       ],
       "wall_elapsed_seconds": 132.452
     },
@@ -682,7 +683,7 @@
       "notes": []
     }
   },
-  "updated_at": "2026-10-19T13:41:41.463757+08:00",
+  "updated_at": "2026-10-19T14:02:25.031859+08:00",
   "summary": {
     "core_completed": 21,
     "core_total": 21,
@@ -691,5 +692,11 @@
   },
   "core_completed_at": "2026-10-19T13:41:41.463757+08:00",
   "research_disposition": "deferred_by_user_capacity_choice",
-  "human_validation": "N18 completed as disclosed AI proxy; human timing and industry benefit remain unmeasured."
+  "human_validation": "N18 completed as disclosed AI proxy; human timing and industry benefit remain unmeasured.",
+  "human_validation_scope_confirmation": {
+    "path": "artifacts/next-phase/human-validation-scope-confirmation.json",
+    "sha256": "7998b7d8217644d9f261b2cff708032dc91fc86f91726b39e5c6874fae596f76",
+    "recorded_at": "2026-10-19T14:02:25.031859+08:00",
+    "source": "direct_user_reply"
+  }
 }

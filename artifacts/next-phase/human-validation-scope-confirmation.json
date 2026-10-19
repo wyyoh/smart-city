@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-19T14:02:25.031859+08:00",
+  "source": "direct_user_reply",
+  "task_id": "N18",
+  "question": "计划中的完整任务用时验证需要记录实际操作人。本轮是否先完成 AI 操作自测，并将真人操作时间、行业效率收益保留为待验证？",
+  "user_choice": "先完成 AI 自测，真人收益待验证（推荐）",
+  "accepted_scope": "AI self-test using disclosed software workflow proxies",
+  "human_participants": 0,
+  "human_effective_seconds": null,
+  "human_operation_count": null,
+  "human_timing_status": "pending_validation",
+  "industry_efficiency_benefit_status": "pending_validation",
+  "existing_results_changed": false,
+  "released_package_changed": false,
+  "evidence_reference": "artifacts/next-phase/workflow-value.json"
+}
