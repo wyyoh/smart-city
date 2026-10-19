@@ -1,0 +1,241 @@
+{
+  "status": "analysis_only_v2_features_not_implemented",
+  "created_at": "2026-10-19T04:21:55.970870+00:00",
+  "source_sha256": {
+    "design/competition_alignment_evidence_v2.json": "c1a30c13377e4de885a4a0f1140d1da3f57539d2c261cf52652c6670f7d5a5f3",
+    "configs/cases.json": "4195f25048e54ace2294e7ecbdbc22d758f103fb185861a272b6fcd45bf31425",
+    "artifacts/models/model_cards.json": "757b94944ce31cffa16914cc16e371c6b13d75ead3dddf32398098e933dfb7a0"
+  },
+  "frozen_diagnostic_pool_sha256": "429e9d8b39cf0b0cecbe2df03a890632630762d487075d85b193c8dff59acd95",
+  "case": "C5",
+  "targets": {
+    "DS": 8000,
+    "strain": 2500,
+    "TSR": 90,
+    "residual": 90
+  },
+  "operator": "strictly_greater_than",
+  "candidate_count": 35,
+  "single_requirement_candidate_counts": {
+    "DS": 2,
+    "strain": 2,
+    "TSR": 4,
+    "residual": 9
+  },
+  "all_requirements_candidate_count": 0,
+  "requirement_subsets_checked": 15,
+  "minimal_infeasible_requirement_sets": [
+    {
+      "requirements": [
+        "DS",
+        "strain"
+      ],
+      "surviving_candidates": [],
+      "one_requirement_removed": [
+        {
+          "remaining_requirements": [
+            "strain"
+          ],
+          "candidate_ids": [
+            "mix_6f88790949802a6b64ea",
+            "mix_ec30ff644f3111c570bc"
+          ]
+        },
+        {
+          "remaining_requirements": [
+            "DS"
+          ],
+          "candidate_ids": [
+            "mix_8adbae42f826e07e8611",
+            "mix_0e51eff6e2cef2806f57"
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": [
+        "DS",
+        "TSR"
+      ],
+      "surviving_candidates": [],
+      "one_requirement_removed": [
+        {
+          "remaining_requirements": [
+            "TSR"
+          ],
+          "candidate_ids": [
+            "mix_5a0eae6db3cb0a2f9a1f",
+            "mix_b918fd825572e8713e23",
+            "mix_07e9acab4f8d5c4c21d0",
+            "mix_c39c8b2c0df3074a52ad"
+          ]
+        },
+        {
+          "remaining_requirements": [
+            "DS"
+          ],
+          "candidate_ids": [
+            "mix_8adbae42f826e07e8611",
+            "mix_0e51eff6e2cef2806f57"
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": [
+        "DS",
+        "residual"
+      ],
+      "surviving_candidates": [],
+      "one_requirement_removed": [
+        {
+          "remaining_requirements": [
+            "residual"
+          ],
+          "candidate_ids": [
+            "mix_2a28d8524d8d84e6f35f",
+            "mix_c09286e2a7be7cb14638",
+            "mix_7a55a307568e18697636",
+            "mix_08857a35c546c16fea3d",
+            "mix_07e9acab4f8d5c4c21d0",
+            "mix_c39c8b2c0df3074a52ad",
+            "mix_59cb42163ce4719d7809",
+            "mix_6f88790949802a6b64ea",
+            "mix_15ad6894230968c7675e"
+          ]
+        },
+        {
+          "remaining_requirements": [
+            "DS"
+          ],
+          "candidate_ids": [
+            "mix_8adbae42f826e07e8611",
+            "mix_0e51eff6e2cef2806f57"
+          ]
+        }
+      ]
+    },
+    {
+      "requirements": [
+        "strain",
+        "TSR"
+      ],
+      "surviving_candidates": [],
+      "one_requirement_removed": [
+        {
+          "remaining_requirements": [
+            "TSR"
+          ],
+          "candidate_ids": [
+            "mix_5a0eae6db3cb0a2f9a1f",
+            "mix_b918fd825572e8713e23",
+            "mix_07e9acab4f8d5c4c21d0",
+            "mix_c39c8b2c0df3074a52ad"
+          ]
+        },
+        {
+          "remaining_requirements": [
+            "strain"
+          ],
+          "candidate_ids": [
+            "mix_6f88790949802a6b64ea",
+            "mix_ec30ff644f3111c570bc"
+          ]
+        }
+      ]
+    }
+  ],
+  "within_pool_correlations": [
+    {
+      "metrics": [
+        "DS",
+        "strain"
+      ],
+      "spearman_rho": 0.09692555524854608
+    },
+    {
+      "metrics": [
+        "DS",
+        "TSR"
+      ],
+      "spearman_rho": -0.0319327731092437
+    },
+    {
+      "metrics": [
+        "DS",
+        "residual"
+      ],
+      "spearman_rho": 0.1392156862745098
+    },
+    {
+      "metrics": [
+        "strain",
+        "TSR"
+      ],
+      "spearman_rho": -0.17914419821226946
+    },
+    {
+      "metrics": [
+        "strain",
+        "residual"
+      ],
+      "spearman_rho": 0.5148819958000801
+    },
+    {
+      "metrics": [
+        "TSR",
+        "residual"
+      ],
+      "spearman_rho": 0.2028011204481793
+    }
+  ],
+  "common_model_eligible_recipe_ids": 59,
+  "diagnostic_pool_ids_common_model_eligible": 35,
+  "model_evidence": [
+    {
+      "metric": "DS",
+      "n": 85,
+      "groups": 37,
+      "selected_outer_mae": 1594.1174337763032,
+      "dummy_outer_mae": 1580.6772049346268,
+      "outer_selection_beats_dummy_mae": false,
+      "deployment_status": "research_only"
+    },
+    {
+      "metric": "strain",
+      "n": 72,
+      "groups": 36,
+      "selected_outer_mae": 328.64151036412306,
+      "dummy_outer_mae": 307.06383047395724,
+      "outer_selection_beats_dummy_mae": false,
+      "deployment_status": "research_only"
+    },
+    {
+      "metric": "TSR",
+      "n": 81,
+      "groups": 35,
+      "selected_outer_mae": 4.073376616093284,
+      "dummy_outer_mae": 3.5935997934967854,
+      "outer_selection_beats_dummy_mae": false,
+      "deployment_status": "research_only"
+    },
+    {
+      "metric": "residual",
+      "n": 79,
+      "groups": 36,
+      "selected_outer_mae": 3.291386699141054,
+      "dummy_outer_mae": 2.8623487921833717,
+      "outer_selection_beats_dummy_mae": false,
+      "deployment_status": "research_only"
+    }
+  ],
+  "limitations": [
+    "Conflict results apply only to four declared numeric thresholds in the frozen pool.",
+    "These thresholds describe a constructed demo, not approved project requirements.",
+    "Test conditions, ingredient mass bases, and engineering applicability remain unverified.",
+    "Operational recipe keys and source-profile groups are not confirmed independent physical batches.",
+    "Correlations are descriptive, without independence-based significance or causal claims.",
+    "No automatic target relaxation, new formulation validation, or active-learning gain is demonstrated.",
+    "Common OOF IDs establish data eligibility only; existing per-metric folds are not a shared multitask evaluation."
+  ]
+}
