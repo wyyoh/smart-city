@@ -70,13 +70,15 @@
       "title": "数据与技术交接",
       "requirement_paraphrase": "字段、算法或规则、模块与数据需求；鼓励代码模型接口",
       "status": "prototype",
-      "status_label": "数据契约与交接可复用",
-      "delivered_scope": "代码、规则、字段、接口和运行包已提供；新主机需安装依赖。",
+      "status_label": "接口与研究资料可交接",
+      "delivered_scope": "历史接口与研究API、规则、字段及运行说明已提供；新主机需安装依赖并保留冻结研究输入库。",
       "evidence_ids": [
         "ev_36d76ad6ec41cd",
         "ev_677eecff64930b",
         "ev_b335630551682c",
-        "ev_a1c91f302006f5"
+        "ev_a1c91f302006f5",
+        "ev_833da2158d1566",
+        "ev_25c396a634cbe5"
       ]
     },
     {
@@ -142,12 +144,14 @@
       "title": "目标到材料方案",
       "requirement_paraphrase": "品种、改性剂、级配、助剂及性能预期",
       "status": "partial",
-      "status_label": "历史材料检索与微调",
-      "delivered_scope": "支持有限历史目录推荐、完整材料字段和微调失效；自动新配方优化未启用。",
+      "status_label": "历史检索与未试验配方研究",
+      "delivered_scope": "支持历史目录、微调失效及1098个待试验假设的检索和组分对比；可靠新配方性能提升仍待独立试验。",
       "evidence_ids": [
         "ev_59e5a2129d5df0",
         "ev_fbf75ea537ec49",
-        "ev_7569115faa2c19"
+        "ev_7569115faa2c19",
+        "ev_50a042b2b65bb5",
+        "ev_c8c472dc58fc14"
       ]
     },
     {
@@ -185,11 +189,13 @@
       "title": "多性能和小样本路线",
       "requirement_paraphrase": "组成及环境输入，多性能预测、小样本策略和解释",
       "status": "research_only",
-      "status_label": "独立模型研究已有结果",
-      "delivered_scope": "现有四项独立模型外层MAE均未优于均值基线；多性能协同预测与环境泛化尚未验证。",
+      "status_label": "多性能计算实验已有结果",
+      "delivered_scope": "独立模型与多任务方法均有历史分组实验；新回退规则仍有两项退步，尚不能证明四项稳定提升，未替换正式模型。",
       "evidence_ids": [
         "ev_90ba3c9d04870d",
-        "ev_5ca965c4390858"
+        "ev_5ca965c4390858",
+        "ev_6ebd65c29f76a5",
+        "ev_5dfb93ea0f9b5c"
       ]
     },
     {
@@ -240,11 +246,13 @@
       "source_page": 4,
       "title": "多目标配方优化",
       "requirement_paraphrase": "有组成与模型依据的配方变量优化",
-      "status": "deferred",
-      "status_label": "自动配方优化延后",
-      "delivered_scope": "RAP质量基准和可靠代理尚不足，自动优化关闭。",
+      "status": "research_only",
+      "status_label": "配方假设与试验选点研究",
+      "delivered_scope": "731个假设位于既定观测支持范围内；支持按设计差异安排试验。RAP质量基准待确认，工程自动优化仍关闭。",
       "evidence_ids": [
-        "ev_7569115faa2c19"
+        "ev_7569115faa2c19",
+        "ev_c8c472dc58fc14",
+        "ev_50a042b2b65bb5"
       ]
     },
     {
@@ -253,11 +261,13 @@
       "source_page": 4,
       "title": "多性能协同预测",
       "requirement_paraphrase": "任务间共享信息并公平验证",
-      "status": "deferred",
-      "status_label": "协同预测研究延后",
-      "delivered_scope": "四个独立模型不作为多任务协同预测成果。",
+      "status": "research_only",
+      "status_label": "协同预测完成计算实验",
+      "delivered_scope": "降秩多任务等方法已做历史分组实验；四项可靠提升与外部泛化尚未证实，不将研究预测用于工程放行。",
       "evidence_ids": [
-        "ev_90ba3c9d04870d"
+        "ev_90ba3c9d04870d",
+        "ev_12a2ee7903565a",
+        "ev_6ebd65c29f76a5"
       ]
     },
     {
@@ -293,10 +303,12 @@
       "title": "实验室性能验证",
       "requirement_paraphrase": "真实材料独立试验",
       "status": "pending_external",
-      "status_label": "独立材料试验待开展",
-      "delivered_scope": "历史工作簿记录和软件回放不作为新增独立试验。",
+      "status_label": "送检方案已备 独立试验待开展",
+      "delivered_scope": "已备五配方送检包与可保存的试验安排；没有实验室，新增独立材料试验为0，方法、试件数和计量口径待确认。",
       "evidence_ids": [
-        "ev_67d3324771b86e"
+        "ev_67d3324771b86e",
+        "ev_138dd966658e86",
+        "ev_25c396a634cbe5"
       ]
     },
     {
@@ -403,7 +415,7 @@
       "id": "ev_b335630551682c",
       "path": "README.md",
       "label": "README.md",
-      "sha256": "bc4cc66096d9fdc25e31e24bb9c53ff00b7506309baaffd2dcdbae13d46e8737"
+      "sha256": "8a7e605c4b2fc0b0f516f0aa21ff54f3ce9b8c3c65978f44467e88fef4cb0d65"
     },
     "ev_a1c91f302006f5": {
       "id": "ev_a1c91f302006f5",
@@ -518,6 +530,54 @@
       "path": "docs/enterprise-questions.md",
       "label": "enterprise-questions.md",
       "sha256": "403f2e34677ab91e032790aa41d20b5c88371070c6350b8fb58da238d5ecb0ac"
+    },
+    "ev_833da2158d1566": {
+      "id": "ev_833da2158d1566",
+      "path": "docs/api-research-v4.openapi.json",
+      "label": "api-research-v4.openapi.json",
+      "sha256": "8368c3c1132667717fe056e78382a47b74da6471a718b593a66ff5dac1c72390"
+    },
+    "ev_25c396a634cbe5": {
+      "id": "ev_25c396a634cbe5",
+      "path": "docs/research-workbench-v5.md",
+      "label": "research-workbench-v5.md",
+      "sha256": "11aec72010297d532f22db9448f42cf7b9c174d5b2b9f81c85e6f1c274f331d1"
+    },
+    "ev_50a042b2b65bb5": {
+      "id": "ev_50a042b2b65bb5",
+      "path": "backend/app/research_workbench/service.py",
+      "label": "service.py",
+      "sha256": "c7a6ae84cab9f1eb6392e240a9328c24e9f44853bb48a6e5b70a628ff42736a1"
+    },
+    "ev_c8c472dc58fc14": {
+      "id": "ev_c8c472dc58fc14",
+      "path": "artifacts/research-v04/formulation-search.json",
+      "label": "formulation-search.json",
+      "sha256": "4fbf4bfcf7018abdfee75a0c1a8618731063151f2ae83c02f218aa85e5ece9f3"
+    },
+    "ev_6ebd65c29f76a5": {
+      "id": "ev_6ebd65c29f76a5",
+      "path": "artifacts/research-workbench/head-fallback.json",
+      "label": "head-fallback.json",
+      "sha256": "706dbe75a12eb428e94c8ba7462a4d139461bf16c3b8bc4ff1084a2ec8aa301b"
+    },
+    "ev_5dfb93ea0f9b5c": {
+      "id": "ev_5dfb93ea0f9b5c",
+      "path": "artifacts/research-workbench/study-verification.json",
+      "label": "study-verification.json",
+      "sha256": "53f4aaf2b88e732e570823f4f4bf16a6c271386174ca6d3e32b17e0454d60c8a"
+    },
+    "ev_12a2ee7903565a": {
+      "id": "ev_12a2ee7903565a",
+      "path": "artifacts/research-v04/advanced.json",
+      "label": "advanced.json",
+      "sha256": "47317d7e06698429dd7ebfbaaf47dc1836636e05985fb4881053403d3282fa46"
+    },
+    "ev_138dd966658e86": {
+      "id": "ev_138dd966658e86",
+      "path": "artifacts/research-v04/laboratory-handoff.zip",
+      "label": "laboratory-handoff.zip",
+      "sha256": "2a89048dad08b97104364ad732fb1885d341efe1a5e84b09e5d315c9ca6c7ebb"
     }
   },
   "sources": [
@@ -629,7 +689,7 @@
     },
     {
       "question": "AI模型效果怎样？",
-      "answer": "四项现有模型外层MAE都未优于均值基线，保留研究展示。当前硬约束结论由记录证据与规则产生，预测不替代实测。",
+      "answer": "正式独立模型仍保留研究状态。已开展多任务与集成实验；本轮固定小模型集成的弯拉应变MAE在十次分组平均下降4.51%，但没有证明四项都可靠改善。新逐指标回退仍有退步，预测不替代实测。",
       "requirement_ids": [
         "T07",
         "X02",
@@ -638,7 +698,7 @@
     },
     {
       "question": "能设计任意新配方吗？",
-      "answer": "支持历史目录选材与创建待试验微调版本；新版本不继承父实测。RAP质量基准及可靠代理不足，自动新配方优化延后。",
+      "answer": "提供1098个待试验计算假设及组分改动对比，可保存小批配方试验安排。它们没有新增实测，不能继承父配方结论；任意新配方可靠优化仍受质量基准和验证证据限制。",
       "requirement_ids": [
         "T04",
         "X01"
@@ -672,5 +732,35 @@
   ],
   "human_participants": 0,
   "actual_human_hours": null,
-  "conditional_research": "deferred"
+  "conditional_research": "deferred",
+  "current_document_updates": {
+    "updated_at": "2026-10-19T10:18:38.411552+00:00",
+    "scope": "v0.4运行说明与配方研究入口；历史工程验证状态沿用原登记",
+    "changes": [
+      {
+        "evidence_id": "ev_b335630551682c",
+        "path": "README.md",
+        "previous_sha256": "bc4cc66096d9fdc25e31e24bb9c53ff00b7506309baaffd2dcdbae13d46e8737",
+        "current_sha256": "8a7e605c4b2fc0b0f516f0aa21ff54f3ce9b8c3c65978f44467e88fef4cb0d65"
+      }
+    ],
+    "previous_registry": "artifacts/research-workbench/previous-review-evidence-v3.json",
+    "previous_registry_sha256": "83b80c299767ebe7cd19ffb802cc756ac1496a21c1c6199a39c8ee237153b4e3"
+  },
+  "research_workbench_update": {
+    "updated_at": "2026-10-19T10:22:55.257597+00:00",
+    "application_version": "0.4.0",
+    "requirement_ids": [
+      "B04",
+      "T04",
+      "T07",
+      "X01",
+      "X02",
+      "X05"
+    ],
+    "independent_material_tests": 0,
+    "production_model_promoted": false,
+    "previous_registry": "artifacts/research-workbench/previous-review-evidence-v3.json",
+    "scope": "更新当前进度与证据；历史冻结研究文件和旧交付包保留原样。"
+  }
 }

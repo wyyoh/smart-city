@@ -1,0 +1,237 @@
+{
+  "created_at": "2026-10-19T10:23:48.807461+00:00",
+  "status": "passed",
+  "prior_research_protection": {
+    "prior_completion_sha256": "eb98e8c050074d4986c27bfff56b7ae588f23570c7918e06c8363ab9516544b6",
+    "workbook_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "legacy_cards_sha256": "757b94944ce31cffa16914cc16e371c6b13d75ead3dddf32398098e933dfb7a0"
+  },
+  "protected_legacy_files": {
+    "artifacts/models/model_cards.json": true,
+    "artifacts/next-phase/baseline/checks.json": true,
+    "artifacts/next-phase/case-reports/C1-snapshot.json.gz": true,
+    "artifacts/next-phase/case-reports/C1.html": true,
+    "artifacts/next-phase/case-reports/C1.json": true,
+    "artifacts/next-phase/case-reports/C2-snapshot.json.gz": true,
+    "artifacts/next-phase/case-reports/C2.html": true,
+    "artifacts/next-phase/case-reports/C2.json": true,
+    "artifacts/next-phase/case-reports/C3-snapshot.json.gz": true,
+    "artifacts/next-phase/case-reports/C3.html": true,
+    "artifacts/next-phase/case-reports/C3.json": true,
+    "artifacts/next-phase/case-reports/C4-snapshot.json.gz": true,
+    "artifacts/next-phase/case-reports/C4.html": true,
+    "artifacts/next-phase/case-reports/C4.json": true,
+    "artifacts/next-phase/case-reports/C5-complete-numeric-diagnostic.html": true,
+    "artifacts/next-phase/case-reports/C5-complete-numeric-diagnostic.json": true,
+    "artifacts/next-phase/case-reports/C5-snapshot.json.gz": true,
+    "artifacts/next-phase/case-reports/C5.html": true,
+    "artifacts/next-phase/case-reports/C5.json": true,
+    "artifacts/next-phase/case-reports/checks.json": true,
+    "artifacts/next-phase/case-reports/summary.json": true,
+    "artifacts/next-phase/conflict-certificates/C5.json": true,
+    "artifacts/next-phase/constraint-checks.json": true,
+    "artifacts/next-phase/contracts-checks.json": true,
+    "artifacts/next-phase/core-milestone-junit.xml": true,
+    "artifacts/next-phase/eligibility-checks.json": true,
+    "artifacts/next-phase/evidence-changes/checks.json": true,
+    "artifacts/next-phase/evidence-changes/source-row.jpg": true,
+    "artifacts/next-phase/execution_progress.json": true,
+    "artifacts/next-phase/final-handoff.json": true,
+    "artifacts/next-phase/final-workbench.jpg": true,
+    "artifacts/next-phase/human-validation-scope-confirmation.json": true,
+    "artifacts/next-phase/material-checks.json": true,
+    "artifacts/next-phase/page-progress-receipt.json": true,
+    "artifacts/next-phase/pool-checks.json": true,
+    "artifacts/next-phase/rehearsals/rehearsal-1/initial-report.html": true,
+    "artifacts/next-phase/rehearsals/rehearsal-1/receipt.json": true,
+    "artifacts/next-phase/rehearsals/rehearsal-2/initial-report.html": true,
+    "artifacts/next-phase/rehearsals/rehearsal-2/receipt.json": true,
+    "artifacts/next-phase/release-checks/candidate-bundle.json": true,
+    "artifacts/next-phase/release-checks/checks.json": true,
+    "artifacts/next-phase/release-checks/final-bundle.json": true,
+    "artifacts/next-phase/release-checks/package-verification.json": true,
+    "artifacts/next-phase/release-checks/package-verifications/asphalt-workbench-0.2.0-20261019T054226.json": true,
+    "artifacts/next-phase/release-checks/pytest.xml": true,
+    "artifacts/next-phase/release-checks/source-integrity.json": true,
+    "artifacts/next-phase/requirements-acceptance.json": true,
+    "artifacts/next-phase/scene-rule-checks.json": true,
+    "artifacts/next-phase/test-plan-checks.json": true,
+    "artifacts/next-phase/ui-review/1280-conflict.jpg": true,
+    "artifacts/next-phase/ui-review/1280-demand.jpg": true,
+    "artifacts/next-phase/ui-review/1280-models.jpg": true,
+    "artifacts/next-phase/ui-review/1280-next-test.jpg": true,
+    "artifacts/next-phase/ui-review/1280-scheme.jpg": true,
+    "artifacts/next-phase/ui-review/1440-conflict.jpg": true,
+    "artifacts/next-phase/ui-review/1440-demand.jpg": true,
+    "artifacts/next-phase/ui-review/1440-formal-gap.jpg": true,
+    "artifacts/next-phase/ui-review/1440-next-test.jpg": true,
+    "artifacts/next-phase/ui-review/1440-scheme.jpg": true,
+    "artifacts/next-phase/ui-review/review.json": true,
+    "artifacts/next-phase/week1-demand-flow/checks.json": true,
+    "artifacts/next-phase/week1-demand-flow/confirmed-override.jpg": true,
+    "artifacts/next-phase/week1-demand-flow/water-confirmed.jpg": true,
+    "artifacts/next-phase/week3-acceptance.json": true,
+    "artifacts/next-phase/week3-negative-junit.xml": true,
+    "artifacts/next-phase/week3-what-if/differences.json": true,
+    "artifacts/next-phase/week4-model-view/checks.json": true,
+    "artifacts/next-phase/week4-workflow/candidate-comparison.jpg": true,
+    "artifacts/next-phase/week4-workflow/checks.json": true,
+    "artifacts/next-phase/week4-workflow/variant-created.jpg": true,
+    "artifacts/next-phase/week5-integration/local-mock.json": true,
+    "artifacts/next-phase/workflow-value.json": true,
+    "artifacts/release-final.json": true,
+    "docs/demo-script-v2.md": true,
+    "docs/release-notes-v02.md": true,
+    "docs/submission-outline-v2.md": true,
+    "docs/technical-report-v02.md": true,
+    "planning/development_backlog_v1.json": true,
+    "planning/next_phase_backlog_v2.json": true,
+    "planning/review_phase_plan_v3.json": true,
+    "planning/v02_alignment_backlog.json": true,
+    "requirements.lock.txt": true,
+    "再生沥青混合料实验数据表.xlsx": true,
+    "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf": true
+  },
+  "original_tables": {
+    "dataset": {
+      "expected": {
+        "rows": 3,
+        "sha256": "ff6baa795c198aa9765d9c54437ab303b17274629ddff2adf55cf150c0e32553"
+      },
+      "actual": {
+        "rows": 3,
+        "sha256": "ff6baa795c198aa9765d9c54437ab303b17274629ddff2adf55cf150c0e32553"
+      },
+      "unchanged": true
+    },
+    "recipe": {
+      "expected": {
+        "rows": 540,
+        "sha256": "68c36143171b3476e5d90f8b21cab7d4fcdc6cc7cff6f1179897be365d76e8a6"
+      },
+      "actual": {
+        "rows": 540,
+        "sha256": "68c36143171b3476e5d90f8b21cab7d4fcdc6cc7cff6f1179897be365d76e8a6"
+      },
+      "unchanged": true
+    },
+    "measurement": {
+      "expected": {
+        "rows": 2409,
+        "sha256": "be46a0a9a631c2679b75eb2fb1bdc37c71b95fc753f86212bd765719b4816bf9"
+      },
+      "actual": {
+        "rows": 2409,
+        "sha256": "be46a0a9a631c2679b75eb2fb1bdc37c71b95fc753f86212bd765719b4816bf9"
+      },
+      "unchanged": true
+    },
+    "sourcerow": {
+      "expected": {
+        "rows": 10329,
+        "sha256": "42e73b9078dd65e0035d7f58d97b93223eb924e4e6594e60223a3d00dcc49e9d"
+      },
+      "actual": {
+        "rows": 10329,
+        "sha256": "42e73b9078dd65e0035d7f58d97b93223eb924e4e6594e60223a3d00dcc49e9d"
+      },
+      "unchanged": true
+    },
+    "recommendation": {
+      "expected": {
+        "rows": 11,
+        "sha256": "fce5c96780490f13c9297f38aaf9392f70b237b138dac1149ba19af87a516df7"
+      },
+      "actual": {
+        "rows": 11,
+        "sha256": "fce5c96780490f13c9297f38aaf9392f70b237b138dac1149ba19af87a516df7"
+      },
+      "unchanged": true
+    },
+    "observation": {
+      "expected": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "actual": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "unchanged": true
+    }
+  },
+  "historical_releases": {
+    "artifacts/release/asphalt-workbench-0.2.0-20261019T054226.zip": true,
+    "artifacts/release/asphalt-workbench-0.3.0-20261019T073332.zip": true
+  },
+  "registered_evidence": {
+    "candidate_pool": {
+      "path": "artifacts/research-v04/formulation-search.json",
+      "sha256": "4fbf4bfcf7018abdfee75a0c1a8618731063151f2ae83c02f218aa85e5ece9f3",
+      "matches": true
+    },
+    "row_manifest": {
+      "path": "artifacts/research-v04/row-manifest.json",
+      "sha256": "0671619caffd6b4091efba368c73f2bb596cb2fdcd386ac7433d7cc241cf80c3",
+      "matches": true
+    },
+    "benchmark": {
+      "path": "artifacts/research-v04/benchmark.json",
+      "sha256": "e227012e6341636e696868640b9eb73091affcd6bab431a984fcb5782a6ad438",
+      "matches": true
+    },
+    "ensemble": {
+      "path": "artifacts/research-v04/advanced.json",
+      "sha256": "47317d7e06698429dd7ebfbaaf47dc1836636e05985fb4881053403d3282fa46",
+      "matches": true
+    },
+    "acquisition": {
+      "path": "artifacts/research-v04/baseline-sensitivity.json",
+      "sha256": "9ecb5af827bb59eee35e6ffc4c727a528e4992058cc5617542c8882b32d623ba",
+      "matches": true
+    },
+    "source_audit": {
+      "path": "artifacts/research-workbench/source-audit.json",
+      "sha256": "3dea706bb14e7ce4656d6b6211a2cbf18801cace1f8fdaaa916105592d6da37d",
+      "matches": true
+    },
+    "head_study": {
+      "path": "artifacts/research-workbench/head-fallback.json",
+      "sha256": "706dbe75a12eb428e94c8ba7462a4d139461bf16c3b8bc4ff1084a2ec8aa301b",
+      "matches": true
+    },
+    "study_verification": {
+      "path": "artifacts/research-workbench/study-verification.json",
+      "sha256": "53f4aaf2b88e732e570823f4f4bf16a6c271386174ca6d3e32b17e0454d60c8a",
+      "matches": true
+    },
+    "report": {
+      "path": "docs/research-v04-report.md",
+      "sha256": "850e2c16abcf1fa4b7e37785de65357289fbfa25d466b4dc5b00b9147bc923b2",
+      "matches": true
+    },
+    "lab_handoff": {
+      "path": "artifacts/research-v04/laboratory-handoff.zip",
+      "sha256": "2a89048dad08b97104364ad732fb1885d341efe1a5e84b09e5d315c9ca6c7ebb",
+      "matches": true
+    },
+    "lab_print": {
+      "path": "docs/research-v04-lab-handoff.html",
+      "sha256": "fcfbb9b0868a2bf77deab17bfbabf09e28793615abeb7c08211473afac740461",
+      "matches": true
+    },
+    "baseline": {
+      "path": "artifacts/next-phase/baseline/workbench-v01.sqlite",
+      "sha256": "75dbf17ee73677d7d552174b1c2ad029bd7a9b7489e6fdd6dc3a5ae393a09622",
+      "matches": true
+    }
+  },
+  "protocol_and_code_match": true,
+  "exact_prediction_and_acceptance_rerun": true,
+  "outer_group_separation": true,
+  "source_references_checked": 181,
+  "all_source_rows_exist": true,
+  "all_source_questions_unanswered": true,
+  "production_model_promoted": false,
+  "independent_material_tests": 0
+}

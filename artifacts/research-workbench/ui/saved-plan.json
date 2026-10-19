@@ -1,0 +1,999 @@
+{
+  "id": "rplan_8d240689-87ba-47fc-9189-29a63bfa5aba",
+  "kind": "research_test_plan",
+  "created_at": "2026-10-19T10:17:27.556319+00:00",
+  "parent_id": null,
+  "title": "服务端原样导出核验 · 三配方",
+  "request_fingerprint": "860864ce2c5786bb099c397e946c18f6eb2869bd06df63c3afd6e88d8493d38a",
+  "scope": {
+    "dataset": {
+      "dataset_id": "ds_d916d61767ca55d21bd7",
+      "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+      "dataset_revision": 0,
+      "importer_version": "1.1.1",
+      "recipe_count": 180
+    },
+    "evidence_sha256": {
+      "candidate_pool": "4fbf4bfcf7018abdfee75a0c1a8618731063151f2ae83c02f218aa85e5ece9f3",
+      "row_manifest": "0671619caffd6b4091efba368c73f2bb596cb2fdcd386ac7433d7cc241cf80c3",
+      "benchmark": "e227012e6341636e696868640b9eb73091affcd6bab431a984fcb5782a6ad438",
+      "ensemble": "47317d7e06698429dd7ebfbaaf47dc1836636e05985fb4881053403d3282fa46",
+      "acquisition": "9ecb5af827bb59eee35e6ffc4c727a528e4992058cc5617542c8882b32d623ba",
+      "source_audit": "3dea706bb14e7ce4656d6b6211a2cbf18801cace1f8fdaaa916105592d6da37d",
+      "head_study": "706dbe75a12eb428e94c8ba7462a4d139461bf16c3b8bc4ff1084a2ec8aa301b",
+      "study_verification": "53f4aaf2b88e732e570823f4f4bf16a6c271386174ca6d3e32b17e0454d60c8a",
+      "report": "850e2c16abcf1fa4b7e37785de65357289fbfa25d466b4dc5b00b9147bc923b2",
+      "lab_handoff": "2a89048dad08b97104364ad732fb1885d341efe1a5e84b09e5d315c9ca6c7ebb",
+      "lab_print": "fcfbb9b0868a2bf77deab17bfbabf09e28793615abeb7c08211473afac740461",
+      "baseline": "75dbf17ee73677d7d552174b1c2ad029bd7a9b7489e6fdd6dc3a5ae393a09622"
+    },
+    "prior_completion_sha256": "eb98e8c050074d4986c27bfff56b7ae588f23570c7918e06c8363ab9516544b6"
+  },
+  "scope_sha256": "d01dbae9d7e255f5df77abe5e87bb492fece36e773e45dba535c23f30edf63f7",
+  "currentness_at_creation": {
+    "matches": true,
+    "current": {
+      "id": "ds_d916d61767ca55d21bd7",
+      "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+      "revision": 0
+    },
+    "reason": null
+  },
+  "filters": {
+    "source": "H",
+    "kind": "nominal_blend",
+    "supported_only": true,
+    "q": ""
+  },
+  "eligible_pool_size": 16,
+  "requested_formulations": 3,
+  "selected_formulations": 3,
+  "selection_method": "来源代理组分散与设计空间覆盖；不使用预测性能排序或隐藏实测标签",
+  "budget_unit": "new_formulation_hypotheses",
+  "selection_rationale": [
+    {
+      "candidate_id": "hyp_817853adb7ff52bd",
+      "manual": false,
+      "source_group_proxy": "source_profile_H",
+      "nearest_known_design_distance": 0.7675392468969039,
+      "distance_before_selection": 0.7675392468969039,
+      "reason": "优先分散来源代理组，再选择与已知及已选设计差异较大的配方"
+    },
+    {
+      "candidate_id": "hyp_36df9873ae890874",
+      "manual": false,
+      "source_group_proxy": "source_profile_H",
+      "nearest_known_design_distance": 0.767539246896889,
+      "distance_before_selection": 0.767539246896889,
+      "reason": "优先分散来源代理组，再选择与已知及已选设计差异较大的配方"
+    },
+    {
+      "candidate_id": "hyp_27070f2e18c5c4e0",
+      "manual": false,
+      "source_group_proxy": "source_profile_H",
+      "nearest_known_design_distance": 0.7675392468968876,
+      "distance_before_selection": 0.7675392468968876,
+      "reason": "优先分散来源代理组，再选择与已知及已选设计差异较大的配方"
+    }
+  ],
+  "formulations": [
+    {
+      "candidate": {
+        "id": "hyp_817853adb7ff52bd",
+        "parent_id": "mix_07e9acab4f8d5c4c21d0",
+        "parent_index": 1,
+        "source_code": "H",
+        "gradation": "AC-13-130#",
+        "product": "130#",
+        "kind": "nominal_blend",
+        "design_X": [
+          4.8,
+          50.0,
+          13.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          100.0,
+          100.0,
+          100.0,
+          94.2886632670654,
+          74.54858738275801,
+          40.31772118591779,
+          27.17177460879398,
+          20.43879451814849,
+          16.73848958264711,
+          11.74513888989434,
+          7.978652871215944,
+          5.5323403888109866
+        ],
+        "oil_stone_ratio_pct": 4.8,
+        "rap_nominal_pct": 50.0,
+        "nominal_component_weights": [
+          0.20500000000000002,
+          0.175,
+          0.12000000000000001,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.325,
+          0.175
+        ],
+        "component_sources": [
+          {
+            "row": 185,
+            "type": "粗集料",
+            "size": "10-15"
+          },
+          {
+            "row": 186,
+            "type": "粗集料",
+            "size": "5-10"
+          },
+          {
+            "row": 187,
+            "type": "细集料",
+            "size": "0-5"
+          },
+          {
+            "row": 188,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 189,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 190,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 191,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 192,
+            "type": "粗RAP料",
+            "size": "8-15"
+          },
+          {
+            "row": 193,
+            "type": "细RAP料",
+            "size": "0-8"
+          }
+        ],
+        "change": {
+          "transfer_nominal_fraction": 0.02,
+          "from_component": 0,
+          "to_component": 2
+        },
+        "measured_performance": null,
+        "inherits_parent_measurements": false,
+        "engineering_state": "pending_material_basis_and_independent_tests",
+        "unknowns": [
+          "RAP mass basis and reclaimed/effective binder quantities",
+          "material batch identity and test conditions",
+          "modifier/additive composition and construction feasibility"
+        ],
+        "nominal_weight_sum": 1.0,
+        "nominal_rap_fraction_unchanged": true,
+        "engineering_release_allowed": false,
+        "prediction": {
+          "DS": 5351.90815371117,
+          "strain": 2267.697506467773,
+          "TSR": 88.18550013840475,
+          "residual": 89.04802300182745
+        },
+        "model_std_not_calibrated": {
+          "DS": 1484.204270826572,
+          "strain": 332.7924751214541,
+          "TSR": 3.1673436232407943,
+          "residual": 2.6417029931829217
+        },
+        "predicted_change_vs_parent_prediction": {
+          "DS": 0.0,
+          "strain": 0.0,
+          "TSR": 0.0,
+          "residual": 0.0
+        },
+        "distance_to_observed_design": 0.0,
+        "cross_group_distance_reference_p95": 2.17981454518401,
+        "within_basic_design_distance_support": true,
+        "within_observed_same_nmas_curve_envelope": true,
+        "observed_envelope_is_specification": false,
+        "research_priority_score": -0.6975754051184604,
+        "model_state": "full_data_fit_research_only",
+        "numeric_predicted_all_targets": false,
+        "validation_required_before_any_performance_claim": true,
+        "predicted_pareto_member": true
+      },
+      "summary": {
+        "id": "hyp_817853adb7ff52bd",
+        "parent_id": "mix_07e9acab4f8d5c4c21d0",
+        "source_code": "H",
+        "gradation": "AC-13-130#",
+        "product": "130#",
+        "kind": "nominal_blend",
+        "oil_stone_ratio_pct": 4.8,
+        "rap_nominal_pct": 50.0,
+        "change_label": "新集料第1项向第3项转移名义2个百分点",
+        "within_observed_support": true,
+        "measured_performance": null,
+        "engineering_release_allowed": false
+      },
+      "components": [
+        {
+          "row": 185,
+          "type": "粗集料",
+          "size": "10-15",
+          "before": 0.225,
+          "after": 0.20500000000000002,
+          "delta_percentage_points": -1.9999999999999991
+        },
+        {
+          "row": 186,
+          "type": "粗集料",
+          "size": "5-10",
+          "before": 0.175,
+          "after": 0.175,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 187,
+          "type": "细集料",
+          "size": "0-5",
+          "before": 0.1,
+          "after": 0.12000000000000001,
+          "delta_percentage_points": 2.0000000000000004
+        },
+        {
+          "row": 188,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 189,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 190,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 191,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 192,
+          "type": "粗RAP料",
+          "size": "8-15",
+          "before": 0.325,
+          "after": 0.325,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 193,
+          "type": "细RAP料",
+          "size": "0-8",
+          "before": 0.175,
+          "after": 0.175,
+          "delta_percentage_points": 0.0
+        }
+      ],
+      "parent": {
+        "id": "mix_07e9acab4f8d5c4c21d0",
+        "source_code": "H",
+        "gradation": "AC-13-130#",
+        "product": "130#",
+        "oil_stone_ratio_pct": 4.8,
+        "metrics": {
+          "residual": {
+            "value": 92.75965764515384,
+            "unit": "%",
+            "references": [
+              {
+                "value": 92.75965764515384,
+                "raw_value": 92.75965764515384,
+                "sheet": "浸水马歇尔",
+                "row": 137,
+                "cell": "Q137",
+                "transform": "identity",
+                "specimen": "试件1(浸)"
+              }
+            ]
+          },
+          "TSR": {
+            "value": 92.44995786770077,
+            "unit": "%",
+            "references": [
+              {
+                "value": 92.44995786770077,
+                "raw_value": 0.9244995786770077,
+                "sheet": "冻融劈裂",
+                "row": 191,
+                "cell": "U191",
+                "transform": "fraction_to_percent_x100",
+                "specimen": "试件1(冻)"
+              }
+            ]
+          },
+          "DS": {
+            "value": 5000.0,
+            "unit": "次/mm",
+            "references": [
+              {
+                "value": 5000.0,
+                "raw_value": 5000,
+                "sheet": "高温车辙",
+                "row": 35,
+                "cell": "K35",
+                "transform": "identity",
+                "specimen": "试件1"
+              }
+            ]
+          },
+          "strain": {
+            "value": 2242.0,
+            "unit": "με",
+            "references": [
+              {
+                "value": 2242.0,
+                "raw_value": 2242,
+                "sheet": "低温弯曲",
+                "row": 66,
+                "cell": "H66",
+                "transform": "identity",
+                "specimen": "130#"
+              }
+            ]
+          }
+        },
+        "curve_reference": "级配!G194:R194"
+      },
+      "interpretation": "父方案历史记录单独列示。新配方尚无实测依据，全量拟合预测不能继承父方案达标结论。"
+    },
+    {
+      "candidate": {
+        "id": "hyp_36df9873ae890874",
+        "parent_id": "mix_9e2f3db93b9f3846b068",
+        "parent_index": 57,
+        "source_code": "H",
+        "gradation": "AC-13-110#",
+        "product": "110#",
+        "kind": "nominal_blend",
+        "design_X": [
+          4.8,
+          50.0,
+          13.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          100.0,
+          100.0,
+          100.0,
+          93.58063788754755,
+          72.17125373793048,
+          36.04642341392922,
+          23.0784681368364,
+          17.42734774945012,
+          14.450210910481765,
+          10.494416444719597,
+          7.4252510842586155,
+          5.323291896135119
+        ],
+        "oil_stone_ratio_pct": 4.8,
+        "rap_nominal_pct": 50.0,
+        "nominal_component_weights": [
+          0.245,
+          0.2,
+          0.05,
+          0.005,
+          0.0,
+          0.0,
+          0.0,
+          0.3,
+          0.2
+        ],
+        "component_sources": [
+          {
+            "row": 172,
+            "type": "粗集料",
+            "size": "10-15"
+          },
+          {
+            "row": 173,
+            "type": "粗集料",
+            "size": "5-10"
+          },
+          {
+            "row": 174,
+            "type": "细集料",
+            "size": "0-5"
+          },
+          {
+            "row": 175,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 176,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 177,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 178,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 179,
+            "type": "粗RAP料",
+            "size": "8-15"
+          },
+          {
+            "row": 180,
+            "type": "细RAP料",
+            "size": "0-8"
+          }
+        ],
+        "change": {
+          "transfer_nominal_fraction": 0.02,
+          "from_component": 2,
+          "to_component": 0
+        },
+        "measured_performance": null,
+        "inherits_parent_measurements": false,
+        "engineering_state": "pending_material_basis_and_independent_tests",
+        "unknowns": [
+          "RAP mass basis and reclaimed/effective binder quantities",
+          "material batch identity and test conditions",
+          "modifier/additive composition and construction feasibility"
+        ],
+        "nominal_weight_sum": 1.0,
+        "nominal_rap_fraction_unchanged": true,
+        "engineering_release_allowed": false,
+        "prediction": {
+          "DS": 5907.453314894034,
+          "strain": 2201.8375261775154,
+          "TSR": 86.31932483074144,
+          "residual": 88.55538636071016
+        },
+        "model_std_not_calibrated": {
+          "DS": 1462.933765594412,
+          "strain": 328.05890322875774,
+          "TSR": 3.1213587694425127,
+          "residual": 2.603587408535338
+        },
+        "predicted_change_vs_parent_prediction": {
+          "DS": 0.0,
+          "strain": 0.0,
+          "TSR": 0.0,
+          "residual": 0.0
+        },
+        "distance_to_observed_design": 0.0,
+        "cross_group_distance_reference_p95": 2.17981454518401,
+        "within_basic_design_distance_support": true,
+        "within_observed_same_nmas_curve_envelope": true,
+        "observed_envelope_is_specification": false,
+        "research_priority_score": -0.41344851822811857,
+        "model_state": "full_data_fit_research_only",
+        "numeric_predicted_all_targets": false,
+        "validation_required_before_any_performance_claim": true,
+        "predicted_pareto_member": true
+      },
+      "summary": {
+        "id": "hyp_36df9873ae890874",
+        "parent_id": "mix_9e2f3db93b9f3846b068",
+        "source_code": "H",
+        "gradation": "AC-13-110#",
+        "product": "110#",
+        "kind": "nominal_blend",
+        "oil_stone_ratio_pct": 4.8,
+        "rap_nominal_pct": 50.0,
+        "change_label": "新集料第3项向第1项转移名义2个百分点",
+        "within_observed_support": true,
+        "measured_performance": null,
+        "engineering_release_allowed": false
+      },
+      "components": [
+        {
+          "row": 172,
+          "type": "粗集料",
+          "size": "10-15",
+          "before": 0.225,
+          "after": 0.245,
+          "delta_percentage_points": 1.9999999999999991
+        },
+        {
+          "row": 173,
+          "type": "粗集料",
+          "size": "5-10",
+          "before": 0.2,
+          "after": 0.2,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 174,
+          "type": "细集料",
+          "size": "0-5",
+          "before": 0.07,
+          "after": 0.05,
+          "delta_percentage_points": -2.0000000000000004
+        },
+        {
+          "row": 175,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.005,
+          "after": 0.005,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 176,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 177,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 178,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 179,
+          "type": "粗RAP料",
+          "size": "8-15",
+          "before": 0.3,
+          "after": 0.3,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 180,
+          "type": "细RAP料",
+          "size": "0-8",
+          "before": 0.2,
+          "after": 0.2,
+          "delta_percentage_points": 0.0
+        }
+      ],
+      "parent": {
+        "id": "mix_9e2f3db93b9f3846b068",
+        "source_code": "H",
+        "gradation": "AC-13-110#",
+        "product": "110#",
+        "oil_stone_ratio_pct": 4.8,
+        "metrics": {
+          "residual": {
+            "value": 83.94198394198393,
+            "unit": "%",
+            "references": [
+              {
+                "value": 83.94198394198393,
+                "raw_value": 83.94198394198393,
+                "sheet": "浸水马歇尔",
+                "row": 132,
+                "cell": "Q132",
+                "transform": "identity",
+                "specimen": "试件1(浸)"
+              }
+            ]
+          },
+          "TSR": {
+            "value": 80.56760632777791,
+            "unit": "%",
+            "references": [
+              {
+                "value": 80.56760632777791,
+                "raw_value": 0.8056760632777791,
+                "sheet": "冻融劈裂",
+                "row": 184,
+                "cell": "U184",
+                "transform": "fraction_to_percent_x100",
+                "specimen": "试件1(冻)"
+              }
+            ]
+          },
+          "DS": {
+            "value": 5944.0,
+            "unit": "次/mm",
+            "references": [
+              {
+                "value": 5040.0,
+                "raw_value": 5040,
+                "sheet": "高温车辙",
+                "row": 33,
+                "cell": "K33",
+                "transform": "identity",
+                "specimen": "试件1"
+              },
+              {
+                "value": 6848.0,
+                "raw_value": 6848,
+                "sheet": "高温车辙",
+                "row": 34,
+                "cell": "K34",
+                "transform": "identity",
+                "specimen": "试件2"
+              }
+            ]
+          },
+          "strain": {
+            "value": 2321.0,
+            "unit": "με",
+            "references": [
+              {
+                "value": 2321.0,
+                "raw_value": 2321,
+                "sheet": "低温弯曲",
+                "row": 65,
+                "cell": "H65",
+                "transform": "identity",
+                "specimen": "110#"
+              }
+            ]
+          }
+        },
+        "curve_reference": "级配!G181:R181"
+      },
+      "interpretation": "父方案历史记录单独列示。新配方尚无实测依据，全量拟合预测不能继承父方案达标结论。"
+    },
+    {
+      "candidate": {
+        "id": "hyp_27070f2e18c5c4e0",
+        "parent_id": "mix_0e51eff6e2cef2806f57",
+        "parent_index": 6,
+        "source_code": "H",
+        "gradation": "AC-13-90#",
+        "product": "90#",
+        "kind": "nominal_blend",
+        "design_X": [
+          4.8,
+          50.0,
+          13.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          100.0,
+          100.0,
+          100.0,
+          93.91332046184519,
+          74.0560739482754,
+          41.3556987032854,
+          27.588638526254567,
+          20.86156254538671,
+          17.247086899484415,
+          12.440754887703442,
+          8.783455843677292,
+          6.315628244116718
+        ],
+        "oil_stone_ratio_pct": 4.8,
+        "rap_nominal_pct": 50.0,
+        "nominal_component_weights": [
+          0.24,
+          0.175,
+          0.075,
+          0.01,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.25
+        ],
+        "component_sources": [
+          {
+            "row": 159,
+            "type": "粗集料",
+            "size": "10-15"
+          },
+          {
+            "row": 160,
+            "type": "粗集料",
+            "size": "5-10"
+          },
+          {
+            "row": 161,
+            "type": "细集料",
+            "size": "0-5"
+          },
+          {
+            "row": 162,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 163,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 164,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 165,
+            "type": "矿粉",
+            "size": "\\"
+          },
+          {
+            "row": 166,
+            "type": "粗RAP料",
+            "size": "8-15"
+          },
+          {
+            "row": 167,
+            "type": "细RAP料",
+            "size": "0-8"
+          }
+        ],
+        "change": {
+          "transfer_nominal_fraction": 0.02,
+          "from_component": 2,
+          "to_component": 0
+        },
+        "measured_performance": null,
+        "inherits_parent_measurements": false,
+        "engineering_state": "pending_material_basis_and_independent_tests",
+        "unknowns": [
+          "RAP mass basis and reclaimed/effective binder quantities",
+          "material batch identity and test conditions",
+          "modifier/additive composition and construction feasibility"
+        ],
+        "nominal_weight_sum": 1.0,
+        "nominal_rap_fraction_unchanged": true,
+        "engineering_release_allowed": false,
+        "prediction": {
+          "DS": 5886.429528194058,
+          "strain": 2077.208847375511,
+          "TSR": 84.95196561040096,
+          "residual": 88.36741116318308
+        },
+        "model_std_not_calibrated": {
+          "DS": 1427.5750674712451,
+          "strain": 320.5074426477235,
+          "TSR": 3.0479790662167647,
+          "residual": 2.5421280891113045
+        },
+        "predicted_change_vs_parent_prediction": {
+          "DS": 0.0,
+          "strain": 0.0,
+          "TSR": 0.0,
+          "residual": 0.0
+        },
+        "distance_to_observed_design": 0.0,
+        "cross_group_distance_reference_p95": 2.17981454518401,
+        "within_basic_design_distance_support": true,
+        "within_observed_same_nmas_curve_envelope": true,
+        "observed_envelope_is_specification": false,
+        "research_priority_score": -0.6332867250810512,
+        "model_state": "full_data_fit_research_only",
+        "numeric_predicted_all_targets": false,
+        "validation_required_before_any_performance_claim": true,
+        "predicted_pareto_member": false
+      },
+      "summary": {
+        "id": "hyp_27070f2e18c5c4e0",
+        "parent_id": "mix_0e51eff6e2cef2806f57",
+        "source_code": "H",
+        "gradation": "AC-13-90#",
+        "product": "90#",
+        "kind": "nominal_blend",
+        "oil_stone_ratio_pct": 4.8,
+        "rap_nominal_pct": 50.0,
+        "change_label": "新集料第3项向第1项转移名义2个百分点",
+        "within_observed_support": true,
+        "measured_performance": null,
+        "engineering_release_allowed": false
+      },
+      "components": [
+        {
+          "row": 159,
+          "type": "粗集料",
+          "size": "10-15",
+          "before": 0.22,
+          "after": 0.24,
+          "delta_percentage_points": 1.9999999999999991
+        },
+        {
+          "row": 160,
+          "type": "粗集料",
+          "size": "5-10",
+          "before": 0.175,
+          "after": 0.175,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 161,
+          "type": "细集料",
+          "size": "0-5",
+          "before": 0.095,
+          "after": 0.075,
+          "delta_percentage_points": -2.0000000000000004
+        },
+        {
+          "row": 162,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.01,
+          "after": 0.01,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 163,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 164,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 165,
+          "type": "矿粉",
+          "size": "\\",
+          "before": 0.0,
+          "after": 0.0,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 166,
+          "type": "粗RAP料",
+          "size": "8-15",
+          "before": 0.25,
+          "after": 0.25,
+          "delta_percentage_points": 0.0
+        },
+        {
+          "row": 167,
+          "type": "细RAP料",
+          "size": "0-8",
+          "before": 0.25,
+          "after": 0.25,
+          "delta_percentage_points": 0.0
+        }
+      ],
+      "parent": {
+        "id": "mix_0e51eff6e2cef2806f57",
+        "source_code": "H",
+        "gradation": "AC-13-90#",
+        "product": "90#",
+        "oil_stone_ratio_pct": 4.8,
+        "metrics": {
+          "residual": {
+            "value": 88.0578252671276,
+            "unit": "%",
+            "references": [
+              {
+                "value": 88.0578252671276,
+                "raw_value": 88.0578252671276,
+                "sheet": "浸水马歇尔",
+                "row": 127,
+                "cell": "Q127",
+                "transform": "identity",
+                "specimen": "试件1(浸)"
+              }
+            ]
+          },
+          "TSR": {
+            "value": 81.98128641646413,
+            "unit": "%",
+            "references": [
+              {
+                "value": 81.98128641646413,
+                "raw_value": 0.8198128641646413,
+                "sheet": "冻融劈裂",
+                "row": 177,
+                "cell": "U177",
+                "transform": "fraction_to_percent_x100",
+                "specimen": "试件1(冻)"
+              }
+            ]
+          },
+          "DS": {
+            "value": 9565.0,
+            "unit": "次/mm",
+            "references": [
+              {
+                "value": 10500.0,
+                "raw_value": 10500,
+                "sheet": "高温车辙",
+                "row": 31,
+                "cell": "K31",
+                "transform": "identity",
+                "specimen": "试件1"
+              },
+              {
+                "value": 8630.0,
+                "raw_value": 8630,
+                "sheet": "高温车辙",
+                "row": 32,
+                "cell": "K32",
+                "transform": "identity",
+                "specimen": "试件2"
+              }
+            ]
+          },
+          "strain": {
+            "value": 2044.0,
+            "unit": "με",
+            "references": [
+              {
+                "value": 2044.0,
+                "raw_value": 2044,
+                "sheet": "低温弯曲",
+                "row": 64,
+                "cell": "H64",
+                "transform": "identity",
+                "specimen": "90#"
+              }
+            ]
+          }
+        },
+        "curve_reference": "级配!G168:R168"
+      },
+      "interpretation": "父方案历史记录单独列示。新配方尚无实测依据，全量拟合预测不能继承父方案达标结论。"
+    }
+  ],
+  "external_material_tests": 0,
+  "actual_specimen_count": null,
+  "laboratory": null,
+  "cost": null,
+  "required_before_testing": [
+    "确认材料实物身份、料堆及批次。",
+    "确认RAP分母、含水与旧/有效结合料核算。",
+    "冻结工程目标条款和实际称料表。",
+    "由实验室确认方法版本、温度、荷载、老化/冻融、压实及试件数。",
+    "同期重新制备原配方对照，保留独立制备与确认批次。"
+  ],
+  "engineering_release_allowed": false,
+  "laboratory_results": null,
+  "note": "这是待确认的试验安排。配方数量不等于实际试件数，来源代码不等于已核实的实物料源。",
+  "sha256": "362ef86102ddd775abe5c4bdadf3f5f878b43ba8f6a79e658494277f41590d38"
+}

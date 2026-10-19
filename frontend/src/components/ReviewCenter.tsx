@@ -192,7 +192,7 @@ export function ReviewCenter({
           <h1>成果与验证</h1>
           <p>从场景要求到材料方案，每个结论都能回到证据。</p>
           <small>
-            v0.3 本地研究原型。软件验证、构造案例与工程实证分别登记。
+            v0.4 本地研究原型。软件验证、计算研究与工程实证分别登记。
           </small>
           <a
             className="secondary"

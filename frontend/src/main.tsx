@@ -34,6 +34,7 @@ import { core, flags, fmt, metrics } from "./types";
 import "./styles.css";
 import { DecisionWorkflow } from "./components/DecisionWorkflow";
 import { ReviewCenter } from "./components/ReviewCenter";
+import { ResearchWorkbench } from "./components/ResearchWorkbench";
 import type { Highlight } from "./review-types";
 import "./decision.css";
 import "./review.css";
@@ -76,7 +77,7 @@ function Status({ recipe }: { recipe: Recipe }) {
   );
 }
 function App() {
-  const [route, setRoute] = useState("review");
+  const [route, setRoute] = useState(() => new URLSearchParams(window.location.search).get("view") === "research" ? "research" : "review");
   const [guidedTour, setGuidedTour] = useState<Highlight | null>(null);
   const [catalog, setCatalog] = useState<Recipe[]>([]),
     [dataset, setDataset] = useState<Dataset | null>(null),
@@ -233,6 +234,7 @@ function App() {
             { id: "data", label: "数据与依据", icon: Database },
             { id: "observations", label: "试验回流", icon: FlaskConical },
             { id: "models", label: "模型评估", icon: Microscope },
+            { id: "research", label: "配方研究", icon: FlaskConical },
             { id: "reports", label: "方案报告", icon: FileText },
           ].map((n) => (
             <button
@@ -254,7 +256,7 @@ function App() {
         </nav>
         <div className="sidebar-bottom">
           <div className="connection">
-            <i /> 本地工作区 <span>v0.3 研究原型</span>
+            <i /> 本地工作区 <span>v0.4 研究原型</span>
           </div>
           <p>
             企业提供的实验室记录
@@ -282,6 +284,7 @@ function App() {
                     data: "数据目录与质量",
                     observations: "试验审核工作区",
                     models: "模型基准与适用域",
+                    research: "配方研究与试验安排",
                     reports: "可追溯方案报告",
                   } as Record<string, string>
                 )[route]
@@ -831,6 +834,7 @@ function App() {
               <ModelWorkspace onError={setError} />
             </>
           )}
+          {route === "research" && <ResearchWorkbench />}
           {route === "reports" && (
             <>
               <PageTitle

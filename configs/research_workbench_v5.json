@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-10-19T09:58:59.433197+00:00",
+  "version": "research-workbench-1",
+  "dataset": {
+    "dataset_id": "ds_d916d61767ca55d21bd7",
+    "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "dataset_revision": 0,
+    "importer_version": "1.1.1",
+    "recipe_count": 180
+  },
+  "prior_completion_sha256": "eb98e8c050074d4986c27bfff56b7ae588f23570c7918e06c8363ab9516544b6",
+  "evidence": {
+    "candidate_pool": {
+      "path": "artifacts/research-v04/formulation-search.json",
+      "title": "全部未试验配方",
+      "sha256": "4fbf4bfcf7018abdfee75a0c1a8618731063151f2ae83c02f218aa85e5ece9f3",
+      "downloadable": false
+    },
+    "row_manifest": {
+      "path": "artifacts/research-v04/row-manifest.json",
+      "title": "原始标签与来源组",
+      "sha256": "0671619caffd6b4091efba368c73f2bb596cb2fdcd386ac7433d7cc241cf80c3",
+      "downloadable": false
+    },
+    "benchmark": {
+      "path": "artifacts/research-v04/benchmark.json",
+      "title": "首轮完整模型结果",
+      "sha256": "e227012e6341636e696868640b9eb73091affcd6bab431a984fcb5782a6ad438",
+      "downloadable": true
+    },
+    "ensemble": {
+      "path": "artifacts/research-v04/advanced.json",
+      "title": "第二轮完整模型结果",
+      "sha256": "47317d7e06698429dd7ebfbaaf47dc1836636e05985fb4881053403d3282fa46",
+      "downloadable": true
+    },
+    "acquisition": {
+      "path": "artifacts/research-v04/baseline-sensitivity.json",
+      "title": "空间覆盖与随机基线回放",
+      "sha256": "9ecb5af827bb59eee35e6ffc4c727a528e4992058cc5617542c8882b32d623ba",
+      "downloadable": true
+    },
+    "source_audit": {
+      "path": "artifacts/research-workbench/source-audit.json",
+      "title": "原表待复核清单",
+      "sha256": "3dea706bb14e7ce4656d6b6211a2cbf18801cace1f8fdaaa916105592d6da37d",
+      "downloadable": true
+    },
+    "head_study": {
+      "path": "artifacts/research-workbench/head-fallback.json",
+      "title": "逐指标回退实验",
+      "sha256": "706dbe75a12eb428e94c8ba7462a4d139461bf16c3b8bc4ff1084a2ec8aa301b",
+      "downloadable": true
+    },
+    "study_verification": {
+      "path": "artifacts/research-workbench/study-verification.json",
+      "title": "新实验复现记录",
+      "sha256": "53f4aaf2b88e732e570823f4f4bf16a6c271386174ca6d3e32b17e0454d60c8a",
+      "downloadable": true
+    },
+    "report": {
+      "path": "docs/research-v04-report.md",
+      "title": "完整研究报告",
+      "sha256": "850e2c16abcf1fa4b7e37785de65357289fbfa25d466b4dc5b00b9147bc923b2",
+      "downloadable": true
+    },
+    "lab_handoff": {
+      "path": "artifacts/research-v04/laboratory-handoff.zip",
+      "title": "五配方送检资料包",
+      "sha256": "2a89048dad08b97104364ad732fb1885d341efe1a5e84b09e5d315c9ca6c7ebb",
+      "downloadable": true
+    },
+    "lab_print": {
+      "path": "docs/research-v04-lab-handoff.html",
+      "title": "可打印送检方案",
+      "sha256": "fcfbb9b0868a2bf77deab17bfbabf09e28793615abeb7c08211473afac740461",
+      "downloadable": true
+    },
+    "baseline": {
+      "path": "artifacts/next-phase/baseline/workbench-v01.sqlite",
+      "title": "冻结历史输入库",
+      "sha256": "75dbf17ee73677d7d552174b1c2ad029bd7a9b7489e6fdd6dc3a5ae393a09622",
+      "downloadable": false
+    }
+  },
+  "notes": [
+    "只登记实际计算证据。",
+    "新配方均待实测，不参与正式硬约束通过判定。"
+  ]
+}

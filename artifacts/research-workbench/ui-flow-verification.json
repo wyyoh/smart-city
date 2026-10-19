@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-10-19T10:19:53.830228+00:00",
+  "status": "passed",
+  "operator": "AI browser self-test",
+  "database": "artifacts/research-workbench/ui.sqlite",
+  "material_tests": 0,
+  "human_time_savings_validated": false,
+  "checked_flows": [
+    "来源与改动筛选",
+    "组分前后与父方案历史值分开展示",
+    "手动加入配方",
+    "三配方计划保存",
+    "目录分页与空结果重置",
+    "模型改善与退步同时呈现",
+    "原表单元格键盘追溯",
+    "JSON导出与保存内容一致且重新计算哈希通过",
+    "打印编号、时间、哈希一致",
+    "送检包下载SHA256一致",
+    "1440x900与1280x720无页面水平溢出"
+  ],
+  "tested_viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "document_client_width": 1440,
+      "document_scroll_width": 1440
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "document_client_width": 1265,
+      "document_scroll_width": 1265
+    }
+  ],
+  "browser_console_errors": 0,
+  "saved_plan_id": "rplan_8d240689-87ba-47fc-9189-29a63bfa5aba",
+  "saved_plan_sha256": "362ef86102ddd775abe5c4bdadf3f5f878b43ba8f6a79e658494277f41590d38",
+  "lab_download_sha256": "2a89048dad08b97104364ad732fb1885d341efe1a5e84b09e5d315c9ca6c7ebb",
+  "print_percentage_display_fixed": true,
+  "json_export_preserves_server_number_representation": true,
+  "runtime_health": {
+    "status": "ok",
+    "version": "0.4.0"
+  },
+  "primary_runtime_tables_unchanged": true,
+  "runtime_tables": {
+    "dataset": {
+      "rows": 3,
+      "sha256": "ff6baa795c198aa9765d9c54437ab303b17274629ddff2adf55cf150c0e32553"
+    },
+    "decisionrecord": {
+      "rows": 30,
+      "sha256": "3b66b3e247f0125bd372d79957b40f8551999dcdb49901e555fd77537fc5d770"
+    },
+    "measurement": {
+      "rows": 2409,
+      "sha256": "be46a0a9a631c2679b75eb2fb1bdc37c71b95fc753f86212bd765719b4816bf9"
+    },
+    "observation": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "recipe": {
+      "rows": 540,
+      "sha256": "68c36143171b3476e5d90f8b21cab7d4fcdc6cc7cff6f1179897be365d76e8a6"
+    },
+    "recommendation": {
+      "rows": 17,
+      "sha256": "ce34122aaef499c6fa7b55a5077317e473febacedec0c8c0edb9c8964bec162f"
+    },
+    "sourcerow": {
+      "rows": 10329,
+      "sha256": "42e73b9078dd65e0035d7f58d97b93223eb924e4e6594e60223a3d00dcc49e9d"
+    }
+  },
+  "automated_checks": {
+    "pytest_passed": 91,
+    "elapsed_seconds": 32.447,
+    "warnings": 1,
+    "warning_note": "Existing Starlette TestClient/httpx deprecation warning",
+    "typescript": "passed",
+    "production_build": "passed"
+  },
+  "scope_note": "浏览器流程为AI自测。实验室实测、真人耗时、行业效益均未验证。",
+  "current_competition_coverage": {
+    "updated_requirements": [
+      "B04",
+      "T04",
+      "T07",
+      "X01",
+      "X02",
+      "X05"
+    ],
+    "registered_evidence_files": 40,
+    "all_evidence_verified": true,
+    "no_engineering_effect_claim": true
+  },
+  "default_browser_viewport": {
+    "width": 952,
+    "height": 956,
+    "document_client_width": 937,
+    "document_scroll_width": 937,
+    "console_errors": 0
+  },
+  "qa_server_stopped": true
+}

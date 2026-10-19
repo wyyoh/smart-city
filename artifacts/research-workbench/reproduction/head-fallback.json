@@ -1,0 +1,1263 @@
+{
+  "created_at": "2026-10-19T09:55:57.594285+00:00",
+  "protocol_sha256": "57b3c8fde988004dbae4bdc473f66760648d2d9308c7f7a2c27b29e3fdd4879c",
+  "dataset": {
+    "dataset_id": "ds_d916d61767ca55d21bd7",
+    "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "dataset_revision": 0,
+    "importer_version": "1.1.1",
+    "recipe_count": 180
+  },
+  "fits": 1250,
+  "outer_folds": 50,
+  "scores": {
+    "mean": {
+      "DS": {
+        "n": 850,
+        "mae": 1594.4491044316553,
+        "rmse": 2109.3718559412628,
+        "r2": -0.1199623340423055,
+        "threshold_diagnostics": {
+          "800": {
+            "actual_pass": 850,
+            "actual_fail": 0,
+            "false_pass": 0,
+            "false_fail": 0
+          },
+          "6000": {
+            "actual_pass": 360,
+            "actual_fail": 490,
+            "false_pass": 36,
+            "false_fail": 352
+          },
+          "8000": {
+            "actual_pass": 80,
+            "actual_fail": 770,
+            "false_pass": 0,
+            "false_fail": 80
+          }
+        },
+        "unique_labeled_rows": 85,
+        "repeat_mae": [
+          1620.307640870625,
+          1529.21588623859,
+          1573.535783543587,
+          1608.4871205243894,
+          1662.9813962195308,
+          1684.0613355133166,
+          1568.5813266560563,
+          1545.493598171562,
+          1528.0571931542445,
+          1623.7697634246513
+        ],
+        "relative_mae_improvement": 0.0,
+        "repeats_better_than_mean": 0,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 1078.4060994360502
+          },
+          "13": {
+            "n": 40,
+            "mae": 1434.7472944187512
+          },
+          "20": {
+            "n": 39,
+            "mae": 1837.6370641878038
+          }
+        }
+      },
+      "strain": {
+        "n": 720,
+        "mae": 288.48360295371606,
+        "rmse": 470.5789990303968,
+        "r2": -0.10854994320243616,
+        "threshold_diagnostics": {
+          "2000": {
+            "actual_pass": 580,
+            "actual_fail": 140,
+            "false_pass": 140,
+            "false_fail": 0
+          },
+          "2200": {
+            "actual_pass": 300,
+            "actual_fail": 420,
+            "false_pass": 95,
+            "false_fail": 252
+          },
+          "2500": {
+            "actual_pass": 120,
+            "actual_fail": 600,
+            "false_pass": 0,
+            "false_fail": 120
+          }
+        },
+        "unique_labeled_rows": 72,
+        "repeat_mae": [
+          277.1276534004046,
+          285.6754483536037,
+          287.9916805873325,
+          298.23280660635737,
+          294.2788159897791,
+          288.314321207906,
+          296.87998230426115,
+          288.09495306683493,
+          282.71425445680177,
+          285.52611356387945
+        ],
+        "relative_mae_improvement": 0.0,
+        "repeats_better_than_mean": 0,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 114.40778920662049
+          },
+          "13": {
+            "n": 38,
+            "mae": 136.88594001308334
+          },
+          "20": {
+            "n": 28,
+            "mae": 531.5252484618096
+          }
+        }
+      },
+      "TSR": {
+        "n": 810,
+        "mae": 3.5767757135252536,
+        "rmse": 4.345857605699434,
+        "r2": -0.04447207573491174,
+        "threshold_diagnostics": {
+          "75": {
+            "actual_pass": 800,
+            "actual_fail": 10,
+            "false_pass": 10,
+            "false_fail": 0
+          },
+          "85": {
+            "actual_pass": 520,
+            "actual_fail": 290,
+            "false_pass": 290,
+            "false_fail": 0
+          },
+          "90": {
+            "actual_pass": 140,
+            "actual_fail": 670,
+            "false_pass": 0,
+            "false_fail": 140
+          }
+        },
+        "unique_labeled_rows": 81,
+        "repeat_mae": [
+          3.552394637673306,
+          3.5351833493517812,
+          3.6257738410353775,
+          3.501507540138968,
+          3.6012635910318114,
+          3.553093903379017,
+          3.5497173041809895,
+          3.6028637512782766,
+          3.633811213068984,
+          3.612148004114026
+        ],
+        "relative_mae_improvement": 0.0,
+        "repeats_better_than_mean": 0,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.7638273574071777
+          },
+          "13": {
+            "n": 38,
+            "mae": 4.0372553246383
+          },
+          "20": {
+            "n": 38,
+            "mae": 3.223262991375112
+          }
+        }
+      },
+      "residual": {
+        "n": 790,
+        "mae": 2.9156338802930355,
+        "rmse": 3.6123768628994797,
+        "r2": -0.03687670960511791,
+        "threshold_diagnostics": {
+          "85": {
+            "actual_pass": 680,
+            "actual_fail": 110,
+            "false_pass": 110,
+            "false_fail": 0
+          },
+          "90": {
+            "actual_pass": 320,
+            "actual_fail": 470,
+            "false_pass": 0,
+            "false_fail": 320
+          }
+        },
+        "unique_labeled_rows": 79,
+        "repeat_mae": [
+          2.9073305659796755,
+          2.941194348122585,
+          2.8834616170290066,
+          2.9140111394050945,
+          2.8872100957742184,
+          2.929608983403412,
+          3.032749740809024,
+          2.884748830105802,
+          2.88949631986923,
+          2.8865271624323032
+        ],
+        "relative_mae_improvement": 0.0,
+        "repeats_better_than_mean": 0,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.2522473604560127
+          },
+          "13": {
+            "n": 40,
+            "mae": 2.620021327482641
+          },
+          "20": {
+            "n": 34,
+            "mae": 3.360970195340119
+          }
+        }
+      }
+    },
+    "inner_min_blend": {
+      "DS": {
+        "n": 850,
+        "mae": 1560.374410936222,
+        "rmse": 2119.75401237365,
+        "r2": -0.13101419218384858,
+        "threshold_diagnostics": {
+          "800": {
+            "actual_pass": 850,
+            "actual_fail": 0,
+            "false_pass": 0,
+            "false_fail": 0
+          },
+          "6000": {
+            "actual_pass": 360,
+            "actual_fail": 490,
+            "false_pass": 91,
+            "false_fail": 282
+          },
+          "8000": {
+            "actual_pass": 80,
+            "actual_fail": 770,
+            "false_pass": 0,
+            "false_fail": 80
+          }
+        },
+        "unique_labeled_rows": 85,
+        "repeat_mae": [
+          1558.4781334496822,
+          1476.839046100536,
+          1572.9322894634938,
+          1568.2499433965888,
+          1585.8672838192094,
+          1650.1653623639545,
+          1576.8869048122529,
+          1535.1353640277675,
+          1526.661644643511,
+          1552.5281372852212
+        ],
+        "relative_mae_improvement": 0.021370825447313058,
+        "repeats_better_than_mean": 9,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 1054.9983673211161
+          },
+          "13": {
+            "n": 40,
+            "mae": 1371.989567541632
+          },
+          "20": {
+            "n": 39,
+            "mae": 1831.3397954868433
+          }
+        }
+      },
+      "strain": {
+        "n": 720,
+        "mae": 274.322213824183,
+        "rmse": 446.990474812438,
+        "r2": -0.00019969553538357054,
+        "threshold_diagnostics": {
+          "2000": {
+            "actual_pass": 580,
+            "actual_fail": 140,
+            "false_pass": 130,
+            "false_fail": 29
+          },
+          "2200": {
+            "actual_pass": 300,
+            "actual_fail": 420,
+            "false_pass": 101,
+            "false_fail": 178
+          },
+          "2500": {
+            "actual_pass": 120,
+            "actual_fail": 600,
+            "false_pass": 0,
+            "false_fail": 120
+          }
+        },
+        "unique_labeled_rows": 72,
+        "repeat_mae": [
+          270.07169705012853,
+          277.90169024324075,
+          280.8884180811093,
+          270.21827913340286,
+          264.6813418107004,
+          270.10514287920483,
+          268.6280657485617,
+          288.9574360848158,
+          267.79273191851803,
+          283.9773352921477
+        ],
+        "relative_mae_improvement": 0.04908906081502695,
+        "repeats_better_than_mean": 9,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 116.15109970789541
+          },
+          "13": {
+            "n": 38,
+            "mae": 149.0023754282313
+          },
+          "20": {
+            "n": 28,
+            "mae": 478.2929475293219
+          }
+        }
+      },
+      "TSR": {
+        "n": 810,
+        "mae": 3.5162199525237927,
+        "rmse": 4.32304327760623,
+        "r2": -0.03353458824975952,
+        "threshold_diagnostics": {
+          "75": {
+            "actual_pass": 800,
+            "actual_fail": 10,
+            "false_pass": 10,
+            "false_fail": 0
+          },
+          "85": {
+            "actual_pass": 520,
+            "actual_fail": 290,
+            "false_pass": 277,
+            "false_fail": 19
+          },
+          "90": {
+            "actual_pass": 140,
+            "actual_fail": 670,
+            "false_pass": 0,
+            "false_fail": 140
+          }
+        },
+        "unique_labeled_rows": 81,
+        "repeat_mae": [
+          3.594123260570864,
+          3.515732478630003,
+          3.5748368125017844,
+          3.42490650473852,
+          3.5808568300565247,
+          3.5298545728217112,
+          3.485186437027326,
+          3.4550761779322956,
+          3.478981779370851,
+          3.522644671588043
+        ],
+        "relative_mae_improvement": 0.016930265091119612,
+        "repeats_better_than_mean": 9,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.805550779572715
+          },
+          "13": {
+            "n": 38,
+            "mae": 3.9744653434201154
+          },
+          "20": {
+            "n": 38,
+            "mae": 3.151483663331559
+          }
+        }
+      },
+      "residual": {
+        "n": 790,
+        "mae": 2.9589172642713,
+        "rmse": 3.657628906302163,
+        "r2": -0.06301721416293926,
+        "threshold_diagnostics": {
+          "85": {
+            "actual_pass": 680,
+            "actual_fail": 110,
+            "false_pass": 110,
+            "false_fail": 0
+          },
+          "90": {
+            "actual_pass": 320,
+            "actual_fail": 470,
+            "false_pass": 9,
+            "false_fail": 312
+          }
+        },
+        "unique_labeled_rows": 79,
+        "repeat_mae": [
+          2.8448899935268486,
+          2.989874108111315,
+          2.908540475146672,
+          3.092229032616535,
+          2.9140031745862083,
+          2.9651960839707328,
+          3.0160612737958035,
+          2.8555826295350175,
+          2.9260250360555426,
+          3.0767708353683165
+        ],
+        "relative_mae_improvement": -0.014845274048576051,
+        "repeats_better_than_mean": 3,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.2104822366099772
+          },
+          "13": {
+            "n": 40,
+            "mae": 2.6247675132706205
+          },
+          "20": {
+            "n": 34,
+            "mae": 3.462098593045822
+          }
+        }
+      }
+    },
+    "head_gated": {
+      "DS": {
+        "n": 850,
+        "mae": 1588.9324370676952,
+        "rmse": 2123.2036395144505,
+        "r2": -0.13469834788200363,
+        "threshold_diagnostics": {
+          "800": {
+            "actual_pass": 850,
+            "actual_fail": 0,
+            "false_pass": 0,
+            "false_fail": 0
+          },
+          "6000": {
+            "actual_pass": 360,
+            "actual_fail": 490,
+            "false_pass": 48,
+            "false_fail": 332
+          },
+          "8000": {
+            "actual_pass": 80,
+            "actual_fail": 770,
+            "false_pass": 0,
+            "false_fail": 80
+          }
+        },
+        "unique_labeled_rows": 85,
+        "repeat_mae": [
+          1579.2943339203573,
+          1529.21588623859,
+          1586.2341196398154,
+          1576.0494987494967,
+          1662.9813962195308,
+          1684.0613355133166,
+          1591.5138282067571,
+          1526.4962705253827,
+          1541.114245689016,
+          1612.3634559746886
+        ],
+        "relative_mae_improvement": 0.0034599206388131742,
+        "repeats_better_than_mean": 4,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 1071.089744630184
+          },
+          "13": {
+            "n": 40,
+            "mae": 1398.135878377671
+          },
+          "20": {
+            "n": 39,
+            "mae": 1864.289321740158
+          }
+        }
+      },
+      "strain": {
+        "n": 720,
+        "mae": 280.0956322801609,
+        "rmse": 453.5489222598688,
+        "r2": -0.029765788693337125,
+        "threshold_diagnostics": {
+          "2000": {
+            "actual_pass": 580,
+            "actual_fail": 140,
+            "false_pass": 136,
+            "false_fail": 10
+          },
+          "2200": {
+            "actual_pass": 300,
+            "actual_fail": 420,
+            "false_pass": 87,
+            "false_fail": 220
+          },
+          "2500": {
+            "actual_pass": 120,
+            "actual_fail": 600,
+            "false_pass": 0,
+            "false_fail": 120
+          }
+        },
+        "unique_labeled_rows": 72,
+        "repeat_mae": [
+          277.12392921226495,
+          287.7220054716982,
+          276.27247743597894,
+          275.46020579774273,
+          286.3984393000153,
+          278.9859974921335,
+          280.891961612668,
+          294.7451317284231,
+          259.3788394585366,
+          283.9773352921477
+        ],
+        "relative_mae_improvement": 0.02907607429910275,
+        "repeats_better_than_mean": 8,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 112.09228435332072
+          },
+          "13": {
+            "n": 38,
+            "mae": 143.96725885411357
+          },
+          "20": {
+            "n": 28,
+            "mae": 500.8419993426908
+          }
+        }
+      },
+      "TSR": {
+        "n": 810,
+        "mae": 3.598007899017922,
+        "rmse": 4.375540849891677,
+        "r2": -0.05878878950389499,
+        "threshold_diagnostics": {
+          "75": {
+            "actual_pass": 800,
+            "actual_fail": 10,
+            "false_pass": 10,
+            "false_fail": 0
+          },
+          "85": {
+            "actual_pass": 520,
+            "actual_fail": 290,
+            "false_pass": 282,
+            "false_fail": 12
+          },
+          "90": {
+            "actual_pass": 140,
+            "actual_fail": 670,
+            "false_pass": 0,
+            "false_fail": 140
+          }
+        },
+        "unique_labeled_rows": 81,
+        "repeat_mae": [
+          3.6689948240706274,
+          3.501827881102445,
+          3.6569691749633138,
+          3.501507540138968,
+          3.6307817975325523,
+          3.6057398620038965,
+          3.62844970663156,
+          3.5040688129396322,
+          3.674309649867485,
+          3.6074297409287377
+        ],
+        "relative_mae_improvement": -0.005936124373798979,
+        "repeats_better_than_mean": 3,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.715254684979813
+          },
+          "13": {
+            "n": 38,
+            "mae": 4.044287934903007
+          },
+          "20": {
+            "n": 38,
+            "mae": 3.2678796018220604
+          }
+        }
+      },
+      "residual": {
+        "n": 790,
+        "mae": 2.9415225805558247,
+        "rmse": 3.641014961920979,
+        "r2": -0.05338212049970181,
+        "threshold_diagnostics": {
+          "85": {
+            "actual_pass": 680,
+            "actual_fail": 110,
+            "false_pass": 110,
+            "false_fail": 0
+          },
+          "90": {
+            "actual_pass": 320,
+            "actual_fail": 470,
+            "false_pass": 2,
+            "false_fail": 319
+          }
+        },
+        "unique_labeled_rows": 79,
+        "repeat_mae": [
+          2.9073305659796755,
+          2.941194348122585,
+          2.8834616170290066,
+          3.107904312725485,
+          2.8872100957742184,
+          2.929608983403412,
+          3.032749740809024,
+          2.901143923057821,
+          2.9007591890635815,
+          2.9238630295934396
+        ],
+        "relative_mae_improvement": -0.008879269937756451,
+        "repeats_better_than_mean": 0,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.257790649024598
+          },
+          "13": {
+            "n": 40,
+            "mae": 2.6310763942609956
+          },
+          "20": {
+            "n": 34,
+            "mae": 3.4073022014219805
+          }
+        }
+      }
+    },
+    "fixed_half_small_pool": {
+      "DS": {
+        "n": 850,
+        "mae": 1569.3359281273727,
+        "rmse": 2105.3440770135226,
+        "r2": -0.11568935210433806,
+        "threshold_diagnostics": {
+          "800": {
+            "actual_pass": 850,
+            "actual_fail": 0,
+            "false_pass": 0,
+            "false_fail": 0
+          },
+          "6000": {
+            "actual_pass": 360,
+            "actual_fail": 490,
+            "false_pass": 68,
+            "false_fail": 323
+          },
+          "8000": {
+            "actual_pass": 80,
+            "actual_fail": 770,
+            "false_pass": 0,
+            "false_fail": 80
+          }
+        },
+        "unique_labeled_rows": 85,
+        "repeat_mae": [
+          1570.1780081400364,
+          1489.9625731955286,
+          1561.7162652484976,
+          1582.5844328095736,
+          1628.3487107807643,
+          1644.8578675312315,
+          1575.4582241244038,
+          1522.838704841045,
+          1513.234758163821,
+          1604.179736438824
+        ],
+        "relative_mae_improvement": 0.015750378130278797,
+        "repeats_better_than_mean": 9,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 1045.9929474314695
+          },
+          "13": {
+            "n": 40,
+            "mae": 1406.3259709308613
+          },
+          "20": {
+            "n": 39,
+            "mae": 1817.0399325385483
+          }
+        }
+      },
+      "strain": {
+        "n": 720,
+        "mae": 275.47570910202694,
+        "rmse": 454.22680973089325,
+        "r2": -0.03284632517518049,
+        "threshold_diagnostics": {
+          "2000": {
+            "actual_pass": 580,
+            "actual_fail": 140,
+            "false_pass": 140,
+            "false_fail": 0
+          },
+          "2200": {
+            "actual_pass": 300,
+            "actual_fail": 420,
+            "false_pass": 60,
+            "false_fail": 224
+          },
+          "2500": {
+            "actual_pass": 120,
+            "actual_fail": 600,
+            "false_pass": 0,
+            "false_fail": 120
+          }
+        },
+        "unique_labeled_rows": 72,
+        "repeat_mae": [
+          264.55987925261223,
+          273.71304984227584,
+          278.00260333293664,
+          277.69576668361697,
+          276.07840939574766,
+          271.9529904042307,
+          285.48738383056894,
+          277.6266058660306,
+          272.1269089140619,
+          277.51349349818764
+        ],
+        "relative_mae_improvement": 0.04509058302969182,
+        "repeats_better_than_mean": 10,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 108.17828081661047
+          },
+          "13": {
+            "n": 38,
+            "mae": 136.35178057128095
+          },
+          "20": {
+            "n": 28,
+            "mae": 500.1362038834856
+          }
+        }
+      },
+      "TSR": {
+        "n": 810,
+        "mae": 3.5125705264016776,
+        "rmse": 4.298724574607229,
+        "r2": -0.021939272413507904,
+        "threshold_diagnostics": {
+          "75": {
+            "actual_pass": 800,
+            "actual_fail": 10,
+            "false_pass": 10,
+            "false_fail": 0
+          },
+          "85": {
+            "actual_pass": 520,
+            "actual_fail": 290,
+            "false_pass": 290,
+            "false_fail": 6
+          },
+          "90": {
+            "actual_pass": 140,
+            "actual_fail": 670,
+            "false_pass": 0,
+            "false_fail": 140
+          }
+        },
+        "unique_labeled_rows": 81,
+        "repeat_mae": [
+          3.516723651080351,
+          3.434811004903645,
+          3.5375334587777436,
+          3.4571594858664785,
+          3.5559272720568424,
+          3.497362398516367,
+          3.5258975830754142,
+          3.5457974962919,
+          3.5409047933147066,
+          3.513588120133333
+        ],
+        "relative_mae_improvement": 0.017950576794846018,
+        "repeats_better_than_mean": 10,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.774180589900427
+          },
+          "13": {
+            "n": 38,
+            "mae": 3.9858103698680307
+          },
+          "20": {
+            "n": 38,
+            "mae": 3.1364872535275947
+          }
+        }
+      },
+      "residual": {
+        "n": 790,
+        "mae": 2.920494575404882,
+        "rmse": 3.613232017647371,
+        "r2": -0.037367685506871195,
+        "threshold_diagnostics": {
+          "85": {
+            "actual_pass": 680,
+            "actual_fail": 110,
+            "false_pass": 110,
+            "false_fail": 0
+          },
+          "90": {
+            "actual_pass": 320,
+            "actual_fail": 470,
+            "false_pass": 0,
+            "false_fail": 320
+          }
+        },
+        "unique_labeled_rows": 79,
+        "repeat_mae": [
+          2.8943555651106,
+          2.977005065128781,
+          2.854597110076765,
+          2.9819156722020157,
+          2.899949194484421,
+          2.9691461857353585,
+          2.994826118396479,
+          2.857241548828056,
+          2.876777759427752,
+          2.899131534658592
+        ],
+        "relative_mae_improvement": -0.0016671143605171412,
+        "repeats_better_than_mean": 5,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.21996470670038
+          },
+          "13": {
+            "n": 40,
+            "mae": 2.6120342069518894
+          },
+          "20": {
+            "n": 34,
+            "mae": 3.3864082248649483
+          }
+        }
+      }
+    },
+    "previous_v04_ensemble": {
+      "DS": {
+        "n": 850,
+        "mae": 1555.6772839639075,
+        "rmse": 2098.9545412388647,
+        "r2": -0.10892758849656037,
+        "threshold_diagnostics": {
+          "800": {
+            "actual_pass": 850,
+            "actual_fail": 0,
+            "false_pass": 0,
+            "false_fail": 0
+          },
+          "6000": {
+            "actual_pass": 360,
+            "actual_fail": 490,
+            "false_pass": 62,
+            "false_fail": 296
+          },
+          "8000": {
+            "actual_pass": 80,
+            "actual_fail": 770,
+            "false_pass": 0,
+            "false_fail": 80
+          }
+        },
+        "unique_labeled_rows": 85,
+        "repeat_mae": [
+          1574.8249592165535,
+          1481.0929569507969,
+          1548.6372711380914,
+          1553.7276184273712,
+          1595.2314580005686,
+          1633.8770996670855,
+          1556.783168043389,
+          1507.5369033073391,
+          1514.1305030808164,
+          1590.9309018070646
+        ],
+        "relative_mae_improvement": 0.02431675013017609,
+        "repeats_better_than_mean": 10,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 1011.6022067753198
+          },
+          "13": {
+            "n": 40,
+            "mae": 1362.620388302108
+          },
+          "20": {
+            "n": 39,
+            "mae": 1837.3882144665617
+          }
+        }
+      },
+      "strain": {
+        "n": 720,
+        "mae": 278.46717393278544,
+        "rmse": 454.6233550097613,
+        "r2": -0.03465048602652154,
+        "threshold_diagnostics": {
+          "2000": {
+            "actual_pass": 580,
+            "actual_fail": 140,
+            "false_pass": 137,
+            "false_fail": 0
+          },
+          "2200": {
+            "actual_pass": 300,
+            "actual_fail": 420,
+            "false_pass": 70,
+            "false_fail": 214
+          },
+          "2500": {
+            "actual_pass": 120,
+            "actual_fail": 600,
+            "false_pass": 0,
+            "false_fail": 120
+          }
+        },
+        "unique_labeled_rows": 72,
+        "repeat_mae": [
+          269.65584408541656,
+          277.31123127625256,
+          279.74801148182615,
+          280.62999999886256,
+          278.131114863725,
+          276.99461290232944,
+          286.01025245053705,
+          281.57770788630137,
+          273.6011183978869,
+          281.0118459847173
+        ],
+        "relative_mae_improvement": 0.034720964790978415,
+        "repeats_better_than_mean": 10,
+        "nmas_subgroups": {
+          "10": {
+            "n": 6,
+            "mae": 117.9058123271704
+          },
+          "13": {
+            "n": 38,
+            "mae": 136.59458872685474
+          },
+          "20": {
+            "n": 28,
+            "mae": 505.4145456277519
+          }
+        }
+      },
+      "TSR": {
+        "n": 810,
+        "mae": 3.5444650162518467,
+        "rmse": 4.312159303592413,
+        "r2": -0.028336952084940803,
+        "threshold_diagnostics": {
+          "75": {
+            "actual_pass": 800,
+            "actual_fail": 10,
+            "false_pass": 10,
+            "false_fail": 0
+          },
+          "85": {
+            "actual_pass": 520,
+            "actual_fail": 290,
+            "false_pass": 280,
+            "false_fail": 9
+          },
+          "90": {
+            "actual_pass": 140,
+            "actual_fail": 670,
+            "false_pass": 0,
+            "false_fail": 140
+          }
+        },
+        "unique_labeled_rows": 81,
+        "repeat_mae": [
+          3.562387185205305,
+          3.5216586922469557,
+          3.580483024677634,
+          3.4498567193495266,
+          3.569655507444802,
+          3.4920354454369202,
+          3.602967068663045,
+          3.562814275249966,
+          3.5225633464122943,
+          3.5802288978320225
+        ],
+        "relative_mae_improvement": 0.009033470326703985,
+        "repeats_better_than_mean": 8,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.931259176171725
+          },
+          "13": {
+            "n": 38,
+            "mae": 3.9545684037181363
+          },
+          "20": {
+            "n": 38,
+            "mae": 3.215046607743468
+          }
+        }
+      },
+      "residual": {
+        "n": 790,
+        "mae": 2.9796735941708508,
+        "rmse": 3.6760961616434042,
+        "r2": -0.0737785948347065,
+        "threshold_diagnostics": {
+          "85": {
+            "actual_pass": 680,
+            "actual_fail": 110,
+            "false_pass": 110,
+            "false_fail": 0
+          },
+          "90": {
+            "actual_pass": 320,
+            "actual_fail": 470,
+            "false_pass": 0,
+            "false_fail": 320
+          }
+        },
+        "unique_labeled_rows": 79,
+        "repeat_mae": [
+          2.96730459874417,
+          3.033619248879012,
+          2.9119645716721676,
+          3.0151588819908692,
+          2.930039047911641,
+          2.996943707835088,
+          3.153215515553824,
+          2.84046384801644,
+          2.9736257846802996,
+          2.974400736424995
+        ],
+        "relative_mae_improvement": -0.02196425083089637,
+        "repeats_better_than_mean": 1,
+        "nmas_subgroups": {
+          "10": {
+            "n": 5,
+            "mae": 2.259198542914154
+          },
+          "13": {
+            "n": 40,
+            "mae": 2.636417425363744
+          },
+          "20": {
+            "n": 34,
+            "mae": 3.4894565944228426
+          }
+        }
+      }
+    }
+  },
+  "head_acceptance_fraction": {
+    "DS": 0.3129411764705882,
+    "strain": 0.6375,
+    "TSR": 0.33827160493827163,
+    "residual": 0.10253164556962026
+  },
+  "paired_differences": {
+    "inner_min_blend": {
+      "DS": {
+        "candidate_minus_mean_mae": -34.07469349543353,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -114.48733525602657,
+          49.64382734938581
+        ],
+        "groups_with_labels": 37,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "strain": {
+        "candidate_minus_mean_mae": -14.161389129533056,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -34.857016191055095,
+          7.19491674646327
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "TSR": {
+        "candidate_minus_mean_mae": -0.060555761001461234,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -0.2297641237984877,
+          0.0931276739225563
+        ],
+        "groups_with_labels": 35,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "residual": {
+        "candidate_minus_mean_mae": 0.0432833839782642,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -0.10596999448963454,
+          0.2123904241156816
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      }
+    },
+    "head_gated": {
+      "DS": {
+        "candidate_minus_mean_mae": -5.516667363960132,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -45.397148756122945,
+          38.95740665650832
+        ],
+        "groups_with_labels": 37,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "strain": {
+        "candidate_minus_mean_mae": -8.387970673555152,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -21.034240447909664,
+          4.735434919760833
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "TSR": {
+        "candidate_minus_mean_mae": 0.02123218549266779,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -0.04097855842149798,
+          0.07677565172688716
+        ],
+        "groups_with_labels": 35,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "residual": {
+        "candidate_minus_mean_mae": 0.025888700262789728,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          4.736629469949092e-05,
+          0.051723570250659455
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      }
+    },
+    "fixed_half_small_pool": {
+      "DS": {
+        "candidate_minus_mean_mae": -25.113176304282742,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -88.13616778719275,
+          37.3176143726488
+        ],
+        "groups_with_labels": 37,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "strain": {
+        "candidate_minus_mean_mae": -13.007893851689142,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -22.679532881661785,
+          -2.6025888542836353
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "TSR": {
+        "candidate_minus_mean_mae": -0.06420518712357577,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -0.16831749422323733,
+          0.037639863294884786
+        ],
+        "groups_with_labels": 35,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "residual": {
+        "candidate_minus_mean_mae": 0.0048606951118471,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -0.07922910564783067,
+          0.09541594996879096
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      }
+    },
+    "previous_v04_ensemble": {
+      "DS": {
+        "candidate_minus_mean_mae": -38.77182046774774,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -119.4362922153326,
+          43.99495405438888
+        ],
+        "groups_with_labels": 37,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "strain": {
+        "candidate_minus_mean_mae": -10.016429020930563,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -22.44188964454987,
+          2.350128403677902
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "TSR": {
+        "candidate_minus_mean_mae": -0.03231069727340676,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -0.1434010303615783,
+          0.08582748682355991
+        ],
+        "groups_with_labels": 35,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      },
+      "residual": {
+        "candidate_minus_mean_mae": 0.06403971387781551,
+        "descriptive_cluster_bootstrap_95_percentiles": [
+          -0.07128366296842074,
+          0.22420555776910983
+        ],
+        "groups_with_labels": 36,
+        "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+      }
+    }
+  },
+  "elapsed_seconds": 5.375,
+  "production_model_promoted": false,
+  "limits": [
+    "New folds on the same historical workbook are internal follow-up, not external validation.",
+    "Fallback is a research model-selection rule; it does not guarantee improved error or engineering safety.",
+    "Means and predictions do not validate any new formulation.",
+    "All four task errors and same-NMAS subgroup errors are reported, including regressions."
+  ]
+}

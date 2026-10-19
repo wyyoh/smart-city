@@ -1,0 +1,180 @@
+{
+  "created_at": "2026-10-19T10:25:32.427395+00:00",
+  "milestone": "research_workbench_and_targeted_internal_followup",
+  "status": "complete_with_external_validation_pending",
+  "application_version": "0.4.0",
+  "base_revision": "ea8642b053eb65c3a824c22cc838d2da18d040b3",
+  "tasks": [
+    {
+      "id": "W01",
+      "deliverable": "保护v0.4离线研究全部文件、原始工作簿及既有正式模型",
+      "status": "complete"
+    },
+    {
+      "id": "W02",
+      "deliverable": "同输入异性能的单元格级问题清单和待确认资料包",
+      "status": "complete"
+    },
+    {
+      "id": "W03",
+      "deliverable": "冻结协议后的逐指标均值回退实验，10次新分组、50个外层折与逐值复现",
+      "status": "complete"
+    },
+    {
+      "id": "W04",
+      "deliverable": "研究工作台API：完整结果、候选检索、证据和下载",
+      "status": "complete"
+    },
+    {
+      "id": "W05",
+      "deliverable": "来源组分散与空间覆盖的试验队列，追加保存、幂等导出和版本核对",
+      "status": "complete"
+    },
+    {
+      "id": "W06",
+      "deliverable": "前端配方研究入口与候选对比、配比变化、源表复核及送检入口",
+      "status": "complete"
+    },
+    {
+      "id": "W07",
+      "deliverable": "回归、浏览器实际操作、快照与交付检查",
+      "status": "complete"
+    }
+  ],
+  "automated_validation": {
+    "full_suite": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "91",
+      "time": "32.447",
+      "timestamp": "2026-10-19T18:18:41.047697+08:00",
+      "hostname": "LAPTOP-IORJGR2A"
+    },
+    "review_suite_after_coverage_update": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "9",
+      "time": "10.067",
+      "timestamp": "2026-10-19T18:22:58.625243+08:00",
+      "hostname": "LAPTOP-IORJGR2A"
+    },
+    "typescript": "passed",
+    "production_build": "passed"
+  },
+  "new_internal_study": {
+    "repeats": 10,
+    "outer_folds": 50,
+    "fits_per_run": 1250,
+    "exact_prediction_and_gate_reproduction": true,
+    "additional_independent_materials": 0,
+    "production_model_promoted": false,
+    "fixed_half_small_pool_strain_relative_mae_improvement_pct": 4.51,
+    "fixed_half_small_pool_strain_repeats_improved": 10,
+    "head_gate_relative_mae_change_pct": {
+      "DS": -0.35,
+      "strain": -2.91,
+      "TSR": 0.59,
+      "residual": 0.89
+    }
+  },
+  "source_audit": {
+    "input_alias_groups": 15,
+    "groups_with_observed_conflict": 11,
+    "masked_curve_alias_groups": 5,
+    "references_checked": 181,
+    "physical_identity_confirmed": false
+  },
+  "research_catalog": {
+    "hypotheses": 1098,
+    "within_observed_support": 731,
+    "new_performance_measurements": 0,
+    "trial_plan_formulation_limit": 8
+  },
+  "runtime": {
+    "url": "http://127.0.0.1:8766/?view=research",
+    "database": "artifacts/review-phase/demo.sqlite",
+    "health": {
+      "status": "ok",
+      "version": "0.4.0"
+    },
+    "primary_tables_preserved": true,
+    "qa_server_stopped": true
+  },
+  "integrity": "artifacts/research-workbench/integrity-verification.json",
+  "ui_validation": "artifacts/research-workbench/ui-flow-verification.json",
+  "report": "docs/research-workbench-v5.md",
+  "remaining_work": [
+    "材料、料堆、批次、工艺与原表标签关系核实",
+    "RAP及结合料质量基准确认与实际称料表冻结",
+    "独立制备对照与新配方送检",
+    "新材料上的模型外部验证；四项可靠提升仍未证实",
+    "真人操作用时和实际行业收益核验"
+  ],
+  "source_file_sha256": {
+    "README.md": "8a7e605c4b2fc0b0f516f0aa21ff54f3ce9b8c3c65978f44467e88fef4cb0d65",
+    "artifacts/research-workbench/.gitattributes": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+    "artifacts/research-workbench/head-fallback-folds.json": "39b93742cb45017694e07f005015a890073c914d1c72b1fcab7f0e3372a508e7",
+    "artifacts/research-workbench/head-fallback-oof.npz": "da19cf42a69728fdf7a6107f19ee0502fda6b0b969d30a0956499acc177f28d7",
+    "artifacts/research-workbench/head-fallback-protocol.json": "70591ffd2788185ccaa7c20ba737dc84273a65df2acd2a49c20fc70263746c1f",
+    "artifacts/research-workbench/head-fallback.json": "706dbe75a12eb428e94c8ba7462a4d139461bf16c3b8bc4ff1084a2ec8aa301b",
+    "artifacts/research-workbench/integrity-verification.json": "8fd820eb52f44628a0154bcf5ba3596e7f70584cfe87e043828fd61ebc4e91d0",
+    "artifacts/research-workbench/previous-review-evidence-v3.json": "83b80c299767ebe7cd19ffb802cc756ac1496a21c1c6199a39c8ee237153b4e3",
+    "artifacts/research-workbench/protected-inputs.json": "29ea49c5baee05f77d17bfcaa34f6861b56cb96c1dd8f9a2acbe446324b69d65",
+    "artifacts/research-workbench/pytest.xml": "ca09cb9f8c9e3b39b23b098dc0592fb908a900b6ff43ea63f8a0ab795108a9cc",
+    "artifacts/research-workbench/reproduction/head-fallback-folds.json": "39b93742cb45017694e07f005015a890073c914d1c72b1fcab7f0e3372a508e7",
+    "artifacts/research-workbench/reproduction/head-fallback-oof.npz": "da19cf42a69728fdf7a6107f19ee0502fda6b0b969d30a0956499acc177f28d7",
+    "artifacts/research-workbench/reproduction/head-fallback-protocol.json": "57b3c8fde988004dbae4bdc473f66760648d2d9308c7f7a2c27b29e3fdd4879c",
+    "artifacts/research-workbench/reproduction/head-fallback.json": "32bbc5f263df617c084f85f3168f7bb9698a37ec6537e4876684b5536ee559ce",
+    "artifacts/research-workbench/reproduction/protected-inputs.json": "29ea49c5baee05f77d17bfcaa34f6861b56cb96c1dd8f9a2acbe446324b69d65",
+    "artifacts/research-workbench/reproduction/study-progress.json": "4d843888b5ff95761ce871cda380b7b5a4e1cd80bf4374033efd492721c3d199",
+    "artifacts/research-workbench/review-regression.xml": "fe63a5ae69b0cfe83b4e59ba74a236b8cd92c7718464d616bfc7c342a0a687b1",
+    "artifacts/research-workbench/runtime-before.json": "bedf7a6cfb16fa4856e8c4ec486354638eba1bf2d4d7b28a8b75876df4e558c6",
+    "artifacts/research-workbench/source-audit.json": "3dea706bb14e7ce4656d6b6211a2cbf18801cace1f8fdaaa916105592d6da37d",
+    "artifacts/research-workbench/study-progress.json": "4d843888b5ff95761ce871cda380b7b5a4e1cd80bf4374033efd492721c3d199",
+    "artifacts/research-workbench/study-verification.json": "53f4aaf2b88e732e570823f4f4bf16a6c271386174ca6d3e32b17e0454d60c8a",
+    "artifacts/research-workbench/ui-flow-verification.json": "d47a4a948182e06e1babdc0784a710bc1a9241c083a8865777ee767dae53ff02",
+    "artifacts/research-workbench/ui/candidates-1280.png": "fa47941d126b74251bcda3f7168d2d0595d6cb66e9d1b1def0ba01361145a278",
+    "artifacts/research-workbench/ui/experiments-1280.png": "9946208eafeea07d5143d9b86cb796127183f35c9a9a1b816a24d8d02d834da6",
+    "artifacts/research-workbench/ui/live-workbench.png": "603addbc5316e4b6bc602e10d102cc94ea65f42b33b34cd1cc20786ff797c3ba",
+    "artifacts/research-workbench/ui/print-plan.png": "2bee15925f7972b37321d011ed3bbff9b37245a0c045fe0504eb36cb259e0ce7",
+    "artifacts/research-workbench/ui/saved-plan-1440.png": "b865b0059f77009c6db2f78be08829218424928fa53935f1cee182cf304f4357",
+    "artifacts/research-workbench/ui/saved-plan.html": "8225efd8d0b124df2d884ddfbe02c89ccaeb7546770f6eacd4bdc975e7a11ed4",
+    "artifacts/research-workbench/ui/saved-plan.json": "9750297a351e473660f02f8ebe1f074ad0053edc6f702a42cf4342d7dbceb572",
+    "artifacts/research-workbench/ui/source-audit-1280.png": "bc1ae8cd9b8a8b25b12ca2b06c57a22ddbb084b2777e2242760770d411cbb88a",
+    "backend/app/main.py": "6ba2f4991e75635126d0e65c0f7ecc5031633415deb454bbd8c82ab18bfb7b94",
+    "backend/app/research_workbench/__init__.py": "cd75701166539c68416387655da05754a6f1e49c29f1f51ecdf0834594b7ff2b",
+    "backend/app/research_workbench/experiments.py": "096b6bdec50a52af2ab9c691bb8e5a93913338d6f01e9cb6993e9a31ace2c8cf",
+    "backend/app/research_workbench/router.py": "3e8a2426422cc32f8e1c39d86a9f446cce02c0c5c65f3f763ee4fcf1928cc366",
+    "backend/app/research_workbench/service.py": "c7a6ae84cab9f1eb6392e240a9328c24e9f44853bb48a6e5b70a628ff42736a1",
+    "backend/app/settings.py": "666533b04de82e6c6a3ba22a8370052bc3b7dfed5374e47492270f67db72eb35",
+    "configs/.gitattributes": "2a70ba7791814c6df968cf674fdf7497682aa9ca2b79311b7db752b4157152c5",
+    "configs/research_workbench_v5.json": "88fd9eacbff84104e3caea42cf5eb18f18c7cf90e86adc687af0d4cf3c5270f4",
+    "configs/review_evidence_v3.json": "b3c4b296398c5aebc4a734241b248726f49e6af3bd7aa06f10625907883cc195",
+    "design/research-workbench-v5.json": "fb6b1ead2e294b2896ae51c81f57e8bbff04ae8f047fdfdf21b34df51fcf0deb",
+    "docs/api-research-v4.openapi.json": "8368c3c1132667717fe056e78382a47b74da6471a718b593a66ff5dac1c72390",
+    "docs/research-workbench-v5.md": "11aec72010297d532f22db9448f42cf7b9c174d5b2b9f81c85e6f1c274f331d1",
+    "frontend/package.json": "70c74f1cf4bfd74764107c120f981743f438c206663fdc9be55b87e195017214",
+    "frontend/src/components/ResearchWorkbench.tsx": "81953f735726b58f1ff98dd47a1bb8f4ffb9b493291c95a84b0b0ad775b27691",
+    "frontend/src/components/ReviewCenter.tsx": "f0413dd751ab167b3afcd08c1346520b4699328cc4ee6be38e3d4fc7cc28a6cb",
+    "frontend/src/main.tsx": "66012077762095d54de987ad4d07f81e921e63616ad9670988ccf0f0795f9c3e",
+    "frontend/src/research-types.ts": "1e5233086560b6a5e1edeeae662054bc65da7b5422e6fa1303c46b2c99cdb82d",
+    "frontend/src/research.css": "2e5f67f473c0ff7d5067156b2ab0909f0e61068455690e5e86d97dcc061540ba",
+    "planning/research_workbench_v5.json": "e87a57d72091d8a38aaecbfcacfe193584f1a6cdb299138a05d3f756ee4a5e12",
+    "pyproject.toml": "273c7a348e3cec40b3f054ae640747fa37836563e6da4bbbb03c6f42f0b09daf",
+    "scripts/register_research_workbench_v5.py": "90aecf38ec4e69b71fd7fde87b5f33df086d935a8e4790c12ce0ca51a6a7c46a",
+    "scripts/research_workbench_v5.py": "eed561664096d466d2039e9f74088ad083b068939afe852cb2ce1269a722b939",
+    "scripts/update_research_coverage_v5.py": "a2d56eb1f9ea88caa72f24eec84822dccc068ac5074e2432c56c6f2e1de04fd8",
+    "scripts/verify_research_workbench_v5.py": "5d972e0d29714452f5781e4d528e7ac2a17a2c56e09bb2b3dba1cfb136bc35a6",
+    "tests/test_research_workbench_v5.py": "ebab022db8d8fdf8fee17f5ffbf0380d40854b7d39b6f60a6af4f8339e666a3c"
+  },
+  "frontend_build_sha256": {
+    "frontend/dist/assets/index-CseF2IW4.css": "24b31f48321e20ffaf052323841d7ee1d15f587d82d84964b78e1d259f8e5909",
+    "frontend/dist/assets/index-Zv2dWeWm.js": "f4d841e9321e78f95d0ca0c1bb838d8deea8be6ac680ce41c7ff1ad4fda56567",
+    "frontend/dist/favicon.svg": "4540898141c074e3b6c6c81d3d476d7b0c163375a8c6abe4b0d90f733f3e914d",
+    "frontend/dist/index.html": "c1a43b4606e184c69c558aa737191f7911d6586760a1b6c3b88fcf315f9b5ca3"
+  }
+}
