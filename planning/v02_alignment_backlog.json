@@ -1,0 +1,293 @@
+{
+  "schema_version": "2.0-design",
+  "design_date": "2026-10-19",
+  "scope": "赛题对齐增量，不重置或代替v0.1工程验收历史；本轮仅完成设计与诊断",
+  "capacity": {
+    "developers": 1,
+    "p0_estimated_hours": 68,
+    "conditional_estimated_hours": 16,
+    "suggested_buffer_hours": 12,
+    "deadline": null,
+    "note": "初步估算，不代表已消耗工时；外部试验劳动和企业联调等待不计入"
+  },
+  "tasks": [
+    {
+      "id": "A01",
+      "priority": "P0_alignment",
+      "title": "上游场景和需求契约",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B01",
+        "B04",
+        "T01",
+        "T09"
+      ],
+      "dependencies": [],
+      "acceptance": "结构层、严重程度和来源字段；合法、缺失与演示输入样例"
+    },
+    {
+      "id": "A02",
+      "priority": "P0_alignment",
+      "title": "三类需求规则卡",
+      "estimate_hours": 6,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B01",
+        "B02",
+        "T01",
+        "T02"
+      ],
+      "dependencies": [
+        "A01"
+      ],
+      "acceptance": "来源、条件、目标、优先级；构造与正式模式隔离"
+    },
+    {
+      "id": "A03",
+      "priority": "P0_alignment",
+      "title": "需求解析与确认",
+      "estimate_hours": 6,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B01",
+        "T01",
+        "T02"
+      ],
+      "dependencies": [
+        "A02"
+      ],
+      "acceptance": "无手工targets输入可解析；冲突、覆盖和待补项可追溯"
+    },
+    {
+      "id": "A04",
+      "priority": "P0_alignment",
+      "title": "场景材料知识关系",
+      "estimate_hours": 6,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B02",
+        "T03"
+      ],
+      "dependencies": [
+        "A01"
+      ],
+      "acceptance": "三类场景可查询组成、性能、适用条件和证据路径"
+    },
+    {
+      "id": "A05",
+      "priority": "P0_alignment",
+      "title": "完整组成与方案卡",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B01",
+        "T04",
+        "T05"
+      ],
+      "dependencies": [
+        "A04"
+      ],
+      "acceptance": "产品、级配、用油、RAP、助剂与工艺字段真实或明确未知"
+    },
+    {
+      "id": "A06",
+      "priority": "P0_alignment",
+      "title": "候选池自动检索与冻结",
+      "estimate_hours": 6,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B03",
+        "T03",
+        "T04"
+      ],
+      "dependencies": [
+        "A03",
+        "A04"
+      ],
+      "acceptance": "按库存和适用规则生成，显示全量排除和范围哈希"
+    },
+    {
+      "id": "A07",
+      "priority": "P0_alignment",
+      "title": "组成施工及未知约束检查",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "T02",
+        "T10"
+      ],
+      "dependencies": [
+        "A05",
+        "A06"
+      ],
+      "acceptance": "不兼容可排除，条件未知不自动通过，研究数值筛选另标"
+    },
+    {
+      "id": "A08",
+      "priority": "P0_alignment",
+      "title": "多指标偏好与比较",
+      "estimate_hours": 6,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "T02",
+        "T05",
+        "T08"
+      ],
+      "dependencies": [
+        "A07"
+      ],
+      "acceptance": "硬约束后排序，并列、贡献、雷达缺测和未知成本可见"
+    },
+    {
+      "id": "A09",
+      "priority": "P0_alignment",
+      "title": "候选预测与验证视图",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B01",
+        "B03",
+        "T07",
+        "T08"
+      ],
+      "dependencies": [
+        "A05"
+      ],
+      "acceptance": "区分历史、离折与研究预测；显示模型边界与原始对照"
+    },
+    {
+      "id": "A10",
+      "priority": "P0_alignment",
+      "title": "五案例同池基准报告",
+      "estimate_hours": 6,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B03",
+        "T09"
+      ],
+      "dependencies": [
+        "A08",
+        "A09"
+      ],
+      "acceptance": "B0、强B1及V2比较；正例、无解和不适用负例"
+    },
+    {
+      "id": "A11",
+      "priority": "P0_alignment",
+      "title": "上游接口本地模拟",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B04",
+        "T09"
+      ],
+      "dependencies": [
+        "A03",
+        "A06"
+      ],
+      "acceptance": "决策ID、需求版本和候选响应端到端；不冒充企业联调"
+    },
+    {
+      "id": "A12",
+      "priority": "P0_alignment",
+      "title": "实验室新方案资格与工程反馈契约",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B04",
+        "T06"
+      ],
+      "dependencies": [
+        "A05",
+        "A11"
+      ],
+      "acceptance": "正式新试验进入适格训练视图；现场模拟与实验室指标分开"
+    },
+    {
+      "id": "A13",
+      "priority": "P0_alignment",
+      "title": "应用价值比较记录",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B05"
+      ],
+      "dependencies": [
+        "A10"
+      ],
+      "acceptance": "同信息流程用时、操作和遗漏记录；自测范围明确"
+    },
+    {
+      "id": "A14",
+      "priority": "P0_alignment",
+      "title": "参赛报告与对齐验收",
+      "estimate_hours": 4,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05"
+      ],
+      "dependencies": [
+        "A10",
+        "A11",
+        "A12",
+        "A13"
+      ],
+      "acceptance": "基本成果逐项挂接证据，程序、案例、答辩与能力状态一致"
+    },
+    {
+      "id": "M01",
+      "priority": "P1_conditional",
+      "title": "小样本多任务GP对照",
+      "estimate_hours": 8,
+      "status": "planned",
+      "owner": "single_developer",
+      "requirements": [
+        "T07",
+        "X02"
+      ],
+      "dependencies": [
+        "A09"
+      ],
+      "acceptance": "统一来源分组和缺测掩码，同划分独立基线对照；公开负结果"
+    },
+    {
+      "id": "M02",
+      "priority": "P1_conditional",
+      "title": "局部配方探索",
+      "estimate_hours": 8,
+      "status": "blocked_by_data_condition",
+      "owner": "single_developer",
+      "requirements": [
+        "X01"
+      ],
+      "dependencies": [
+        "A07",
+        "A09"
+      ],
+      "optional_inputs": [
+        "M01"
+      ],
+      "condition": "RAP质量基准、原料关联、允许变量、通过项目验证门槛的代理模型及独立评价路径明确",
+      "acceptance": "有上限的合法组成搜索和独立验证，未实测状态清晰"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "数智选材赛题对齐与深化设计",
+  "date": "2026-10-19",
+  "status": "design_only_app_v1_unchanged",
+  "parent_page_id": "page_b3e90ae7e0a88191967a4234479f66dd",
+  "idempotency_key": "c639f639-df14-41cc-a0dd-01dff273eea6",
+  "local_document": "C:\\Users\\Lenovo\\Desktop\\智慧城市\\design\\数智选材_赛题对齐与深化设计_v2.md",
+  "document_sha256": "b8be60ecb6b16f25dae8075b4fda8df8cebeedaf5e47e5e56f027489d1f0a18f",
+  "evidence_file": "competition_alignment_evidence_v2.json",
+  "requirement_count": 22,
+  "requirements_by_kind": {
+    "basic": 5,
+    "technical_detail": 10,
+    "bonus": 7
+  },
+  "incremental_tasks": 16,
+  "p0_estimated_hours": 68,
+  "original_release_unchanged": true,
+  "source_pdf_sha256": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+  "workbook_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "page_id": "page_2bce917000248191a4e5e29beb90620e",
+  "page_url": "https://chatgpt.com/space/page_2bce917000248191a4e5e29beb90620e",
+  "page_synced_document_sha256": "b8be60ecb6b16f25dae8075b4fda8df8cebeedaf5e47e5e56f027489d1f0a18f",
+  "page_layout_preview": "not_inspected"
+}

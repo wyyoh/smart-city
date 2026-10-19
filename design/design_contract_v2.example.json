@@ -1,0 +1,177 @@
+{
+  "implementation_status": "proposed_not_implemented",
+  "scope": "仅演示设计契约，路径不是当前可调用的v1接口；示例目标不可当正式项目要求",
+  "metric_registry_design": {
+    "value_types": [
+      "scalar",
+      "range",
+      "grade"
+    ],
+    "condition_keys": [
+      "test_method",
+      "temperature",
+      "frequency",
+      "aging"
+    ],
+    "known_but_unsupported": [
+      "PG_grade",
+      "fatigue_life",
+      "dynamic_modulus"
+    ],
+    "unsupported_request_behavior": "保留合法需求并报告证据缺失，不替换或忽略"
+  },
+  "proposed_endpoint": "POST /v2/demand-resolutions",
+  "request": {
+    "schema_version": "2.0",
+    "decision_id": "DEMO-UPSTREAM-001",
+    "context_kind": "constructed_demo",
+    "scene": {
+      "maintenance_method": "演示：已由上游确定的面层铣刨重铺",
+      "layer": "演示上面层",
+      "climate": {
+        "class": "demo_hot",
+        "source": "scenario_assumption"
+      },
+      "traffic": {
+        "class": "demo_heavy",
+        "source": "scenario_assumption"
+      },
+      "distress": {
+        "type": "rutting",
+        "severity": "demo_moderate",
+        "mechanism": "upstream_confirmation_required"
+      }
+    },
+    "inventory": {
+      "source_codes": null,
+      "product_versions": null,
+      "status": "not_yet_confirmed"
+    },
+    "construction": {
+      "mixing_window": null,
+      "compaction_window": null,
+      "status": "unknown"
+    },
+    "constraints": {
+      "budget": null,
+      "schedule_days": null,
+      "rap_min_pct": 0,
+      "carbon_cap": null
+    }
+  },
+  "demand_resolution": {
+    "status": "demo_targets_require_confirmation",
+    "targets": [
+      {
+        "metric": "DS",
+        "operator": ">",
+        "value": 8000,
+        "unit": "次/mm",
+        "source_kind": "constructed_demo",
+        "reference": "DEMO-HT-V1",
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "test_method": null,
+        "conditions_status": "unverified"
+      },
+      {
+        "metric": "strain",
+        "operator": ">",
+        "value": 2000,
+        "unit": "με",
+        "source_kind": "enterprise_reference",
+        "reference": "设计流程!E12",
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "test_method": null,
+        "conditions_status": "unverified"
+      },
+      {
+        "metric": "TSR",
+        "operator": ">",
+        "value": 75,
+        "unit": "%",
+        "source_kind": "enterprise_reference",
+        "reference": "设计流程!E10",
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "test_method": null,
+        "conditions_status": "unverified"
+      },
+      {
+        "metric": "residual",
+        "operator": ">",
+        "value": 85,
+        "unit": "%",
+        "source_kind": "enterprise_reference",
+        "reference": "设计流程!E10",
+        "comparison_basis": "legacy_workbook_numeric_demo",
+        "test_method": null,
+        "conditions_status": "unverified"
+      }
+    ],
+    "priority_order": [
+      "DS",
+      "strain",
+      "TSR",
+      "residual"
+    ],
+    "unresolved": [
+      "正式场景规则适用性",
+      "库存来源范围",
+      "具体试验和施工条件"
+    ],
+    "project_approved": false
+  },
+  "proposed_recommendation_response": {
+    "candidate_pool": {
+      "retrieval_policy": "scene_and_inventory_v2",
+      "snapshot_sha256": null,
+      "status": "not_executed"
+    },
+    "candidate_card_schema": {
+      "recipe_version_id": "required",
+      "product_version": "required",
+      "modifier": {
+        "type": null,
+        "dosage": null,
+        "disclosure_status": "not_provided"
+      },
+      "gradation": {
+        "full_id": "required",
+        "components": "array_or_unknown",
+        "curve_reference": "required_when_available"
+      },
+      "binder": {
+        "oil_stone_ratio_pct": "number_or_unknown",
+        "new_binder_amount": null,
+        "mass_basis_status": "unconfirmed"
+      },
+      "rap": {
+        "nominal_pct": "number_or_unknown",
+        "mass_basis": "unconfirmed"
+      },
+      "functional_additives": {
+        "items": null,
+        "disclosure_status": "not_provided"
+      },
+      "performance": {
+        "historical": "value_method_conditions_source",
+        "oof_prediction": "value_fold_error_or_unavailable",
+        "research_prediction": "value_model_applicability_or_unavailable"
+      },
+      "construction_compatibility": "compatible_incompatible_or_unknown",
+      "cost": null,
+      "carbon": null,
+      "service_life": null,
+      "decision_state": "historical_review_needs_test_excluded_or_context_invalid",
+      "evidence_links": "required"
+    },
+    "versions": [
+      "dataset",
+      "demand",
+      "rule",
+      "candidate_pool",
+      "recipe",
+      "model",
+      "report"
+    ]
+  }
+}

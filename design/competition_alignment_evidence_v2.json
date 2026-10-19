@@ -1,0 +1,2826 @@
+{
+  "review_date": "2026-10-19",
+  "code_revision": "689e18c100efadb416f6d8a66a3b6daf29e9ccdf",
+  "dataset_id": "ds_d916d61767ca55d21bd7",
+  "dataset_revision": 0,
+  "importer_version": "1.1.1",
+  "workbook_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "official_pdf": "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf",
+  "official_pdf_sha256": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+  "coverage": {
+    "historical_operational_keys": 180,
+    "four_metric_present": 60,
+    "four_metric_present_ac13": 35,
+    "per_metric": {
+      "DS": 86,
+      "strain": 80,
+      "TSR": 85,
+      "residual": 80
+    }
+  },
+  "diagnostic_pool": [
+    {
+      "id": "mix_2a28d8524d8d84e6f35f",
+      "display_id": "84e6f35f",
+      "source": "R",
+      "gradation": "AC-13",
+      "product": "90#",
+      "oil_stone_ratio_pct": 5.2,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 6262.0,
+        "strain": 2166.8333333333335,
+        "TSR": 79.35258449788157,
+        "residual": 92.69226169118525
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K72"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K73"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H122"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H123"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H124"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H125"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H126"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H127"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U325"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q242"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_ff76e96640f7706852c9",
+      "display_id": "706852c9",
+      "source": "R",
+      "gradation": "AC-13",
+      "product": "70#",
+      "oil_stone_ratio_pct": 5.2,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 6079.5,
+        "strain": 2205.9166666666665,
+        "TSR": 73.94470118746662,
+        "residual": 89.30474333983106
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K70"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K71"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H116"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H117"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H118"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H119"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H120"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H121"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U319"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q237"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_8adbae42f826e07e8611",
+      "display_id": "R1",
+      "source": "S",
+      "gradation": "AC-13",
+      "product": "70#",
+      "oil_stone_ratio_pct": 5.5,
+      "rap_nominal_pct": 60.0,
+      "metrics": {
+        "DS": 9327.303846153834,
+        "strain": 2064.2,
+        "TSR": 89.78596858504315,
+        "residual": 87.81375742479402
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K74"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K75"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H128"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H129"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H130"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H131"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H132"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U331"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q247"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_783a016ef718c0ce666e",
+      "display_id": "R2",
+      "source": "S",
+      "gradation": "AC-13",
+      "product": "110#-1",
+      "oil_stone_ratio_pct": 5.5,
+      "rap_nominal_pct": 60.0,
+      "metrics": {
+        "DS": 7538.46153846153,
+        "strain": 2087.4,
+        "TSR": 86.56130356787892,
+        "residual": 86.17081447963801
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K76"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K77"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H133"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H134"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H135"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H136"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H137"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U335"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q251"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_424760c7b3eae4af9dfb",
+      "display_id": "R3",
+      "source": "S",
+      "gradation": "AC-13",
+      "product": "110#-2",
+      "oil_stone_ratio_pct": 5.5,
+      "rap_nominal_pct": 60.0,
+      "metrics": {
+        "DS": 7240.9090909090955,
+        "strain": 2031.0,
+        "TSR": 86.08688330332618,
+        "residual": 87.2653768408894
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K78"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K79"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H138"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H139"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H140"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H141"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H142"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U339"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q255"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_c09286e2a7be7cb14638",
+      "display_id": "7cb14638",
+      "source": "V",
+      "gradation": "AC-13",
+      "product": "110#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 4823.0,
+        "strain": 2347.8333333333335,
+        "TSR": 89.0,
+        "residual": 93.43
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K82"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K83"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H149"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H150"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H151"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H152"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H153"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H154"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U349"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q264"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_e7c870ac9436de2bd8c0",
+      "display_id": "de2bd8c0",
+      "source": "W",
+      "gradation": "AC-13-1",
+      "product": "90#-1",
+      "oil_stone_ratio_pct": 4.6,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 7349.0,
+        "strain": 2248.1666666666665,
+        "TSR": 83.0,
+        "residual": 89.6
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K84"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K85"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H155"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H156"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H157"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H158"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H159"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H160"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U355"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q269"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_65ff1efa3cd482765c9f",
+      "display_id": "82765c9f",
+      "source": "W",
+      "gradation": "AC-13-1",
+      "product": "70#-1",
+      "oil_stone_ratio_pct": 4.6,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 4846.5,
+        "strain": 2385.3333333333335,
+        "TSR": 82.0,
+        "residual": 89.68
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K86"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K87"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H161"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H162"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H163"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H164"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H165"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H166"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U361"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q274"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_aa15fb08faac91ed3888",
+      "display_id": "91ed3888",
+      "source": "W",
+      "gradation": "AC-13-2",
+      "product": "130#-2",
+      "oil_stone_ratio_pct": 4.6,
+      "rap_nominal_pct": 70.0,
+      "metrics": {
+        "DS": 6148.0,
+        "strain": 2035.3333333333333,
+        "TSR": 85.0,
+        "residual": 88.64
+      },
+      "quality_flags": [
+        "component_curve_requires_review",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K88"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K89"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H167"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H168"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H169"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H170"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H171"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H172"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U367"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q279"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_67335f441bbff44b208e",
+      "display_id": "f44b208e",
+      "source": "W",
+      "gradation": "AC-13-2",
+      "product": "70#-2",
+      "oil_stone_ratio_pct": 4.6,
+      "rap_nominal_pct": 70.0,
+      "metrics": {
+        "DS": 5084.0,
+        "strain": 1878.0,
+        "TSR": 80.0,
+        "residual": 83.36
+      },
+      "quality_flags": [
+        "component_curve_requires_review",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K90"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K91"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H173"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H174"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H175"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H176"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H177"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H178"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U373"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q284"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_da01d4da4aba77dc7979",
+      "display_id": "77dc7979",
+      "source": "1A",
+      "gradation": "AC-13",
+      "product": "130#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 70.0,
+      "metrics": {
+        "DS": 4906.0,
+        "strain": 2027.1391666666666,
+        "TSR": 88.39212112426317,
+        "residual": 86.31292517006803
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K96"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K97"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K98"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H186"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H187"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H188"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H189"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H190"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H191"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U397"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q304"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_473a26fdb0b8356b4ab4",
+      "display_id": "356b4ab4",
+      "source": "1B",
+      "gradation": "AC-13-1",
+      "product": "AC-13-1(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 5202.5,
+        "strain": 2121.4917142857144,
+        "TSR": 86.6307550738457,
+        "residual": 88.41481481481483
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K99"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K100"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K101"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H192"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H193"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H194"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H195"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H196"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H197"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H198"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U403"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q309"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_fd042b9c9cb09d2188a9",
+      "display_id": "9d2188a9",
+      "source": "1B",
+      "gradation": "AC-13-2",
+      "product": "AC-13-2(110#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 60.0,
+      "metrics": {
+        "DS": 6044.0,
+        "strain": 2049.511285714286,
+        "TSR": 89.86696246916348,
+        "residual": 89.52095808383231
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K102"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K103"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K104"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H199"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H200"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H201"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H202"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H203"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H204"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H205"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U409"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q314"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_5a0eae6db3cb0a2f9a1f",
+      "display_id": "R5",
+      "source": "1B",
+      "gradation": "AC-13-3",
+      "product": "AC-13-3(130#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 70.0,
+      "metrics": {
+        "DS": 6260.0,
+        "strain": 2225.6747142857143,
+        "TSR": 92.74457106727604,
+        "residual": 88.88192267502613
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K105"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K106"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K107"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H206"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H207"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H208"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H209"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H210"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H211"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H212"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U415"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q319"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_1898f7dbc9bebd98fbc6",
+      "display_id": "bd98fbc6",
+      "source": "1C",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 4957.5,
+        "strain": 2118.714285714286,
+        "TSR": 87.73162116224877,
+        "residual": 88.35140394773421
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K117"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K118"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H234"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H235"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H236"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H237"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H238"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H239"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H240"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U439"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q339"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_e464f052e3ce56f7455b",
+      "display_id": "56f7455b",
+      "source": "1E",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 5317.0,
+        "strain": 1999.7872499999999,
+        "TSR": 89.44046136147637,
+        "residual": 85.23466940733128
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K122"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K123"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K124"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H246"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H247"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H248"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H249"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U451"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q349"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_fb4cc4f36aaa75a8e497",
+      "display_id": "75a8e497",
+      "source": "1F",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 5500.0,
+        "strain": 2123.7163333333333,
+        "TSR": 82.19935486558883,
+        "residual": 83.18868531018965
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K125"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K126"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K127"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H250"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H251"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H252"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H253"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H254"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H255"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U457"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q354"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_b918fd825572e8713e23",
+      "display_id": "e8713e23",
+      "source": "1H",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 55.00000000000001,
+      "metrics": {
+        "DS": 7422.0,
+        "strain": 1801.6638333333333,
+        "TSR": 91.84263395163468,
+        "residual": 89.02289809473866
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K134"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K135"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K136"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H264"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H265"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H266"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H267"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H268"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H269"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U475"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q369"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_bf40a782f2a3fee6c9aa",
+      "display_id": "R6",
+      "source": "1L",
+      "gradation": "AC-13-1",
+      "product": "AC-13-1(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 3933.0,
+        "strain": 1763.1666666666667,
+        "TSR": 80.98639827966923,
+        "residual": 82.84530017382004
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K143"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K144"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K145"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H282"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H283"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H284"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H285"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H286"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H287"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U495"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q384"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_7a55a307568e18697636",
+      "display_id": "R7",
+      "source": "1L",
+      "gradation": "AC-13-2",
+      "product": "AC-13-2(110#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 60.0,
+      "metrics": {
+        "DS": 5525.5,
+        "strain": 2383.8333333333335,
+        "TSR": 89.45330053981392,
+        "residual": 90.94357515410148
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K146"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K147"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K148"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H288"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H289"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H290"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H291"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H292"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H293"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U501"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q389"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_26677634e9a9c5b83d13",
+      "display_id": "c5b83d13",
+      "source": "1M",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 2422.5,
+        "strain": 2221.432,
+        "TSR": 85.37392593983176,
+        "residual": 88.31392841742131
+      },
+      "quality_flags": [
+        "component_curve_requires_review",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K149"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K150"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K151"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H294"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H295"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H296"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H297"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U507"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q394"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_55757ba9f9c2f0200762",
+      "display_id": "R8",
+      "source": "1N",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 3646.0,
+        "strain": 2155.4621666666667,
+        "TSR": 82.2074089728802,
+        "residual": 86.55105973025046
+      },
+      "quality_flags": [
+        "component_curve_requires_review",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K152"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K153"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K154"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H298"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H299"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H300"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H301"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H302"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H303"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U513"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q399"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_08857a35c546c16fea3d",
+      "display_id": "R9",
+      "source": "1N",
+      "gradation": "AC-13",
+      "product": "AC-13(70#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 2064.0,
+        "strain": 2148.3128333333334,
+        "TSR": 80.63109629808012,
+        "residual": 91.36481736206632
+      },
+      "quality_flags": [
+        "component_curve_requires_review",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K155"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K156"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K157"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H304"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H305"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H306"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H307"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H308"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H309"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U519"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q404"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_e5584b099b371467cf63",
+      "display_id": "1467cf63",
+      "source": "1O",
+      "gradation": "AC-13",
+      "product": "AC-13(90#)",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 70.0,
+      "metrics": {
+        "DS": 4916.0,
+        "strain": 1887.375,
+        "TSR": 84.9894713078588,
+        "residual": 83.17267970256127
+      },
+      "quality_flags": [
+        "component_curve_requires_review",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K158"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K159"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K160"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H310"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H311"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H312"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H313"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H314"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H315"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U525"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q409"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_0e51eff6e2cef2806f57",
+      "display_id": "f2806f57",
+      "source": "H",
+      "gradation": "AC-13-90#",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 9565.0,
+        "strain": 2044.0,
+        "TSR": 81.98128641646413,
+        "residual": 88.0578252671276
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K31"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K32"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H64"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U177"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q127"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_9e2f3db93b9f3846b068",
+      "display_id": "3846b068",
+      "source": "H",
+      "gradation": "AC-13-110#",
+      "product": "110#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 5944.0,
+        "strain": 2321.0,
+        "TSR": 80.56760632777791,
+        "residual": 83.94198394198393
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K33"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K34"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H65"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U184"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q132"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_07e9acab4f8d5c4c21d0",
+      "display_id": "5c4c21d0",
+      "source": "H",
+      "gradation": "AC-13-130#",
+      "product": "130#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 5000.0,
+        "strain": 2242.0,
+        "TSR": 92.44995786770077,
+        "residual": 92.75965764515384
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K35"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H66"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U191"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q137"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_c39c8b2c0df3074a52ad",
+      "display_id": "074a52ad",
+      "source": "J",
+      "gradation": "AC-13",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 5471.0,
+        "strain": 2066.6666666666665,
+        "TSR": 90.46845286537155,
+        "residual": 90.78667007585443
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K39"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H70"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H71"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H72"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U218"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q157"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_59cb42163ce4719d7809",
+      "display_id": "719d7809",
+      "source": "K",
+      "gradation": "AC-13",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 6613.666666666667,
+        "strain": 2068.3333333333335,
+        "TSR": 88.88920032144705,
+        "residual": 94.72793910346772
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K40"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K41"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K42"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H73"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H74"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H75"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U225"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q162"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_c389cb15f7ec30cbe854",
+      "display_id": "30cbe854",
+      "source": "L",
+      "gradation": "AC-13",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.9,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 5206.333333333333,
+        "strain": 2045.6666666666667,
+        "TSR": 85.87990487911766,
+        "residual": 84.54637647242373
+      },
+      "quality_flags": [
+        "component_curve_requires_review",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K43"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K44"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K45"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H76"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H77"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H78"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U232"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q167"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_6f88790949802a6b64ea",
+      "display_id": "2a6b64ea",
+      "source": "M",
+      "gradation": "AC-13",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 7778.0,
+        "strain": 2525.0,
+        "TSR": 79.54156059543348,
+        "residual": 91.52915291529152
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K46"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K47"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H79"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H80"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H81"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H82"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H83"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H84"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U238"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q172"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_597f12de06cc740a8f97",
+      "display_id": "740a8f97",
+      "source": "O",
+      "gradation": "AC-13-2",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.9,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 7788.5,
+        "strain": 2149.0,
+        "TSR": 76.03499986873025,
+        "residual": 87.23614479475434
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K50"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K51"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H90"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H91"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H92"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H93"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H94"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H95"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U250"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q182"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_c94bd637a781d902fafa",
+      "display_id": "d902fafa",
+      "source": "P",
+      "gradation": "AC-13",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 6116.0,
+        "strain": 2199.8571428571427,
+        "TSR": 85.8112900737545,
+        "residual": 86.03791030975496
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K52"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H96"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H97"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H98"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H99"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H100"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H101"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H102"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U257"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q187"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_15ad6894230968c7675e",
+      "display_id": "68c7675e",
+      "source": "Q",
+      "gradation": "AC-13",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.8,
+      "rap_nominal_pct": 50.0,
+      "metrics": {
+        "DS": 7875.0,
+        "strain": 2443.8571428571427,
+        "TSR": 82.84744851931043,
+        "residual": 91.57820240622789
+      },
+      "quality_flags": [
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K53"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H103"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H104"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H105"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H106"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H107"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H108"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H109"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U264"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q192"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mix_ec30ff644f3111c570bc",
+      "display_id": "R4",
+      "source": "M-1",
+      "gradation": "AC-13-3",
+      "product": "90#",
+      "oil_stone_ratio_pct": 4.9,
+      "rap_nominal_pct": 60.0,
+      "metrics": {
+        "DS": 7316.5,
+        "strain": 2525.0,
+        "TSR": 84.96918608354991,
+        "residual": 88.2831181252989
+      },
+      "quality_flags": [
+        "product_alias_unconfirmed_90_suffix",
+        "rap_mass_basis_unconfirmed",
+        "test_conditions_unverified"
+      ],
+      "references": {
+        "DS": [
+          {
+            "sheet": "高温车辙",
+            "cell": "K54"
+          },
+          {
+            "sheet": "高温车辙",
+            "cell": "K55"
+          }
+        ],
+        "strain": [
+          {
+            "sheet": "低温弯曲",
+            "cell": "H110"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H111"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H112"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H113"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H114"
+          },
+          {
+            "sheet": "低温弯曲",
+            "cell": "H115"
+          }
+        ],
+        "TSR": [
+          {
+            "sheet": "冻融劈裂",
+            "cell": "U271"
+          }
+        ],
+        "residual": [
+          {
+            "sheet": "浸水马歇尔",
+            "cell": "Q197"
+          }
+        ]
+      }
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "C1",
+      "title": "高温重载车辙处治",
+      "context": "constructed_demo",
+      "targets": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C1团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2000,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E12",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 75,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E10",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E10",
+          "test_method": null,
+          "conditions": null
+        }
+      ],
+      "fixed_pool": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "baseline_single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": true,
+        "failed_metrics": [],
+        "missing_metrics": []
+      },
+      "baseline_full_constraints": {
+        "selected": [
+          "R1"
+        ],
+        "note": "当前v0.1规则筛选本身；也是下一版必须保留的强基线"
+      },
+      "expanded_numeric_ac13_pool": {
+        "size": 35,
+        "passing": [
+          "f2806f57",
+          "R1"
+        ],
+        "passing_count": 2,
+        "top_by_current_priority": "f2806f57",
+        "priority_optimum_ties": [
+          "f2806f57"
+        ],
+        "note": "只扩大数值诊断池，未核实层位、批次、试验条件、施工或库存；不得称为工程推荐"
+      },
+      "baseline_metrics": {
+        "stability": 24.6725,
+        "flow": 2.935,
+        "VV": 3.84298079202921,
+        "VMA": 11.413585757002384,
+        "residual": 87.81375742479402,
+        "TSR": 89.78596858504315,
+        "DS": 9327.303846153834,
+        "strain": 2064.2
+      }
+    },
+    {
+      "case_id": "C2",
+      "title": "寒冷地区温缩裂缝处治",
+      "context": "constructed_demo",
+      "targets": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 800,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E11",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C2团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 75,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E10",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E10",
+          "test_method": null,
+          "conditions": null
+        }
+      ],
+      "fixed_pool": [
+        "R1",
+        "R4"
+      ],
+      "baseline_single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": false,
+        "failed_metrics": [
+          "strain"
+        ],
+        "missing_metrics": []
+      },
+      "baseline_full_constraints": {
+        "selected": [
+          "R4"
+        ],
+        "note": "当前v0.1规则筛选本身；也是下一版必须保留的强基线"
+      },
+      "expanded_numeric_ac13_pool": {
+        "size": 35,
+        "passing": [
+          "2a6b64ea",
+          "R4"
+        ],
+        "passing_count": 2,
+        "top_by_current_priority": "2a6b64ea",
+        "priority_optimum_ties": [
+          "2a6b64ea",
+          "R4"
+        ],
+        "note": "只扩大数值诊断池，未核实层位、批次、试验条件、施工或库存；不得称为工程推荐"
+      },
+      "baseline_metrics": {
+        "stability": 24.6725,
+        "flow": 2.935,
+        "VV": 3.84298079202921,
+        "VMA": 11.413585757002384,
+        "residual": 87.81375742479402,
+        "TSR": 89.78596858504315,
+        "DS": 9327.303846153834,
+        "strain": 2064.2
+      }
+    },
+    {
+      "case_id": "C3",
+      "title": "水损害路段修复",
+      "context": "constructed_demo",
+      "targets": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 800,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E11",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2000,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E12",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 85,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C3团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 90,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C3团队演示目标",
+          "test_method": null,
+          "conditions": null
+        }
+      ],
+      "fixed_pool": [
+        "R6",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "baseline_single_metric": {
+        "metric": "residual",
+        "selected": "R9",
+        "passes_targets": false,
+        "failed_metrics": [
+          "TSR"
+        ],
+        "missing_metrics": []
+      },
+      "baseline_full_constraints": {
+        "selected": [
+          "R7"
+        ],
+        "note": "当前v0.1规则筛选本身；也是下一版必须保留的强基线"
+      },
+      "expanded_numeric_ac13_pool": {
+        "size": 35,
+        "passing": [
+          "5c4c21d0",
+          "074a52ad",
+          "R7",
+          "7cb14638",
+          "719d7809"
+        ],
+        "passing_count": 5,
+        "top_by_current_priority": "5c4c21d0",
+        "priority_optimum_ties": [
+          "5c4c21d0"
+        ],
+        "note": "只扩大数值诊断池，未核实层位、批次、试验条件、施工或库存；不得称为工程推荐"
+      },
+      "baseline_metrics": {
+        "stability": 10.134,
+        "flow": 2.242,
+        "VV": 4.5528198239200535,
+        "VMA": 13.54395297267807,
+        "residual": 91.36481736206632,
+        "TSR": 80.63109629808012,
+        "DS": 2064.0,
+        "strain": 2148.3128333333334
+      }
+    },
+    {
+      "case_id": "C4",
+      "title": "高RAP再生材料选型",
+      "context": "constructed_demo",
+      "targets": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 6000,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C4团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2200,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C4团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 85,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C4团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "source_kind": "enterprise_reference",
+          "reference": "设计流程!E10",
+          "test_method": null,
+          "conditions": null
+        }
+      ],
+      "fixed_pool": [
+        "R1",
+        "R5",
+        "R7"
+      ],
+      "baseline_single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": false,
+        "failed_metrics": [
+          "strain",
+          "RAP"
+        ],
+        "missing_metrics": []
+      },
+      "baseline_full_constraints": {
+        "selected": [
+          "R5"
+        ],
+        "note": "当前v0.1规则筛选本身；也是下一版必须保留的强基线"
+      },
+      "expanded_numeric_ac13_pool": {
+        "size": 35,
+        "passing": [
+          "R5"
+        ],
+        "passing_count": 1,
+        "top_by_current_priority": "R5",
+        "priority_optimum_ties": [
+          "R5"
+        ],
+        "note": "只扩大数值诊断池，未核实层位、批次、试验条件、施工或库存；不得称为工程推荐"
+      },
+      "baseline_metrics": {
+        "stability": 24.6725,
+        "flow": 2.935,
+        "VV": 3.84298079202921,
+        "VMA": 11.413585757002384,
+        "residual": 87.81375742479402,
+        "TSR": 89.78596858504315,
+        "DS": 9327.303846153834,
+        "strain": 2064.2
+      }
+    },
+    {
+      "case_id": "C5",
+      "title": "高低温与水稳定复合约束",
+      "context": "constructed_demo",
+      "targets": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "TSR",
+          "operator": ">",
+          "value": 90,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null
+        },
+        {
+          "metric": "residual",
+          "operator": ">",
+          "value": 90,
+          "source_kind": "demo_assumption",
+          "reference": "构造案例C5团队演示目标",
+          "test_method": null,
+          "conditions": null
+        }
+      ],
+      "fixed_pool": [
+        "R1",
+        "R4",
+        "R5",
+        "R7"
+      ],
+      "baseline_single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": false,
+        "failed_metrics": [
+          "strain",
+          "TSR",
+          "residual"
+        ],
+        "missing_metrics": []
+      },
+      "baseline_full_constraints": {
+        "selected": [],
+        "note": "当前v0.1规则筛选本身；也是下一版必须保留的强基线"
+      },
+      "expanded_numeric_ac13_pool": {
+        "size": 35,
+        "passing": [],
+        "passing_count": 0,
+        "top_by_current_priority": null,
+        "priority_optimum_ties": [],
+        "note": "只扩大数值诊断池，未核实层位、批次、试验条件、施工或库存；不得称为工程推荐"
+      },
+      "baseline_metrics": {
+        "stability": 24.6725,
+        "flow": 2.935,
+        "VV": 3.84298079202921,
+        "VMA": 11.413585757002384,
+        "residual": 87.81375742479402,
+        "TSR": 89.78596858504315,
+        "DS": 9327.303846153834,
+        "strain": 2064.2
+      }
+    }
+  ],
+  "limitations": [
+    "固定案例经过构造和挑选，基准对照仅解释当前逻辑，不是独立工程验证。",
+    "基准与系统使用相同已知标签，不能把规则正确执行记作预测准确率。",
+    "完整四标签只表示数值存在，不表示试验条件一致、独立配方或工程适用。"
+  ],
+  "diagnostic_pool_sha256": "429e9d8b39cf0b0cecbe2df03a890632630762d487075d85b193c8dff59acd95"
+}

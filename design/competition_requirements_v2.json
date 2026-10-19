@@ -1,0 +1,335 @@
+{
+  "version": "2.0-design",
+  "review_date": "2026-10-19",
+  "source": {
+    "file": "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf",
+    "sha256": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+    "topic": 1,
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "official_scoring_weights": null,
+  "priority_note": "任务分类依据任务书，实施优先级由团队确定，不给官方评分或契合百分比。",
+  "requirements": [
+    {
+      "id": "B01",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "核心方案与原型",
+      "requirement_paraphrase": "输入养护场景、识别材料性能需求、输出候选、展示依据",
+      "current_status": "partial",
+      "gap": "手工targets驱动，缺少实际场景需求解析",
+      "v2_design": "需求解析与确认贯穿主操作",
+      "acceptance": "三类无手工数值目标输入可生成带出处需求卡并推荐",
+      "existing_evidence": [
+        "backend/app/services.py:87",
+        "backend/app/services.py:112"
+      ]
+    },
+    {
+      "id": "B02",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "至少三类结构化场景",
+      "requirement_paraphrase": "场景、组成、性能、适用条件的结构化关联",
+      "current_status": "partial",
+      "gap": "有标签和固定案例，关系查询及适用条件不足",
+      "v2_design": "规则和关系数据模型",
+      "acceptance": "三类规则路径及关联候选查询",
+      "existing_evidence": [
+        "configs/cases.json",
+        "backend/app/storage.py"
+      ]
+    },
+    {
+      "id": "B03",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "至少五个带对照案例",
+      "requirement_paraphrase": "场景约束、候选、理由、性能预期或适用判断、基准对照",
+      "current_status": "partial",
+      "gap": "数值回归已过，固定池及案例报告中的对照不完整",
+      "v2_design": "同池B0、B1和完整案例包",
+      "acceptance": "五份报告均含基准与未知项；不将回归通过当工程准确率",
+      "existing_evidence": [
+        "design/competition_alignment_evidence_v2.json"
+      ]
+    },
+    {
+      "id": "B04",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "数据与技术交接",
+      "requirement_paraphrase": "字段、算法或规则、模块与数据需求；鼓励代码模型接口",
+      "current_status": "covered_at_software_level",
+      "gap": "已有工程与交接，但缺完整上游及工程反馈契约",
+      "v2_design": "扩充设计契约和能力状态",
+      "acceptance": "企业可理解的请求响应与字段说明",
+      "existing_evidence": [
+        "docs/developer-guide.md",
+        "docs/api.openapi.json"
+      ]
+    },
+    {
+      "id": "B05",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "应用价值",
+      "requirement_paraphrase": "分析设计周期、选型和匹配效率；可靠时测算成本寿命碳排",
+      "current_status": "partial",
+      "gap": "仅有接口耗时与潜在价值，缺业务任务对照",
+      "v2_design": "同信息人工与系统流程评估",
+      "acceptance": "时间、操作、遗漏和可追溯性记录；假设与实测分开",
+      "existing_evidence": [
+        "docs/release-notes.md"
+      ]
+    },
+    {
+      "id": "T01",
+      "kind": "technical_detail",
+      "source_page": 2,
+      "title": "场景量化映射",
+      "requirement_paraphrase": "气候、交通、结构、病害及严重程度到目标值",
+      "current_status": "not_implemented",
+      "gap": "气候交通没有进入需求计算，严重程度缺字段",
+      "v2_design": "条件规则与来源卡",
+      "acceptance": "命中、缺失与冲突均可解释",
+      "existing_evidence": [
+        "backend/app/domain/contracts.py:47",
+        "backend/app/services.py:112"
+      ]
+    },
+    {
+      "id": "T02",
+      "kind": "technical_detail",
+      "source_page": 2,
+      "title": "多约束优先级",
+      "requirement_paraphrase": "预算、工期、环保下的性能权重与优先序",
+      "current_status": "partial",
+      "gap": "一个priority字段且预算缺价标未知",
+      "v2_design": "硬约束、偏好、未知约束分离",
+      "acceptance": "权重改变不覆盖失败；未知维度不静默重分权重",
+      "existing_evidence": [
+        "backend/app/services.py:151"
+      ]
+    },
+    {
+      "id": "T03",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "材料性能场景知识",
+      "requirement_paraphrase": "组成、性能和适用关系可查询可推理",
+      "current_status": "partial",
+      "gap": "实验材料目录可用，场景适用关系不足",
+      "v2_design": "关系表和有证据路径",
+      "acceptance": "可解释场景为何关联某产品及缺项",
+      "existing_evidence": [
+        "backend/app/storage.py"
+      ]
+    },
+    {
+      "id": "T04",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "目标到材料方案",
+      "requirement_paraphrase": "品种、改性剂、级配、助剂及性能预期",
+      "current_status": "partial",
+      "gap": "历史候选及手工微调存在，组成披露和推荐生成不完整",
+      "v2_design": "历史方案检索与完整组成卡；条件优化另列",
+      "acceptance": "所有字段有值或未知状态，不猜剂量",
+      "existing_evidence": [
+        "backend/app/services.py:192"
+      ]
+    },
+    {
+      "id": "T05",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "多维方案比较",
+      "requirement_paraphrase": "性能、成本、碳排、寿命、施工可行性",
+      "current_status": "partial",
+      "gap": "四性能表和级配图已有；其他数据欠缺",
+      "v2_design": "同口径性能雷达与维度缺项卡",
+      "acceptance": "缺测不补0，未知成本碳寿命不出虚构分数",
+      "existing_evidence": [
+        "frontend/src/main.tsx",
+        "configs/features.json"
+      ]
+    },
+    {
+      "id": "T06",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "路用效果反馈",
+      "requirement_paraphrase": "实施后监测关联推荐引擎与更新",
+      "current_status": "design_gap",
+      "gap": "实验室观察有审核，现场体系未实现，新variant训练资格不足",
+      "v2_design": "分开实验室与工程记录并受控更新",
+      "acceptance": "正式新试验可进入训练视图，模拟工程反馈不冒充实测",
+      "existing_evidence": [
+        "backend/app/ml/features.py:48",
+        "backend/app/services.py:244"
+      ]
+    },
+    {
+      "id": "T07",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "多性能和小样本路线",
+      "requirement_paraphrase": "组成及环境输入，多性能预测、小样本策略和解释",
+      "current_status": "research_evidence_only",
+      "gap": "四独立模型及严格基准完成，选择流程无稳定改进；无联合学习",
+      "v2_design": "独立基准加多任务GP公平对照，环境输入依赖真实记录",
+      "acceptance": "同组划分、离折预测、每指标表现及失败原因",
+      "existing_evidence": [
+        "artifacts/models/model_cards.json"
+      ]
+    },
+    {
+      "id": "T08",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "预测解释",
+      "requirement_paraphrase": "材料参数到预测贡献和工程解释",
+      "current_status": "partial",
+      "gap": "已有规则原因，模型贡献未进入候选主视图",
+      "v2_design": "规则路径、特征贡献、邻例和适用性",
+      "acceptance": "模型关联解释不作为实验因果证据",
+      "existing_evidence": [
+        "backend/app/services.py:112",
+        "backend/app/ml/predict.py"
+      ]
+    },
+    {
+      "id": "T09",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "养护决策接口及模块",
+      "requirement_paraphrase": "场景与方案标准数据格式、松耦合API和操作全流程",
+      "current_status": "partial",
+      "gap": "通用API可用，缺带上游决策ID的适配器和样例",
+      "v2_design": "决策请求到需求解析再到方案返回",
+      "acceptance": "本地模拟端到端；真实企业联调另记",
+      "existing_evidence": [
+        "backend/app/main.py"
+      ]
+    },
+    {
+      "id": "T10",
+      "kind": "technical_detail",
+      "source_page": 2,
+      "title": "材料工艺衔接",
+      "requirement_paraphrase": "材料组成和拌和、摊铺、压实条件的适配",
+      "current_status": "not_implemented",
+      "gap": "场景文本与标签不执行工艺适用检查",
+      "v2_design": "工艺来源卡、兼容及未知状态",
+      "acceptance": "无资料不认定施工可行；明确不兼容可排除",
+      "existing_evidence": [
+        "backend/app/domain/contracts.py"
+      ]
+    },
+    {
+      "id": "X01",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "多目标配方优化",
+      "requirement_paraphrase": "有组成与模型依据的配方变量优化",
+      "current_status": "disabled_by_conditions",
+      "gap": "RAP质量基准等不明，自动优化关闭",
+      "v2_design": "小范围有上限枚举后比较BO",
+      "acceptance": "质量核算及独立评价，不用代理自评分证明改进",
+      "existing_evidence": [
+        "configs/features.json"
+      ]
+    },
+    {
+      "id": "X02",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "多性能协同预测",
+      "requirement_paraphrase": "任务间共享信息并公平验证",
+      "current_status": "not_implemented",
+      "gap": "四独立预测不构成协同",
+      "v2_design": "多任务GP与独立模型同划分比较",
+      "acceptance": "有共同参数或相关性机制，公开负迁移",
+      "existing_evidence": [
+        "artifacts/models/model_cards.json"
+      ]
+    },
+    {
+      "id": "X03",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "置信度分析",
+      "requirement_paraphrase": "推荐风险和校准分析",
+      "current_status": "research_evidence_only",
+      "gap": "12校准组、8测试组，区间较宽，物理料源尚未确认",
+      "v2_design": "保留覆盖、宽度、拒答与域外状态",
+      "acceptance": "不把单指标覆盖解释为联合或工程保证",
+      "existing_evidence": [
+        "artifacts/models/model_cards.json"
+      ]
+    },
+    {
+      "id": "X04",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "生命周期成本或碳排",
+      "requirement_paraphrase": "具有可靠数据边界的效益评价",
+      "current_status": "data_unavailable",
+      "gap": "缺价格、能耗、因子与寿命数据",
+      "v2_design": "数据结构及情景计算框架",
+      "acceptance": "有依据后核算，RAP比例不直接换算减碳",
+      "existing_evidence": [
+        "configs/features.json"
+      ]
+    },
+    {
+      "id": "X05",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "实验室性能验证",
+      "requirement_paraphrase": "真实材料独立试验",
+      "current_status": "awaiting_external",
+      "gap": "新增观察流程不等于已完成独立材料试验",
+      "v2_design": "同批对照及原始材料核验方案",
+      "acceptance": "报告真实试件与条件，非软件合成值",
+      "existing_evidence": [
+        "docs/enterprise-questions.md"
+      ]
+    },
+    {
+      "id": "X06",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "实际接口联调",
+      "requirement_paraphrase": "与养护决策系统联调",
+      "current_status": "awaiting_external",
+      "gap": "尚未企业系统双向验证",
+      "v2_design": "先本地模拟，再企业样例联调",
+      "acceptance": "联调对象、协议、请求响应与结果证据",
+      "existing_evidence": [
+        "docs/api.openapi.json"
+      ]
+    },
+    {
+      "id": "X07",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "模型持续学习",
+      "requirement_paraphrase": "反馈数据积累后受控改进",
+      "current_status": "design_gap",
+      "gap": "数据失效保护存在，无自动学习收益证据",
+      "v2_design": "审核、版本、候选模型比较与批准发布",
+      "acceptance": "固定测试和新来源验证，支持回退",
+      "existing_evidence": [
+        "backend/app/ml/features.py"
+      ]
+    }
+  ]
+}

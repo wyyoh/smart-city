@@ -1,0 +1,99 @@
+{
+  "coverage": {
+    "historical_operational_keys": 180,
+    "four_metric_present": 60,
+    "four_metric_present_ac13": 35,
+    "per_metric": {
+      "DS": 86,
+      "strain": 80,
+      "TSR": 85,
+      "residual": 80
+    }
+  },
+  "cases": [
+    {
+      "id": "C1",
+      "single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": true,
+        "failed_metrics": [],
+        "missing_metrics": []
+      },
+      "fixed_pool_pass": [
+        "R1"
+      ],
+      "expanded_pass_count": 2,
+      "expanded_top": "f2806f57"
+    },
+    {
+      "id": "C2",
+      "single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": false,
+        "failed_metrics": [
+          "strain"
+        ],
+        "missing_metrics": []
+      },
+      "fixed_pool_pass": [
+        "R4"
+      ],
+      "expanded_pass_count": 2,
+      "expanded_top": "2a6b64ea"
+    },
+    {
+      "id": "C3",
+      "single_metric": {
+        "metric": "residual",
+        "selected": "R9",
+        "passes_targets": false,
+        "failed_metrics": [
+          "TSR"
+        ],
+        "missing_metrics": []
+      },
+      "fixed_pool_pass": [
+        "R7"
+      ],
+      "expanded_pass_count": 5,
+      "expanded_top": "5c4c21d0"
+    },
+    {
+      "id": "C4",
+      "single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": false,
+        "failed_metrics": [
+          "strain",
+          "RAP"
+        ],
+        "missing_metrics": []
+      },
+      "fixed_pool_pass": [
+        "R5"
+      ],
+      "expanded_pass_count": 1,
+      "expanded_top": "R5"
+    },
+    {
+      "id": "C5",
+      "single_metric": {
+        "metric": "DS",
+        "selected": "R1",
+        "passes_targets": false,
+        "failed_metrics": [
+          "strain",
+          "TSR",
+          "residual"
+        ],
+        "missing_metrics": []
+      },
+      "fixed_pool_pass": [],
+      "expanded_pass_count": 0,
+      "expanded_top": null
+    }
+  ]
+}
