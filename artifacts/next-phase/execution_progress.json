@@ -1,0 +1,346 @@
+{
+  "plan_sha256": "cdeedacc936b023dde9358610b148fee3e8acd69d78e4b0df16e1f0ccceadfef",
+  "started_at": "2026-10-19T12:49:15.164626+08:00",
+  "status": "active",
+  "source_plan": "planning/next_phase_backlog_v2.json",
+  "time_note": "Timestamps and wall_elapsed_seconds describe automated execution; human effective hours remain unknown.",
+  "tasks": {
+    "N01": {
+      "title": "冻结基线与增量边界",
+      "priority": "core",
+      "status": "complete",
+      "started_at": "2026-10-19T12:49:15.242988+08:00",
+      "completed_at": "2026-10-19T12:51:28.644524+08:00",
+      "actual_hours": null,
+      "completion_evidence": [
+        {
+          "path": "docs/next-phase-baseline.json",
+          "sha256": "96807094a266d175aa076961fea50f2fdf71b4456734ab8199fbef8406a5ff38"
+        },
+        {
+          "path": "docs/v2-contract-notes.md",
+          "sha256": "b1041bef4f0fa839710975edd9dc8c79e63c5df5202c5cb2d40d9aafc3e164dc"
+        },
+        {
+          "path": "artifacts/next-phase/baseline/checks.json",
+          "sha256": "fd506cf57857d846acd916799caeca303e2c5c890bb1943beacdf189482584f4"
+        }
+      ],
+      "notes": [
+        "原有18项检查通过，在线备份完整性检查通过。"
+      ],
+      "wall_elapsed_seconds": 133.402
+    },
+    "N02": {
+      "title": "场景与指标契约",
+      "priority": "core",
+      "status": "complete",
+      "started_at": "2026-10-19T12:51:28.725278+08:00",
+      "completed_at": "2026-10-19T12:53:38.674491+08:00",
+      "actual_hours": null,
+      "completion_evidence": [
+        {
+          "path": "backend/app/domain/contracts_v2.py",
+          "sha256": "194264158c2a89de4ebee172a2994c925117cfebc3fe5765d5b01b6020b3b7b4"
+        },
+        {
+          "path": "configs/metric_registry_v2.json",
+          "sha256": "efc9b16078ea4bba9dbe03050af99a5610342437b89905914b19a8091fc7af35"
+        },
+        {
+          "path": "tests/test_demand_contracts.py",
+          "sha256": "79b0d31ed4782b27a23750de636d9ab7ce6f04646e51494185cc180dec4c9b34"
+        },
+        {
+          "path": "artifacts/next-phase/contracts-checks.json",
+          "sha256": "4bcdfb9db194c355b43677ec2847915b9a5036c625b776c050b8841f98da5817"
+        }
+      ],
+      "notes": [
+        "输入契约10项验证通过，未知与空值区分，已知未支持指标保留。"
+      ],
+      "wall_elapsed_seconds": 129.949
+    },
+    "N03": {
+      "title": "三类可执行需求规则",
+      "priority": "core",
+      "status": "complete",
+      "started_at": "2026-10-19T12:53:39.127393+08:00",
+      "completed_at": "2026-10-19T12:54:26.704010+08:00",
+      "actual_hours": null,
+      "completion_evidence": [
+        {
+          "path": "configs/scene_rules_v2.json",
+          "sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7"
+        },
+        {
+          "path": "backend/app/decision/rules.py",
+          "sha256": "b5e2eb5309ddd0b75c80e9d3bf4e8b645eba37312c4bf1fdd39be0d34e537c56"
+        },
+        {
+          "path": "docs/scene-rule-cards.md",
+          "sha256": "7515795fd6a4a053899a771c3e81a1c3b5b8333db4bc20997ecd0e57e7e88ce4"
+        },
+        {
+          "path": "tests/test_scene_rules_v2.py",
+          "sha256": "2d4ab748a19566bd5f74aaed3ddfd557aa8b0834d340e3f1089c17696b4bc486"
+        },
+        {
+          "path": "artifacts/next-phase/scene-rule-checks.json",
+          "sha256": "544d9787cae577d2c1ddf0dd87162d57a18eb8d34c2033e736ed24dc96cc6005"
+        }
+      ],
+      "notes": [
+        "三类规则及越界拒绝检查通过；全部为有出处的构造演示。"
+      ],
+      "wall_elapsed_seconds": 47.577
+    },
+    "N04": {
+      "title": "需求解析与确认首条界面",
+      "priority": "core",
+      "status": "complete",
+      "started_at": "2026-10-19T12:54:27.141281+08:00",
+      "completed_at": "2026-10-19T12:57:23.941366+08:00",
+      "actual_hours": null,
+      "completion_evidence": [
+        {
+          "path": "backend/app/decision/demands.py",
+          "sha256": "910fb1db0f9316472fbc53867fc091f8927d8355d1bb772f1264010e3b2db345"
+        },
+        {
+          "path": "frontend/src/components/DemandCard.tsx",
+          "sha256": "04c09c8a62f979b043023912e95d6e85ec66d1f03eafec9e2af42556f688b529"
+        },
+        {
+          "path": "tests/test_demand_flow_v2.py",
+          "sha256": "740df7aee17487275ca57137a667544c0667cbed10a87443d1dcf7179916ec50"
+        },
+        {
+          "path": "artifacts/next-phase/week1-demand-flow/checks.json",
+          "sha256": "9366317c233111aec22bf6f8495c2ca38b4e359e6025e741d02709967821f8c0"
+        }
+      ],
+      "notes": [
+        "三类场景均在隔离库完成生成确认，前端构建通过，覆盖8000至8500及理由可见。"
+      ],
+      "wall_elapsed_seconds": 176.8
+    },
+    "N05": {
+      "title": "材料关系与完整方案卡",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N06": {
+      "title": "候选目录检索与范围冻结",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N07": {
+      "title": "证据适用与工艺检查",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N08": {
+      "title": "四态约束与可行集比较",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N09": {
+      "title": "最小冲突与无解证书",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N10": {
+      "title": "场景变更与推荐差异解释",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N11": {
+      "title": "诊断与适用性边界验收",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N12": {
+      "title": "完整流程与方案比较界面",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N13": {
+      "title": "证据卡与版本失效显示",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N14": {
+      "title": "研究预测与验证视图",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N15": {
+      "title": "可解释的基础补测建议",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N16": {
+      "title": "上游联动与反馈契约",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N17": {
+      "title": "五案例同池对照与报告",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N18": {
+      "title": "完整选材任务价值记录",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N19": {
+      "title": "界面细节与异常恢复打磨",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N20": {
+      "title": "回归离线检查与发布排练",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "N21": {
+      "title": "亮点叙事与参赛成果核对",
+      "priority": "core",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "EXP01": {
+      "title": "统一实验数据与来源分组",
+      "priority": "conditional_research",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "EXP02": {
+      "title": "小样本模型与风险校准对照",
+      "priority": "conditional_research",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "EXP03": {
+      "title": "隐藏标签与目标补测回放",
+      "priority": "conditional_research",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    },
+    "EXP04": {
+      "title": "研究结果复算与展示核对",
+      "priority": "conditional_research",
+      "status": "planned",
+      "started_at": null,
+      "completed_at": null,
+      "actual_hours": null,
+      "completion_evidence": [],
+      "notes": []
+    }
+  },
+  "updated_at": "2026-10-19T12:57:23.941366+08:00",
+  "summary": {
+    "core_completed": 4,
+    "core_total": 21,
+    "research_completed": 0,
+    "in_progress": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "version": "scene-rules-2.0.0",
+  "policy": "以下仅为团队构造场景。未知气候、交通或病害程度不套默认阈值；正式项目须另行提供并确认要求。",
+  "baseline": [
+    {"metric":"DS","operator":">","value":800,"unit":"次/mm","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"enterprise_reference","reference":"企业工作簿：设计流程!E11（参考值，方法和条件未披露）","confirmed":false}},
+    {"metric":"strain","operator":">","value":2000,"unit":"με","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"enterprise_reference","reference":"企业工作簿：设计流程!E12（参考值，方法和条件未披露）","confirmed":false}},
+    {"metric":"TSR","operator":">","value":75,"unit":"%","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"enterprise_reference","reference":"企业工作簿：设计流程!E10（参考值，方法和条件未披露）","confirmed":false}},
+    {"metric":"residual","operator":">","value":85,"unit":"%","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"enterprise_reference","reference":"企业工作簿：设计流程!E10（参考值，方法和条件未披露）","confirmed":false}}
+  ],
+  "profiles": [
+    {
+      "id":"hot-rutting","title":"高温重载 · 车辙控制","context_kind":"constructed_demo","version":"1.0.0",
+      "rationale":"在构造的高温、重载且中重度车辙场景，优先比较动稳定度。提高阈值是团队演示设定，不是规范推导。",
+      "conditions":{"maintenance_method":["hot_recycling"],"layer":["surface"],"structure_type":["flexible"],"climate.class":["demo_hot"],"traffic.class":["demo_heavy"],"distress.type":["rutting"],"distress.severity":["moderate","severe"]},
+      "priority":["DS","strain","TSR","residual"],
+      "target_overrides":[{"metric":"DS","operator":">","value":8000,"unit":"次/mm","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"constructed_demo","reference":"团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证","confirmed":false}}],
+      "example_scene":{"maintenance_method":"hot_recycling","layer":"surface","structure_type":"flexible","climate":{"class":"demo_hot","source":"团队构造：高温分区，无真实气候数据映射"},"traffic":{"class":"demo_heavy","source":"团队构造：重载分组，无实测交通换算"},"distress":{"type":"rutting","severity":"severe","mechanism":"团队构造病害描述，待现场确认"}}
+    },
+    {
+      "id":"cold-cracking","title":"低温环境 · 抗裂控制","context_kind":"constructed_demo","version":"1.0.0",
+      "rationale":"在构造的低温、中重度温缩裂缝场景，优先比较最大弯拉应变；不将所有开裂归因于温缩。",
+      "conditions":{"maintenance_method":["hot_recycling"],"layer":["surface"],"structure_type":["flexible"],"climate.class":["demo_cold"],"traffic.class":["demo_general","demo_heavy"],"distress.type":["thermal_cracking"],"distress.severity":["moderate","severe"]},
+      "priority":["strain","TSR","residual","DS"],
+      "target_overrides":[{"metric":"strain","operator":">","value":2500,"unit":"με","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"constructed_demo","reference":"团队低温抗裂演示假设 cold-cracking v1.0.0；未经工程验证","confirmed":false}}],
+      "example_scene":{"maintenance_method":"hot_recycling","layer":"surface","structure_type":"flexible","climate":{"class":"demo_cold","source":"团队构造：低温分区，无真实气候数据映射"},"traffic":{"class":"demo_general","source":"团队构造：一般交通，无实测交通换算"},"distress":{"type":"thermal_cracking","severity":"moderate","mechanism":"假设温缩机制，非所有开裂均适用"}}
+    },
+    {
+      "id":"wet-damage","title":"多雨环境 · 水损害控制","context_kind":"constructed_demo","version":"1.0.0",
+      "rationale":"在构造的多雨且中重度水损害场景，优先比较TSR和残留稳定度，保留二者独立试验口径。",
+      "conditions":{"maintenance_method":["hot_recycling"],"layer":["surface"],"structure_type":["flexible"],"climate.class":["demo_wet"],"traffic.class":["demo_general","demo_heavy"],"distress.type":["water_damage"],"distress.severity":["moderate","severe"]},
+      "priority":["TSR","residual","DS","strain"],
+      "target_overrides":[
+        {"metric":"TSR","operator":">","value":85,"unit":"%","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"constructed_demo","reference":"团队抗水损演示假设 wet-damage v1.0.0；未经工程验证","confirmed":false}},
+        {"metric":"residual","operator":">","value":90,"unit":"%","test_method":null,"conditions":{},"comparison_basis":"legacy_workbook_numeric_demo","source":{"kind":"constructed_demo","reference":"团队抗水损演示假设 wet-damage v1.0.0；未经工程验证","confirmed":false}}
+      ],
+      "example_scene":{"maintenance_method":"hot_recycling","layer":"surface","structure_type":"flexible","climate":{"class":"demo_wet","source":"团队构造：多雨分区，无实测降雨映射"},"traffic":{"class":"demo_general","source":"团队构造：一般交通，无实测交通换算"},"distress":{"type":"water_damage","severity":"severe","mechanism":"团队构造水损害，待检测确认"}}
+    }
+  ]
+}

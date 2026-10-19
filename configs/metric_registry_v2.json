@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0",
+  "version": "metric-registry-2.0.0",
+  "metrics": {
+    "DS": {"label": "动稳定度", "value_type": "scalar", "unit": "次/mm", "numeric_demo_supported": true, "condition_keys": ["test_method", "temperature", "load", "conditioning"]},
+    "strain": {"label": "最大弯拉应变", "value_type": "scalar", "unit": "με", "numeric_demo_supported": true, "condition_keys": ["test_method", "temperature", "loading_rate", "conditioning"]},
+    "TSR": {"label": "冻融劈裂强度比", "value_type": "scalar", "unit": "%", "numeric_demo_supported": true, "condition_keys": ["test_method", "conditioning", "temperature"]},
+    "residual": {"label": "残留稳定度比", "value_type": "scalar", "unit": "%", "numeric_demo_supported": true, "condition_keys": ["test_method", "conditioning", "temperature"]},
+    "stability": {"label": "稳定度", "value_type": "scalar", "unit": "kN", "numeric_demo_supported": false, "condition_keys": ["test_method", "temperature", "conditioning"]},
+    "VV": {"label": "空隙率", "value_type": "scalar", "unit": "%", "numeric_demo_supported": false, "condition_keys": ["test_method", "compaction"]},
+    "VMA": {"label": "矿料间隙率", "value_type": "scalar", "unit": "%", "numeric_demo_supported": false, "condition_keys": ["test_method", "compaction"]},
+    "flow": {"label": "流值", "value_type": "scalar", "unit": "mm", "numeric_demo_supported": false, "condition_keys": ["test_method", "temperature"]},
+    "PG_grade": {"label": "沥青PG等级", "value_type": "grade", "unit": "grade", "numeric_demo_supported": false, "condition_keys": ["test_method", "aging"], "capability_gap": "现有混合料试验不能替代PG等级证据"},
+    "fatigue_life": {"label": "疲劳寿命", "value_type": "scalar", "unit": "次", "numeric_demo_supported": false, "condition_keys": ["test_method", "temperature", "frequency", "strain", "aging"], "capability_gap": "缺少疲劳试验和预测模型"},
+    "dynamic_modulus": {"label": "动态模量", "value_type": "scalar", "unit": "MPa", "numeric_demo_supported": false, "condition_keys": ["test_method", "temperature", "frequency", "aging"], "capability_gap": "缺少相应温频和老化条件下的动态模量证据"}
+  },
+  "unsupported_request_behavior": "保留合法需求并披露能力缺口，不替换、不删除、不按已满足处理。",
+  "comparison_policy": "数值、单位、方法和条件分别记录，不自动换算不同试验指标或条件。"
+}

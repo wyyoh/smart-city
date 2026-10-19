@@ -1,0 +1,8 @@
+{
+  "task": "N04",
+  "api_command": ".venv\\Scripts\\python.exe -X utf8 -m pytest -q tests/test_demand_flow_v2.py",
+  "api_result": {"passed":3,"warnings":1,"seconds":2.55,"exit_code":0},
+  "frontend": {"typescript_exit_code":0,"vite_exit_code":0,"vite_seconds":5.56},
+  "browser": {"url":"http://127.0.0.1:8766/","database":"artifacts/next-phase/dev.sqlite (isolated baseline copy)","participant":"AI development self-test","three_profiles_confirmed":true,"override":{"before":8000,"after":8500,"reason_visible":true},"screenshots":["confirmed-override.jpg","water-confirmed.jpg"]},
+  "limitations": ["Software and constructed-scene verification; no engineering threshold validity or real material suitability inferred."]
+}

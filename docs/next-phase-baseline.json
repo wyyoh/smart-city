@@ -1,0 +1,51 @@
+{
+  "frozen_at": "2026-10-19T12:49:15.692801+08:00",
+  "source_revision": "5556a6aff23ae5b4d32ebf6ab6369b292ba7cd82",
+  "baseline_app_version": "0.1.0",
+  "immutable_inputs": {
+    "再生沥青混合料实验数据表.xlsx": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+    "planning/development_backlog_v1.json": "ea5cf086ac006d18a97e54d30bb555f18f7b3e80077aaaff29e3ad930584a5b4",
+    "planning/v02_alignment_backlog.json": "bfbdcf817bd7f2ba43cb97f2aef2663ca97bc9f7334d207ced27783dabe13c43",
+    "planning/next_phase_backlog_v2.json": "cdeedacc936b023dde9358610b148fee3e8acd69d78e4b0df16e1f0ccceadfef",
+    "artifacts/release-final.json": "ec961756456ce2df1af7ce94713ac4817804bb24232bcc01991bccc9275b1967",
+    "artifacts/models/model_cards.json": "757b94944ce31cffa16914cc16e371c6b13d75ead3dddf32398098e933dfb7a0",
+    "requirements.lock.txt": "7951a6a0c5337eb5e219614108ce0e62f4bffb5b0882605ab1f0b7b75f47192b"
+  },
+  "database_snapshot": {
+    "source": "data/workbench.sqlite",
+    "backup": "artifacts/next-phase/baseline/workbench-v01.sqlite",
+    "sha256": "75dbf17ee73677d7d552174b1c2ad029bd7a9b7489e6fdd6dc3a5ae393a09622",
+    "integrity_check": "ok",
+    "table_counts": {
+      "dataset": 3,
+      "recommendation": 11,
+      "sourcerow": 10329,
+      "recipe": 540,
+      "measurement": 2409,
+      "observation": 0
+    },
+    "datasets": [
+      {
+        "id": "ds_bbe0a039d8399ee2e292",
+        "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+        "revision": 0,
+        "importer_version": "1.0.0"
+      },
+      {
+        "id": "ds_cfdae69d0eb54306e85e",
+        "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+        "revision": 0,
+        "importer_version": "1.1.0"
+      },
+      {
+        "id": "ds_d916d61767ca55d21bd7",
+        "sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+        "revision": 0,
+        "importer_version": "1.1.1"
+      }
+    ]
+  },
+  "scope": "SQLite online backup; original workbook and original catalogue rows remain untouched.",
+  "future_validation": "Use isolated copies through ASPHALT_DATABASE or existing temporary test fixtures."
+}

@@ -9,6 +9,7 @@ from fastapi.staticfiles import StaticFiles
 from sqlmodel import Session, select
 
 from .domain.contracts import ObservationInput, ReviewInput, Scenario, VariantInput
+from .decision.router import decision_router
 from .services import (case_cards, catalog, create_observation, create_variant, get_snapshot, html_report,
                        latest_dataset, recipe_detail, recommend, review_observation, scene_rules)
 from .settings import ARTIFACTS_DIR, FRONTEND_DIST, ROOT, VERSION
@@ -116,6 +117,8 @@ def create_app(database_engine=engine):
     def post_prediction(recipe_id: str, session=Depends(session_dependency)):
         from .ml.predict import predict_recipe
         return predict_recipe(session, recipe_id)
+
+    app.include_router(decision_router(session_dependency))
 
     if FRONTEND_DIST.exists():
         app.mount('/', StaticFiles(directory=FRONTEND_DIST, html=True), name='frontend')

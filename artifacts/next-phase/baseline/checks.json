@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-10-19T12:51:28.539441+08:00",
+  "command": ".venv/Scripts/python.exe -m pytest -q",
+  "exit_code": 0,
+  "passed": 18,
+  "warnings": 1,
+  "duration_seconds_reported_by_pytest": 9.12,
+  "database_scope": "temporary per tests/conftest.py",
+  "note": "Baseline suite before v2 implementation; no new model training campaign."
+}

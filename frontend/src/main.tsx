@@ -32,6 +32,8 @@ import type {
 } from "./types";
 import { core, flags, fmt, metrics } from "./types";
 import "./styles.css";
+import { DemandCard } from "./components/DemandCard";
+import "./decision.css";
 
 async function api<T>(path: string, body?: unknown): Promise<T> {
   const response = await fetch(
@@ -71,7 +73,7 @@ function Status({ recipe }: { recipe: Recipe }) {
   );
 }
 function App() {
-  const [route, setRoute] = useState("workbench");
+  const [route, setRoute] = useState("decision");
   const [catalog, setCatalog] = useState<Recipe[]>([]),
     [dataset, setDataset] = useState<Dataset | null>(null),
     [cases, setCases] = useState<Case[]>([]);
@@ -125,7 +127,6 @@ function App() {
           setCatalog(d.recipes);
           setDataset(d.dataset);
           setScenario(c[0].scenario);
-          void calculate(c[0].scenario);
         }
       })
       .catch((e) => setError(String(e)));
@@ -222,7 +223,8 @@ function App() {
         <div className="nav-label">道路养护 · 材料设计</div>
         <nav>
           {[
-            { id: "workbench", label: "选材工作台", icon: SlidersHorizontal },
+            { id: "decision", label: "场景选材", icon: ClipboardList },
+            { id: "workbench", label: "历史初筛", icon: SlidersHorizontal },
             { id: "data", label: "数据与依据", icon: Database },
             { id: "observations", label: "试验回流", icon: FlaskConical },
             { id: "models", label: "模型评估", icon: Microscope },
@@ -233,6 +235,7 @@ function App() {
               className={route === n.id ? "nav-item active" : "nav-item"}
               onClick={() => {
                 setRoute(n.id);
+                if (n.id === "workbench" && scenario && !snapshot) void calculate(scenario);
                 setNotice("");
               }}
             >
@@ -244,7 +247,7 @@ function App() {
         </nav>
         <div className="sidebar-bottom">
           <div className="connection">
-            <i /> 本地工作区 <span>v0.1</span>
+            <i /> 本地工作区 <span>v0.2 开发版</span>
           </div>
           <p>
             企业提供的实验室记录
@@ -266,6 +269,7 @@ function App() {
               {
                 (
                   {
+                    decision: "场景驱动材料决策",
                     workbench: "材料方案推荐",
                     data: "数据目录与质量",
                     observations: "试验审核工作区",
@@ -297,6 +301,7 @@ function App() {
               </button>
             </div>
           )}
+          {route === "decision" && <DemandCard />}
           {route === "workbench" && scenario && (
             <>
               <div className="page-heading">

@@ -1,0 +1,9 @@
+{
+  "task": "N02",
+  "command": ".venv\\Scripts\\python.exe -X utf8 -m pytest -q tests/test_demand_contracts.py",
+  "exit_code": 0,
+  "passed": 10,
+  "warnings": 1,
+  "duration_seconds_reported_by_pytest": 0.04,
+  "scope": "Input semantics; missing is not zero, known unsupported demands are retained, inconsistent units and malformed values are rejected."
+}
