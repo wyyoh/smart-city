@@ -1,0 +1,90 @@
+{
+  "status": "proposal_ready_not_executed",
+  "user_constraint": "暂时没有实验室，先完成计算实验与送检方案",
+  "mass_basis": "All fractions are nominal workbook fractions. Do not convert them into a batching sheet until RAP denominator, moisture, recovered binder and effective binder accounting have been confirmed.",
+  "stage_0_required": [
+    "Confirm material source and batch identity, RAP denominator, old binder content and available/activated binder accounting.",
+    "Obtain project-specific target clauses, accepted gradation envelope and material/process restrictions.",
+    "Select laboratory methods and defining temperature, loading, aging and conditioning; record actual specimen counts under the selected methods.",
+    "Verify all disclosed ingredient sieve curves and normalized mass balance on the confirmed physical basis.",
+    "Freeze formulation IDs, target definitions, analysis and holdout batch IDs before measuring outcomes."
+  ],
+  "stop_rules": [
+    "Stop and reconcile any mass-balance, method/condition or material-identity mismatch.",
+    "Do not expand a variant that fails a mandatory project metric or construction constraint.",
+    "If differences are smaller than batch/test variability, retain the simpler verified control and collect more informative data."
+  ],
+  "primary_analysis": "Report paired within-block differences, measurement variability, feasibility across all required metrics, and performance of truly held-out batches. Do not choose the best variant and reuse its same measurements as independent validation.",
+  "target_requirements": {
+    "DS": {
+      "value": null,
+      "comparison": null,
+      "source_clause": null,
+      "approved_by": null
+    },
+    "strain": {
+      "value": null,
+      "comparison": null,
+      "source_clause": null,
+      "approved_by": null
+    },
+    "TSR": {
+      "value": null,
+      "comparison": null,
+      "source_clause": null,
+      "approved_by": null
+    },
+    "residual": {
+      "value": null,
+      "comparison": null,
+      "source_clause": null,
+      "approved_by": null
+    }
+  },
+  "design": {
+    "formulations": 5,
+    "independent_preparation_blocks_proposed": 3,
+    "preparation_batches_proposed": 15,
+    "metric_results_proposed": 60,
+    "physical_specimen_count": null,
+    "orders": [
+      {
+        "planned_preparation_block": "P1",
+        "randomized_formulation_order": [
+          "F4",
+          "F2",
+          "F3",
+          "F0",
+          "F1"
+        ],
+        "actual_material_batch": null,
+        "actual_preparation_date": null
+      },
+      {
+        "planned_preparation_block": "P2",
+        "randomized_formulation_order": [
+          "F1",
+          "F3",
+          "F0",
+          "F2",
+          "F4"
+        ],
+        "actual_material_batch": null,
+        "actual_preparation_date": null
+      },
+      {
+        "planned_preparation_block": "P3",
+        "randomized_formulation_order": [
+          "F0",
+          "F2",
+          "F3",
+          "F4",
+          "F1"
+        ],
+        "actual_material_batch": null,
+        "actual_preparation_date": null
+      }
+    ],
+    "replication_note": "Pilot proposal, not a powered confirmatory experiment or a required specimen count under a standard."
+  }
+}

@@ -1,0 +1,3361 @@
+{
+  "ids": [
+    "mix_02fae0235d9d9390e1f3",
+    "mix_07e9acab4f8d5c4c21d0",
+    "mix_08857a35c546c16fea3d",
+    "mix_0980a5c5772fbb0475bb",
+    "mix_09c5c4a1453eb3ff7b8f",
+    "mix_0d6e8183a80990ba7225",
+    "mix_0e51eff6e2cef2806f57",
+    "mix_1243d8c98f42ae5710d9",
+    "mix_15ad6894230968c7675e",
+    "mix_1898f7dbc9bebd98fbc6",
+    "mix_1a870c75c2caab830748",
+    "mix_1f60f60cbb477f1650ee",
+    "mix_2434411cd75985a98378",
+    "mix_24eab2aacdd128c15383",
+    "mix_26677634e9a9c5b83d13",
+    "mix_2847a28e714619487434",
+    "mix_2a28d8524d8d84e6f35f",
+    "mix_2d83475365d615ab8bb5",
+    "mix_3202d08bc8ddd9eb5677",
+    "mix_36359537196d9a43ab60",
+    "mix_3671aeb162bff851cd21",
+    "mix_3980655dc4d0570b5400",
+    "mix_39ea828cf2fc711530d0",
+    "mix_3e569ea4c6a4abc674ff",
+    "mix_3f6396ef076934154f12",
+    "mix_3fb2c7a0d6c0504edbab",
+    "mix_424760c7b3eae4af9dfb",
+    "mix_473a26fdb0b8356b4ab4",
+    "mix_47acc2e5becda0a5a2a3",
+    "mix_4943d222e0e1d1b98b34",
+    "mix_4c63b5f1a7653d79a0ad",
+    "mix_52d3f682fadec939fdd6",
+    "mix_55757ba9f9c2f0200762",
+    "mix_56a3dcbae789975828f0",
+    "mix_597f12de06cc740a8f97",
+    "mix_59cb42163ce4719d7809",
+    "mix_5a0eae6db3cb0a2f9a1f",
+    "mix_65ff1efa3cd482765c9f",
+    "mix_660bdc0e5f0ad65e3ae3",
+    "mix_67335f441bbff44b208e",
+    "mix_6994c70277073899a31f",
+    "mix_6e47f5bd52ca2f04303e",
+    "mix_6e82c7ac7676302cc143",
+    "mix_6f872eda921bddde7c07",
+    "mix_6f88790949802a6b64ea",
+    "mix_7040267cad060fd3d45b",
+    "mix_783a016ef718c0ce666e",
+    "mix_78c2cef51a91c6d81f23",
+    "mix_7919a59c9741196cf1f1",
+    "mix_7a1600d1aac54c3c16d5",
+    "mix_7a55a307568e18697636",
+    "mix_7af99a31b9c408498b42",
+    "mix_831187e8aa09c3910663",
+    "mix_8868d518f5545c47e3d6",
+    "mix_8adbae42f826e07e8611",
+    "mix_91eab7843904b37e4280",
+    "mix_95cfab3ce284788225b2",
+    "mix_9e2f3db93b9f3846b068",
+    "mix_a4d65b1f9b40c9c9d8c0",
+    "mix_a4eff779945aea30a65b",
+    "mix_aa15fb08faac91ed3888",
+    "mix_aeb7283a15b5120d011d",
+    "mix_b00d72189e6efdd57f84",
+    "mix_b0c34b63554feeb3563c",
+    "mix_b41a369b43a159f8f219",
+    "mix_b55232ea9705371fa095",
+    "mix_b7a52f175089632daa78",
+    "mix_b918fd825572e8713e23",
+    "mix_bbee01dc15bb1480d965",
+    "mix_bd22ad2ca126f19820a2",
+    "mix_be00dbb0a69a45180703",
+    "mix_be690b617b69633ba706",
+    "mix_bea7b9fb597c10b126ac",
+    "mix_bf40a782f2a3fee6c9aa",
+    "mix_c09286e2a7be7cb14638",
+    "mix_c389cb15f7ec30cbe854",
+    "mix_c39c8b2c0df3074a52ad",
+    "mix_c848dab4b12b97b5fc9c",
+    "mix_c871adad3b4f9ddb9d20",
+    "mix_c9038e0eaff24aa8e3cd",
+    "mix_c94bd637a781d902fafa",
+    "mix_cbbc5a922ed4e8b095e0",
+    "mix_d55c3a0a53d1e7a44c00",
+    "mix_da01d4da4aba77dc7979",
+    "mix_ddba05833e2cf539323b",
+    "mix_de8be0735da0c13e2054",
+    "mix_e14a35608d3618859586",
+    "mix_e40f39b69768fd914467",
+    "mix_e464f052e3ce56f7455b",
+    "mix_e5584b099b371467cf63",
+    "mix_e7c870ac9436de2bd8c0",
+    "mix_ea99aaf49ce7176e1553",
+    "mix_eb8ae90c71357abeb7df",
+    "mix_ec30ff644f3111c570bc",
+    "mix_f1739f66f9b861f24736",
+    "mix_f9ec6b0ea531742e51e3",
+    "mix_fb456d76c0b65ade1120",
+    "mix_fb4cc4f36aaa75a8e497",
+    "mix_fd042b9c9cb09d2188a9",
+    "mix_ff76e96640f7706852c9"
+  ],
+  "groups": [
+    "source_profile_1B",
+    "source_profile_H",
+    "source_profile_1N",
+    "source_profile_A",
+    "source_profile_I",
+    "source_profile_A",
+    "source_profile_H",
+    "source_profile_D",
+    "source_profile_Q",
+    "source_profile_1C",
+    "source_profile_D",
+    "source_profile_A",
+    "source_profile_E",
+    "source_profile_F",
+    "source_profile_1M",
+    "source_profile_N",
+    "source_profile_R",
+    "source_profile_E",
+    "source_profile_I",
+    "source_profile_B",
+    "source_profile_I",
+    "source_profile_D",
+    "source_profile_E",
+    "source_profile_D",
+    "source_profile_1B",
+    "source_profile_B",
+    "source_profile_S",
+    "source_profile_1B",
+    "source_profile_B-2",
+    "source_profile_D",
+    "source_profile_A",
+    "source_profile_D",
+    "source_profile_1N",
+    "source_profile_B",
+    "source_profile_O",
+    "source_profile_K",
+    "source_profile_1B",
+    "source_profile_W",
+    "source_profile_F",
+    "source_profile_W",
+    "source_profile_A",
+    "source_profile_Z",
+    "source_profile_1J",
+    "source_profile_B",
+    "source_profile_M",
+    "source_profile_I",
+    "source_profile_S",
+    "source_profile_B",
+    "source_profile_1B",
+    "source_profile_A",
+    "source_profile_1L",
+    "source_profile_D",
+    "source_profile_A",
+    "source_profile_E",
+    "source_profile_S",
+    "source_profile_1D",
+    "source_profile_B",
+    "source_profile_H",
+    "source_profile_I",
+    "source_profile_G",
+    "source_profile_W",
+    "source_profile_1K",
+    "source_profile_B",
+    "source_profile_B",
+    "source_profile_Z",
+    "source_profile_I",
+    "source_profile_1G",
+    "source_profile_1H",
+    "source_profile_G",
+    "source_profile_E",
+    "source_profile_B",
+    "source_profile_I",
+    "source_profile_E",
+    "source_profile_1L",
+    "source_profile_V",
+    "source_profile_L",
+    "source_profile_J",
+    "source_profile_A",
+    "source_profile_B",
+    "source_profile_A",
+    "source_profile_P",
+    "source_profile_I",
+    "source_profile_F",
+    "source_profile_1A",
+    "source_profile_X",
+    "source_profile_I",
+    "source_profile_I",
+    "source_profile_1G",
+    "source_profile_1E",
+    "source_profile_1O",
+    "source_profile_W",
+    "source_profile_B",
+    "source_profile_B",
+    "source_profile_M",
+    "source_profile_D",
+    "source_profile_B",
+    "source_profile_X",
+    "source_profile_1F",
+    "source_profile_1B",
+    "source_profile_R"
+  ],
+  "labels": [
+    [
+      6670.0,
+      2134.5955714285715,
+      88.42472472402918,
+      90.0972862263185
+    ],
+    [
+      5000.0,
+      2242.0,
+      92.44995786770077,
+      92.75965764515384
+    ],
+    [
+      2064.0,
+      2148.3128333333334,
+      80.63109629808012,
+      91.36481736206632
+    ],
+    [
+      5445.0,
+      426.666666666667,
+      null,
+      null
+    ],
+    [
+      5679.0,
+      2076.0,
+      87.41066080013967,
+      89.07596712768088
+    ],
+    [
+      null,
+      null,
+      88.43887343650394,
+      null
+    ],
+    [
+      9565.0,
+      2044.0,
+      81.98128641646413,
+      88.0578252671276
+    ],
+    [
+      null,
+      null,
+      95.32673695605554,
+      87.96943434908212
+    ],
+    [
+      7875.0,
+      2443.8571428571427,
+      82.84744851931043,
+      91.57820240622789
+    ],
+    [
+      4957.5,
+      2118.714285714286,
+      87.73162116224877,
+      88.35140394773421
+    ],
+    [
+      null,
+      null,
+      93.80607035749809,
+      94.44444444444446
+    ],
+    [
+      5887.0,
+      407.0,
+      null,
+      null
+    ],
+    [
+      1318.0,
+      2695.0,
+      86.61295505505002,
+      93.73808476316177
+    ],
+    [
+      4394.0,
+      2245.0,
+      88.95911461788904,
+      86.18331053351572
+    ],
+    [
+      2422.5,
+      2221.432,
+      85.37392593983176,
+      88.31392841742131
+    ],
+    [
+      5478.5,
+      2358.6,
+      84.69623298310351,
+      92.77204130262113
+    ],
+    [
+      6262.0,
+      2166.8333333333335,
+      79.35258449788157,
+      92.69226169118525
+    ],
+    [
+      1629.0,
+      2718.0,
+      85.68101641969214,
+      88.92589508742715
+    ],
+    [
+      7555.0,
+      1527.0,
+      84.67051748080462,
+      90.24971505543465
+    ],
+    [
+      4761.0,
+      2515.408034999996,
+      85.3778871983326,
+      89.55878955878957
+    ],
+    [
+      11056.0,
+      null,
+      91.58704283199003,
+      94.73684210526316
+    ],
+    [
+      5325.0,
+      2649.0,
+      null,
+      null
+    ],
+    [
+      6022.0,
+      2844.0,
+      89.52963764350551,
+      90.89055064581916
+    ],
+    [
+      3841.0,
+      1984.0,
+      null,
+      null
+    ],
+    [
+      6024.5,
+      2052.4985714285713,
+      88.69569571356959,
+      87.64595103578155
+    ],
+    [
+      4375.0,
+      2403.773714999998,
+      null,
+      null
+    ],
+    [
+      7240.9090909090955,
+      2031.0,
+      86.08688330332618,
+      87.2653768408894
+    ],
+    [
+      5202.5,
+      2121.4917142857144,
+      86.6307550738457,
+      88.41481481481483
+    ],
+    [
+      6846.0,
+      2032.0,
+      null,
+      null
+    ],
+    [
+      5640.0,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      83.03773286765933,
+      86.43693395184447
+    ],
+    [
+      4677.0,
+      2375.0,
+      87.72696452465897,
+      92.83696529459242
+    ],
+    [
+      3646.0,
+      2155.4621666666667,
+      82.2074089728802,
+      86.55105973025046
+    ],
+    [
+      null,
+      null,
+      88.98749211596704,
+      null
+    ],
+    [
+      7788.5,
+      2149.0,
+      76.03499986873025,
+      87.23614479475434
+    ],
+    [
+      6613.666666666667,
+      2068.3333333333335,
+      88.88920032144705,
+      94.72793910346772
+    ],
+    [
+      6260.0,
+      2225.6747142857143,
+      92.74457106727604,
+      88.88192267502613
+    ],
+    [
+      4846.5,
+      2385.3333333333335,
+      82.0,
+      89.68
+    ],
+    [
+      4858.0,
+      2386.0,
+      88.67909324661053,
+      88.1125027466491
+    ],
+    [
+      5084.0,
+      1878.0,
+      80.0,
+      83.36
+    ],
+    [
+      null,
+      null,
+      87.26483697627907,
+      null
+    ],
+    [
+      6748.0,
+      null,
+      80.19936002758293,
+      90.14084507042254
+    ],
+    [
+      2654.0,
+      1810.2920000000001,
+      81.73530353836298,
+      83.25358851674642
+    ],
+    [
+      2666.0,
+      2621.808630000002,
+      null,
+      null
+    ],
+    [
+      7778.0,
+      2525.0,
+      79.54156059543348,
+      91.52915291529152
+    ],
+    [
+      6400.0,
+      null,
+      91.39443501133454,
+      92.57203277821836
+    ],
+    [
+      7538.46153846153,
+      2087.4,
+      86.56130356787892,
+      86.17081447963801
+    ],
+    [
+      null,
+      null,
+      90.7421579224902,
+      91.47069147069148
+    ],
+    [
+      5840.0,
+      2007.052,
+      83.35093439593577,
+      88.90163464295955
+    ],
+    [
+      null,
+      null,
+      null,
+      79.29612870789342
+    ],
+    [
+      5525.5,
+      2383.8333333333335,
+      89.45330053981392,
+      90.94357515410148
+    ],
+    [
+      5464.0,
+      1885.0,
+      null,
+      null
+    ],
+    [
+      4458.0,
+      601.0,
+      null,
+      null
+    ],
+    [
+      7809.0,
+      3098.0,
+      90.82743039801326,
+      95.15530829856282
+    ],
+    [
+      9327.303846153834,
+      2064.2,
+      89.78596858504315,
+      87.81375742479402
+    ],
+    [
+      6815.0,
+      2052.422,
+      85.30279926768927,
+      83.96046183237812
+    ],
+    [
+      4846.0,
+      1920.4444444444443,
+      89.70685429293304,
+      83.4846113719353
+    ],
+    [
+      5944.0,
+      2321.0,
+      80.56760632777791,
+      83.94198394198393
+    ],
+    [
+      6984.0,
+      null,
+      92.79484961839498,
+      93.66479550922215
+    ],
+    [
+      4147.0,
+      2753.0,
+      83.74063941660259,
+      87.32865262454031
+    ],
+    [
+      6148.0,
+      2035.3333333333333,
+      85.0,
+      88.64
+    ],
+    [
+      2654.5,
+      1983.3500000000001,
+      81.35213863164778,
+      85.52806597499335
+    ],
+    [
+      null,
+      null,
+      null,
+      91.65935238289656
+    ],
+    [
+      null,
+      null,
+      91.90950714194986,
+      93.80437088903034
+    ],
+    [
+      7762.0,
+      null,
+      81.033524229922,
+      86.32218844984801
+    ],
+    [
+      8302.5,
+      null,
+      85.92325340385484,
+      93.46527592047784
+    ],
+    [
+      3409.0,
+      2083.5693333333325,
+      null,
+      87.35830104749607
+    ],
+    [
+      7422.0,
+      1801.6638333333333,
+      91.84263395163468,
+      89.02289809473866
+    ],
+    [
+      5394.0,
+      2425.0,
+      78.96427358294025,
+      90.03574620196603
+    ],
+    [
+      1222.0,
+      2848.0,
+      87.205776065699,
+      93.15782256958727
+    ],
+    [
+      5040.0,
+      null,
+      null,
+      null
+    ],
+    [
+      11024.0,
+      null,
+      89.42457988165441,
+      90.35422343324251
+    ],
+    [
+      6659.0,
+      2705.0,
+      89.48102944123686,
+      90.84489895300706
+    ],
+    [
+      3933.0,
+      1763.1666666666667,
+      80.98639827966923,
+      82.84530017382004
+    ],
+    [
+      4823.0,
+      2347.8333333333335,
+      89.0,
+      93.43
+    ],
+    [
+      5206.333333333333,
+      2045.6666666666667,
+      85.87990487911766,
+      84.54637647242373
+    ],
+    [
+      5471.0,
+      2066.6666666666665,
+      90.46845286537155,
+      90.78667007585443
+    ],
+    [
+      null,
+      null,
+      87.37632989685856,
+      null
+    ],
+    [
+      5150.0,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      84.37154615049532,
+      null
+    ],
+    [
+      6116.0,
+      2199.8571428571427,
+      85.8112900737545,
+      86.03791030975496
+    ],
+    [
+      6575.0,
+      2285.0,
+      82.15764892873372,
+      86.84161548483156
+    ],
+    [
+      5597.0,
+      2144.0,
+      88.38466513572205,
+      94.29969052610562
+    ],
+    [
+      4906.0,
+      2027.1391666666666,
+      88.39212112426317,
+      86.31292517006803
+    ],
+    [
+      null,
+      null,
+      null,
+      91.46875720544156
+    ],
+    [
+      10508.0,
+      null,
+      92.63053321422505,
+      89.76498800959232
+    ],
+    [
+      9333.0,
+      null,
+      85.82212405696158,
+      87.0818915801615
+    ],
+    [
+      2625.0,
+      2018.10925,
+      null,
+      80.87217652435042
+    ],
+    [
+      5317.0,
+      1999.7872499999999,
+      89.44046136147637,
+      85.23466940733128
+    ],
+    [
+      4916.0,
+      1887.375,
+      84.9894713078588,
+      83.17267970256127
+    ],
+    [
+      7349.0,
+      2248.1666666666665,
+      83.0,
+      89.6
+    ],
+    [
+      4323.0,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      89.52420925601405,
+      null
+    ],
+    [
+      7316.5,
+      2525.0,
+      84.96918608354991,
+      88.2831181252989
+    ],
+    [
+      null,
+      null,
+      89.05633633726701,
+      95.3810623556582
+    ],
+    [
+      5052.0,
+      2258.976825000008,
+      null,
+      null
+    ],
+    [
+      8349.0,
+      2179.0,
+      90.52292301485141,
+      null
+    ],
+    [
+      5500.0,
+      2123.7163333333333,
+      82.19935486558883,
+      83.18868531018965
+    ],
+    [
+      6044.0,
+      2049.511285714286,
+      89.86696246916348,
+      89.52095808383231
+    ],
+    [
+      6079.5,
+      2205.9166666666665,
+      73.94470118746662,
+      89.30474333983106
+    ]
+  ],
+  "label_provenance": {
+    "DS": [
+      {
+        "recipe_id": "mix_36359537196d9a43ab60",
+        "measurement_id": "mix_36359537196d9a43ab60:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_52d3f682fadec939fdd6",
+        "measurement_id": "mix_52d3f682fadec939fdd6:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2434411cd75985a98378",
+        "measurement_id": "mix_2434411cd75985a98378:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2d83475365d615ab8bb5",
+        "measurement_id": "mix_2d83475365d615ab8bb5:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_8868d518f5545c47e3d6",
+        "measurement_id": "mix_8868d518f5545c47e3d6:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_39ea828cf2fc711530d0",
+        "measurement_id": "mix_39ea828cf2fc711530d0:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bea7b9fb597c10b126ac",
+        "measurement_id": "mix_bea7b9fb597c10b126ac:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_660bdc0e5f0ad65e3ae3",
+        "measurement_id": "mix_660bdc0e5f0ad65e3ae3:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_24eab2aacdd128c15383",
+        "measurement_id": "mix_24eab2aacdd128c15383:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-130#"
+      },
+      {
+        "recipe_id": "mix_bbee01dc15bb1480d965",
+        "measurement_id": "mix_bbee01dc15bb1480d965:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-1"
+      },
+      {
+        "recipe_id": "mix_a4eff779945aea30a65b",
+        "measurement_id": "mix_a4eff779945aea30a65b:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-2"
+      },
+      {
+        "recipe_id": "mix_09c5c4a1453eb3ff7b8f",
+        "measurement_id": "mix_09c5c4a1453eb3ff7b8f:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_3202d08bc8ddd9eb5677",
+        "measurement_id": "mix_3202d08bc8ddd9eb5677:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_2847a28e714619487434",
+        "measurement_id": "mix_2847a28e714619487434:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "N",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_a4d65b1f9b40c9c9d8c0",
+        "measurement_id": "mix_a4d65b1f9b40c9c9d8c0:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-3"
+      },
+      {
+        "recipe_id": "mix_7040267cad060fd3d45b",
+        "measurement_id": "mix_7040267cad060fd3d45b:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-4"
+      },
+      {
+        "recipe_id": "mix_2a28d8524d8d84e6f35f",
+        "measurement_id": "mix_2a28d8524d8d84e6f35f:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ff76e96640f7706852c9",
+        "measurement_id": "mix_ff76e96640f7706852c9:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_8adbae42f826e07e8611",
+        "measurement_id": "mix_8adbae42f826e07e8611:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_783a016ef718c0ce666e",
+        "measurement_id": "mix_783a016ef718c0ce666e:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_424760c7b3eae4af9dfb",
+        "measurement_id": "mix_424760c7b3eae4af9dfb:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c09286e2a7be7cb14638",
+        "measurement_id": "mix_c09286e2a7be7cb14638:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "V",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e7c870ac9436de2bd8c0",
+        "measurement_id": "mix_e7c870ac9436de2bd8c0:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_65ff1efa3cd482765c9f",
+        "measurement_id": "mix_65ff1efa3cd482765c9f:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_aa15fb08faac91ed3888",
+        "measurement_id": "mix_aa15fb08faac91ed3888:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_67335f441bbff44b208e",
+        "measurement_id": "mix_67335f441bbff44b208e:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_6e47f5bd52ca2f04303e",
+        "measurement_id": "mix_6e47f5bd52ca2f04303e:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Z",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_b41a369b43a159f8f219",
+        "measurement_id": "mix_b41a369b43a159f8f219:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Z",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_da01d4da4aba77dc7979",
+        "measurement_id": "mix_da01d4da4aba77dc7979:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1A",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_473a26fdb0b8356b4ab4",
+        "measurement_id": "mix_473a26fdb0b8356b4ab4:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_fd042b9c9cb09d2188a9",
+        "measurement_id": "mix_fd042b9c9cb09d2188a9:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "measurement_id": "mix_5a0eae6db3cb0a2f9a1f:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_7919a59c9741196cf1f1",
+        "measurement_id": "mix_7919a59c9741196cf1f1:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-1"
+      },
+      {
+        "recipe_id": "mix_3f6396ef076934154f12",
+        "measurement_id": "mix_3f6396ef076934154f12:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-2"
+      },
+      {
+        "recipe_id": "mix_02fae0235d9d9390e1f3",
+        "measurement_id": "mix_02fae0235d9d9390e1f3:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-3"
+      },
+      {
+        "recipe_id": "mix_1898f7dbc9bebd98fbc6",
+        "measurement_id": "mix_1898f7dbc9bebd98fbc6:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1C",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_91eab7843904b37e4280",
+        "measurement_id": "mix_91eab7843904b37e4280:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1D",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_e464f052e3ce56f7455b",
+        "measurement_id": "mix_e464f052e3ce56f7455b:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1E",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_fb4cc4f36aaa75a8e497",
+        "measurement_id": "mix_fb4cc4f36aaa75a8e497:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1F",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_b7a52f175089632daa78",
+        "measurement_id": "mix_b7a52f175089632daa78:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1G",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_e40f39b69768fd914467",
+        "measurement_id": "mix_e40f39b69768fd914467:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1G",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_b918fd825572e8713e23",
+        "measurement_id": "mix_b918fd825572e8713e23:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1H",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6e82c7ac7676302cc143",
+        "measurement_id": "mix_6e82c7ac7676302cc143:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1J",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_aeb7283a15b5120d011d",
+        "measurement_id": "mix_aeb7283a15b5120d011d:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1K",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_bf40a782f2a3fee6c9aa",
+        "measurement_id": "mix_bf40a782f2a3fee6c9aa:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_7a55a307568e18697636",
+        "measurement_id": "mix_7a55a307568e18697636:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_26677634e9a9c5b83d13",
+        "measurement_id": "mix_26677634e9a9c5b83d13:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_55757ba9f9c2f0200762",
+        "measurement_id": "mix_55757ba9f9c2f0200762:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_08857a35c546c16fea3d",
+        "measurement_id": "mix_08857a35c546c16fea3d:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e5584b099b371467cf63",
+        "measurement_id": "mix_e5584b099b371467cf63:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1O",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_95cfab3ce284788225b2",
+        "measurement_id": "mix_95cfab3ce284788225b2:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "C",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bd22ad2ca126f19820a2",
+        "measurement_id": "mix_bd22ad2ca126f19820a2:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_d55c3a0a53d1e7a44c00",
+        "measurement_id": "mix_d55c3a0a53d1e7a44c00:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-90#"
+      },
+      {
+        "recipe_id": "mix_0e51eff6e2cef2806f57",
+        "measurement_id": "mix_0e51eff6e2cef2806f57:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-90#"
+      },
+      {
+        "recipe_id": "mix_9e2f3db93b9f3846b068",
+        "measurement_id": "mix_9e2f3db93b9f3846b068:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-110#"
+      },
+      {
+        "recipe_id": "mix_07e9acab4f8d5c4c21d0",
+        "measurement_id": "mix_07e9acab4f8d5c4c21d0:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-130#"
+      },
+      {
+        "recipe_id": "mix_cbbc5a922ed4e8b095e0",
+        "measurement_id": "mix_cbbc5a922ed4e8b095e0:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_c39c8b2c0df3074a52ad",
+        "measurement_id": "mix_c39c8b2c0df3074a52ad:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "J",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_59cb42163ce4719d7809",
+        "measurement_id": "mix_59cb42163ce4719d7809:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "K",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c389cb15f7ec30cbe854",
+        "measurement_id": "mix_c389cb15f7ec30cbe854:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "L",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6f88790949802a6b64ea",
+        "measurement_id": "mix_6f88790949802a6b64ea:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_597f12de06cc740a8f97",
+        "measurement_id": "mix_597f12de06cc740a8f97:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "O",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_c94bd637a781d902fafa",
+        "measurement_id": "mix_c94bd637a781d902fafa:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "P",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_15ad6894230968c7675e",
+        "measurement_id": "mix_15ad6894230968c7675e:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Q",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ec30ff644f3111c570bc",
+        "measurement_id": "mix_ec30ff644f3111c570bc:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M-1",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_b55232ea9705371fa095",
+        "measurement_id": "mix_b55232ea9705371fa095:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_be690b617b69633ba706",
+        "measurement_id": "mix_be690b617b69633ba706:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_de8be0735da0c13e2054",
+        "measurement_id": "mix_de8be0735da0c13e2054:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_3671aeb162bff851cd21",
+        "measurement_id": "mix_3671aeb162bff851cd21:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_e14a35608d3618859586",
+        "measurement_id": "mix_e14a35608d3618859586:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-4"
+      },
+      {
+        "recipe_id": "mix_fb456d76c0b65ade1120",
+        "measurement_id": "mix_fb456d76c0b65ade1120:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "X",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_0980a5c5772fbb0475bb",
+        "measurement_id": "mix_0980a5c5772fbb0475bb:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-1"
+      },
+      {
+        "recipe_id": "mix_831187e8aa09c3910663",
+        "measurement_id": "mix_831187e8aa09c3910663:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-1"
+      },
+      {
+        "recipe_id": "mix_1f60f60cbb477f1650ee",
+        "measurement_id": "mix_1f60f60cbb477f1650ee:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-2"
+      },
+      {
+        "recipe_id": "mix_f9ec6b0ea531742e51e3",
+        "measurement_id": "mix_f9ec6b0ea531742e51e3:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_ea99aaf49ce7176e1553",
+        "measurement_id": "mix_ea99aaf49ce7176e1553:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_be00dbb0a69a45180703",
+        "measurement_id": "mix_be00dbb0a69a45180703:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_c871adad3b4f9ddb9d20",
+        "measurement_id": "mix_c871adad3b4f9ddb9d20:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_3fb2c7a0d6c0504edbab",
+        "measurement_id": "mix_3fb2c7a0d6c0504edbab:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_6f872eda921bddde7c07",
+        "measurement_id": "mix_6f872eda921bddde7c07:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_7af99a31b9c408498b42",
+        "measurement_id": "mix_7af99a31b9c408498b42:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_4943d222e0e1d1b98b34",
+        "measurement_id": "mix_4943d222e0e1d1b98b34:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_3980655dc4d0570b5400",
+        "measurement_id": "mix_3980655dc4d0570b5400:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_3e569ea4c6a4abc674ff",
+        "measurement_id": "mix_3e569ea4c6a4abc674ff:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_47acc2e5becda0a5a2a3",
+        "measurement_id": "mix_47acc2e5becda0a5a2a3:DS",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B-2",
+        "gradation": "AC-10"
+      }
+    ],
+    "strain": [
+      {
+        "recipe_id": "mix_36359537196d9a43ab60",
+        "measurement_id": "mix_36359537196d9a43ab60:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_52d3f682fadec939fdd6",
+        "measurement_id": "mix_52d3f682fadec939fdd6:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2434411cd75985a98378",
+        "measurement_id": "mix_2434411cd75985a98378:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2d83475365d615ab8bb5",
+        "measurement_id": "mix_2d83475365d615ab8bb5:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_8868d518f5545c47e3d6",
+        "measurement_id": "mix_8868d518f5545c47e3d6:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_39ea828cf2fc711530d0",
+        "measurement_id": "mix_39ea828cf2fc711530d0:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bea7b9fb597c10b126ac",
+        "measurement_id": "mix_bea7b9fb597c10b126ac:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_660bdc0e5f0ad65e3ae3",
+        "measurement_id": "mix_660bdc0e5f0ad65e3ae3:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_24eab2aacdd128c15383",
+        "measurement_id": "mix_24eab2aacdd128c15383:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-130#"
+      },
+      {
+        "recipe_id": "mix_bbee01dc15bb1480d965",
+        "measurement_id": "mix_bbee01dc15bb1480d965:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-1"
+      },
+      {
+        "recipe_id": "mix_a4eff779945aea30a65b",
+        "measurement_id": "mix_a4eff779945aea30a65b:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-2"
+      },
+      {
+        "recipe_id": "mix_09c5c4a1453eb3ff7b8f",
+        "measurement_id": "mix_09c5c4a1453eb3ff7b8f:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_3202d08bc8ddd9eb5677",
+        "measurement_id": "mix_3202d08bc8ddd9eb5677:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_2847a28e714619487434",
+        "measurement_id": "mix_2847a28e714619487434:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "N",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2a28d8524d8d84e6f35f",
+        "measurement_id": "mix_2a28d8524d8d84e6f35f:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ff76e96640f7706852c9",
+        "measurement_id": "mix_ff76e96640f7706852c9:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_8adbae42f826e07e8611",
+        "measurement_id": "mix_8adbae42f826e07e8611:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_783a016ef718c0ce666e",
+        "measurement_id": "mix_783a016ef718c0ce666e:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_424760c7b3eae4af9dfb",
+        "measurement_id": "mix_424760c7b3eae4af9dfb:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c09286e2a7be7cb14638",
+        "measurement_id": "mix_c09286e2a7be7cb14638:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "V",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e7c870ac9436de2bd8c0",
+        "measurement_id": "mix_e7c870ac9436de2bd8c0:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_65ff1efa3cd482765c9f",
+        "measurement_id": "mix_65ff1efa3cd482765c9f:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_aa15fb08faac91ed3888",
+        "measurement_id": "mix_aa15fb08faac91ed3888:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_67335f441bbff44b208e",
+        "measurement_id": "mix_67335f441bbff44b208e:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_da01d4da4aba77dc7979",
+        "measurement_id": "mix_da01d4da4aba77dc7979:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1A",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_473a26fdb0b8356b4ab4",
+        "measurement_id": "mix_473a26fdb0b8356b4ab4:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_fd042b9c9cb09d2188a9",
+        "measurement_id": "mix_fd042b9c9cb09d2188a9:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "measurement_id": "mix_5a0eae6db3cb0a2f9a1f:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_7919a59c9741196cf1f1",
+        "measurement_id": "mix_7919a59c9741196cf1f1:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-1"
+      },
+      {
+        "recipe_id": "mix_3f6396ef076934154f12",
+        "measurement_id": "mix_3f6396ef076934154f12:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-2"
+      },
+      {
+        "recipe_id": "mix_02fae0235d9d9390e1f3",
+        "measurement_id": "mix_02fae0235d9d9390e1f3:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-3"
+      },
+      {
+        "recipe_id": "mix_1898f7dbc9bebd98fbc6",
+        "measurement_id": "mix_1898f7dbc9bebd98fbc6:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1C",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_91eab7843904b37e4280",
+        "measurement_id": "mix_91eab7843904b37e4280:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1D",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_e464f052e3ce56f7455b",
+        "measurement_id": "mix_e464f052e3ce56f7455b:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1E",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_fb4cc4f36aaa75a8e497",
+        "measurement_id": "mix_fb4cc4f36aaa75a8e497:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1F",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_b7a52f175089632daa78",
+        "measurement_id": "mix_b7a52f175089632daa78:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1G",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_e40f39b69768fd914467",
+        "measurement_id": "mix_e40f39b69768fd914467:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1G",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_b918fd825572e8713e23",
+        "measurement_id": "mix_b918fd825572e8713e23:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1H",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6e82c7ac7676302cc143",
+        "measurement_id": "mix_6e82c7ac7676302cc143:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1J",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_aeb7283a15b5120d011d",
+        "measurement_id": "mix_aeb7283a15b5120d011d:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1K",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_bf40a782f2a3fee6c9aa",
+        "measurement_id": "mix_bf40a782f2a3fee6c9aa:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_7a55a307568e18697636",
+        "measurement_id": "mix_7a55a307568e18697636:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_26677634e9a9c5b83d13",
+        "measurement_id": "mix_26677634e9a9c5b83d13:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_55757ba9f9c2f0200762",
+        "measurement_id": "mix_55757ba9f9c2f0200762:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_08857a35c546c16fea3d",
+        "measurement_id": "mix_08857a35c546c16fea3d:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e5584b099b371467cf63",
+        "measurement_id": "mix_e5584b099b371467cf63:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1O",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_95cfab3ce284788225b2",
+        "measurement_id": "mix_95cfab3ce284788225b2:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "C",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bd22ad2ca126f19820a2",
+        "measurement_id": "mix_bd22ad2ca126f19820a2:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_d55c3a0a53d1e7a44c00",
+        "measurement_id": "mix_d55c3a0a53d1e7a44c00:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-90#"
+      },
+      {
+        "recipe_id": "mix_0e51eff6e2cef2806f57",
+        "measurement_id": "mix_0e51eff6e2cef2806f57:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-90#"
+      },
+      {
+        "recipe_id": "mix_9e2f3db93b9f3846b068",
+        "measurement_id": "mix_9e2f3db93b9f3846b068:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-110#"
+      },
+      {
+        "recipe_id": "mix_07e9acab4f8d5c4c21d0",
+        "measurement_id": "mix_07e9acab4f8d5c4c21d0:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-130#"
+      },
+      {
+        "recipe_id": "mix_cbbc5a922ed4e8b095e0",
+        "measurement_id": "mix_cbbc5a922ed4e8b095e0:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_c39c8b2c0df3074a52ad",
+        "measurement_id": "mix_c39c8b2c0df3074a52ad:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "J",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_59cb42163ce4719d7809",
+        "measurement_id": "mix_59cb42163ce4719d7809:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "K",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c389cb15f7ec30cbe854",
+        "measurement_id": "mix_c389cb15f7ec30cbe854:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "L",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6f88790949802a6b64ea",
+        "measurement_id": "mix_6f88790949802a6b64ea:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_597f12de06cc740a8f97",
+        "measurement_id": "mix_597f12de06cc740a8f97:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "O",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_c94bd637a781d902fafa",
+        "measurement_id": "mix_c94bd637a781d902fafa:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "P",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_15ad6894230968c7675e",
+        "measurement_id": "mix_15ad6894230968c7675e:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Q",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ec30ff644f3111c570bc",
+        "measurement_id": "mix_ec30ff644f3111c570bc:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M-1",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_fb456d76c0b65ade1120",
+        "measurement_id": "mix_fb456d76c0b65ade1120:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "X",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_0980a5c5772fbb0475bb",
+        "measurement_id": "mix_0980a5c5772fbb0475bb:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-1"
+      },
+      {
+        "recipe_id": "mix_831187e8aa09c3910663",
+        "measurement_id": "mix_831187e8aa09c3910663:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-1"
+      },
+      {
+        "recipe_id": "mix_1f60f60cbb477f1650ee",
+        "measurement_id": "mix_1f60f60cbb477f1650ee:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-2"
+      },
+      {
+        "recipe_id": "mix_f9ec6b0ea531742e51e3",
+        "measurement_id": "mix_f9ec6b0ea531742e51e3:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_3fb2c7a0d6c0504edbab",
+        "measurement_id": "mix_3fb2c7a0d6c0504edbab:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_6f872eda921bddde7c07",
+        "measurement_id": "mix_6f872eda921bddde7c07:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_7af99a31b9c408498b42",
+        "measurement_id": "mix_7af99a31b9c408498b42:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_3980655dc4d0570b5400",
+        "measurement_id": "mix_3980655dc4d0570b5400:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_3e569ea4c6a4abc674ff",
+        "measurement_id": "mix_3e569ea4c6a4abc674ff:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_47acc2e5becda0a5a2a3",
+        "measurement_id": "mix_47acc2e5becda0a5a2a3:strain",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B-2",
+        "gradation": "AC-10"
+      }
+    ],
+    "TSR": [
+      {
+        "recipe_id": "mix_c848dab4b12b97b5fc9c",
+        "measurement_id": "mix_c848dab4b12b97b5fc9c:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-1"
+      },
+      {
+        "recipe_id": "mix_6994c70277073899a31f",
+        "measurement_id": "mix_6994c70277073899a31f:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-2"
+      },
+      {
+        "recipe_id": "mix_eb8ae90c71357abeb7df",
+        "measurement_id": "mix_eb8ae90c71357abeb7df:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_78c2cef51a91c6d81f23",
+        "measurement_id": "mix_78c2cef51a91c6d81f23:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_b0c34b63554feeb3563c",
+        "measurement_id": "mix_b0c34b63554feeb3563c:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_36359537196d9a43ab60",
+        "measurement_id": "mix_36359537196d9a43ab60:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_f1739f66f9b861f24736",
+        "measurement_id": "mix_f1739f66f9b861f24736:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_52d3f682fadec939fdd6",
+        "measurement_id": "mix_52d3f682fadec939fdd6:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_1243d8c98f42ae5710d9",
+        "measurement_id": "mix_1243d8c98f42ae5710d9:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_1a870c75c2caab830748",
+        "measurement_id": "mix_1a870c75c2caab830748:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2434411cd75985a98378",
+        "measurement_id": "mix_2434411cd75985a98378:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2d83475365d615ab8bb5",
+        "measurement_id": "mix_2d83475365d615ab8bb5:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_8868d518f5545c47e3d6",
+        "measurement_id": "mix_8868d518f5545c47e3d6:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_39ea828cf2fc711530d0",
+        "measurement_id": "mix_39ea828cf2fc711530d0:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bea7b9fb597c10b126ac",
+        "measurement_id": "mix_bea7b9fb597c10b126ac:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_660bdc0e5f0ad65e3ae3",
+        "measurement_id": "mix_660bdc0e5f0ad65e3ae3:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_24eab2aacdd128c15383",
+        "measurement_id": "mix_24eab2aacdd128c15383:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-130#"
+      },
+      {
+        "recipe_id": "mix_bbee01dc15bb1480d965",
+        "measurement_id": "mix_bbee01dc15bb1480d965:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-1"
+      },
+      {
+        "recipe_id": "mix_a4eff779945aea30a65b",
+        "measurement_id": "mix_a4eff779945aea30a65b:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-2"
+      },
+      {
+        "recipe_id": "mix_09c5c4a1453eb3ff7b8f",
+        "measurement_id": "mix_09c5c4a1453eb3ff7b8f:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_3202d08bc8ddd9eb5677",
+        "measurement_id": "mix_3202d08bc8ddd9eb5677:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_2847a28e714619487434",
+        "measurement_id": "mix_2847a28e714619487434:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "N",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_a4d65b1f9b40c9c9d8c0",
+        "measurement_id": "mix_a4d65b1f9b40c9c9d8c0:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-3"
+      },
+      {
+        "recipe_id": "mix_7040267cad060fd3d45b",
+        "measurement_id": "mix_7040267cad060fd3d45b:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-4"
+      },
+      {
+        "recipe_id": "mix_2a28d8524d8d84e6f35f",
+        "measurement_id": "mix_2a28d8524d8d84e6f35f:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ff76e96640f7706852c9",
+        "measurement_id": "mix_ff76e96640f7706852c9:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_8adbae42f826e07e8611",
+        "measurement_id": "mix_8adbae42f826e07e8611:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_783a016ef718c0ce666e",
+        "measurement_id": "mix_783a016ef718c0ce666e:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_424760c7b3eae4af9dfb",
+        "measurement_id": "mix_424760c7b3eae4af9dfb:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c09286e2a7be7cb14638",
+        "measurement_id": "mix_c09286e2a7be7cb14638:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "V",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e7c870ac9436de2bd8c0",
+        "measurement_id": "mix_e7c870ac9436de2bd8c0:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_65ff1efa3cd482765c9f",
+        "measurement_id": "mix_65ff1efa3cd482765c9f:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_aa15fb08faac91ed3888",
+        "measurement_id": "mix_aa15fb08faac91ed3888:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_67335f441bbff44b208e",
+        "measurement_id": "mix_67335f441bbff44b208e:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_6e47f5bd52ca2f04303e",
+        "measurement_id": "mix_6e47f5bd52ca2f04303e:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Z",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_b41a369b43a159f8f219",
+        "measurement_id": "mix_b41a369b43a159f8f219:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Z",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_da01d4da4aba77dc7979",
+        "measurement_id": "mix_da01d4da4aba77dc7979:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1A",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_473a26fdb0b8356b4ab4",
+        "measurement_id": "mix_473a26fdb0b8356b4ab4:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_fd042b9c9cb09d2188a9",
+        "measurement_id": "mix_fd042b9c9cb09d2188a9:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "measurement_id": "mix_5a0eae6db3cb0a2f9a1f:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_7919a59c9741196cf1f1",
+        "measurement_id": "mix_7919a59c9741196cf1f1:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-1"
+      },
+      {
+        "recipe_id": "mix_3f6396ef076934154f12",
+        "measurement_id": "mix_3f6396ef076934154f12:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-2"
+      },
+      {
+        "recipe_id": "mix_02fae0235d9d9390e1f3",
+        "measurement_id": "mix_02fae0235d9d9390e1f3:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-3"
+      },
+      {
+        "recipe_id": "mix_1898f7dbc9bebd98fbc6",
+        "measurement_id": "mix_1898f7dbc9bebd98fbc6:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1C",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_91eab7843904b37e4280",
+        "measurement_id": "mix_91eab7843904b37e4280:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1D",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_e464f052e3ce56f7455b",
+        "measurement_id": "mix_e464f052e3ce56f7455b:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1E",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_fb4cc4f36aaa75a8e497",
+        "measurement_id": "mix_fb4cc4f36aaa75a8e497:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1F",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_b918fd825572e8713e23",
+        "measurement_id": "mix_b918fd825572e8713e23:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1H",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6e82c7ac7676302cc143",
+        "measurement_id": "mix_6e82c7ac7676302cc143:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1J",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_aeb7283a15b5120d011d",
+        "measurement_id": "mix_aeb7283a15b5120d011d:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1K",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_bf40a782f2a3fee6c9aa",
+        "measurement_id": "mix_bf40a782f2a3fee6c9aa:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_7a55a307568e18697636",
+        "measurement_id": "mix_7a55a307568e18697636:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_26677634e9a9c5b83d13",
+        "measurement_id": "mix_26677634e9a9c5b83d13:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_55757ba9f9c2f0200762",
+        "measurement_id": "mix_55757ba9f9c2f0200762:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_08857a35c546c16fea3d",
+        "measurement_id": "mix_08857a35c546c16fea3d:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e5584b099b371467cf63",
+        "measurement_id": "mix_e5584b099b371467cf63:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1O",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_4c63b5f1a7653d79a0ad",
+        "measurement_id": "mix_4c63b5f1a7653d79a0ad:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-2"
+      },
+      {
+        "recipe_id": "mix_95cfab3ce284788225b2",
+        "measurement_id": "mix_95cfab3ce284788225b2:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "C",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bd22ad2ca126f19820a2",
+        "measurement_id": "mix_bd22ad2ca126f19820a2:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_d55c3a0a53d1e7a44c00",
+        "measurement_id": "mix_d55c3a0a53d1e7a44c00:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-90#"
+      },
+      {
+        "recipe_id": "mix_0e51eff6e2cef2806f57",
+        "measurement_id": "mix_0e51eff6e2cef2806f57:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-90#"
+      },
+      {
+        "recipe_id": "mix_9e2f3db93b9f3846b068",
+        "measurement_id": "mix_9e2f3db93b9f3846b068:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-110#"
+      },
+      {
+        "recipe_id": "mix_07e9acab4f8d5c4c21d0",
+        "measurement_id": "mix_07e9acab4f8d5c4c21d0:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-130#"
+      },
+      {
+        "recipe_id": "mix_cbbc5a922ed4e8b095e0",
+        "measurement_id": "mix_cbbc5a922ed4e8b095e0:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_c39c8b2c0df3074a52ad",
+        "measurement_id": "mix_c39c8b2c0df3074a52ad:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "J",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_59cb42163ce4719d7809",
+        "measurement_id": "mix_59cb42163ce4719d7809:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "K",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c389cb15f7ec30cbe854",
+        "measurement_id": "mix_c389cb15f7ec30cbe854:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "L",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6f88790949802a6b64ea",
+        "measurement_id": "mix_6f88790949802a6b64ea:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_597f12de06cc740a8f97",
+        "measurement_id": "mix_597f12de06cc740a8f97:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "O",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_c94bd637a781d902fafa",
+        "measurement_id": "mix_c94bd637a781d902fafa:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "P",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_15ad6894230968c7675e",
+        "measurement_id": "mix_15ad6894230968c7675e:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Q",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ec30ff644f3111c570bc",
+        "measurement_id": "mix_ec30ff644f3111c570bc:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M-1",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_b55232ea9705371fa095",
+        "measurement_id": "mix_b55232ea9705371fa095:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_be690b617b69633ba706",
+        "measurement_id": "mix_be690b617b69633ba706:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_de8be0735da0c13e2054",
+        "measurement_id": "mix_de8be0735da0c13e2054:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_3671aeb162bff851cd21",
+        "measurement_id": "mix_3671aeb162bff851cd21:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_e14a35608d3618859586",
+        "measurement_id": "mix_e14a35608d3618859586:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-4"
+      },
+      {
+        "recipe_id": "mix_c9038e0eaff24aa8e3cd",
+        "measurement_id": "mix_c9038e0eaff24aa8e3cd:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-2"
+      },
+      {
+        "recipe_id": "mix_0d6e8183a80990ba7225",
+        "measurement_id": "mix_0d6e8183a80990ba7225:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-2"
+      },
+      {
+        "recipe_id": "mix_56a3dcbae789975828f0",
+        "measurement_id": "mix_56a3dcbae789975828f0:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_fb456d76c0b65ade1120",
+        "measurement_id": "mix_fb456d76c0b65ade1120:TSR",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "X",
+        "gradation": "AC-13"
+      }
+    ],
+    "residual": [
+      {
+        "recipe_id": "mix_78c2cef51a91c6d81f23",
+        "measurement_id": "mix_78c2cef51a91c6d81f23:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_b0c34b63554feeb3563c",
+        "measurement_id": "mix_b0c34b63554feeb3563c:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_36359537196d9a43ab60",
+        "measurement_id": "mix_36359537196d9a43ab60:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_f1739f66f9b861f24736",
+        "measurement_id": "mix_f1739f66f9b861f24736:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_52d3f682fadec939fdd6",
+        "measurement_id": "mix_52d3f682fadec939fdd6:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_1243d8c98f42ae5710d9",
+        "measurement_id": "mix_1243d8c98f42ae5710d9:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_1a870c75c2caab830748",
+        "measurement_id": "mix_1a870c75c2caab830748:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "D",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2434411cd75985a98378",
+        "measurement_id": "mix_2434411cd75985a98378:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_2d83475365d615ab8bb5",
+        "measurement_id": "mix_2d83475365d615ab8bb5:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_8868d518f5545c47e3d6",
+        "measurement_id": "mix_8868d518f5545c47e3d6:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_39ea828cf2fc711530d0",
+        "measurement_id": "mix_39ea828cf2fc711530d0:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bea7b9fb597c10b126ac",
+        "measurement_id": "mix_bea7b9fb597c10b126ac:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_660bdc0e5f0ad65e3ae3",
+        "measurement_id": "mix_660bdc0e5f0ad65e3ae3:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_24eab2aacdd128c15383",
+        "measurement_id": "mix_24eab2aacdd128c15383:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-130#"
+      },
+      {
+        "recipe_id": "mix_bbee01dc15bb1480d965",
+        "measurement_id": "mix_bbee01dc15bb1480d965:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-1"
+      },
+      {
+        "recipe_id": "mix_a4eff779945aea30a65b",
+        "measurement_id": "mix_a4eff779945aea30a65b:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "G",
+        "gradation": "AC-20-2"
+      },
+      {
+        "recipe_id": "mix_09c5c4a1453eb3ff7b8f",
+        "measurement_id": "mix_09c5c4a1453eb3ff7b8f:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_3202d08bc8ddd9eb5677",
+        "measurement_id": "mix_3202d08bc8ddd9eb5677:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_2847a28e714619487434",
+        "measurement_id": "mix_2847a28e714619487434:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "N",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_a4d65b1f9b40c9c9d8c0",
+        "measurement_id": "mix_a4d65b1f9b40c9c9d8c0:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-3"
+      },
+      {
+        "recipe_id": "mix_7040267cad060fd3d45b",
+        "measurement_id": "mix_7040267cad060fd3d45b:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-4"
+      },
+      {
+        "recipe_id": "mix_2a28d8524d8d84e6f35f",
+        "measurement_id": "mix_2a28d8524d8d84e6f35f:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ff76e96640f7706852c9",
+        "measurement_id": "mix_ff76e96640f7706852c9:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "R",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_8adbae42f826e07e8611",
+        "measurement_id": "mix_8adbae42f826e07e8611:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_783a016ef718c0ce666e",
+        "measurement_id": "mix_783a016ef718c0ce666e:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_424760c7b3eae4af9dfb",
+        "measurement_id": "mix_424760c7b3eae4af9dfb:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "S",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c09286e2a7be7cb14638",
+        "measurement_id": "mix_c09286e2a7be7cb14638:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "V",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e7c870ac9436de2bd8c0",
+        "measurement_id": "mix_e7c870ac9436de2bd8c0:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_65ff1efa3cd482765c9f",
+        "measurement_id": "mix_65ff1efa3cd482765c9f:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_aa15fb08faac91ed3888",
+        "measurement_id": "mix_aa15fb08faac91ed3888:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_67335f441bbff44b208e",
+        "measurement_id": "mix_67335f441bbff44b208e:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "W",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_ddba05833e2cf539323b",
+        "measurement_id": "mix_ddba05833e2cf539323b:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "X",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6e47f5bd52ca2f04303e",
+        "measurement_id": "mix_6e47f5bd52ca2f04303e:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Z",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_b41a369b43a159f8f219",
+        "measurement_id": "mix_b41a369b43a159f8f219:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Z",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_da01d4da4aba77dc7979",
+        "measurement_id": "mix_da01d4da4aba77dc7979:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1A",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_473a26fdb0b8356b4ab4",
+        "measurement_id": "mix_473a26fdb0b8356b4ab4:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_fd042b9c9cb09d2188a9",
+        "measurement_id": "mix_fd042b9c9cb09d2188a9:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_5a0eae6db3cb0a2f9a1f",
+        "measurement_id": "mix_5a0eae6db3cb0a2f9a1f:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_7919a59c9741196cf1f1",
+        "measurement_id": "mix_7919a59c9741196cf1f1:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-1"
+      },
+      {
+        "recipe_id": "mix_3f6396ef076934154f12",
+        "measurement_id": "mix_3f6396ef076934154f12:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-2"
+      },
+      {
+        "recipe_id": "mix_02fae0235d9d9390e1f3",
+        "measurement_id": "mix_02fae0235d9d9390e1f3:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1B",
+        "gradation": "AC-10-3"
+      },
+      {
+        "recipe_id": "mix_1898f7dbc9bebd98fbc6",
+        "measurement_id": "mix_1898f7dbc9bebd98fbc6:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1C",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_91eab7843904b37e4280",
+        "measurement_id": "mix_91eab7843904b37e4280:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1D",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_e464f052e3ce56f7455b",
+        "measurement_id": "mix_e464f052e3ce56f7455b:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1E",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_fb4cc4f36aaa75a8e497",
+        "measurement_id": "mix_fb4cc4f36aaa75a8e497:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1F",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_b7a52f175089632daa78",
+        "measurement_id": "mix_b7a52f175089632daa78:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1G",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_e40f39b69768fd914467",
+        "measurement_id": "mix_e40f39b69768fd914467:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1G",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_b918fd825572e8713e23",
+        "measurement_id": "mix_b918fd825572e8713e23:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1H",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6e82c7ac7676302cc143",
+        "measurement_id": "mix_6e82c7ac7676302cc143:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1J",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_aeb7283a15b5120d011d",
+        "measurement_id": "mix_aeb7283a15b5120d011d:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1K",
+        "gradation": "AC-10"
+      },
+      {
+        "recipe_id": "mix_bf40a782f2a3fee6c9aa",
+        "measurement_id": "mix_bf40a782f2a3fee6c9aa:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-1"
+      },
+      {
+        "recipe_id": "mix_7a55a307568e18697636",
+        "measurement_id": "mix_7a55a307568e18697636:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1L",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_26677634e9a9c5b83d13",
+        "measurement_id": "mix_26677634e9a9c5b83d13:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_55757ba9f9c2f0200762",
+        "measurement_id": "mix_55757ba9f9c2f0200762:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_08857a35c546c16fea3d",
+        "measurement_id": "mix_08857a35c546c16fea3d:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1N",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_e5584b099b371467cf63",
+        "measurement_id": "mix_e5584b099b371467cf63:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "1O",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_7a1600d1aac54c3c16d5",
+        "measurement_id": "mix_7a1600d1aac54c3c16d5:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-1"
+      },
+      {
+        "recipe_id": "mix_4c63b5f1a7653d79a0ad",
+        "measurement_id": "mix_4c63b5f1a7653d79a0ad:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "A",
+        "gradation": "90#AC-20-2"
+      },
+      {
+        "recipe_id": "mix_b00d72189e6efdd57f84",
+        "measurement_id": "mix_b00d72189e6efdd57f84:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "B",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_95cfab3ce284788225b2",
+        "measurement_id": "mix_95cfab3ce284788225b2:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "C",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_bd22ad2ca126f19820a2",
+        "measurement_id": "mix_bd22ad2ca126f19820a2:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "E",
+        "gradation": "AC-20"
+      },
+      {
+        "recipe_id": "mix_d55c3a0a53d1e7a44c00",
+        "measurement_id": "mix_d55c3a0a53d1e7a44c00:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "F",
+        "gradation": "AC-20-90#"
+      },
+      {
+        "recipe_id": "mix_0e51eff6e2cef2806f57",
+        "measurement_id": "mix_0e51eff6e2cef2806f57:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-90#"
+      },
+      {
+        "recipe_id": "mix_9e2f3db93b9f3846b068",
+        "measurement_id": "mix_9e2f3db93b9f3846b068:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-110#"
+      },
+      {
+        "recipe_id": "mix_07e9acab4f8d5c4c21d0",
+        "measurement_id": "mix_07e9acab4f8d5c4c21d0:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "H",
+        "gradation": "AC-13-130#"
+      },
+      {
+        "recipe_id": "mix_cbbc5a922ed4e8b095e0",
+        "measurement_id": "mix_cbbc5a922ed4e8b095e0:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I",
+        "gradation": "AC-20-110#"
+      },
+      {
+        "recipe_id": "mix_c39c8b2c0df3074a52ad",
+        "measurement_id": "mix_c39c8b2c0df3074a52ad:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "J",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_59cb42163ce4719d7809",
+        "measurement_id": "mix_59cb42163ce4719d7809:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "K",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_c389cb15f7ec30cbe854",
+        "measurement_id": "mix_c389cb15f7ec30cbe854:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "L",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_6f88790949802a6b64ea",
+        "measurement_id": "mix_6f88790949802a6b64ea:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_597f12de06cc740a8f97",
+        "measurement_id": "mix_597f12de06cc740a8f97:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "O",
+        "gradation": "AC-13-2"
+      },
+      {
+        "recipe_id": "mix_c94bd637a781d902fafa",
+        "measurement_id": "mix_c94bd637a781d902fafa:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "P",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_15ad6894230968c7675e",
+        "measurement_id": "mix_15ad6894230968c7675e:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "Q",
+        "gradation": "AC-13"
+      },
+      {
+        "recipe_id": "mix_ec30ff644f3111c570bc",
+        "measurement_id": "mix_ec30ff644f3111c570bc:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "M-1",
+        "gradation": "AC-13-3"
+      },
+      {
+        "recipe_id": "mix_b55232ea9705371fa095",
+        "measurement_id": "mix_b55232ea9705371fa095:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_be690b617b69633ba706",
+        "measurement_id": "mix_be690b617b69633ba706:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_de8be0735da0c13e2054",
+        "measurement_id": "mix_de8be0735da0c13e2054:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_3671aeb162bff851cd21",
+        "measurement_id": "mix_3671aeb162bff851cd21:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-1"
+      },
+      {
+        "recipe_id": "mix_e14a35608d3618859586",
+        "measurement_id": "mix_e14a35608d3618859586:residual",
+        "observation_id": null,
+        "data_scope": "official",
+        "source_code": "I-1",
+        "gradation": "AC-20-90#-4"
+      }
+    ]
+  },
+  "metadata": {
+    "dataset_id": "ds_d916d61767ca55d21bd7",
+    "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "dataset_revision": 0,
+    "importer_version": "1.1.1",
+    "recipe_count": 180
+  }
+}

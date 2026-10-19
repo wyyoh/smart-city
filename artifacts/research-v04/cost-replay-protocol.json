@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-10-19T08:13:56.330391+00:00",
+  "adaptive_round": 2,
+  "scope": "Exploratory historical cohort; no fresh holdout or physical tests.",
+  "reason": "Equal group-query budgets can consume different numbers of historical recipe panels. Match record-panel budgets explicitly.",
+  "seeds": [
+    20261019,
+    20261020,
+    20261021,
+    20261022,
+    20261023,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028
+  ],
+  "budgets_additional_recipe_panels": [
+    10,
+    20,
+    30
+  ],
+  "initial_groups": 6,
+  "policies": [
+    "random_uniform_group",
+    "space_filling",
+    "predicted_mean",
+    "upper_confidence",
+    "boundary_uncertainty",
+    "diversity_ucb"
+  ],
+  "targets": {
+    "DS": 6000,
+    "strain": 2200,
+    "TSR": 85,
+    "residual": 85
+  },
+  "cost": "One historical recipe with four recorded target labels is one panel. Whole-source groups are revealed together and cost their number of panels.",
+  "budget_rule": "Only select a group whose full panel cost fits remaining budget. Report actual spent and unspent panels.",
+  "diversity_ucb": "Equal rank-weight of distance to visible designs and minimum normalized predicted upper margin.",
+  "random_baseline": "Uniform over available source groups, not over rows; duplicates do not get extra random selection weight.",
+  "code_sha256": "600d21f8740edab2934f04f40e18b3cac6f5d3bca2a03bd3a01648c0f3a35761"
+}

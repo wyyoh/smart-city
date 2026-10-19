@@ -1,0 +1,760 @@
+{
+  "material_passport": {
+    "origin_skill": "academic-research-suite/experiment-agent",
+    "mode": "plan",
+    "version_label": "research_v04_protocol_1",
+    "verification_status": "UNVERIFIED"
+  },
+  "research_questions": [
+    "Do design-only feature maps and regularized small-sample models improve blocked out-of-fold error over a same-split mean baseline?",
+    "Does a masked multi-task kernel transfer across performance tasks without seeing held-out task labels?",
+    "Can constrained local formulation search and hidden-label sequential testing give useful, honestly bounded research evidence?"
+  ],
+  "frozen_inputs_manifest_sha256": "7e666f8ef186c38ee12ddda396dc5d7a7b9f0b21a95b8b52fd3545108a67ff62",
+  "primary_protocol": "Five outer group folds, three inner group folds; all metrics share recipe/group splits; all preprocessing and task correlations fit on training groups only.",
+  "repeats": [
+    null,
+    20261019,
+    20261020,
+    20261021,
+    20261022
+  ],
+  "configurations": [
+    {
+      "id": "basic:mean:",
+      "family": "mean",
+      "features": "basic",
+      "params": {}
+    },
+    {
+      "id": "basic:median:",
+      "family": "median",
+      "features": "basic",
+      "params": {}
+    },
+    {
+      "id": "basic:mean:group_weighted=True",
+      "family": "mean",
+      "features": "basic",
+      "params": {
+        "group_weighted": true
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=1",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 1
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=10",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 10
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=100",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=1000",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 1000
+      }
+    },
+    {
+      "id": "basic:bayes_ridge:",
+      "family": "bayes_ridge",
+      "features": "basic",
+      "params": {}
+    },
+    {
+      "id": "basic:svr:C=0.5",
+      "family": "svr",
+      "features": "basic",
+      "params": {
+        "C": 0.5
+      }
+    },
+    {
+      "id": "basic:svr:C=2",
+      "family": "svr",
+      "features": "basic",
+      "params": {
+        "C": 2
+      }
+    },
+    {
+      "id": "basic:svr:C=10",
+      "family": "svr",
+      "features": "basic",
+      "params": {
+        "C": 10
+      }
+    },
+    {
+      "id": "basic:gpr:factor=0.5,noise=0.5",
+      "family": "gpr",
+      "features": "basic",
+      "params": {
+        "factor": 0.5,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:gpr:factor=1.5,noise=0.5",
+      "family": "gpr",
+      "features": "basic",
+      "params": {
+        "factor": 1.5,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:extra_trees:leaf=3",
+      "family": "extra_trees",
+      "features": "basic",
+      "params": {
+        "leaf": 3
+      }
+    },
+    {
+      "id": "basic:extra_trees:leaf=8",
+      "family": "extra_trees",
+      "features": "basic",
+      "params": {
+        "leaf": 8
+      }
+    },
+    {
+      "id": "basic:hist_boost:",
+      "family": "hist_boost",
+      "features": "basic",
+      "params": {}
+    },
+    {
+      "id": "basic:kernel_ridge:",
+      "family": "kernel_ridge",
+      "features": "basic",
+      "params": {}
+    },
+    {
+      "id": "basic:elastic_net:alpha=0.02",
+      "family": "elastic_net",
+      "features": "basic",
+      "params": {
+        "alpha": 0.02
+      }
+    },
+    {
+      "id": "basic:elastic_net:alpha=0.1",
+      "family": "elastic_net",
+      "features": "basic",
+      "params": {
+        "alpha": 0.1
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=10,log_ds=True",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 10,
+        "log_ds": true
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=100,log_ds=True",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 100,
+        "log_ds": true
+      }
+    },
+    {
+      "id": "curve:ridge:alpha=1",
+      "family": "ridge",
+      "features": "curve",
+      "params": {
+        "alpha": 1
+      }
+    },
+    {
+      "id": "curve:ridge:alpha=10",
+      "family": "ridge",
+      "features": "curve",
+      "params": {
+        "alpha": 10
+      }
+    },
+    {
+      "id": "curve:ridge:alpha=100",
+      "family": "ridge",
+      "features": "curve",
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "id": "curve:ridge:alpha=1000",
+      "family": "ridge",
+      "features": "curve",
+      "params": {
+        "alpha": 1000
+      }
+    },
+    {
+      "id": "curve:bayes_ridge:",
+      "family": "bayes_ridge",
+      "features": "curve",
+      "params": {}
+    },
+    {
+      "id": "curve:svr:C=0.5",
+      "family": "svr",
+      "features": "curve",
+      "params": {
+        "C": 0.5
+      }
+    },
+    {
+      "id": "curve:svr:C=2",
+      "family": "svr",
+      "features": "curve",
+      "params": {
+        "C": 2
+      }
+    },
+    {
+      "id": "curve:svr:C=10",
+      "family": "svr",
+      "features": "curve",
+      "params": {
+        "C": 10
+      }
+    },
+    {
+      "id": "curve:gpr:factor=0.5,noise=0.5",
+      "family": "gpr",
+      "features": "curve",
+      "params": {
+        "factor": 0.5,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "curve:gpr:factor=1.5,noise=0.5",
+      "family": "gpr",
+      "features": "curve",
+      "params": {
+        "factor": 1.5,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "curve:extra_trees:leaf=3",
+      "family": "extra_trees",
+      "features": "curve",
+      "params": {
+        "leaf": 3
+      }
+    },
+    {
+      "id": "curve:extra_trees:leaf=8",
+      "family": "extra_trees",
+      "features": "curve",
+      "params": {
+        "leaf": 8
+      }
+    },
+    {
+      "id": "curve:hist_boost:",
+      "family": "hist_boost",
+      "features": "curve",
+      "params": {}
+    },
+    {
+      "id": "curve:kernel_ridge:",
+      "family": "kernel_ridge",
+      "features": "curve",
+      "params": {}
+    },
+    {
+      "id": "curve:elastic_net:alpha=0.02",
+      "family": "elastic_net",
+      "features": "curve",
+      "params": {
+        "alpha": 0.02
+      }
+    },
+    {
+      "id": "curve:elastic_net:alpha=0.1",
+      "family": "elastic_net",
+      "features": "curve",
+      "params": {
+        "alpha": 0.1
+      }
+    },
+    {
+      "id": "curve:ridge:alpha=10,log_ds=True",
+      "family": "ridge",
+      "features": "curve",
+      "params": {
+        "alpha": 10,
+        "log_ds": true
+      }
+    },
+    {
+      "id": "curve:ridge:alpha=100,log_ds=True",
+      "family": "ridge",
+      "features": "curve",
+      "params": {
+        "alpha": 100,
+        "log_ds": true
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=1",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 1
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=10",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 10
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=100",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=1000",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 1000
+      }
+    },
+    {
+      "id": "compact:bayes_ridge:",
+      "family": "bayes_ridge",
+      "features": "compact",
+      "params": {}
+    },
+    {
+      "id": "compact:svr:C=0.5",
+      "family": "svr",
+      "features": "compact",
+      "params": {
+        "C": 0.5
+      }
+    },
+    {
+      "id": "compact:svr:C=2",
+      "family": "svr",
+      "features": "compact",
+      "params": {
+        "C": 2
+      }
+    },
+    {
+      "id": "compact:svr:C=10",
+      "family": "svr",
+      "features": "compact",
+      "params": {
+        "C": 10
+      }
+    },
+    {
+      "id": "compact:gpr:factor=0.5,noise=0.5",
+      "family": "gpr",
+      "features": "compact",
+      "params": {
+        "factor": 0.5,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:gpr:factor=1.5,noise=0.5",
+      "family": "gpr",
+      "features": "compact",
+      "params": {
+        "factor": 1.5,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:extra_trees:leaf=3",
+      "family": "extra_trees",
+      "features": "compact",
+      "params": {
+        "leaf": 3
+      }
+    },
+    {
+      "id": "compact:extra_trees:leaf=8",
+      "family": "extra_trees",
+      "features": "compact",
+      "params": {
+        "leaf": 8
+      }
+    },
+    {
+      "id": "compact:hist_boost:",
+      "family": "hist_boost",
+      "features": "compact",
+      "params": {}
+    },
+    {
+      "id": "compact:kernel_ridge:",
+      "family": "kernel_ridge",
+      "features": "compact",
+      "params": {}
+    },
+    {
+      "id": "compact:elastic_net:alpha=0.02",
+      "family": "elastic_net",
+      "features": "compact",
+      "params": {
+        "alpha": 0.02
+      }
+    },
+    {
+      "id": "compact:elastic_net:alpha=0.1",
+      "family": "elastic_net",
+      "features": "compact",
+      "params": {
+        "alpha": 0.1
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=10,log_ds=True",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 10,
+        "log_ds": true
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=100,log_ds=True",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 100,
+        "log_ds": true
+      }
+    },
+    {
+      "id": "basic:task_kernel:factor=1,noise=0.5,strength=0",
+      "family": "task_kernel",
+      "features": "basic",
+      "params": {
+        "strength": 0,
+        "factor": 1,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:task_kernel:factor=3,noise=0.5,strength=0",
+      "family": "task_kernel",
+      "features": "basic",
+      "params": {
+        "strength": 0,
+        "factor": 3,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:task_kernel:factor=1,noise=0.5,strength=0.3",
+      "family": "task_kernel",
+      "features": "basic",
+      "params": {
+        "strength": 0.3,
+        "factor": 1,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:task_kernel:factor=3,noise=0.5,strength=0.3",
+      "family": "task_kernel",
+      "features": "basic",
+      "params": {
+        "strength": 0.3,
+        "factor": 3,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:task_kernel:factor=1,noise=0.5,strength=0.7",
+      "family": "task_kernel",
+      "features": "basic",
+      "params": {
+        "strength": 0.7,
+        "factor": 1,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:task_kernel:factor=3,noise=0.5,strength=0.7",
+      "family": "task_kernel",
+      "features": "basic",
+      "params": {
+        "strength": 0.7,
+        "factor": 3,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "basic:reduced_rank:alpha=10,rank=1",
+      "family": "reduced_rank",
+      "features": "basic",
+      "params": {
+        "rank": 1,
+        "alpha": 10
+      }
+    },
+    {
+      "id": "basic:reduced_rank:alpha=100,rank=1",
+      "family": "reduced_rank",
+      "features": "basic",
+      "params": {
+        "rank": 1,
+        "alpha": 100
+      }
+    },
+    {
+      "id": "basic:reduced_rank:alpha=10,rank=2",
+      "family": "reduced_rank",
+      "features": "basic",
+      "params": {
+        "rank": 2,
+        "alpha": 10
+      }
+    },
+    {
+      "id": "basic:reduced_rank:alpha=100,rank=2",
+      "family": "reduced_rank",
+      "features": "basic",
+      "params": {
+        "rank": 2,
+        "alpha": 100
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=10,group_weighted=True",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 10,
+        "group_weighted": true
+      }
+    },
+    {
+      "id": "basic:ridge:alpha=100,group_weighted=True",
+      "family": "ridge",
+      "features": "basic",
+      "params": {
+        "alpha": 100,
+        "group_weighted": true
+      }
+    },
+    {
+      "id": "compact:task_kernel:factor=1,noise=0.5,strength=0",
+      "family": "task_kernel",
+      "features": "compact",
+      "params": {
+        "strength": 0,
+        "factor": 1,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:task_kernel:factor=3,noise=0.5,strength=0",
+      "family": "task_kernel",
+      "features": "compact",
+      "params": {
+        "strength": 0,
+        "factor": 3,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:task_kernel:factor=1,noise=0.5,strength=0.3",
+      "family": "task_kernel",
+      "features": "compact",
+      "params": {
+        "strength": 0.3,
+        "factor": 1,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:task_kernel:factor=3,noise=0.5,strength=0.3",
+      "family": "task_kernel",
+      "features": "compact",
+      "params": {
+        "strength": 0.3,
+        "factor": 3,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:task_kernel:factor=1,noise=0.5,strength=0.7",
+      "family": "task_kernel",
+      "features": "compact",
+      "params": {
+        "strength": 0.7,
+        "factor": 1,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:task_kernel:factor=3,noise=0.5,strength=0.7",
+      "family": "task_kernel",
+      "features": "compact",
+      "params": {
+        "strength": 0.7,
+        "factor": 3,
+        "noise": 0.5
+      }
+    },
+    {
+      "id": "compact:reduced_rank:alpha=10,rank=1",
+      "family": "reduced_rank",
+      "features": "compact",
+      "params": {
+        "rank": 1,
+        "alpha": 10
+      }
+    },
+    {
+      "id": "compact:reduced_rank:alpha=100,rank=1",
+      "family": "reduced_rank",
+      "features": "compact",
+      "params": {
+        "rank": 1,
+        "alpha": 100
+      }
+    },
+    {
+      "id": "compact:reduced_rank:alpha=10,rank=2",
+      "family": "reduced_rank",
+      "features": "compact",
+      "params": {
+        "rank": 2,
+        "alpha": 10
+      }
+    },
+    {
+      "id": "compact:reduced_rank:alpha=100,rank=2",
+      "family": "reduced_rank",
+      "features": "compact",
+      "params": {
+        "rank": 2,
+        "alpha": 100
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=10,group_weighted=True",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 10,
+        "group_weighted": true
+      }
+    },
+    {
+      "id": "compact:ridge:alpha=100,group_weighted=True",
+      "family": "ridge",
+      "features": "compact",
+      "params": {
+        "alpha": 100,
+        "group_weighted": true
+      }
+    }
+  ],
+  "selectors": [
+    "nested_min",
+    "nested_one_se",
+    "joint_nested",
+    "legacy_nested"
+  ],
+  "primary_comparison": "Nested selection procedures versus the same-split mean baseline; each metric reported separately.",
+  "secondary_metrics": [
+    "group macro MAE",
+    "RMSE",
+    "R2",
+    "false-pass and false-fail counts at constructed thresholds",
+    "paired cluster bootstrap descriptive intervals"
+  ],
+  "exploratory_tables": "Fixed-configuration rankings are fully reported and are not independent confirmations of a post-hoc winner.",
+  "promotion_rule": "No automatic promotion. A new independent, source-identified material/test dataset is required for engineering claims. An internal candidate needs >=5% MAE improvement, improvement in >=4/5 repeats, and a negative upper descriptive cluster-difference percentile.",
+  "sequential_replay": {
+    "seeds": [
+      20261019,
+      20261020,
+      20261021,
+      20261022,
+      20261023,
+      20261024,
+      20261025,
+      20261026,
+      20261027,
+      20261028
+    ],
+    "initial_groups": 6,
+    "max_additional_group_queries": 15,
+    "policies": [
+      "random",
+      "space_filling",
+      "predicted_mean",
+      "lower_confidence",
+      "upper_confidence",
+      "boundary_uncertainty"
+    ],
+    "targets": {
+      "DS": 6000,
+      "strain": 2200,
+      "TSR": 85,
+      "residual": 85
+    },
+    "scope": "Constructed all-greater-than targets on historical complete records. Query one entire group, revealing only that group. Equal initial groups, budgets and real held labels across policies. Not new physical experiments."
+  },
+  "diagnostics": {
+    "learning_curve_train_fractions": [
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "negative_control_permutations": 20,
+    "joint_interval_calibration_groups": 10,
+    "joint_interval_nominal": 0.9
+  },
+  "formulation_search": "Local oil-ratio/aggregate-weight hypotheses only; same disclosed ingredients, fixed nominal RAP, bounded perturbations, nonnegative normalized weights, mass/curve reconciliation, observed-envelope and distance diagnostics. Unconfirmed basis and weak surrogates block engineering release.",
+  "max_wall_seconds": 1800,
+  "external_uploads": false,
+  "independent_material_tests_executed": 0
+}

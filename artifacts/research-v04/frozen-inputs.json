@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-19T08:02:07.868246+00:00",
+  "protected_sha256": {
+    "再生沥青混合料实验数据表.xlsx": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+    "artifacts/models/model_cards.json": "757b94944ce31cffa16914cc16e371c6b13d75ead3dddf32398098e933dfb7a0",
+    "artifacts/models/DS.joblib": "9474efdd2ab6811537ea9b3fb11b4396290d0a98e7d72acce75631163730e240",
+    "artifacts/models/residual.joblib": "47ea7b7e41b098e92b9e97ebd633297c13314f65e6bf33a0755f37d90952426c",
+    "artifacts/models/strain.joblib": "8987708074f559e4604aeaa84e69d8cc6a4d2f63825887a7d2c4960812508320",
+    "artifacts/models/TSR.joblib": "5035aff7afa0c1b3eaf42f76c465ac544ca4a33fe91c546b3a1533f06460d003",
+    "artifacts/next-phase/baseline/workbench-v01.sqlite": "75dbf17ee73677d7d552174b1c2ad029bd7a9b7489e6fdd6dc3a5ae393a09622",
+    "artifacts/review-phase/final-handoff.json": "970dd3a1a660f40a1d82d92b52ea62e82874e08bd79a121c19b596fca387a840",
+    "backend/app/ml/features.py": "155cc536f34ed0a6babc44357dc10d04aaf228d7756e3747949c4bba9a7e8711",
+    "backend/app/ml/train.py": "081f1fc5293ee5b8b38661790ec0ae417a18703d2a1945f36bb712fb2e804a12",
+    "backend/app/ml/predict.py": "2260347e6ab92a2c2c20449aceb92efb6bf175bf008ab9139cbedf406412545c"
+  },
+  "scope": "Offline experiments only. Existing production artifacts and historical evidence stay frozen."
+}

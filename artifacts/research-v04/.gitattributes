@@ -1,0 +1,2 @@
+# Preserve byte-level commitments, including the original Windows line endings.
+* -text whitespace=cr-at-eol

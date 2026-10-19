@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-19T08:28:15.518154+00:00",
+  "status": "passed",
+  "checks": {
+    "frozen_production_inputs_unchanged": true,
+    "group_and_recipe_disjointness_all_25_folds": true,
+    "all_81_configuration_mae_recomputed": true,
+    "hidden_label_replay_group_audit": true,
+    "all_hypotheses_preserve_unknown_measurements_and_nominal_constraints": true,
+    "full_benchmark_exact_reproduction": true,
+    "advanced_all_oof_values_exactly_reproduced": true,
+    "all_33_advanced_configuration_mae_recomputed": true,
+    "all_1080_cost_matched_campaigns_budget_and_group_audit": true,
+    "all_84_historical_files_and_6_original_tables_unchanged": true,
+    "v02_and_v03_archives_unchanged": true,
+    "python_regression_checks_passed": 82,
+    "all_four_saved_research_model_artifact_hashes": true
+  },
+  "protected_file_count": 84,
+  "original_tables": {
+    "dataset": {
+      "rows": 3,
+      "sha256": "ff6baa795c198aa9765d9c54437ab303b17274629ddff2adf55cf150c0e32553"
+    },
+    "recipe": {
+      "rows": 540,
+      "sha256": "68c36143171b3476e5d90f8b21cab7d4fcdc6cc7cff6f1179897be365d76e8a6"
+    },
+    "measurement": {
+      "rows": 2409,
+      "sha256": "be46a0a9a631c2679b75eb2fb1bdc37c71b95fc753f86212bd765719b4816bf9"
+    },
+    "sourcerow": {
+      "rows": 10329,
+      "sha256": "42e73b9078dd65e0035d7f58d97b93223eb924e4e6594e60223a3d00dcc49e9d"
+    },
+    "recommendation": {
+      "rows": 11,
+      "sha256": "fce5c96780490f13c9297f38aaf9392f70b237b138dac1149ba19af87a516df7"
+    },
+    "observation": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "interpretation": "Internal computation, replay separation and preserved history; no new material test or engineering validity is certified."
+}

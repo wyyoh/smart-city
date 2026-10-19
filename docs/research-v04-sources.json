@@ -1,0 +1,110 @@
+{
+  "retrieved_on": "2026-10-19",
+  "scope": "面向现有官方小样本数据的定向方法调研；非系统综述，不声称穷尽文献、全文人工阅读或全面撤稿核验。",
+  "human_read_attestation": "unknown",
+  "external_official_data_uploaded": false,
+  "sources": [
+    {
+      "id": "R01", "title": "Bias in error estimation when using cross-validation for model selection",
+      "authors": "Sudhir Varma; Richard Simon", "year": 2006,
+      "url": "https://link.springer.com/article/10.1186/1471-2105-7-91",
+      "type": "primary_method_paper", "read_scope": "出版方正文中嵌套交叉验证结果与结论",
+      "supported_claim": "以最小交叉验证误差选参后，将同一个最小误差当成泛化估计会产生选择偏差。",
+      "project_decision": "外层只评估完整选模流程；训练内部选参。发布全部配置，明确区分固定配置事后最好成绩。"
+    },
+    {
+      "id": "R02", "title": "Cross-validation failure: small sample sizes lead to large error bars",
+      "authors": "Gaël Varoquaux", "year": 2017, "publication_note": "2017 arXiv预印本；正式发表于NeuroImage 2018。",
+      "url": "https://arxiv.org/abs/1706.07581",
+      "type": "primary_method_paper", "read_scope": "作者预印本元数据与摘要",
+      "supported_claim": "小样本的交叉验证误差具有较大不确定性，简单的折间标准误可能低估它。",
+      "project_decision": "五次分组划分、来源组聚类误差诊断；不将重复预测当成新增独立样本。"
+    },
+    {
+      "id": "R03", "title": "Multi-task Gaussian Process Prediction",
+      "authors": "Edwin V. Bonilla; Kian M. Chai; Christopher Williams", "year": 2007,
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2007/hash/66368270ffd51418ec58bd793f2d9b1b-Abstract.html",
+      "type": "primary_method_paper", "read_scope": "会议官方摘要",
+      "supported_claim": "共享输入协方差与任务协方差可表达任务间依赖；并非所有数据结构下都产生任务迁移。",
+      "project_decision": "实现缺失标签可用的任务核及对角核消融。使用训练内经验相关矩阵收缩，不冒充原论文的完整优化模型复现。"
+    },
+    {
+      "id": "R04", "title": "Cross-validation: evaluating estimator performance",
+      "authors": "scikit-learn contributors", "year": 2026,
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+      "type": "official_software_documentation", "read_scope": "1.9.1 GroupKFold与分组验证章节",
+      "supported_claim": "分组划分避免同一组同时出现在训练与测试中；随机分组并不自动保证每折样本量相等。",
+      "project_decision": "四个指标共用操作键和来源族划分，逐折记录组与样本ID，保留不平衡。"
+    },
+    {
+      "id": "R05", "title": "Gaussian Processes",
+      "authors": "scikit-learn contributors", "year": 2026,
+      "url": "https://scikit-learn.org/stable/modules/gaussian_process.html",
+      "type": "official_software_documentation", "read_scope": "1.9.1 GPR、核函数与噪声说明",
+      "supported_claim": "GPR的预测与模型不确定性依赖核函数、噪声和拟合设定。",
+      "project_decision": "保留独立GPR对照，明确任务核返回的标准差未经工程校准，不将其直接称为可靠性。"
+    },
+    {
+      "id": "R06", "title": "Constrained multi-objective optimization with qNEHVI and qParEGO",
+      "authors": "BoTorch contributors", "year": 2026,
+      "url": "https://botorch.org/docs/tutorials/constrained_multi_objective_bo",
+      "type": "official_software_documentation", "read_scope": "约束多目标闭环结构与数值警告",
+      "supported_claim": "约束、多目标、带噪观察可以共同纳入贝叶斯优化；教程对旧qNEHVI给出了数值稳定性替换提示。",
+      "project_decision": "当前采用可审计有限候选与局部扰动，未宣称实现qLogNEHVI。具有可靠实测回流后再评估相应优化器。"
+    },
+    {
+      "id": "R07", "title": "Robust Multi-Objective Bayesian Optimization Under Input Noise",
+      "authors": "Samuel Daulton et al.", "year": 2022,
+      "url": "https://proceedings.mlr.press/v162/daulton22a.html",
+      "type": "primary_method_paper", "read_scope": "PMLR官方元数据与摘要",
+      "supported_claim": "设计输入扰动会影响多目标材料性能，稳健设计需要显式处理输入噪声。",
+      "project_decision": "将称量、批次与制备波动纳入后续送检设计，当前不虚构噪声分布或稳健最优结论。"
+    },
+    {
+      "id": "R08", "title": "Benchmarking the performance of Bayesian optimization across multiple experimental materials science domains",
+      "authors": "Qiaohao Liang et al.", "year": 2021,
+      "url": "https://www.nature.com/articles/s41524-021-00656-9",
+      "type": "primary_materials_benchmark", "read_scope": "出版方摘要与数据代码可用性章节",
+      "supported_claim": "材料优化需要比较代理模型与采集函数的组合；文章在五种材料体系比较过核选择与随机森林。",
+      "project_decision": "同初始数据、同预算比较多种选点策略；增加两种随机基线与100种初始化。未把论文其他材料的收益迁移成我们的收益。"
+    },
+    {
+      "id": "R09", "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+      "authors": "Anastasios N. Angelopoulos; Stephen Bates", "year": 2022,
+      "url": "https://arxiv.org/html/2107.07511v6",
+      "type": "author_method_tutorial", "read_scope": "校准集规模、覆盖率检查及交换性相关正文",
+      "supported_claim": "共形覆盖结论需要相应采样假设；小校准集会造成实际覆盖的不稳定，边际覆盖不同于每个条件下的覆盖。",
+      "project_decision": "研究性联合最大残差校准同时报告覆盖分母与区间宽度，不提供跨料源或工程验收保证。"
+    },
+    {
+      "id": "R10", "title": "Development of Balanced Mixture Design Index Parameters and the Flex Suite of Performance Analysis Tools for Asphalt Pavements",
+      "authors": "Federal Highway Administration", "year": 2024,
+      "publication_note": "报告编号FHWA-HRT-24-113；第8页注明JUNE 2024。检索日期不等于发布日期。",
+      "url": "https://highways.dot.gov/sites/fhwa.dot.gov/files/FHWA-HRT-24-113.pdf",
+      "type": "official_technical_report", "read_scope": "报告引言、平衡设计指标、材料因素与不确定性相关段落",
+      "supported_claim": "材料性能需要兼顾开裂与车辙，相关指标受级配、结合料、RAP、压实及老化影响，预测需要试验依据。",
+      "project_decision": "送检保留多指标与施工条件；该美国报告不作为中国项目阈值或试验方法授权。"
+    },
+    {
+      "id": "R11", "title": "An integrated physics-guided machine learning approach for predicting asphalt concrete fracture parameters",
+      "authors": "Scientific Reports原始研究作者", "year": 2026,
+      "url": "https://www.nature.com/articles/s41598-025-32041-7",
+      "type": "primary_asphalt_study", "read_scope": "特征清单、代理目标说明与数据可用性章节",
+      "supported_claim": "该研究涉及物理代理断裂目标，输入中包含体积与力学测试指标，任务口径与我们的设计前四指标不同。",
+      "project_decision": "不直接套用其性能数值、不加入我们的试后VV/稳定度/流值作设计前特征，也不把代理断裂目标当实测四指标。"
+    },
+    {
+      "id": "R12", "title": "Laboratory data on mechanical and rheological properties of binders, mixtures, and asphalt concretes with content of recycled asphalt waterproofing material",
+      "authors": "Zdenek Hegr et al.", "year": 2026,
+      "url": "https://zenodo.org/records/21675682",
+      "type": "primary_dataset_metadata", "read_scope": "明确版本V1的仓储描述与文件清单，未下载或逐行核验数据",
+      "supported_claim": "仓储记录包含结合料流变、混合料刚度、TSRST和水敏感性资料；涉及再生防水材料。",
+      "project_decision": "列为后续跨域方法研究候选，指标定义和材料体系未证明兼容，本轮未并入官方数据或充作独立配方验证。"
+    }
+  ],
+  "limitations": [
+    "所有引用支持范围均限于所记录的页面与段落；不以检索到标题推断全文实验结论。",
+    "未进行外部模型交叉评审、引用API批量核验、撤稿数据库穷尽核验或人工阅读认证。",
+    "外部研究的高R2、节省次数及材料收益均未充作本项目实验证据。"
+  ]
+}

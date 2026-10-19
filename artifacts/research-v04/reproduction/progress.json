@@ -1,0 +1,7 @@
+{
+  "stage": "benchmark",
+  "completed_outer_folds": 25,
+  "total_outer_folds": 25,
+  "research_model_fits": 10900,
+  "elapsed_seconds": 126.28
+}

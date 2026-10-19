@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-10-19T08:28:15.730714+00:00",
+  "status": "complete_offline_research_and_laboratory_proposal_scope",
+  "user_constraints": {
+    "laboratory": "not_available",
+    "execution": "计算实验与送检方案",
+    "human_weekly_hours": "15–20"
+  },
+  "phase_1_configurations": 81,
+  "phase_2_configurations": 33,
+  "unique_configurations": 108,
+  "shared_outer_folds_per_round": 25,
+  "primary_model_fit_calls_including_inner_selection": 14200,
+  "learning_curves": 100,
+  "negative_control_runs": 40,
+  "joint_interval_runs": 15,
+  "sequential_campaigns": 60,
+  "cost_matched_campaigns": 180,
+  "baseline_sensitivity_campaigns": 900,
+  "saved_research_models": 4,
+  "generated_untested_hypotheses": 1098,
+  "nominally_supported_hypotheses": 731,
+  "laboratory_pilot_formulations": 5,
+  "laboratory_pilot_preparation_batches_proposed": 15,
+  "independent_material_tests": 0,
+  "production_models_replaced": 0,
+  "next_actions": [
+    {
+      "priority": 1,
+      "action": "补齐料源实物身份、组分与RAP/结合料计量口径、四项试验方法和关键条件；检查同输入异性能记录的来源。",
+      "external_dependency": "organizer_or_material_provider"
+    },
+    {
+      "priority": 2,
+      "action": "冻结先导送检的实际称料表、工程目标条款、方法及试件数量，并取得第三方报价；当前只准备交接资料。",
+      "external_dependency": "laboratory"
+    },
+    {
+      "priority": 3,
+      "action": "取得同期对照及新批次结果后，先盲测已冻结候选，再决定是否重训练；保留独立确认批次。",
+      "external_dependency": "new_measured_data"
+    },
+    {
+      "priority": 4,
+      "action": "新增数据足够后再评估ARD任务核、局部或异方差校准与带噪约束多目标优化；不能以合成性能补足验证。",
+      "external_dependency": "identified_data_and_test_budget"
+    }
+  ],
+  "evidence": {
+    "sources": "docs/research-v04-sources.json",
+    "report": "docs/research-v04-report.md",
+    "laboratory": "docs/research-v04-lab-handoff.html",
+    "verification": "artifacts/research-v04/final-verification.json"
+  }
+}

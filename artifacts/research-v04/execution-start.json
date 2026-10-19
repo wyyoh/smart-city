@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-19T08:02:36.224696+00:00",
+  "protocol_sha256": "b1ee9799aae14b2ef941e74887b7e2608e9d77610fbdaf3c127b490a21fb5b42",
+  "code_sha256": {
+    "benchmark.py": "eb9366e8a6325d0d0bf332e25c82bc09d1501b24569d9d2a724981e14c048438",
+    "data.py": "905e47bdd05fe13b67e2a850000a821cabb5c209c0bcbce784f0108765a9caaf",
+    "estimators.py": "ecdbc30be56f27025eb8a21d05aca622d8e3fb61fbb2f6fda15e8efe633391c4",
+    "__init__.py": "7cd0edfde4697d3f6d27765fa0ca1ea9dea5b6331829c36de3e6f0eb0f20e514"
+  },
+  "command": ".venv/Scripts/python.exe -X utf8 scripts/research_v04.py benchmark"
+}

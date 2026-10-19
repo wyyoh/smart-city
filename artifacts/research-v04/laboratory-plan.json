@@ -1,0 +1,103 @@
+{
+  "created_at": "2026-10-19T08:07:48.926022+00:00",
+  "status": "proposal_not_executed",
+  "human_or_laboratory_results_fabricated": false,
+  "stage_0_required": [
+    "Confirm material source and batch identity, RAP denominator, old binder content and available/activated binder accounting.",
+    "Obtain project-specific target clauses, accepted gradation envelope and material/process restrictions.",
+    "Select laboratory methods and defining temperature, loading, aging and conditioning; record actual specimen counts under the selected methods.",
+    "Verify all disclosed ingredient sieve curves and normalized mass balance on the confirmed physical basis.",
+    "Freeze formulation IDs, target definitions, analysis and holdout batch IDs before measuring outcomes."
+  ],
+  "pilot": {
+    "material_families": [
+      {
+        "source_code": "H",
+        "parent_id": "mix_9e2f3db93b9f3846b068",
+        "nominal_material_identity": {
+          "product": "110#",
+          "gradation": "AC-13-110#"
+        },
+        "controls": [
+          "freshly prepared parent formulation; do not reuse historical measurements as a concurrent control"
+        ],
+        "proposed_hypothesis_ids": [
+          "hyp_a892d7c2caf44708",
+          "hyp_654842563f72dc24",
+          "hyp_2b088dfca83b45e5",
+          "hyp_f6608e200a078ee3"
+        ],
+        "formulation_count_including_control": 5,
+        "independent_preparation_batches_per_formulation_proposed": 3
+      }
+    ],
+    "scope": "One family first; three independent preparation batches per formulation proposed, not three dependent specimens presented as independent batches."
+  },
+  "extension_if_pilot_supports": [
+    {
+      "source_code": "V",
+      "parent_id": "mix_c09286e2a7be7cb14638",
+      "nominal_material_identity": {
+        "product": "110#",
+        "gradation": "AC-13"
+      },
+      "controls": [
+        "freshly prepared parent formulation; do not reuse historical measurements as a concurrent control"
+      ],
+      "proposed_hypothesis_ids": [
+        "hyp_f989e9b25f466392",
+        "hyp_bc2a49feca7050d7",
+        "hyp_2a85c271b9f84471",
+        "hyp_7b45e75dcc5ade02"
+      ],
+      "formulation_count_including_control": 5,
+      "independent_preparation_batches_per_formulation_proposed": 3
+    },
+    {
+      "source_code": "B",
+      "parent_id": "mix_3fb2c7a0d6c0504edbab",
+      "nominal_material_identity": {
+        "product": "110#沥青",
+        "gradation": "AC-20"
+      },
+      "controls": [
+        "freshly prepared parent formulation; do not reuse historical measurements as a concurrent control"
+      ],
+      "proposed_hypothesis_ids": [
+        "hyp_3ed58d03755ab5ff",
+        "hyp_08b48c28d8c55a77",
+        "hyp_65488b85399a819d",
+        "hyp_fee0fafcffa192ab"
+      ],
+      "formulation_count_including_control": 5,
+      "independent_preparation_batches_per_formulation_proposed": 3
+    }
+  ],
+  "blocking_design": "Block by raw-material lot and preparation day; randomize within block, blind test IDs when practical. Prepare parent and variants concurrently.",
+  "outcomes": [
+    "DS",
+    "strain",
+    "TSR",
+    "residual"
+  ],
+  "primary_analysis": "Report paired within-block differences, measurement variability, feasibility across all required metrics, and performance of truly held-out batches. Do not choose the best variant and reuse its same measurements as independent validation.",
+  "stop_rules": [
+    "Stop and reconcile any mass-balance, method/condition or material-identity mismatch.",
+    "Do not expand a variant that fails a mandatory project metric or construction constraint.",
+    "If differences are smaller than batch/test variability, retain the simpler verified control and collect more informative data."
+  ],
+  "prospective_sample_size": "Three preparation batches is a pilot proposal, not a powered proof or a standards-mandated count; use pilot variability and a predeclared practically relevant margin to plan confirmatory replication.",
+  "execution_receipt_template": {
+    "laboratory": null,
+    "method": null,
+    "conditions": null,
+    "material_batch": null,
+    "preparation_batch": null,
+    "specimen_count": null,
+    "raw_data_reference": null,
+    "operator": null,
+    "started_at": null,
+    "finished_at": null
+  },
+  "independent_material_tests_executed": 0
+}

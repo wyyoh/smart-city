@@ -1,0 +1,290 @@
+{
+  "created_at": "2026-10-19T08:07:48.679303+00:00",
+  "dataset_id": "ds_d916d61767ca55d21bd7",
+  "dataset_sha256": "bbe0a039d8399ee2e2929d03729a1971d4a6d27d59915cdccb2419ffb5d32dca",
+  "dataset_revision": 0,
+  "importer_version": "1.1.1",
+  "recipe_count": 180,
+  "union_labeled_rows": 100,
+  "union_groups": 37,
+  "complete_four_metric_rows": 59,
+  "labels_by_metric": {
+    "DS": {
+      "n": 85,
+      "groups": 37
+    },
+    "strain": {
+      "n": 72,
+      "groups": 36
+    },
+    "TSR": {
+      "n": 81,
+      "groups": 35
+    },
+    "residual": {
+      "n": 79,
+      "groups": 36
+    }
+  },
+  "missing_design_counts": {
+    "oil_stone_ratio_pct": 0,
+    "rap_nominal_pct": 0,
+    "nmas_mm": 0,
+    "binder_70": 0,
+    "binder_90": 0,
+    "binder_110": 0,
+    "binder_130": 0,
+    "passing_0": 27,
+    "passing_1": 27,
+    "passing_2": 27,
+    "passing_3": 27,
+    "passing_4": 27,
+    "passing_5": 27,
+    "passing_6": 27,
+    "passing_7": 27,
+    "passing_8": 27,
+    "passing_9": 27,
+    "passing_10": 27,
+    "passing_11": 27
+  },
+  "flags": {
+    "rap_mass_basis_unconfirmed": 100,
+    "test_conditions_unverified": 100,
+    "component_curve_requires_review": 27,
+    "product_alias_unconfirmed_90_suffix": 1
+  },
+  "exact_design_collisions": [
+    {
+      "ids": [
+        "mix_0980a5c5772fbb0475bb",
+        "mix_1f60f60cbb477f1650ee",
+        "mix_6994c70277073899a31f",
+        "mix_831187e8aa09c3910663",
+        "mix_c848dab4b12b97b5fc9c",
+        "mix_c9038e0eaff24aa8e3cd"
+      ],
+      "label_ranges": {
+        "DS": 1429.0,
+        "strain": 194.0,
+        "TSR": 3.0047837463632447,
+        "residual": null
+      }
+    },
+    {
+      "ids": [
+        "mix_09c5c4a1453eb3ff7b8f",
+        "mix_3202d08bc8ddd9eb5677",
+        "mix_cbbc5a922ed4e8b095e0"
+      ],
+      "label_ranges": {
+        "DS": 1876.0,
+        "strain": 758.0,
+        "TSR": 5.2530118714059455,
+        "residual": 3.4080995706030848
+      }
+    },
+    {
+      "ids": [
+        "mix_0d6e8183a80990ba7225",
+        "mix_4c63b5f1a7653d79a0ad",
+        "mix_7a1600d1aac54c3c16d5"
+      ],
+      "label_ranges": {
+        "DS": null,
+        "strain": null,
+        "TSR": 5.40114056884461,
+        "residual": 7.14080524395105
+      }
+    },
+    {
+      "ids": [
+        "mix_1243d8c98f42ae5710d9",
+        "mix_3e569ea4c6a4abc674ff",
+        "mix_4943d222e0e1d1b98b34",
+        "mix_52d3f682fadec939fdd6",
+        "mix_7af99a31b9c408498b42",
+        "mix_f1739f66f9b861f24736"
+      ],
+      "label_ranges": {
+        "DS": 1799.0,
+        "strain": 490.0,
+        "TSR": 7.599772431396573,
+        "residual": 7.4116280065760805
+      }
+    },
+    {
+      "ids": [
+        "mix_1a870c75c2caab830748",
+        "mix_3980655dc4d0570b5400"
+      ],
+      "label_ranges": {
+        "DS": null,
+        "strain": null,
+        "TSR": null,
+        "residual": null
+      }
+    },
+    {
+      "ids": [
+        "mix_2434411cd75985a98378",
+        "mix_2d83475365d615ab8bb5",
+        "mix_8868d518f5545c47e3d6",
+        "mix_bd22ad2ca126f19820a2"
+      ],
+      "label_ranges": {
+        "DS": 6587.0,
+        "strain": 403.0,
+        "TSR": 5.146413978321121,
+        "residual": 6.229413211135665
+      }
+    },
+    {
+      "ids": [
+        "mix_26677634e9a9c5b83d13",
+        "mix_55757ba9f9c2f0200762"
+      ],
+      "label_ranges": {
+        "DS": 1223.5,
+        "strain": 65.9698333333331,
+        "TSR": 3.166516966951562,
+        "residual": 1.762868687170851
+      }
+    },
+    {
+      "ids": [
+        "mix_36359537196d9a43ab60",
+        "mix_be00dbb0a69a45180703",
+        "mix_c871adad3b4f9ddb9d20",
+        "mix_ea99aaf49ce7176e1553",
+        "mix_f9ec6b0ea531742e51e3"
+      ],
+      "label_ranges": {
+        "DS": 827.0,
+        "strain": 256.4312099999879,
+        "TSR": null,
+        "residual": null
+      }
+    },
+    {
+      "ids": [
+        "mix_3671aeb162bff851cd21",
+        "mix_6e82c7ac7676302cc143",
+        "mix_b55232ea9705371fa095",
+        "mix_be690b617b69633ba706",
+        "mix_de8be0735da0c13e2054"
+      ],
+      "label_ranges": {
+        "DS": 8402.0,
+        "strain": null,
+        "TSR": 10.895229675862069,
+        "residual": 11.483253588516746
+      }
+    },
+    {
+      "ids": [
+        "mix_39ea828cf2fc711530d0",
+        "mix_bea7b9fb597c10b126ac"
+      ],
+      "label_ranges": {
+        "DS": 637.0,
+        "strain": 139.0,
+        "TSR": 0.048608202268653145,
+        "residual": 0.045651692812100464
+      }
+    },
+    {
+      "ids": [
+        "mix_3fb2c7a0d6c0504edbab",
+        "mix_78c2cef51a91c6d81f23"
+      ],
+      "label_ranges": {
+        "DS": null,
+        "strain": null,
+        "TSR": null,
+        "residual": null
+      }
+    },
+    {
+      "ids": [
+        "mix_424760c7b3eae4af9dfb",
+        "mix_783a016ef718c0ce666e"
+      ],
+      "label_ranges": {
+        "DS": 297.5524475524344,
+        "strain": 56.40000000000009,
+        "TSR": 0.474420264552748,
+        "residual": 1.0945623612513913
+      }
+    },
+    {
+      "ids": [
+        "mix_56a3dcbae789975828f0",
+        "mix_b00d72189e6efdd57f84",
+        "mix_eb8ae90c71357abeb7df"
+      ],
+      "label_ranges": {
+        "DS": null,
+        "strain": null,
+        "TSR": 0.5367171400470028,
+        "residual": null
+      }
+    },
+    {
+      "ids": [
+        "mix_6f872eda921bddde7c07",
+        "mix_b0c34b63554feeb3563c"
+      ],
+      "label_ranges": {
+        "DS": null,
+        "strain": null,
+        "TSR": null,
+        "residual": null
+      }
+    },
+    {
+      "ids": [
+        "mix_ddba05833e2cf539323b",
+        "mix_fb456d76c0b65ade1120"
+      ],
+      "label_ranges": {
+        "DS": null,
+        "strain": null,
+        "TSR": null,
+        "residual": null
+      }
+    }
+  ],
+  "pairwise_label_correlation_descriptive_only": {
+    "DS:strain": {
+      "n": 72,
+      "pearson": -0.08010473444509936
+    },
+    "DS:TSR": {
+      "n": 69,
+      "pearson": 0.18059097146942052
+    },
+    "DS:residual": {
+      "n": 70,
+      "pearson": 0.20433929595931163
+    },
+    "strain:TSR": {
+      "n": 60,
+      "pearson": 0.09924314382117295
+    },
+    "strain:residual": {
+      "n": 61,
+      "pearson": 0.5159953848610956
+    },
+    "TSR:residual": {
+      "n": 74,
+      "pearson": 0.3749071546738262
+    }
+  },
+  "limitations": [
+    "Historical operational keys are not confirmed independent material batches.",
+    "Grouping uses source codes and shared complete nonzero ingredient profiles; physical identity is unconfirmed.",
+    "Source codes, measured voids, other test outcomes and specimen identities never enter design X.",
+    "Existing aggregation and exclusions are retained; no deletion based on prediction errors.",
+    "No external or synthetic labels are added. Correlations do not establish transfer or causality."
+  ]
+}

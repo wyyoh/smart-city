@@ -1,0 +1,2080 @@
+{
+  "created_at": "2026-10-19T08:16:36.255318+00:00",
+  "models": [
+    {
+      "artifact": "models/fixed_half_ensemble.joblib",
+      "kind": "adaptive_conservative_ensemble",
+      "validation": {
+        "DS": {
+          "n": 425,
+          "mae": 1545.0245563270048,
+          "rmse": 2092.5798626650853,
+          "r2": -0.10220202853047677,
+          "threshold_diagnostics": {
+            "800": {
+              "actual_pass": 425,
+              "actual_fail": 0,
+              "false_pass": 0,
+              "false_fail": 0
+            },
+            "6000": {
+              "actual_pass": 180,
+              "actual_fail": 245,
+              "false_pass": 35,
+              "false_fail": 151
+            },
+            "8000": {
+              "actual_pass": 40,
+              "actual_fail": 385,
+              "false_pass": 0,
+              "false_fail": 40
+            }
+          },
+          "unique_labeled_rows": 85,
+          "repeat_mae": [
+            1521.4470564784835,
+            1582.3491322944724,
+            1573.9851479522197,
+            1515.4821634741484,
+            1531.8592814356996
+          ],
+          "relative_mae_improvement_vs_mean": 0.013310537359043306,
+          "repeats_better_than_mean": 4
+        },
+        "strain": {
+          "n": 360,
+          "mae": 273.00247864735456,
+          "rmse": 443.5258457766371,
+          "r2": 0.015245336192816095,
+          "threshold_diagnostics": {
+            "2000": {
+              "actual_pass": 290,
+              "actual_fail": 70,
+              "false_pass": 70,
+              "false_fail": 2
+            },
+            "2200": {
+              "actual_pass": 150,
+              "actual_fail": 210,
+              "false_pass": 22,
+              "false_fail": 114
+            },
+            "2500": {
+              "actual_pass": 60,
+              "actual_fail": 300,
+              "false_pass": 0,
+              "false_fail": 60
+            }
+          },
+          "unique_labeled_rows": 72,
+          "repeat_mae": [
+            273.5768850455991,
+            263.97494237200783,
+            275.26436529909125,
+            270.8605928532142,
+            281.3356076668606
+          ],
+          "relative_mae_improvement_vs_mean": 0.04742563715565051,
+          "repeats_better_than_mean": 5
+        },
+        "TSR": {
+          "n": 405,
+          "mae": 3.4940650434084244,
+          "rmse": 4.2569556861410245,
+          "r2": -0.0021762522866715095,
+          "threshold_diagnostics": {
+            "75": {
+              "actual_pass": 400,
+              "actual_fail": 5,
+              "false_pass": 5,
+              "false_fail": 0
+            },
+            "85": {
+              "actual_pass": 260,
+              "actual_fail": 145,
+              "false_pass": 139,
+              "false_fail": 9
+            },
+            "90": {
+              "actual_pass": 70,
+              "actual_fail": 335,
+              "false_pass": 0,
+              "false_fail": 70
+            }
+          },
+          "unique_labeled_rows": 81,
+          "repeat_mae": [
+            3.468722867418831,
+            3.44689338243266,
+            3.5671026164184085,
+            3.5030970585283074,
+            3.4845092922439127
+          ],
+          "relative_mae_improvement_vs_mean": 0.013028249840059014,
+          "repeats_better_than_mean": 4
+        },
+        "residual": {
+          "n": 395,
+          "mae": 2.963396534892221,
+          "rmse": 3.660780007374998,
+          "r2": -0.0648496130567735,
+          "threshold_diagnostics": {
+            "85": {
+              "actual_pass": 340,
+              "actual_fail": 55,
+              "false_pass": 55,
+              "false_fail": 0
+            },
+            "90": {
+              "actual_pass": 160,
+              "actual_fail": 235,
+              "false_pass": 3,
+              "false_fail": 160
+            }
+          },
+          "unique_labeled_rows": 79,
+          "repeat_mae": [
+            2.9963587977498256,
+            3.000554501006759,
+            2.938233313737248,
+            2.94134767881573,
+            2.940488383151544
+          ],
+          "relative_mae_improvement_vs_mean": -0.025799368175061677,
+          "repeats_better_than_mean": 0
+        }
+      },
+      "uncertainty": {
+        "DS": {
+          "candidate_minus_mean_mae": -20.842532383578707,
+          "descriptive_cluster_bootstrap_95_percentiles": [
+            -100.34536831782138,
+            61.173928106154364
+          ],
+          "groups_with_labels": 37,
+          "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+        },
+        "strain": {
+          "candidate_minus_mean_mae": -13.591922058727825,
+          "descriptive_cluster_bootstrap_95_percentiles": [
+            -26.09503275440782,
+            -1.3157590466801623
+          ],
+          "groups_with_labels": 36,
+          "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+        },
+        "TSR": {
+          "candidate_minus_mean_mae": -0.04612244710708768,
+          "descriptive_cluster_bootstrap_95_percentiles": [
+            -0.17464514076757734,
+            0.08925233175423053
+          ],
+          "groups_with_labels": 35,
+          "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+        },
+        "residual": {
+          "candidate_minus_mean_mae": 0.07453090791857289,
+          "descriptive_cluster_bootstrap_95_percentiles": [
+            -0.07035911455905523,
+            0.2411768310630467
+          ],
+          "groups_with_labels": 36,
+          "interpretation": "Conditional descriptive stability of this historical dataset; repeated CV and adaptive research are not independent external validation."
+        }
+      },
+      "eligible_for_engineering_release": false,
+      "status": "research_only"
+    },
+    {
+      "artifact": "models/low_rank.joblib",
+      "config": {
+        "id": "compact:reduced_rank:alpha=100,rank=1",
+        "family": "reduced_rank",
+        "features": "compact",
+        "params": {
+          "rank": 1,
+          "alpha": 100
+        }
+      },
+      "validation": {
+        "DS": {
+          "n": 425,
+          "mae": 1460.4714752593263,
+          "rmse": 1966.0255563945939,
+          "r2": 0.027083787509077695,
+          "threshold_diagnostics": {
+            "800": {
+              "actual_pass": 425,
+              "actual_fail": 0,
+              "false_pass": 0,
+              "false_fail": 0
+            },
+            "6000": {
+              "actual_pass": 180,
+              "actual_fail": 245,
+              "false_pass": 61,
+              "false_fail": 106
+            },
+            "8000": {
+              "actual_pass": 40,
+              "actual_fail": 385,
+              "false_pass": 0,
+              "false_fail": 40
+            }
+          },
+          "unique_labeled_rows": 85,
+          "repeats": [
+            {
+              "n": 85,
+              "mae": 1427.6679794082102,
+              "rmse": 1924.307931791342,
+              "r2": 0.06793486594000464,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 9,
+                  "false_fail": 18
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1517.1617038792951,
+              "rmse": 2075.7291029949424,
+              "r2": -0.08452226264933271,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 15,
+                  "false_fail": 26
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1506.5797524413986,
+              "rmse": 1990.2792038265484,
+              "r2": 0.002931185711156137,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 12,
+                  "false_fail": 24
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1403.8295379460383,
+              "rmse": 1892.8969950499484,
+              "r2": 0.09811516135392429,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 12,
+                  "false_fail": 18
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1447.11840262169,
+              "rmse": 1941.751728093615,
+              "r2": 0.05095998718963812,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 13,
+                  "false_fail": 20
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 1443.6016848186737,
+          "relative_mae_improvement_vs_mean": 0.0673081478058557,
+          "repeats_better_than_mean": 5
+        },
+        "strain": {
+          "n": 360,
+          "mae": 264.4389170348998,
+          "rmse": 426.59572186492693,
+          "r2": 0.08898994075646849,
+          "threshold_diagnostics": {
+            "2000": {
+              "actual_pass": 290,
+              "actual_fail": 70,
+              "false_pass": 53,
+              "false_fail": 56
+            },
+            "2200": {
+              "actual_pass": 150,
+              "actual_fail": 210,
+              "false_pass": 27,
+              "false_fail": 75
+            },
+            "2500": {
+              "actual_pass": 60,
+              "actual_fail": 300,
+              "false_pass": 0,
+              "false_fail": 60
+            }
+          },
+          "unique_labeled_rows": 72,
+          "repeats": [
+            {
+              "n": 72,
+              "mae": 256.89622137853036,
+              "rmse": 422.34341431525894,
+              "r2": 0.10706132430021065,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 10,
+                  "false_fail": 12
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 5,
+                  "false_fail": 12
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 278.2552150924425,
+              "rmse": 441.8724844522653,
+              "r2": 0.022573525060641364,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 10,
+                  "false_fail": 16
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 5,
+                  "false_fail": 20
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 255.32783484914575,
+              "rmse": 411.0753030188773,
+              "r2": 0.15407287302197203,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 11,
+                  "false_fail": 11
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 6,
+                  "false_fail": 13
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 265.4487826016911,
+              "rmse": 435.9129203962414,
+              "r2": 0.04876096404391972,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 11,
+                  "false_fail": 4
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 5,
+                  "false_fail": 19
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 266.26653125268945,
+              "rmse": 421.05975646618253,
+              "r2": 0.11248101735559835,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 11,
+                  "false_fail": 13
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 6,
+                  "false_fail": 11
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 218.95916067077934,
+          "relative_mae_improvement_vs_mean": 0.07730605907372257,
+          "repeats_better_than_mean": 4
+        },
+        "TSR": {
+          "n": 405,
+          "mae": 3.54330906874013,
+          "rmse": 4.367822981868194,
+          "r2": -0.05505696039970731,
+          "threshold_diagnostics": {
+            "75": {
+              "actual_pass": 400,
+              "actual_fail": 5,
+              "false_pass": 5,
+              "false_fail": 0
+            },
+            "85": {
+              "actual_pass": 260,
+              "actual_fail": 145,
+              "false_pass": 131,
+              "false_fail": 49
+            },
+            "90": {
+              "actual_pass": 70,
+              "actual_fail": 335,
+              "false_pass": 7,
+              "false_fail": 69
+            }
+          },
+          "unique_labeled_rows": 81,
+          "repeats": [
+            {
+              "n": 81,
+              "mae": 3.559202050733284,
+              "rmse": 4.365036990693909,
+              "r2": -0.05371146542017757,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 27,
+                  "false_fail": 12
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 2,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.437769120235685,
+              "rmse": 4.268035299818462,
+              "r2": -0.00739978591540269,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 28,
+                  "false_fail": 4
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.594112817641662,
+              "rmse": 4.421074601314696,
+              "r2": -0.08093986861317148,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 26,
+                  "false_fail": 13
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.7098377228474644,
+              "rmse": 4.546606934456536,
+              "r2": -0.14319592782444945,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 25,
+                  "false_fail": 10
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 5,
+                  "false_fail": 13
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.415623632242556,
+              "rmse": 4.231096726289655,
+              "r2": 0.009962245774665757,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 25,
+                  "false_fail": 10
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 3.560183468500359,
+          "relative_mae_improvement_vs_mean": -0.0008817550576012412,
+          "repeats_better_than_mean": 2
+        },
+        "residual": {
+          "n": 395,
+          "mae": 2.81655696616681,
+          "rmse": 3.521079745531266,
+          "r2": 0.014871830774569106,
+          "threshold_diagnostics": {
+            "85": {
+              "actual_pass": 340,
+              "actual_fail": 55,
+              "false_pass": 55,
+              "false_fail": 0
+            },
+            "90": {
+              "actual_pass": 160,
+              "actual_fail": 235,
+              "false_pass": 20,
+              "false_fail": 116
+            }
+          },
+          "unique_labeled_rows": 79,
+          "repeats": [
+            {
+              "n": 79,
+              "mae": 2.828667363519088,
+              "rmse": 3.5421714468948697,
+              "r2": 0.0030344046818854276,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 3,
+                  "false_fail": 26
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.903070406458783,
+              "rmse": 3.619973274910341,
+              "r2": -0.04124215912514795,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 3,
+                  "false_fail": 24
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.749796694626746,
+              "rmse": 3.4379919402337156,
+              "r2": 0.06081591646104989,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 5,
+                  "false_fail": 22
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.789632253279587,
+              "rmse": 3.4899052872829617,
+              "r2": 0.03223859748761726,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 6,
+                  "false_fail": 21
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.811618112949845,
+              "rmse": 3.512776723102777,
+              "r2": 0.019512394367439345,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 3,
+                  "false_fail": 23
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 3.00982892329659,
+          "relative_mae_improvement_vs_mean": 0.025030122596110038,
+          "repeats_better_than_mean": 4
+        }
+      },
+      "status": "post_hoc_exploratory_research_only",
+      "eligible_for_engineering_release": false
+    },
+    {
+      "artifact": "models/svr.joblib",
+      "config": {
+        "id": "compact:svr:C=0.5",
+        "family": "svr",
+        "features": "compact",
+        "params": {
+          "C": 0.5
+        }
+      },
+      "validation": {
+        "DS": {
+          "n": 425,
+          "mae": 1500.9117948278954,
+          "rmse": 2079.6470720912957,
+          "r2": -0.08862022981258733,
+          "threshold_diagnostics": {
+            "800": {
+              "actual_pass": 425,
+              "actual_fail": 0,
+              "false_pass": 0,
+              "false_fail": 0
+            },
+            "6000": {
+              "actual_pass": 180,
+              "actual_fail": 245,
+              "false_pass": 43,
+              "false_fail": 121
+            },
+            "8000": {
+              "actual_pass": 40,
+              "actual_fail": 385,
+              "false_pass": 0,
+              "false_fail": 40
+            }
+          },
+          "unique_labeled_rows": 85,
+          "repeats": [
+            {
+              "n": 85,
+              "mae": 1478.4526005466028,
+              "rmse": 2060.175442091149,
+              "r2": -0.06833027157262683,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 9,
+                  "false_fail": 23
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1462.2806157493915,
+              "rmse": 2062.4716459590168,
+              "r2": -0.0707130503653648,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 9,
+                  "false_fail": 25
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1632.5110964402775,
+              "rmse": 2167.780720521946,
+              "r2": -0.1828449542171653,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 13,
+                  "false_fail": 25
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1408.727125971064,
+              "rmse": 1978.4551536525362,
+              "r2": 0.014742967560274822,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 6,
+                  "false_fail": 20
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1522.587535432141,
+              "rmse": 2124.379799477536,
+              "r2": -0.13595584046805298,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 6,
+                  "false_fail": 28
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 1363.7490780189758,
+          "relative_mae_improvement_vs_mean": 0.04148199700408528,
+          "repeats_better_than_mean": 4
+        },
+        "strain": {
+          "n": 360,
+          "mae": 259.6974169707786,
+          "rmse": 419.21127373921996,
+          "r2": 0.12025645724512612,
+          "threshold_diagnostics": {
+            "2000": {
+              "actual_pass": 290,
+              "actual_fail": 70,
+              "false_pass": 59,
+              "false_fail": 24
+            },
+            "2200": {
+              "actual_pass": 150,
+              "actual_fail": 210,
+              "false_pass": 45,
+              "false_fail": 81
+            },
+            "2500": {
+              "actual_pass": 60,
+              "actual_fail": 300,
+              "false_pass": 0,
+              "false_fail": 60
+            }
+          },
+          "unique_labeled_rows": 72,
+          "repeats": [
+            {
+              "n": 72,
+              "mae": 257.833356186623,
+              "rmse": 419.59614196163886,
+              "r2": 0.11864037114055048,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 12,
+                  "false_fail": 5
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 10,
+                  "false_fail": 16
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 256.789560816743,
+              "rmse": 421.7558123677522,
+              "r2": 0.10954426821501217,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 11,
+                  "false_fail": 8
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 6,
+                  "false_fail": 16
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 267.4053710065022,
+              "rmse": 420.693467697187,
+              "r2": 0.11402448870409021,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 12,
+                  "false_fail": 3
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 11,
+                  "false_fail": 16
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 253.89022788590404,
+              "rmse": 414.6370024990639,
+              "r2": 0.13935055446484457,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 12,
+                  "false_fail": 3
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 8,
+                  "false_fail": 16
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 262.5685689581208,
+              "rmse": 419.33844914427874,
+              "r2": 0.11972260370113352,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 12,
+                  "false_fail": 5
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 10,
+                  "false_fail": 17
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 203.35651991888102,
+          "relative_mae_improvement_vs_mean": 0.09385034623508948,
+          "repeats_better_than_mean": 5
+        },
+        "TSR": {
+          "n": 405,
+          "mae": 3.491936601479703,
+          "rmse": 4.338036626545741,
+          "r2": -0.04071611103153727,
+          "threshold_diagnostics": {
+            "75": {
+              "actual_pass": 400,
+              "actual_fail": 5,
+              "false_pass": 5,
+              "false_fail": 0
+            },
+            "85": {
+              "actual_pass": 260,
+              "actual_fail": 145,
+              "false_pass": 114,
+              "false_fail": 47
+            },
+            "90": {
+              "actual_pass": 70,
+              "actual_fail": 335,
+              "false_pass": 3,
+              "false_fail": 70
+            }
+          },
+          "unique_labeled_rows": 81,
+          "repeats": [
+            {
+              "n": 81,
+              "mae": 3.549408264965088,
+              "rmse": 4.383603177067338,
+              "r2": -0.06269421119936425,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 23,
+                  "false_fail": 14
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 1,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.422579928913881,
+              "rmse": 4.263010697834877,
+              "r2": -0.005029232215090662,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 21,
+                  "false_fail": 5
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.4964958037354976,
+              "rmse": 4.345814262041272,
+              "r2": -0.044451241635426575,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 23,
+                  "false_fail": 7
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.5635558799116853,
+              "rmse": 4.407089645203724,
+              "r2": -0.07411212254033517,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 23,
+                  "false_fail": 16
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 1,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.4276431298723624,
+              "rmse": 4.288942888566957,
+              "r2": -0.01729374756746971,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 24,
+                  "false_fail": 5
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 1,
+                  "false_fail": 14
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 3.6249105582422088,
+          "relative_mae_improvement_vs_mean": 0.013629472779359109,
+          "repeats_better_than_mean": 3
+        },
+        "residual": {
+          "n": 395,
+          "mae": 3.2441813240630295,
+          "rmse": 3.9659280597868407,
+          "r2": -0.2497716807531749,
+          "threshold_diagnostics": {
+            "85": {
+              "actual_pass": 340,
+              "actual_fail": 55,
+              "false_pass": 55,
+              "false_fail": 0
+            },
+            "90": {
+              "actual_pass": 160,
+              "actual_fail": 235,
+              "false_pass": 37,
+              "false_fail": 147
+            }
+          },
+          "unique_labeled_rows": 79,
+          "repeats": [
+            {
+              "n": 79,
+              "mae": 3.304835847503182,
+              "rmse": 4.020933601590528,
+              "r2": -0.28467957282041656,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 7,
+                  "false_fail": 30
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 3.3521978084172277,
+              "rmse": 4.042276413397363,
+              "r2": -0.29835373171228174,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 7,
+                  "false_fail": 29
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 3.2087929614668713,
+              "rmse": 3.9504878895316566,
+              "r2": -0.24005938932372461,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 4,
+                  "false_fail": 28
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 3.1287464154093736,
+              "rmse": 3.84505017820938,
+              "r2": -0.17474887821272977,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 9,
+                  "false_fail": 30
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 3.2263335875184924,
+              "rmse": 3.967903200436017,
+              "r2": -0.2510168316967216,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 10,
+                  "false_fail": 30
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 3.3046504380955555,
+          "relative_mae_improvement_vs_mean": -0.12299488552591731,
+          "repeats_better_than_mean": 0
+        }
+      },
+      "status": "post_hoc_exploratory_research_only",
+      "eligible_for_engineering_release": false
+    },
+    {
+      "artifact": "models/water_ridge.joblib",
+      "config": {
+        "id": "basic:ridge:alpha=100",
+        "family": "ridge",
+        "features": "basic",
+        "params": {
+          "alpha": 100
+        }
+      },
+      "validation": {
+        "DS": {
+          "n": 425,
+          "mae": 1646.2854612149704,
+          "rmse": 2171.1911517391227,
+          "r2": -0.18656967097027466,
+          "threshold_diagnostics": {
+            "800": {
+              "actual_pass": 425,
+              "actual_fail": 0,
+              "false_pass": 0,
+              "false_fail": 0
+            },
+            "6000": {
+              "actual_pass": 180,
+              "actual_fail": 245,
+              "false_pass": 71,
+              "false_fail": 162
+            },
+            "8000": {
+              "actual_pass": 40,
+              "actual_fail": 385,
+              "false_pass": 0,
+              "false_fail": 40
+            }
+          },
+          "unique_labeled_rows": 85,
+          "repeats": [
+            {
+              "n": 85,
+              "mae": 1631.2832003246288,
+              "rmse": 2125.579882543654,
+              "r2": -0.1372396282564463,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 13,
+                  "false_fail": 32
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1669.4071707383164,
+              "rmse": 2171.0508740609607,
+              "r2": -0.18641635064998852,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 13,
+                  "false_fail": 33
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1680.382023636819,
+              "rmse": 2226.5287075212104,
+              "r2": -0.2478251098912776,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 13,
+                  "false_fail": 32
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1631.451153219576,
+              "rmse": 2152.6847678220956,
+              "r2": -0.166428166239025,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 16,
+                  "false_fail": 34
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            },
+            {
+              "n": 85,
+              "mae": 1618.903758155511,
+              "rmse": 2178.8349081761094,
+              "r2": -0.1949390998146332,
+              "threshold_diagnostics": {
+                "800": {
+                  "actual_pass": 85,
+                  "actual_fail": 0,
+                  "false_pass": 0,
+                  "false_fail": 0
+                },
+                "6000": {
+                  "actual_pass": 36,
+                  "actual_fail": 49,
+                  "false_pass": 16,
+                  "false_fail": 31
+                },
+                "8000": {
+                  "actual_pass": 8,
+                  "actual_fail": 77,
+                  "false_pass": 0,
+                  "false_fail": 8
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 1482.9715855783784,
+          "relative_mae_improvement_vs_mean": -0.05135708712711207,
+          "repeats_better_than_mean": 0
+        },
+        "strain": {
+          "n": 360,
+          "mae": 281.9035114423948,
+          "rmse": 463.454819135578,
+          "r2": -0.07523894407400711,
+          "threshold_diagnostics": {
+            "2000": {
+              "actual_pass": 290,
+              "actual_fail": 70,
+              "false_pass": 68,
+              "false_fail": 1
+            },
+            "2200": {
+              "actual_pass": 150,
+              "actual_fail": 210,
+              "false_pass": 28,
+              "false_fail": 114
+            },
+            "2500": {
+              "actual_pass": 60,
+              "actual_fail": 300,
+              "false_pass": 0,
+              "false_fail": 60
+            }
+          },
+          "unique_labeled_rows": 72,
+          "repeats": [
+            {
+              "n": 72,
+              "mae": 282.02472294988706,
+              "rmse": 467.811875138088,
+              "r2": -0.0955511641856508,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 13,
+                  "false_fail": 0
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 8,
+                  "false_fail": 24
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 265.83495791670816,
+              "rmse": 441.59580887317816,
+              "r2": 0.023797160301477605,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 14,
+                  "false_fail": 0
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 4,
+                  "false_fail": 19
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 283.18739253801016,
+              "rmse": 454.57862908315207,
+              "r2": -0.03444691784249221,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 14,
+                  "false_fail": 1
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 4,
+                  "false_fail": 23
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 285.2427790412164,
+              "rmse": 474.27152437463263,
+              "r2": -0.12601527230963705,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 13,
+                  "false_fail": 0
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 8,
+                  "false_fail": 22
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            },
+            {
+              "n": 72,
+              "mae": 293.22770476615216,
+              "rmse": 478.03956856481074,
+              "r2": -0.14397852633373298,
+              "threshold_diagnostics": {
+                "2000": {
+                  "actual_pass": 58,
+                  "actual_fail": 14,
+                  "false_pass": 14,
+                  "false_fail": 0
+                },
+                "2200": {
+                  "actual_pass": 30,
+                  "actual_fail": 42,
+                  "false_pass": 4,
+                  "false_fail": 26
+                },
+                "2500": {
+                  "actual_pass": 12,
+                  "actual_fail": 60,
+                  "false_pass": 0,
+                  "false_fail": 12
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 223.41513253870525,
+          "relative_mae_improvement_vs_mean": 0.016367693339893186,
+          "repeats_better_than_mean": 4
+        },
+        "TSR": {
+          "n": 405,
+          "mae": 3.3766517562144442,
+          "rmse": 4.160771661327125,
+          "r2": 0.042599578193856735,
+          "threshold_diagnostics": {
+            "75": {
+              "actual_pass": 400,
+              "actual_fail": 5,
+              "false_pass": 5,
+              "false_fail": 0
+            },
+            "85": {
+              "actual_pass": 260,
+              "actual_fail": 145,
+              "false_pass": 126,
+              "false_fail": 22
+            },
+            "90": {
+              "actual_pass": 70,
+              "actual_fail": 335,
+              "false_pass": 0,
+              "false_fail": 70
+            }
+          },
+          "unique_labeled_rows": 81,
+          "repeats": [
+            {
+              "n": 81,
+              "mae": 3.3744515611699555,
+              "rmse": 4.133061407978879,
+              "r2": 0.05530946361122857,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 24,
+                  "false_fail": 4
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.2945661087640117,
+              "rmse": 4.08512588810599,
+              "r2": 0.07709555521558564,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 25,
+                  "false_fail": 1
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.5156227041073587,
+              "rmse": 4.315186269421878,
+              "r2": -0.029781162795436522,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 26,
+                  "false_fail": 10
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.441372064255912,
+              "rmse": 4.2039812767606275,
+              "r2": 0.022611116692128896,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 24,
+                  "false_fail": 7
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            },
+            {
+              "n": 81,
+              "mae": 3.2572463427749816,
+              "rmse": 4.0614483684463245,
+              "r2": 0.08776291824577709,
+              "threshold_diagnostics": {
+                "75": {
+                  "actual_pass": 80,
+                  "actual_fail": 1,
+                  "false_pass": 1,
+                  "false_fail": 0
+                },
+                "85": {
+                  "actual_pass": 52,
+                  "actual_fail": 29,
+                  "false_pass": 27,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 14,
+                  "actual_fail": 67,
+                  "false_pass": 0,
+                  "false_fail": 14
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 3.4757397160185013,
+          "relative_mae_improvement_vs_mean": 0.046194088516270715,
+          "repeats_better_than_mean": 5
+        },
+        "residual": {
+          "n": 395,
+          "mae": 2.7745082790072484,
+          "rmse": 3.483167317091841,
+          "r2": 0.03597190950213536,
+          "threshold_diagnostics": {
+            "85": {
+              "actual_pass": 340,
+              "actual_fail": 55,
+              "false_pass": 55,
+              "false_fail": 0
+            },
+            "90": {
+              "actual_pass": 160,
+              "actual_fail": 235,
+              "false_pass": 11,
+              "false_fail": 135
+            }
+          },
+          "unique_labeled_rows": 79,
+          "repeats": [
+            {
+              "n": 79,
+              "mae": 2.760080181791982,
+              "rmse": 3.4658403532267186,
+              "r2": 0.04553914085736088,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 3,
+                  "false_fail": 27
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.811815451783653,
+              "rmse": 3.5032237732453915,
+              "r2": 0.024837989226846546,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 3,
+                  "false_fail": 27
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.7241073401506095,
+              "rmse": 3.43738106238822,
+              "r2": 0.061149643699668355,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 1,
+                  "false_fail": 27
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.7800075645350684,
+              "rmse": 3.49453345703986,
+              "r2": 0.029670084249811768,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 2,
+                  "false_fail": 27
+                }
+              }
+            },
+            {
+              "n": 79,
+              "mae": 2.7965308567749267,
+              "rmse": 3.5142985053010753,
+              "r2": 0.018662689476988237,
+              "threshold_diagnostics": {
+                "85": {
+                  "actual_pass": 68,
+                  "actual_fail": 11,
+                  "false_pass": 11,
+                  "false_fail": 0
+                },
+                "90": {
+                  "actual_pass": 32,
+                  "actual_fail": 47,
+                  "false_pass": 2,
+                  "false_fail": 27
+                }
+              }
+            }
+          ],
+          "group_macro_mae": 3.0730314511121435,
+          "relative_mae_improvement_vs_mean": 0.039585554585382376,
+          "repeats_better_than_mean": 5
+        }
+      },
+      "status": "post_hoc_exploratory_research_only",
+      "eligible_for_engineering_release": false
+    }
+  ],
+  "artifact_sha256": {
+    "fixed_half_ensemble.joblib": "8af50e12f6c5e271e5ce3a4a2c2cc5c896fa65a77bc9970f39290731346ed5eb",
+    "low_rank.joblib": "8ec1ad409463ec724329868b9c1d0795afeca65d264bdbcc320dc4b1520e0868",
+    "svr.joblib": "89186e57d57af3a7e875de8063b0b67073ed36f03ac6fc85ff8fa5697fc0880f",
+    "water_ridge.joblib": "7364b9c3dbd1a06df95fae2cd313c448afe91c8e7fb9300ad3d57d01f16dd3aa"
+  },
+  "serialization_prediction_roundtrip": "exact",
+  "independent_material_tests": 0,
+  "promotion": "None. Stable low-temperature signal remains below the preregistered 5% candidate threshold, and all new formulations lack independent measurements."
+}

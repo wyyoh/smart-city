@@ -1,0 +1,185 @@
+{
+  "scope": "Second weak surrogate crosscheck; neither model validates an untested material.",
+  "hypotheses": [
+    {
+      "id": "hyp_933425305e74cf6f",
+      "source_code": "1B",
+      "old_surrogate_prediction": {
+        "DS": 6155.476291059538,
+        "strain": 2132.8810532384377,
+        "TSR": 85.55602746694795,
+        "residual": 87.76044261579558
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5947.0954067853345,
+        "strain": 2125.4152902521137,
+        "TSR": 86.36230743093475,
+        "residual": 88.61911004056392
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_324cb0334652bf15",
+      "source_code": "B",
+      "old_surrogate_prediction": {
+        "DS": 5869.408643247538,
+        "strain": 2171.4347110077033,
+        "TSR": 87.95080398792769,
+        "residual": 89.55978992592463
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5166.048878366499,
+        "strain": 2266.1932729314726,
+        "TSR": 87.51458961322336,
+        "residual": 89.87151219967798
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_1d7309abf8ffe236",
+      "source_code": "B",
+      "old_surrogate_prediction": {
+        "DS": 5911.40031870176,
+        "strain": 2146.498799018117,
+        "TSR": 87.86015406065066,
+        "residual": 89.66848450767228
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5205.355154203347,
+        "strain": 2253.5180927975903,
+        "TSR": 87.44603559063914,
+        "residual": 89.92179192771954
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_540e925231eb8899",
+      "source_code": "F",
+      "old_surrogate_prediction": {
+        "DS": 5869.408643247538,
+        "strain": 2171.4347110077033,
+        "TSR": 87.95080398792769,
+        "residual": 89.55978992592463
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5417.044476276966,
+        "strain": 2244.3889381764407,
+        "TSR": 87.12049799060716,
+        "residual": 89.21720596524625
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_49669480a944ea13",
+      "source_code": "B",
+      "old_surrogate_prediction": {
+        "DS": 5869.408643247538,
+        "strain": 2171.4347110077033,
+        "TSR": 87.95080398792769,
+        "residual": 89.55978992592463
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5166.048878366499,
+        "strain": 2266.1932729314726,
+        "TSR": 87.51458961322336,
+        "residual": 89.87151219967798
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_3e5293ecd36d173f",
+      "source_code": "H",
+      "old_surrogate_prediction": {
+        "DS": 5992.992932901127,
+        "strain": 2199.0236543905376,
+        "TSR": 86.16974744025572,
+        "residual": 88.42754608880205
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5785.291220875252,
+        "strain": 2212.2058302803753,
+        "TSR": 85.9310424443594,
+        "residual": 88.73115452357649
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_a9308c48924d1ed4",
+      "source_code": "B",
+      "old_surrogate_prediction": {
+        "DS": 5911.40031870176,
+        "strain": 2146.498799018117,
+        "TSR": 87.86015406065066,
+        "residual": 89.66848450767228
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5205.355154203347,
+        "strain": 2253.5180927975903,
+        "TSR": 87.44603559063914,
+        "residual": 89.92179192771954
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_da4d6bfc91dcbb39",
+      "source_code": "1G",
+      "old_surrogate_prediction": {
+        "DS": 5719.603183711637,
+        "strain": 2165.094250958893,
+        "TSR": 84.86593524672391,
+        "residual": 88.65760888705294
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5510.03195124763,
+        "strain": 2147.05783544153,
+        "TSR": 85.90354124532698,
+        "residual": 88.78600520073834
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_4d1c23ee2a665a47",
+      "source_code": "V",
+      "old_surrogate_prediction": {
+        "DS": 5992.992932901127,
+        "strain": 2199.0236543905376,
+        "TSR": 86.16974744025572,
+        "residual": 88.42754608880205
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5751.526041341795,
+        "strain": 2214.370483660545,
+        "TSR": 86.10225483012422,
+        "residual": 89.24728664884049
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    },
+    {
+      "id": "hyp_9f0f98a0267d73ec",
+      "source_code": "B",
+      "old_surrogate_prediction": {
+        "DS": 5911.40031870176,
+        "strain": 2146.498799018117,
+        "TSR": 87.86015406065066,
+        "residual": 89.66848450767228
+      },
+      "conservative_ensemble_prediction": {
+        "DS": 5205.355154203347,
+        "strain": 2253.5180927975903,
+        "TSR": 87.44603559063914,
+        "residual": 89.92179192771954
+      },
+      "measured_performance": null,
+      "engineering_release_allowed": false
+    }
+  ]
+}

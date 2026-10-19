@@ -1,0 +1,7 @@
+{
+  "path": "artifacts/research-v04/laboratory-handoff.zip",
+  "sha256": "2a89048dad08b97104364ad732fb1885d341efe1a5e84b09e5d315c9ca6c7ebb",
+  "files": 3,
+  "sent_to_lab": false,
+  "status": "reviewable_proposal_only"
+}

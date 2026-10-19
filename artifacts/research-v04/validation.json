@@ -1,0 +1,78 @@
+{
+  "material_passport": {
+    "origin_skill": "academic-research-suite/experiment-agent",
+    "mode": "validate",
+    "version_label": "research_v04_validation_1",
+    "verification_status": "VERIFIED"
+  },
+  "created_at": "2026-10-19T08:14:57.879412+00:00",
+  "checks": {
+    "frozen_production_inputs_unchanged": true,
+    "group_and_recipe_disjointness_all_25_folds": true,
+    "all_81_configuration_mae_recomputed": true,
+    "hidden_label_replay_group_audit": true,
+    "all_hypotheses_preserve_unknown_measurements_and_nominal_constraints": true,
+    "full_benchmark_exact_reproduction": true
+  },
+  "fallacy_coverage": "11/11",
+  "fallacy_scan": [
+    {
+      "type": "Simpson paradox",
+      "status": "CAUTION",
+      "finding": "Per-metric, per-repeat and group-macro errors exposed; pooled improvements may differ from group behavior."
+    },
+    {
+      "type": "Ecological fallacy",
+      "status": "CAUTION",
+      "finding": "Historical operational keys and source-code proxies are not independent physical recipes, batches or regions."
+    },
+    {
+      "type": "Berkson selection",
+      "status": "CAUTION",
+      "finding": "Official workbook is a selected historical collection; complete-case replay is more selected still."
+    },
+    {
+      "type": "Collider bias",
+      "status": "CAUTION",
+      "finding": "Measured outcomes never enter design predictors; selection on availability can still distort associations."
+    },
+    {
+      "type": "Base-rate neglect",
+      "status": "CHECKED",
+      "finding": "Threshold pass/fail prevalence and false-pass counts reported; trivial thresholds cannot establish skill."
+    },
+    {
+      "type": "Regression to mean",
+      "status": "CAUTION",
+      "finding": "New variants need concurrent freshly prepared controls; historical extremes cannot prove improvement."
+    },
+    {
+      "type": "Survivorship bias",
+      "status": "CAUTION",
+      "finding": "Missing labels and flagged inputs retained in audit; complete-case replay scope explicitly limited."
+    },
+    {
+      "type": "Look-elsewhere",
+      "status": "CAUTION",
+      "finding": "All 81 configurations, repeats and negatives published. Post-hoc winner is exploratory; no uncorrected significance claims."
+    },
+    {
+      "type": "Forking paths",
+      "status": "CHECKED",
+      "finding": "Protocol/configurations frozen before execution. All later analyses are diagnostics or exploratory; new experiments require new output directories."
+    },
+    {
+      "type": "Correlation causation",
+      "status": "CAUTION",
+      "finding": "Multi-task correlations, surrogate changes and retrospective query counts are not causal material or laboratory gains."
+    },
+    {
+      "type": "Reverse causality",
+      "status": "CHECKED",
+      "finding": "Design-only pre-test features; no causal attribution or post-test predictors."
+    }
+  ],
+  "independent_material_tests": 0,
+  "elapsed_seconds": 0.312,
+  "verdict_scope": "Reproducible computation and internal data separation only, not material validity or engineering performance."
+}
