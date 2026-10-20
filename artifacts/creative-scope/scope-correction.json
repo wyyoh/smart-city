@@ -1,0 +1,120 @@
+{
+  "effective_date": "2026-10-20",
+  "created_at": "2026-10-20T03:52:59.109591+00:00",
+  "status": "scope_correction_complete",
+  "user_instruction": "我们的目标就是提供创意方案，要有创新性和实用性即可，不需要真的实际做实验验证",
+  "source": {
+    "file": "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf",
+    "sha256": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+    "topic_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "core_deliverables_page": 4,
+    "page": 4,
+    "render": "artifacts/creative-scope/competition-page4.png"
+  },
+  "submission_scope": {
+    "kind": "creative_proposal_with_demonstrable_prototype",
+    "summary": "创意方案与可演示原型；实物实验为可选拓展。",
+    "primary_goal": "把养护场景转化为可解释、可比较、可人工调整的材料设计方案。",
+    "physical_validation_required": false,
+    "human_timing_required": false,
+    "production_model_promotion_required": false,
+    "source_page": 4,
+    "source_quote": "参赛成果以创意方案为主，不要求完整工程实现",
+    "required_evidence": [
+      "问题定义清楚，技术路线、关键算法或规则、数据来源与可行性逻辑自洽。",
+      "核心原型可演示场景输入、性能需求、候选方案与推荐依据。",
+      "覆盖至少3类典型场景和不少于5个带基准对照的合理案例。",
+      "交接数据结构、字段、模块关系、算法或规则及数据需求。",
+      "结合案例说明潜在应用价值；定量假设明确标注。"
+    ],
+    "main_innovations": [
+      "场景驱动的可解释推荐",
+      "多目标权衡与冲突解释",
+      "人机协同的配方演化"
+    ],
+    "engineering_extension_note": "以下内容用于获选后的联合研发与工程化拓展，不作为本次创意方案交付门槛。",
+    "source": {
+      "file": "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf",
+      "sha256": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+      "topic_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "core_deliverables_page": 4,
+      "page": 4
+    }
+  },
+  "next_phase_plan": "planning/creative_proposal_phase_v6.json",
+  "next_phase_status": "planned",
+  "applied_changes": [
+    "创意方案与原型为交付目标",
+    "实物实验、真人测时、生产部署为可选拓展",
+    "成果页与手册统一表述",
+    "三项创意机制展示",
+    "配方页试验区域默认折叠",
+    "研究登记脚本重跑仍遵守新范围"
+  ],
+  "browser_checks": {
+    "creative_home_banner": true,
+    "three_innovation_cards": true,
+    "engineering_extensions_optional": true,
+    "research_trial_controls_initially_collapsed": true,
+    "optional_trial_controls_can_expand": true,
+    "console_errors": 0
+  },
+  "software_checks": {
+    "pytest": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "91",
+      "time": "32.358",
+      "timestamp": "2026-10-20T11:50:33.413912+08:00",
+      "hostname": "LAPTOP-IORJGR2A"
+    },
+    "typescript": "passed",
+    "production_build": "passed"
+  },
+  "runtime_tables_unchanged": 7,
+  "legacy_files_unchanged": 84,
+  "original_tables_unchanged": 6,
+  "registered_evidence_verified": 43,
+  "new_material_experiments": 0,
+  "prediction_records_changed": false,
+  "production_model_promoted": false,
+  "base_revision": "f11bc7d219ad675f00e0cd05c15225d2ffba6c15",
+  "source_file_sha256": {
+    "README.md": "88422aebdf79fa67e7bc2f17a6df4d2bbdeea2f13235a59d37407473005bb178",
+    "artifacts/creative-scope/.gitattributes": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+    "artifacts/creative-scope/competition-page4.png": "0a3151ad5bf19b18f6a445c846e98c8ad628bf2f1d5639d60074f0c148fa981d",
+    "artifacts/creative-scope/creative-handbook.html": "2780c9103f812e1a2710569bdadfea5356e11ac8ea59febaf06b64f248e32efa",
+    "artifacts/creative-scope/creative-home.png": "8c07d8ab7401db00235d39479b293e41337b7681cbfb4a672d5eb360e3dccb0b",
+    "artifacts/creative-scope/previous-review-registry.json": "b3c4b296398c5aebc4a734241b248726f49e6af3bd7aa06f10625907883cc195",
+    "artifacts/creative-scope/prior-evidence-preservation.json": "19032f740eb80ebbf63c583ff1de1920da3aabdb31c6eefaef0c21bc57240a3e",
+    "artifacts/creative-scope/protected-inputs.json": "29ea49c5baee05f77d17bfcaa34f6861b56cb96c1dd8f9a2acbe446324b69d65",
+    "artifacts/creative-scope/pytest.xml": "f4e86c9dff9057990e4df792546008103cdd9cb738764737f7358eff277f067f",
+    "artifacts/creative-scope/runtime-before.json": "bedf7a6cfb16fa4856e8c4ec486354638eba1bf2d4d7b28a8b75876df4e558c6",
+    "backend/app/review/reports.py": "e0b71bffd91f7e029271a8c0591c4e48b98ba03c2689287a23e802a82dfef1cf",
+    "configs/creative_scope_v6.json": "50f0bd37f947950c0389ff7c99808644845e4cc3b2d1a54ecd727d8a1401bde4",
+    "configs/review_evidence_v3.json": "670407eb83c391f30e4285f845b8833f250d39e6850d9c897b517607ed7e1fbd",
+    "docs/creative-proposal-scope-v6.md": "2782a5d7e9f0bfe3d7bfb9397f79c2d9d7ffad77cb4aa74b25a22beb3d0b995d",
+    "frontend/src/components/ResearchWorkbench.tsx": "a0a83d95c297d6ee11aae4de3d30e8a097739943262a8efdf6e93be0663566d2",
+    "frontend/src/components/ReviewCenter.tsx": "8e5e80d39465c71bebf55f6a6378c5708d18c075e32c554beaba84f608f1adce",
+    "frontend/src/main.tsx": "9acbc3fd688a351b97322f68ee9bc003108608527e017ad7c19e05d66e3da266",
+    "frontend/src/research.css": "054218d27acb559de82cfbcd4aa88f0188414841071f0a017902ee542953bde6",
+    "frontend/src/review-types.ts": "2681a36fe8d1cd3f5c912b0b26abff6e01d9698f87a630ee3c0f7f92ab345fea",
+    "planning/creative_proposal_phase_v6.json": "80a0c44716b611fea8c740b98896257d0be9b47dd0230b42532d286fd2e26a98",
+    "scripts/apply_creative_scope_v6.py": "46aead10f6ca64130dd93038dd797e5278e04ebf5045ba0d3916cf14979c7ae8",
+    "scripts/update_research_coverage_v5.py": "53a72c37cdb58ebfce61f422add14b28db740e05c40ce21eebf96adc79014757"
+  }
+}

@@ -35,6 +35,12 @@ export type Highlight = {
 };
 
 export type ReviewOverview = {
+  submission_scope?: {
+    summary: string;
+    primary_goal: string;
+    physical_validation_required: boolean;
+    engineering_extension_note: string;
+  };
   requirements: ReviewRequirement[];
   evidence: Record<
     string,

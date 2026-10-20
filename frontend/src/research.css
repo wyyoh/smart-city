@@ -86,3 +86,5 @@
 @media (max-width: 1200px) { .rw-candidate-layout { grid-template-columns: minmax(0, 1fr); } .rw-heading { flex-wrap: wrap; } }
 @media (max-width: 850px) { .rw-filters { grid-template-columns: 1fr 1fr; } .rw-plan-inputs { grid-template-columns: 1fr 120px; } .rw-plan-inputs > button { grid-column: 1 / -1; } .rw-section-heading { flex-wrap: wrap; } .rw-tabs { gap: 15px; } }
 @media (prefers-reduced-motion: reduce) { .rw-root *, .rw-root *::before, .rw-root *::after { transition: none !important; animation: none !important; } }
+.rw-plan-section > summary { cursor: pointer; font-weight: 600; color: var(--teal); }
+.rw-plan-section[open] > summary { margin-bottom: 20px; }

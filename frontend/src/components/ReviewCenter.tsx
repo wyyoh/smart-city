@@ -190,9 +190,9 @@ export function ReviewCenter({
             企业课题一
           </div>
           <h1>成果与验证</h1>
-          <p>从场景要求到材料方案，每个结论都能回到证据。</p>
+          <p>从养护需求生成可解释的材料设计方案，支持多目标权衡与人工微调。</p>
           <small>
-            v0.4 本地研究原型。软件验证、计算研究与工程实证分别登记。
+            {overview.submission_scope?.summary || "v0.4 本地研究原型。软件验证、计算研究与工程实证分别登记。"}
           </small>
           <a
             className="secondary"
@@ -245,7 +245,7 @@ export function ReviewCenter({
       )}
       <section className="review-highlight-section">
         <div className="review-section-title">
-          <h2>三条亮点，现场复核</h2>
+          <h2>三项创意机制，交互演示</h2>
           <span>载入构造案例后，逐步操作真实流程</span>
         </div>
         <div className="review-highlights">
@@ -271,7 +271,7 @@ export function ReviewCenter({
           {[
             ["coverage", "赛题成果"],
             ["sources", "依据与阈值"],
-            ["external", "外部核验"],
+            ["external", "工程化拓展"],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -310,7 +310,7 @@ export function ReviewCenter({
                 />
               </details>
               <details className="review-more">
-                <summary>展开七项加分方向与外部条件</summary>
+                <summary>展开七项可选加分方向</summary>
                 <CoverageTable
                   items={overview.requirements.filter(
                     (r) => r.kind === "bonus",
@@ -351,9 +351,9 @@ export function ReviewCenter({
           {tab === "external" && (
             <div className="review-external">
               <div>
-                <h2>把待验证项交给真实记录</h2>
+                <h2>后续工程化拓展（可选）</h2>
                 <p>
-                  真人参与数仍为0，独立试验与真实联调等待外部证据。先用统一模板采集，再审核适用性。
+                  {overview.submission_scope?.engineering_extension_note || "后续工程使用可通过统一模板采集真实记录，再审核适用性。"}
                 </p>
                 <ul>
                   {overview.external_pending.map((item) => (

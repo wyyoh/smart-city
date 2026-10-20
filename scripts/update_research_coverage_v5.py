@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 PATH = ROOT/'configs/review_evidence_v3.json'
@@ -42,6 +43,10 @@ def update():
         'requirement_ids': list(UPDATES), 'independent_material_tests': 0, 'production_model_promoted': False,
         'previous_registry': 'artifacts/research-workbench/previous-review-evidence-v3.json',
         'scope': '更新当前进度与证据；历史冻结研究文件和旧交付包保留原样。'}
+    if (ROOT/'configs/creative_scope_v6.json').exists():
+        sys.path.insert(0, str(ROOT))
+        from scripts.apply_creative_scope_v6 import apply_scope
+        data = apply_scope(data)
     PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8', newline='\n')
     print({'updated_requirements': len(UPDATES), 'evidence_files': len(data['evidence']), 'material_tests': 0})
 

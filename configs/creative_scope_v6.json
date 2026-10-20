@@ -1,0 +1,68 @@
+{
+  "version": "creative-proposal-scope-1",
+  "effective_date": "2026-10-20",
+  "authority": "用户明确以创意方案为目标；赛题第4页基本成果与加分成果原文",
+  "user_instruction": "我们的目标就是提供创意方案，要有创新性和实用性即可，不需要真的实际做实验验证",
+  "submission_scope": {
+    "kind": "creative_proposal_with_demonstrable_prototype",
+    "summary": "创意方案与可演示原型；实物实验为可选拓展。",
+    "primary_goal": "把养护场景转化为可解释、可比较、可人工调整的材料设计方案。",
+    "physical_validation_required": false,
+    "human_timing_required": false,
+    "production_model_promotion_required": false,
+    "source_page": 4,
+    "source_quote": "参赛成果以创意方案为主，不要求完整工程实现",
+    "required_evidence": [
+      "问题定义清楚，技术路线、关键算法或规则、数据来源与可行性逻辑自洽。",
+      "核心原型可演示场景输入、性能需求、候选方案与推荐依据。",
+      "覆盖至少3类典型场景和不少于5个带基准对照的合理案例。",
+      "交接数据结构、字段、模块关系、算法或规则及数据需求。",
+      "结合案例说明潜在应用价值；定量假设明确标注。"
+    ],
+    "main_innovations": ["场景驱动的可解释推荐", "多目标权衡与冲突解释", "人机协同的配方演化"],
+    "engineering_extension_note": "以下内容用于获选后的联合研发与工程化拓展，不作为本次创意方案交付门槛。"
+  },
+  "requirement_overrides": {
+    "B01": {
+      "status": "prototype",
+      "status_label": "创意机制与核心原型可演示",
+      "delivered_scope": "场景、需求、候选方案、推荐依据和人工调整形成可演示流程；本次按创意方案与概念验证原型交付。"
+    },
+    "B05": {
+      "status": "prototype",
+      "status_label": "潜在应用价值与评估框架",
+      "delivered_scope": "以典型案例说明减少资料查找、辅助比选和保留决策依据的潜在价值；量化收益须写明假设，真人测时不作为本轮交付门槛。"
+    },
+    "T04": {
+      "status": "prototype",
+      "status_label": "候选设计与人机协同探索",
+      "delivered_scope": "原型演示历史检索、配方微调与1098个设计假设的组分比较；提出目标驱动推荐技术路线，新配方数值为研究参考。"
+    },
+    "T07": {
+      "status": "research_only",
+      "status_label": "协同预测路线与计算支撑",
+      "delivered_scope": "独立、多任务及集成方法已有计算结果，作为小样本建模设计的可行性支撑；完整保留现有效果，不以模型全部超越基线作为创意方案完成门槛。"
+    },
+    "X01": {
+      "status": "research_only",
+      "status_label": "多目标配方设计创意与原型",
+      "delivered_scope": "展示约束、优先级、候选设计与人工微调逻辑；731个假设处于既定观测支持范围内，不能据此宣称新材料已达标。"
+    },
+    "X02": {
+      "status": "research_only",
+      "status_label": "多性能协同建模方案与计算研究",
+      "delivered_scope": "提出多任务建模和小样本策略，已有降秩多任务等历史分组实验；其作用是支撑技术可行性，不替代材料实测结论。"
+    },
+    "X05": {
+      "status": "optional_extension",
+      "status_label": "实物实验为可选工程化拓展",
+      "delivered_scope": "本次创意交付不安排实物实验；既有送检方案留作后续联合研发参考，不作为作品未完成的判据。"
+    }
+  },
+  "honesty_rules": [
+    "历史数据、合理构造案例、计算预测、技术设想分别标注。",
+    "未实测配方继续保持性能未知，不继承父方案实测结论。",
+    "未实现技术按方案设计表述，不宣称已经部署或达到工程性能。",
+    "潜在收益和假设测算不表述为实际成本、寿命、碳排或节时收益。"
+  ]
+}

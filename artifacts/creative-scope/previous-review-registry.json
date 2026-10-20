@@ -1,0 +1,766 @@
+{
+  "schema_version": "3.0",
+  "generated_at": "2026-10-19T07:21:31.874330+00:00",
+  "title": "数智选材成果与证据",
+  "topic": "企业课题一",
+  "official_scoring_weights": null,
+  "competition_source": {
+    "file": "第十二届中国研究生智慧城市技术与创意设计大赛企业揭榜技术需求征集表-HY-01 (1).pdf",
+    "sha256": "16d8ee1912c2f02e5525a726398e958940866d9beb53612dd099f5b5a66ef7f5",
+    "topic_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "core_deliverables_page": 4
+  },
+  "requirements": [
+    {
+      "id": "B01",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "核心方案与原型",
+      "requirement_paraphrase": "输入养护场景、识别材料性能需求、输出候选、展示依据",
+      "status": "prototype",
+      "status_label": "核心操作流程可演示",
+      "delivered_scope": "场景、需求确认、候选比较、依据和验证行动贯通；工程应用尚需外部核验。",
+      "evidence_ids": [
+        "ev_c5f32a0f3214a0",
+        "ev_af9c9eb1b4b503",
+        "ev_eb4680e4adcaf3",
+        "ev_b71a86a2f9fd6e"
+      ]
+    },
+    {
+      "id": "B02",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "至少三类结构化场景",
+      "requirement_paraphrase": "场景、组成、性能、适用条件的结构化关联",
+      "status": "constructed",
+      "status_label": "三类构造场景已覆盖",
+      "delivered_scope": "高温、低温、水损害规则与材料证据关联；量化阈值未经真实区域核定。",
+      "evidence_ids": [
+        "ev_eec5783cc7eda5",
+        "ev_fbf75ea537ec49"
+      ]
+    },
+    {
+      "id": "B03",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "至少五个带对照案例",
+      "requirement_paraphrase": "场景约束、候选、理由、性能预期或适用判断、基准对照",
+      "status": "software_verified",
+      "status_label": "五案同池软件对照",
+      "delivered_scope": "B1与V2的数值可行集一致；C5区分84条含缺测目录和35条完整数值子池。",
+      "evidence_ids": [
+        "ev_0eaf7c27634d39",
+        "ev_09d50ae7c98fa2",
+        "ev_a3328baa3d7b48",
+        "ev_fa37de691ce4c4"
+      ]
+    },
+    {
+      "id": "B04",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "数据与技术交接",
+      "requirement_paraphrase": "字段、算法或规则、模块与数据需求；鼓励代码模型接口",
+      "status": "prototype",
+      "status_label": "接口与研究资料可交接",
+      "delivered_scope": "历史接口与研究API、规则、字段及运行说明已提供；新主机需安装依赖并保留冻结研究输入库。",
+      "evidence_ids": [
+        "ev_36d76ad6ec41cd",
+        "ev_677eecff64930b",
+        "ev_b335630551682c",
+        "ev_a1c91f302006f5",
+        "ev_833da2158d1566",
+        "ev_25c396a634cbe5"
+      ]
+    },
+    {
+      "id": "B05",
+      "kind": "basic",
+      "source_page": 4,
+      "title": "应用价值",
+      "requirement_paraphrase": "分析设计周期、选型和匹配效率；可靠时测算成本寿命碳排",
+      "status": "partial",
+      "status_label": "潜在价值可分析，真人收益待验证",
+      "delivered_scope": "三任务九流程AI代理记录可复核；没有真人节时、成本、碳排或寿命收益数据。",
+      "evidence_ids": [
+        "ev_e0460cd818e482",
+        "ev_4c1fbefa4cc5fc",
+        "ev_f98aae8db75487"
+      ]
+    },
+    {
+      "id": "T01",
+      "kind": "technical_detail",
+      "source_page": 2,
+      "title": "场景量化映射",
+      "requirement_paraphrase": "气候、交通、结构、病害及严重程度到目标值",
+      "status": "constructed",
+      "status_label": "场景映射可执行",
+      "delivered_scope": "映射使用团队构造的量化要求。正式项目应另提供有出处的目标和适用条件。",
+      "evidence_ids": [
+        "ev_eec5783cc7eda5",
+        "ev_7c09053aceeef6"
+      ]
+    },
+    {
+      "id": "T02",
+      "kind": "technical_detail",
+      "source_page": 2,
+      "title": "多约束优先级",
+      "requirement_paraphrase": "预算、工期、环保下的性能权重与优先序",
+      "status": "partial",
+      "status_label": "硬约束与优先级可查",
+      "delivered_scope": "硬失败不补偿，支持优先序、并列与Pareto比较；未知价格、碳排和供货不判为通过。",
+      "evidence_ids": [
+        "ev_8ba683d8d82e4c",
+        "ev_c006f853ddc097"
+      ]
+    },
+    {
+      "id": "T03",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "材料性能场景知识",
+      "requirement_paraphrase": "组成、性能和适用关系可查询可推理",
+      "status": "prototype",
+      "status_label": "关系路径可查询",
+      "delivered_scope": "场景、要求、材料版本、观察和来源建立显式关系；未披露组成保持未知。",
+      "evidence_ids": [
+        "ev_fbf75ea537ec49"
+      ]
+    },
+    {
+      "id": "T04",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "目标到材料方案",
+      "requirement_paraphrase": "品种、改性剂、级配、助剂及性能预期",
+      "status": "partial",
+      "status_label": "历史检索与未试验配方研究",
+      "delivered_scope": "支持历史目录、微调失效及1098个待试验假设的检索和组分对比；可靠新配方性能提升仍待独立试验。",
+      "evidence_ids": [
+        "ev_59e5a2129d5df0",
+        "ev_fbf75ea537ec49",
+        "ev_7569115faa2c19",
+        "ev_50a042b2b65bb5",
+        "ev_c8c472dc58fc14"
+      ]
+    },
+    {
+      "id": "T05",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "多维方案比较",
+      "requirement_paraphrase": "性能、成本、碳排、寿命、施工可行性",
+      "status": "partial",
+      "status_label": "性能与适用性比较",
+      "delivered_scope": "同界面比较已知性能、工艺和未知项；无成本、碳排与寿命数据时不绘制伪数值。",
+      "evidence_ids": [
+        "ev_2b0782f864da4f",
+        "ev_78dd87752928e5"
+      ]
+    },
+    {
+      "id": "T06",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "路用效果反馈",
+      "requirement_paraphrase": "实施后监测关联推荐引擎与更新",
+      "status": "partial",
+      "status_label": "反馈契约与范围隔离",
+      "delivered_scope": "实验室与现场反馈分开，审核和新决策联动；尚无真实路用监测和持续学习实证。",
+      "evidence_ids": [
+        "ev_5d29f352441420",
+        "ev_677eecff64930b"
+      ]
+    },
+    {
+      "id": "T07",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "多性能和小样本路线",
+      "requirement_paraphrase": "组成及环境输入，多性能预测、小样本策略和解释",
+      "status": "research_only",
+      "status_label": "多性能计算实验已有结果",
+      "delivered_scope": "独立模型与多任务方法均有历史分组实验；新回退规则仍有两项退步，尚不能证明四项稳定提升，未替换正式模型。",
+      "evidence_ids": [
+        "ev_90ba3c9d04870d",
+        "ev_5ca965c4390858",
+        "ev_6ebd65c29f76a5",
+        "ev_5dfb93ea0f9b5c"
+      ]
+    },
+    {
+      "id": "T08",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "预测解释",
+      "requirement_paraphrase": "材料参数到预测贡献和工程解释",
+      "status": "partial",
+      "status_label": "规则及证据解释可核查",
+      "delivered_scope": "可解释要求、适用性、冲突和模型研究边界；未据特征关联宣称材料因果影响。",
+      "evidence_ids": [
+        "ev_16f34fdd489bf4",
+        "ev_d059ea4ff51fc9"
+      ]
+    },
+    {
+      "id": "T09",
+      "kind": "technical_detail",
+      "source_page": 3,
+      "title": "养护决策接口及模块",
+      "requirement_paraphrase": "场景与方案标准数据格式、松耦合API和操作全流程",
+      "status": "prototype",
+      "status_label": "模块接口可本地模拟",
+      "delivered_scope": "上游决策ID、区段与材料返回值绑定；企业真实系统联调待开展。",
+      "evidence_ids": [
+        "ev_5d29f352441420",
+        "ev_30e09d545bb167"
+      ]
+    },
+    {
+      "id": "T10",
+      "kind": "technical_detail",
+      "source_page": 2,
+      "title": "材料工艺衔接",
+      "requirement_paraphrase": "材料组成和拌和、摊铺、压实条件的适配",
+      "status": "partial",
+      "status_label": "施工适用性检查",
+      "delivered_scope": "比较工法、层位、结构、设备和施工窗口；缺少条件时保留未知，未进行材料工艺联合优化。",
+      "evidence_ids": [
+        "ev_c006f853ddc097",
+        "ev_a1f3d217f1f464"
+      ]
+    },
+    {
+      "id": "X01",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "多目标配方优化",
+      "requirement_paraphrase": "有组成与模型依据的配方变量优化",
+      "status": "research_only",
+      "status_label": "配方假设与试验选点研究",
+      "delivered_scope": "731个假设位于既定观测支持范围内；支持按设计差异安排试验。RAP质量基准待确认，工程自动优化仍关闭。",
+      "evidence_ids": [
+        "ev_7569115faa2c19",
+        "ev_c8c472dc58fc14",
+        "ev_50a042b2b65bb5"
+      ]
+    },
+    {
+      "id": "X02",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "多性能协同预测",
+      "requirement_paraphrase": "任务间共享信息并公平验证",
+      "status": "research_only",
+      "status_label": "协同预测完成计算实验",
+      "delivered_scope": "降秩多任务等方法已做历史分组实验；四项可靠提升与外部泛化尚未证实，不将研究预测用于工程放行。",
+      "evidence_ids": [
+        "ev_90ba3c9d04870d",
+        "ev_12a2ee7903565a",
+        "ev_6ebd65c29f76a5"
+      ]
+    },
+    {
+      "id": "X03",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "置信度分析",
+      "requirement_paraphrase": "推荐风险和校准分析",
+      "status": "research_only",
+      "status_label": "单指标研究区间",
+      "delivered_scope": "现有分组校准结果不构成多指标联合达标概率或工程保证。",
+      "evidence_ids": [
+        "ev_90ba3c9d04870d"
+      ]
+    },
+    {
+      "id": "X04",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "生命周期成本或碳排",
+      "requirement_paraphrase": "具有可靠数据边界的效益评价",
+      "status": "pending_external",
+      "status_label": "成本碳排寿命待数据",
+      "delivered_scope": "需要统一计量边界、价格、因子和服役资料。",
+      "evidence_ids": [
+        "ev_67d3324771b86e"
+      ]
+    },
+    {
+      "id": "X05",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "实验室性能验证",
+      "requirement_paraphrase": "真实材料独立试验",
+      "status": "pending_external",
+      "status_label": "送检方案已备 独立试验待开展",
+      "delivered_scope": "已备五配方送检包与可保存的试验安排；没有实验室，新增独立材料试验为0，方法、试件数和计量口径待确认。",
+      "evidence_ids": [
+        "ev_67d3324771b86e",
+        "ev_138dd966658e86",
+        "ev_25c396a634cbe5"
+      ]
+    },
+    {
+      "id": "X06",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "实际接口联调",
+      "requirement_paraphrase": "与养护决策系统联调",
+      "status": "pending_external",
+      "status_label": "企业真实联调待开展",
+      "delivered_scope": "本地模拟只验证契约与软件流程。",
+      "evidence_ids": [
+        "ev_30e09d545bb167"
+      ]
+    },
+    {
+      "id": "X07",
+      "kind": "bonus",
+      "source_page": 4,
+      "title": "模型持续学习",
+      "requirement_paraphrase": "反馈数据积累后受控改进",
+      "status": "deferred",
+      "status_label": "受控持续学习待开展",
+      "delivered_scope": "审核反馈不自动赋予训练资格，不自动再训练或发布模型。",
+      "evidence_ids": [
+        "ev_5d29f352441420"
+      ]
+    }
+  ],
+  "evidence": {
+    "ev_c5f32a0f3214a0": {
+      "id": "ev_c5f32a0f3214a0",
+      "path": "backend/app/decision/demands.py",
+      "label": "demands.py",
+      "sha256": "21b1fb296e42abda6d272035ff31a19477189c28a6c6f00d3fbdf115c8cc5874"
+    },
+    "ev_af9c9eb1b4b503": {
+      "id": "ev_af9c9eb1b4b503",
+      "path": "frontend/src/components/DecisionWorkflow.tsx",
+      "label": "DecisionWorkflow.tsx",
+      "sha256": "115ddd0afb6f76e6896c86c34171af3f91ff902417a76a9d892f6d0ae0bca4be"
+    },
+    "ev_eb4680e4adcaf3": {
+      "id": "ev_eb4680e4adcaf3",
+      "path": "backend/app/review/assessment.py",
+      "label": "assessment.py",
+      "sha256": "3200d8af88cf718791c1e54d62863f9caad586fe9c6b193d79a03f03da568d0b"
+    },
+    "ev_b71a86a2f9fd6e": {
+      "id": "ev_b71a86a2f9fd6e",
+      "path": "docs/technical-report-v02.md",
+      "label": "technical-report-v02.md",
+      "sha256": "4e435c671766a7318d4d1cbb5d0ba793bd2dea547e11d6103ed2c3ff73393a2c"
+    },
+    "ev_eec5783cc7eda5": {
+      "id": "ev_eec5783cc7eda5",
+      "path": "configs/scene_rules_v2.json",
+      "label": "scene_rules_v2.json",
+      "sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7"
+    },
+    "ev_fbf75ea537ec49": {
+      "id": "ev_fbf75ea537ec49",
+      "path": "backend/app/decision/materials.py",
+      "label": "materials.py",
+      "sha256": "14fca7cbd9aeff93cea569b1b7c69cada48130c138d50d4c6cdcfc0f1ac65aa0"
+    },
+    "ev_0eaf7c27634d39": {
+      "id": "ev_0eaf7c27634d39",
+      "path": "artifacts/next-phase/case-reports/summary.json",
+      "label": "summary.json",
+      "sha256": "6dade08509e22cc9d54a3af730b122be1ca312250de98cca2b9c7e73f8a3eb0f"
+    },
+    "ev_09d50ae7c98fa2": {
+      "id": "ev_09d50ae7c98fa2",
+      "path": "artifacts/next-phase/conflict-certificates/C5.json",
+      "label": "C5.json",
+      "sha256": "fdbae93055f4b2c5cde9865d99e1513b593e254b9918d2b439fe74ccc1e3829c"
+    },
+    "ev_a3328baa3d7b48": {
+      "id": "ev_a3328baa3d7b48",
+      "path": "scripts/compare_cases_v2.py",
+      "label": "compare_cases_v2.py",
+      "sha256": "8749ffea748ba7899ef25745f0de1597f5c590638d2421cad5b78f1ee85c7418"
+    },
+    "ev_fa37de691ce4c4": {
+      "id": "ev_fa37de691ce4c4",
+      "path": "artifacts/review-phase/verification/cases.json",
+      "label": "cases.json",
+      "sha256": "b3ad6b3d0f91f653ce46d8e9dee303f823db99f9497ae8c445a006a666528a9f"
+    },
+    "ev_36d76ad6ec41cd": {
+      "id": "ev_36d76ad6ec41cd",
+      "path": "docs/api-v3.openapi.json",
+      "label": "api-v3.openapi.json",
+      "sha256": "548cbe1dd71b608c4fddf9dc98fb175d67819a4740f7cd42f3298fd932c0a5f4"
+    },
+    "ev_677eecff64930b": {
+      "id": "ev_677eecff64930b",
+      "path": "docs/feedback-contract-v2.json",
+      "label": "feedback-contract-v2.json",
+      "sha256": "a7caaef695efdb5d518071de48835a782d38ea2f0e8e927cd605023e9032a2e8"
+    },
+    "ev_b335630551682c": {
+      "id": "ev_b335630551682c",
+      "path": "README.md",
+      "label": "README.md",
+      "sha256": "8a7e605c4b2fc0b0f516f0aa21ff54f3ce9b8c3c65978f44467e88fef4cb0d65"
+    },
+    "ev_a1c91f302006f5": {
+      "id": "ev_a1c91f302006f5",
+      "path": "docs/external-validation-schema-v3.json",
+      "label": "external-validation-schema-v3.json",
+      "sha256": "b42a8289f22c6ee53b6e87c882c7767faa29d6850ef5d7bb510f3768c35579ce"
+    },
+    "ev_e0460cd818e482": {
+      "id": "ev_e0460cd818e482",
+      "path": "artifacts/next-phase/workflow-value.json",
+      "label": "workflow-value.json",
+      "sha256": "668e0413652ff6370c7d24408b0156e7816edbf6f9b35829b5802d4000b1afc0"
+    },
+    "ev_4c1fbefa4cc5fc": {
+      "id": "ev_4c1fbefa4cc5fc",
+      "path": "docs/value-evaluation-notes.md",
+      "label": "value-evaluation-notes.md",
+      "sha256": "b24d71fc3cf5aaa88bffc2775e95b1bafc0756335816eaeccd3b8fc60fa230ee"
+    },
+    "ev_f98aae8db75487": {
+      "id": "ev_f98aae8db75487",
+      "path": "artifacts/next-phase/human-validation-scope-confirmation.json",
+      "label": "human-validation-scope-confirmation.json",
+      "sha256": "7998b7d8217644d9f261b2cff708032dc91fc86f91726b39e5c6874fae596f76"
+    },
+    "ev_7c09053aceeef6": {
+      "id": "ev_7c09053aceeef6",
+      "path": "backend/app/decision/rules.py",
+      "label": "rules.py",
+      "sha256": "b5e2eb5309ddd0b75c80e9d3bf4e8b645eba37312c4bf1fdd39be0d34e537c56"
+    },
+    "ev_8ba683d8d82e4c": {
+      "id": "ev_8ba683d8d82e4c",
+      "path": "backend/app/decision/comparison.py",
+      "label": "comparison.py",
+      "sha256": "7d4214e6b4631dc8423966ffa15e8c0c0f3d4dbcf76fde5c411eaa30a4b24b0e"
+    },
+    "ev_c006f853ddc097": {
+      "id": "ev_c006f853ddc097",
+      "path": "backend/app/decision/eligibility.py",
+      "label": "eligibility.py",
+      "sha256": "52dbfa69d357367e865fac9b736be29a6f08866f2356f5a5bc8b102c29a48135"
+    },
+    "ev_59e5a2129d5df0": {
+      "id": "ev_59e5a2129d5df0",
+      "path": "backend/app/decision/candidate_pool.py",
+      "label": "candidate_pool.py",
+      "sha256": "e0b13c5f22d2d513c3ff7590918e36f35b7e277c96bd65124b53c47d081079ee"
+    },
+    "ev_7569115faa2c19": {
+      "id": "ev_7569115faa2c19",
+      "path": "configs/features.json",
+      "label": "features.json",
+      "sha256": "c8fad186b736f598344207407e87bd299622ebd39db6065d305081a4ecbc63b0"
+    },
+    "ev_2b0782f864da4f": {
+      "id": "ev_2b0782f864da4f",
+      "path": "frontend/src/components/MaterialSchemeCard.tsx",
+      "label": "MaterialSchemeCard.tsx",
+      "sha256": "b93f6e379de9b42b0cda335e0794a25d83f65c7c1a1de5f3ef924c94e405c6d0"
+    },
+    "ev_78dd87752928e5": {
+      "id": "ev_78dd87752928e5",
+      "path": "frontend/src/components/CandidateEvidence.tsx",
+      "label": "CandidateEvidence.tsx",
+      "sha256": "356469aa1010871dd4fb14135cd0c24d478e9eb78a1e1f85677a34a4acef4351"
+    },
+    "ev_5d29f352441420": {
+      "id": "ev_5d29f352441420",
+      "path": "backend/app/decision/integration.py",
+      "label": "integration.py",
+      "sha256": "71ef16ef174313a42bbb7fb7e6ede407e2d3d4313354bde5d6675ad848b98310"
+    },
+    "ev_90ba3c9d04870d": {
+      "id": "ev_90ba3c9d04870d",
+      "path": "artifacts/models/model_cards.json",
+      "label": "model_cards.json",
+      "sha256": "757b94944ce31cffa16914cc16e371c6b13d75ead3dddf32398098e933dfb7a0"
+    },
+    "ev_5ca965c4390858": {
+      "id": "ev_5ca965c4390858",
+      "path": "backend/app/decision/model_view.py",
+      "label": "model_view.py",
+      "sha256": "924bf70febcc5cc24cdeab661df998be637f994955b6c5b5b7955570bc14fa4e"
+    },
+    "ev_16f34fdd489bf4": {
+      "id": "ev_16f34fdd489bf4",
+      "path": "backend/app/decision/diagnosis.py",
+      "label": "diagnosis.py",
+      "sha256": "f968bc868e6f613ead2ccc5a2ea74adeb41d350d9203bac8a62bd68df256b1a3"
+    },
+    "ev_d059ea4ff51fc9": {
+      "id": "ev_d059ea4ff51fc9",
+      "path": "frontend/src/components/PredictionValidation.tsx",
+      "label": "PredictionValidation.tsx",
+      "sha256": "651b432dd2d1fd1114a217a76c753f7e7c654d77e9d2dd00626af6aba850442d"
+    },
+    "ev_30e09d545bb167": {
+      "id": "ev_30e09d545bb167",
+      "path": "scripts/mock_upstream_v2.py",
+      "label": "mock_upstream_v2.py",
+      "sha256": "d45d742962b380a1d3749e737f96f12b1042743715d4ce0dc8d72a6e56b2a4de"
+    },
+    "ev_a1f3d217f1f464": {
+      "id": "ev_a1f3d217f1f464",
+      "path": "docs/evidence-applicability-policy.md",
+      "label": "evidence-applicability-policy.md",
+      "sha256": "01cdbf62be5d1d0c3cc35ec769df3401c7228465f5ff580085c2412e46cc4771"
+    },
+    "ev_67d3324771b86e": {
+      "id": "ev_67d3324771b86e",
+      "path": "docs/enterprise-questions.md",
+      "label": "enterprise-questions.md",
+      "sha256": "403f2e34677ab91e032790aa41d20b5c88371070c6350b8fb58da238d5ecb0ac"
+    },
+    "ev_833da2158d1566": {
+      "id": "ev_833da2158d1566",
+      "path": "docs/api-research-v4.openapi.json",
+      "label": "api-research-v4.openapi.json",
+      "sha256": "8368c3c1132667717fe056e78382a47b74da6471a718b593a66ff5dac1c72390"
+    },
+    "ev_25c396a634cbe5": {
+      "id": "ev_25c396a634cbe5",
+      "path": "docs/research-workbench-v5.md",
+      "label": "research-workbench-v5.md",
+      "sha256": "11aec72010297d532f22db9448f42cf7b9c174d5b2b9f81c85e6f1c274f331d1"
+    },
+    "ev_50a042b2b65bb5": {
+      "id": "ev_50a042b2b65bb5",
+      "path": "backend/app/research_workbench/service.py",
+      "label": "service.py",
+      "sha256": "c7a6ae84cab9f1eb6392e240a9328c24e9f44853bb48a6e5b70a628ff42736a1"
+    },
+    "ev_c8c472dc58fc14": {
+      "id": "ev_c8c472dc58fc14",
+      "path": "artifacts/research-v04/formulation-search.json",
+      "label": "formulation-search.json",
+      "sha256": "4fbf4bfcf7018abdfee75a0c1a8618731063151f2ae83c02f218aa85e5ece9f3"
+    },
+    "ev_6ebd65c29f76a5": {
+      "id": "ev_6ebd65c29f76a5",
+      "path": "artifacts/research-workbench/head-fallback.json",
+      "label": "head-fallback.json",
+      "sha256": "706dbe75a12eb428e94c8ba7462a4d139461bf16c3b8bc4ff1084a2ec8aa301b"
+    },
+    "ev_5dfb93ea0f9b5c": {
+      "id": "ev_5dfb93ea0f9b5c",
+      "path": "artifacts/research-workbench/study-verification.json",
+      "label": "study-verification.json",
+      "sha256": "53f4aaf2b88e732e570823f4f4bf16a6c271386174ca6d3e32b17e0454d60c8a"
+    },
+    "ev_12a2ee7903565a": {
+      "id": "ev_12a2ee7903565a",
+      "path": "artifacts/research-v04/advanced.json",
+      "label": "advanced.json",
+      "sha256": "47317d7e06698429dd7ebfbaaf47dc1836636e05985fb4881053403d3282fa46"
+    },
+    "ev_138dd966658e86": {
+      "id": "ev_138dd966658e86",
+      "path": "artifacts/research-v04/laboratory-handoff.zip",
+      "label": "laboratory-handoff.zip",
+      "sha256": "2a89048dad08b97104364ad732fb1885d341efe1a5e84b09e5d315c9ca6c7ebb"
+    }
+  },
+  "sources": [
+    {
+      "id": "mot-5521-2019",
+      "title": "公路沥青路面再生技术规范发布公告",
+      "standard": "JTG/T 5521—2019",
+      "authority": "交通运输部",
+      "type": "推荐性行业标准发布公告",
+      "notice_date": "2019-08-21",
+      "page_publication_date": "2019-08-29",
+      "effective_date": "2019-11-01",
+      "replaces": "JTG F41—2008",
+      "url": "https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313172.html",
+      "verified_on": "2026-10-19",
+      "verification_scope": "核对官方发布公告中的名称、性质、施行日期和替代关系；项目适用及具体条款另行核定。",
+      "thresholds_authorized": false
+    },
+    {
+      "id": "mot-3410-2025",
+      "title": "公路工程沥青及沥青混合料试验规程发布公告",
+      "standard": "JTG 3410—2025",
+      "authority": "交通运输部",
+      "type": "强制性行业标准发布公告",
+      "notice_date": "2025-06-13",
+      "page_publication_date": "2025-08-22",
+      "effective_date": "2025-10-01",
+      "replaces": "JTG E20—2011",
+      "url": "https://xxgk.mot.gov.cn/jigou/glj/202508/t20250822_4175218.html",
+      "verified_on": "2026-10-19",
+      "verification_scope": "核对官方发布公告；不据新规程倒填历史试验方法、条件或日期。",
+      "thresholds_authorized": false
+    }
+  ],
+  "highlights": [
+    {
+      "id": "conflict",
+      "title": "要求冲突有范围、有见证",
+      "question": "为什么当前没有候选，先复核哪项要求？",
+      "case_id": "C5",
+      "mechanism": "四态硬约束、冻结候选池、最小冲突与删除见证。",
+      "steps": [
+        "先看含缺测的完整目录：证据不足。",
+        "明确切换完整数值子池：检查四组冲突。",
+        "展开删除任一要求后的候选见证和原值。"
+      ],
+      "boundary": "结论只对声明的需求与候选池成立；最小冲突算法本身不作为原创数学方法。"
+    },
+    {
+      "id": "evidence",
+      "title": "材料方案沿证据追到原值",
+      "question": "为什么能比较，哪里还不能用于工程？",
+      "case_id": "C1",
+      "mechanism": "完整材料、方法条件、原单元格与材料版本共同约束比较。",
+      "steps": [
+        "查看数值满足候选的材料组成与未披露项。",
+        "从性能证据追到来源表格和单元格。",
+        "检查复核单中的方法、条件和身份缺口。"
+      ],
+      "boundary": "已知数值满足与工程适用分别检查；未披露改性剂不推断为零。"
+    },
+    {
+      "id": "validation",
+      "title": "把未知变成下一步核验行动",
+      "question": "还差什么证据，下一步做哪项验证？",
+      "case_id": "C2",
+      "mechanism": "候选、项目、条件、理由、停止规则绑定同一次决策。",
+      "steps": [
+        "查看待核验候选及基础验证卡。",
+        "微调组成后重新检索，检查父实测失效。",
+        "导出复核单并下载真实核验模板。"
+      ],
+      "boundary": "当前为规则型基础建议，高级主动补测和真实节约收益尚未验证。"
+    }
+  ],
+  "questions": [
+    {
+      "question": "符合赛题哪一项核心要求？",
+      "answer": "对应企业课题一的场景到材料推荐核心流程，覆盖三类结构化场景与五个基准对照案例。详细技术要求和加分项各自标注交付范围。",
+      "requirement_ids": [
+        "B01",
+        "B02",
+        "B03"
+      ]
+    },
+    {
+      "question": "创新点在哪，是否只是筛表？",
+      "answer": "新增价值在要求来源、适用性、范围内冲突与下一步验证的贯通。需求正确给定时，强B1与V2数值可行集一致，未声称筛选准确率提升。",
+      "requirement_ids": [
+        "T01",
+        "T03",
+        "T08"
+      ]
+    },
+    {
+      "question": "阈值来自规范吗？",
+      "answer": "基础参考来自企业工作簿，强化阈值来自明确的团队构造假设。官方公告只登记标准版本；正式项目需要适用条款和批准依据。",
+      "requirement_ids": [
+        "T01"
+      ]
+    },
+    {
+      "question": "为什么84条没有冲突证书，35条却有？",
+      "answer": "完整目录包含缺测，不能以未知证明无解。35条是明确选择的完整数值演示子池，只在该范围验证四组包含最小冲突。",
+      "requirement_ids": [
+        "B03",
+        "T08"
+      ]
+    },
+    {
+      "question": "AI模型效果怎样？",
+      "answer": "正式独立模型仍保留研究状态。已开展多任务与集成实验；本轮固定小模型集成的弯拉应变MAE在十次分组平均下降4.51%，但没有证明四项都可靠改善。新逐指标回退仍有退步，预测不替代实测。",
+      "requirement_ids": [
+        "T07",
+        "X02",
+        "X03"
+      ]
+    },
+    {
+      "question": "能设计任意新配方吗？",
+      "answer": "提供1098个待试验计算假设及组分改动对比，可保存小批配方试验安排。它们没有新增实测，不能继承父配方结论；任意新配方可靠优化仍受质量基准和验证证据限制。",
+      "requirement_ids": [
+        "T04",
+        "X01"
+      ]
+    },
+    {
+      "question": "节省多少时间、成本或碳排？",
+      "answer": "目前完成AI软件自测，真人用时、价格、碳排及寿命收益待真实数据验证。可核查的是流程审计与未知处理，不能从API时延推算人工节时。",
+      "requirement_ids": [
+        "B05",
+        "X04"
+      ]
+    },
+    {
+      "question": "企业能继续使用哪些成果？",
+      "answer": "可交接数据结构、规则、接口、代码、模型档案与复现包；需要继续确认材料身份、试验口径、真实需求和企业系统接口。",
+      "requirement_ids": [
+        "B04",
+        "T09",
+        "X06"
+      ]
+    }
+  ],
+  "scope_note": "状态为团队对本地原型的证据登记，不代表官方评分、专家认可或工程批准。",
+  "external_pending": [
+    "真实场景与阈值适用确认",
+    "材料身份和RAP质量基准",
+    "独立材料与现场试验",
+    "真人完整任务测时",
+    "企业真实接口联调"
+  ],
+  "human_participants": 0,
+  "actual_human_hours": null,
+  "conditional_research": "deferred",
+  "current_document_updates": {
+    "updated_at": "2026-10-19T10:18:38.411552+00:00",
+    "scope": "v0.4运行说明与配方研究入口；历史工程验证状态沿用原登记",
+    "changes": [
+      {
+        "evidence_id": "ev_b335630551682c",
+        "path": "README.md",
+        "previous_sha256": "bc4cc66096d9fdc25e31e24bb9c53ff00b7506309baaffd2dcdbae13d46e8737",
+        "current_sha256": "8a7e605c4b2fc0b0f516f0aa21ff54f3ce9b8c3c65978f44467e88fef4cb0d65"
+      }
+    ],
+    "previous_registry": "artifacts/research-workbench/previous-review-evidence-v3.json",
+    "previous_registry_sha256": "83b80c299767ebe7cd19ffb802cc756ac1496a21c1c6199a39c8ee237153b4e3"
+  },
+  "research_workbench_update": {
+    "updated_at": "2026-10-19T10:22:55.257597+00:00",
+    "application_version": "0.4.0",
+    "requirement_ids": [
+      "B04",
+      "T04",
+      "T07",
+      "X01",
+      "X02",
+      "X05"
+    ],
+    "independent_material_tests": 0,
+    "production_model_promoted": false,
+    "previous_registry": "artifacts/research-workbench/previous-review-evidence-v3.json",
+    "scope": "更新当前进度与证据；历史冻结研究文件和旧交付包保留原样。"
+  }
+}

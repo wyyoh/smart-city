@@ -134,13 +134,12 @@ export function ResearchWorkbench() {
     } finally { setBusy(false); }
   }
   return <div className="rw-root">
-    <div className="rw-heading"><div><h1>配方研究与试验安排</h1><p>查看实际改动与原表依据，安排下一轮值得检测的配方。</p></div>
-      <div className="rw-downloads"><a className="rw-outline" href={`${researchBase}/evidence/report`}><Download size={15} />研究报告</a>
-        <a className="rw-action" href={`${researchBase}/evidence/lab_handoff`}><Download size={15} />五配方送检包</a></div></div>
+    <div className="rw-heading"><div><h1>配方研究与设计探索</h1><p>比较配方改动与原表依据，展示设计思路；试验安排作为可选拓展。</p></div>
+      <div className="rw-downloads"><a className="rw-outline" href={`${researchBase}/evidence/report`}><Download size={15} />计算研究报告</a></div></div>
     {error && <div className="message error" role="alert"><span>{error}</span><button aria-label="关闭研究错误" onClick={() => setError("")}><X size={16} /></button></div>}
     {overview && !overview.compatibility.matches && <p className="rw-note" role="alert">{overview.compatibility.reason}</p>}
-    <p className="rw-scope">{overview ? `${overview.counts.hypotheses}个未试验假设 · ${overview.counts.within_observed_support}个在当前观测范围内 · 新增独立材料试验0次` : "正在读取研究范围…"}</p>
-    <div className="rw-tabs" role="tablist" aria-label="研究内容">{[{ id: "candidates", label: "候选与试验计划" }, { id: "experiments", label: "模型实验" }, { id: "audit", label: "原表复核" }].map(t =>
+    <p className="rw-scope">{overview ? `${overview.counts.hypotheses}个设计假设 · ${overview.counts.within_observed_support}个在当前观测范围内 · 用于创意设计探索` : "正在读取研究范围…"}</p>
+    <div className="rw-tabs" role="tablist" aria-label="研究内容">{[{ id: "candidates", label: "候选与方案探索" }, { id: "experiments", label: "计算研究参考" }, { id: "audit", label: "原表复核" }].map(t =>
       <button key={t.id} role="tab" aria-selected={tab === t.id} className={tab === t.id ? "active" : ""} onClick={() => setTab(t.id)}>{t.label}</button>)}</div>
     {tab === "candidates" && <>
       <div className="rw-filters"><label>来源代码<select value={filters.source} onChange={e => updateFilters({ source: e.target.value })}><option value="">全部来源代码</option>{overview?.sources.map(s => <option key={s}>{s}</option>)}</select></label>
@@ -148,7 +147,7 @@ export function ResearchWorkbench() {
         <label>检索配方<div className="rw-search"><Search size={15} /><input value={filters.q} placeholder="级配、产品或配方编号" onChange={e => updateFilters({ q: e.target.value })} /></div></label>
         <label className="rw-checkbox"><input type="checkbox" checked={filters.supported_only} onChange={e => updateFilters({ supported_only: e.target.checked })} />仅看观测范围内</label></div>
       <div className="rw-candidate-layout"><section className="rw-catalog" aria-label="研究配方目录">
-        <div className="rw-list-heading"><h2>待测配方</h2><span>{list ? `当前筛选 ${list.total} 个` : "正在筛选…"}</span></div>
+        <div className="rw-list-heading"><h2>候选设计假设</h2><span>{list ? `当前筛选 ${list.total} 个` : "正在筛选…"}</span></div>
         {!list ? <Loading /> : list.items.length === 0 ? <div className="rw-empty"><p>当前范围没有配方。</p><button className="rw-outline" onClick={() => updateFilters({ source: "", kind: "all", supported_only: true, q: "" })}>重置筛选</button></div> : <>
           <div className="rw-table-scroll"><table className="rw-table rw-catalog-table"><thead><tr><th>来源与级配</th><th>改动</th><th>油石比</th><th>查看</th></tr></thead><tbody>
             {list.items.map(row => <tr key={row.id} className={selected === row.id ? "rw-selected" : ""}><td>{row.source_code} · {row.gradation}<small>{row.product}{pinned.includes(row.id) ? " · 已手动加入" : ""}</small></td>
@@ -157,7 +156,8 @@ export function ResearchWorkbench() {
           </tbody></table></div><div className="rw-pagination"><button disabled={offset === 0} onClick={() => setOffset(Math.max(0, offset - 10))}>上一页</button>
             <span>{offset + 1}–{Math.min(offset + 10, list.total)} / {list.total}</span><button disabled={offset + 10 >= list.total} onClick={() => setOffset(offset + 10)}>下一页</button></div></>}
       </section><div>{detail && detail.summary.id === selected ? <Detail value={detail} pinned={pinned.includes(detail.summary.id)} toggle={togglePin} /> : selected ? <Loading /> : <div className="rw-detail rw-empty">选择配方后查看份额变化和性能依据。</div>}</div></div>
-      <section className="rw-plan-section"><div className="rw-section-heading"><div><h2><FlaskConical size={18} />安排待确认试验</h2><p>分散来源代理组，再覆盖设计差异。手动加入{pinned.length}种配方；当前筛选共{list?.total ?? "—"}种。</p></div></div>
+      <details className="rw-plan-section"><summary>后续试验安排（可选）</summary><div className="rw-section-heading"><div><h2><FlaskConical size={18} />保存可选试验计划</h2><p>本次创意交付无需开展实物试验。手动加入{pinned.length}种配方；当前筛选共{list?.total ?? "—"}种。</p></div>
+        <a className="rw-outline" href={`${researchBase}/evidence/lab_handoff`}><Download size={15} />五配方送检参考</a></div>
         <div className="rw-plan-inputs"><label>计划名称<input value={title} maxLength={120} onChange={e => setTitle(e.target.value)} /></label><label>待测配方数量<input type="number" min={Math.max(1, pinned.length)} max={8} value={budget} onChange={e => setBudget(Math.max(1, pinned.length, Math.min(8, Number(e.target.value) || 1)))} /></label>
           <button className="rw-action" disabled={busy || !overview?.compatibility.matches || !list?.total || !title.trim()} onClick={() => void generate()}>{busy && <LoaderCircle className="spin" size={16} />}生成并保存计划</button></div>
         <p className="rw-explanation">这里安排的是配方数量。实际称料表、试件数、方法、费用和工期需另行确认；预测不作为达标依据。</p>
@@ -168,7 +168,7 @@ export function ResearchWorkbench() {
           <p>{plan.selection_method}</p><details><summary>试验前需要确认的资料</summary><ol>{plan.required_before_testing.map(t => <li key={t}>{t}</li>)}</ol></details>
           <small className="rw-id">保存内容 SHA256：{plan.sha256}</small><p className="rw-explanation">这份保存内容对应生成时的筛选与研究证据。调整筛选后可生成另一份计划。</p>
         </article>}
-      </section>
+      </details>
     </>}
     {tab === "experiments" && (!overview ? <Loading /> : <section className="rw-experiments"><h2>逐指标回退：接受多少预测，实际误差如何</h2>
       <p>{overview.latest_experiment.repeats}次分组、{overview.latest_experiment.outer_folds}个外层折，全部预测{overview.latest_experiment.exact_reproduction ? "逐值复现通过" : "尚未复核"}。MAE越低越好。</p>

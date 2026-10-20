@@ -77,7 +77,7 @@ def handbook_html(overview):
     body = f'''<header><small>企业课题一　评审阅读与演示指引</small><h1>数智选材成果与证据手册</h1><p class="lead">场景要求、材料证据、冲突解释与下一步验证。</p><button onclick="window.print()">打印或保存为 PDF</button></header>
 <p>作品把养护场景接到材料方案选择，展示推荐依据、未知条件和验证行动。当前为本地研究原型。</p><div class="scope">{e(overview['scope_note'])}<p>当前历史操作键{current['historical_keys']}条，AC-13目录{current['ac13_keys']}条，四指标数值完整{current['complete_four_metric_ac13_keys']}条。{e(current['identity_note'])}</p></div>
 <h2>五项基本成果</h2>{table(basic)}<h2>同池案例与复核</h2><p>{e(overview['case_replay']['scope'])}。这些结果是构造软件案例回放，未据此推算真实地区推荐成功率或行业收益。数值要求正确给定时，B1与V2可行集一致。</p>{case_table}<h2>三条亮点演示</h2>{highlights}
-<h2>详细技术要求的完成范围</h2>{table(technical)}<h2>加分方向及外部验证</h2>{table(bonus)}
+<h2>详细技术要求的完成范围</h2>{table(technical)}<h2>可选加分方向</h2>{table(bonus)}
 <h2>依据版本登记</h2>{sources}<p>构造阈值保留原身份；官方公告不能单独证明项目阈值适用。</p>
-<h2>答辩问答</h2>{qas}<h2>外部核验下一步</h2><ul>''' + ''.join('<li>'+e(s)+'</li>' for s in overview['external_pending']) + '''</ul><p>空白核验模板在成果入口下载；字段校验只检查格式与配对，不认证真实证据。</p>'''
+<h2>答辩问答</h2>{qas}<h2>后续工程化拓展（可选）</h2><p>{e(overview.get('submission_scope', {}).get('engineering_extension_note', '后续工程使用可另行核验。'))}</p><ul>''' + ''.join('<li>'+e(s)+'</li>' for s in overview['external_pending']) + '''</ul><p>空白核验模板在成果入口下载；字段校验只检查格式与配对，不认证真实证据。</p>'''
     return shell('数智选材成果与证据手册', body)

@@ -284,7 +284,7 @@ function App() {
                     data: "数据目录与质量",
                     observations: "试验审核工作区",
                     models: "模型基准与适用域",
-                    research: "配方研究与试验安排",
+                    research: "配方研究与设计探索",
                     reports: "可追溯方案报告",
                   } as Record<string, string>
                 )[route]

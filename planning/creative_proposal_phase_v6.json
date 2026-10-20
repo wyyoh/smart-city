@@ -1,0 +1,25 @@
+{
+  "title": "数智选材创意方案深化与参赛表达",
+  "status": "planned",
+  "effective_date": "2026-10-20",
+  "supersedes_active_scope_of": ["planning/research_workbench_v5.json"],
+  "scope_authority": "configs/creative_scope_v6.json",
+  "team": "单人",
+  "weekly_hours": "15–20",
+  "deadline": null,
+  "planned_hours": 18,
+  "buffer_hours": 2,
+  "total_hours": 20,
+  "estimated_duration": "按每周15–20小时，约1至2周；不设虚构提交截止日",
+  "objective": "把创新机制、实用场景与技术可行性讲透，形成可演示、可答辩的创意作品。",
+  "tasks": [
+    {"id": "C01", "status": "planned", "hours": 4, "deliverable": "完整创意技术方案", "acceptance": "说明场景到需求、目标到候选、多任务预测、材料与工艺适配、反馈接口的输入输出和算法逻辑；明确已有实现与拟议设计。"},
+    {"id": "C02", "status": "planned", "hours": 4, "deliverable": "三项亮点的交互故事与展示打磨", "acceptance": "场景驱动推荐、冲突解释、人机协同微调各有一个问题、一个机制和可演示结果；说明相对人工查表增加的决策价值。"},
+    {"id": "C03", "status": "planned", "hours": 4, "deliverable": "五个案例的答辩材料", "acceptance": "沿用C1至C5，每案明确约束、候选、理由、性能预期或适用性判断、同池基准对照，保留构造案例身份。"},
+    {"id": "C04", "status": "planned", "hours": 3, "deliverable": "实用性与落地路线", "acceptance": "说明工程师如何使用、现有数据为何可用、缺失字段如何处理、如何对接企业；收益用案例解释或明确假设的情景测算。"},
+    {"id": "C05", "status": "planned", "hours": 3, "deliverable": "参赛说明、演示脚本与答辩问答", "acceptance": "清楚回答新在哪里、解决什么、为什么可行，并区分创意交付与后续工程化拓展。"}
+  ],
+  "not_required_for_this_submission": ["新开展实物材料实验或送检", "真人操作测时", "企业生产系统真实联调", "部署正式在线持续学习", "证明四项预测模型均显著优于均值基线"],
+  "retain_as_optional_references": ["已有计算实验", "源数据复核清单", "送检方案", "外部核验模板"],
+  "completion_rule": "按创意新颖性、方案自洽性、数据来源可行性、技术路线清晰度、核心原型与案例表达验收，不以实物实验完成与否判断作品完成。"
+}
