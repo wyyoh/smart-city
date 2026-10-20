@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-20T04:15:17.750704+00:00",
+  "status": "passed",
+  "validated_git_tree": "29c55e32a53452fb21e8acce1cb5c4330646ef49",
+  "restored_assets": 13,
+  "core_application": {
+    "status": "passed",
+    "historical_keys": 180,
+    "supported_designs": 731,
+    "saved_demo_decisions": 6,
+    "review_evidence_verified": 43,
+    "protected_legacy_files": 84,
+    "original_database_tables_unchanged": 6,
+    "frontend_static_assets": "passed",
+    "creative_scope_preserved": true,
+    "new_formulation_performance_remains_unknown": true
+  },
+  "scope": "Independent Git export and asset restoration using the prepared dependency environment; dependency installation on a second physical computer was not performed."
+}

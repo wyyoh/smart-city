@@ -6,6 +6,8 @@ v0.4定位为创意方案与可演示原型，重点展示场景驱动推荐、�
 
 ## 运行
 
+从GitHub克隆的新目录先执行 `scripts/setup.ps1`，它会校验并恢复随仓库提供的压缩运行资源，再安装依赖和构建前端。使用 `scripts/start-local.ps1 -Demo` 可查看已有决策与复核记录的演示库；完整步骤和证据索引见 [GitHub交接说明](docs/github-handoff.md)。
+
 当前机器环境已准备好，在项目目录执行：
 
 ```powershell

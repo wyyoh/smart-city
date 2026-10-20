@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-20T04:09:45.690277+00:00",
+  "application_version": "0.4.0",
+  "archive": {
+    "path": "artifacts/distribution/runtime-assets.zip",
+    "bytes": 28261944,
+    "sha256": "669b7c6115a592921ed9cd9320124e2e4159d2a1628a48da9121294212b29638"
+  },
+  "files": [
+    {
+      "path": "artifacts/models/DS.joblib",
+      "bytes": 116707,
+      "sha256": "9474efdd2ab6811537ea9b3fb11b4396290d0a98e7d72acce75631163730e240",
+      "preserve_existing": false
+    },
+    {
+      "path": "artifacts/models/TSR.joblib",
+      "bytes": 34619,
+      "sha256": "5035aff7afa0c1b3eaf42f76c465ac544ca4a33fe91c546b3a1533f06460d003",
+      "preserve_existing": false
+    },
+    {
+      "path": "artifacts/models/residual.joblib",
+      "bytes": 28083,
+      "sha256": "47ea7b7e41b098e92b9e97ebd633297c13314f65e6bf33a0755f37d90952426c",
+      "preserve_existing": false
+    },
+    {
+      "path": "artifacts/models/strain.joblib",
+      "bytes": 226251,
+      "sha256": "8987708074f559e4604aeaa84e69d8cc6a4d2f63825887a7d2c4960812508320",
+      "preserve_existing": false
+    },
+    {
+      "path": "artifacts/next-phase/baseline/workbench-v01.sqlite",
+      "bytes": 38723584,
+      "sha256": "75dbf17ee73677d7d552174b1c2ad029bd7a9b7489e6fdd6dc3a5ae393a09622",
+      "preserve_existing": false
+    },
+    {
+      "path": "artifacts/release/asphalt-workbench-0.2.0-20261019T054226.zip",
+      "bytes": 7944472,
+      "sha256": "8933f363d7880f6f386a0fc768bcc796c160876f85e105d5405570ce32af059b",
+      "preserve_existing": false
+    },
+    {
+      "path": "artifacts/release/asphalt-workbench-0.3.0-20261019T073332.zip",
+      "bytes": 9260077,
+      "sha256": "72e7e05a9c338d456f648e66bbcdb22b48e39d6be28254d1a665c9a5ea56e68e",
+      "preserve_existing": false
+    },
+    {
+      "path": "artifacts/review-phase/demo.sqlite",
+      "bytes": 64315392,
+      "sha256": "1628a97d9af9e3d720e73e7e1df0fa827bebd8769f2976f4ae21336ca163ef4c",
+      "preserve_existing": true
+    },
+    {
+      "path": "data/workbench.sqlite",
+      "bytes": 38723584,
+      "sha256": "624862ee54e8282eb00a81713f0bc2c7d800fa5ddd435a5e1089b395278464a6",
+      "preserve_existing": true
+    },
+    {
+      "path": "frontend/dist/assets/index-3Z0BEq6E.js",
+      "bytes": 354048,
+      "sha256": "5daf96114cd63cff0188621c54635dabcbe462d6f94e6a5698574ee5f48903d0",
+      "preserve_existing": true
+    },
+    {
+      "path": "frontend/dist/assets/index-QP7nw_7a.css",
+      "bytes": 54020,
+      "sha256": "12fabb60f1eed8f7ca2674cd7a5f5d5c9cd6966d1adbbe8c23eb80e068ddb161",
+      "preserve_existing": true
+    },
+    {
+      "path": "frontend/dist/favicon.svg",
+      "bytes": 255,
+      "sha256": "4540898141c074e3b6c6c81d3d476d7b0c163375a8c6abe4b0d90f733f3e914d",
+      "preserve_existing": true
+    },
+    {
+      "path": "frontend/dist/index.html",
+      "bytes": 536,
+      "sha256": "e2b811f9a3ba94100e70eac778e735e4baec4e4534619c8ea671493538178e74",
+      "preserve_existing": true
+    }
+  ],
+  "scope": "Existing runtime snapshots, frozen research input, research-only models, frontend build, historical final releases.",
+  "restoration": "python scripts/restore_published_assets.py",
+  "notes": [
+    "Existing mutable databases are preserved. No credentials, dependency folders, or temporary QA databases are bundled.",
+    "Material experiments remain optional; snapshots do not add material measurements."
+  ]
+}

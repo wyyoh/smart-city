@@ -1,4 +1,5 @@
-* text=auto eol=lf
+# Historical evidence includes raw-file SHA256 hashes; preserve checkout bytes.
+* -text whitespace=cr-at-eol
 *.xlsx binary
 *.pdf binary
 *.mp4 binary

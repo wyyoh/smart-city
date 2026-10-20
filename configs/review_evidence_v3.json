@@ -421,7 +421,7 @@
       "id": "ev_b335630551682c",
       "path": "README.md",
       "label": "README.md",
-      "sha256": "88422aebdf79fa67e7bc2f17a6df4d2bbdeea2f13235a59d37407473005bb178"
+      "sha256": "b88c63c18ab4bc32556b09eb0d529b7656ad418541b8233563517dc12d63c268"
     },
     "ev_a1c91f302006f5": {
       "id": "ev_a1c91f302006f5",
@@ -836,7 +836,7 @@
     }
   },
   "creative_scope_update": {
-    "updated_at": "2026-10-20T03:50:01.525819+00:00",
+    "updated_at": "2026-10-20T04:09:46.113663+00:00",
     "policy": "configs/creative_scope_v6.json",
     "user_instruction": "我们的目标就是提供创意方案，要有创新性和实用性即可，不需要真的实际做实验验证",
     "previous_registry": "artifacts/creative-scope/previous-review-registry.json",

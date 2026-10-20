@@ -8,6 +8,10 @@ if(-not(Test-Path -LiteralPath '.venv\Scripts\python.exe')){
     & $Python -m venv .venv
     if($LASTEXITCODE -ne 0){throw 'venv creation failed.'}
 }
+if(Test-Path -LiteralPath 'artifacts\distribution\runtime-assets.json'){
+    & .venv\Scripts\python.exe -X utf8 scripts/restore_published_assets.py
+    if($LASTEXITCODE -ne 0){throw 'Published runtime asset restoration failed.'}
+}
 & .venv\Scripts\python.exe -m pip install -r requirements.lock.txt
 if($LASTEXITCODE -ne 0){throw 'Python dependency installation failed.'}
 pnpm --dir frontend install --frozen-lockfile

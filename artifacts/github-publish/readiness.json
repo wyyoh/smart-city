@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-10-20T04:13:12.508817+00:00",
+  "target_repository": "https://github.com/wyyoh/smart-city",
+  "target_branch": "main",
+  "authorization": "User explicitly requested publishing the completed project and evidence to this main branch.",
+  "source_base_revision": "129a7e25dd472827632767bd5a0f672aa64758d7",
+  "tracked_file_count_at_check": 530,
+  "secret_pattern_findings": [],
+  "runtime_archive": {
+    "path": "artifacts/distribution/runtime-assets.zip",
+    "bytes": 28261944,
+    "sha256": "669b7c6115a592921ed9cd9320124e2e4159d2a1628a48da9121294212b29638"
+  },
+  "restorable_assets": 13,
+  "software_tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "96",
+    "time": "31.716",
+    "timestamp": "2026-10-20T12:10:19.844252+08:00",
+    "hostname": "LAPTOP-IORJGR2A"
+  },
+  "powershell_setup_and_start_syntax": "passed",
+  "publish_method": "Non-forced Git push preserving local commit history; remote repository initially empty.",
+  "scope": "Completed creative prototype and actual evidence; future creative-development plan remains planned; physical validation is optional.",
+  "clean_checkout_verification": {
+    "path": "artifacts/github-publish/clean-checkout.json",
+    "status": "passed",
+    "validated_git_tree": "29c55e32a53452fb21e8acce1cb5c4330646ef49",
+    "restored_assets": 13,
+    "scope": "Independent Git export and asset restoration using the prepared dependency environment; dependency installation on a second physical computer was not performed."
+  },
+  "historical_byte_preservation": {
+    "policy": "Keep original file bytes without Git line-ending conversion, preserving recorded SHA256 values.",
+    "protected_legacy_files_verified": 84,
+    "registered_evidence_verified": 43,
+    "original_database_tables_verified": 6
+  },
+  "index_matches_workspace_bytes": true
+}
