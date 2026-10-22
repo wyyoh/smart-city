@@ -1,0 +1,411 @@
+{
+  "reviewed_on": "2026-10-22",
+  "status": "existing_baseline_reviewed",
+  "source_revision": "f867b0f5a0d7af26bb1a0a775818b2fd871866a5",
+  "review_method": "Read saved case snapshots and relevant implementation; no new material experiments or live browser replay.",
+  "source_files": [
+    {
+      "path": "analysis/task_source.txt",
+      "sha256": "c384e202cc281c94bacfffc8b5ce84598fc9bd75a0930d7cf067ac8b23f024ac"
+    },
+    {
+      "path": "configs/creative_scope_v6.json",
+      "sha256": "50f0bd37f947950c0389ff7c99808644845e4cc3b2d1a54ecd727d8a1401bde4"
+    },
+    {
+      "path": "planning/creative_proposal_phase_v6.json",
+      "sha256": "80a0c44716b611fea8c740b98896257d0be9b47dd0230b42532d286fd2e26a98"
+    },
+    {
+      "path": "configs/case_scenarios_v2.json",
+      "sha256": "986bb5fd4aaa14c3b90e15695c64dddc8d229d3e99ed4237cc458f6f5c5ba20a"
+    },
+    {
+      "path": "artifacts/next-phase/case-reports/summary.json",
+      "sha256": "6dade08509e22cc9d54a3af730b122be1ca312250de98cca2b9c7e73f8a3eb0f"
+    },
+    {
+      "path": "artifacts/review-phase/rehearsal-final/cases.json",
+      "sha256": "ae0b266e4c9556c7e736b05c427d14f9ceeeda58bb2e3d04c69f53183e8deec1"
+    },
+    {
+      "path": "backend/app/decision/comparison.py",
+      "sha256": "7d4214e6b4631dc8423966ffa15e8c0c0f3d4dbcf76fde5c411eaa30a4b24b0e"
+    },
+    {
+      "path": "backend/app/decision/differences.py",
+      "sha256": "dee53063c3cf37385cbf016033eea0cab22c69e61d157f8e9b21ce237f99110d"
+    },
+    {
+      "path": "backend/app/decision/diagnosis.py",
+      "sha256": "f968bc868e6f613ead2ccc5a2ea74adeb41d350d9203bac8a62bd68df256b1a3"
+    },
+    {
+      "path": "backend/app/decision/materials.py",
+      "sha256": "14fca7cbd9aeff93cea569b1b7c69cada48130c138d50d4c6cdcfc0f1ac65aa0"
+    },
+    {
+      "path": "backend/app/research_workbench/service.py",
+      "sha256": "c7a6ae84cab9f1eb6392e240a9328c24e9f44853bb48a6e5b70a628ff42736a1"
+    },
+    {
+      "path": "frontend/src/components/DecisionWorkflow.tsx",
+      "sha256": "115ddd0afb6f76e6896c86c34171af3f91ff902417a76a9d892f6d0ae0bca4be"
+    },
+    {
+      "path": "frontend/src/components/ResearchWorkbench.tsx",
+      "sha256": "a0a83d95c297d6ee11aae4de3d30e8a097739943262a8efdf6e93be0663566d2"
+    },
+    {
+      "path": "docs/value-evaluation-notes.md",
+      "sha256": "b24d71fc3cf5aaa88bffc2775e95b1bafc0756335816eaeccd3b8fc60fa230ee"
+    },
+    {
+      "path": "configs/research_workbench_v5.json",
+      "sha256": "88fd9eacbff84104e3caea42cf5eb18f18c7cf90e86adc687af0d4cf3c5270f4"
+    },
+    {
+      "path": "artifacts/next-phase/case-reports/C1-snapshot.json.gz",
+      "sha256": "35e8b968e23c6da99906f18118143621ae30fbc0fe580c0a8f1f79efccf63a71"
+    },
+    {
+      "path": "artifacts/next-phase/case-reports/C2-snapshot.json.gz",
+      "sha256": "177080a2151fb6cf11f51014234a4eec3b0114fac7cb87d88742504ed96eee3b"
+    },
+    {
+      "path": "artifacts/next-phase/case-reports/C3-snapshot.json.gz",
+      "sha256": "48da5936b875a711790e565f678ad532bd6cb7554d7e4b098bc6989318870db0"
+    },
+    {
+      "path": "artifacts/next-phase/case-reports/C4-snapshot.json.gz",
+      "sha256": "3992b045f0aebad3fb3ba06d19d599f3a3603282b891bd546906fe64ba77c202"
+    },
+    {
+      "path": "artifacts/next-phase/case-reports/C5-snapshot.json.gz",
+      "sha256": "abc27a272439e4621c74a30abcd77d1d31936ab794afa7c72ad168ed60db12c1"
+    },
+    {
+      "path": "artifacts/next-phase/case-reports/C5-complete-numeric-diagnostic.json",
+      "sha256": "3ff0b6d4197440fef080a656a1609cf3cc670c82a45eb32dc1bac5ae3846890a"
+    },
+    {
+      "path": "artifacts/research-v04/formulation-search.json",
+      "sha256": "4fbf4bfcf7018abdfee75a0c1a8618731063151f2ae83c02f218aa85e5ece9f3"
+    },
+    {
+      "path": "artifacts/review-phase/baseline.json",
+      "sha256": "c2178d2df956d34ef8a9b9c7acce583711dd5ba191c6dca30d1cf7c84cfdc249"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C1",
+      "title": "高温重载车辙处治",
+      "targets": {
+        "DS": 8000,
+        "strain": 2000,
+        "TSR": 75,
+        "residual": 85
+      },
+      "rap_min_pct": null,
+      "pool_size": 84,
+      "feasible_count": 2,
+      "front_ids": [
+        "mix_0e51eff6e2cef2806f57",
+        "mix_8adbae42f826e07e8611"
+      ],
+      "review_first_ids": [
+        "mix_0e51eff6e2cef2806f57"
+      ],
+      "diagnosis": "numeric_feasible",
+      "feasible_candidates": [
+        {
+          "id": "mix_0e51eff6e2cef2806f57",
+          "display_id": "f2806f57",
+          "source_code": "H",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "metrics": {
+            "DS": 9565.0,
+            "strain": 2044.0,
+            "TSR": 81.98128641646413,
+            "residual": 88.0578252671276
+          },
+          "preference_rank": 1,
+          "pareto_front": true
+        },
+        {
+          "id": "mix_8adbae42f826e07e8611",
+          "display_id": "R1",
+          "source_code": "S",
+          "oil_stone_ratio_pct": 5.5,
+          "rap_nominal_pct": 60.0,
+          "metrics": {
+            "DS": 9327.303846153834,
+            "strain": 2064.2,
+            "TSR": 89.78596858504315,
+            "residual": 87.81375742479402
+          },
+          "preference_rank": 2,
+          "pareto_front": true
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "寒冷地区温缩裂缝处治",
+      "targets": {
+        "DS": 800,
+        "strain": 2500,
+        "TSR": 75,
+        "residual": 85
+      },
+      "rap_min_pct": null,
+      "pool_size": 84,
+      "feasible_count": 2,
+      "front_ids": [
+        "mix_ec30ff644f3111c570bc",
+        "mix_6f88790949802a6b64ea"
+      ],
+      "review_first_ids": [
+        "mix_ec30ff644f3111c570bc"
+      ],
+      "diagnosis": "numeric_feasible",
+      "feasible_candidates": [
+        {
+          "id": "mix_ec30ff644f3111c570bc",
+          "display_id": "R4",
+          "source_code": "M-1",
+          "oil_stone_ratio_pct": 4.9,
+          "rap_nominal_pct": 60.0,
+          "metrics": {
+            "DS": 7316.5,
+            "strain": 2525.0,
+            "TSR": 84.96918608354991,
+            "residual": 88.2831181252989
+          },
+          "preference_rank": 1,
+          "pareto_front": true
+        },
+        {
+          "id": "mix_6f88790949802a6b64ea",
+          "display_id": "2a6b64ea",
+          "source_code": "M",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "metrics": {
+            "DS": 7778.0,
+            "strain": 2525.0,
+            "TSR": 79.54156059543348,
+            "residual": 91.52915291529152
+          },
+          "preference_rank": 2,
+          "pareto_front": true
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "水损害路段修复",
+      "targets": {
+        "DS": 800,
+        "strain": 2000,
+        "TSR": 85,
+        "residual": 90
+      },
+      "rap_min_pct": null,
+      "pool_size": 84,
+      "feasible_count": 5,
+      "front_ids": [
+        "mix_07e9acab4f8d5c4c21d0",
+        "mix_c39c8b2c0df3074a52ad",
+        "mix_7a55a307568e18697636",
+        "mix_c09286e2a7be7cb14638",
+        "mix_59cb42163ce4719d7809"
+      ],
+      "review_first_ids": [
+        "mix_07e9acab4f8d5c4c21d0"
+      ],
+      "diagnosis": "numeric_feasible",
+      "feasible_candidates": [
+        {
+          "id": "mix_07e9acab4f8d5c4c21d0",
+          "display_id": "5c4c21d0",
+          "source_code": "H",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "metrics": {
+            "DS": 5000.0,
+            "strain": 2242.0,
+            "TSR": 92.44995786770077,
+            "residual": 92.75965764515384
+          },
+          "preference_rank": 1,
+          "pareto_front": true
+        },
+        {
+          "id": "mix_c39c8b2c0df3074a52ad",
+          "display_id": "074a52ad",
+          "source_code": "J",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "metrics": {
+            "DS": 5471.0,
+            "strain": 2066.6666666666665,
+            "TSR": 90.46845286537155,
+            "residual": 90.78667007585443
+          },
+          "preference_rank": 2,
+          "pareto_front": true
+        },
+        {
+          "id": "mix_7a55a307568e18697636",
+          "display_id": "R7",
+          "source_code": "1L",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 60.0,
+          "metrics": {
+            "DS": 5525.5,
+            "strain": 2383.8333333333335,
+            "TSR": 89.45330053981392,
+            "residual": 90.94357515410148
+          },
+          "preference_rank": 3,
+          "pareto_front": true
+        },
+        {
+          "id": "mix_c09286e2a7be7cb14638",
+          "display_id": "7cb14638",
+          "source_code": "V",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "metrics": {
+            "DS": 4823.0,
+            "strain": 2347.8333333333335,
+            "TSR": 89.0,
+            "residual": 93.43
+          },
+          "preference_rank": 4,
+          "pareto_front": true
+        },
+        {
+          "id": "mix_59cb42163ce4719d7809",
+          "display_id": "719d7809",
+          "source_code": "K",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "metrics": {
+            "DS": 6613.666666666667,
+            "strain": 2068.3333333333335,
+            "TSR": 88.88920032144705,
+            "residual": 94.72793910346772
+          },
+          "preference_rank": 5,
+          "pareto_front": true
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "高RAP再生材料选型",
+      "targets": {
+        "DS": 6000,
+        "strain": 2200,
+        "TSR": 85,
+        "residual": 85
+      },
+      "rap_min_pct": 70,
+      "pool_size": 84,
+      "feasible_count": 1,
+      "front_ids": [
+        "mix_5a0eae6db3cb0a2f9a1f"
+      ],
+      "review_first_ids": [
+        "mix_5a0eae6db3cb0a2f9a1f"
+      ],
+      "diagnosis": "numeric_feasible",
+      "feasible_candidates": [
+        {
+          "id": "mix_5a0eae6db3cb0a2f9a1f",
+          "display_id": "R5",
+          "source_code": "1B",
+          "oil_stone_ratio_pct": 4.8,
+          "rap_nominal_pct": 70.0,
+          "metrics": {
+            "DS": 6260.0,
+            "strain": 2225.6747142857143,
+            "TSR": 92.74457106727604,
+            "residual": 88.88192267502613,
+            "rap_min_pct": 70.0
+          },
+          "preference_rank": 1,
+          "pareto_front": true
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "高低温与水稳定复合约束",
+      "targets": {
+        "DS": 8000,
+        "strain": 2500,
+        "TSR": 90,
+        "residual": 90
+      },
+      "rap_min_pct": null,
+      "pool_size": 84,
+      "feasible_count": 0,
+      "front_ids": [],
+      "review_first_ids": [],
+      "diagnosis": "evidence_insufficient",
+      "feasible_candidates": []
+    }
+  ],
+  "strong_B1_matches_V2_feasible_sets": true,
+  "C4_note": {
+    "without_rap_requirement_known_numerically_feasible_ids": [
+      "mix_5a0eae6db3cb0a2f9a1f"
+    ],
+    "interpretation": "Only R5 already meets all four numerical performance requirements; do not claim that RAP filtering reduced multiple feasible candidates to one."
+  },
+  "C5_additional_scope": {
+    "pool_size": 35,
+    "status": "known_conflict",
+    "certificate_count": 4,
+    "conflict_metric_subsets": [
+      [
+        "DS",
+        "TSR"
+      ],
+      [
+        "DS",
+        "residual"
+      ],
+      [
+        "DS",
+        "strain"
+      ],
+      [
+        "TSR",
+        "strain"
+      ]
+    ],
+    "scope": "Only this explicitly selected complete-numerical subset and current requirements."
+  },
+  "C2_design_example": {
+    "parent_id": "mix_ec30ff644f3111c570bc",
+    "total_existing_hypotheses": 10,
+    "within_observed_support": 7,
+    "hypothesis_id": "hyp_6e18d41dcaefa559",
+    "oil_stone_ratio_pct": 5.0,
+    "change": {
+      "oil_stone_ratio_delta_percentage_points": 0.1
+    },
+    "measured_performance": null,
+    "within_basic_design_distance_support": true,
+    "within_observed_same_nmas_curve_envelope": true
+  },
+  "protected_legacy_file_count": 84,
+  "protected_legacy_file_mismatches": [],
+  "new_v7_interactions_status": "planned_not_implemented_or_replayed"
+}

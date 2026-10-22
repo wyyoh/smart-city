@@ -1,0 +1,64 @@
+{
+  "version": "case-storyboards-7",
+  "planned_on": "2026-10-22",
+  "status": "planned",
+  "case_identity": "合理构造场景，数值来自既有工作簿记录；非已实施工程项目",
+  "source_casebook": "configs/case_scenarios_v2.json",
+  "source_reports": "artifacts/next-phase/case-reports",
+  "baseline_inventory": "artifacts/polish-v7/baseline-inventory.json",
+  "common_pool": {"family": "AC-13", "size": 84, "missing_values_retained": true},
+  "common_card_sections": ["工程问题", "场景与约束", "候选及范围", "同池基准与作品结果", "工程师比较及调整", "结论与资料条件"],
+  "cases": [
+    {
+      "id": "C1", "title": "高温重载车辙处治", "mechanism": "N1", "existing_feasible_count": 2,
+      "question": "为什么该路段推荐这两种材料，它们分别有什么取舍？",
+      "anchors": ["mix_0e51eff6e2cef2806f57", "mix_8adbae42f826e07e8611"],
+      "planned_actions": ["由高温重载场景生成并确认需求", "展开动稳定度目标和出处", "并排比较H与S来源候选", "切换C2完整场景并查看目标与结果的真实变化"],
+      "before_after": "C1与C2保持数据版本及同一84条目录，完整记录场景输入变化；不作单因素因果归因",
+      "deliverable": "一页案例卡及场景需求差异记录",
+      "acceptance": ["两候选非支配身份与数值一致", "目标来源可点开", "场景切换不改变历史试验值"],
+      "avoid_claims": ["场景规则已代表真实气候区验收规范", "动稳定度最高者对所有场景均最好"]
+    },
+    {
+      "id": "C2", "title": "寒冷地区温缩裂缝处治", "mechanism": "N3", "existing_feasible_count": 2,
+      "question": "应变相同时如何比选，并从历史方案继续设计？",
+      "anchors": ["mix_ec30ff644f3111c570bc", "mix_6f88790949802a6b64ea"],
+      "verified_hypothesis": {"id": "hyp_6e18d41dcaefa559", "parent_id": "mix_ec30ff644f3111c570bc", "oil_before_pct": 4.9, "oil_after_pct": 5.0, "delta_percentage_points": 0.1, "within_observed_support": true, "measured_performance": null},
+      "planned_actions": ["解释两个候选弯拉应变同为2525με", "比较TSR与残留稳定度的差别", "选择R4并按准确父方案进入假设目录", "选择油石比5.0%的既有假设并填写设计意图", "保存草案并返回原选材结果"],
+      "before_after": "固定需求，比较父配方与未试验假设的组成及证据身份",
+      "deliverable": "一页案例卡、配方差异及可回看的设计草案",
+      "acceptance": ["应变并列和后续排序理由一致", "目录按准确父方案筛选", "原始实测不变且新配方实测为空"],
+      "avoid_claims": ["R4应变唯一最高", "油石比增加0.1个百分点已改善抗裂性能", "观测范围内等于工程性能合格"]
+    },
+    {
+      "id": "C3", "title": "水损害路段修复", "mechanism": "N2", "existing_feasible_count": 5, "existing_nondominated_count": 5,
+      "question": "五种方案都满足要求，为何仍需要工程师选择？",
+      "anchors": {"TSR_first": "mix_07e9acab4f8d5c4c21d0", "residual_first": "mix_59cb42163ce4719d7809", "strain_first": "mix_7a55a307568e18697636"},
+      "planned_actions": ["展示全部五个非支配可行候选", "以TSR优先查看H候选", "保持硬要求切换残留稳定度优先并查看K候选", "查看R7的应变余量取舍", "保存所选方案及偏好理由"],
+      "before_after": "只改变软偏好，硬要求、可行ID集合与历史数值不变",
+      "deliverable": "一页案例卡、双轴图及偏好前后比较记录",
+      "acceptance": ["偏好变化前后均为相同5个可行候选", "候选选择理由与指标事实一致", "图表保留原单位及要求线"],
+      "avoid_claims": ["非支配筛选已将5个可行候选压缩为3个", "某个加权总分能保证全局最优", "缺少的成本碳排寿命按零值比较"]
+    },
+    {
+      "id": "C4", "title": "高RAP再生材料选型", "mechanism": "N2", "existing_feasible_count": 1,
+      "question": "更高的再生材料要求是否超出当前目录能力？",
+      "anchors": ["mix_5a0eae6db3cb0a2f9a1f"],
+      "planned_actions": ["确认名义RAP至少70%的构造要求", "查看R5的性能数值及质量基准状态", "预览将名义RAP目标提高至75%", "查看完整要求重算后的候选状态", "决定保留原要求或保存新需求确认"],
+      "before_after": "保持四性能目标和目录，名义RAP要求从70%变为75%；已知数值可行数应从1变为0，完整诊断待新回放确认",
+      "deliverable": "一页案例卡及资源目标变化记录",
+      "acceptance": ["要求变化需人工确认", "不覆盖70%要求的历史决策", "名义比例与质量分母条件保持可见"],
+      "avoid_claims": ["当前加上RAP限制把多项可行候选减少为一项", "RAP比例已换算为实际减碳或降本", "70%名义比例的物理分母已核实"]
+    },
+    {
+      "id": "C5", "title": "高低温与水稳定复合约束", "mechanism": "N2", "existing_feasible_count": 0,
+      "question": "没有可行方案时应补资料、改要求还是改配方？",
+      "scoped_diagnostic": {"pool_size": 35, "evidence_view": "complete_numeric_demo", "conflict_certificates": 4, "status": "known_conflict"},
+      "planned_actions": ["展示84条完整目录的证据不足", "明确切换35条完整数值诊断视图", "查看四组冲突并展开一组删除见证", "解释见证只对证书剩余子集成立", "选择补充资料、重新确认要求或探索新配方的下一步"],
+      "before_after": "要求不变且明确改变证据视图，结论的范围随之变化",
+      "deliverable": "一页案例卡、范围对照及后续行动说明",
+      "acceptance": ["84条视图不标成已知联合无解", "35条证书不外推到全目录", "放宽要求后需重算全套要求"],
+      "avoid_claims": ["数据库无解证明材料物理上不可实现", "删除证书内一个要求即可满足全部原要求", "已找到全局最小放宽量"]
+    }
+  ]
+}

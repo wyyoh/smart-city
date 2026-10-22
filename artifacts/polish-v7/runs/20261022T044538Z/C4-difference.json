@@ -1,0 +1,310 @@
+{
+  "before_id": "mate_f977788cffc94422bb276680a07a9ff0",
+  "after_id": "mate_19e56d67f0fb4360a02e35a427ae7960",
+  "before_sha256": "08cdf53c37b47e77ab9203f7dea5d148728fede28bf7aa39b571896cc07e0d54",
+  "after_sha256": "5c0b1bc65f42e34b896c6d9d9a77797deaec77e91f59288c08e617faa8a82710",
+  "input_changes": [
+    {
+      "field": "constraints.rap_min_pct",
+      "before": 70.0,
+      "after": 75.0
+    }
+  ],
+  "rule_changes": [],
+  "target_changes": [],
+  "candidate_changes": {
+    "added": [],
+    "removed": [],
+    "outcome_changes": [
+      {
+        "id": "mix_5a0eae6db3cb0a2f9a1f",
+        "display_id": "R5",
+        "before": {
+          "status": "numeric_review",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "failed"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_67335f441bbff44b208e",
+        "display_id": "f44b208e",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "failed"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_aa15fb08faac91ed3888",
+        "display_id": "91ed3888",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "failed"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_da01d4da4aba77dc7979",
+        "display_id": "77dc7979",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "failed"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_e5584b099b371467cf63",
+        "display_id": "1467cf63",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "rap_min_pct",
+              "state": "failed"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "conclusion_changes": [
+    {
+      "field": "diagnosis",
+      "before": "numeric_feasible",
+      "after": "evidence_insufficient"
+    },
+    {
+      "field": "review_first_ids",
+      "before": [
+        "mix_5a0eae6db3cb0a2f9a1f"
+      ],
+      "after": []
+    }
+  ],
+  "manual_overrides": [],
+  "requires_engineer_confirmation": true,
+  "note": "解释两份冻结快照的真实差异；变化是场景规则或人工修改的结果，不是因果效应估计。",
+  "changed": true,
+  "sha256": "1a5646f46225c0a24979acaebd8e19addc0a7c12444b063852d428e1c0a41050"
+}

@@ -1,0 +1,748 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "数智选材 案例与协同设计接口",
+    "version": "creative-1",
+    "description": "新增工作区接口，原v1/v2/v4接口保持现有契约。"
+  },
+  "paths": {
+    "/v5/design/cases": {
+      "get": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Get Cases",
+        "operationId": "get_cases_v5_design_cases_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/cases/{case_id}/runs": {
+      "post": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Post Case",
+        "operationId": "post_case_v5_design_cases__case_id__runs_post",
+        "parameters": [
+          {
+            "name": "case_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Case Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CaseRunRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/preferences": {
+      "post": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Post Preference",
+        "operationId": "post_preference_v5_design_preferences_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PreferenceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/decisions/{decision_id}/adjustment-preview": {
+      "post": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Post Adjustment Preview",
+        "operationId": "post_adjustment_preview_v5_design_decisions__decision_id__adjustment_preview_post",
+        "parameters": [
+          {
+            "name": "decision_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Decision Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdjustmentPreview"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/explorations/{decision_id}/{parent_id}": {
+      "get": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Get Exploration",
+        "operationId": "get_exploration_v5_design_explorations__decision_id___parent_id__get",
+        "parameters": [
+          {
+            "name": "decision_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Decision Id"
+            }
+          },
+          {
+            "name": "parent_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Parent Id"
+            }
+          },
+          {
+            "name": "supported_only",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": true,
+              "title": "Supported Only"
+            }
+          },
+          {
+            "name": "locked_fields",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "oil_stone_ratio_pct",
+                  "nominal_component_weights"
+                ],
+                "type": "string"
+              },
+              "default": [],
+              "title": "Locked Fields"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/drafts": {
+      "post": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Post Draft",
+        "operationId": "post_draft_v5_design_drafts_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DraftRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/history": {
+      "get": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Get History",
+        "operationId": "get_history_v5_design_history_get",
+        "parameters": [
+          {
+            "name": "kind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "design_draft",
+              "title": "Kind"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/records/{record_id}": {
+      "get": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Get Saved",
+        "operationId": "get_saved_v5_design_records__record_id__get",
+        "parameters": [
+          {
+            "name": "record_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Record Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/records/{record_id}/export.json": {
+      "get": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Export Saved",
+        "operationId": "export_saved_v5_design_records__record_id__export_json_get",
+        "parameters": [
+          {
+            "name": "record_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Record Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/design/records/{record_id}/print.html": {
+      "get": {
+        "tags": [
+          "案例与协同设计"
+        ],
+        "summary": "Print Saved",
+        "operationId": "print_saved_v5_design_records__record_id__print_html_get",
+        "parameters": [
+          {
+            "name": "record_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Record Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdjustmentPreview": {
+        "properties": {
+          "expected_decision_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Expected Decision Sha256"
+          },
+          "rap_min_pct": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rap Min Pct"
+          },
+          "target_overrides": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "propertyNames": {
+              "enum": [
+                "DS",
+                "strain",
+                "TSR",
+                "residual"
+              ]
+            },
+            "type": "object",
+            "maxProperties": 4,
+            "title": "Target Overrides"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "expected_decision_sha256"
+        ],
+        "title": "AdjustmentPreview"
+      },
+      "CaseRunRequest": {
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]{8,80}$",
+            "title": "Request Id"
+          },
+          "evidence_view": {
+            "type": "string",
+            "enum": [
+              "all",
+              "complete_numeric_demo"
+            ],
+            "title": "Evidence View",
+            "default": "all"
+          },
+          "rap_min_pct": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rap Min Pct"
+          },
+          "adjustment_reason": {
+            "type": "string",
+            "maxLength": 1000,
+            "title": "Adjustment Reason",
+            "default": ""
+          },
+          "target_overrides": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "propertyNames": {
+              "enum": [
+                "DS",
+                "strain",
+                "TSR",
+                "residual"
+              ]
+            },
+            "type": "object",
+            "maxProperties": 4,
+            "title": "Target Overrides"
+          },
+          "based_on_decision_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Based On Decision Id"
+          },
+          "expected_decision_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expected Decision Sha256"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "request_id"
+        ],
+        "title": "CaseRunRequest"
+      },
+      "DraftRequest": {
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]{8,80}$",
+            "title": "Request Id"
+          },
+          "origin_decision_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Origin Decision Id"
+          },
+          "expected_decision_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Expected Decision Sha256"
+          },
+          "parent_recipe_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Parent Recipe Id"
+          },
+          "hypothesis_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Hypothesis Id"
+          },
+          "locked_fields": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "oil_stone_ratio_pct",
+                "nominal_component_weights"
+              ]
+            },
+            "type": "array",
+            "maxItems": 2,
+            "title": "Locked Fields"
+          },
+          "design_intent": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Design Intent"
+          },
+          "research_scope_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Research Scope Sha256"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "request_id",
+          "origin_decision_id",
+          "expected_decision_sha256",
+          "parent_recipe_id",
+          "hypothesis_id",
+          "design_intent",
+          "research_scope_sha256"
+        ],
+        "title": "DraftRequest"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "PreferenceRequest": {
+        "properties": {
+          "decision_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Decision Id"
+          },
+          "expected_decision_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Expected Decision Sha256"
+          },
+          "priority_order": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "minItems": 1,
+            "title": "Priority Order"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Reason",
+            "default": "比较相同硬要求下的指标优先顺序"
+          },
+          "persist": {
+            "type": "boolean",
+            "title": "Persist",
+            "default": false
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{8,80}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Request Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "decision_id",
+          "expected_decision_sha256",
+          "priority_order"
+        ],
+        "title": "PreferenceRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

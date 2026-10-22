@@ -1,0 +1,2090 @@
+{
+  "before_id": "mate_bd4fdb003e324d36add54b8819023c11",
+  "after_id": "mate_2d843d89655045eaa7b76b5f5ea540c1",
+  "before_sha256": "18cae98e50868e2b2411bea630f0c15a9e0dce6fb58232a1c98422d09e549309",
+  "after_sha256": "a06c5095fd9fead8906c5f52ea8b102b17a4de05fe0a055e119220a0fac9d4f3",
+  "input_changes": [
+    {
+      "field": "demo_case_id",
+      "before": "C1",
+      "after": "C2"
+    },
+    {
+      "field": "scene.climate.class",
+      "before": "demo_hot",
+      "after": "demo_cold"
+    },
+    {
+      "field": "scene.climate.source",
+      "before": "团队构造：高温分区，无真实气候数据映射",
+      "after": "团队构造：低温分区，无真实气候数据映射"
+    },
+    {
+      "field": "scene.distress.mechanism",
+      "before": "团队构造病害描述，待现场确认",
+      "after": "假设温缩机制，非所有开裂均适用"
+    },
+    {
+      "field": "scene.distress.severity",
+      "before": "severe",
+      "after": "moderate"
+    },
+    {
+      "field": "scene.distress.type",
+      "before": "rutting",
+      "after": "thermal_cracking"
+    },
+    {
+      "field": "scene.traffic.class",
+      "before": "demo_heavy",
+      "after": "demo_general"
+    },
+    {
+      "field": "scene.traffic.source",
+      "before": "团队构造：重载分组，无实测交通换算",
+      "after": "团队构造：一般交通，无实测交通换算"
+    }
+  ],
+  "rule_changes": [
+    {
+      "before": [
+        {
+          "id": "hot-rutting",
+          "version": "1.0.0"
+        }
+      ],
+      "after": [
+        {
+          "id": "cold-cracking",
+          "version": "1.0.0"
+        }
+      ]
+    }
+  ],
+  "target_changes": [
+    {
+      "metric": "DS",
+      "before": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        }
+      ],
+      "after": [
+        {
+          "metric": "DS",
+          "operator": ">",
+          "value": 800,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        }
+      ]
+    },
+    {
+      "metric": "strain",
+      "before": [
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2000,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        }
+      ],
+      "after": [
+        {
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队低温抗裂演示假设 cold-cracking v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        }
+      ]
+    }
+  ],
+  "candidate_changes": {
+    "added": [],
+    "removed": [],
+    "outcome_changes": [
+      {
+        "id": "mix_07e9acab4f8d5c4c21d0",
+        "display_id": "5c4c21d0",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_08857a35c546c16fea3d",
+        "display_id": "R9",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_0e51eff6e2cef2806f57",
+        "display_id": "f2806f57",
+        "before": {
+          "status": "numeric_review",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_13fdcb77bf18604636ae",
+        "display_id": "604636ae",
+        "before": {
+          "status": "needs_evidence",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "missing"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "missing"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "missing"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "missing"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_15ad6894230968c7675e",
+        "display_id": "68c7675e",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_1898f7dbc9bebd98fbc6",
+        "display_id": "bd98fbc6",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_26677634e9a9c5b83d13",
+        "display_id": "c5b83d13",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_2a28d8524d8d84e6f35f",
+        "display_id": "84e6f35f",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_424760c7b3eae4af9dfb",
+        "display_id": "R3",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_473a26fdb0b8356b4ab4",
+        "display_id": "356b4ab4",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_55757ba9f9c2f0200762",
+        "display_id": "R8",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_597f12de06cc740a8f97",
+        "display_id": "740a8f97",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_59cb42163ce4719d7809",
+        "display_id": "719d7809",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_5a0eae6db3cb0a2f9a1f",
+        "display_id": "R5",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_65ff1efa3cd482765c9f",
+        "display_id": "82765c9f",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_67335f441bbff44b208e",
+        "display_id": "f44b208e",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_6e47f5bd52ca2f04303e",
+        "display_id": "2f04303e",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "missing"
+            }
+          ]
+        },
+        "after": {
+          "status": "needs_evidence",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "missing"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_6f88790949802a6b64ea",
+        "display_id": "2a6b64ea",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "numeric_review",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_755b28c800668347543b",
+        "display_id": "8347543b",
+        "before": {
+          "status": "needs_evidence",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "missing"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "missing"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "missing"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "missing"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_783a016ef718c0ce666e",
+        "display_id": "R2",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_7a55a307568e18697636",
+        "display_id": "R7",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_8adbae42f826e07e8611",
+        "display_id": "R1",
+        "before": {
+          "status": "numeric_review",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_9e2f3db93b9f3846b068",
+        "display_id": "3846b068",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_aa15fb08faac91ed3888",
+        "display_id": "91ed3888",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_b41a369b43a159f8f219",
+        "display_id": "59f8f219",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "missing"
+            }
+          ]
+        },
+        "after": {
+          "status": "needs_evidence",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "missing"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_b7a52f175089632daa78",
+        "display_id": "632daa78",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_b918fd825572e8713e23",
+        "display_id": "e8713e23",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_bf40a782f2a3fee6c9aa",
+        "display_id": "R6",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_c09286e2a7be7cb14638",
+        "display_id": "7cb14638",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_c389cb15f7ec30cbe854",
+        "display_id": "30cbe854",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_c39c8b2c0df3074a52ad",
+        "display_id": "074a52ad",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_c94bd637a781d902fafa",
+        "display_id": "d902fafa",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_da01d4da4aba77dc7979",
+        "display_id": "77dc7979",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_e40f39b69768fd914467",
+        "display_id": "fd914467",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "missing"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_e464f052e3ce56f7455b",
+        "display_id": "56f7455b",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_e5584b099b371467cf63",
+        "display_id": "1467cf63",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_e7c870ac9436de2bd8c0",
+        "display_id": "de2bd8c0",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_ec30ff644f3111c570bc",
+        "display_id": "R4",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "numeric_review",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_fb456d76c0b65ade1120",
+        "display_id": "5ade1120",
+        "before": {
+          "status": "needs_evidence",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "missing"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "missing"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_fb4cc4f36aaa75a8e497",
+        "display_id": "75a8e497",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "failed"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_fd042b9c9cb09d2188a9",
+        "display_id": "9d2188a9",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "satisfied"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mix_ff76e96640f7706852c9",
+        "display_id": "706852c9",
+        "before": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "failed"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "satisfied"
+            }
+          ]
+        },
+        "after": {
+          "status": "excluded",
+          "checks": [
+            {
+              "metric": "DS",
+              "state": "satisfied"
+            },
+            {
+              "metric": "TSR",
+              "state": "failed"
+            },
+            {
+              "metric": "residual",
+              "state": "satisfied"
+            },
+            {
+              "metric": "strain",
+              "state": "failed"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "conclusion_changes": [
+    {
+      "field": "review_first_ids",
+      "before": [
+        "mix_0e51eff6e2cef2806f57"
+      ],
+      "after": [
+        "mix_ec30ff644f3111c570bc"
+      ]
+    }
+  ],
+  "manual_overrides": [],
+  "requires_engineer_confirmation": true,
+  "note": "解释两份冻结快照的真实差异；变化是场景规则或人工修改的结果，不是因果效应估计。",
+  "changed": true,
+  "sha256": "dfb6fa6cd877e719dc7c22cf8d4f03a0d0ade7b4d05c8dc2e4780981a52ac5fc"
+}

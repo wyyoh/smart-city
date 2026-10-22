@@ -1,0 +1,67 @@
+[
+  {
+    "case_id": "C1",
+    "title": "高温重载车辙处治",
+    "question": "为什么这个路段需要这些材料性能？",
+    "pool": 84,
+    "feasible": 2,
+    "baseline_feasible": 2,
+    "diagnosis": "numeric_feasible",
+    "record_id": "crun_539cb1dd32244387a1e50c1c39e9bfcd",
+    "sha256": "bcb3cbdb6b3d7b8189f22f17de49ac61339edda70325b8c9f9cb74e81c43e5fb",
+    "html": "C1.html",
+    "snapshot": "C1.json.gz"
+  },
+  {
+    "case_id": "C2",
+    "title": "寒冷地区温缩裂缝处治",
+    "question": "应变相同，怎样选择并继续设计？",
+    "pool": 84,
+    "feasible": 2,
+    "baseline_feasible": 2,
+    "diagnosis": "numeric_feasible",
+    "record_id": "crun_2caf3863de4b492991acc8777ac0946f",
+    "sha256": "5ebfec4423653f7d4e167322f9ebd87ad01bf0b9822171508f4947a0471d009f",
+    "html": "C2.html",
+    "snapshot": "C2.json.gz"
+  },
+  {
+    "case_id": "C3",
+    "title": "水损害路段修复",
+    "question": "都满足要求，应该优先看哪一种？",
+    "pool": 84,
+    "feasible": 5,
+    "baseline_feasible": 5,
+    "diagnosis": "numeric_feasible",
+    "record_id": "crun_d6e79406cd97495a945d889c452f5adf",
+    "sha256": "ef0e076b6176d55e6c6f689808b6bec97af0e6019a90a8777613f43749fca8fe",
+    "html": "C3.html",
+    "snapshot": "C3.json.gz"
+  },
+  {
+    "case_id": "C4",
+    "title": "高RAP再生材料选型",
+    "question": "再生材料要求提高后还有方案吗？",
+    "pool": 84,
+    "feasible": 1,
+    "baseline_feasible": 1,
+    "diagnosis": "numeric_feasible",
+    "record_id": "crun_2f439874456a4f85b18076d231865107",
+    "sha256": "b11696c5525ac2f30c1a3244b8271f396d2cdd7404284c69e419949ed1f66df0",
+    "html": "C4.html",
+    "snapshot": "C4.json.gz"
+  },
+  {
+    "case_id": "C5",
+    "title": "高低温与水稳定复合约束",
+    "question": "没有可行方案，下一步应该做什么？",
+    "pool": 84,
+    "feasible": 0,
+    "baseline_feasible": 0,
+    "diagnosis": "evidence_insufficient",
+    "record_id": "crun_eb55386e27f34d3fb946e0d9709994bd",
+    "sha256": "67053d9a2a1c0dae984f577d0e90f280195f2cbe60901f6ae14b975fae843e16",
+    "html": "C5.html",
+    "snapshot": "C5.json.gz"
+  }
+]

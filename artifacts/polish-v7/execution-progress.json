@@ -1,0 +1,208 @@
+{
+  "completed_on": "2026-10-22",
+  "created_at": "2026-10-22T04:54:13.995814+00:00",
+  "status": "completed",
+  "scope": "Creative prototype and software demonstration; no physical experiments or human timing required.",
+  "plan": "planning/innovation_practicality_phase_v7.json",
+  "initial_plan": "artifacts/polish-v7/initial-plan.json",
+  "planned_effort": {
+    "core_hours": 18,
+    "buffer_hours": 2,
+    "note": "Planning estimate, not measured human labour."
+  },
+  "work_packages": [
+    {
+      "id": "W01",
+      "status": "completed",
+      "deliverable": "三项机制说明卡与五案基准清单"
+    },
+    {
+      "id": "W02",
+      "status": "completed",
+      "deliverable": "场景解释主线"
+    },
+    {
+      "id": "W03",
+      "status": "completed",
+      "deliverable": "偏好比较、理由与双轴图"
+    },
+    {
+      "id": "W04",
+      "status": "completed",
+      "deliverable": "准确父方案入口与设计草案"
+    },
+    {
+      "id": "W05",
+      "status": "completed",
+      "deliverable": "五张案例卡与五组前后记录"
+    },
+    {
+      "id": "W06",
+      "status": "completed",
+      "deliverable": "软件回放、边界复核与修正"
+    },
+    {
+      "id": "W07",
+      "status": "completed",
+      "deliverable": "演示脚本、机制图与答辩问答"
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "A01",
+      "status": "passed",
+      "check": "三类匹配场景的目标与来源可定位；不匹配场景不自动借用规则",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "C1至C3每条目标均有来源；未知场景不借用规则。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    },
+    {
+      "id": "A02",
+      "status": "passed",
+      "check": "C4/C5附加要求显示为明确选择的构造模板",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "C4/C5附加要求保留明确构造模板身份。",
+      "browser_evidence": null
+    },
+    {
+      "id": "A03",
+      "status": "passed",
+      "check": "C3偏好切换前后feasible_ids集合一致，全部5项可回看",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "三种偏好下可行ID集合不变，首位分别为H、K和R7；五者均非支配。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    },
+    {
+      "id": "A04",
+      "status": "passed",
+      "check": "不满足硬要求者不因偏好或图表归一化进入可行集；严格大于边界正确",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "偏好不补偿硬要求失败；R5动稳定度等于6260时不通过严格大于6260。",
+      "browser_evidence": null
+    },
+    {
+      "id": "A05",
+      "status": "passed",
+      "check": "C2显示2525με并列，后续指标和排序理由一致",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "C2应变2525με并列，默认顺序由TSR等后续指标区分。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    },
+    {
+      "id": "A06",
+      "status": "passed",
+      "check": "C5完整目录为证据不足，35条诊断视图为四组范围内冲突",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "84条目录为证据不足；35条完整数值子池有四组范围内冲突。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    },
+    {
+      "id": "A07",
+      "status": "passed",
+      "check": "删除见证仅用于其剩余子集，不自动宣称全部需求可行",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "四组证书及删除见证校验通过；界面明确见证仅适用于剩余子集。",
+      "browser_evidence": null
+    },
+    {
+      "id": "A08",
+      "status": "passed",
+      "check": "C2跨页按准确父方案筛选，无匹配结果时不替换为同来源其他配方",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "准确R4父方案下10个假设、7个在范围内；双锁定为空，不换父方案。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    },
+    {
+      "id": "A09",
+      "status": "passed",
+      "check": "新配方保存后实测字段为空，父方案数值和原报告不变",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "草案不继承父方案实测，原需求、父方案及设计意图随记录保存。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    },
+    {
+      "id": "A10",
+      "status": "passed",
+      "check": "草案可重新读取需求上下文、实际改动和设计意图；过期版本拒绝新建",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "历史草案可重读；在隔离副本上推进数据修订后拒绝新建草案。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    },
+    {
+      "id": "A11",
+      "status": "passed",
+      "check": "五案卡均有同池B1对照且不宣称可行集准确率提升",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "五案均有同池B1对照，数值可行集合一致；保留构造案例身份。",
+      "browser_evidence": null
+    },
+    {
+      "id": "A12",
+      "status": "passed",
+      "check": "关键操作可用键盘完成，状态有文字说明，打印和页面内容一致",
+      "software_evidence": "artifacts/polish-v7/runs/20261022T045051Z/verification.json",
+      "result": "案例卡、取舍与草案JSON导出等于保存记录，打印显示同一保存内容指纹；键盘与布局另见UI记录。",
+      "browser_evidence": "artifacts/polish-v7/ui/review.json"
+    }
+  ],
+  "software_replay": {
+    "path": "artifacts/polish-v7/runs/20261022T045051Z",
+    "status": "passed",
+    "verification_sha256": "aee7bb42dd6f7632ff3f703c32168df68f63fd4f38418a3f5d29e16b3fefd7f4"
+  },
+  "browser_review": "artifacts/polish-v7/ui/review.json",
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "106",
+    "time": "47.521",
+    "timestamp": "2026-10-22T12:50:51.417393+08:00",
+    "hostname": "LAPTOP-IORJGR2A"
+  },
+  "frontend_build": {
+    "status": "passed",
+    "files": [
+      {
+        "path": "frontend/dist/assets/index-BGROxmrM.css",
+        "sha256": "359e6510c4edecdc2646f92201851f0a9a6618a83fd966cd86f0c93da437d7b1"
+      },
+      {
+        "path": "frontend/dist/assets/index-DVF3ZLv7.js",
+        "sha256": "43a110aab65095b682b796c08b9783020d7460f2987675df23a52baafbdd88db"
+      },
+      {
+        "path": "frontend/dist/favicon.svg",
+        "sha256": "4540898141c074e3b6c6c81d3d476d7b0c163375a8c6abe4b0d90f733f3e914d"
+      },
+      {
+        "path": "frontend/dist/index.html",
+        "sha256": "cc0e8518c7bf26e5911f8b963f5f8fc02a235be006e2fd9d81179880b956cd73"
+      }
+    ]
+  },
+  "startup_script": {
+    "path": "scripts/start-creative-demo.ps1",
+    "actual_startup_verified": true,
+    "health_url": "http://127.0.0.1:8766/health"
+  },
+  "delivery": {
+    "app_url": "http://127.0.0.1:8766/?view=design",
+    "demo_guide": "docs/creative-demo-v7.md",
+    "api_contract": "docs/api-creative-v7.openapi.json",
+    "case_cards": "artifacts/polish-v7/runs/20261022T045051Z/index.html",
+    "mechanism_figures": [
+      "artifacts/polish-v7/mechanisms/N1.svg",
+      "artifacts/polish-v7/mechanisms/N2.svg",
+      "artifacts/polish-v7/mechanisms/N3.svg"
+    ]
+  },
+  "protection": {
+    "original_database_sha256": "624862ee54e8282eb00a81713f0bc2c7d800fa5ddd435a5e1089b395278464a6",
+    "legacy_files_unchanged": 84,
+    "original_workbook_edited": false,
+    "historical_evidence_overwritten": false
+  },
+  "publication": "Local implementation and evidence; no new GitHub push in this phase."
+}

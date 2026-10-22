@@ -1,0 +1,92 @@
+{
+  "checked_on": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "actor": "AI browser UI self-test",
+  "status": "passed",
+  "database": "artifacts/polish-v7/ui-demo.sqlite",
+  "steps": [
+    {
+      "case": "C1",
+      "action": "运行场景并用键盘展开要求出处",
+      "result": "84条目录、2个可行候选；目标来源可查看"
+    },
+    {
+      "case": "C3",
+      "action": "TSR优先切换残留稳定度优先并保存理由",
+      "result": "首位H变为K，仍为5个非支配与5个可行方案"
+    },
+    {
+      "case": "C2",
+      "action": "锁定油石比和组分",
+      "result": "准确父方案内无匹配假设，显示空状态，没有替换为其他配方"
+    },
+    {
+      "case": "C2",
+      "action": "选择油石比5.0%的准确父方案假设并保存草案",
+      "result": "保存原寒冷场景需求和设计意图；父方案4.9%，新方案5.0%，实测未知"
+    },
+    {
+      "case": "C2",
+      "action": "实际下载设计草案JSON",
+      "result": "下载内容保留准确父方案，measured_performance为null",
+      "record_id": "draft_c3dd0cc1-1e74-4848-8d4a-447075288838"
+    },
+    {
+      "case": "C4",
+      "action": "预览70%到75%后填写理由并确认",
+      "result": "同池已知数值可行从1变为0；另存新需求与决策"
+    },
+    {
+      "case": "C5",
+      "action": "运行保留缺测的完整目录",
+      "result": "84条目录为证据不足，未宣称联合无解"
+    },
+    {
+      "case": "C5",
+      "action": "明确切换完整数值诊断子池",
+      "result": "35条子池，四组范围内冲突；删除见证仅对剩余子集成立"
+    },
+    {
+      "case": "C2",
+      "action": "重新打开案例记录并从历史列表读取草案",
+      "result": "原需求、设计意图与4.9%到5.0%变化可回看"
+    },
+    {
+      "case": "C2",
+      "action": "键盘打开高温车辙!K54原始记录",
+      "result": "可查看原始行值、公式及单元格状态"
+    },
+    {
+      "case": "C2",
+      "action": "查看由同一保存草案生成的打印页",
+      "result": "指纹与下载内容对应；数值显示已收敛小数位"
+    },
+    {
+      "case": "layout",
+      "action": "390像素窄屏实测",
+      "result": "innerWidth390，文档可视宽375与scrollWidth375一致，无页面横向溢出"
+    },
+    {
+      "case": "C3",
+      "action": "窄屏用键盘切换案例与偏好，并比较图表颜色",
+      "result": "首位H变K，五种材料颜色与身份保持一致"
+    },
+    {
+      "case": "navigation",
+      "action": "重新载入最终构建，切换C3并按当前记录URL再次刷新",
+      "result": "URL与当前案例一致，重开仍为C3；键盘切换残留稳定度优先可用"
+    }
+  ],
+  "downloaded_draft_record_id": "draft_c3dd0cc1-1e74-4848-8d4a-447075288838",
+  "downloaded_draft_sha256": "bcde5c28d2c02b72c812c862bb7b97992eccd28024a944e423015502464d7f03",
+  "final_run_url": "http://127.0.0.1:8766/?view=design&run=crun_936770ac-a979-4570-a2ba-8c9589e6db7e",
+  "responsive_check": {
+    "requested_width": 390,
+    "observed_inner_width": 390,
+    "observed_document_client_width": 375,
+    "observed_document_scroll_width": 375,
+    "viewport_restored": true
+  },
+  "console_errors": [],
+  "scope": "实际浏览器操作检查；没有真人计时或新增材料实测。"
+}

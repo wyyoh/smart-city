@@ -1,0 +1,68 @@
+{
+  "version": "innovation-practicality-plan-7",
+  "title": "创新机制与五案演示打磨",
+  "planned_on": "2026-10-22",
+  "status": "planned",
+  "plan_document": "docs/innovation-practicality-plan-v7.md",
+  "storyboards": "planning/case_storyboards_v7.json",
+  "scope_authority": "configs/creative_scope_v6.json",
+  "refines": "planning/creative_proposal_phase_v6.json",
+  "budget_relationship": "Reallocate the existing 18 core hours and 2 buffer hours; do not add another 20-hour phase.",
+  "team_size": 1,
+  "weekly_hours": [15, 20],
+  "core_hours": 18,
+  "buffer_hours": 2,
+  "total_hours": 20,
+  "deadline": null,
+  "objective": "以场景需求解释、多目标取舍和保留上下文的配方探索，说明创新机制及工程师操作价值。",
+  "novelty_scope": "Application and interaction mechanism design; no industry-first or original-optimization-algorithm claim.",
+  "physical_experiments_required": false,
+  "human_timing_required": false,
+  "production_model_promotion_required": false,
+  "main_case_pool": {"family": "AC-13", "count": 84, "includes_missing": true, "same_scope_for_B1_and_V2": true},
+  "mechanisms": [
+    {"id": "N1", "name": "可追溯的场景需求分解", "main_case": "C1", "supporting_cases": ["C2", "C3"], "existing": ["规则匹配", "带出处需求与人工确认", "目标到材料证据关系"], "planned": ["解释摘要", "场景切换前后说明"]},
+    {"id": "N2", "name": "硬约束与偏好分离的多目标比选", "main_case": "C3", "supporting_cases": ["C4", "C5"], "existing": ["全硬要求筛选", "字典序偏好", "非支配标记", "范围内冲突证书"], "planned": ["独立偏好比较入口", "取舍图与理由", "空结果的后续方向"]},
+    {"id": "N3", "name": "保持需求上下文的人机协同设计", "main_case": "C2", "supporting_cases": ["C4", "C5"], "existing": ["未试验微调版本", "既有假设目录", "父方案与组分差异"], "planned": ["精确父方案衔接", "锁定字段筛选", "带需求上下文的设计草案"]}
+  ],
+  "work_packages": [
+    {"id": "W01", "status": "planned", "hours": 1.5, "depends_on": [], "deliverable": "三项机制说明卡与五案基准清单", "acceptance": ["场景、约束、偏好和配方操作分开定义", "与冻结快照和赛题基本成果逐项对应"]},
+    {"id": "W02", "status": "planned", "hours": 2.5, "depends_on": ["W01"], "deliverable": "场景解释主线", "acceptance": ["C1至C3需求到证据可追溯", "C4及C5的附加要求保留构造模板身份", "场景切换记录全部实际输入变化"]},
+    {"id": "W03", "status": "planned", "hours": 3, "depends_on": ["W01"], "deliverable": "偏好比较、理由与双轴图", "acceptance": ["C3切换偏好保留5项可行候选", "H和K候选对应的取舍可说明", "偏好变化不改变已保存硬要求和原始数值"]},
+    {"id": "W04", "status": "planned", "hours": 4, "depends_on": ["W02", "W03"], "deliverable": "准确父方案入口与设计草案", "acceptance": ["C2准确定位R4的假设目录", "锁定字段仅筛选既有假设", "保存父方案、假设、需求上下文和设计意图", "新配方实测字段为空且可返回原决策"]},
+    {"id": "W05", "status": "planned", "hours": 3, "depends_on": ["W02", "W03", "W04"], "deliverable": "五张案例卡与五组前后记录", "acceptance": ["每案含场景约束、候选、理由、判断与同池对照", "统一标注构造案例", "C5明确区分84条和35条范围"]},
+    {"id": "W06", "status": "planned", "hours": 2, "depends_on": ["W05"], "deliverable": "软件回放、边界复核与修正", "acceptance": ["完成全部acceptance_checks", "新回放另存且不改历史证据", "实际检查结果与未完成项分开登记"]},
+    {"id": "W07", "status": "planned", "hours": 2, "depends_on": ["W06"], "deliverable": "演示脚本、机制图与答辩问答", "acceptance": ["6至8分钟覆盖三机制和五案", "解释新颖性、操作价值与数据条件", "问答对应真实案例和证据"]}
+  ],
+  "proposed_contracts": {
+    "status": "design_only_not_current_API",
+    "PreferenceComparison": {
+      "inputs": ["decision_id", "expected_decision_sha256", "priority_order", "reason"],
+      "outputs": ["source_decision_sha256", "feasible_ids", "front_ids", "ordered_ids", "tied_with", "explanations", "comparison_sha256"],
+      "rules": ["只对同一保存决策的数值可行项比较", "priority_order仅含当前可比指标并补齐既定次序", "同值并列", "不改需求、候选池、原值及旧决策", "持久化时追加记录"]
+    },
+    "DesignDraft": {
+      "inputs": ["origin_decision_id", "expected_decision_sha256", "parent_recipe_id", "hypothesis_id", "locked_fields", "design_intent", "research_scope_sha256"],
+      "outputs": ["draft_id", "parent", "hypothesis", "actual_changes", "demand_context", "design_intent", "scope", "sha256"],
+      "rules": ["准确匹配父方案与数据版本", "候选必须属于已登记假设且满足锁定项", "保存时复核当前证据版本", "父方案历史值独立显示", "新配方实测字段保持空值"]
+    }
+  },
+  "acceptance_checks": [
+    {"id": "A01", "status": "planned", "check": "三类匹配场景的目标与来源可定位；不匹配场景不自动借用规则"},
+    {"id": "A02", "status": "planned", "check": "C4/C5附加要求显示为明确选择的构造模板"},
+    {"id": "A03", "status": "planned", "check": "C3偏好切换前后feasible_ids集合一致，全部5项可回看"},
+    {"id": "A04", "status": "planned", "check": "不满足硬要求者不因偏好或图表归一化进入可行集；严格大于边界正确"},
+    {"id": "A05", "status": "planned", "check": "C2显示2525με并列，后续指标和排序理由一致"},
+    {"id": "A06", "status": "planned", "check": "C5完整目录为证据不足，35条诊断视图为四组范围内冲突"},
+    {"id": "A07", "status": "planned", "check": "删除见证仅用于其剩余子集，不自动宣称全部需求可行"},
+    {"id": "A08", "status": "planned", "check": "C2跨页按准确父方案筛选，无匹配结果时不替换为同来源其他配方"},
+    {"id": "A09", "status": "planned", "check": "新配方保存后实测字段为空，父方案数值和原报告不变"},
+    {"id": "A10", "status": "planned", "check": "草案可重新读取需求上下文、实际改动和设计意图；过期版本拒绝新建"},
+    {"id": "A11", "status": "planned", "check": "五案卡均有同池B1对照且不宣称可行集准确率提升"},
+    {"id": "A12", "status": "planned", "check": "关键操作可用键盘完成，状态有文字说明，打印和页面内容一致"}
+  ],
+  "deferred": ["任意配方连续生成与复杂权重滑杆", "新增大规模模型搜参", "实物实验与送检", "真人效率计时", "企业生产联调", "缺少因子依据的成本碳排寿命收益计算"],
+  "cut_order_if_over_budget": ["图表装饰", "动画和高级编辑控件", "可选模型信息展开方式优化"],
+  "must_keep": ["三机制各一条可操作路径", "五案完整性与同池对照", "准确父方案和未知性能身份", "目标与偏好分离", "范围正确的冲突说明"],
+  "completion_rule": "Implementation and new case replay must be completed and recorded separately; completion of this plan document does not complete its work packages."
+}

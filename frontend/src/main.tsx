@@ -11,6 +11,7 @@ import {
   Download,
   FileText,
   FlaskConical,
+  GitCompareArrows,
   Layers3,
   LoaderCircle,
   Microscope,
@@ -35,6 +36,7 @@ import "./styles.css";
 import { DecisionWorkflow } from "./components/DecisionWorkflow";
 import { ReviewCenter } from "./components/ReviewCenter";
 import { ResearchWorkbench } from "./components/ResearchWorkbench";
+import { CreativeWorkbench } from "./components/CreativeWorkbench";
 import type { Highlight } from "./review-types";
 import "./decision.css";
 import "./review.css";
@@ -77,7 +79,23 @@ function Status({ recipe }: { recipe: Recipe }) {
   );
 }
 function App() {
-  const [route, setRoute] = useState(() => new URLSearchParams(window.location.search).get("view") === "research" ? "research" : "review");
+  const [route, setRoute] = useState(() => {
+    const view = new URLSearchParams(window.location.search).get("view");
+    return view &&
+      [
+        "review",
+        "research",
+        "design",
+        "decision",
+        "workbench",
+        "data",
+        "observations",
+        "models",
+        "reports",
+      ].includes(view)
+      ? view
+      : "review";
+  });
   const [guidedTour, setGuidedTour] = useState<Highlight | null>(null);
   const [catalog, setCatalog] = useState<Recipe[]>([]),
     [dataset, setDataset] = useState<Dataset | null>(null),
@@ -230,6 +248,7 @@ function App() {
           {[
             { id: "review", label: "成果与验证", icon: ShieldCheck },
             { id: "decision", label: "场景选材", icon: ClipboardList },
+            { id: "design", label: "案例与设计", icon: GitCompareArrows },
             { id: "workbench", label: "历史初筛", icon: SlidersHorizontal },
             { id: "data", label: "数据与依据", icon: Database },
             { id: "observations", label: "试验回流", icon: FlaskConical },
@@ -243,6 +262,7 @@ function App() {
               className={route === n.id ? "nav-item active" : "nav-item"}
               onClick={() => {
                 setRoute(n.id);
+                window.history.replaceState({}, "", "?view=" + n.id);
                 if (n.id === "workbench" && scenario && !snapshot)
                   void calculate(scenario);
                 setNotice("");
@@ -280,6 +300,7 @@ function App() {
                   {
                     review: "成果证据与选材复核",
                     decision: "场景驱动材料决策",
+                    design: "案例比选与协同设计",
                     workbench: "材料方案推荐",
                     data: "数据目录与质量",
                     observations: "试验审核工作区",
@@ -835,6 +856,7 @@ function App() {
             </>
           )}
           {route === "research" && <ResearchWorkbench />}
+          {route === "design" && <CreativeWorkbench />}
           {route === "reports" && (
             <>
               <PageTitle

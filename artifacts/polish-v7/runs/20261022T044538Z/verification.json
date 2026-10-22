@@ -1,0 +1,103 @@
+{
+  "created_at": "2026-10-22T04:45:49.400731+00:00",
+  "status": "passed",
+  "actor": "AI software replay",
+  "source_database_unchanged": "624862ee54e8282eb00a81713f0bc2c7d800fa5ddd435a5e1089b395278464a6",
+  "protected_legacy_files_unchanged": 84,
+  "source_files": {
+    "backend/app/creative/contracts.py": "7f31651bdfbe840863a709a904cf217b96c08d2f61eda96f47c39c726e1b49be",
+    "backend/app/creative/printing.py": "9cb80808bf71dd9e73b7907300e8d34f2dcd2d2e73ec2beff34aa764ff86a0b0",
+    "backend/app/creative/router.py": "29d84d376ba8a826bfd547de86135d2fe1ac312b214bb2356a761923441e41a7",
+    "backend/app/creative/service.py": "054fb2549c9022fd4d622cfe579ac436cd4f0bdd14d48799f8be3def536e2748",
+    "backend/app/creative/__init__.py": "378c7590f4592f080a2cd85f0acb76ee12d54da29562c58a438d935f6790ae89",
+    "backend/app/main.py": "d2dbd02aa3bf5bdadfd9eff59d302891d6b3549d1549e561d76f7a2637440920",
+    "frontend/src/components/CreativeWorkbench.tsx": "4324c2144d75782e8cea350f068f1742a3644b06a67a1788110ae207f50d95ee",
+    "frontend/src/creative-types.ts": "f2cba3deaf998ad3b4590dc8933821c97056b690218a4cc75be44af37dfbb11e",
+    "frontend/src/creative.css": "250fd361772a14c67c58e8eeeea0dcd08c3b15ca615cc1a2abffe46b8ca51320",
+    "frontend/src/main.tsx": "b37a003e88bcb7a01d438982961e0de91f1354887a741ca467954c7c77c267bc",
+    "scripts/replay_creative_workbench_v7.py": "9bccbbc5a09f29b579372117fb667c2653894f7d3f88e59782c2a8d6552e17a0",
+    "tests/test_creative_workbench_v7.py": "ddb6419383eaf11260c17369fc2a280249c4c6ae93dd858a422ffb1b82b14b0d"
+  },
+  "checks": {
+    "A01": "C1至C3每条目标均有来源；未知场景不借用规则。",
+    "A02": "C4/C5附加要求保留明确构造模板身份。",
+    "A03": "三种偏好下可行ID集合不变，首位分别为H、K和R7；五者均非支配。",
+    "A05": "C2应变2525με并列，默认顺序由TSR等后续指标区分。",
+    "A08": "准确R4父方案下10个假设、7个在范围内；双锁定为空，不换父方案。",
+    "A09": "草案不继承父方案实测，原需求、父方案及设计意图随记录保存。",
+    "A04": "偏好不补偿硬要求失败；R5动稳定度等于6260时不通过严格大于6260。",
+    "A06": "84条目录为证据不足；35条完整数值子池有四组范围内冲突。",
+    "A07": "四组证书及删除见证校验通过；界面明确见证仅适用于剩余子集。",
+    "A10": "历史草案可重读；在隔离副本上推进数据修订后拒绝新建草案。",
+    "A11": "五案均有同池B1对照，数值可行集合一致；保留构造案例身份。",
+    "A12_software": "案例卡、取舍与草案JSON导出等于保存记录，打印显示同一保存内容指纹；键盘与布局另见UI记录。"
+  },
+  "case_cards": [
+    {
+      "case_id": "C1",
+      "title": "高温重载车辙处治",
+      "question": "为什么这个路段需要这些材料性能？",
+      "pool": 84,
+      "feasible": 2,
+      "baseline_feasible": 2,
+      "diagnosis": "numeric_feasible",
+      "record_id": "crun_25ebe541043c416cb6e61fdadb340636",
+      "sha256": "4fbc1a20eb6301ba91c95f9195b6774df344cc8aa456ee4ae1eb9581f7f2fe2c",
+      "html": "C1.html",
+      "snapshot": "C1.json.gz"
+    },
+    {
+      "case_id": "C2",
+      "title": "寒冷地区温缩裂缝处治",
+      "question": "应变相同，怎样选择并继续设计？",
+      "pool": 84,
+      "feasible": 2,
+      "baseline_feasible": 2,
+      "diagnosis": "numeric_feasible",
+      "record_id": "crun_9025aa81f7fc4a5a970d93f9a8be62b0",
+      "sha256": "5e04ac5ef87f483251c7f921e7a113f4d86674d0ff0ce1222bb348f0f8773cc3",
+      "html": "C2.html",
+      "snapshot": "C2.json.gz"
+    },
+    {
+      "case_id": "C3",
+      "title": "水损害路段修复",
+      "question": "都满足要求，应该优先看哪一种？",
+      "pool": 84,
+      "feasible": 5,
+      "baseline_feasible": 5,
+      "diagnosis": "numeric_feasible",
+      "record_id": "crun_66080e5c5b3d4cd0a9d863810f7a5591",
+      "sha256": "56473aea377a7ff0153ee820fb74ed0a13aa68d2f7f11df3c408117c68f3b8fd",
+      "html": "C3.html",
+      "snapshot": "C3.json.gz"
+    },
+    {
+      "case_id": "C4",
+      "title": "高RAP再生材料选型",
+      "question": "再生材料要求提高后还有方案吗？",
+      "pool": 84,
+      "feasible": 1,
+      "baseline_feasible": 1,
+      "diagnosis": "numeric_feasible",
+      "record_id": "crun_d9de95d6b59741d994f9360a89dfcc34",
+      "sha256": "8b3fccb3224001a592238d09afa2db5a3835c2e1d7ae17e1cc28c687106189d6",
+      "html": "C4.html",
+      "snapshot": "C4.json.gz"
+    },
+    {
+      "case_id": "C5",
+      "title": "高低温与水稳定复合约束",
+      "question": "没有可行方案，下一步应该做什么？",
+      "pool": 84,
+      "feasible": 0,
+      "baseline_feasible": 0,
+      "diagnosis": "evidence_insufficient",
+      "record_id": "crun_36bbaf1cd57347efa81eb0aa2932d023",
+      "sha256": "e80f29ebb029a34f9fc2fb2473fa1e84516221453447ed6b2686ed6766781ee1",
+      "html": "C5.html",
+      "snapshot": "C5.json.gz"
+    }
+  ],
+  "scope": "Five constructed software cases on an isolated database, not new material measurements or human timing."
+}

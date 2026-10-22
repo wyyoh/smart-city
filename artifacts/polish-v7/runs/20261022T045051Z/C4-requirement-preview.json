@@ -1,0 +1,26 @@
+{
+  "kind": "adjustment_preview",
+  "source_decision_id": "mate_556ee7c7638a412ebd976df1ecd490c0",
+  "source_decision_sha256": "362c99feefeb0c17fc47b1a98dbec2f5f5e05e6e029372a2e634bcb3ba75f931",
+  "pool_sha256": "d4709f47676795fc534be0c6985099eff8cc8859a9227597b24a7d075ee0b72b",
+  "pool_size": 84,
+  "changes": [
+    {
+      "metric": "rap_min_pct",
+      "before": 70.0,
+      "after": 75.0,
+      "unit": "%"
+    }
+  ],
+  "before_feasible_ids": [
+    "mix_5a0eae6db3cb0a2f9a1f"
+  ],
+  "after_feasible_ids": [],
+  "summary": {
+    "excluded": 81,
+    "needs_evidence": 3,
+    "numeric_review": 0,
+    "evidence_review": 0
+  },
+  "note": "仅预览同池数值判断，不保存或修改原需求；确认后生成新的需求和决策。"
+}

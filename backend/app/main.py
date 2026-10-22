@@ -12,6 +12,7 @@ from .domain.contracts import ObservationInput, ReviewInput, Scenario, VariantIn
 from .decision.router import decision_router
 from .review.router import review_router
 from .research_workbench.router import research_router
+from .creative.router import creative_router
 from .services import (case_cards, catalog, create_observation, create_variant, get_snapshot, html_report,
                        latest_dataset, recipe_detail, recommend, review_observation, scene_rules)
 from .settings import ARTIFACTS_DIR, FRONTEND_DIST, ROOT, VERSION
@@ -123,6 +124,7 @@ def create_app(database_engine=engine):
     app.include_router(decision_router(session_dependency))
     app.include_router(review_router(session_dependency))
     app.include_router(research_router(session_dependency))
+    app.include_router(creative_router(session_dependency))
 
     if FRONTEND_DIST.exists():
         app.mount('/', StaticFiles(directory=FRONTEND_DIST, html=True), name='frontend')
