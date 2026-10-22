@@ -1,7 +1,7 @@
 {
   "phase": "submission_finish_v8",
   "created_on": "2026-10-23",
-  "status": "publication_pending",
+  "status": "completed",
   "application_version": "0.4.0",
   "scope": "统一最终技术说明、当前原型实际演示、运行资源与仓库交接；创意方案与软件原型交付。",
   "work_packages": [
@@ -28,7 +28,7 @@
     {
       "id": "S05",
       "title": "生成交付索引与附件并同步 GitHub main",
-      "status": "in_progress"
+      "status": "completed"
     }
   ],
   "acceptance": [
@@ -47,5 +47,7 @@
     "registration_and_eligibility": "confirmed_completed_by_user_on_2026-10-23",
     "guide_page": "https://cpipc.acge.org.cn/cw/contestNews/detail/1/2c9080189ef4ecee019f038802d55c4b?page=0"
   },
-  "independent_git_export": "artifacts/submission-v8/clean-checkout.json"
+  "independent_git_export": "artifacts/submission-v8/clean-checkout.json",
+  "completed_on": "2026-10-23",
+  "published_payload_commit": "100ad445d2ac2d2ee6a6b167131917244c37f6e5"
 }

@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "completed_on": "2026-10-23",
+  "phase": "submission_finish_v8",
+  "application_version": "0.4.0",
+  "scope": "Final creative proposal documents, actual demonstration, anonymous deliverable and GitHub main handoff.",
+  "work_packages_completed": 5,
+  "validated_source_commit": "f9ef0c51f45296ced69f58efa47014ca0158d8c5",
+  "validated_git_tree": "69bfe7e6c9923b541d1ba2561cddbcc8a0623b3e",
+  "published_payload_commit": "100ad445d2ac2d2ee6a6b167131917244c37f6e5",
+  "repository": "https://github.com/wyyoh/smart-city",
+  "branch": "main",
+  "publication_note": "Source and assets checked in the validated source commit; later commits append verification and publication receipts only.",
+  "regression_tests_passed": 106,
+  "pdf_pages": [
+    7,
+    3
+  ],
+  "video_seconds": 167.52,
+  "anonymous_package_bytes": 32120631,
+  "independent_git_checkout": "passed, including actual PowerShell startup",
+  "anonymous_extracted_checkout": "passed, including actual PowerShell startup",
+  "validation_environment": "Prepared dependencies on current host; no second-machine installation claim.",
+  "legacy_files_unchanged": 84,
+  "v7_hashes_unchanged": 97,
+  "original_database_sha256": "624862ee54e8282eb00a81713f0bc2c7d800fa5ddd435a5e1089b395278464a6",
+  "registration_and_eligibility": "user confirmed complete",
+  "official_submission_deadline": "2026-10-25T12:00:00+08:00",
+  "portal_submission_performed": false,
+  "remaining_entrant_steps": [
+    "Confirm registered project title and portal upload constraints",
+    "Upload anonymous documents and source attachment to the competition system",
+    "Confirm submission and retain portal receipt"
+  ],
+  "deliverables": [
+    {
+      "path": "output/submission/项目说明书.pdf",
+      "bytes": 309507,
+      "sha256": "85387c2c95c55b7d662252447cf36f61f5f7b991914580a4a274eb446ddf942b"
+    },
+    {
+      "path": "output/submission/项目简表.pdf",
+      "bytes": 280685,
+      "sha256": "b57b6c89b9f6661a7691db50eb91229510154ebca6b0c3288481ad3ad3b8eccd"
+    },
+    {
+      "path": "output/submission/项目说明书.docx",
+      "bytes": 91865,
+      "sha256": "44a84c1458a1bb42368f76227be261b2d738bc933a854ae09668c75304a6a3fb"
+    },
+    {
+      "path": "output/submission/项目简表.docx",
+      "bytes": 126768,
+      "sha256": "40be68b92a0b30a862d99d5a4f4b5fb65b846717574c2c0f1325d5b4e7891754"
+    },
+    {
+      "path": "output/submission/匿名提交包.zip",
+      "bytes": 32120631,
+      "sha256": "8dc932e9452e4df4ccba13aba85e12573d0b362af776f62fad6c2e49ddec2eec"
+    },
+    {
+      "path": "artifacts/submission-v8/demo/数智选材_五案实际操作.mp4",
+      "bytes": 5469901,
+      "sha256": "1f4930d869fd194248cfc4f5a5f3cf36eef7a6900f46de11a33e994073628eed"
+    },
+    {
+      "path": "artifacts/distribution/runtime-assets.zip",
+      "bytes": 28272502,
+      "sha256": "f5c6a2c2f7a23835a7e75a76b58b0ce347fcd8e07a8771b949296370179fcd94"
+    }
+  ]
+}
