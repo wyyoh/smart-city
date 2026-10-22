@@ -43,7 +43,10 @@ def build():
                 entries.append({'path': name, 'bytes': path.stat().st_size, 'sha256': sha(path),
                     'preserve_existing': name in ['data/workbench.sqlite', 'artifacts/review-phase/demo.sqlite'] or name.startswith('frontend/dist/')})
                 bundle.write(path, name)
+    frontend_sources = list((ROOT/'frontend/src').rglob('*')) + [ROOT/'frontend/package.json', ROOT/'frontend/pnpm-lock.yaml', ROOT/'frontend/vite.config.ts', ROOT/'frontend/tsconfig.json']
+    frontend_hashes = {p.relative_to(ROOT).as_posix(): sha(p) for p in sorted(frontend_sources) if p.is_file()}
     manifest = {'schema_version': 1, 'created_at': datetime.now(timezone.utc).isoformat(), 'application_version': '0.4.0',
+        'frontend_source_files': frontend_hashes,
         'archive': {'path': 'artifacts/distribution/runtime-assets.zip', 'bytes': archive.stat().st_size, 'sha256': sha(archive)},
         'files': entries, 'scope': 'Existing runtime snapshots, frozen research input, research-only models, frontend build, historical final releases.',
         'restoration': 'python scripts/restore_published_assets.py',

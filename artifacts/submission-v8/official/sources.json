@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-10-23",
+  "guide_page": "https://cpipc.acge.org.cn/cw/contestNews/detail/1/2c9080189ef4ecee019f038802d55c4b?page=0",
+  "files": [
+    {
+      "path": "artifacts/submission-v8/official/guide.pdf",
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=dea5f18db2ef49ba85144d906aafa43c",
+      "bytes": 351967,
+      "sha256": "56e3a668957664bf11a0790055b8003fa1dcf7e04a110ae8902558c8cfed0766",
+      "content_disposition": null
+    },
+    {
+      "path": "artifacts/submission-v8/official/project-summary.docx",
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=69a79360907545d0a8cbff385db08aa9",
+      "bytes": 140891,
+      "sha256": "c1f280161f0037b477528b65372672c003806457f4923be773ef456cd1010697",
+      "content_disposition": null
+    },
+    {
+      "path": "artifacts/submission-v8/official/project-description.docx",
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=8df7226847e14466ba27cfe57fe13f69",
+      "bytes": 92491,
+      "sha256": "bf0347f12f93bba3280e2c0ca384727fd7ad2360c64201fb6d1c1cb648f655cf",
+      "content_disposition": null
+    },
+    {
+      "path": "artifacts/submission-v8/official/business-plan.docx",
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=9a28b40e4ef245589142b780d268f10a",
+      "bytes": 91799,
+      "sha256": "777f66a29204f6a9470da43f0b23d1e3c76f08a4891c08718c81c27dfd91e01b",
+      "content_disposition": null
+    }
+  ]
+}

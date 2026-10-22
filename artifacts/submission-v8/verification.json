@@ -1,0 +1,69 @@
+{
+  "created_on": "2026-10-23",
+  "status": "local_checks_passed_awaiting_git_export",
+  "application_version": "0.4.0",
+  "regression_tests": 106,
+  "frontend_build": "passed",
+  "legacy_files_unchanged": 84,
+  "v7_hashes_unchanged": 97,
+  "original_database_sha256": "624862ee54e8282eb00a81713f0bc2c7d800fa5ddd435a5e1089b395278464a6",
+  "pdf_pages": [
+    7,
+    3
+  ],
+  "pdf_visual_review": "all final pages inspected",
+  "video_seconds": 167.52,
+  "anonymous_package_checks": "extracted package, core workflows, 43 references, actual PowerShell launch, known identity markers and nested payloads",
+  "anonymous_launcher": {
+    "status": "passed",
+    "script": "scripts/start-creative-demo.ps1",
+    "health_version": "0.4.0",
+    "C1_pool": 84,
+    "C1_feasible": 2,
+    "dependency_environment": "Prepared dependency junction, no new dependency installation claim."
+  },
+  "workbook_view_parse": "passed; same sheet names and dimensions, all non-metadata ZIP parts byte-identical",
+  "index_links": {
+    "development_missing": 0,
+    "anonymous_missing": 0
+  },
+  "portal_submission_performed": false,
+  "official_deadline": "2026-10-25T12:00:00+08:00",
+  "deliverables": [
+    {
+      "path": "output/submission/项目说明书.pdf",
+      "bytes": 309507,
+      "sha256": "85387c2c95c55b7d662252447cf36f61f5f7b991914580a4a274eb446ddf942b"
+    },
+    {
+      "path": "output/submission/项目简表.pdf",
+      "bytes": 280685,
+      "sha256": "b57b6c89b9f6661a7691db50eb91229510154ebca6b0c3288481ad3ad3b8eccd"
+    },
+    {
+      "path": "output/submission/项目说明书.docx",
+      "bytes": 91865,
+      "sha256": "44a84c1458a1bb42368f76227be261b2d738bc933a854ae09668c75304a6a3fb"
+    },
+    {
+      "path": "output/submission/项目简表.docx",
+      "bytes": 126768,
+      "sha256": "40be68b92a0b30a862d99d5a4f4b5fb65b846717574c2c0f1325d5b4e7891754"
+    },
+    {
+      "path": "output/submission/匿名提交包.zip",
+      "bytes": 32120631,
+      "sha256": "8dc932e9452e4df4ccba13aba85e12573d0b362af776f62fad6c2e49ddec2eec"
+    },
+    {
+      "path": "artifacts/submission-v8/demo/数智选材_五案实际操作.mp4",
+      "bytes": 5469901,
+      "sha256": "1f4930d869fd194248cfc4f5a5f3cf36eef7a6900f46de11a33e994073628eed"
+    },
+    {
+      "path": "artifacts/distribution/runtime-assets.zip",
+      "bytes": 28272502,
+      "sha256": "f5c6a2c2f7a23835a7e75a76b58b0ce347fcd8e07a8771b949296370179fcd94"
+    }
+  ]
+}

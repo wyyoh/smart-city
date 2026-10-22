@@ -1,0 +1,278 @@
+{
+  "recorded_on": "2026-10-23",
+  "created_at": "2026-10-22T17:39:49.454639+00:00",
+  "status": "recorded",
+  "recording_pace": 1.0,
+  "format": "continuous actual browser recording with automated operations, no narration",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "duration_seconds_observed": 167.52,
+  "source_database_unchanged_sha256": "624862ee54e8282eb00a81713f0bc2c7d800fa5ddd435a5e1089b395278464a6",
+  "events": [
+    {
+      "case": "C1",
+      "action": "actual_browser_case_run",
+      "result": {
+        "id": "crun_92afa59c-9f78-40e1-a0d6-5be2e2cee223",
+        "record_sha256": "38d8d4d0945af0d3eb8c3a236bc9937ce70d6822f68102065a515c26fcee36f9",
+        "feasible": 2,
+        "same_feasible_set": true
+      }
+    },
+    {
+      "case": "C3",
+      "action": "actual_browser_case_run",
+      "result": {
+        "id": "crun_f50d0223-35ef-4b5f-bd1b-3b9c7180989e",
+        "record_sha256": "fba879ce15017069d7d09a859fdcfb9a1d90b62d8c2a89f2e9d105ee98c42c4f",
+        "feasible": 5,
+        "same_feasible_set": true
+      }
+    },
+    {
+      "case": "C2",
+      "action": "actual_browser_case_run",
+      "result": {
+        "id": "crun_8fcf721f-3046-4975-a6b2-430b553f2c18",
+        "record_sha256": "ab3ebf566f08fbb7e5c7f8799091e0d80fe2376019b7e85310c571e4a3d5ce6d",
+        "feasible": 2,
+        "same_feasible_set": true
+      }
+    },
+    {
+      "action": "save_design_draft",
+      "id": "draft_e102a5a4-dbf4-4d11-b365-c7a49af28ed9",
+      "sha256": "3709cb508e451ef95bade68218ec028eb1c4365b4e3ae88afa9a639ba23e8e9a",
+      "measured_performance": null,
+      "parent_recipe_id": "mix_ec30ff644f3111c570bc"
+    },
+    {
+      "case": "C4",
+      "action": "actual_browser_case_run",
+      "result": {
+        "id": "crun_45aaf242-f968-40a1-8db8-977b0ca1d003",
+        "record_sha256": "62967a5c20cd21fb706a81d3768223432c86739e543b896444cecd497ae9de76",
+        "feasible": 1,
+        "same_feasible_set": true
+      }
+    },
+    {
+      "case": "C5",
+      "action": "actual_browser_case_run",
+      "result": {
+        "id": "crun_655e9916-17de-4e8c-8d1f-5ecdc7cb0cac",
+        "record_sha256": "7b1fe9b76e5d02a5312242129a9ad0166499ee6c3725e7d5b11e216cc15e3bb8",
+        "feasible": 0,
+        "same_feasible_set": true
+      }
+    }
+  ],
+  "case_runs": {
+    "C1": {
+      "id": "crun_92afa59c-9f78-40e1-a0d6-5be2e2cee223",
+      "record_sha256": "38d8d4d0945af0d3eb8c3a236bc9937ce70d6822f68102065a515c26fcee36f9",
+      "feasible": 2,
+      "same_feasible_set": true
+    },
+    "C3": {
+      "id": "crun_f50d0223-35ef-4b5f-bd1b-3b9c7180989e",
+      "record_sha256": "fba879ce15017069d7d09a859fdcfb9a1d90b62d8c2a89f2e9d105ee98c42c4f",
+      "feasible": 5,
+      "same_feasible_set": true
+    },
+    "C2": {
+      "id": "crun_8fcf721f-3046-4975-a6b2-430b553f2c18",
+      "record_sha256": "ab3ebf566f08fbb7e5c7f8799091e0d80fe2376019b7e85310c571e4a3d5ce6d",
+      "feasible": 2,
+      "same_feasible_set": true
+    },
+    "C4": {
+      "id": "crun_45aaf242-f968-40a1-8db8-977b0ca1d003",
+      "record_sha256": "62967a5c20cd21fb706a81d3768223432c86739e543b896444cecd497ae9de76",
+      "feasible": 1,
+      "same_feasible_set": true
+    },
+    "C5": {
+      "id": "crun_655e9916-17de-4e8c-8d1f-5ecdc7cb0cac",
+      "record_sha256": "7b1fe9b76e5d02a5312242129a9ad0166499ee6c3725e7d5b11e216cc15e3bb8",
+      "feasible": 0,
+      "same_feasible_set": true
+    }
+  },
+  "subtitles": [
+    {
+      "start": 0.7190000000409782,
+      "end": 8.844000000040978,
+      "text": "数智选材：从养护需求出发，比较材料，再继续设计。"
+    },
+    {
+      "start": 10.797000000020489,
+      "end": 18.891000000061467,
+      "text": "C1 高温重载：同一84条目录中，有2项数值满足构造要求。"
+    },
+    {
+      "start": 19.65700000000652,
+      "end": 27.78200000000652,
+      "text": "展开要求出处：规则、单位与适用条件随本次决策保留。"
+    },
+    {
+      "start": 29.45299999997951,
+      "end": 37.57799999997951,
+      "text": "C3 水损害：五种候选均数值可行，而且全部非支配。"
+    },
+    {
+      "start": 38.48499999998603,
+      "end": 48.57799999997951,
+      "text": "改为残留稳定度优先，首位H变K；五项可行候选保持不变。"
+    },
+    {
+      "start": 49.17200000002049,
+      "end": 57.25,
+      "text": "原始数值与要求线说明取舍，不用一个综合分数掩盖性能差异。"
+    },
+    {
+      "start": 58.375,
+      "end": 66.48499999998603,
+      "text": "保存工程师的取舍理由，后续交接可以回看依据。"
+    },
+    {
+      "start": 68.06299999996554,
+      "end": 76.15700000000652,
+      "text": "C2 寒冷抗裂：两项候选应变同为2525με，继续比较其他指标。"
+    },
+    {
+      "start": 77.76600000006147,
+      "end": 85.875,
+      "text": "从准确的R4父配方继续设计，保留原寒冷场景的要求。"
+    },
+    {
+      "start": 87.10999999998603,
+      "end": 96.20299999997951,
+      "text": "保持组分名义份额，比较油石比4.9%到5.0%的设计假设。"
+    },
+    {
+      "start": 97.59400000004098,
+      "end": 106.68799999996554,
+      "text": "草案保存需求、改动与意图；新配方实测保持未知。"
+    },
+    {
+      "start": 108.98499999998603,
+      "end": 118.06299999996554,
+      "text": "C4 将名义RAP要求从70%提高到75%，预览数值可行1变0。"
+    },
+    {
+      "start": 119.01600000006147,
+      "end": 127.125,
+      "text": "确认后另存新需求与决策，旧记录保留。名义比例不等于减碳收益。"
+    },
+    {
+      "start": 128.71900000004098,
+      "end": 137.7970000000205,
+      "text": "C5 完整84条目录含缺测：证据不足，尚不能判定无解。"
+    },
+    {
+      "start": 139.14100000006147,
+      "end": 148.23499999998603,
+      "text": "明确切换35条完整数值子池，得到四组范围内冲突。"
+    },
+    {
+      "start": 149.01600000006147,
+      "end": 159.10999999998603,
+      "text": "删除见证只对剩余子集成立；据此选择补资料、改要求或探索配方。"
+    },
+    {
+      "start": 159.51600000006147,
+      "end": 167.51600000006147,
+      "text": "五案同池对照；交付包含源码、接口、保存记录与可重放证据。"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "artifacts/submission-v8/demo/overview.png",
+      "sha256": "8e39832ea69c741bc362f69197acbcd1403c276061430075c97918b23a7f61e3",
+      "at_seconds": 0.72
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C1-scene.png",
+      "sha256": "422e84026d571bced089765de709e485d62f93eba87bc2d0a8f05ee0b1e3dc2e",
+      "at_seconds": 10.8
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C1-sources.png",
+      "sha256": "616e5b477e46155ca157a4176c70b317ce2d0cf30701acfd94cf88ff9361e023",
+      "at_seconds": 19.66
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C3-TSR.png",
+      "sha256": "5793a469c540c57a8597f1a13d09c7090a1c11dd5d5f5b96594e3007ee7dac5e",
+      "at_seconds": 29.45
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C3-residual.png",
+      "sha256": "3e03cd90153a599745083fbd8f35df4cdf4b7afe25bfacbf309c18cce8b828a1",
+      "at_seconds": 38.48
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C3-chart.png",
+      "sha256": "29f843adea729dd23c42905fd404bc2d9a27dc811f9ae45ce1d19e9997037978",
+      "at_seconds": 49.17
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C3-saved.png",
+      "sha256": "865d27fa89200093b97af1aa473a74c31c18d87f036512c42d054cfa05b86ea1",
+      "at_seconds": 58.38
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C2-tie.png",
+      "sha256": "d06fa7e3302cdbce67cf9c704574ce6585bf003833ac01776c445501350d1794",
+      "at_seconds": 68.06
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C2-explorer.png",
+      "sha256": "e3e7a646c02ab513d75fb61e7a1407b210d0733b0a8e2a326416a617230c6934",
+      "at_seconds": 77.77
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C2-change.png",
+      "sha256": "97450a15c2ba3df96b9cc8c09086a80782a854777f8ad2677b5934e3db83bff8",
+      "at_seconds": 87.11
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C2-draft.png",
+      "sha256": "fc620d2a6243ee789dee8bc0e237a9b2fcc615b98b3e250fcefe0dd2dcdd9313",
+      "at_seconds": 97.59
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C4-preview.png",
+      "sha256": "c7ba5663258b7835d12dab5c23060ddd6c0d54e5a979126d4f38bc3b993d0582",
+      "at_seconds": 108.98
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C4-adjusted.png",
+      "sha256": "0bfba669c73ec9b5f1844211a4acff954fa9072c3e2a01bd929f1c990a7e9a21",
+      "at_seconds": 119.02
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C5-unknown.png",
+      "sha256": "0357d141cafa0a61b03582a9855b6fe5cfe3598e8fe0b670debcc2ad116f4db0",
+      "at_seconds": 128.72
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C5-conflict.png",
+      "sha256": "e0763a48b3563dc75d90ae08e259f67756aaae7ae80dce0925fa1714eb1f2c42",
+      "at_seconds": 139.14
+    },
+    {
+      "path": "artifacts/submission-v8/demo/C5-witness.png",
+      "sha256": "666693104690bfbacfa73fe9f60756ac780f8cc5d69141574daad105031c8536",
+      "at_seconds": 149.02
+    }
+  ],
+  "page_errors": [],
+  "raw_video": {
+    "path": "artifacts/submission-v8/demo/continuous-browser.webm",
+    "sha256": "7e8e22340954b1c247e270ab4143553906304fba9a3686c3c410c776cc475dcf"
+  }
+}

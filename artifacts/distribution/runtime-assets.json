@@ -1,11 +1,42 @@
 {
   "schema_version": 1,
-  "created_at": "2026-10-20T04:09:45.690277+00:00",
+  "created_at": "2026-10-22T17:34:04.227391+00:00",
   "application_version": "0.4.0",
+  "frontend_source_files": {
+    "frontend/package.json": "70c74f1cf4bfd74764107c120f981743f438c206663fdc9be55b87e195017214",
+    "frontend/pnpm-lock.yaml": "dbe03c3da9bb09449da13555f536b0d7b61197247f97209fcfe9bf8f689f64f2",
+    "frontend/src/components/CandidateEvidence.tsx": "356469aa1010871dd4fb14135cd0c24d478e9eb78a1e1f85677a34a4acef4351",
+    "frontend/src/components/ConflictPanel.tsx": "d25f027f42edbcf37246a00fb995b53e1fa530a420382b653b7bed43f1b5ab63",
+    "frontend/src/components/CreativeWorkbench.tsx": "e5dd9759a7ee1bc4b5ea00eb0d8662c9da9ed1655cad34505ca79df1cec5354b",
+    "frontend/src/components/DecisionDiff.tsx": "e71d61dbb23606f17d67b689dbba65fa044a02ab5ae52dc7b5b608eec98c75b0",
+    "frontend/src/components/DecisionReviewPanel.tsx": "92f330917622950caa2698b40962eca1a4149c5a12eac5da3fbef0aa5fbda39b",
+    "frontend/src/components/DecisionWorkflow.tsx": "115ddd0afb6f76e6896c86c34171af3f91ff902417a76a9d892f6d0ae0bca4be",
+    "frontend/src/components/DemandCard.tsx": "58813d203a74da2f8c28ec5ef0348efdf534e04e2c22bd19e2d56cfc49e96a19",
+    "frontend/src/components/MaterialSchemeCard.tsx": "b93f6e379de9b42b0cda335e0794a25d83f65c7c1a1de5f3ef924c94e405c6d0",
+    "frontend/src/components/NextTestCard.tsx": "852af5a8bc10b01c5a309733b1bcf05c0bfe9e2e43776b9678d54bacc82f1196",
+    "frontend/src/components/PredictionValidation.tsx": "651b432dd2d1fd1114a217a76c753f7e7c654d77e9d2dd00626af6aba850442d",
+    "frontend/src/components/ResearchWorkbench.tsx": "a0a83d95c297d6ee11aae4de3d30e8a097739943262a8efdf6e93be0663566d2",
+    "frontend/src/components/ReviewCenter.tsx": "8e5e80d39465c71bebf55f6a6378c5708d18c075e32c554beaba84f608f1adce",
+    "frontend/src/creative-types.ts": "f2cba3deaf998ad3b4590dc8933821c97056b690218a4cc75be44af37dfbb11e",
+    "frontend/src/creative.css": "250fd361772a14c67c58e8eeeea0dcd08c3b15ca615cc1a2abffe46b8ca51320",
+    "frontend/src/decision-labels.ts": "57139b47adb14a2650bba85c2a354e5698b1cc84364f32b3a52260ad00c3e9f4",
+    "frontend/src/decision-types.ts": "db65e0e6661da5679e6506dd2f2f151c9b2b7fb0b7087fef79ccef1547d89c9a",
+    "frontend/src/decision.css": "698a04130f5c54c80b76469d21958950be6d5e32d74f7708615e5f51f86be3c9",
+    "frontend/src/main.tsx": "0ef61afc97ac890cd71a9335e8302e1294eb54a5284f2036661b70fec9a3b989",
+    "frontend/src/research-types.ts": "1e5233086560b6a5e1edeeae662054bc65da7b5422e6fa1303c46b2c99cdb82d",
+    "frontend/src/research.css": "054218d27acb559de82cfbcd4aa88f0188414841071f0a017902ee542953bde6",
+    "frontend/src/review-types.ts": "2681a36fe8d1cd3f5c912b0b26abff6e01d9698f87a630ee3c0f7f92ab345fea",
+    "frontend/src/review.css": "c917c571ae3396a8d71e46b19e58137f1731076d69749b5b8287b05c95edffd3",
+    "frontend/src/styles.css": "78298bddb607f5025be83d66a1ad8a66f1e49f05e99938d9742d13a153d788e0",
+    "frontend/src/types.ts": "a1e0f440a69be248ff2fd751b7ddcc0b8414eed4dbbccaec984b3176be93c4f5",
+    "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "frontend/tsconfig.json": "ff776ecbcdd4b66ac0b2935a8a6d7d48148d775a894bbbc1f0d2df8c12182121",
+    "frontend/vite.config.ts": "b364de6e109be30be61204c03533e393646a648f31b1664ff8e5d65a97cd6d3f"
+  },
   "archive": {
     "path": "artifacts/distribution/runtime-assets.zip",
-    "bytes": 28261944,
-    "sha256": "669b7c6115a592921ed9cd9320124e2e4159d2a1628a48da9121294212b29638"
+    "bytes": 28272502,
+    "sha256": "f5c6a2c2f7a23835a7e75a76b58b0ce347fcd8e07a8771b949296370179fcd94"
   },
   "files": [
     {
@@ -63,15 +94,15 @@
       "preserve_existing": true
     },
     {
-      "path": "frontend/dist/assets/index-3Z0BEq6E.js",
-      "bytes": 354048,
-      "sha256": "5daf96114cd63cff0188621c54635dabcbe462d6f94e6a5698574ee5f48903d0",
+      "path": "frontend/dist/assets/index-BGROxmrM.css",
+      "bytes": 64653,
+      "sha256": "359e6510c4edecdc2646f92201851f0a9a6618a83fd966cd86f0c93da437d7b1",
       "preserve_existing": true
     },
     {
-      "path": "frontend/dist/assets/index-QP7nw_7a.css",
-      "bytes": 54020,
-      "sha256": "12fabb60f1eed8f7ca2674cd7a5f5d5c9cd6966d1adbbe8c23eb80e068ddb161",
+      "path": "frontend/dist/assets/index-DVF3ZLv7.js",
+      "bytes": 385853,
+      "sha256": "43a110aab65095b682b796c08b9783020d7460f2987675df23a52baafbdd88db",
       "preserve_existing": true
     },
     {
@@ -83,7 +114,7 @@
     {
       "path": "frontend/dist/index.html",
       "bytes": 536,
-      "sha256": "e2b811f9a3ba94100e70eac778e735e4baec4e4534619c8ea671493538178e74",
+      "sha256": "cc0e8518c7bf26e5911f8b963f5f8fc02a235be006e2fd9d81179880b956cd73",
       "preserve_existing": true
     }
   ],

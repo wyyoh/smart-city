@@ -1,0 +1,16 @@
+{
+  "created_on": "2026-10-23",
+  "status": "encoded_and_full_decode_passed",
+  "path": "artifacts/submission-v8/demo/数智选材_五案实际操作.mp4",
+  "bytes": 5469901,
+  "sha256": "1f4930d869fd194248cfc4f5a5f3cf36eef7a6900f46de11a33e994073628eed",
+  "duration_seconds": 167.52,
+  "resolution": [
+    1600,
+    1112
+  ],
+  "codec": "h264",
+  "raw_recording_sha256": "7e8e22340954b1c247e270ab4143553906304fba9a3686c3c410c776cc475dcf",
+  "format": "Current application actual continuous browser recording; automated operations; subtitle band; no narration.",
+  "editing": "One continuous page recording, no replacement of page results; dedicated subtitle band added."
+}

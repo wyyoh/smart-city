@@ -1,0 +1,99 @@
+{
+  "created_on": "2026-10-23",
+  "status": "rendered_and_visually_reviewed",
+  "documents": [
+    {
+      "template": "artifacts/submission-v8/official/project-summary.docx",
+      "template_sha256": "c1f280161f0037b477528b65372672c003806457f4923be773ef456cd1010697",
+      "output": "output/submission/项目简表.docx",
+      "output_sha256": "40be68b92a0b30a862d99d5a4f4b5fb65b846717574c2c0f1325d5b4e7891754",
+      "preserved_package_parts": 25,
+      "edited_parts": [
+        "docProps/core.xml",
+        "word/document.xml"
+      ]
+    },
+    {
+      "template": "artifacts/submission-v8/official/project-description.docx",
+      "template_sha256": "bf0347f12f93bba3280e2c0ca384727fd7ad2360c64201fb6d1c1cb648f655cf",
+      "output": "output/submission/项目说明书.docx",
+      "output_sha256": "44a84c1458a1bb42368f76227be261b2d738bc933a854ae09668c75304a6a3fb",
+      "preserved_package_parts": 24,
+      "edited_parts": [
+        "docProps/core.xml",
+        "word/document.xml"
+      ]
+    }
+  ],
+  "description_word_limits": [
+    {
+      "section": 1,
+      "count_including_headings_and_punctuation": 849,
+      "limit": 2000
+    },
+    {
+      "section": 2,
+      "count_including_headings_and_punctuation": 1094,
+      "limit": 3000
+    },
+    {
+      "section": 3,
+      "count_including_headings_and_punctuation": 2031,
+      "limit": 3000
+    },
+    {
+      "section": 4,
+      "count_including_headings_and_punctuation": 293,
+      "limit": 500
+    }
+  ],
+  "summary_word_limits": [
+    {
+      "row": 6,
+      "characters": 134,
+      "limit": 300
+    },
+    {
+      "row": 8,
+      "characters": 120,
+      "limit": 300
+    },
+    {
+      "row": 10,
+      "characters": 314,
+      "limit": 600
+    },
+    {
+      "row": 12,
+      "characters": 133,
+      "limit": 300
+    }
+  ],
+  "identity_fields": "intentionally_blank_for_anonymous_review",
+  "retained_template_geometry": true,
+  "application_version": "0.4.0",
+  "review": {
+    "date": "2026-10-23",
+    "actor": "AI visual inspection of all final page PNGs",
+    "description_pages": 7,
+    "summary_pages": 3,
+    "final_description_render": "tmp/submission-v8/final-description-2",
+    "final_summary_render": "tmp/submission-v8/final-summary-3",
+    "placeholder_text_black": true,
+    "summary_headings_with_content": true,
+    "blank_trailing_pages": 0,
+    "clipping_or_overlap_observed": false
+  },
+  "pdfs": [
+    {
+      "path": "output/submission/项目简表.pdf",
+      "sha256": "b57b6c89b9f6661a7691db50eb91229510154ebca6b0c3288481ad3ad3b8eccd",
+      "bytes": 280685
+    },
+    {
+      "path": "output/submission/项目说明书.pdf",
+      "sha256": "85387c2c95c55b7d662252447cf36f61f5f7b991914580a4a274eb446ddf942b",
+      "bytes": 309507
+    }
+  ]
+}

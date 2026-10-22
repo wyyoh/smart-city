@@ -11,4 +11,5 @@ artifacts/release/
 artifacts/screenshots/
 *.log
 .env
+tmp/
 

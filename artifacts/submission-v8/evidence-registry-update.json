@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-23",
+  "changes": [
+    {
+      "id": "ev_b335630551682c",
+      "path": "README.md",
+      "previous_sha256": "b88c63c18ab4bc32556b09eb0d529b7656ad418541b8233563517dc12d63c268",
+      "current_sha256": "cc22c8a32696af8b43845e565d643ee32f94b4b8c7aef86fc5fbad26c9201dba"
+    }
+  ],
+  "note": "Live README evidence pointer updated; historical saved reports and original evidence remain unchanged."
+}

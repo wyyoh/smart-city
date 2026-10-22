@@ -7,4 +7,5 @@ if(-not(Test-Path -LiteralPath $PythonPath)){throw 'Run scripts/setup.ps1 before
 $env:ASPHALT_DATABASE=Join-Path $ProjectRoot 'artifacts\polish-v7\ui-demo.sqlite'
 & $PythonPath -X utf8 scripts/prepare_creative_demo.py
 if($LASTEXITCODE -ne 0){throw 'Creative demo database preparation failed.'}
+Write-Host "Creative cases and design: http://127.0.0.1:$Port/?view=design"
 & (Join-Path $PSScriptRoot 'start-local.ps1') -Port $Port

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>数智选材 提交材料与演示</title>
+<style>
+:root{font-family:"Microsoft YaHei",system-ui,sans-serif;color:#183037;background:#f4f5f0;line-height:1.75}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:40px 28px 64px}header{border-top:5px solid #007d7d;padding-top:24px}header small{letter-spacing:.12em;color:#56706f}h1{font-size:36px;line-height:1.3;margin:12px 0 18px}h2{font-size:23px;margin:36px 0 16px}h3{font-size:18px;margin:0 0 8px}p{margin:8px 0 14px}a{color:#00696d;text-underline-offset:4px}.lead{font-size:19px;max-width:830px}.meta{color:#597070;font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.box{background:white;border:1px solid #d5dfd8;padding:22px;border-radius:8px}.primary{display:inline-block;background:#007d7d;color:white;text-decoration:none;padding:10px 18px;border-radius:4px;margin:8px 8px 8px 0}.secondary{display:inline-block;border:1px solid #007d7d;padding:9px 18px;border-radius:4px;text-decoration:none}table{width:100%;border-collapse:collapse;background:white}th,td{border:1px solid #d5dfd8;padding:12px;text-align:left}th{background:#e4eeeb}video{width:100%;max-height:700px;background:#142930;border-radius:6px}.figure{margin:20px 0;background:white;border:1px solid #d5dfd8;padding:14px}.figure img{display:block;width:100%;height:auto}.figure figcaption{padding:12px 6px 0;font-size:14px}.tag{color:#006b63;font-weight:700}.note{background:#e9efeb;border-left:3px solid #007d7d;padding:16px 20px;margin-top:24px}code{font-family:Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}.scroll{overflow:auto}@media(max-width:720px){main{padding:24px 16px}.grid{grid-template-columns:1fr}h1{font-size:28px}.lead{font-size:17px}}
+</style>
+<main>
+<header><small>道路养护材料推荐与协同设计</small><h1>数智选材</h1><p class="lead">把养护场景转成有出处的性能要求，在合理候选之间解释取舍，再带着原需求继续设计。</p><p class="meta">2026年10月23日提交整理版 · 应用0.4.0 · 创意方案与可演示原型</p>
+<a class="primary" href="../../output/submission/项目说明书.pdf">阅读项目说明书</a><a class="secondary" href="http://127.0.0.1:8766/?view=design">打开本地原型</a></header>
+<h2>正式文档与交付附件</h2><div class="grid">
+<article class="box"><h3>项目说明书</h3><p>按官方四部分结构，说明创新机制、技术路线、五案和应用前景，7页。</p><a href="../../output/submission/项目说明书.pdf">PDF</a> · <a href="../../output/submission/项目说明书.docx">可编辑DOCX</a></article>
+<article class="box"><h3>项目简表</h3><p>项目摘要、路线与技术自评，3页。身份字段按匿名要求留空。</p><a href="../../output/submission/项目简表.pdf">PDF</a> · <a href="../../output/submission/项目简表.docx">可编辑DOCX</a></article>
+<article class="box"><h3>源码与匿名附件</h3><p>当前源码、运行资源、文档、视频和案例。附逐文件校验与匿名化说明。</p><a href="../../output/submission/匿名提交包.zip">下载匿名提交包</a> · <a href="../../docs/submission-checklist-v8.md">提交核对</a></article>
+</div>
+<h2>三项机制如何增加决策能力</h2><div class="grid">
+<article class="box"><h3>场景解释与诊断</h3><p>把规则、要求、来源与人工修改一起保留。没有推荐时，区分证据不足和明确候选范围内的冲突。</p><span class="tag">C1与C5</span></article>
+<article class="box"><h3>硬要求与偏好分离</h3><p>所有硬要求先共同筛选；偏好只改变同一可行集合的比较顺序，显示原始数值与取舍理由。</p><span class="tag">C3 首位H变K，五项可行不变</span></article>
+<article class="box"><h3>保持需求继续设计</h3><p>从准确父配方保存原需求、组成改动和设计意图。新草案具有独立身份，实测状态保持未知。</p><span class="tag">C2 油石比4.9%到5.0%</span></article>
+</div>
+<h2>当前原型实际操作</h2><p>约2分48秒，自动化执行的连续浏览器录屏，附字幕、无配音。页面结果来自实际操作；案例要求为合理构造，历史数值来自企业工作簿。</p>
+<video controls preload="metadata" poster="demo/C3-residual.png"><source src="demo/数智选材_五案实际操作.mp4" type="video/mp4"><track src="demo/operation.vtt" kind="subtitles" srclang="zh-CN" label="中文字幕"></video>
+<p><a href="demo/数智选材_五案实际操作.mp4">下载视频</a> · <a href="demo/operation.srt">字幕</a> · <a href="demo/recording.json">操作记录</a> · <a href="demo/video.json">视频校验</a></p>
+<h2>五个典型案例与同池对照</h2><div class="scroll"><table><thead><tr><th>案例</th><th>工程师完成的任务</th><th>B1与作品数值可行数</th><th>保存证据</th></tr></thead><tbody>
+<tr><td>C1 高温重载</td><td>解释要求，查看候选材料及原始依据</td><td>2 / 2</td><td><a href="../polish-v7/runs/20261022T045051Z/C1.html">案例卡</a></td></tr>
+<tr><td>C2 寒冷抗裂</td><td>解释应变并列，从R4继续设计并保存草案</td><td>2 / 2</td><td><a href="../polish-v7/runs/20261022T045051Z/C2-design-draft.html">设计草案</a></td></tr>
+<tr><td>C3 水损害</td><td>切换优先性能，保存取舍理由</td><td>5 / 5</td><td><a href="../polish-v7/runs/20261022T045051Z/C3-saved-preference.html">取舍记录</a></td></tr>
+<tr><td>C4 高RAP</td><td>预览资源要求变化，再确认新要求</td><td>1 / 1</td><td><a href="../polish-v7/runs/20261022T045051Z/C4.html">原案例卡</a></td></tr>
+<tr><td>C5 复合要求</td><td>区分资料不足与范围内冲突，决定下一步</td><td>0 / 0</td><td><a href="../polish-v7/runs/20261022T045051Z/C5-complete-numeric.html">诊断视图</a></td></tr>
+</tbody></table></div>
+<p class="meta">五案共同使用84条AC-13目录并保留缺测。C5完整目录为证据不足；明确切换35条完整数值子池后有四组范围内冲突。基准与作品可行集合一致，新增价值由解释、比较与调整记录体现。</p>
+<figure class="figure"><img src="demo/C3-residual.png" alt="C3切换残留稳定度优先后的实际界面"><figcaption>多种材料都合理时，工程师可以看清排序依据并保留自己的选择理由。</figcaption></figure>
+<h2>复现与检查</h2><p>安装Python 3.12以上、Node.js 24和pnpm 11后，运行 <code>scripts/setup.ps1</code>，再运行 <code>scripts/start-creative-demo.ps1</code>。打开 <code>http://127.0.0.1:8766/?view=design</code>。首次安装需要网络，安装后核心操作本地运行。</p>
+<p><a href="../../README.md">项目启动说明</a> · <a href="../../docs/creative-demo-v7.md">完整演示脚本与答辩问答</a> · <a href="../../docs/api-creative-v7.openapi.json">接口契约</a> · <a href="document-build.json">字数与文档核对</a> · <a href="anonymous-package.json">匿名包核验</a></p>
+<div class="note">本轮交付为创意方案与软件概念验证。研究预测不用于硬要求通过判定；新配方不继承历史实测。官方报名状态由参赛者确认，比赛系统上传与最终提交仍由参赛者完成。</div>
+</main></html>

@@ -2,6 +2,9 @@
 * -text whitespace=cr-at-eol
 *.xlsx binary
 *.pdf binary
+*.docx binary
+*.zip binary
+*.webm binary
 *.mp4 binary
 *.jpg binary
 *.png binary

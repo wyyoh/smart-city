@@ -1,0 +1,17 @@
+{
+  "reviewed_on": "2026-10-23",
+  "actor": "AI visual review of decoded final MP4 frames",
+  "status": "passed",
+  "checked_seconds": [
+    40,
+    99,
+    151
+  ],
+  "findings": [
+    "Chinese subtitles readable in separate band",
+    "C3 K first and five feasible unchanged visible",
+    "C2 saved draft 4.9 to 5.0 and unknown measurements visible",
+    "C5 subset conflicts and deletion witnesses visible"
+  ],
+  "video_sha256": "1f4930d869fd194248cfc4f5a5f3cf36eef7a6900f46de11a33e994073628eed"
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "submission_finish_v8",
+  "created_on": "2026-10-23",
+  "status": "in_progress",
+  "application_version": "0.4.0",
+  "scope": "统一最终技术说明、当前原型实际演示、运行资源与仓库交接；创意方案与软件原型交付。",
+  "work_packages": [
+    {
+      "id": "S01",
+      "title": "统一技术说明与创新对照及五案例",
+      "status": "completed"
+    },
+    {
+      "id": "S02",
+      "title": "录制当前版本实际操作视频与字幕",
+      "status": "completed"
+    },
+    {
+      "id": "S03",
+      "title": "更新 README 启动交接及运行资源",
+      "status": "completed"
+    },
+    {
+      "id": "S04",
+      "title": "验证文档版式与软件及独立目录恢复",
+      "status": "in_progress"
+    },
+    {
+      "id": "S05",
+      "title": "生成交付索引与附件并同步 GitHub main",
+      "status": "in_progress"
+    }
+  ],
+  "acceptance": [
+    "最终说明与五案例的数字、范围、机制和实现状态一致",
+    "新版视频使用当前原型真实操作，字幕与实际结果一致",
+    "PDF 全页渲染并检查，文档及附件链接可用",
+    "运行资源包含当前前端，独立 Git 导出可恢复并完成五案例与设计草案",
+    "历史受保护证据及原始数据库保持原有内容",
+    "最新完成内容推送 main 并核对远程提交"
+  ],
+  "official_submission": {
+    "topic_requirements": "根目录企业任务书课题一第4页",
+    "deadline": "2026-10-25T12:00:00+08:00",
+    "administrative_format": "Official guide and two required templates checked. Upload field capacity and accepted extensions require logged-in portal inspection by entrant.",
+    "note": "作品附件不等于向比赛系统报名或提交。",
+    "registration_and_eligibility": "confirmed_completed_by_user_on_2026-10-23",
+    "guide_page": "https://cpipc.acge.org.cn/cw/contestNews/detail/1/2c9080189ef4ecee019f038802d55c4b?page=0"
+  }
+}

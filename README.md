@@ -2,21 +2,25 @@
 
 v0.4定位为创意方案与可演示原型，重点展示场景驱动推荐、多目标权衡和人机协同配方设计的创新性与实用性。基于企业提供的再生沥青混合料工作簿，支持需求确认、候选检索、冲突解释、材料比较、单元格追溯和人工微调；“配方研究”提供设计假设、组分差异和计算研究参考。
 
-当前参赛范围以 `configs/creative_scope_v6.json` 为准。赛题第4页以创意方案为主，实物实验列为可选加分内容。本轮完成标准是清晰的技术方案、可操作原型、至少3类场景、5个带对照案例和潜在应用价值分析。后续按 `planning/creative_proposal_phase_v6.json` 深化创意与参赛表达，说明见 `docs/creative-proposal-scope-v6.md`。实物材料实验、真人测时与生产部署不作为本轮完成门槛；用于实际工程时仍应履行相应材料与适用性验证。
+2026年10月23日提交整理版已统一到“案例与设计”工作区，应用版本仍为0.4.0。当前技术正文见[最终项目说明](docs/submission-final-v8.md)，创新对照见[创新与案例证据](docs/innovation-brief-v8.md)。正式格式的[项目说明书](output/submission/项目说明书.pdf)和[项目简表](output/submission/项目简表.pdf)均提供PDF及可编辑DOCX。材料、视频与五案证据的统一入口为[交付索引](artifacts/submission-v8/index.html)。
+
+当前参赛范围以 `configs/creative_scope_v6.json` 为准。三类场景、五个同池对照案例、解释比较和带需求的设计草案已实现；模型预测与可靠自动逆向生成的深化路线另行标注。历史报告保留原日期和原内容，当前完成状态见 `planning/submission_finish_v8.json` 与 `artifacts/polish-v7/execution-progress.json`。
+
+正式指南要求匿名评审。GitHub仓库用于完整研发交接；比赛系统使用 `output/submission/匿名提交包.zip`。匿名包不包含Git记录、账户链接和本机测试主机名，保留原型源码、运行资源与可核查案例。简表身份字段留空，参赛者按系统要求处理；本项目没有代为登录或提交比赛系统。官方通知与截止时间见[提交核对说明](docs/submission-checklist-v8.md)。
 
 ## 运行
 
-从GitHub克隆的新目录先执行 `scripts/setup.ps1`，它会校验并恢复随仓库提供的压缩运行资源，再安装依赖和构建前端。使用 `scripts/start-local.ps1 -Demo` 可查看已有决策与复核记录的演示库；完整步骤和证据索引见 [GitHub交接说明](docs/github-handoff.md)。
+从GitHub克隆的新目录先执行 `scripts/setup.ps1`，它会校验并恢复压缩运行资源，再安装依赖和构建前端。主演示入口使用独立数据库，后续启动保留自己的案例、取舍与草案；完整步骤见[GitHub交接说明](docs/github-handoff.md)。
 
 当前机器环境已准备好，在项目目录执行：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/start-local.ps1
+powershell -ExecutionPolicy Bypass -File scripts/start-creative-demo.ps1
 ```
 
-打开 `http://127.0.0.1:8766/`。后端同时提供本地前端静态资源；启动后核心功能不请求公网服务。API文档在 `/docs`，离线交接使用 `docs/api-v2.openapi.json`。`/v1`与历史初筛保留；新主流程使用`/v2`。
+打开 `http://127.0.0.1:8766/?view=design`。按C1、C3、C2、C4、C5顺序演示，具体动作见[演示说明](docs/creative-demo-v7.md)。新版实际操作录屏及字幕保存在 `artifacts/submission-v8/demo/`。后端同时提供前端静态资源；启动后核心功能不请求公网服务。API文档在 `/docs`，新工作区契约为 `docs/api-creative-v7.openapi.json`，复用的需求与证据接口采用 `/v2`。
 
-默认进入“成果与验证”，可按C5冲突、C1证据、C2验证行动三条路径进入场景选材。该入口逐条列出五项基本成果、十项详细技术要求及七项拆分的加分方向，并显示证据文件当前指纹；这些状态是团队登记，不代表官方验收。
+不带查询参数的根路径保留“成果与验证”，用于回看历史证据；当前主演示请使用上述 `?view=design` 地址。成果页显示的状态是团队登记，不代表官方验收。使用 `scripts/start-local.ps1 -Demo` 可查看历史决策与复核单演示库。
 
 生成材料决策后可“生成选材复核单”。复核内容追加保存于本地库，打印版与JSON使用同一条保存记录，保留生成时间、决策哈希、复核哈希和生成时的当前性检查。后续数据变化时应重新生成；历史复核单保留原内容。新接口契约见`docs/api-v3.openapi.json`。
 
