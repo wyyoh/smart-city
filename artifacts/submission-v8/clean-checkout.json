@@ -1,0 +1,55 @@
+{
+  "created_on": "2026-10-23",
+  "status": "passed",
+  "scope": "Independent directory restoration using this host prepared Python dependencies; no second-machine installation claim.",
+  "restoration": {
+    "status": "passed",
+    "restored": [
+      "artifacts/models/DS.joblib",
+      "artifacts/models/TSR.joblib",
+      "artifacts/models/residual.joblib",
+      "artifacts/models/strain.joblib",
+      "artifacts/next-phase/baseline/workbench-v01.sqlite",
+      "artifacts/release/asphalt-workbench-0.2.0-20261019T054226.zip",
+      "artifacts/release/asphalt-workbench-0.3.0-20261019T073332.zip",
+      "artifacts/review-phase/demo.sqlite",
+      "data/workbench.sqlite",
+      "frontend/dist/assets/index-BGROxmrM.css",
+      "frontend/dist/assets/index-DVF3ZLv7.js",
+      "frontend/dist/favicon.svg",
+      "frontend/dist/index.html"
+    ],
+    "already_matching": [],
+    "existing_user_files_preserved": []
+  },
+  "core_application": {
+    "status": "passed",
+    "historical_keys": 180,
+    "case_pool": 84,
+    "case_feasible": [
+      2,
+      2,
+      5,
+      1,
+      0
+    ],
+    "same_pool_baselines_match": true,
+    "C3_preference_preserves_feasible_set": true,
+    "C2_exact_parent_draft_unknown": true,
+    "C5_complete_pool": 35,
+    "C5_conflicts": 4,
+    "current_frontend_and_source_match": true,
+    "review_evidence_verified": 43,
+    "research_compatible": true,
+    "source_database_unchanged": true
+  },
+  "launcher": {
+    "status": "passed",
+    "script": "scripts/start-creative-demo.ps1",
+    "health_version": "0.4.0",
+    "C1_pool": 84,
+    "C1_feasible": 2,
+    "dependency_environment": "Prepared dependency junction, no new dependency installation claim."
+  },
+  "validated_git_tree": "69bfe7e6c9923b541d1ba2561cddbcc8a0623b3e"
+}

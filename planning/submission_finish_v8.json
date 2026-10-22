@@ -1,7 +1,7 @@
 {
   "phase": "submission_finish_v8",
   "created_on": "2026-10-23",
-  "status": "in_progress",
+  "status": "publication_pending",
   "application_version": "0.4.0",
   "scope": "统一最终技术说明、当前原型实际演示、运行资源与仓库交接；创意方案与软件原型交付。",
   "work_packages": [
@@ -23,7 +23,7 @@
     {
       "id": "S04",
       "title": "验证文档版式与软件及独立目录恢复",
-      "status": "in_progress"
+      "status": "completed"
     },
     {
       "id": "S05",
@@ -46,5 +46,6 @@
     "note": "作品附件不等于向比赛系统报名或提交。",
     "registration_and_eligibility": "confirmed_completed_by_user_on_2026-10-23",
     "guide_page": "https://cpipc.acge.org.cn/cw/contestNews/detail/1/2c9080189ef4ecee019f038802d55c4b?page=0"
-  }
+  },
+  "independent_git_export": "artifacts/submission-v8/clean-checkout.json"
 }

@@ -1,6 +1,6 @@
 {
   "created_on": "2026-10-23",
-  "status": "local_checks_passed_awaiting_git_export",
+  "status": "all_local_and_independent_checks_passed_awaiting_publication",
   "application_version": "0.4.0",
   "regression_tests": 106,
   "frontend_build": "passed",
@@ -65,5 +65,7 @@
       "bytes": 28272502,
       "sha256": "f5c6a2c2f7a23835a7e75a76b58b0ce347fcd8e07a8771b949296370179fcd94"
     }
-  ]
+  ],
+  "validated_source_commit": "f9ef0c51f45296ced69f58efa47014ca0158d8c5",
+  "independent_git_export": "artifacts/submission-v8/clean-checkout.json"
 }
