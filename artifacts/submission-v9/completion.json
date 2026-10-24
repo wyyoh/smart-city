@@ -1,0 +1,28 @@
+{
+  "completed_on": "2026-10-24",
+  "objective": "核对比赛必交与可选材料并逐项准备",
+  "status": "materials_prepared",
+  "application_version": "0.4.0",
+  "material_files": 19,
+  "archive": "output/数智选材_参赛材料.zip",
+  "archive_sha256": "f900820bbc7c393653e90458df20f77d9468d222b26d89ea0e211da151d9d221",
+  "official_sources_checked": "all four retained official files match current downloads",
+  "new_business_plan": "official template, six sections, all word limits passed, five pages visually reviewed",
+  "presentation": "ten editable slides, native package and render checks passed",
+  "frozen_v8_software_evidence": "reused unchanged",
+  "portal_submission_performed": false,
+  "remaining_external_checks": [
+    "registered_work_name",
+    "identity_fields_per_system",
+    "accepted_formats_sizes_and_counts",
+    "upload_preview_and_submission_receipt"
+  ],
+  "proofs": [
+    "official-recheck.json",
+    "business-plan-build.json",
+    "presentation-verification.json",
+    "visual-review.json",
+    "index-verification.json",
+    "materials-verification.json"
+  ]
+}

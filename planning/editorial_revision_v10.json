@@ -1,0 +1,35 @@
+{
+  "objective": "重写评审材料并形成约50页作品论文",
+  "requested_on": "2026-10-24",
+  "audience": "企业课题一初赛评审与道路材料工程师",
+  "target": {
+    "language": "简体中文",
+    "paper_pages": "约50页",
+    "formats": [
+      "DOCX",
+      "PDF"
+    ],
+    "structure": "工程任务、设计机制、数据方法、五案、计算研究、应用交接",
+    "citation_style": "顺序编码制"
+  },
+  "editorial_rules": [
+    "段落先陈述具体问题或判断，再给方法与证据",
+    "删除没有对应争议的辩解和重复否定",
+    "有关数据范围和成果状态的信息归入对应方法、表格及讨论",
+    "同一概念保持同一名称，减少抽象术语和宣传性判断",
+    "每项案例给出输入、判断依据、结果和后续操作",
+    "保留所有会影响读者理解的条件、单位、数值与来源"
+  ],
+  "deliverables": [
+    "约50页作品论文",
+    "按官方模板改写的项目简表和项目说明书",
+    "改写后的商业计划书和演示稿",
+    "统一的上传目录及完整材料包",
+    "内部逐项修订与事实核对记录"
+  ],
+  "status": "complete",
+  "independent_peer_review": false,
+  "new_material_experiment": false,
+  "paper_pages": 50,
+  "verification": "artifacts/editorial-v10/content-verification.json"
+}

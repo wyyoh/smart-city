@@ -1,0 +1,75 @@
+{
+  "created_on": "2026-10-24",
+  "status": "authored_awaiting_render_review",
+  "documents": [
+    {
+      "template": "artifacts/submission-v8/official/project-summary.docx",
+      "template_sha256": "c1f280161f0037b477528b65372672c003806457f4923be773ef456cd1010697",
+      "output": "output/submission-v10/01_必交文档/项目简表.docx",
+      "output_sha256": "1d862dcd1796c1a8f003372b7770a769537c05ed5a96982a0bb748d0b9539f40",
+      "preserved_package_parts": 25,
+      "edited_parts": [
+        "docProps/core.xml",
+        "word/document.xml"
+      ]
+    },
+    {
+      "template": "artifacts/submission-v8/official/project-description.docx",
+      "template_sha256": "bf0347f12f93bba3280e2c0ca384727fd7ad2360c64201fb6d1c1cb648f655cf",
+      "output": "output/submission-v10/01_必交文档/项目说明书.docx",
+      "output_sha256": "43032a2e4caa0c0cb68a28a9e631c66417828c71050f0d5bf1cc237a9aaf521f",
+      "preserved_package_parts": 24,
+      "edited_parts": [
+        "docProps/core.xml",
+        "word/document.xml"
+      ]
+    }
+  ],
+  "description_word_limits": [
+    {
+      "section": 1,
+      "count_including_headings_and_punctuation": 829,
+      "limit": 2000
+    },
+    {
+      "section": 2,
+      "count_including_headings_and_punctuation": 1028,
+      "limit": 3000
+    },
+    {
+      "section": 3,
+      "count_including_headings_and_punctuation": 1783,
+      "limit": 3000
+    },
+    {
+      "section": 4,
+      "count_including_headings_and_punctuation": 240,
+      "limit": 500
+    }
+  ],
+  "summary_word_limits": [
+    {
+      "row": 6,
+      "characters": 124,
+      "limit": 300
+    },
+    {
+      "row": 8,
+      "characters": 126,
+      "limit": 300
+    },
+    {
+      "row": 10,
+      "characters": 341,
+      "limit": 600
+    },
+    {
+      "row": 12,
+      "characters": 141,
+      "limit": 300
+    }
+  ],
+  "retained_template_geometry": true,
+  "identity_fields": "blank_for_anonymous_review",
+  "application_version": "0.4.0"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "created_on": "2026-10-24",
+  "viewports": [
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "brokenImages": 0,
+      "localFileLinks": 15
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "brokenImages": 0,
+      "localFileLinks": 15
+    }
+  ],
+  "video": {
+    "duration": 167.52,
+    "width": 1600,
+    "height": 1112,
+    "error": null
+  },
+  "page_errors": []
+}

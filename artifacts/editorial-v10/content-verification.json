@@ -1,0 +1,21 @@
+{
+  "created_on": "2026-10-24",
+  "status": "passed",
+  "paper_source_blocks_checked": 292,
+  "paper_source_blocks_missing": 0,
+  "native_tables": 30,
+  "native_equations": 7,
+  "inline_figures": 12,
+  "references": 12,
+  "pdf_page_counts": {
+    "01_必交文档/项目简表.pdf": 3,
+    "01_必交文档/项目说明书.pdf": 7,
+    "04_商业计划书/商业计划书.pdf": 5,
+    "05_演示PPT/作品演示.pdf": 10,
+    "07_作品论文/作品论文.pdf": 50
+  },
+  "summary_sections_match": 4,
+  "official_body_paragraphs_match": true,
+  "frozen_source_archive_unchanged": true,
+  "source_database_unchanged": true
+}

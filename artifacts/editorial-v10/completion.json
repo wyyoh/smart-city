@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "created_on": "2026-10-24",
+  "scope": "Submission writing, long-form paper, deck, subtitles and upload materials",
+  "paper": {
+    "pages": 50,
+    "chapters": 12,
+    "appendices": 3,
+    "body_chinese_characters_excluding_tables": 19352,
+    "tables": 30,
+    "figures": 12,
+    "editable_equations": 7,
+    "references": 12
+  },
+  "editorial_findings_and_changes": [
+    {
+      "finding": "Repeated defensive qualifications interrupted the design explanation.",
+      "change": "Organized the narrative around the engineer task, processing mechanism, observed case result and reason; placed data conditions at the relevant method or result."
+    },
+    {
+      "finding": "The three creative mechanisms were described abstractly.",
+      "change": "Distinguished requirement changes, preference changes and formulation changes through their inputs, calculations and saved records."
+    },
+    {
+      "finding": "Different data scopes were easy to confuse.",
+      "change": "Explained the 180 historical operation keys, 84-case directory, 35-record numeric subpool and 100-record modeling pool with separate purposes."
+    },
+    {
+      "finding": "Case descriptions lacked enough original values and reasoning.",
+      "change": "Added all feasible candidate values, the C2 strain tie and TSR comparison, C3 preference alternatives, C4 change preview and C5 deletion witnesses."
+    },
+    {
+      "finding": "The modeling narrative did not show the exploratory results in enough detail.",
+      "change": "Reported nested grouping, full-precision MAE comparison, input collisions, intervals and historical selection replays."
+    },
+    {
+      "finding": "Commercial writing overused statements about absent evidence.",
+      "change": "Described customer hypotheses, a limited first delivery, task-based trial acceptance, workload-based pricing and a future economic accounting method."
+    }
+  ],
+  "verification": {
+    "source_blocks_checked": 292,
+    "pdf_pages_visually_checked": 75,
+    "official_word_limits": "passed",
+    "native_presentation_package_and_layout": "passed",
+    "video_full_decode": "passed",
+    "source_wrapper_workflows": "passed",
+    "frozen_runtime_files_unchanged": 656
+  },
+  "bundle": {
+    "status": "passed",
+    "file_count": 21,
+    "archive": "output/数智选材_参赛材料_v10.zip",
+    "archive_bytes": 44655818,
+    "archive_sha256": "3472cce1feac1fc55a98350991484e1d23d9acb49fc4cfb4942abf309a0faef2",
+    "pdf_page_counts": {
+      "01_必交文档/项目简表.pdf": 3,
+      "01_必交文档/项目说明书.pdf": 7,
+      "04_商业计划书/商业计划书.pdf": 5,
+      "05_演示PPT/作品演示.pdf": 10,
+      "07_作品论文/作品论文.pdf": 50
+    },
+    "frozen_runtime_files_byte_identical": 656,
+    "local_links_checked": 21,
+    "known_identity_marker_checks": "passed",
+    "portal_submission_performed": false,
+    "visual_review": "passed"
+  },
+  "portal_submission_performed": false
+}

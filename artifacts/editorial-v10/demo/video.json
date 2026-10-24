@@ -1,0 +1,23 @@
+{
+  "status": "encoded_and_full_decode_passed",
+  "created_on": "2026-10-24",
+  "path": "artifacts/editorial-v10/demo/五案实际操作.mp4",
+  "sha256": "b22d82d2487c5cf50c196c41acda948b40d784e98036729cc272bbe7187ad00a",
+  "bytes": 5471481,
+  "duration_seconds": 167.52,
+  "resolution": [
+    1600,
+    1112
+  ],
+  "raw_recording_sha256": "7e8e22340954b1c247e270ab4143553906304fba9a3686c3c410c776cc475dcf",
+  "page_recording_unchanged": true,
+  "subtitle_edits": [
+    6,
+    11,
+    13,
+    14,
+    16
+  ],
+  "subtitle_count": 17,
+  "operations": "AI browser self-test from the frozen v8 recording; subtitles rewritten."
+}

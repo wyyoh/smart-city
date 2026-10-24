@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "created_on": "2026-10-24",
+  "reviewer": "assistant_visual_inspection",
+  "deliverables": [
+    {
+      "path": "output/submission-v10/01_必交文档/项目简表.docx",
+      "sha256": "1d862dcd1796c1a8f003372b7770a769537c05ed5a96982a0bb748d0b9539f40"
+    },
+    {
+      "path": "output/submission-v10/01_必交文档/项目简表.pdf",
+      "sha256": "ba869b13b305ae35ff253dcb56e474beb4ed5d986ec204aed9ffc1d13c66cf86"
+    },
+    {
+      "path": "output/submission-v10/01_必交文档/项目说明书.docx",
+      "sha256": "43032a2e4caa0c0cb68a28a9e631c66417828c71050f0d5bf1cc237a9aaf521f"
+    },
+    {
+      "path": "output/submission-v10/01_必交文档/项目说明书.pdf",
+      "sha256": "afc239dcada96592756f7d9593d7cb917ddb5810093121181452adcb282cf6dc"
+    },
+    {
+      "path": "output/submission-v10/03_演示视频/五案实际操作.mp4",
+      "sha256": "b22d82d2487c5cf50c196c41acda948b40d784e98036729cc272bbe7187ad00a"
+    },
+    {
+      "path": "output/submission-v10/04_商业计划书/商业计划书.docx",
+      "sha256": "63b89c1088cc0bccdd13da28f48fc30bcb8720dbf667c336b8fd2f39e5c7b272"
+    },
+    {
+      "path": "output/submission-v10/04_商业计划书/商业计划书.pdf",
+      "sha256": "85bfda1def9c213fa94a763e8e18e30a82d92d2228a38e9d24f2220fc0c3f2a7"
+    },
+    {
+      "path": "output/submission-v10/05_演示PPT/作品演示.pdf",
+      "sha256": "5f388006f66ea21ea2a8241a78461f3f1a5cd3987e1c0e48f82bea87fa99e7d2"
+    },
+    {
+      "path": "output/submission-v10/05_演示PPT/作品演示.pptx",
+      "sha256": "432ec80ae9fe3ab7c98134028ef02d60bde73899030407dc9de23a171eca252f"
+    },
+    {
+      "path": "output/submission-v10/07_作品论文/作品论文.docx",
+      "sha256": "136da062a52df013635b14236ff3bfd44f016df212c1679abf742bd317d5a4bb"
+    },
+    {
+      "path": "output/submission-v10/07_作品论文/作品论文.pdf",
+      "sha256": "2d0bf78dbe19a9c6ba45922916847657093fcbe1ae72b98b7e06c292e179fc1d"
+    }
+  ],
+  "pdf_pages_reviewed": {
+    "01_必交文档/项目简表.pdf": 3,
+    "01_必交文档/项目说明书.pdf": 7,
+    "04_商业计划书/商业计划书.pdf": 5,
+    "05_演示PPT/作品演示.pdf": 10,
+    "07_作品论文/作品论文.pdf": 50
+  },
+  "total_pdf_pages_reviewed": 75,
+  "paper_page_images": {
+    "directory": "tmp/editorial-v10/render-paper-accepted",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "unchanged_pages_pixel_checked_against_reviewed_render": true,
+    "changed_pages_reinspected": [
+      1,
+      4,
+      37,
+      42,
+      47,
+      48
+    ]
+  },
+  "presentation_native_render": "PowerPoint PDF; all 10 pages inspected",
+  "checks": [
+    "body readability",
+    "table headers and row continuity",
+    "seven native equations",
+    "twelve figures and captions",
+    "contents page references",
+    "five-case values and decisions",
+    "video subtitle band",
+    "desktop and narrow index"
+  ],
+  "repairs": [
+    "image paragraph line-height",
+    "plain heading border styling",
+    "compact native contents",
+    "short-table row grouping",
+    "upright cover text",
+    "heading punctuation",
+    "complete Appendix A2 table"
+  ]
+}

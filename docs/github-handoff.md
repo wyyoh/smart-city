@@ -1,6 +1,6 @@
 # GitHub 项目交接与证据索引
 
-仓库保存数智选材的完整源代码、创意方案、赛题与原始工作簿、案例报告、计算研究及复现证据。2026年10月23日提交整理版统一展示场景解释、多目标取舍和带需求的协同设计，应用版本仍为0.4.0。当前技术正文为 `docs/submission-final-v8.md`，统一附件入口为 `artifacts/submission-v8/index.html`。历史报告保留原版。
+仓库保存数智选材的完整源代码、创意方案、赛题与原始工作簿、案例报告、计算研究及复现证据。2026年10月25日上传 v10 材料，应用版本仍为0.4.0。当前技术正文为 `docs/submission-final-v10.md`，50页论文及其源稿分别位于 `output/submission-v10/07_作品论文/` 和 `docs/paper-v10/`。全部21个附件位于 `output/submission-v10/`，完整下载包为 `output/数智选材_参赛材料_v10.zip`。历史报告保留原版。
 
 ## 克隆与启动
 
@@ -31,10 +31,11 @@ python scripts/restore_published_assets.py
 
 | 内容 | 位置 |
 | --- | --- |
-| 当前技术说明与创新对照 | `docs/submission-final-v8.md`、`docs/innovation-brief-v8.md` |
-| 正式格式与提交核对 | `output/submission/`、`docs/submission-checklist-v8.md` |
+| 当前技术说明与50页论文源稿 | `docs/submission-final-v10.md`、`docs/paper-v10/` |
+| 全套参赛附件与上传说明 | `output/submission-v10/`、`docs/submission-materials-v10.txt` |
+| v10材料、版式、视频与解压运行核验 | `artifacts/editorial-v10/` |
 | 当前五案机制、操作与证据 | `docs/creative-demo-v7.md`、`artifacts/polish-v7/` |
-| 当前操作视频与交付核验 | `artifacts/submission-v8/` |
+| v10操作视频及字幕 | `artifacts/editorial-v10/demo/` |
 | 原始赛题、工作簿与调研底稿 | 仓库根目录 |
 | 场景需求、候选检索与软件案例对照 | `design/`、`configs/`、`artifacts/next-phase/` |
 | 成果复核与历史交付证据 | `artifacts/review-phase/` |
@@ -44,6 +45,6 @@ python scripts/restore_published_assets.py
 
 运行 `scripts/check.ps1` 可执行Python回归、前端构建和既有计划校验。历史报告与完成回执保留当时版本的事实；当前创意交付范围以 `configs/creative_scope_v6.json` 为准。
 
-公开研发仓库与匿名提交包分别生成。匿名包去除账户链接、Git元数据、本机路径与主机名，保留功能源码、资源、当前说明和案例记录。它附有逐文件清单，并在解压后验证核心流程。简表的队伍与联系字段按匿名要求留空；登记信息仍以参赛者报名后台为准。
+公开研发仓库与匿名提交包分别生成。v10的“原型源码与证据.zip”收录683个文件，其中656个原型运行文件与冻结版本逐字节一致，另附本轮说明、论文源稿及核验资料。压缩包附有逐文件清单，并已解压验证五个案例、偏好切换和配方草案。简表的队伍与联系字段按匿名要求留空；登记信息仍以参赛者报名后台为准。
 
 历史证据按原始文件字节记录SHA256，仓库通过 `.gitattributes` 保留文件原有换行，避免克隆时自动转换而使证据校验失效。

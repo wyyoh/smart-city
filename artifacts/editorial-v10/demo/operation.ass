@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1600
+PlayResY: 1112
+WrapStyle: 0
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,32,&H00FFFFFF,&H00FFFFFF,&H00102020,&H00102020,0,0,0,0,100,100,0,0,1,0,0,2,50,50,28,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.72,0:00:08.84,Default,,0,0,0,,数智选材：从养护需求出发，比较材料，再继续设计。
+Dialogue: 0,0:00:10.80,0:00:18.89,Default,,0,0,0,,C1 高温重载：同一84条目录中，有2项数值满足构造要求。
+Dialogue: 0,0:00:19.66,0:00:27.78,Default,,0,0,0,,展开要求出处：规则、单位与适用条件随本次决策保留。
+Dialogue: 0,0:00:29.45,0:00:37.58,Default,,0,0,0,,C3 水损害：五种候选均数值可行，而且全部非支配。
+Dialogue: 0,0:00:38.48,0:00:48.58,Default,,0,0,0,,改为残留稳定度优先，首位H变K；五项可行候选保持不变。
+Dialogue: 0,0:00:49.17,0:00:57.25,Default,,0,0,0,,原始数值与要求线同时呈现，便于逐项查看候选差异。
+Dialogue: 0,0:00:58.38,0:01:06.48,Default,,0,0,0,,保存工程师的取舍理由，后续交接可以回看依据。
+Dialogue: 0,0:01:08.06,0:01:16.16,Default,,0,0,0,,C2 寒冷抗裂：两项候选应变同为2525με，继续比较其他指标。
+Dialogue: 0,0:01:17.77,0:01:25.88,Default,,0,0,0,,从准确的R4父配方继续设计，保留原寒冷场景的要求。
+Dialogue: 0,0:01:27.11,0:01:36.20,Default,,0,0,0,,保持组分名义份额，比较油石比4.9%到5.0%的设计假设。
+Dialogue: 0,0:01:37.59,0:01:46.69,Default,,0,0,0,,草案保留原需求和实际改动，新设计性能以待验证状态登记。
+Dialogue: 0,0:01:48.98,0:01:58.06,Default,,0,0,0,,C4 将名义RAP要求从70%提高到75%，预览数值可行1变0。
+Dialogue: 0,0:01:59.02,0:02:07.12,Default,,0,0,0,,资源条件与性能要求一起保存，确认后另存本次调整记录。
+Dialogue: 0,0:02:08.72,0:02:17.80,Default,,0,0,0,,C5的84条目录含缺测，先查看待补证据与资料核对方向。
+Dialogue: 0,0:02:19.14,0:02:28.23,Default,,0,0,0,,明确切换35条完整数值子池，得到四组范围内冲突。
+Dialogue: 0,0:02:29.02,0:02:39.11,Default,,0,0,0,,展开冲突子集与删除见证，核对当前范围中的要求组合，再选择后续操作。
+Dialogue: 0,0:02:39.52,0:02:47.52,Default,,0,0,0,,五案同池对照；交付包含源码、接口、保存记录与可重放证据。

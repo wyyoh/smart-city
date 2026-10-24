@@ -1,0 +1,33 @@
+{
+  "verified_on": "2026-10-24",
+  "official_sources_unchanged": true,
+  "files": [
+    {
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=dea5f18db2ef49ba85144d906aafa43c",
+      "bytes": 351967,
+      "sha256": "56e3a668957664bf11a0790055b8003fa1dcf7e04a110ae8902558c8cfed0766",
+      "matches_retained_source": true
+    },
+    {
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=69a79360907545d0a8cbff385db08aa9",
+      "bytes": 140891,
+      "sha256": "c1f280161f0037b477528b65372672c003806457f4923be773ef456cd1010697",
+      "matches_retained_source": true
+    },
+    {
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=8df7226847e14466ba27cfe57fe13f69",
+      "bytes": 92491,
+      "sha256": "bf0347f12f93bba3280e2c0ca384727fd7ad2360c64201fb6d1c1cb648f655cf",
+      "matches_retained_source": true
+    },
+    {
+      "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=9a28b40e4ef245589142b780d268f10a",
+      "bytes": 91799,
+      "sha256": "777f66a29204f6a9470da43f0b23d1e3c76f08a4891c08718c81c27dfd91e01b",
+      "matches_retained_source": true
+    }
+  ],
+  "public_notice_page": "https://cpipc.acge.org.cn/cw/contestNews/list/1/1",
+  "public_faq_page": "https://cpipc.acge.org.cn/cw/contestData/1/3",
+  "portal_field_limits": "not publicly specified; not verified in a logged-in session"
+}

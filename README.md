@@ -2,11 +2,13 @@
 
 v0.4定位为创意方案与可演示原型，重点展示场景驱动推荐、多目标权衡和人机协同配方设计的创新性与实用性。基于企业提供的再生沥青混合料工作簿，支持需求确认、候选检索、冲突解释、材料比较、单元格追溯和人工微调；“配方研究”提供设计假设、组分差异和计算研究参考。
 
-2026年10月23日提交整理版已统一到“案例与设计”工作区，应用版本仍为0.4.0。当前技术正文见[最终项目说明](docs/submission-final-v8.md)，创新对照见[创新与案例证据](docs/innovation-brief-v8.md)。正式格式的[项目说明书](output/submission/项目说明书.pdf)和[项目简表](output/submission/项目简表.pdf)均提供PDF及可编辑DOCX。材料、视频与五案证据的统一入口为[交付索引](artifacts/submission-v8/index.html)。
+2026年10月25日上传的 v10 材料围绕工程师选材、比较与配方调整的操作过程重新组织文字，应用版本仍为0.4.0。当前技术正文见[最终项目说明](docs/submission-final-v10.md)，完整论述见[50页作品论文](output/submission-v10/07_作品论文/作品论文.pdf)，论文源稿保存在 [docs/paper-v10](docs/paper-v10/)。正式简表、说明书、商业计划书、演示PPT、视频和五案图片统一收录于[材料目录](output/submission-v10/)，可下载[完整参赛材料包](output/数智选材_参赛材料_v10.zip)。
 
-当前参赛范围以 `configs/creative_scope_v6.json` 为准。三类场景、五个同池对照案例、解释比较和带需求的设计草案已实现；模型预测与可靠自动逆向生成的深化路线另行标注。历史报告保留原日期和原内容，当前完成状态见 `planning/submission_finish_v8.json` 与 `artifacts/polish-v7/execution-progress.json`。
+v10 共21个交付文件；论文包含12章、3个附录、30张表、12幅图和7个可编辑公式。75页PDF的逐页审阅、正文逐段核对、视频完整解码和源码包解压运行记录见[本轮完成记录](artifacts/editorial-v10/completion.json)及[核验目录](artifacts/editorial-v10/)。下载材料目录后打开 `00_材料清单与上传说明.html`，可浏览全部附件。
 
-正式指南要求匿名评审。GitHub仓库用于完整研发交接；比赛系统使用 `output/submission/匿名提交包.zip`。匿名包不包含Git记录、账户链接和本机测试主机名，保留原型源码、运行资源与可核查案例。简表身份字段留空，参赛者按系统要求处理；本项目没有代为登录或提交比赛系统。官方通知与截止时间见[提交核对说明](docs/submission-checklist-v8.md)。
+当前参赛范围以 `configs/creative_scope_v6.json` 为准。三类场景、五个同池对照案例、解释比较和带需求的设计草案已实现；模型预测与可靠自动逆向生成的深化路线另行标注。材料修订完成状态见 `planning/editorial_revision_v10.json`；原型开发及历史核验记录保留原日期和原内容。
+
+正式指南要求匿名评审。GitHub仓库用于完整研发交接；比赛附件以 `output/submission-v10/` 为当前版本，其中 `02_原型源码与证据/原型源码与证据.zip` 收录原型、运行资源、案例证据和新版说明。简表身份字段留空，按系统要求填写；官方通知与提交字段见[材料准备说明](docs/submission-materials-v10.txt)。
 
 ## 运行
 

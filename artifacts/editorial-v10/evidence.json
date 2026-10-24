@@ -1,0 +1,3425 @@
+{
+  "cases": [
+    {
+      "id": "C1",
+      "title": "高温重载车辙处治",
+      "request": {
+        "case_id": "C1",
+        "request_id": "539cb1dd32244387a1e50c1c39e9bfcd",
+        "evidence_view": "all",
+        "rap_min_pct": null,
+        "adjustment_reason": "",
+        "target_overrides": {},
+        "based_on_decision_id": null,
+        "expected_decision_sha256": null
+      },
+      "scene": {
+        "maintenance_method": "hot_recycling",
+        "layer": "surface",
+        "structure_type": "flexible",
+        "climate": {
+          "class": "demo_hot",
+          "source": "团队构造：高温分区，无真实气候数据映射"
+        },
+        "traffic": {
+          "class": "demo_heavy",
+          "source": "团队构造：重载分组，无实测交通换算"
+        },
+        "distress": {
+          "type": "rutting",
+          "severity": "severe",
+          "mechanism": "团队构造病害描述，待现场确认"
+        }
+      },
+      "targets": [
+        {
+          "target_id": "hot-rutting:DS:0",
+          "derived_by": "hot-rutting",
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:strain:1",
+          "derived_by": "hot-rutting",
+          "metric": "strain",
+          "operator": ">",
+          "value": 2000,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:TSR:2",
+          "derived_by": "hot-rutting",
+          "metric": "TSR",
+          "operator": ">",
+          "value": 75,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:residual:3",
+          "derived_by": "hot-rutting",
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        }
+      ],
+      "priority": [
+        "DS",
+        "strain",
+        "TSR",
+        "residual"
+      ],
+      "summary": {
+        "excluded": 37,
+        "needs_evidence": 45,
+        "numeric_review": 2,
+        "evidence_review": 0
+      },
+      "pool": {
+        "catalogue_total": 180,
+        "included": 84,
+        "excluded": 96
+      },
+      "diagnosis": "numeric_feasible",
+      "candidates": [
+        {
+          "id": "mix_0e51eff6e2cef2806f57",
+          "display_id": "f2806f57",
+          "source": "H",
+          "product": "90#",
+          "gradation": "AC-13-90#",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "values": {
+            "DS": 9565.0,
+            "strain": 2044.0,
+            "TSR": 81.98128641646413,
+            "residual": 88.0578252671276
+          },
+          "front": true,
+          "rank": 1,
+          "source_fields": {
+            "source_code": {
+              "value": "H",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "90#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13-90#",
+              "unit": null,
+              "reference": "级配!G168:R168",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 50.0,
+              "unit": "%",
+              "reference": "级配!G168:R168",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        },
+        {
+          "id": "mix_8adbae42f826e07e8611",
+          "display_id": "R1",
+          "source": "S",
+          "product": "70#",
+          "gradation": "AC-13",
+          "oil_pct": 5.5,
+          "rap_nominal_pct": 60.0,
+          "values": {
+            "DS": 9327.303846153834,
+            "strain": 2064.2,
+            "TSR": 89.78596858504315,
+            "residual": 87.81375742479402
+          },
+          "front": true,
+          "rank": 2,
+          "source_fields": {
+            "source_code": {
+              "value": "S",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "70#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13",
+              "unit": null,
+              "reference": "级配!G454:R454",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 5.5,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 5.213270142180095,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 60.0,
+              "unit": "%",
+              "reference": "级配!G454:R454",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        }
+      ],
+      "baseline_feasible": 2,
+      "same_feasible_set": true,
+      "snapshot": "artifacts/polish-v7/runs/20261022T045051Z/C1.json.gz"
+    },
+    {
+      "id": "C2",
+      "title": "寒冷地区温缩裂缝处治",
+      "request": {
+        "case_id": "C2",
+        "request_id": "2caf3863de4b492991acc8777ac0946f",
+        "evidence_view": "all",
+        "rap_min_pct": null,
+        "adjustment_reason": "",
+        "target_overrides": {},
+        "based_on_decision_id": null,
+        "expected_decision_sha256": null
+      },
+      "scene": {
+        "maintenance_method": "hot_recycling",
+        "layer": "surface",
+        "structure_type": "flexible",
+        "climate": {
+          "class": "demo_cold",
+          "source": "团队构造：低温分区，无真实气候数据映射"
+        },
+        "traffic": {
+          "class": "demo_general",
+          "source": "团队构造：一般交通，无实测交通换算"
+        },
+        "distress": {
+          "type": "thermal_cracking",
+          "severity": "moderate",
+          "mechanism": "假设温缩机制，非所有开裂均适用"
+        }
+      },
+      "targets": [
+        {
+          "target_id": "cold-cracking:DS:0",
+          "derived_by": "cold-cracking",
+          "metric": "DS",
+          "operator": ">",
+          "value": 800,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "cold-cracking:strain:1",
+          "derived_by": "cold-cracking",
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队低温抗裂演示假设 cold-cracking v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "cold-cracking:TSR:2",
+          "derived_by": "cold-cracking",
+          "metric": "TSR",
+          "operator": ">",
+          "value": 75,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "cold-cracking:residual:3",
+          "derived_by": "cold-cracking",
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        }
+      ],
+      "priority": [
+        "strain",
+        "TSR",
+        "residual",
+        "DS"
+      ],
+      "summary": {
+        "excluded": 38,
+        "needs_evidence": 44,
+        "numeric_review": 2,
+        "evidence_review": 0
+      },
+      "pool": {
+        "catalogue_total": 180,
+        "included": 84,
+        "excluded": 96
+      },
+      "diagnosis": "numeric_feasible",
+      "candidates": [
+        {
+          "id": "mix_ec30ff644f3111c570bc",
+          "display_id": "R4",
+          "source": "M-1",
+          "product": "90#",
+          "gradation": "AC-13-3",
+          "oil_pct": 4.9,
+          "rap_nominal_pct": 60.0,
+          "values": {
+            "DS": 7316.5,
+            "strain": 2525.0,
+            "TSR": 84.96918608354991,
+            "residual": 88.2831181252989
+          },
+          "front": true,
+          "rank": 1,
+          "source_fields": {
+            "source_code": {
+              "value": "M-1",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "90#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13-3",
+              "unit": null,
+              "reference": "级配!G376:R376",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.9,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.67111534795043,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 60.0,
+              "unit": "%",
+              "reference": "级配!G376:R376",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        },
+        {
+          "id": "mix_6f88790949802a6b64ea",
+          "display_id": "2a6b64ea",
+          "source": "M",
+          "product": "90#",
+          "gradation": "AC-13",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "values": {
+            "DS": 7778.0,
+            "strain": 2525.0,
+            "TSR": 79.54156059543348,
+            "residual": 91.52915291529152
+          },
+          "front": true,
+          "rank": 2,
+          "source_fields": {
+            "source_code": {
+              "value": "M",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "90#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13",
+              "unit": null,
+              "reference": "级配!G272:R272",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 50.0,
+              "unit": "%",
+              "reference": "级配!G272:R272",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        }
+      ],
+      "baseline_feasible": 2,
+      "same_feasible_set": true,
+      "snapshot": "artifacts/polish-v7/runs/20261022T045051Z/C2.json.gz"
+    },
+    {
+      "id": "C3",
+      "title": "水损害路段修复",
+      "request": {
+        "case_id": "C3",
+        "request_id": "d6e79406cd97495a945d889c452f5adf",
+        "evidence_view": "all",
+        "rap_min_pct": null,
+        "adjustment_reason": "",
+        "target_overrides": {},
+        "based_on_decision_id": null,
+        "expected_decision_sha256": null
+      },
+      "scene": {
+        "maintenance_method": "hot_recycling",
+        "layer": "surface",
+        "structure_type": "flexible",
+        "climate": {
+          "class": "demo_wet",
+          "source": "团队构造：多雨分区，无实测降雨映射"
+        },
+        "traffic": {
+          "class": "demo_general",
+          "source": "团队构造：一般交通，无实测交通换算"
+        },
+        "distress": {
+          "type": "water_damage",
+          "severity": "severe",
+          "mechanism": "团队构造水损害，待检测确认"
+        }
+      },
+      "targets": [
+        {
+          "target_id": "wet-damage:DS:0",
+          "derived_by": "wet-damage",
+          "metric": "DS",
+          "operator": ">",
+          "value": 800,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "wet-damage:strain:1",
+          "derived_by": "wet-damage",
+          "metric": "strain",
+          "operator": ">",
+          "value": 2000,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "wet-damage:TSR:2",
+          "derived_by": "wet-damage",
+          "metric": "TSR",
+          "operator": ">",
+          "value": 85,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队抗水损演示假设 wet-damage v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "wet-damage:residual:3",
+          "derived_by": "wet-damage",
+          "metric": "residual",
+          "operator": ">",
+          "value": 90,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队抗水损演示假设 wet-damage v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        }
+      ],
+      "priority": [
+        "TSR",
+        "residual",
+        "DS",
+        "strain"
+      ],
+      "summary": {
+        "excluded": 34,
+        "needs_evidence": 45,
+        "numeric_review": 5,
+        "evidence_review": 0
+      },
+      "pool": {
+        "catalogue_total": 180,
+        "included": 84,
+        "excluded": 96
+      },
+      "diagnosis": "numeric_feasible",
+      "candidates": [
+        {
+          "id": "mix_07e9acab4f8d5c4c21d0",
+          "display_id": "5c4c21d0",
+          "source": "H",
+          "product": "130#",
+          "gradation": "AC-13-130#",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "values": {
+            "DS": 5000.0,
+            "strain": 2242.0,
+            "TSR": 92.44995786770077,
+            "residual": 92.75965764515384
+          },
+          "front": true,
+          "rank": 1,
+          "source_fields": {
+            "source_code": {
+              "value": "H",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "130#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13-130#",
+              "unit": null,
+              "reference": "级配!G194:R194",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 50.0,
+              "unit": "%",
+              "reference": "级配!G194:R194",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        },
+        {
+          "id": "mix_c39c8b2c0df3074a52ad",
+          "display_id": "074a52ad",
+          "source": "J",
+          "product": "90#",
+          "gradation": "AC-13",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "values": {
+            "DS": 5471.0,
+            "strain": 2066.6666666666665,
+            "TSR": 90.46845286537155,
+            "residual": 90.78667007585443
+          },
+          "front": true,
+          "rank": 2,
+          "source_fields": {
+            "source_code": {
+              "value": "J",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "90#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13",
+              "unit": null,
+              "reference": "级配!G233:R233",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 50.0,
+              "unit": "%",
+              "reference": "级配!G233:R233",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        },
+        {
+          "id": "mix_7a55a307568e18697636",
+          "display_id": "R7",
+          "source": "1L",
+          "product": "AC-13-2(110#)",
+          "gradation": "AC-13-2",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 60.0,
+          "values": {
+            "DS": 5525.5,
+            "strain": 2383.8333333333335,
+            "TSR": 89.45330053981392,
+            "residual": 90.94357515410148
+          },
+          "front": true,
+          "rank": 3,
+          "source_fields": {
+            "source_code": {
+              "value": "1L",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "AC-13-2(110#)",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13-2",
+              "unit": null,
+              "reference": "级配!G844:R844",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 60.0,
+              "unit": "%",
+              "reference": "级配!G844:R844",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        },
+        {
+          "id": "mix_c09286e2a7be7cb14638",
+          "display_id": "7cb14638",
+          "source": "V",
+          "product": "110#",
+          "gradation": "AC-13",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "values": {
+            "DS": 4823.0,
+            "strain": 2347.8333333333335,
+            "TSR": 89.0,
+            "residual": 93.43
+          },
+          "front": true,
+          "rank": 4,
+          "source_fields": {
+            "source_code": {
+              "value": "V",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "110#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13",
+              "unit": null,
+              "reference": "级配!G506:R506",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 50.0,
+              "unit": "%",
+              "reference": "级配!G506:R506",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        },
+        {
+          "id": "mix_59cb42163ce4719d7809",
+          "display_id": "719d7809",
+          "source": "K",
+          "product": "90#",
+          "gradation": "AC-13",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 50.0,
+          "values": {
+            "DS": 6613.666666666667,
+            "strain": 2068.3333333333335,
+            "TSR": 88.88920032144705,
+            "residual": 94.72793910346772
+          },
+          "front": true,
+          "rank": 5,
+          "source_fields": {
+            "source_code": {
+              "value": "K",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "90#",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13",
+              "unit": null,
+              "reference": "级配!G246:R246",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 50.0,
+              "unit": "%",
+              "reference": "级配!G246:R246",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        }
+      ],
+      "baseline_feasible": 5,
+      "same_feasible_set": true,
+      "snapshot": "artifacts/polish-v7/runs/20261022T045051Z/C3.json.gz"
+    },
+    {
+      "id": "C4",
+      "title": "高RAP再生材料选型",
+      "request": {
+        "case_id": "C4",
+        "request_id": "2f439874456a4f85b18076d231865107",
+        "evidence_view": "all",
+        "rap_min_pct": null,
+        "adjustment_reason": "",
+        "target_overrides": {},
+        "based_on_decision_id": null,
+        "expected_decision_sha256": null
+      },
+      "scene": {
+        "maintenance_method": "hot_recycling",
+        "layer": "surface",
+        "structure_type": "flexible",
+        "climate": {
+          "class": "demo_hot",
+          "source": "团队构造：高温分区，无真实气候数据映射"
+        },
+        "traffic": {
+          "class": "demo_heavy",
+          "source": "团队构造：重载分组，无实测交通换算"
+        },
+        "distress": {
+          "type": "rutting",
+          "severity": "severe",
+          "mechanism": "团队构造病害描述，待现场确认"
+        }
+      },
+      "targets": [
+        {
+          "target_id": "hot-rutting:DS:0",
+          "derived_by": "explicit_demo_case",
+          "metric": "DS",
+          "operator": ">",
+          "value": 6000,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:strain:1",
+          "derived_by": "explicit_demo_case",
+          "metric": "strain",
+          "operator": ">",
+          "value": 2200,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:TSR:2",
+          "derived_by": "explicit_demo_case",
+          "metric": "TSR",
+          "operator": ">",
+          "value": 85,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C4 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:residual:3",
+          "derived_by": "hot-rutting",
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        }
+      ],
+      "priority": [
+        "DS",
+        "strain",
+        "TSR",
+        "residual"
+      ],
+      "summary": {
+        "excluded": 80,
+        "needs_evidence": 3,
+        "numeric_review": 1,
+        "evidence_review": 0
+      },
+      "pool": {
+        "catalogue_total": 180,
+        "included": 84,
+        "excluded": 96
+      },
+      "diagnosis": "numeric_feasible",
+      "candidates": [
+        {
+          "id": "mix_5a0eae6db3cb0a2f9a1f",
+          "display_id": "R5",
+          "source": "1B",
+          "product": "AC-13-3(130#)",
+          "gradation": "AC-13-3",
+          "oil_pct": 4.8,
+          "rap_nominal_pct": 70.0,
+          "values": {
+            "DS": 6260.0,
+            "strain": 2225.6747142857143,
+            "TSR": 92.74457106727604,
+            "residual": 88.88192267502613
+          },
+          "front": true,
+          "rank": 1,
+          "source_fields": {
+            "source_code": {
+              "value": "1B",
+              "unit": null,
+              "reference": "工作簿来源标识；独立料源身份尚未外部核实",
+              "status": "recorded"
+            },
+            "product": {
+              "value": "AC-13-3(130#)",
+              "unit": null,
+              "reference": "工作簿产品标识；不推断为PG等级",
+              "status": "recorded"
+            },
+            "gradation": {
+              "value": "AC-13-3",
+              "unit": null,
+              "reference": "级配!G649:R649",
+              "status": "recorded"
+            },
+            "oil_stone_ratio_pct": {
+              "value": 4.8,
+              "unit": "%",
+              "reference": "试件所属历史操作键",
+              "status": "recorded"
+            },
+            "binder_content_pct": {
+              "value": 4.580152671755726,
+              "unit": "%",
+              "reference": "由油石比 r 计算 100r/(100+r)，非新增试验",
+              "status": "recorded"
+            },
+            "rap_nominal_pct": {
+              "value": 70.0,
+              "unit": "%",
+              "reference": "级配!G649:R649",
+              "status": "mass_basis_unconfirmed"
+            },
+            "modifier": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "additive": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "mixing_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "compaction_window": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            },
+            "equipment": {
+              "value": null,
+              "unit": null,
+              "reference": null,
+              "status": "unknown"
+            }
+          }
+        }
+      ],
+      "baseline_feasible": 1,
+      "same_feasible_set": true,
+      "snapshot": "artifacts/polish-v7/runs/20261022T045051Z/C4.json.gz"
+    },
+    {
+      "id": "C5",
+      "title": "高低温与水稳定复合约束",
+      "request": {
+        "case_id": "C5",
+        "request_id": "eb55386e27f34d3fb946e0d9709994bd",
+        "evidence_view": "all",
+        "rap_min_pct": null,
+        "adjustment_reason": "",
+        "target_overrides": {},
+        "based_on_decision_id": null,
+        "expected_decision_sha256": null
+      },
+      "scene": {
+        "maintenance_method": "hot_recycling",
+        "layer": "surface",
+        "structure_type": "flexible",
+        "climate": {
+          "class": "demo_hot",
+          "source": "团队构造：高温分区，无真实气候数据映射"
+        },
+        "traffic": {
+          "class": "demo_heavy",
+          "source": "团队构造：重载分组，无实测交通换算"
+        },
+        "distress": {
+          "type": "rutting",
+          "severity": "severe",
+          "mechanism": "团队构造病害描述，待现场确认"
+        }
+      },
+      "targets": [
+        {
+          "target_id": "hot-rutting:DS:0",
+          "derived_by": "hot-rutting",
+          "metric": "DS",
+          "operator": ">",
+          "value": 8000,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:strain:1",
+          "derived_by": "explicit_demo_case",
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:TSR:2",
+          "derived_by": "explicit_demo_case",
+          "metric": "TSR",
+          "operator": ">",
+          "value": 90,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "hot-rutting:residual:3",
+          "derived_by": "explicit_demo_case",
+          "metric": "residual",
+          "operator": ">",
+          "value": 90,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+            "confirmed": false
+          }
+        }
+      ],
+      "priority": [
+        "DS",
+        "strain",
+        "TSR",
+        "residual"
+      ],
+      "summary": {
+        "excluded": 44,
+        "needs_evidence": 40,
+        "numeric_review": 0,
+        "evidence_review": 0
+      },
+      "pool": {
+        "catalogue_total": 180,
+        "included": 84,
+        "excluded": 96
+      },
+      "diagnosis": "evidence_insufficient",
+      "candidates": [],
+      "baseline_feasible": 0,
+      "same_feasible_set": true,
+      "snapshot": "artifacts/polish-v7/runs/20261022T045051Z/C5.json.gz"
+    }
+  ],
+  "complete_numeric": {
+    "pool": {
+      "catalogue_total": 180,
+      "included": 35,
+      "excluded": 145
+    },
+    "summary": {
+      "excluded": 35,
+      "needs_evidence": 0,
+      "numeric_review": 0,
+      "evidence_review": 0
+    },
+    "diagnosis": {
+      "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+      "confirmation_sha256": "7bea8ae59fdeae3563e874f4a4eebadb697619729ba08e3c5541ce68365e2ece",
+      "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+      "status": "known_conflict",
+      "message": "冻结池内每个候选至少有一项已知失败，当前要求联合无解",
+      "enumeration_complete": true,
+      "certificates": [
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "7bea8ae59fdeae3563e874f4a4eebadb697619729ba08e3c5541ce68365e2ece",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:DS:0",
+            "hot-rutting:TSR:2"
+          ],
+          "requirements": [
+            {
+              "metric": "DS",
+              "operator": ">",
+              "value": 8000,
+              "upper": null,
+              "unit": "次/mm",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "TSR",
+              "operator": ">",
+              "value": 90,
+              "upper": null,
+              "unit": "%",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:DS:0",
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "display_id": "5c4c21d0",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:TSR:2",
+                  "state": "satisfied",
+                  "value": 92.44995786770077
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:TSR:2",
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "display_id": "f2806f57",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:DS:0",
+                  "state": "satisfied",
+                  "value": 9565.0
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:TSR:2"
+              ]
+            }
+          ],
+          "certificate_sha256": "c9dbe8286d64dd208398e9a52c9b6456e06d3e72ed261472618c56df43e99191"
+        },
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "7bea8ae59fdeae3563e874f4a4eebadb697619729ba08e3c5541ce68365e2ece",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:DS:0",
+            "hot-rutting:residual:3"
+          ],
+          "requirements": [
+            {
+              "metric": "DS",
+              "operator": ">",
+              "value": 8000,
+              "upper": null,
+              "unit": "次/mm",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "residual",
+              "operator": ">",
+              "value": 90,
+              "upper": null,
+              "unit": "%",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:DS:0",
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "display_id": "5c4c21d0",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:residual:3",
+                  "state": "satisfied",
+                  "value": 92.75965764515384
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:residual:3",
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "display_id": "f2806f57",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:DS:0",
+                  "state": "satisfied",
+                  "value": 9565.0
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:residual:3"
+              ]
+            }
+          ],
+          "certificate_sha256": "105fdae86591401309eae8f250a588ae8478cfdce1bdf8c550f0c179c0a1f095"
+        },
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "7bea8ae59fdeae3563e874f4a4eebadb697619729ba08e3c5541ce68365e2ece",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:DS:0",
+            "hot-rutting:strain:1"
+          ],
+          "requirements": [
+            {
+              "metric": "DS",
+              "operator": ">",
+              "value": 8000,
+              "upper": null,
+              "unit": "次/mm",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "团队高温重载演示假设 hot-rutting v1.0.0；未经工程验证",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "strain",
+              "operator": ">",
+              "value": 2500,
+              "upper": null,
+              "unit": "με",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:DS:0",
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "display_id": "2a6b64ea",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:strain:1",
+                  "state": "satisfied",
+                  "value": 2525.0
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:strain:1",
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "display_id": "f2806f57",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:DS:0",
+                  "state": "satisfied",
+                  "value": 9565.0
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:DS:0"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:DS:0",
+                "hot-rutting:strain:1"
+              ]
+            }
+          ],
+          "certificate_sha256": "26f6d4dbf0a4d68580c35c0e1a049dec731dd8b991329bb53b24c8f0521e2ace"
+        },
+        {
+          "pool_sha256": "065c3cb7dba4608dd2e283bcafaf3b4b867975b8fa0e99eca4a83d0f6befb17e",
+          "confirmation_sha256": "7bea8ae59fdeae3563e874f4a4eebadb697619729ba08e3c5541ce68365e2ece",
+          "scope_note": "仅对本次冻结候选池、当前证据及声明口径成立；不推断材料物理规律，不自动放宽项目目标。",
+          "target_ids": [
+            "hot-rutting:TSR:2",
+            "hot-rutting:strain:1"
+          ],
+          "requirements": [
+            {
+              "metric": "TSR",
+              "operator": ">",
+              "value": 90,
+              "upper": null,
+              "unit": "%",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            },
+            {
+              "metric": "strain",
+              "operator": ">",
+              "value": 2500,
+              "upper": null,
+              "unit": "με",
+              "source": {
+                "kind": "constructed_demo",
+                "reference": "明确选用的团队构造案例C5 v2.0.0；非规范推导",
+                "confirmed": false
+              }
+            }
+          ],
+          "infeasibility_proven_by": "each_candidate_has_a_known_failure_in_subset",
+          "minimality_status": "verified_inclusion_minimal",
+          "deletion_witnesses": [
+            {
+              "removed_target": "hot-rutting:TSR:2",
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "display_id": "2a6b64ea",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:strain:1",
+                  "state": "satisfied",
+                  "value": 2525.0
+                }
+              ]
+            },
+            {
+              "removed_target": "hot-rutting:strain:1",
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "display_id": "5c4c21d0",
+              "kind": "all_remaining_satisfied",
+              "remaining_checks": [
+                {
+                  "target_id": "hot-rutting:TSR:2",
+                  "state": "satisfied",
+                  "value": 92.44995786770077
+                }
+              ]
+            }
+          ],
+          "candidate_failures": [
+            {
+              "candidate_id": "mix_07e9acab4f8d5c4c21d0",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_08857a35c546c16fea3d",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_0e51eff6e2cef2806f57",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_15ad6894230968c7675e",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_1898f7dbc9bebd98fbc6",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_26677634e9a9c5b83d13",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_2a28d8524d8d84e6f35f",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_424760c7b3eae4af9dfb",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_473a26fdb0b8356b4ab4",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_55757ba9f9c2f0200762",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_597f12de06cc740a8f97",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_59cb42163ce4719d7809",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_5a0eae6db3cb0a2f9a1f",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_65ff1efa3cd482765c9f",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_67335f441bbff44b208e",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_6f88790949802a6b64ea",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_783a016ef718c0ce666e",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_7a55a307568e18697636",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_8adbae42f826e07e8611",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_9e2f3db93b9f3846b068",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_aa15fb08faac91ed3888",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_b918fd825572e8713e23",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_bf40a782f2a3fee6c9aa",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c09286e2a7be7cb14638",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c389cb15f7ec30cbe854",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c39c8b2c0df3074a52ad",
+              "failed_in_subset": [
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_c94bd637a781d902fafa",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_da01d4da4aba77dc7979",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e464f052e3ce56f7455b",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e5584b099b371467cf63",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_e7c870ac9436de2bd8c0",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ec30ff644f3111c570bc",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2"
+              ]
+            },
+            {
+              "candidate_id": "mix_fb4cc4f36aaa75a8e497",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_fd042b9c9cb09d2188a9",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            },
+            {
+              "candidate_id": "mix_ff76e96640f7706852c9",
+              "failed_in_subset": [
+                "hot-rutting:TSR:2",
+                "hot-rutting:strain:1"
+              ]
+            }
+          ],
+          "certificate_sha256": "9465628377426c6631af8400514c25ae89cd55ac4ce4dc41e2c1001553dfead8"
+        }
+      ],
+      "actions": [
+        "核查目标及方法条件是否录入正确",
+        "补充独立候选或新版本试验",
+        "如需变更正式要求，由工程师另行确认并保留理由"
+      ]
+    }
+  },
+  "draft": {
+    "parent_recipe_id": "mix_ec30ff644f3111c570bc",
+    "hypothesis_id": "hyp_6e18d41dcaefa559",
+    "actual_changes": {
+      "oil_stone_ratio_pct": {
+        "before": 4.9,
+        "after": 5.0,
+        "unit": "%"
+      },
+      "components": []
+    },
+    "locked_fields": [
+      "nominal_component_weights"
+    ],
+    "demand_context": {
+      "id": "dema_95907922a34d445b8926c6c607465d5c",
+      "kind": "demand_confirmation",
+      "created_at": "2026-10-22T04:50:52.497961+00:00",
+      "parent_id": "dema_6b600b32b5ed41bfb20ed392bf8a7dbd",
+      "schema_version": "2.0",
+      "resolution_id": "dema_6b600b32b5ed41bfb20ed392bf8a7dbd",
+      "resolution_sha256": "bde532a052f419167447518f00f1e23f68d123aebe163e4bbecc1eab36ff7828",
+      "request": {
+        "schema_version": "2.0",
+        "name": "寒冷地区温缩裂缝处治",
+        "decision_id": null,
+        "segment_id": null,
+        "context_kind": "constructed_demo",
+        "demo_case_id": "C2",
+        "scene": {
+          "maintenance_method": "hot_recycling",
+          "layer": "surface",
+          "structure_type": "flexible",
+          "climate": {
+            "class": "demo_cold",
+            "source": "团队构造：低温分区，无真实气候数据映射"
+          },
+          "traffic": {
+            "class": "demo_general",
+            "source": "团队构造：一般交通，无实测交通换算"
+          },
+          "distress": {
+            "type": "thermal_cracking",
+            "severity": "moderate",
+            "mechanism": "假设温缩机制，非所有开裂均适用"
+          }
+        },
+        "inventory": {
+          "source_codes": null,
+          "product_versions": null,
+          "gradation_family": "AC-13"
+        },
+        "construction": {
+          "equipment": null,
+          "mixing_window": null,
+          "compaction_window": null,
+          "source": null
+        },
+        "constraints": {
+          "budget": null,
+          "budget_unit": null,
+          "schedule_days": null,
+          "rap_min_pct": null,
+          "carbon_cap": null,
+          "carbon_unit": null
+        },
+        "requested_metrics": [
+          "DS",
+          "strain",
+          "TSR",
+          "residual"
+        ],
+        "project_targets": []
+      },
+      "targets": [
+        {
+          "target_id": "cold-cracking:DS:0",
+          "derived_by": "cold-cracking",
+          "metric": "DS",
+          "operator": ">",
+          "value": 800,
+          "unit": "次/mm",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "cold-cracking:strain:1",
+          "derived_by": "cold-cracking",
+          "metric": "strain",
+          "operator": ">",
+          "value": 2500,
+          "unit": "με",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "constructed_demo",
+            "reference": "团队低温抗裂演示假设 cold-cracking v1.0.0；未经工程验证",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "cold-cracking:TSR:2",
+          "derived_by": "cold-cracking",
+          "metric": "TSR",
+          "operator": ">",
+          "value": 75,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        },
+        {
+          "target_id": "cold-cracking:residual:3",
+          "derived_by": "cold-cracking",
+          "metric": "residual",
+          "operator": ">",
+          "value": 85,
+          "unit": "%",
+          "test_method": null,
+          "conditions": {},
+          "comparison_basis": "legacy_workbook_numeric_demo",
+          "source": {
+            "kind": "enterprise_reference",
+            "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+            "confirmed": false
+          }
+        }
+      ],
+      "target_history": {
+        "cold-cracking:DS:0": [
+          {
+            "metric": "DS",
+            "operator": ">",
+            "value": 800,
+            "unit": "次/mm",
+            "test_method": null,
+            "conditions": {},
+            "comparison_basis": "legacy_workbook_numeric_demo",
+            "source": {
+              "kind": "enterprise_reference",
+              "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+              "confirmed": false
+            }
+          }
+        ],
+        "cold-cracking:strain:1": [
+          {
+            "metric": "strain",
+            "operator": ">",
+            "value": 2000,
+            "unit": "με",
+            "test_method": null,
+            "conditions": {},
+            "comparison_basis": "legacy_workbook_numeric_demo",
+            "source": {
+              "kind": "enterprise_reference",
+              "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+              "confirmed": false
+            }
+          },
+          {
+            "metric": "strain",
+            "operator": ">",
+            "value": 2500,
+            "unit": "με",
+            "test_method": null,
+            "conditions": {},
+            "comparison_basis": "legacy_workbook_numeric_demo",
+            "source": {
+              "kind": "constructed_demo",
+              "reference": "团队低温抗裂演示假设 cold-cracking v1.0.0；未经工程验证",
+              "confirmed": false
+            }
+          }
+        ],
+        "cold-cracking:TSR:2": [
+          {
+            "metric": "TSR",
+            "operator": ">",
+            "value": 75,
+            "unit": "%",
+            "test_method": null,
+            "conditions": {},
+            "comparison_basis": "legacy_workbook_numeric_demo",
+            "source": {
+              "kind": "enterprise_reference",
+              "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+              "confirmed": false
+            }
+          }
+        ],
+        "cold-cracking:residual:3": [
+          {
+            "metric": "residual",
+            "operator": ">",
+            "value": 85,
+            "unit": "%",
+            "test_method": null,
+            "conditions": {},
+            "comparison_basis": "legacy_workbook_numeric_demo",
+            "source": {
+              "kind": "enterprise_reference",
+              "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+              "confirmed": false
+            }
+          }
+        ]
+      },
+      "priority": [
+        "strain",
+        "TSR",
+        "residual",
+        "DS"
+      ],
+      "rules": {
+        "version": "scene-rules-2.0.0",
+        "sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7",
+        "matches": [
+          {
+            "id": "cold-cracking",
+            "title": "低温环境 · 抗裂控制",
+            "version": "1.0.0",
+            "rationale": "在构造的低温、中重度温缩裂缝场景，优先比较最大弯拉应变；不将所有开裂归因于温缩。",
+            "conditions": [
+              {
+                "field": "maintenance_method",
+                "actual": "hot_recycling",
+                "allowed": [
+                  "hot_recycling"
+                ],
+                "matches": true
+              },
+              {
+                "field": "layer",
+                "actual": "surface",
+                "allowed": [
+                  "surface"
+                ],
+                "matches": true
+              },
+              {
+                "field": "structure_type",
+                "actual": "flexible",
+                "allowed": [
+                  "flexible"
+                ],
+                "matches": true
+              },
+              {
+                "field": "climate.class",
+                "actual": "demo_cold",
+                "allowed": [
+                  "demo_cold"
+                ],
+                "matches": true
+              },
+              {
+                "field": "traffic.class",
+                "actual": "demo_general",
+                "allowed": [
+                  "demo_general",
+                  "demo_heavy"
+                ],
+                "matches": true
+              },
+              {
+                "field": "distress.type",
+                "actual": "thermal_cracking",
+                "allowed": [
+                  "thermal_cracking"
+                ],
+                "matches": true
+              },
+              {
+                "field": "distress.severity",
+                "actual": "moderate",
+                "allowed": [
+                  "moderate",
+                  "severe"
+                ],
+                "matches": true
+              }
+            ],
+            "targets": [
+              {
+                "metric": "DS",
+                "operator": ">",
+                "value": 800,
+                "unit": "次/mm",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "enterprise_reference",
+                  "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+                  "confirmed": false
+                }
+              },
+              {
+                "metric": "strain",
+                "operator": ">",
+                "value": 2500,
+                "unit": "με",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "constructed_demo",
+                  "reference": "团队低温抗裂演示假设 cold-cracking v1.0.0；未经工程验证",
+                  "confirmed": false
+                }
+              },
+              {
+                "metric": "TSR",
+                "operator": ">",
+                "value": 75,
+                "unit": "%",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "enterprise_reference",
+                  "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                  "confirmed": false
+                }
+              },
+              {
+                "metric": "residual",
+                "operator": ">",
+                "value": 85,
+                "unit": "%",
+                "test_method": null,
+                "conditions": {},
+                "comparison_basis": "legacy_workbook_numeric_demo",
+                "source": {
+                  "kind": "enterprise_reference",
+                  "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                  "confirmed": false
+                }
+              }
+            ],
+            "target_history": {
+              "DS": [
+                {
+                  "metric": "DS",
+                  "operator": ">",
+                  "value": 800,
+                  "unit": "次/mm",
+                  "test_method": null,
+                  "conditions": {},
+                  "comparison_basis": "legacy_workbook_numeric_demo",
+                  "source": {
+                    "kind": "enterprise_reference",
+                    "reference": "企业工作簿：设计流程!E11（参考值，方法和条件未披露）",
+                    "confirmed": false
+                  }
+                }
+              ],
+              "strain": [
+                {
+                  "metric": "strain",
+                  "operator": ">",
+                  "value": 2000,
+                  "unit": "με",
+                  "test_method": null,
+                  "conditions": {},
+                  "comparison_basis": "legacy_workbook_numeric_demo",
+                  "source": {
+                    "kind": "enterprise_reference",
+                    "reference": "企业工作簿：设计流程!E12（参考值，方法和条件未披露）",
+                    "confirmed": false
+                  }
+                },
+                {
+                  "metric": "strain",
+                  "operator": ">",
+                  "value": 2500,
+                  "unit": "με",
+                  "test_method": null,
+                  "conditions": {},
+                  "comparison_basis": "legacy_workbook_numeric_demo",
+                  "source": {
+                    "kind": "constructed_demo",
+                    "reference": "团队低温抗裂演示假设 cold-cracking v1.0.0；未经工程验证",
+                    "confirmed": false
+                  }
+                }
+              ],
+              "TSR": [
+                {
+                  "metric": "TSR",
+                  "operator": ">",
+                  "value": 75,
+                  "unit": "%",
+                  "test_method": null,
+                  "conditions": {},
+                  "comparison_basis": "legacy_workbook_numeric_demo",
+                  "source": {
+                    "kind": "enterprise_reference",
+                    "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                    "confirmed": false
+                  }
+                }
+              ],
+              "residual": [
+                {
+                  "metric": "residual",
+                  "operator": ">",
+                  "value": 85,
+                  "unit": "%",
+                  "test_method": null,
+                  "conditions": {},
+                  "comparison_basis": "legacy_workbook_numeric_demo",
+                  "source": {
+                    "kind": "enterprise_reference",
+                    "reference": "企业工作簿：设计流程!E10（参考值，方法和条件未披露）",
+                    "confirmed": false
+                  }
+                }
+              ]
+            },
+            "priority": [
+              "strain",
+              "TSR",
+              "residual",
+              "DS"
+            ]
+          }
+        ],
+        "unmatched": [
+          {
+            "id": "hot-rutting",
+            "title": "高温重载 · 车辙控制",
+            "version": "1.0.0",
+            "rationale": "在构造的高温、重载且中重度车辙场景，优先比较动稳定度。提高阈值是团队演示设定，不是规范推导。",
+            "conditions": [
+              {
+                "field": "maintenance_method",
+                "actual": "hot_recycling",
+                "allowed": [
+                  "hot_recycling"
+                ],
+                "matches": true
+              },
+              {
+                "field": "layer",
+                "actual": "surface",
+                "allowed": [
+                  "surface"
+                ],
+                "matches": true
+              },
+              {
+                "field": "structure_type",
+                "actual": "flexible",
+                "allowed": [
+                  "flexible"
+                ],
+                "matches": true
+              },
+              {
+                "field": "climate.class",
+                "actual": "demo_cold",
+                "allowed": [
+                  "demo_hot"
+                ],
+                "matches": false
+              },
+              {
+                "field": "traffic.class",
+                "actual": "demo_general",
+                "allowed": [
+                  "demo_heavy"
+                ],
+                "matches": false
+              },
+              {
+                "field": "distress.type",
+                "actual": "thermal_cracking",
+                "allowed": [
+                  "rutting"
+                ],
+                "matches": false
+              },
+              {
+                "field": "distress.severity",
+                "actual": "moderate",
+                "allowed": [
+                  "moderate",
+                  "severe"
+                ],
+                "matches": true
+              }
+            ],
+            "scope_matches": true
+          },
+          {
+            "id": "wet-damage",
+            "title": "多雨环境 · 水损害控制",
+            "version": "1.0.0",
+            "rationale": "在构造的多雨且中重度水损害场景，优先比较TSR和残留稳定度，保留二者独立试验口径。",
+            "conditions": [
+              {
+                "field": "maintenance_method",
+                "actual": "hot_recycling",
+                "allowed": [
+                  "hot_recycling"
+                ],
+                "matches": true
+              },
+              {
+                "field": "layer",
+                "actual": "surface",
+                "allowed": [
+                  "surface"
+                ],
+                "matches": true
+              },
+              {
+                "field": "structure_type",
+                "actual": "flexible",
+                "allowed": [
+                  "flexible"
+                ],
+                "matches": true
+              },
+              {
+                "field": "climate.class",
+                "actual": "demo_cold",
+                "allowed": [
+                  "demo_wet"
+                ],
+                "matches": false
+              },
+              {
+                "field": "traffic.class",
+                "actual": "demo_general",
+                "allowed": [
+                  "demo_general",
+                  "demo_heavy"
+                ],
+                "matches": true
+              },
+              {
+                "field": "distress.type",
+                "actual": "thermal_cracking",
+                "allowed": [
+                  "water_damage"
+                ],
+                "matches": false
+              },
+              {
+                "field": "distress.severity",
+                "actual": "moderate",
+                "allowed": [
+                  "moderate",
+                  "severe"
+                ],
+                "matches": true
+              }
+            ],
+            "scope_matches": true
+          }
+        ]
+      },
+      "versions": {
+        "rules": "scene-rules-2.0.0",
+        "rules_sha256": "503b61a3d5cb9ff42102e28ff214570193f838f34ea59aba027787b9d29edbf7",
+        "case_scenarios_sha256": "986bb5fd4aaa14c3b90e15695c64dddc8d229d3e99ed4237cc458f6f5c5ba20a",
+        "metrics": "metric-registry-2.0.0",
+        "metrics_sha256": "a51f0464e8de21e1f0d0bb129174d179a15ed659447cace280450a70718d5778"
+      },
+      "case_application": {
+        "id": "C2",
+        "title": "寒冷地区温缩裂缝处治",
+        "version": "case-scenarios-2.0.0",
+        "source": "用户明确选择的构造要求模板；C4/C5附加目标不声称仅由气候病害自动推导"
+      },
+      "confirmed_by": "本地创意案例操作",
+      "confirmation_note": "",
+      "overrides": [],
+      "confirmation_status": "confirmed",
+      "open_items": [],
+      "conflicts": [],
+      "capability_gaps": [],
+      "warnings": [
+        "构造演示：历史数值比较不构成工程适用结论。",
+        "部分目标未确认试验方法或条件；正式项目中未知条件不能通过适用性检查。",
+        "库存尚未确认；检索可展示目录，但不能据此确认可采购性。"
+      ],
+      "requirements_complete": true,
+      "ready_for_candidate_retrieval": true,
+      "sha256": "ee1543888d316a0107f7a2b17e70cd50cbd8f3c99408134a31bff2f556659800"
+    },
+    "measured_performance": null
+  },
+  "research": {
+    "metric_names": [
+      "动稳定度 DS",
+      "最大弯拉应变",
+      "冻融劈裂比 TSR",
+      "残留稳定度"
+    ],
+    "units": [
+      "次/mm",
+      "με",
+      "百分点",
+      "百分点"
+    ],
+    "mean_baseline_mae": [
+      1565.8670887105836,
+      286.59440070608247,
+      3.540187490515512,
+      2.8888656269736477
+    ],
+    "original_pipeline_mae": [
+      1681.512360208096,
+      313.60072704694045,
+      3.7818057331695702,
+      3.1696631892240816
+    ],
+    "conservative_ensemble_mae": [
+      1545.0245563270048,
+      273.00247864735456,
+      3.4940650434084244,
+      2.963396534892221
+    ],
+    "rounds_improved": [
+      "4/5",
+      "5/5",
+      "4/5",
+      "0/5"
+    ],
+    "source": "docs/research-v04-report.md",
+    "sample_sizes": [
+      85,
+      72,
+      81,
+      79
+    ],
+    "eligible_operation_keys": 100,
+    "proxy_source_groups": 37,
+    "complete_four_metric_records": 59,
+    "hypotheses": 1098,
+    "inside_declared_support": 731,
+    "relative_improvement_pct": [
+      1.3310537359043306,
+      4.742563715565051,
+      1.3028249840059014,
+      -2.5799368175061677
+    ]
+  },
+  "sources": [
+    {
+      "path": "artifacts/polish-v7/runs/20261022T045051Z/C1.json.gz",
+      "sha256": "bb39693c1071a657d37d337eab0b56c8a34bbef360a0486fd236a2aed2904de6"
+    },
+    {
+      "path": "artifacts/polish-v7/runs/20261022T045051Z/C2.json.gz",
+      "sha256": "47856de9dd6e600fca619706b8c1814bef55ce3e765162bc98b9df7d93fa856e"
+    },
+    {
+      "path": "artifacts/polish-v7/runs/20261022T045051Z/C3.json.gz",
+      "sha256": "b766074690377c2152e841ff0cde919f461ba048e2179a41a88b5000f0c15be6"
+    },
+    {
+      "path": "artifacts/polish-v7/runs/20261022T045051Z/C4.json.gz",
+      "sha256": "5a5e04fd3f7eddb1f8c588dd8c3a9ad7f3c24600eab2bcdb16c65efdfab414a6"
+    },
+    {
+      "path": "artifacts/polish-v7/runs/20261022T045051Z/C5.json.gz",
+      "sha256": "ff57d7f311e3e1934e03bef171e0d2ef91365fd855a502a5b4de71ada36b5873"
+    },
+    {
+      "path": "artifacts/polish-v7/runs/20261022T045051Z/C5-complete-numeric.json.gz",
+      "sha256": "47bed6f3d9a3525298206b78944ea327130514e0acaf5d467e89fa439daca97d"
+    },
+    {
+      "path": "artifacts/polish-v7/runs/20261022T045051Z/C2-design-draft.json.gz",
+      "sha256": "e68e34ed1de85b303885458a8ecb532980358da2df01e27d5ce316d0322f9f68"
+    },
+    {
+      "path": "docs/research-v04-report.md",
+      "sha256": "850e2c16abcf1fa4b7e37785de65357289fbfa25d466b4dc5b00b9147bc923b2"
+    },
+    {
+      "path": "artifacts/polish-v7/completion.json",
+      "sha256": "edd844d39484cc79324a448ca048853fd7ee4c6a532e10d5c12eb4bbca3949fb"
+    },
+    {
+      "path": "artifacts/submission-v8/verification.json",
+      "sha256": "588d7b77a3798b23d53b31f6fae46e0fdfb76eaefc353a5f91bcc89bca05220f"
+    },
+    {
+      "path": "artifacts/research-v04/benchmark.json",
+      "sha256": "e227012e6341636e696868640b9eb73091affcd6bab431a984fcb5782a6ad438"
+    },
+    {
+      "path": "artifacts/research-v04/advanced.json",
+      "sha256": "47317d7e06698429dd7ebfbaaf47dc1836636e05985fb4881053403d3282fa46"
+    }
+  ]
+}

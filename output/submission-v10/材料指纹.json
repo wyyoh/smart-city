@@ -1,0 +1,151 @@
+{
+  "prepared_on": "2026-10-24",
+  "edition": "v10_editorial",
+  "application_version": "0.4.0",
+  "files": [
+    {
+      "path": "00_材料清单与上传说明.html",
+      "bytes": 5933,
+      "sha256": "42c3ce4b26fa28d8532840d02fdd55b1a418ba6059818074bb471aea35d0150b"
+    },
+    {
+      "path": "00_材料清单与上传说明.txt",
+      "bytes": 3306,
+      "sha256": "11cc5a8ed7d0bd4de1dcbe2df4c715e7fdc8c32751f845ed0b6fb85ce61c3288"
+    },
+    {
+      "path": "01_必交文档/项目简表.docx",
+      "bytes": 126823,
+      "sha256": "1d862dcd1796c1a8f003372b7770a769537c05ed5a96982a0bb748d0b9539f40"
+    },
+    {
+      "path": "01_必交文档/项目简表.pdf",
+      "bytes": 282618,
+      "sha256": "ba869b13b305ae35ff253dcb56e474beb4ed5d986ec204aed9ffc1d13c66cf86"
+    },
+    {
+      "path": "01_必交文档/项目说明书.docx",
+      "bytes": 91218,
+      "sha256": "43032a2e4caa0c0cb68a28a9e631c66417828c71050f0d5bf1cc237a9aaf521f"
+    },
+    {
+      "path": "01_必交文档/项目说明书.pdf",
+      "bytes": 293964,
+      "sha256": "afc239dcada96592756f7d9593d7cb917ddb5810093121181452adcb282cf6dc"
+    },
+    {
+      "path": "02_原型源码与证据/原型源码与证据.zip",
+      "bytes": 34962749,
+      "sha256": "4472fa27e4400051f000e4a48c77cc8ba199c92dd175216f9e00d475a17523b6"
+    },
+    {
+      "path": "03_演示视频/五案实际操作.mp4",
+      "bytes": 5471481,
+      "sha256": "b22d82d2487c5cf50c196c41acda948b40d784e98036729cc272bbe7187ad00a"
+    },
+    {
+      "path": "04_商业计划书/商业计划书.docx",
+      "bytes": 88917,
+      "sha256": "63b89c1088cc0bccdd13da28f48fc30bcb8720dbf667c336b8fd2f39e5c7b272"
+    },
+    {
+      "path": "04_商业计划书/商业计划书.pdf",
+      "bytes": 248459,
+      "sha256": "85bfda1def9c213fa94a763e8e18e30a82d92d2228a38e9d24f2220fc0c3f2a7"
+    },
+    {
+      "path": "05_演示PPT/作品演示.pdf",
+      "bytes": 645462,
+      "sha256": "5f388006f66ea21ea2a8241a78461f3f1a5cd3987e1c0e48f82bea87fa99e7d2"
+    },
+    {
+      "path": "05_演示PPT/作品演示.pptx",
+      "bytes": 659446,
+      "sha256": "432ec80ae9fe3ab7c98134028ef02d60bde73899030407dc9de23a171eca252f"
+    },
+    {
+      "path": "06_案例图片/C1_场景要求与出处.png",
+      "bytes": 153390,
+      "sha256": "616e5b477e46155ca157a4176c70b317ce2d0cf30701acfd94cf88ff9361e023"
+    },
+    {
+      "path": "06_案例图片/C2_协同配方草案.png",
+      "bytes": 113245,
+      "sha256": "fc620d2a6243ee789dee8bc0e237a9b2fcc615b98b3e250fcefe0dd2dcdd9313"
+    },
+    {
+      "path": "06_案例图片/C3_多目标取舍.png",
+      "bytes": 122339,
+      "sha256": "29f843adea729dd23c42905fd404bc2d9a27dc811f9ae45ce1d19e9997037978"
+    },
+    {
+      "path": "06_案例图片/C4_要求调整预览.png",
+      "bytes": 114517,
+      "sha256": "c7ba5663258b7835d12dab5c23060ddd6c0d54e5a979126d4f38bc3b993d0582"
+    },
+    {
+      "path": "06_案例图片/C5_范围内冲突.png",
+      "bytes": 132463,
+      "sha256": "e0763a48b3563dc75d90ae08e259f67756aaae7ae80dce0925fa1714eb1f2c42"
+    },
+    {
+      "path": "07_作品论文/作品论文.docx",
+      "bytes": 674991,
+      "sha256": "136da062a52df013635b14236ff3bfd44f016df212c1679abf742bd317d5a4bb"
+    },
+    {
+      "path": "07_作品论文/作品论文.pdf",
+      "bytes": 1264344,
+      "sha256": "2d0bf78dbe19a9c6ba45922916847657093fcbe1ae72b98b7e06c292e179fc1d"
+    },
+    {
+      "path": "系统填报文案.txt",
+      "bytes": 3631,
+      "sha256": "5f1d191341cf38cbada6eb1408ab7011c677738a9e553d11d64b0c6b4005c554"
+    }
+  ],
+  "pdf_page_counts": {
+    "01_必交文档/项目简表.pdf": 3,
+    "01_必交文档/项目说明书.pdf": 7,
+    "04_商业计划书/商业计划书.pdf": 5,
+    "05_演示PPT/作品演示.pdf": 10,
+    "07_作品论文/作品论文.pdf": 50
+  },
+  "summary_word_limits": [
+    {
+      "field": "项目背景",
+      "characters": 124,
+      "limit": 300
+    },
+    {
+      "field": "立项思路",
+      "characters": 126,
+      "limit": 300
+    },
+    {
+      "field": "解决方案",
+      "characters": 341,
+      "limit": 600
+    },
+    {
+      "field": "商业模式与预期效益",
+      "characters": 141,
+      "limit": 300
+    }
+  ],
+  "source_package": {
+    "path": "output/submission-v10/02_原型源码与证据/原型源码与证据.zip",
+    "sha256": "4472fa27e4400051f000e4a48c77cc8ba199c92dd175216f9e00d475a17523b6",
+    "file_count": 683,
+    "frozen_runtime_files_byte_identical": 656,
+    "parent_archive_sha256": "8dc932e9452e4df4ccba13aba85e12573d0b362af776f62fad6c2e49ddec2eec"
+  },
+  "portal_submission_performed": false,
+  "official_deadline": "2026-10-25T12:00:00+08:00",
+  "official_sources": [
+    "https://cpipc.acge.org.cn/cw/contestNews/detail/1/2c9080189ef4ecee019f038802d55c4b?page=0",
+    "https://cpipc.acge.org.cn/cw/contestNews/detail/1/2c9080189fb0808c019fc63d2f083049?page=0"
+  ],
+  "identity_marker_checks": "passed",
+  "visual_review": "passed"
+}

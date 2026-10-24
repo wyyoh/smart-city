@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-24T17:06:40.504986+00:00",
+  "status": "passed",
+  "repository": "https://github.com/wyyoh/smart-city",
+  "branch": "main",
+  "base_commit": "de152b1e22f928284836a832a2d0d4ba3429897e",
+  "archive": "output/数智选材_参赛材料_v10.zip",
+  "archive_bytes": 44655818,
+  "archive_sha256": "3472cce1feac1fc55a98350991484e1d23d9acb49fc4cfb4942abf309a0faef2",
+  "manifest_entries_checked": 20,
+  "archive_files_byte_matched": 21,
+  "source_wrapper_files": 683,
+  "frozen_runtime_files_byte_matched": 656,
+  "readme_local_links_checked": 10,
+  "retained_verification_statuses": {
+    "completion": "complete",
+    "materials-verification": "passed",
+    "content-verification": "passed",
+    "visual-review": "passed",
+    "source-checkout": "passed",
+    "index-verification": "passed"
+  },
+  "verification_scope": "Upload-time file hashes, ZIP CRC and membership, retained runtime bytes, and repository navigation; prior document and workflow checks are preserved unchanged."
+}

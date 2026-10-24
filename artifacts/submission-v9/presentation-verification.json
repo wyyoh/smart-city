@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "created_on": "2026-10-24",
+  "slides": 10,
+  "pptx_sha256": "e28b196ec0ddcc4527eccfd15931944f8c44ad6f001adf0603aaee9d13b63262",
+  "package_findings": 0,
+  "layout_findings": 0,
+  "layout_warnings": 0,
+  "native_tables": 2,
+  "first_party_import": "passed",
+  "pdf_converter": "Installed Microsoft PowerPoint (bundled exporter standard-font PDF resource unavailable)",
+  "native_render_visual_review": "all 10 slides passed"
+}

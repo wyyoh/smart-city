@@ -1,0 +1,32 @@
+{
+  "reviewed_on": "2026-10-24",
+  "status": "passed",
+  "business_plan_pages": 5,
+  "presentation_slides": 10,
+  "business_render": "Installed Microsoft Word with packaged DOCX renderer rasterization",
+  "presentation_render": "Installed Microsoft PowerPoint PDF export and Poppler rasterization",
+  "visual_findings": [],
+  "review_coverage": "All five final business-plan pages inspected; all ten native slide renders inspected, with slides 5, 6 and 8 re-inspected after repair. Seven unchanged native renders are byte-identical.",
+  "deliverables": [
+    {
+      "path": "output/submission-v9/04_商业计划书/商业计划书.docx",
+      "bytes": 89120,
+      "sha256": "0a4cacc1b7844db05960a4b38195534d6f9af8e0c2336bd0a0585925b9d9beeb"
+    },
+    {
+      "path": "output/submission-v9/04_商业计划书/商业计划书.pdf",
+      "bytes": 255194,
+      "sha256": "89d7759b2133f8647daa8bff035aefefbed1470cc50fdce0f24b1f69dd6fd6c0"
+    },
+    {
+      "path": "output/submission-v9/05_演示PPT/作品演示.pptx",
+      "bytes": 659754,
+      "sha256": "e28b196ec0ddcc4527eccfd15931944f8c44ad6f001adf0603aaee9d13b63262"
+    },
+    {
+      "path": "output/submission-v9/05_演示PPT/作品演示.pdf",
+      "bytes": 649791,
+      "sha256": "3d6215b16b9b28fee8bd9c548d228848933d4d5259c8ba08cf8ccc8f33a26199"
+    }
+  ]
+}

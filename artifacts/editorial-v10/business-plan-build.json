@@ -1,0 +1,50 @@
+{
+  "template": "artifacts/submission-v8/official/business-plan.docx",
+  "template_sha256": "777f66a29204f6a9470da43f0b23d1e3c76f08a4891c08718c81c27dfd91e01b",
+  "output": "output/submission-v10/04_商业计划书/商业计划书.docx",
+  "output_sha256": "63b89c1088cc0bccdd13da28f48fc30bcb8720dbf667c336b8fd2f39e5c7b272",
+  "preserved_package_parts": 23,
+  "edited_parts": [
+    "docProps/core.xml",
+    "word/document.xml",
+    "word/styles.xml"
+  ],
+  "style_addition": "Title only; all original style bytes preserved",
+  "created_on": "2026-10-24",
+  "status": "authored_awaiting_visual_review",
+  "word_limits": [
+    {
+      "section": 1,
+      "including_subheadings_and_punctuation": 143,
+      "limit": 200
+    },
+    {
+      "section": 2,
+      "including_subheadings_and_punctuation": 126,
+      "limit": 200
+    },
+    {
+      "section": 3,
+      "including_subheadings_and_punctuation": 638,
+      "limit": 2000
+    },
+    {
+      "section": 4,
+      "including_subheadings_and_punctuation": 782,
+      "limit": 2000
+    },
+    {
+      "section": 5,
+      "including_subheadings_and_punctuation": 495,
+      "limit": 2000
+    },
+    {
+      "section": 6,
+      "including_subheadings_and_punctuation": 266,
+      "limit": 500
+    }
+  ],
+  "reference_page_count": 1,
+  "source_docx_unchanged": true,
+  "template_section_geometry_unchanged": true
+}

@@ -1,0 +1,23 @@
+{
+  "prepared_on": "2026-10-24",
+  "status": "passed",
+  "directory": "output/submission-v9",
+  "file_count": 19,
+  "archive": "output/数智选材_参赛材料.zip",
+  "archive_bytes": 40176958,
+  "archive_sha256": "f900820bbc7c393653e90458df20f77d9468d222b26d89ea0e211da151d9d221",
+  "copied_frozen_assets_unchanged": true,
+  "source_package_crc_passed": true,
+  "source_package_file_count": 656,
+  "local_link_count": 19,
+  "local_links_missing": 0,
+  "pdf_page_counts": {
+    "01_必交文档/项目简表.pdf": 3,
+    "01_必交文档/项目说明书.pdf": 7,
+    "04_商业计划书/商业计划书.pdf": 5,
+    "05_演示PPT/作品演示.pdf": 10
+  },
+  "portal_submission_performed": false,
+  "new_document_visual_review": "passed",
+  "software_evidence": "Reused frozen v8; no new material test or human-efficiency claim."
+}

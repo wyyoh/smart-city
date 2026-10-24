@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "file_count": 21,
+  "archive": "output/数智选材_参赛材料_v10.zip",
+  "archive_bytes": 44655818,
+  "archive_sha256": "3472cce1feac1fc55a98350991484e1d23d9acb49fc4cfb4942abf309a0faef2",
+  "pdf_page_counts": {
+    "01_必交文档/项目简表.pdf": 3,
+    "01_必交文档/项目说明书.pdf": 7,
+    "04_商业计划书/商业计划书.pdf": 5,
+    "05_演示PPT/作品演示.pdf": 10,
+    "07_作品论文/作品论文.pdf": 50
+  },
+  "frozen_runtime_files_byte_identical": 656,
+  "local_links_checked": 21,
+  "known_identity_marker_checks": "passed",
+  "portal_submission_performed": false,
+  "visual_review": "passed"
+}

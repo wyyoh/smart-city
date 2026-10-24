@@ -1,0 +1,43 @@
+{
+  "restoration": {
+    "status": "passed",
+    "restored": [
+      "artifacts/models/DS.joblib",
+      "artifacts/models/TSR.joblib",
+      "artifacts/models/residual.joblib",
+      "artifacts/models/strain.joblib",
+      "artifacts/next-phase/baseline/workbench-v01.sqlite",
+      "artifacts/review-phase/demo.sqlite",
+      "data/workbench.sqlite",
+      "frontend/dist/assets/index-BGROxmrM.css",
+      "frontend/dist/assets/index-DVF3ZLv7.js",
+      "frontend/dist/favicon.svg",
+      "frontend/dist/index.html"
+    ],
+    "already_matching": [],
+    "existing_user_files_preserved": []
+  },
+  "current_wrapper_smoke": {
+    "status": "passed",
+    "historical_keys": 180,
+    "case_pool": 84,
+    "case_feasible": [
+      2,
+      2,
+      5,
+      1,
+      0
+    ],
+    "same_pool_baselines_match": true,
+    "C3_preference_preserves_feasible_set": true,
+    "C2_exact_parent_draft_unknown": true,
+    "C5_complete_pool": 35,
+    "C5_conflicts": 4,
+    "current_frontend_and_source_match": true,
+    "review_evidence_verified": 43,
+    "research_compatible": true,
+    "source_database_unchanged": true
+  },
+  "runtime_location": "runtime/",
+  "created_on": "2026-10-24"
+}
