@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-24T17:12:26.027554+00:00",
+  "status": "published",
+  "repository": "https://github.com/wyyoh/smart-city",
+  "branch": "main",
+  "payload_commit": "78a7f571fff0d5a678058e991eec9952991bed8d",
+  "payload_tree": "fe3f439df6521721a77cf5e30678d2e59bb3caaf",
+  "remote_head_observed": "78a7f571fff0d5a678058e991eec9952991bed8d",
+  "remote_head_matches_payload_commit": true,
+  "publication_method": "Non-forced fast-forward Git push",
+  "current_materials_directory": "output/submission-v10/",
+  "current_archive": "output/数智选材_参赛材料_v10.zip",
+  "archive_sha256": "3472cce1feac1fc55a98350991484e1d23d9acb49fc4cfb4942abf309a0faef2",
+  "current_material_files": 21,
+  "paper_pages": 50,
+  "readiness_record": "artifacts/github-publish/editorial-v10-readiness.json",
+  "note": "This receipt records the published payload commit; a following commit adds this receipt."
+}
